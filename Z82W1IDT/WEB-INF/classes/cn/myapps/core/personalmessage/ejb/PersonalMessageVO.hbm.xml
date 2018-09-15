@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cn.myapps.core.personalmessage.ejb.PersonalMessageVO" table="T_PERSONALMESSAGE"
+		lazy="true" batch-size="10">
+
+		<id name="id" column="ID" type="java.lang.String">
+			<generator class="assigned">
+			</generator>
+		</id>
+
+		<many-to-one name="body" insert="true" update="false" not-null="true">
+			<column name="BODYID"></column>
+		</many-to-one>
+			
+		<property name="receiverId" type="text"
+			update="true" insert="true" column="RECEIVERID" />	
+			
+		<property name="read" type="java.lang.Boolean"
+			update="true" insert="true" column="ISREAD" />
+
+		<property name="trash" type="java.lang.Boolean"
+			update="true" insert="true" column="ISTRASH" />
+			
+		<property name="domainid" type="java.lang.String" update="true"
+			insert="true" column="DOMAINID" />
+			
+		<property name="sendDate" type="java.util.Date" update="true"
+			insert="true" column="SENDDATE" />
+
+		<property name="senderId" type="java.lang.String"
+			update="true" insert="true" column="SENDERID" />
+			
+		<property name="ownerId" type="java.lang.String"
+			update="true" insert="true" column="OWNERID" />
+			
+		<property name="inbox" type="java.lang.Boolean"
+			update="false" insert="true" column="ISINBOX" />
+		
+		<property name="outbox" type="java.lang.Boolean"
+			update="false" insert="true" column="ISOUTBOX" />
+				
+		<property name="attachmentId" type="java.lang.String" length="4000"
+			update="true" insert="true" column="ATTACHMENTID" />
+			
+		<property name="type" type="java.lang.String"
+			update="true" insert="true" >
+			<column name="TYPE"></column>
+		</property>
+			
+		<property name="radioOrCheckbox" type="java.lang.String"
+			update="true" insert="true" column="RADIOORCHECKBOX" />
+			
+		<property name="voteOptionsId" type="java.lang.String"
+			update="true" insert="true" column="VOTEOPTIONSID" />
+			
+		<property name="checkedOptionsId" type="java.lang.String"
+			update="true" insert="true" column="CHECKEDOPTIONSID" />
+		
+		<property name="sendTitular" type="java.lang.String"
+			update="true" insert="true" column="SEND_TITULAR" />
+	</class>
+
+</hibernate-mapping>

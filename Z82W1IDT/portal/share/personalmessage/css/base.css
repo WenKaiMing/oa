@@ -1,0 +1,311 @@
+li {
+	display: inline;
+}
+
+.tabs {
+	text-decoration: none;
+	font-size: 9pt;
+	color: #000;
+}
+
+.active {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 9pt;
+	color: #0066cc !important;
+	font-family: Helvetica Neue, Tahoma, Arial;
+}
+
+body {
+	font-size: 12px;
+	font-family: Helvetica Neue, Tahoma, Arial;
+	padding-top: 18px;
+}
+
+.operation_main {
+	margin: 0px;
+	padding: 2px 2px 20px 30px;
+}
+
+#newUsrMsg {
+	display: none;
+	position: absolute;
+	z-index: 100;
+	background-color: rgb(245, 245, 245);
+	width: 80%;
+	height: 60%;
+}
+
+.action {
+	margin: 0px;
+	padding: 2px 2px 2px 30px;
+}
+
+.action>div {
+	display: inline;
+}
+
+.sys_msg_text>div {
+	display: inline;
+}
+
+.usr_msg_text>div {
+	display: inline;
+}
+
+.page_info {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(245, 245, 245);
+	height: 28px;
+	width: 100%;
+	padding-left: 40%;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.page_button {
+	vertical-align: middle;
+	width: 23px;
+	height: 23px;
+	background-color: rgb(253, 253, 253);
+	border: 1px solid rgb(217, 218, 218);
+	padding: 5px 8px;
+}
+
+.page_no_button {
+	width: 23px;
+	height: 23px;
+	background-color: rgb(255, 186, 0);
+	border: 1px solid rgb(217, 218, 218);
+	color: white;
+	padding: 5px 8px;
+}
+
+.aline {
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+.newBtn span {
+	color: #fff;
+	background-color: #0066cc;
+}
+
+#search_bar {
+	padding-right: 2px;
+	float: right;
+}
+
+.msg_item>div { //
+	display: inline-block;
+}
+
+.msg_item {
+	margin: 0px;
+	padding: 25px 30px;
+	height: auto;
+	border-bottom: 1px dashed rgb(245, 245, 245);
+	color: rgb(153, 153, 153);
+}
+
+#sch_input_bar {
+	border-left: 0px none #b8b8b8;
+	border-top: 0px none #b8b8b8;
+	border-bottom: 0px none #b8b8b8;
+	width: 190px;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: top;
+	border-right: 1px solid #b8b8b8;
+}
+
+#input_ {
+	margin: 0px;
+	padding: 0px;
+	width: 230px;
+	height: 30px;
+	border: 1px solid #b8b8b8;
+}
+
+#image_ {
+	margin: 0px;
+	padding: 0px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #b8b8b8;
+}
+
+#search_bar>div {
+	margin: 0px;
+	padding: 0px;
+}
+
+.msg_item_hover {
+	background-color: rgb(245, 245, 245);
+}
+
+.tab_button {
+	text-decoration: none;
+	padding: 2px 18px 4px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#tr_operations .confirm-button span{
+	background-color: rgb(88,168,53)!important;
+	color: white;
+}
+
+.trClass {
+	padding-top: 5px;
+}
+
+.square {
+	float: left;
+}
+
+.head {
+	padding: 15px;
+}
+
+.head img {
+	position: relative;
+	left: 2%;
+	padding-top: 5px;
+}
+
+div.sys_msg_text {
+	width: 70%;
+	display: block;
+	float: left;
+}
+
+div.sys_msg_date {
+	float: right;
+	width: 180px;
+	vertical-align: middle;
+	padding-top: 20px;
+	display: inline;
+}
+
+.n_content {
+	display: none;
+}
+
+/* .content  {
+		overflow:hidden;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		-o-text-overflow: ellipsis;
+		word-break:break-all;
+		display:block;
+	} */
+div.usr_msg_text {
+	width: 70%;
+	display: inline-block;
+}
+
+div.usr_msg_date {
+	float: right;
+	width: 180px;
+	vertical-align: middle;
+	padding-top: 20px;
+	display: inline;
+}
+
+.msg_text {
+	padding-left: 10px;
+	word-wrap: break-word;
+	word-break: break-all;
+	font-size: 13px;
+	line-height: 22px;
+	color: rgb(153, 153, 153);
+}
+
+#pagination {
+	float: right;
+}
+
+#pagination>div {
+	display: inline;
+}
+
+#pageInfos>div {
+	display: inline;
+}
+
+input[type='checkbox'] {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+div.options-box {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+div.options-box ul {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+div.line-style {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid rgb(210, 210, 210)
+}
+
+ul.vote_list li {
+	overflow: hidden;
+	margin-bottom: 20px;
+	list-style: none;
+	display: list-item;
+}
+
+ul.vote_list li label {
+	margin: 0 0 0 3px;
+	line-height: 16px;
+}
+
+ul.vote_list li input {
+	width: 15px;
+	width: 15px;
+}
+
+div.center_operation {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 40%;
+}
+
+div.whitespace-line {
+	margin-bottom: 10px;
+}
+
+.upload-button {
+	overflow: visible;
+	display: inline-block;
+	padding: 0.5em 1em;
+	border: 1px solid #d4d4d4;
+	margin: 0;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+	outline: none; //
+	background-color: #ececec;
+	border-radius: 5px;
+}
+
+#tr_operations {
+	font-size: 12px;
+}
+.unread{
+	background: azure;
+}
+

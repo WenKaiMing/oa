@@ -1,0 +1,698 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="myapps-view-front" extends="myapps-default"
+		namespace="/portal/dynaform/view">
+		<interceptors>
+			<interceptor-stack name="default">
+				<interceptor-ref name="params" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="defaultStack" />
+
+		<action name="subFormView"
+			class="cn.myapps.core.dynaform.view.action.ViewRunTimeAction"
+			method="doSubFormView">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/displayView.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/displayView.jsp
+			</result>
+			<result name="forbid" type="OBPMdispatcher">
+				/portal/share/forbid.jsp
+			</result>
+		</action>
+
+		<action name="subGridView"
+			class="cn.myapps.core.dynaform.view.action.ViewRunTimeAction"
+			method="doSubFormView">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="forbid" type="OBPMdispatcher">
+				/portal/share/forbid.jsp
+			</result>
+		</action>
+
+		<!-- Dialog -->
+		<action name="dialogView"
+			class="cn.myapps.core.dynaform.view.action.ViewRunTimeAction"
+			method="doDialogView">
+			<!-- Success Result -->
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/dynaform/view/dialogView.jsp
+			</result>
+			
+			<result name="successSub" type="OBPMdispatcher">
+				/portal/share/dynaform/view/dialogView.jsp
+			</result>
+			<result name="successCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/dialogCalendarView.jsp
+			</result>
+			<result name="successTree" type="OBPMdispatcher">
+				/portal/share/dynaform/view/dialogTreeView.jsp
+			</result>
+			<result name="successGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="successGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="successMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			 
+			<!-- Input Result -->
+			<result name="input" type="OBPMdispatcher">
+				/portal/share/dynaform/view/dialogView.jsp
+			</result>
+			
+			<result name="inputSub" type="OBPMdispatcher">
+				/portal/share/dynaform/view/dialogView.jsp
+			</result>
+			<result name="inputCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/dialogCalendarView.jsp
+			</result>
+			<result name="inputTree" type="OBPMdispatcher">
+				/portal/share/dynaform/view/dialogTreeView.jsp
+			</result>
+			<result name="inputGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="inputGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="inputMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			<result name="forbid" type="OBPMdispatcher">
+				/portal/share/forbid.jsp
+			</result>
+		</action>
+		
+		<action name="dialogView4Phone"
+			class="cn.myapps.core.dynaform.view.action.ViewRunTimeAction"
+			method="doDialogView">
+			<!-- Success Result -->
+			<result name="success" type="OBPMdispatcher">
+				/portal/phone/dynaform/view/dialogView.jsp
+			</result>
+			
+			<result name="successSub" type="OBPMdispatcher">
+				/portal/phone/dynaform/view/dialogView.jsp
+			</result>
+			<result name="successCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/dialogCalendarView.jsp
+			</result>
+			<result name="successTree" type="OBPMdispatcher">
+				/portal/phone/dynaform/view/dialogTreeView.jsp
+			</result>
+			<result name="successGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="successGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="successMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			 
+			<!-- Input Result -->
+			<result name="input" type="OBPMdispatcher">
+				/portal/phone/dynaform/view/dialogView.jsp
+			</result>
+			
+			<result name="inputSub" type="OBPMdispatcher">
+				/portal/phone/dynaform/view/dialogView.jsp
+			</result>
+			<result name="inputCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/dialogCalendarView.jsp
+			</result>
+			<result name="inputTree" type="OBPMdispatcher">
+				/portal/phone/dynaform/view/dialogTreeView.jsp
+			</result>
+			<result name="inputGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="inputGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="inputMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			<result name="forbid" type="OBPMdispatcher">
+				/portal/phone/forbid.jsp
+			</result>
+		</action>
+		
+		<action name="iframeDialogView"
+			class="cn.myapps.core.dynaform.view.action.ViewRunTimeAction"
+			method="doDialogView">
+			<!-- Success Result -->
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/dynaform/view/dialogViewByIframe.jsp
+			</result>
+			<result name="successSub" type="OBPMdispatcher">
+				/portal/share/dynaform/view/dialogView.jsp
+			</result>
+			<result name="successCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/dialogCalendarView.jsp
+			</result>
+			<result name="successTree" type="OBPMdispatcher">
+				/portal/share/dynaform/view/dialogTreeView.jsp
+			</result>
+			<result name="successGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="successGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="successMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			 
+			<!-- Input Result -->
+			<result name="input" type="OBPMdispatcher">
+				/portal/share/dynaform/view/dialogViewByIframe.jsp
+			</result>
+			<result name="inputSub" type="OBPMdispatcher">
+				/portal/share/dynaform/view/dialogView.jsp
+			</result>
+			<result name="inputCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/dialogCalendarView.jsp
+			</result>
+			<result name="inputTree" type="OBPMdispatcher">
+				/portal/share/dynaform/view/dialogTreeView.jsp
+			</result>
+			<result name="inputGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="inputGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="inputMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			<result name="forbid" type="OBPMdispatcher">
+				/portal/share/forbid.jsp
+			</result>
+			
+		</action>
+		
+		<action name="iframeDialogView4phone"
+			class="cn.myapps.core.dynaform.view.action.ViewRunTimeAction"
+			method="doDialogView">
+			<!-- Success Result -->
+			<result name="success" type="OBPMdispatcher">
+				/portal/phone/dynaform/view/dialogViewByIframe.jsp
+			</result>
+			<result name="successSub" type="OBPMdispatcher">
+				/portal/phone/dynaform/view/dialogView.jsp
+			</result>
+			<result name="successCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/dialogCalendarView.jsp
+			</result>
+			<result name="successTree" type="OBPMdispatcher">
+				/portal/phone/dynaform/view/dialogTreeView.jsp
+			</result>
+			<result name="successGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="successGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="successMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			 
+			<!-- Input Result -->
+			<result name="input" type="OBPMdispatcher">
+				/portal/phone/dynaform/view/dialogViewByIframe.jsp
+			</result>
+			<result name="inputSub" type="OBPMdispatcher">
+				/portal/phone/dynaform/view/dialogView.jsp
+			</result>
+			<result name="inputCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/dialogCalendarView.jsp
+			</result>
+			<result name="inputTree" type="OBPMdispatcher">
+				/portal/phone/dynaform/view/dialogTreeView.jsp
+			</result>
+			<result name="inputGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="inputGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="inputMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			<result name="forbid" type="OBPMdispatcher">
+				/portal/phone/forbid.jsp
+			</result>
+			
+		</action>
+		
+		<action name="mainDialogView"
+			class="cn.myapps.core.dynaform.view.action.ViewRunTimeAction"
+			method="doDialogView">
+			<!-- Success Result -->
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/dynaform/view/mainDialogView.jsp
+			</result>
+			<result name="successSub" type="OBPMdispatcher">
+				/portal/share/dynaform/view/dialogView.jsp
+			</result>
+			<result name="successCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/dialogCalendarView.jsp
+			</result>
+			<result name="successTree" type="OBPMdispatcher">
+				/portal/share/dynaform/view/dialogTreeView.jsp
+			</result>
+			<result name="successGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="successGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="successMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			 
+			<!-- Input Result -->
+			<result name="input" type="OBPMdispatcher">
+				/portal/share/dynaform/view/mainDialogView.jsp
+			</result>
+			<result name="inputSub" type="OBPMdispatcher">
+				/portal/share/dynaform/view/dialogView.jsp
+			</result>
+			<result name="inputCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/dialogCalendarView.jsp
+			</result>
+			<result name="inputTree" type="OBPMdispatcher">
+				/portal/share/dynaform/view/dialogTreeView.jsp
+			</result>
+			<result name="inputGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="inputGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="inputMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			
+			<result name="forbid" type="OBPMdispatcher">
+				/portal/share/forbid.jsp
+			</result>
+			
+		</action>
+		
+		<action name="mainDialogView4Phone"
+			class="cn.myapps.core.dynaform.view.action.ViewRunTimeAction"
+			method="doDialogView">
+			<!-- Success Result -->
+			<result name="success" type="OBPMdispatcher">
+				/portal/phone/dynaform/view/mainDialogView.jsp
+			</result>
+			<result name="successSub" type="OBPMdispatcher">
+				/portal/phone/dynaform/view/dialogView.jsp
+			</result>
+			<result name="successCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/dialogCalendarView.jsp
+			</result>
+			<result name="successTree" type="OBPMdispatcher">
+				/portal/phone/dynaform/view/dialogTreeView.jsp
+			</result>
+			<result name="successGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="successGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="successMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			 
+			<!-- Input Result -->
+			<result name="input" type="OBPMdispatcher">
+				/portal/share/dynaform/view/mainDialogView.jsp
+			</result>
+			<result name="inputSub" type="OBPMdispatcher">
+				/portal/share/dynaform/view/dialogView.jsp
+			</result>
+			<result name="inputCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/dialogCalendarView.jsp
+			</result>
+			<result name="inputTree" type="OBPMdispatcher">
+				/portal/share/dynaform/view/dialogTreeView.jsp
+			</result>
+			<result name="inputGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="inputGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="inputMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			
+			<result name="forbid" type="OBPMdispatcher">
+				/portal/share/forbid.jsp
+			</result>
+			
+		</action>
+		
+		<!--
+		<action name="expDocToExcel"
+			class="cn.myapps.core.dynaform.view.action.ExcelExpAction"
+			method="expDocToExcel">
+			<interceptor-ref name="completeStack"></interceptor-ref>
+			<interceptor-ref name="execAndWait"></interceptor-ref>
+			<result name="success" type="chain">displayView</result>
+			<result name="wait">
+				/portal/share/dynaform/view/wait.jsp
+			</result>
+		</action>
+		-->
+		
+		<action name="expDocToExcel"
+			class="cn.myapps.core.dynaform.view.action.ViewRunTimeAction"
+			method="expDocToExcel">
+			<result name="success" type="chain">displayView</result>
+		</action>
+		
+		<!-- Normal -->
+		<action name="displayView"
+			class="cn.myapps.core.dynaform.view.action.ViewRunTimeAction"
+			method="doDisplayView">
+			<!-- Success Result -->
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/listView.jsp
+			</result>
+			<result name="successCollapsible" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/collapsibleView.jsp
+			</result>
+			<result name="successSub" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/displayView.jsp
+			</result>
+			<result name="successCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/calendarView.jsp
+			</result>
+			<result name="successTree" type="OBPMdispatcher">
+				/portal/share/dynaform/view/treeView.jsp
+			</result>
+			<result name="successGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="successGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="successMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			
+			<!-- Input Result -->
+			<result name="input" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/listView.jsp
+			</result>
+			<result name="inputCollapsible" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/collapsibleView.jsp
+			</result>
+			<result name="inputSub" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/displayView.jsp
+			</result>
+			<result name="inputCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/calendarView.jsp
+			</result>
+			<result name="inputTree" type="OBPMdispatcher">
+				/portal/share/dynaform/view/treeView.jsp
+			</result>
+			<result name="inputGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="inputGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="inputMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			
+			<result name="forbid" type="OBPMdispatcher">
+				/portal/share/forbid.jsp
+			</result>
+		</action>
+		
+		
+		
+		<action name="displayViewWithPermission"
+			class="cn.myapps.core.dynaform.view.action.ViewRunTimeAction"
+			method="doDisplayView">
+			<!-- Success Result -->
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/listView.jsp
+			</result>
+			<result name="successSub" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/displayView.jsp
+			</result>
+			<result name="successCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/calendarView.jsp
+			</result>
+			<result name="successTree" type="OBPMdispatcher">
+				/portal/share/dynaform/view/treeView.jsp
+			</result>
+			<result name="successGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="successGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="successMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			<result name="successCollapsible" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/collapsibleView.jsp
+			</result>
+			
+			<!-- Input Result -->
+			<result name="input" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/listView.jsp
+			</result>
+			<result name="inputCollapsible" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/collapsibleView.jsp
+			</result>
+			<result name="inputSub" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/displayView.jsp
+			</result>
+			<result name="inputCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/calendarView.jsp
+			</result>
+			<result name="inputTree" type="OBPMdispatcher">
+				/portal/share/dynaform/view/treeView.jsp
+			</result>
+			<result name="inputGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="inputGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="inputMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			
+			<!-- forbid -->
+			<result name="forbid" type="OBPMdispatcher">
+				/portal/share/forbid.jsp
+			</result>
+		</action>
+		
+		<!-- Normal -->
+		<action name="printView"
+			class="cn.myapps.core.dynaform.view.action.ViewRunTimeAction"
+			method="printDoDisplayView">
+			<!-- Success Result -->
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/dynaform/view/printview/listView.jsp
+			</result>
+			<result name="successSub" type="OBPMdispatcher">
+				/portal/share/dynaform/view/printview/displayView.jsp
+			</result>
+			<result name="successCld" type="OBPMdispatcher">
+				/portal/share/dynaform/view/printview/calendarView.jsp
+			</result>
+			<result name="successTree" type="OBPMdispatcher">
+				/portal/share/dynaform/view/treeView.jsp
+			</result>
+			<result name="successGrid" type="OBPMdispatcher">
+				/portal/share/dynaform/view/printview/subGridView.jsp
+			</result>
+			<result name="successGantt" type="OBPMdispatcher">
+				/portal/share/dynaform/view/printview/ganttView.jsp
+			</result>
+			<result name="successMap" type="OBPMdispatcher">
+				/portal/share/dynaform/view/printview/mapView.jsp
+			</result>
+			
+			<!-- Input Result -->
+			<result name="input" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/printview/listView.jsp
+			</result>
+			<result name="inputSub" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/printview/displayView.jsp
+			</result>
+			<result name="inputCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/printview/calendarView.jsp
+			</result>
+			<result name="inputTree" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/treeView.jsp
+			</result>
+			<result name="inputGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/printview/subGridView.jsp
+			</result>
+			<result name="inputGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/printview/ganttView.jsp
+			</result>
+			<result name="inputMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/printview/mapView.jsp
+			</result>
+			
+			<result name="forbid" type="OBPMdispatcher">
+				/portal/share/forbid.jsp
+			</result>
+		</action>
+		
+		<action name="innerPage"
+			class="cn.myapps.core.dynaform.view.action.ViewRunTimeAction"
+			method="doInnerPage">
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/dynaform/view/successLink.jsp
+			</result>
+			<result name="successForm" type="OBPMdispatcher">
+				/portal/dynaform/document/view.action
+			</result>
+			<result name="successView" type="OBPMdispatcher">
+				/portal/dynaform/view/displayView.action
+			</result>
+		</action>
+		
+		<action name="getChildren"
+			class="cn.myapps.core.dynaform.view.action.ViewRunTimeAction"
+			method="getChildren">
+			<result name="success" type="OBPMdispatcher">
+			</result>
+		</action>
+		
+		<action name="search"
+			class="cn.myapps.core.dynaform.view.action.ViewRunTimeAction"
+			method="doSearch">
+			<result name="success" type="OBPMdispatcher">
+			</result>
+		</action>
+		
+		<!-- Portlet -->
+		<action name="portletView" class="com.opensymphony.xwork2.ActionSupport">
+			<result name="success" type="portlet">/portal/dispatch/dynaform/view/portlet/view.jsp</result>
+		</action>
+		<action name="portletDisplayView"
+			class="cn.myapps.core.dynaform.view.action.ViewPortletAction"
+			method="doDisplayView">
+			<result name="success" type="portlet">
+				/portal/dispatch/dynaform/view/portlet/detail.jsp
+			</result>
+			<result name="successSub" type="portlet">
+				/portal/dispatch/dynaform/view/portlet/display_view.jsp
+			</result>
+			
+			<result name="input" type="portlet">
+				/portal/dispatch/dynaform/view/portlet/detail.jsp
+			</result>
+			<result name="inputSub" type="portlet">
+				/portal/dispatch/dynaform/view/portlet/display_view.jsp
+			</result>
+		</action>
+		
+		<action name="delete"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doDelete">
+			<result name="success" type="chain">displayView</result>
+		</action>
+		
+		<action name="doflow"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doBattchApprove">
+			<result name="success" type="chain">displayView</result>
+		</action>
+		
+		<action name="runScript"
+			class="cn.myapps.core.dynaform.view.action.ViewRunTimeAction"
+			method="runScript">
+		</action>
+		
+		
+		
+		<action name="displayView4Ajax"
+			class="cn.myapps.core.dynaform.view.action.ViewRunTimeAction"
+			method="doDisplayView">
+			<!-- Success Result -->
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/listView.jsp
+			</result>
+			<result name="successCollapsible" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/collapsibleView.jsp
+			</result>
+			<result name="successSub" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/displayView.jsp
+			</result>
+			<result name="successCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/calendarView.jsp
+			</result>
+			<result name="successTree" type="OBPMdispatcher">
+				/portal/share/dynaform/view/treeView.jsp
+			</result>
+			<result name="successGrid" type="OBPMdispatcher">
+				/portal/dispatch/databridge/data.view.grid.jsp
+			</result>
+			<result name="successGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="successMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			
+			<!-- Input Result -->
+			<result name="input" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/listView.jsp
+			</result>
+			<result name="inputCollapsible" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/collapsibleView.jsp
+			</result>
+			<result name="inputSub" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/displayView.jsp
+			</result>
+			<result name="inputCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/calendarView.jsp
+			</result>
+			<result name="inputTree" type="OBPMdispatcher">
+				/portal/share/dynaform/view/treeView.jsp
+			</result>
+			<result name="inputGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="inputGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="inputMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			
+			<result name="forbid" type="OBPMdispatcher">
+				/portal/share/forbid.jsp
+			</result>
+		</action>
+	</package>
+</struts>

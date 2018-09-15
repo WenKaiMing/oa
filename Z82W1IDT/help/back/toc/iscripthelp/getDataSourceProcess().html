@@ -1,0 +1,70 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+<title>getDataSourceProcess()</title>
+<link type="text/css" rel="stylesheet" rev="stylesheet"
+	href="../style.css" media="all"><script type="text/javascript"
+	src="../scripts/shCore.js"></script> <script type="text/javascript"
+	src="../scripts/shBrushJScript.js"></script>
+<link type="text/css" rel="stylesheet"
+	href="../styles/shCoreDefault.css" />
+<script type="text/javascript">
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.all();
+</script>
+</head>
+<body id="split">
+<a title="" href="../index_iscript_help.jsp">返回</a>
+<div id="content">
+<div rel="jQuery">
+<h2>getDataSourceProcess()</h2>
+<h3>概述</h3>
+<div class="example">
+<p>创建数据源操作对象。 注：数据源操作对象应用需要，软件->高级工具->数据源的支持。首先需要开发者在软件的数据源模块创建数据源。</p>
+<div class="longdesc">
+<p></p>
+</div>
+</div>
+<div>
+<h3>返回值</h3>
+<h4><strong>cn.myapps.core.dynaform.dts.datasource.ejb.DataSourceProcess</strong></h4>
+</div>
+<div>
+<h3>参数</h3>
+</div>
+<div class="example">
+<h3>示例</h3>
+<h4 xmlns="">描述:</h4>
+<p xmlns="">实现getDataSourceProcess()函数的应用，创建指定类对象</p>
+<!--  <h5 xmlns="">HTML 代码:</h5>-->
+<pre xmlns=""></pre>
+<h5 xmlns="">iScript 代码:</h5>
+<pre class="brush: js;" xmlns="">
+//通过数据源操作对象获取系统库下面的当前软件下面的角色
+(function(){
+var opts = createOptions();
+opts.add("","");
+try{
+var process = getDataSourceProcess(); //创建指定类对象
+var appid = getApplication();
+var sql = "select * from t_role where applicationid='"+appid+"'";
+var datas = process.queryDataSourceSQL("kd",sql ,appid);
+if(datas!=null){
+   for(var iterator = datas.iterator();iterator.hasNext();){
+       var map1 = iterator.next();//取值
+       var name= map1.get("name");
+       var value = map1.get("id");
+	   opts.add(name,value);
+	}
+}
+}catch(e){}
+return opts;
+})()
+</pre>
+<!--<h5 xmlns="">结果:</h5>-->
+</div>
+</div>
+</body>
+</html>

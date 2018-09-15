@@ -1,0 +1,45 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<include file="webwork-default.xml" />
+	<package name="weioa-app" extends="myapps-default,json-default"
+		namespace="/saas/weioa/app">
+	 
+	 	<action name="list" class="com.teemlink.saas.weioa.application.action.AppAction"
+			method="doList">
+			<result name="success" type="dispatcher">
+				/saas/weioa/appList.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="candidateList" class="com.teemlink.saas.weioa.application.action.AppAction"
+			method="doCandidateList">
+			<result name="success" type="dispatcher">
+				/saas/weioa/appCandidateList.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="addApp" class="com.teemlink.saas.weioa.application.action.AppAction"
+			method="doAddApp">
+			<result type="json">   
+                <param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+                <param name="excludeProperties">
+                </param>
+           </result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="removeApp" class="com.teemlink.saas.weioa.application.action.AppAction"
+			method="doRemoveApp">
+			<result type="json">   
+                <param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+                <param name="excludeProperties">
+                </param>
+           </result>
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,100 @@
+.con_right {
+    margin: 0px 15px;
+}
+
+
+/*----------content-dashboard---------*/
+
+.dashboard {
+    background-color: #FFFFFF;
+    border: solid 1px #E3E3E3;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 15px
+}
+
+.dashboard #efficiency-list {
+	overflow: auto;
+}
+
+.dashboard .row {
+    margin: 0px
+}
+
+.dashboard .efficiency {
+    border-bottom: solid 1px #e5e5e5
+}
+
+.dashboard .efficiency .col-md-6 {
+    padding: 20px 0;
+}
+
+.dashboard .time {
+    height: 70px;
+}
+
+.dashboard .time label {
+    font-size: 14px;
+    color: #a7a7a7;
+    margin: 27px 10px 0 10px
+}
+
+.dashboard .time .input-group {
+    width: 180px;
+    margin-top: 20px
+}
+
+.dashboard .time .form-control[readonly] {
+    background-color: #FFF;
+    opacity: 1;
+}
+
+.dashboard .form-group {
+    border-bottom: solid 1px #e5e5e5;
+    margin-bottom: 0px
+}
+
+.dashboard .form-group .btn-group {
+    margin: 20px 10px 0 10px
+}
+
+.dashboard .form-group .btn-group #stateselect {
+    height: 34px;
+    background: #fff;
+}
+
+.dashboard .form-group .btn-group #search {
+    height: 34px
+}
+
+.dashboard .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.dashboard .container-fluid #container-body {
+    overflow: overlay;
+}
+
+.dashboard .container-fluid .row {
+    font-size: 14px;
+    color: #a7a7a7;
+    margin: 13px 0;
+    line-height: 160%
+}
+
+.dashboard .container-fluid .row a {
+    color: #a7a7a7
+}
+
+.dashboard .container-fluid .row a:hover {
+    color: #22aae9
+}
+
+.dashboard .container-fluid .row-title {
+    font-size: 16px;
+    color: #606060;
+    height: auto;
+    line-height: 50px;
+    border-bottom: solid 1px #e5e5e5
+}

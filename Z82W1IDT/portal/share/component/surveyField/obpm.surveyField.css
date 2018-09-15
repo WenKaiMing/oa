@@ -1,0 +1,26 @@
+.survyfield_container {}
+
+.question-content{
+	border-bottom: 1px dotted;
+	margin: 10px 0;
+	padding-bottom: 10px;
+}
+.question-content-title{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.question-content-answer{}
+.question-content-answer table{}
+.question-content-answer table tr{}
+.question-content-answer table td{}
+
+.question-content-answer input[type="radio"],
+.question-content-answer input[type="checkbox"]{
+	margin: 0px 5px;
+	vertical-align: middle;
+}
+
+.question-content-answer input[type="text"]{
+	margin: 0px 5px;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="filedownload" extends="myapps-default" namespace="/portal/filedownload">
+        <action name="download" class="cn.myapps.core.filedownload.action.FileDownloadAction" method="doDownload">
+			<result name="success" type="dispatcher">success.jsp</result>
+			<result name="input" type="dispatcher">success.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+    </package>
+</struts>
+
+

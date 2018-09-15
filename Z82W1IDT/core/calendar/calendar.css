@@ -1,0 +1,93 @@
+/* Calendar CSS*/
+
+.WdateDiv {
+	width: 200px;
+	background-color:#fff;
+	border:#C5E1E4 1px solid;
+	padding:2px;
+	font-size: 12px;
+}
+.WdateDiv .WdayTable {	
+	color:#13777e;	
+	border:#BEE9F0 1px solid;
+	width: 200px;
+	/*line-height: 1.8em;*/
+	line-height:22px;
+	font-size: 12px;
+}
+.WdateDiv td,.WdateDiv th{
+	font-size:12;
+	font-size: 12px;
+}
+
+.CalDayHeader{
+	background:url('images/bg_cal_day.jpg')  0 no-repeat;
+	color:black;
+	font-size: 12px;
+	/*padding-bottom:5px;*/
+}
+.CalNextPrev a:link, .CalNextPrev a:visited, .CalNextPrev a:active {
+	font-weight: bold;
+	background-color: white;
+	font-size: 12px;
+}
+.CalNextPrev a:hover {
+	font-weight: bold;
+	background-color: #82CEEB;
+	color:white;
+	font-size: 12px;
+}
+.WdateDiv table a:link, .WdateDiv table a:visited, .WdateDiv table a:active {
+	font-weight: bold;
+	color:#74584B;
+	font-size: 12px;
+}
+.WdateDiv table a:hover {
+	color: white;
+	text-decoration: none;
+	background-color: #FF9900;
+	font-size: 12px;
+}
+
+.WdateDiv .MTitle{
+	color:#13777e;
+	background-color:#bdebee;
+	font-size: 12px;
+}
+
+.Wwday{
+	background:#E7E7f0;	
+	font-size: 12px;
+}
+/* 日期格的样式 TD */
+.Wday{
+	background-color:#edfbfb;
+	cursor:pointer;
+	font-size: 12px;
+}
+.Wtoday{
+	cursor:pointer;
+	background-color:#edfbcc;
+	font-size: 12px;
+}
+.Wspcday{
+	cursor:pointer;
+	background-color:#a0d0f0;
+	font-size: 12px;
+}
+/* 日期格的mouseover样式 TD */
+.WdateDiv .WdayOn{
+	cursor:pointer;
+	background-color:#74d2d9 ;
+	font-size: 12px;
+}
+/* 周末日期格的mouseover样式 TD */
+.WdateDiv .WwdayOn{
+	cursor:pointer;
+	background-color:#74d2d9;
+	font-size: 12px;
+}
+.WdateDiv .Wselday{
+	background-color:#A7E2E7;
+	font-size: 12px;
+}

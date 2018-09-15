@@ -1,0 +1,26 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="admin" extends="myapps-default" namespace="/admin">
+		<action name="login"
+			class="cn.myapps.core.admin.action.LoginAction"
+			method="doLogin">
+			<result name="manage" type="redirect">
+				main.jsp
+			</result>
+			<result name="error" type="dispatcher">
+				login.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				login.jsp
+			</result>
+			<result name="invalid.token">/common/errorpage/invalidtoken.html</result>
+			<interceptor-ref name="token"></interceptor-ref>  
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+
+	
+</struts>

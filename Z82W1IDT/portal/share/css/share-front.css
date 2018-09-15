@@ -1,0 +1,64 @@
+/* default style */ 
+* {
+	font-size: 12px;
+}
+html,body {
+	background-color: #FFFFFF;
+}
+
+body,div,html,form,ul,ol,li,dl,dt,dd,p {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style-type: none;
+}
+
+img {
+	border: none;
+}
+
+/**button-style**/
+.button-class {
+	font-family: Arial, Helvetica;
+	height: 22px;
+	cursor: pointer;
+	border:0px solid #aabac3;
+	vertical-align: middle;
+	line-height: 22px;
+	border-color: transparent;
+	background-color: white;
+}
+
+.backbutton-class {
+	font-family: Arial, Helvetica,;
+	fon-size: auto;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	height: 20px;
+	background-color: #FFFFFF;
+	cursor: hand;
+}
+
+/**user/ selectbyflow.jsp & selectCirculatorByFlow.jsp--start**/
+.crossUL{margin: 0;list-style: none;text-align: center;padding:5px;padding-bottom: 0px;}
+.crossUL li{margin: 0;list-style: none;}
+.crossUL li{font-size: 12px;vertical-align:middle;height: 22px;border: 1px solid white;float: left;background-color: #F7F7F7; color: black;padding: 5px;margin-right: 5px;cursor: pointer;}
+.crossUL li.on{background-color: #e0e0e0;color: black; font-weight: bold;border: 2px solid #e0e0e0;}
+.crossULdiv.on{display: block;border: 1px solid #e0e0e0;border-top: 2px solid #e0e0e0;}
+.contentDiv{width: 508px;clear: left;width:100%;height:92%;}
+.crossULdivleft{background-color: #FFFFEE;float: left;border: 1px solid gray;margin-right: 5px;min-height: 300px;width:43%;height:100%;}
+.leftContent{clear: all;padding-top: 5px;;width: 100%;height: 90%;}
+.crossULdivright{float:right;min-height: 300px;width:55%;height:100%;}
+.crossULdivright_lef{width:49%;height:100%;float: left;border: 1px solid #808080;}
+.crossULdivright_rig{width: 49%;height:100%;float: right;border: 1px solid #808080;}
+.list_div{padding-left: 5px;border-bottom: 1px solid gray;margin-bottom: 5px;cursor: pointer;}
+.selectImg_right{vertical-align: middle;margin-right:5px;visibility: hidden;}
+.selectedUserDiv{height: 100%;padding-left: 25px;padding-bottom: 5px;cursor: pointer;}
+.onSelect{border-bottom: 1px solid gray;margin-top: 5px;cursor: pointer;}
+/**user/ selectbyflow.jsp & selectCirculatorByFlow.jsp--end**/

@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+.button{
+height: 32px;
+text-align: center;
+font-weight: bold;
+font-size: 12px;
+position: relative;
+overflow: hidden;
+width: 80px;
+font-family: NSimSun;
+border-style:none;
+cursor:pointer
+}
+
+//
+进度条样式
+#graphbox {
+	border: 1px solid #e7e7e7;
+	padding: 10px;
+	width: 250px;
+	background-color: #f8f8f8;
+	margin: 5px 0;
+}
+
+#graphbox h2 {
+	color: #666666;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.graph {
+	position: relative;
+	background-color: #F0EFEF;
+	border: 1px solid #cccccc;
+	padding: 2px;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.graph .green {
+	position: relative;
+	text-align: left;
+	color: #ffffff;
+	height: 18px;
+	line-height: 18px;
+	font-family: Arial;
+	display: block;
+}
+
+.graph .green {
+	background-color: #66CC33;
+}
+
+object {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.grid {
+	width: 100%;
+	text-align: center;
+}
+
+.grid tbody tr {
+	line-height: 18px;
+	height: 22px;
+}
+
+.grid tbody td {
+	word-break: break-all;
+	text-align: left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 12px;
+	font-family: NSimSun;
+}
+
+.even {
+	background-color: #FEF8F4;
+}
+
+.over {
+	background-color: #ffc;
+}
+
+.prompt{
+	width:100%;
+	height:200px;
+	line-height:200px;
+	text-align:center;
+	overflow:hidden;
+	font-family:SimHei;
+	font-size:30;
+	color:#dcdbdc
+}
+
+.imageWarning{
+	height: 38px;
+	top: 8px;
+	right: 8px;
+	position: relative;
+}

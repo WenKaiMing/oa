@@ -1,0 +1,408 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #FFFFFF; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: 12px arial, lucida sans unicode, verdana, times new roman, sans-serif; COLOR: #525150; PADDING-TOP: 0px
+}
+A:link {
+	FONT-SIZE: 12px; COLOR: #006666
+}
+A:visited {
+	FONT-SIZE: 12px; COLOR: #006666
+}
+A:hover {
+	COLOR: #fff; BACKGROUND-COLOR: #ce6202; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #fff; BACKGROUND-COLOR: #ce6202; TEXT-DECORATION: none
+}
+A:unknown {
+	COLOR: #fff; BACKGROUND-COLOR: #ce6202; TEXT-DECORATION: none
+}
+H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 14px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #333; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 14px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #333; PADDING-TOP: 0px
+}
+.Upgrade {
+	DISPLAY: none; FONT-WEIGHT: bold
+}
+.clearer {
+	CLEAR: both; FONT-SIZE: 1px; HEIGHT: 1px
+}
+#Container {
+	MARGIN: 0px; WIDTH: 100%
+}
+#Title H1 {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 25px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 30px; MARGIN-BOTTOM: 5px; PADDING-BOTTOM: 0px; MARGIN-LEFT: 40px; COLOR: #fff; PADDING-TOP: 0px
+}
+#Title A:active {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 30px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #fff; BACKGROUND-COLOR: transparent; BORDER-RIGHT-WIDTH: 0px; TEXT-DECORATION: none
+}
+H1 A:link {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 30px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #fff; BACKGROUND-COLOR: transparent; BORDER-RIGHT-WIDTH: 0px; TEXT-DECORATION: none
+}
+H1 A:hover {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 30px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #fff; BACKGROUND-COLOR: transparent; BORDER-RIGHT-WIDTH: 0px; TEXT-DECORATION: none
+}
+H1 A:unknown {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 30px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #fff; BACKGROUND-COLOR: transparent; BORDER-RIGHT-WIDTH: 0px; TEXT-DECORATION: none
+}
+H1 A:visited {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 30px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #fff; BACKGROUND-COLOR: transparent; BORDER-RIGHT-WIDTH: 0px; TEXT-DECORATION: none
+}
+#Subtitle {
+	PADDING-RIGHT: 14px; BORDER-TOP: #033026 3px solid; PADDING-LEFT: 40px; FONT-SIZE: medium; PADDING-BOTTOM: 2px; COLOR: #fff; PADDING-TOP: 0px; BACKGROUND-COLOR: #ce6202
+}
+#Subtitle A:link {
+	COLOR: #d9d7b2; TEXT-DECORATION: none
+}
+#Subtitle A:visited {
+	COLOR: #d9d7b2; TEXT-DECORATION: none
+}
+#Subtitle A:hover {
+	COLOR: #d9d7b2; TEXT-DECORATION: none
+}
+#Subtitle A:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #f90; TEXT-DECORATION: underline
+}
+#Subtitle A:active {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #f90; TEXT-DECORATION: underline
+}
+#Subcontainer {
+	PADDING-BOTTOM: 10px; PADDING-TOP: 10px; BACKGROUND-COLOR: #fff; TEXT-ALIGN: left
+}
+#Content {
+	FLOAT: left; MARGIN-LEFT: 2%; OVERFLOW: hidden; WIDTH: 70%; MARGIN-RIGHT: 3%; BACKGROUND-COLOR: #fff
+}
+#Content H2 {
+	MARGIN: 20px 0px 10px; COLOR: #000
+}
+.date {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px
+}
+.footer {
+	PADDING-BOTTOM: 1em; FONT: 12px "", Arial, Tahoma; BORDER-BOTTOM: #d4d0cd 1px solid
+}
+#Nextpost {
+	TEXT-ALIGN: center
+}
+.commentposterinfo {
+	FONT-WEIGHT: bold; MARGIN-BOTTOM: 1em
+}
+H3.commentheader {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #b8b2ac
+}
+.reply {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px
+}
+DIV.commenttext {
+	MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 1em; BORDER-BOTTOM: #d4d0cd 1px solid
+}
+FIELDSET {
+	BORDER-RIGHT: #d4d0cd 2px solid; BORDER-TOP: #d4d0cd 2px solid; MARGIN-TOP: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; BORDER-LEFT: #d4d0cd 2px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #d4d0cd 2px solid
+}
+LEGEND {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; COLOR: #525150; PADDING-TOP: 2px; BACKGROUND-COLOR: #ffffff
+}
+LABEL {
+	CLEAR: both; FLOAT: left
+}
+#CommentForm INPUT {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px
+}
+#Submit {
+	MARGIN-TOP: 8px; MARGIN-BOTTOM: 8px; MARGIN-LEFT: 6em
+}
+#CommentForm TEXTAREA {
+	MARGIN-TOP: 8px; MARGIN-BOTTOM: 0px
+}
+#Menu {
+	FONT-SIZE: 12px; FLOAT: right; WIDTH: 23%; BACKGROUND-COLOR: #fff; TEXT-ALIGN: left
+}
+#Search FORM {
+	MARGIN: 5px 0px
+}
+#Calendar {
+	PADDING-RIGHT: 10px; MARGIN-TOP: 1px; PADDING-LEFT: 10px; FONT-SIZE: 12px; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 1px; BORDER-LEFT: #d4d0cd 6px solid; WIDTH: 86%; PADDING-TOP: 1px; BACKGROUND-COLOR: #f0efee
+}
+#Search {
+	PADDING-RIGHT: 10px; MARGIN-TOP: 1px; PADDING-LEFT: 10px; FONT-SIZE: 12px; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 1px; BORDER-LEFT: #d4d0cd 6px solid; WIDTH: 86%; PADDING-TOP: 1px; BACKGROUND-COLOR: #f0efee
+}
+#myself {
+	PADDING-RIGHT: 10px; MARGIN-TOP: 1px; PADDING-LEFT: 10px; FONT-SIZE: 12px; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 1px; BORDER-LEFT: #d4d0cd 6px solid; WIDTH: 86%; PADDING-TOP: 1px; BACKGROUND-COLOR: #f0efee
+}
+#myself A:hover {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: #f0efee; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; TEXT-DECORATION: none
+}
+#calendar {
+	TEXT-ALIGN: left
+}
+.calMonthToday {
+	BACKGROUND-COLOR: #d4d0cd
+}
+#Menu H2 {
+	PADDING-RIGHT: 10px; MARGIN-TOP: 10px; DISPLAY: block; PADDING-LEFT: 10px; FONT-SIZE: 12px; PADDING-BOTTOM: 1px; BORDER-LEFT: #004040 6px solid; WIDTH: 86%; COLOR: #fff; PADDING-TOP: 1px; BACKGROUND-COLOR: #006666
+}
+H5 {
+	FONT-SIZE: 12px
+}
+#Categories UL {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 0px; MARGIN-LEFT: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#Syndicate UL {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 0px; MARGIN-LEFT: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#Recently UL {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 0px; MARGIN-LEFT: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#Sections UL {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 0px; MARGIN-LEFT: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#Categories A {
+	PADDING-RIGHT: 10px; MARGIN-TOP: 1px; DISPLAY: block; PADDING-LEFT: 10px; PADDING-BOTTOM: 1px; BORDER-LEFT: #d4d0cd 6px solid; WIDTH: 86%; PADDING-TOP: 1px; BACKGROUND-COLOR: #f0efee; TEXT-DECORATION: none
+}
+#Syndicate A {
+	PADDING-RIGHT: 10px; MARGIN-TOP: 1px; DISPLAY: block; PADDING-LEFT: 10px; PADDING-BOTTOM: 1px; BORDER-LEFT: #d4d0cd 6px solid; WIDTH: 86%; PADDING-TOP: 1px; BACKGROUND-COLOR: #f0efee; TEXT-DECORATION: none
+}
+#Recently A {
+	PADDING-RIGHT: 10px; MARGIN-TOP: 1px; DISPLAY: block; PADDING-LEFT: 10px; PADDING-BOTTOM: 1px; BORDER-LEFT: #d4d0cd 6px solid; WIDTH: 86%; PADDING-TOP: 1px; BACKGROUND-COLOR: #f0efee; TEXT-DECORATION: none
+}
+#Sections A {
+	PADDING-RIGHT: 10px; MARGIN-TOP: 1px; DISPLAY: block; PADDING-LEFT: 10px; PADDING-BOTTOM: 1px; BORDER-LEFT: #d4d0cd 6px solid; WIDTH: 86%; PADDING-TOP: 1px; BACKGROUND-COLOR: #f0efee; TEXT-DECORATION: none
+}
+#Categories A:hover {
+	BORDER-LEFT-COLOR: #875222; BORDER-BOTTOM-COLOR: #875222; BORDER-TOP-COLOR: #875222; BACKGROUND-COLOR: #ce6202; BORDER-RIGHT-COLOR: #875222
+}
+#Syndicate A:hover {
+	BORDER-LEFT-COLOR: #875222; BORDER-BOTTOM-COLOR: #875222; BORDER-TOP-COLOR: #875222; BACKGROUND-COLOR: #ce6202; BORDER-RIGHT-COLOR: #875222
+}
+#Recently A:hover {
+	BORDER-LEFT-COLOR: #875222; BORDER-BOTTOM-COLOR: #875222; BORDER-TOP-COLOR: #875222; BACKGROUND-COLOR: #ce6202; BORDER-RIGHT-COLOR: #875222
+}
+#Sections A:hover {
+	BORDER-LEFT-COLOR: #875222; BORDER-BOTTOM-COLOR: #875222; BORDER-TOP-COLOR: #875222; BACKGROUND-COLOR: #ce6202; BORDER-RIGHT-COLOR: #875222
+}
+#Categories A:unknown {
+	BORDER-LEFT-COLOR: #875222; BORDER-BOTTOM-COLOR: #875222; BORDER-TOP-COLOR: #875222; BACKGROUND-COLOR: #ce6202; BORDER-RIGHT-COLOR: #875222
+}
+#Syndicate A:unknown {
+	BORDER-LEFT-COLOR: #875222; BORDER-BOTTOM-COLOR: #875222; BORDER-TOP-COLOR: #875222; BACKGROUND-COLOR: #ce6202; BORDER-RIGHT-COLOR: #875222
+}
+#Recently A:unknown {
+	BORDER-LEFT-COLOR: #875222; BORDER-BOTTOM-COLOR: #875222; BORDER-TOP-COLOR: #875222; BACKGROUND-COLOR: #ce6202; BORDER-RIGHT-COLOR: #875222
+}
+#Links A:unknown {
+	BORDER-LEFT-COLOR: #875222; BORDER-BOTTOM-COLOR: #875222; BORDER-TOP-COLOR: #875222; BACKGROUND-COLOR: #ce6202; BORDER-RIGHT-COLOR: #875222
+}
+#Categories A:active {
+	BORDER-LEFT-COLOR: #875222; BORDER-BOTTOM-COLOR: #875222; BORDER-TOP-COLOR: #875222; BACKGROUND-COLOR: #ce6202; BORDER-RIGHT-COLOR: #875222
+}
+#Syndicate A:active {
+	BORDER-LEFT-COLOR: #875222; BORDER-BOTTOM-COLOR: #875222; BORDER-TOP-COLOR: #875222; BACKGROUND-COLOR: #ce6202; BORDER-RIGHT-COLOR: #875222
+}
+#Recently A:active {
+	BORDER-LEFT-COLOR: #875222; BORDER-BOTTOM-COLOR: #875222; BORDER-TOP-COLOR: #875222; BACKGROUND-COLOR: #ce6202; BORDER-RIGHT-COLOR: #875222
+}
+#Sections A:active {
+	BORDER-LEFT-COLOR: #875222; BORDER-BOTTOM-COLOR: #875222; BORDER-TOP-COLOR: #875222; BACKGROUND-COLOR: #ce6202; BORDER-RIGHT-COLOR: #875222
+}
+#Bottommenu {
+	CLEAR: both; PADDING-RIGHT: 15px; PADDING-LEFT: 15px; PADDING-BOTTOM: 3px; COLOR: #fff; PADDING-TOP: 3px; BACKGROUND-COLOR: #004040
+}
+#Bottom {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: 11px Tahoma, Arial, Verdana; COLOR: #fff; PADDING-TOP: 3px; TEXT-ALIGN: center
+}
+#Bottommenu A {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #fff; BORDER-RIGHT-WIDTH: 0px; TEXT-DECORATION: none
+}
+#Bottommenu A:link {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #fff; BORDER-RIGHT-WIDTH: 0px; TEXT-DECORATION: none
+}
+#Bottommenu A:visited {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #fff; BORDER-RIGHT-WIDTH: 0px; TEXT-DECORATION: none
+}
+#Bottom A {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #fff; BORDER-RIGHT-WIDTH: 0px; TEXT-DECORATION: none
+}
+#Bottom A:link {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #fff; BORDER-RIGHT-WIDTH: 0px; TEXT-DECORATION: none
+}
+#Bottom A:visited {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #fff; BORDER-RIGHT-WIDTH: 0px; TEXT-DECORATION: none
+}
+#Bottommenu A:active {
+	COLOR: #fff; BACKGROUND-COLOR: transparent; TEXT-DECORATION: underline
+}
+#Bottommenu A:unknown {
+	COLOR: #fff; BACKGROUND-COLOR: transparent; TEXT-DECORATION: underline
+}
+#Bottommenu A:hover {
+	COLOR: #fff; BACKGROUND-COLOR: transparent; TEXT-DECORATION: underline
+}
+#Bottom A:active {
+	COLOR: #fff; BACKGROUND-COLOR: transparent; TEXT-DECORATION: underline
+}
+#Bottom A:unknown {
+	COLOR: #fff; BACKGROUND-COLOR: transparent; TEXT-DECORATION: underline
+}
+#Bottom A:hover {
+	COLOR: #fff; BACKGROUND-COLOR: transparent; TEXT-DECORATION: underline
+}
+DIV.album {
+	FLOAT: left; MARGIN-BOTTOM: 20px; WIDTH: 150px; TEXT-ALIGN: center
+}
+.album P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 150px; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+A IMG {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+#album A:link {
+	COLOR: #006666
+}
+#album A:visited {
+	COLOR: #ce6202
+}
+#album A:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #006666
+}
+#album A:active {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #006666
+}
+#album A:unknown {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #006666
+}
+H4 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 1em 0px 0px; PADDING-TOP: 0px
+}
+DL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DT {
+	FONT-WEIGHT: bold; FLOAT: left
+}
+DD {
+	PADDING-LEFT: 4em
+}
+#about {
+	MARGIN-TOP: 10px; FONT-SIZE: 12px; MARGIN-BOTTOM: 10px; MARGIN-LEFT: 40px; COLOR: #fff
+}
+CODE {
+	PADDING-RIGHT: 5px; DISPLAY: block; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; FONT: 12px Tahoma, Arial, Verdana, Sans-serif; PADDING-TOP: 5px
+}
+#Subtitle {
+	PADDING-RIGHT: 14px; PADDING-LEFT: 14px; FONT-SIZE: 11px; PADDING-BOTTOM: 2px; COLOR: #fff; PADDING-TOP: 2px; BACKGROUND-COLOR: #f73c17
+}
+.alignright {
+	FLOAT: right
+}
+.alignleft {
+	FLOAT: left
+}
+#drop-case:first-letter {
+	BORDER-RIGHT: #f73c17 2px dotted; PADDING-RIGHT: 2px; BORDER-TOP: #f73c17 2px dotted; PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 170%; FLOAT: left; PADDING-BOTTOM: 2px; MARGIN: 0px 3px 3px 0px; BORDER-LEFT: #f73c17 2px dotted; PADDING-TOP: 2px; BORDER-BOTTOM: #f73c17 2px dotted
+}
+.aimage {
+	VERTICAL-ALIGN: text-bottom
+}
+.editor {
+	WIDTH: 417px
+}
+.editors {
+	MARGIN: 0px 0px -7px; WIDTH: 417px
+}
+.editor SELECT {
+	WIDTH: 55px
+}
+.commentarea {
+	FONT-SIZE: 12px; WIDTH: 415px
+}
+.commentareas {
+	FONT-SIZE: 12px; MARGIN: 0px 0px -7px; WIDTH: 415px
+}
+#guestinfo {
+	MARGIN-BOTTOM: 10px; COLOR: #666
+}
+#guestinfo OL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 20px; PADDING-TOP: 0px
+}
+#guestinfo OL LI {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; MARGIN: 10px 0px; PADDING-TOP: 5px; BORDER-BOTTOM: #e4e4e4 1px solid; LIST-STYLE-TYPE: none
+}
+#guestinfo OL LI.alt {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#message {
+	MARGIN-TOP: 15px; FONT-SIZE: 13px
+}
+.message {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: 12px Arial, Tahoma, Sans-serif; COLOR: #000; PADDING-TOP: 0px
+}
+#guestinfo SMALL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #999; PADDING-TOP: 0px
+}
+H2#respond {
+	FONT-SIZE: 13px; MARGIN: 25px 0px 0px; PADDING-TOP: 20px
+}
+.posttext {
+	FONT-WEIGHT: normal; FONT-SIZE: 13px; COLOR: #333; FONT-FAMILY: verdana, arial, sans-serif
+}
+.posttext IMG {
+	max-width: 100%
+}
+.commons UL {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 0px; MARGIN-LEFT: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.commons UL LI {
+	PADDING-RIGHT: 10px; MARGIN-TOP: 1px; DISPLAY: block; PADDING-LEFT: 10px; PADDING-BOTTOM: 1px; BORDER-LEFT: #d4d0cd 6px solid; WIDTH: 86%; PADDING-TOP: 1px; BACKGROUND-COLOR: #f0efee; TEXT-DECORATION: none
+}
+DIV.comment_outline_1 {
+	BORDER-TOP: #ccc 1px solid; MARGIN: 5px 0px
+}
+DIV.comment_title_1 {
+	FONT-SIZE: 11px; BACKGROUND: #ccc; WIDTH: 15px; COLOR: #fff; HEIGHT: 15px; TEXT-ALIGN: center
+}
+.comments_post_1 {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #666; FONT-FAMILY: verdana, arial, sans-serif; TEXT-ALIGN: left
+}
+DIV.comment_outline_2 {
+	MARGIN-TOP: 5px; MARGIN-LEFT: 3%; BORDER-LEFT: #f1f1f1 1px solid
+}
+DIV.comment_outline_3 {
+	MARGIN-TOP: 5px; MARGIN-LEFT: 3%; BORDER-LEFT: #f1f1f1 1px solid
+}
+DIV.comment_title_2 {
+	FONT-SIZE: 11px; BACKGROUND: #f1f1f1; WIDTH: 15px; COLOR: #333; HEIGHT: 15px; TEXT-ALIGN: center
+}
+DIV.comment_title_3 {
+	FONT-SIZE: 11px; BACKGROUND: #f1f1f1; WIDTH: 15px; COLOR: #333; HEIGHT: 15px; TEXT-ALIGN: center
+}
+.comments_post_2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #666; TEXT-ALIGN: left
+}
+.comments_post_3 {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #666; TEXT-ALIGN: left
+}
+.comment_content_space {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; PADDING-BOTTOM: 2px; COLOR: #000; PADDING-TOP: 2px
+}
+.comment_content_space P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; COLOR: #000; PADDING-TOP: 0px
+}
+.username {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #333
+}
+.username A:link {
+	COLOR: #333; TEXT-DECORATION: underline
+}
+.username A:visited {
+	COLOR: #333; TEXT-DECORATION: underline
+}
+.username A:hover {
+	COLOR: #999
+}
+.UserPicture {
+	BORDER-RIGHT: #d4d0cd 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #d4d0cd 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 5px 10px 10px 6px; BORDER-LEFT: #d4d0cd 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #d4d0cd 1px solid; BACKGROUND-COLOR: #fff
+}
+CODE {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #ccc 1px solid; DISPLAY: block; PADDING-LEFT: 21px; FONT-SIZE: 8pt; BACKGROUND: url(/imgs/Code_BG.gif) #f0f0f0 repeat-y left top; PADDING-BOTTOM: 10px; OVERFLOW: auto; BORDER-LEFT: #ccc 1px solid; LINE-HEIGHT: 1.2em; PADDING-TOP: 10px; BORDER-BOTTOM: #ccc 1px solid; FONT-FAMILY: Courier New; max-height: 500px
+}

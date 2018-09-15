@@ -1,0 +1,29 @@
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<include file="webwork-default.xml" />
+	<package name="baike_Reason" extends="myapps-default"
+		namespace="/km/baike/reason">
+		
+		<action name="doSave"
+			class="cn.myapps.km.baike.reason.action.RejectReasonAction"
+			method="doSave">
+			<result name="success" type="dispatcher"></result>
+			<interceptor-ref name="params" />
+		</action>
+	
+		<!-- 遍历词条内容,查找包含关键字的词条 -->
+		<action name="queryAllReason"
+			class="cn.myapps.km.baike.reason.action.RejectReasonAction" method="doQueryAllReason">
+			<result name="success" type="dispatcher">
+			/km/baike/entry/moreReason.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+	
+	</package>
+</struts>

@@ -1,0 +1,32 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- document package -->
+	<package name="notification-front" extends="myapps-default"
+		namespace="/portal/notification">
+
+		<interceptors>
+			<interceptor-stack name="basicStack">
+				<interceptor-ref name="params" />
+				<interceptor-ref name="prepare" />
+			</interceptor-stack>
+
+
+			<interceptor-stack name="validationWorkflowStack">
+				<interceptor-ref name="basicStack" />
+				<interceptor-ref name="validation" />
+				<interceptor-ref name="workflow" />
+			</interceptor-stack>
+		</interceptors>
+
+		<action name="newMessageCount"
+			class="cn.myapps.notifications.action.NotificationAction"
+			method="doGetNewMessageCount">
+			<interceptor-ref name="params" />
+		</action>
+		
+		
+		
+	</package>
+</struts>

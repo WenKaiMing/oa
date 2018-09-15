@@ -1,0 +1,86 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="exp" extends="myapps-default" namespace="/core/expimp/exp">
+
+		<action name="start" class="cn.myapps.core.expimp.exp.action.ExpAction"
+			method="doStart">
+			<result name="success" type="dispatcher">
+				step1_exporttype.jsp
+			</result>
+			<interceptor-ref name="scope">
+				<param name="key">export</param>
+				<param name="type">start</param>
+				<param name="session">applicationid,moduleid,exportType</param>
+			</interceptor-ref>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="next" class="cn.myapps.core.expimp.exp.action.ExpAction"
+			method="doNext">
+			<result name="success" type="dispatcher">
+				step2_elementlist.jsp  
+			</result>
+
+			<interceptor-ref name="scope">
+				<param name="key">export</param>
+				<param name="session">applicationid,moduleid,exportType</param>
+			</interceptor-ref>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="backToStep1" class="cn.myapps.core.expimp.exp.action.ExpAction"
+			method="doBack">
+			<result name="success" type="dispatcher">
+				step1_exporttype.jsp
+			</result>
+
+			<interceptor-ref name="scope">
+				<param name="key">export</param>
+				<param name="session">applicationid,moduleid,exportType</param>
+			</interceptor-ref>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="step1exp" class="cn.myapps.core.expimp.exp.action.ExpAction"
+			method="doExp">
+			<result name="input" type="dispatcher">
+				step1_exporttype.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				step1_exporttype.jsp
+			</result>
+
+			<interceptor-ref name="scope">
+				<param name="key">export</param>
+				<param name="session">applicationid,moduleid,exportType</param>
+			</interceptor-ref>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="step2exp" class="cn.myapps.core.expimp.exp.action.ExpAction"
+			method="doExp">
+			<result name="input" type="dispatcher">
+				step2_elementlist.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				step2_elementlist.jsp
+			</result>
+
+			<interceptor-ref name="scope">
+				<param name="key">export</param>
+				<param name="session">applicationid,moduleid,exportType</param>
+			</interceptor-ref>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="download" class="cn.myapps.core.expimp.exp.action.ExpAction"
+			method="doDownload">
+
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+</struts>

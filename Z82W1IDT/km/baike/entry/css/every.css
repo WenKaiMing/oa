@@ -1,0 +1,110 @@
+@CHARSET "UTF-8";
+@IMPORT url("css/style.css");
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.section_div{
+		margin-top:10px;
+		border:1px solid #ccc;		
+		height: 210px;
+		width: 49%;
+		float: left;
+	}
+	.section{
+		width: 100%;
+		height: 10%
+	}
+
+	.section_font{
+		font-size: large;
+		font-style: inherit;
+		font-family:黑体,arial,sans-serif;
+		margin-right: 170px;
+	}
+	.more{
+		float:right;
+		color: #0080FF ;
+		font-size: 15px;
+		font-style: oblique;
+		margin-right: 10px;
+	}
+	.t2{
+		background-color: #8E8E8E ;
+	}
+	tr{
+		font-size: 15px;
+		font-style:  inherit, ;
+		color: black;
+		
+	}
+	#table{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		
+	}
+	.table{
+		font-style:normal ;
+		border:1px solid #ADADAD;
+		color: #0080FF ;
+		font-family:黑体,arial,sans-serif;
+		width: 100%;
+		height: 85%;
+		word-break: keep-all;
+		table-layout:fixed;
+		border: 0;
+		
+	}
+	.h3{
+		color:#FFFFFF ;
+		align:"center";
+		font-family:黑体,arial,sans-serif;
+		/*background-color: #ECECEC;*/
+	}
+	.h5{
+		font-family:黑体,arial,sans-serif;
+	
+	}
+	.h6{
+		
+		font-family:黑体,arial,sans-serif;
+	}
+	#con{
+		text-align:left;
+		width:1170px;
+		margin-bottom: 35px;
+		margin-right:40px;
+		margin-left:40px;
+	}
+	#createEntry{
+		padding-top:13px;
+		padding-left:20px;
+		font-size:18px;
+		float:right;
+	}
+	.bgpagLn{
+		float:left;
+		margin-top: 20px;
+		padding-top: 20px;
+		width: 100%;
+	}
+	
+	.table .t_content:hover{
+	background: #CCC;
+		
+	}
+	
+	
+	a:link{
+			text-decoration: none;
+			color: #0000C6;
+		}
+		a:visited{
+			text-decoration: none;
+			color: #750000;
+		}
+		a:hover{
+			color:#0000C6;
+		}

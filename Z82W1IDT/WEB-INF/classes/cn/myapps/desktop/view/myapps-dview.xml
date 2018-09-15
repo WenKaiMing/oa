@@ -1,0 +1,59 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- view package -->
+	<package name="myapps-dview" extends="myapps-default"
+		namespace="/core/sysconfig/desktop/view">
+		<action name="displaySearchForm"
+			class="cn.myapps.desktop.view.DViewAction"
+			method="doDisplaySearchForm">
+			<result name="success" type="dispatcher">
+				/core/sysconfig/desktop/xml.jsp
+			</result>
+			<result name="error" type="dispatcher">
+				/core/sysconfig/desktop/error.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				/core/sysconfig/desktop/error.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="displayView"
+			class="cn.myapps.desktop.view.DViewAction"
+			method="doDisplayView">
+			<result name="success" type="dispatcher">
+				/core/sysconfig/desktop/xml.jsp
+			</result>
+			<result name="error" type="dispatcher">
+				/core/sysconfig/desktop/error.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				/core/sysconfig/desktop/error.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="dialogView"
+			class="cn.myapps.desktop.view.DViewAction"
+			method="doDialogView">
+			<result name="success" type="dispatcher">
+				/core/sysconfig/desktop/xml.jsp
+			</result>
+			<result name="error" type="dispatcher">
+				/core/sysconfig/desktop/error.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				/core/sysconfig/desktop/error.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		
+	</package>
+
+
+</struts>

@@ -1,0 +1,94 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<include file="webwork-default.xml" />
+	<package name="app-contacts" extends="myapps-default,json-default"
+		namespace="/runtime/app/contacts">
+		
+		<action name="tree"
+			class="cn.myapps.runtime.mobile.contacts.action.ContactsAction" method="getContactsTree">
+			<result type="json">   
+                <param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+                <param name="excludeProperties">
+                </param>
+           </result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="getContactsAndDeptsBySearch"
+			class="cn.myapps.runtime.mobile.contacts.action.ContactsAction" method="getContactsAndDeptsBySearch">
+			<result type="json">   
+                <param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+                <param name="excludeProperties">
+                </param>
+           </result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="getContactsBySearch"
+			class="cn.myapps.runtime.mobile.contacts.action.ContactsAction" method="getContactsBySearch">
+			<result type="json">   
+                <param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+                <param name="excludeProperties">
+                </param>
+           </result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="getDepartmentsBySearch"
+			class="cn.myapps.runtime.mobile.contacts.action.ContactsAction" method="getDepartmentsBySearch">
+			<result type="json">   
+                <param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+                <param name="excludeProperties">
+                </param>
+           </result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="getFavoriteContacts"
+			class="cn.myapps.runtime.mobile.contacts.action.ContactsAction" method="getFavoriteContacts">
+			<result type="json">   
+                <param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+                <param name="excludeProperties">
+                </param>
+           </result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="addFavoriteContact"
+			class="cn.myapps.runtime.mobile.contacts.action.ContactsAction" method="addFavoriteContact">
+			<result type="json">   
+                <param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+                <param name="excludeProperties">
+                </param>
+           </result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="removeFavoriteContact"
+			class="cn.myapps.runtime.mobile.contacts.action.ContactsAction" method="removeFavoriteContact">
+			<result type="json">   
+                <param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+                <param name="excludeProperties">
+                </param>
+           </result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+	</package>
+</struts>

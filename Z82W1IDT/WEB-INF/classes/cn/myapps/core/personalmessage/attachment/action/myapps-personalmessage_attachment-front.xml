@@ -1,0 +1,28 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<!-- domain package -->
+	<package name="myapps-personalmessage_attachment-front" extends="myapps-default"
+		namespace="/portal/personalmessage/attachment">
+		
+		<action name="delete"
+			class="cn.myapps.core.personalmessage.attachment.action.AttachmentAction"
+			method="doDelete">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+			<result name="success" type="chain"></result>
+			<result name="input" type="chain"></result>
+		</action>
+
+		<action name="download"
+			class="cn.myapps.core.personalmessage.attachment.action.AttachmentAction"
+			method="doDownload">
+			<interceptor-ref name="chain" />
+			<interceptor-ref name="basicStack" />
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+		 
+	</package>
+</struts>

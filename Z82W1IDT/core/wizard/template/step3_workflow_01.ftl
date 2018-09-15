@@ -1,0 +1,126 @@
+<cn.myapps.core.workflow.element.FlowDiagram>
+<ACTION_NORMAL>0</ACTION_NORMAL>
+<ACTION_REMOVE>1</ACTION_REMOVE>
+<ACTION_ADD_ABORTNODE>16</ACTION_ADD_ABORTNODE>
+<ACTION_ADD_AUTONODE>17</ACTION_ADD_AUTONODE>
+<ACTION_ADD_COMPLETENODE>18</ACTION_ADD_COMPLETENODE>
+<ACTION_ADD_MANUALNODE>19</ACTION_ADD_MANUALNODE>
+<ACTION_ADD_STARTNODE>20</ACTION_ADD_STARTNODE>
+<ACTION_ADD_SUSPENDNODE>21</ACTION_ADD_SUSPENDNODE>
+<ACTION_ADD_TERMINATENODE>22</ACTION_ADD_TERMINATENODE>
+<ACTION_ADD_RELATION>4096</ACTION_ADD_RELATION>
+<ACTION_EDIT_NODE>268435472</ACTION_EDIT_NODE>
+<ACTION_EDIT_RELATION>268439552</ACTION_EDIT_RELATION>
+<ACTION_BREAK_LINE>1048576</ACTION_BREAK_LINE>
+<flowstatus>16</flowstatus>
+<flowpath></flowpath>
+<deleteMSG>null</deleteMSG>
+<width>2048</width>
+<height>1536</height>
+<_applicationid>null</_applicationid>
+<_sessionid>null</_sessionid>
+<TOP_ALIGNMENT>0.0</TOP_ALIGNMENT>
+<CENTER_ALIGNMENT>0.5</CENTER_ALIGNMENT>
+<BOTTOM_ALIGNMENT>1.0</BOTTOM_ALIGNMENT>
+<LEFT_ALIGNMENT>0.0</LEFT_ALIGNMENT>
+<RIGHT_ALIGNMENT>1.0</RIGHT_ALIGNMENT>
+<WIDTH>1</WIDTH>
+<HEIGHT>2</HEIGHT>
+<PROPERTIES>4</PROPERTIES>
+<SOMEBITS>8</SOMEBITS>
+<FRAMEBITS>16</FRAMEBITS>
+<ALLBITS>32</ALLBITS>
+<ERROR>64</ERROR>
+<ABORT>128</ABORT>
+<cn.myapps.core.workflow.element.StartNode>
+<prenodeid></prenodeid>
+<statelabel>Start</statelabel>
+<backnodeid></backnodeid>
+<formname></formname>
+<fieldpermlist></fieldpermlist>
+<isstartandnext>false</isstartandnext>
+<x>28</x>
+<y>88</y>
+<width>46</width>
+<height>55</height>
+<_iscurrent>false</_iscurrent>
+<scale>0</scale>
+<name>Start</name>
+<note></note>
+<id>1203565260290</id>
+</cn.myapps.core.workflow.element.StartNode>
+<#list nodeInfo as n>
+	<cn.myapps.core.workflow.element.ManualNode>
+	<namelist>${n.nodeRole}</namelist>
+	<realnamelist></realnamelist>
+	<passcondition>0</passcondition>
+	<exceedaction>0</exceedaction>
+	<actorListScript></actorListScript>
+	<actorEditMode>0</actorEditMode>
+	<issetcurruser>false</issetcurruser>
+	<inputform></inputform>
+	<isgather>false</isgather>
+	<issplit>false</issplit>
+	<prenodeid></prenodeid>
+	<statelabel><#if n_index==0>Draft<#else>Running</#if></statelabel>
+	<backnodeid></backnodeid>
+	<formname></formname>
+	<notificationStrategyJSON>{}</notificationStrategyJSON>
+	<PASS_CONDITION_OR>0</PASS_CONDITION_OR>
+	<PASS_CONDITION_AND>1</PASS_CONDITION_AND>
+	<PASS_CONDITION_ORDERLY_AND>2</PASS_CONDITION_ORDERLY_AND>
+	<ACTOR_EDIT_MODE_DESIGN>0</ACTOR_EDIT_MODE_DESIGN>
+	<ACTOR_EDIT_MODE_CODE>1</ACTOR_EDIT_MODE_CODE>
+	<fieldpermlist></fieldpermlist>
+	<isstartandnext>false</isstartandnext>
+	<x>${(n_index+1)*130+28}</x>
+	<y>98</y>
+	<width>46</width>
+	<height>55</height>
+	<_iscurrent>false</_iscurrent>
+	<scale>0</scale>
+	<name>${n.nodeName}</name>
+	<note></note>
+	<id>120356526029${n_index+1}</id>
+	</cn.myapps.core.workflow.element.ManualNode>
+</#list>
+<#list 1..4 as i>
+	<cn.myapps.core.workflow.element.Relation>
+	<state></state>
+	<startnodeid>120356526029${i_index}</startnodeid>
+	<endnodeid>120356526029${i_index+1}</endnodeid>
+	<ispassed>false</ispassed>
+	<isreturn>false</isreturn>
+	<condition></condition>
+	<filtercondition></filtercondition>
+	<editMode></editMode>
+	<processDescription></processDescription>
+	<action></action>
+	<pointstack>98;${(i_index)*130+28};${(i_index+1)*130+28};98</pointstack>
+	<EDITMODE_VIEW>00</EDITMODE_VIEW>
+	<EDITMODE_CODE>01</EDITMODE_CODE>
+	<validateScript></validateScript>
+	<scale>0</scale>
+	<name></name>
+	<note></note>
+	<id>120356526029${i_index+5}</id>
+	</cn.myapps.core.workflow.element.Relation>
+</#list>	
+<cn.myapps.core.workflow.element.CompleteNode>
+<prenodeid></prenodeid>
+<statelabel>Finished</statelabel>
+<backnodeid></backnodeid>
+<formname></formname>
+<fieldpermlist></fieldpermlist>
+<isstartandnext>false</isstartandnext>
+<x>548</x>
+<y>98</y>
+<width>46</width>
+<height>55</height>
+<_iscurrent>false</_iscurrent>
+<scale>0</scale>
+<name>Finished</name>
+<note></note>
+<id>1203565260294</id>
+</cn.myapps.core.workflow.element.CompleteNode>
+</cn.myapps.core.workflow.element.FlowDiagram>

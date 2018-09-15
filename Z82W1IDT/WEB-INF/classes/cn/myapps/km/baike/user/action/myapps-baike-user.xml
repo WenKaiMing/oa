@@ -1,0 +1,212 @@
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="baike_user" extends="myapps-default" namespace="/km/baike/center">
+	
+		<!-- 个人中心 -->
+		<action name="doGetMyInfo"  class="cn.myapps.km.baike.entry.action.EntryAction" method="doFindByBUserId">
+			<result name="success" type="dispatcher">
+				/km/baike/center/myCenter.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		
+		<!-- 词条贡献 已通过版本 -->
+		<action name="doGetMyContribution"  class="cn.myapps.km.baike.user.action.BUserEntrySetAction" method="doQueryByAuthor">
+			<result name="success" type="dispatcher">
+				/km/baike/center/myContribution.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+	
+		
+		
+		<!-- 词条贡献 未通过版本 -->
+		<action name="doNotThroughVersion"  class="cn.myapps.km.baike.user.action.BUserEntrySetAction" method="doNotThroughVersion">
+			<result name="success" type="dispatcher">
+				/km/baike/center/myContribution.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+	
+		<!-- 我的收藏数据集合 -->
+		<action name="doGetMyFavorites"  class="cn.myapps.km.baike.user.action.BUserEntrySetAction" method="doGetPersonalFavorites">
+			<result name="success" type="dispatcher">
+				/km/baike/center/myFavarite.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+	
+		<!-- 我的分享 数据集合-->
+		<action name="doGetMyShares"  class="cn.myapps.km.baike.user.action.BUserEntrySetAction" method="doGetPersonalShares">
+			<result name="success" type="dispatcher">
+				/km/baike/center/myShare.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 我的词条  -->
+		<action name="doGetMyEntry"  class="cn.myapps.km.baike.entry.action.EntryAction" method="doGetMyEntry">
+			<result name="success" type="dispatcher">
+				/km/baike/center/myEntry.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		
+		<!-- 我的草稿箱  里面的方法-->
+		<action name="doGetMyDraft"  class="cn.myapps.km.baike.entry.action.EntryAction" method="doGetMyDraft">
+				<result name="success" type="dispatcher">
+					/km/baike/center/myDrafts.jsp
+				</result> 
+				<interceptor-ref name="params" />
+				<interceptor-ref name="chain" />
+		</action>
+		
+		  <!--获取管理页面 -->
+		<action name="doGetMyManager"
+		class="cn.myapps.km.baike.entry.action.EntryAction"
+		method="doGetAllEntry">
+		<result name="success" type="dispatcher">/km/baike/center/myAudit.jsp</result>
+		<interceptor-ref name="params" />
+		</action>
+		
+		<!-- 词条待审核列表-->
+		<action name="doPendingList"  class="cn.myapps.km.baike.content.action.EntryContentAction" method="doPendingList">
+				<result name="success" type="dispatcher">
+					/km/baike/center/myAudit.jsp
+				</result>
+				<interceptor-ref name="params" />
+				<interceptor-ref name="chain" />
+		</action>
+		
+		
+		<!-- 词条待审核列表-->
+		<action name="doFindUserCenterByUserId"  class="cn.myapps.km.baike.user.action.BUserEntrySetAction" method="doFindUserCenterByUserId">
+				<result name="success" type="dispatcher">
+					/km/baike/center/index1.jsp
+				</result>
+				<interceptor-ref name="params" />
+				<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 词条审核通过-->
+		<action name="doApprove"  class="cn.myapps.km.baike.content.action.EntryContentAction" method="doApprove">
+				<result name="success" type="dispatcher">
+					doPendingList.action
+				</result>
+				<interceptor-ref name="params" />
+				<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 词条审核驳回-->
+		<action name="doReject"  class="cn.myapps.km.baike.content.action.EntryContentAction" method="doReject">
+				<result name="success" type="dispatcher">
+					doPendingList.action
+				</result>
+				<interceptor-ref name="params" />
+				<interceptor-ref name="chain" />
+		</action>
+	
+	<!-- 词条审核通过-->
+		<action name="doApprove1"  class="cn.myapps.km.baike.content.action.EntryContentAction" method="doApprove">
+				<result name="success" type="dispatcher">
+					/km/baike/center/index.jsp?userId=
+				</result>
+				<interceptor-ref name="params" />
+				<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 词条审核驳回-->
+		<action name="doReject1"  class="cn.myapps.km.baike.content.action.EntryContentAction" method="doReject">
+				<result name="success" type="dispatcher">
+					/km/baike/center/index.jsp?userId=
+				</result>
+				<interceptor-ref name="params" />
+				<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 词条审核驳回-->
+		<action name="doSubmit"  class="cn.myapps.km.baike.content.action.EntryContentAction" method="doSubmit">
+				<result name="success" type="dispatcher">
+					doGetMyDraft.action
+				</result>
+				<interceptor-ref name="params" />
+				<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 草稿提交 -->
+		<action name="doSubmmitFromDraft"  class="cn.myapps.km.baike.content.action.EntryContentAction" method="doSubmmitFromDraft">
+			<result name="success" type="dispatcher">
+				doGetMyDraft.action
+			</result> 
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 提交未通过版本 -->
+		<action name="doSubmmitFromReject"  class="cn.myapps.km.baike.content.action.EntryContentAction" method="doSubmmitFromReject">
+			<result name="success" type="dispatcher">
+				doNotThroughVersion
+			</result> 
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 删除草稿 -->
+		<action name="doRemoveDraft" class="cn.myapps.km.baike.content.action.EntryContentAction" method="doRemove">
+			<result name="success" type="dispatcher">
+				doGetMyDraft.action
+			</result> 
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+			
+		<!-- 删除词条 -->
+		<action name="doRemove" class="cn.myapps.km.baike.entry.action.EntryAction" method="doRemove">
+			<result name="success" type="dispatcher">
+				doGetMyManager.action
+			</result> 
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		<!-- 删除未通过版本 -->
+		<action name="doRemoveReject" class="cn.myapps.km.baike.content.action.EntryContentAction" method="doRemoveByEntryId">
+			<result name="success" type="dispatcher">
+				doNotThroughVersion.action
+			</result> 
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		   
+		   
+		   <!-- 批量删除草稿箱 -->
+		<action name="deleteMany"
+		class="cn.myapps.km.baike.content.action.EntryContentAction"
+		method="deleteMany">
+		<result name="success" type="dispatcher">/km/baike/center/doGetMyDraft.action</result>
+		<interceptor-ref name="params" />
+		</action>
+		
+		  <!-- 判断是否为管理员 -->
+		<action name="isPublicDiskAdmin"
+		class="cn.myapps.km.baike.user.action.BUserEntrySetAction"
+		method="isPublicDiskAdmin">
+		<result name="success" type="dispatcher">/km/baike/center/index.jsp?userId=</result>
+		<result name="input" type="dispatcher">/km/baike/center/index2.jsp?userId=</result>
+		<interceptor-ref name="params" />
+		</action>
+		
+	</package>
+</struts>

@@ -1,0 +1,53 @@
+.groupWrapper { float: left; margin-left: 15px; min-height: 400px }
+#right { position: relative; background-image: url(../images/right_bg.jpg); background-size: cover; background-attachment: fixed; min-height: 100%; }
+#right .style1 { margin-top: 15px }
+#right .style1 .title { height: 37px; background-color: #ff9f02; font-size: 14px; font-weight: bold; color: #fff; line-height: 37px; padding: 0 5px; border-radius: 4px 4px 0 0 }
+#right .style1 .title img { vertical-align: middle; margin: 0 5px }
+#right .style1 .con { background-color: #fff; border-radius: 0 0 4px 4px }
+#right .style1 .con table { line-height: 200%; width: 95%; margin: 0 auto; text-align: center }
+#right .style1 .con th { color: #606060 }
+#right .style1 .con td { color: #b9b9b9 }
+#right .style1 .con td a { color: #b9b9b9 }
+#right .style1 .con .over td, #right .style1 .con .over td a { color: #606060 }
+#right .style1 .con td a:hover { color: #606060 }
+#right .style2 { margin-top: 15px }
+#right .style2 .title { height: 37px; background-color: #88c82e; font-size: 14px; font-weight: bold; color: #fff; line-height: 37px; padding: 0 5px; border-radius: 4px 4px 0 0 }
+#right .style2 .title img { vertical-align: middle; margin: 0 5px }
+#right .style2 .con { background-color: #fff; border-radius: 0 0 4px 4px }
+#right .style2 .con table { line-height: 200%; width: 95%; margin: 0 auto; text-align: center }
+#right .style2 .con th { color: #606060 }
+#right .style2 .con td { color: #b9b9b9 }
+#right .style2 .con td a { color: #b9b9b9 }
+#right .style2 .con .over td, #right .style2 .con .over td a { color: #606060 }
+#right .style2 .con td a:hover { color: #606060 }
+#right .style3 { margin-top: 15px }
+#right .style3 .title { height: 37px; background-color: #da542e; font-size: 14px; font-weight: bold; color: #fff; line-height: 37px; padding: 0 5px; border-radius: 4px 4px 0 0 }
+#right .style3 .title img { vertical-align: middle; margin: 0 5px }
+#right .style3 .con { background-color: #fff; border-radius: 0 0 4px 4px; padding-bottom: 10px; color: #b9b9b9 }
+#right .style3 .con li { padding: 5px 10px; border-bottom: solid 1px #ebebeb; min-height: 35px; }
+#right .style3 .con li .s3_face { position: relative }
+#right .style3 .con li .s3_face .face { position: absolute; top: 0 }
+#right .style3 .con li img { vertical-align: middle; margin-right: 10px }
+#right .style3 .con li a { margin-top: 7px }
+#right .style4 { margin-top: 15px }
+#right .style4 .title { height: 37px; background-color: #28b779; font-size: 14px; font-weight: bold; color: #fff; line-height: 37px; padding: 0 5px; border-radius: 4px 4px 0 0 }
+#right .style4 .title img { vertical-align: middle; margin: 0 5px }
+#right .style4 .con { background-color: #fff; border-radius: 0 0 4px 4px; padding-bottom: 10px; color: #b9b9b9 }
+#right .style4 .con li { padding: 5px 10px; border-bottom: solid 1px #ebebeb; min-height: 35px; }
+#right .style4 .con li .s4_face { position: relative }
+#right .style4 .con li .s4_face .face { position: absolute; top: 0 }
+#right .style4 .con li img { vertical-align: middle; margin-right: 10px }
+#right .style4 .con li a { margin-top: 7px }
+#right .style5 { margin-top: 15px }
+#right .style5 .title { height: 37px; background-color: #3497db; font-size: 14px; font-weight: bold; color: #fff; line-height: 37px; padding: 0 5px; border-radius: 4px 4px 0 0 }
+#right .style5 .title img { vertical-align: middle; margin: 0 5px }
+#right .style5 .con { background-color: #fff; border-radius: 0 0 4px 4px }
+#right .style5 .con .container { box-sizing: border-box; width: 100%; height: 240px; padding: 20px 15px 15px 15px; border: 1px solid #ddd; background: #fff; background: linear-gradient(#f6f6f6 0, #fff 50px); background: -o-linear-gradient(#f6f6f6 0, #fff 50px); background: -ms-linear-gradient(#f6f6f6 0, #fff 50px); background: -moz-linear-gradient(#f6f6f6 0, #fff 50px); background: -webkit-linear-gradient(#f6f6f6 0, #fff 50px); box-shadow: 0 3px 10px rgba(0,0,0,0.15); -o-box-shadow: 0 3px 10px rgba(0,0,0,0.1); -ms-box-shadow: 0 3px 10px rgba(0,0,0,0.1); -moz-box-shadow: 0 3px 10px rgba(0,0,0,0.1); -webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.1) }
+#right .style5 .con .placeholder { width: 100%; height: 100%; font-size: 14px; line-height: 1.2em }
+#right .style5 .con .legend table { border-spacing: 5px }
+#right .bottom_menu { height: 70px; width: 100%; position: fixed; bottom: 0; background-image: url(../images/r_b_bg.png); background-repeat: repeat-x; z-index: 10; }
+#right .bottom_menu .list { position: relative; width: 100%; text-align: center; overflow: hidden }
+#right .bottom_menu ul { float: left; position: relative; left: 50% }
+#right .bottom_menu li { position: relative; right: 50%; float: left; padding: 10px 15px 0 15px }
+#right .bottom_menu li a { color: #000 }
+#right .bottom_menu li a:hover { color: #D3D3D3 }

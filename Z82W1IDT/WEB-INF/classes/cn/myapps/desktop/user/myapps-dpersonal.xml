@@ -1,0 +1,46 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="duser" extends="myapps-default" namespace="/core/sysconfig/desktop/user">
+		<action name="viewByLoginnoAndDomainName"
+			class="cn.myapps.desktop.user.DUserAction"
+			method="doViewByLoginnoAndDomainName">
+			<result name="success" type="dispatcher">
+				/core/sysconfig/desktop/xml.jsp
+			</result>
+			<result name="error" type="dispatcher">
+				../error.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				../error.jsp
+			</result>
+		</action>
+		<action name="viewAdminByLoginno"
+			class="cn.myapps.desktop.user.DUserAction"
+			method="doViewAdminByLoginno">
+			<result name="success" type="dispatcher">
+				/core/sysconfig/desktop/xml.jsp
+			</result>
+			<result name="error" type="dispatcher">
+				../error.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				../error.jsp
+			</result>
+		</action>
+		<action name="list"
+			class="cn.myapps.desktop.user.DUserAction"
+			method="doList">
+			<result name="success" type="dispatcher">
+				/core/sysconfig/desktop/xml.jsp
+			</result>
+			<result name="error" type="dispatcher">
+				../error.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				../error.jsp
+			</result>
+		</action>
+	</package>
+</struts>

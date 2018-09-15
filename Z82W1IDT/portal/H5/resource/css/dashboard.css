@@ -1,0 +1,30 @@
+.con_right { margin-top:3px; }
+
+/*----------content-dashboard---------*/
+
+.dashboard { margin-bottom: 15px; }
+.dashboard .row { margin: 0px }
+.dashboard .efficiency { border-bottom: solid 1px #e5e5e5 }
+.dashboard .efficiency .col-md-6 { padding: 20px 0; }
+.searchDiv .time label { font-size: 14px; color: #a7a7a7; margin: 5px 10px 0 10px }
+.searchDiv .time .input-group { width: 150px; margin-top: 0px }
+.searchDiv .time .form-control[readonly] { background-color: #FFF; opacity: 1; }
+.searchDiv .form-group { margin-bottom: 0px }
+.searchDiv .form-group .btn-group { margin: 0 10px }
+.searchDiv .form-group .btn-group #stateselect { height: 34px; background: #fff; }
+.searchDiv .form-group select{line-height:28px;	/*select标签的line-height属性只对safari起作用*/}
+.searchDiv .form-group .btn-group .btn {
+    width: auto;
+    height: 34px;
+}
+
+.dashboard .container-fluid { padding-right: 0px; padding-left: 0px;}
+.dashboard .container-fluid #container-body { overflow: overlay;}
+.dashboard .container-fluid .row { font-size: 14px; color: #a7a7a7; margin:13px 0;line-height: 160% }
+.dashboard .container-fluid .row a { color: #a7a7a7 }
+.dashboard .container-fluid .row a:hover { color: #22aae9 }
+.dashboard .container-fluid .row-title { font-size: 16px; color: #606060; height: auto; line-height: 50px; border-bottom: solid 1px #e5e5e5 }
+
+.radio-inline input[type=radio] {
+  margin-left: -18px;
+}

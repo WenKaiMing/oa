@@ -1,0 +1,102 @@
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- entry content package -->
+	<package name="baike_content" extends="myapps-default"
+		namespace="/km/baike/content">
+		
+		<!-- 查询词条版本 -->
+		<action name="findHisContent"
+			class="cn.myapps.km.baike.content.action.EntryContentAction"
+			method="doQueryHisVersionContent">
+			<result name="success" type="dispatcher">/km/baike/content/version.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<!-- 查询内容 -->
+		<action name="queryContent"
+			class="cn.myapps.km.baike.content.action.EntryContentAction"
+			method="doQueryLatestVersionContent">
+			<result name="success" type="dispatcher">/km/baike/content/content.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<!-- 保存词条-->
+		<action name="doSave"
+			class="cn.myapps.km.baike.content.action.EntryContentAction"
+			method="doSave">
+			<result name="success" type="dispatcher">/km/baike/center/index.jsp?selectedMenu=menu_mydrafts</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<!-- 查看内容-->
+		<action name="doView"
+			class="cn.myapps.km.baike.content.action.EntryContentAction"
+			method="doView">
+			<result name="success" type="dispatcher">/km/baike/content/editing.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<!-- 通过entryId查询已通过版本内容-->
+		<action name="queryContentByEntryIdAndPassed"
+			class="cn.myapps.km.baike.content.action.EntryContentAction"
+			method="doQueryContentByEntryIdAndPassed">
+			<result name="success" type="dispatcher">/km/baike/content/abc.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<!-- 修改词条内容 -->
+		<action name="doUpdate" 
+		class="cn.myapps.km.baike.content.action.EntryContentAction"
+		method="doUpdate">
+		<result name="success" type="dispatcher">/km/baike/center/index.jsp?userId=</result>
+		<interceptor-ref name="params" />
+		</action>
+		
+		<!-- 词条版本提交 -->
+		<action name="doSubmmit" 
+		class="cn.myapps.km.baike.content.action.EntryContentAction"
+		method="doSubmmit">
+		<result name="success" type="dispatcher">/km/baike/entry/doInit.action</result>
+		<interceptor-ref name="params" />
+		</action>
+		
+		<!-- 查询词条内容 -->
+		<action name="doQuery"
+			class="cn.myapps.km.baike.content.action.EntryContentAction"
+			method="doQuery">
+			<result name="success" type="dispatcher">
+				/km/baike/entry/searchEntry.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<!-- 查询词条内容 -->
+		<action name="findContent" 
+		class="cn.myapps.km.baike.content.action.EntryContentAction"
+		method="doView">
+		<result name="success" type="dispatcher">/km/baike/content/editing.jsp</result>
+		<interceptor-ref name="params" />
+		</action>
+		
+		<!-- 收藏词条-->
+		<action name="doFavorite" 
+		class="cn.myapps.km.baike.user.action.BUserEntrySetAction"
+		method="doFavorite">
+		<result name="success" type="stream">
+				<param name ="contentType">text/html</param>
+				<param name = "inputName">result</param>
+			</result>
+			<result name="input" type="stream">
+				<param name ="contentType">text/html</param>
+				<param name = "inputName">result</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+	</package>
+</struts>

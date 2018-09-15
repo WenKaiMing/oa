@@ -1,0 +1,62 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="mbhomepage" extends="myapps-default" namespace="/mobile2/homepage">
+		<action name="homepage" class="cn.myapps.mobile2.homepage.MbHomePageAction"
+			method="doHomePage">
+			<result name="success" type="dispatcher">
+				/mobile2/result.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="homepage2" class="cn.myapps.mobile2.homepage.MbHomePageAction"
+			method="doHomePage2">
+			<result name="success" type="dispatcher">
+				/mobile2/result.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="querymessage" class="cn.myapps.mobile2.homepage.MbHomePageAction"
+			method="doQueryMessage">
+			<result name="success" type="dispatcher">
+				/mobile2/result.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="getWidgetList" class="cn.myapps.mobile2.homepage.MbHomePageAction"
+			method="doGetWidgetList">
+			<result name="success" type="dispatcher">
+				/mobile2/result.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="view" class="cn.myapps.mobile2.homepage.MbHomePageAction"
+			method="doView">
+			<result name="success" type="dispatcher">
+				/mobile2/result.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="pendingList" class="cn.myapps.mobile2.homepage.MbHomePageAction"
+			method="doPendingList">
+			<result name="success" type="dispatcher">
+				/mobile2/result.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="refreshwidget" class="cn.myapps.mobile2.homepage.MbHomePageAction" method="doRefreshWidget">
+		    <result name="success" type="dispatcher">
+		        /mobile2/result.jsp
+		    </result>
+		    <interceptor-ref name="validationWorkflowStack" />
+		    <interceptor-ref name="params" />
+		</action>
+	</package>
+</struts>

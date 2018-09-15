@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.head {
+	height: 2.5em;
+	width: 100%;
+}
+
+aside {
+	height: 2.2em;
+    line-height: 2.2em;
+    padding: 0 1em;
+}
+
+.echarts {
+	height: 21.875em;
+}
+
+select {
+	border-radius: 0.5em;
+    border: 0.0625em solid #ccc;
+    height: 1.8em;
+    box-shadow: 0 0 0.3em #ccc;
+}
+
+select:hover {
+	box-shadow: 0 0 0.6em #ccc;
+}

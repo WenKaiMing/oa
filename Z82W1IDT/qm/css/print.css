@@ -1,0 +1,15 @@
+.noprint {    
+		display: none;    
+		}
+#analysis,#Scoring_results{
+	border:none;
+}
+.printOver{
+	overflow-y:auto;
+}
+#qmTianxie{
+	overflow:visible;
+}
+#maiDiv {
+   overflow:visible;
+}

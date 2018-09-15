@@ -1,0 +1,152 @@
+html {min-height: 100%; height: 100% ;overflow: hidden}
+#if_right,#con_right { min-height: 100%; height: 100%; padding:0px}
+#if_right iframe,#con_right iframe {width: 100%;height: 100%;}
+#right { position: relative; min-height: 100%;background:#f7f7f7; }
+
+
+.km { margin:15px 0 0 15px; background-color:#FFFFFF;box-shadow: 1px 1px 3px #C5C5C5;-moz-box-shadow: 1px 1px 3px #C5C5C5; -webkit-box-shadow: 1px 1px 3px #C5C5C5; position:fixed; height:100%; width:130px;}
+.km .title { font-size:24px; color:#3497db; text-align:center; height:45px; line-height:45px;}
+.km .content { height:100%;}
+.km .content li { height:50px;}
+.km .content li a { height:50px; line-height:50px; padding:0px 15px;border-left:solid 2px #ffffff; font-size:16px; color:#6b6b6b}
+.km .content li a:hover ,.act .content li.active a { background-color:#f7f7f7; border-left:solid 2px #22aae9; color:#22aae9}
+.km .content li a i { height:16px; width:16px; display:block; position:absolute; top:17px}
+.km .content li a i.icon-hot { background:url(../images/ico_act.png) no-repeat -192px 0}
+.km .content li a:hover i.icon-hot,.act .content li.active a i.icon-hot{ background-position:-192px -20px}
+.km .content li a i.icon-new { background:url(../images/ico_act.png) no-repeat -208px 0}
+.km .content li a:hover i.icon-new,.act .content li.active a i.icon-new{ background-position:-208px -20px}
+.km .content li a i.icon-public { background:url(../images/ico_act.png) no-repeat -224px 0}
+.km .content li a:hover i.icon-public,.act .content li.active a i.icon-public{ background-position:-224px -20px}
+.km .content li a i.icon-mydisk { background:url(../images/ico_act.png) no-repeat -144px 0}
+.km .content li a:hover i.icon-mydisk,.act .content li.active a i.icon-mydisk{ background-position:-144px -20px}
+.km .content li a i.icon-file { background:url(../images/ico_act.png) no-repeat -240px 0}
+.km .content li a:hover i.icon-file,.act .content li.active a i.icon-file{ background-position:-240px -20px}
+.km .content li a i.icon-baike { background:url(../images/ico_act.png) no-repeat -256px 0}
+.km .content li a:hover i.icon-baike,.act .content li.active a i.icon-baike{ background-position:-256px -20px} 
+.km .content li a i.icon-log { background:url(../images/ico_act.png) no-repeat -272px 0}
+.km .content li a:hover i.icon-log,.act .content li.active a i.icon-log{ background-position:-272px -20px}
+.km .content li a i.icon-data { background:url(../images/ico_act.png) no-repeat -288px 0}
+.km .content li a:hover i.icon-data,.act .content li.active a i.icon-data{ background-position:-288px -20px}   
+.km .content li a span { margin-left:26px;}
+
+
+/*----------write---------*/
+
+.crm_right { margin: 0 15px 15px 15px; }
+.crm_right .mt105 { margin-top: 105px }
+.crm_right .searchDiv .nav li {  }
+.crm_right .searchDiv .nav a { font-size: 16px; text-indent: 26px; color: #FFFFFF ;margin: 10px 10px 10px 0px;padding: 10px 10px 10px 30px;line-height: 200%;}
+.crm_right .searchDiv .nav a.ico-new { background: url(../images/ico_new.png) #337ab7 no-repeat 10px center }
+.crm_right .searchDiv .nav a.ico-del { background: url(../images/ico_del.png) #d9534f no-repeat 10px center }
+.crm_right .searchDiv .nav a.ico-new:hover { background-color: #284C6B }
+.crm_right .searchDiv .nav a.ico-del:hover { background-color: #803836 }
+.crm_right .searchDiv .nav span { font-size: 14px; color: #a7a7a7; display: block; height: 42px; line-height: 42px; margin-right: 10px; }
+.crm_right .searchDiv .row { color: #A7A7A7; font-size: 14px; margin-bottom: 10px }
+.crm_right .searchDiv .row .col-xs-1, .searchDiv .row .col-xs-2, .searchDiv .row .col-xs-3, .searchDiv .row .col-xs-12 { padding: 0px 10px; height: 32px; line-height: 32px }
+.crm_right .searchDiv .row .form-control { height: 32px; width: 90%; }
+.crm_right .searchDiv .row .form_date .form-control { height: 32px; width: 100%; background: none }
+.crm_right .searchDiv .row .col-xs-12 .btn { height: 34px; background: #337ab7; color: #FFFFFF; text-indent: 30px; border: none; margin-left: 10px }
+.crm_right .searchDiv .row .col-xs-12 .ico-search { background: url(../images/ico_search.png) #337ab7 no-repeat 10px center }
+.crm_right .searchDiv .row .col-xs-12 .ico-reset { background: url(../images/ico_reset.png) #337ab7 no-repeat 10px center }
+.crm_right .searchDiv .row .col-xs-12 .btn:hover { background-color: #284C6B; }
+
+
+
+.crm_right .dataTable .write_content { width:100%}
+.crm_right .dataTable .write_content td { border:none; font-size:14px; color:#a7a7a7}
+.crm_right .dataTable .write_content .mail-title { width:15%}
+.crm_right .dataTable .write_content .form-group { margin-bottom:0px}
+.crm_right .dataTable .write_content .form-group .btn { margin-right:10px;}
+.crm_right .dataTable .write_content .form-group select { height:34px}
+.crm_right .dataTable .write_content .mail-ps { color:#dd0000}
+
+
+#mail-body .searchDiv .title-text{ font-size:14px; color:#a7a7a7; margin-bottom:15px}
+#mail-body .searchDiv .title-text i{ color:#ee8c0c;}
+#mail-body .searchDiv .form-group .btn{ height:36px; margin-right:10px;}
+#mail-body .searchDiv .form-group-page {width: 130px;margin-bottom: 0px;}
+#mail-body .searchDiv .form-group-page .form-control { height:36px; padding:3px}
+#mail-body .searchDiv .pagination {margin:0px 10px 0 0}
+#mail-body .searchDiv .pagination a{height:36px; line-height:24px}
+#mail-body .searchDiv .form-group { color:#a7a7a7; }
+#mail-body .searchDiv .form-group label {height:36px; line-height:36px; font-size:14px; font-weight:normal}
+#mail-body .searchDiv .form-group .form-control {height:36px;}
+#mail-body .searchDiv .form-group .input-box-con { width:30%; margin-right:10px;}
+#mail-body .searchDiv .form-group .mail_search td {padding: 10px 0px}
+#mail-body .searchDiv .form-group .mail_search label {float: left;}
+#mail-body .searchDiv .form-group .mail_search .form-control {width:auto; display:inherit;float: left;}
+
+
+#mail-body .dataTable .title-text{ font-size:14px; color:#a7a7a7; margin-bottom:15px}
+
+.dataTable .mail_content td{text-align: center;}
+.dataTable .mail_select{padding: 10px 0px; color: #b4b4b4; font-size: 14px}
+.dataTable .mail_content .mail_info h4 {color: #606060;}
+.dataTable .mail_content .mail_info {color: #a7a7a7;font-size: 13px}
+.dataTable .mail_content .mail_body {margin: 10px 0px;padding: 10px 0px;border-top:solid 1px #d9d9d9;}
+.dataTable .mail_content .mail_attachment {}
+.dataTable .mail_content .mail_attachment .title{font-size: 13px;color: #a7a7a7;margin: 10px 0px;padding: 10px 0px;border-bottom:solid 1px #d9d9d9;}
+
+.dataTable { margin: 0 0 15px 0; background-color: #FFFFFF; box-shadow: 1px 1px 3px #C5C5C5; -moz-box-shadow: 1px 1px 3px #C5C5C5; -webkit-box-shadow: 1px 1px 3px #C5C5C5;padding: 15px }
+.dataTable table { width: 100% }
+.dataTable td { border: solid 1px #e5e5e5; padding: 10px 0px }
+.dataTable .listDataTh a, .dataTable .listDataTh { font-size: 16px; color: #606060; line-height: 180%; background-color: #efefef }
+.dataTable .listDataTr a, .dataTable .listDataTr { font-size: 14px; color: #a7a7a7; line-height: 180%; }
+.dataTable .listDataTr_over a, .dataTable .listDataTr_over { font-size: 14px; color: #22aae9; line-height: 180%; }
+.dataTable_Th { margin: 0; background-color: #FFFFFF; box-shadow: 1px 1px 3px #C5C5C5; -moz-box-shadow: 1px 1px 3px #C5C5C5; -webkit-box-shadow: 1px 1px 3px #C5C5C5;}
+.dataTable_Th table { width: 100% }
+.dataTable_Th td { border: solid 1px #e5e5e5; padding: 10px 0px }
+.dataTable_Th .listDataTh a, .dataTable_Th .listDataTh { font-size: 16px; color: #606060; line-height: 180%; background-color: #efefef }
+.dataTable_Th .listDataTr a, .dataTable_Th .listDataTr { font-size: 14px; color: #a7a7a7; line-height: 180%; }
+.dataTable_Th .listDataTr_over a, .dataTable_Th .listDataTr_over { font-size: 14px; color: #22aae9; line-height: 180%; }
+#tableFix { z-index: 10; width: 100%; padding: 0px 15px; left: 0; position: absolute; overflow: hidden; height: 65px; background-color: #fff }
+#tableFix.fixed { position: fixed; top: 100px; padding-top: 5px; }
+.pagination li a, .pagination li span { color: #a7a7a7 }
+.dataTable #cal_viewcontent .btn-group a { padding: 6px 30px; border: solid 1px #ccc }
+.dataTable #cal_viewcontent td { border: none }
+.dataTable #cal_viewcontent .eventHead table { width: auto }
+.dataTable #cal_viewcontent .eventHead .cal_state a { padding: 6px 12px; background: #fff; color: #868686 }
+.dataTable #cal_viewcontent .eventHead .cal_state a:hover { background: #f5f5f5 }
+.dataTable #cal_viewcontent .eventHead .cal_state .eventTitle { background: #f5f5f5 }
+.dataTable #cal_viewcontent .eventBg td { padding: 0px }
+.dataTable #cal_viewcontent .eventBg .weekDay td { padding: 10px 0px }
+.dataTable #map_viewcontent .checkbox { font-size: 16px; color: #6b6b6b }
+.dataTable #map_viewcontent .checkbox label { margin-right: 15px; font-size: 16px; }
+.dataTable #map_viewcontent .map img { width: 100% }
+.crm_right .map_nav .nav li a { background: #f8f8f8; text-indent: inherit; color: #606060; border: solid 1px #ccc }
+.crm_right .map_nav .nav li a:hover { background: #337ab7; border: solid 1px #337ab7; color: #fff }
+.dataTable #map_viewcontent .form-inline label { font-size: 16px; color: #6b6b6b }
+.crm_right .treeViewContent { width: 170px; margin: 0 0 15px 0; background-color: #FFFFFF; box-shadow: 1px 1px 3px #C5C5C5; -moz-box-shadow: 1px 1px 3px #C5C5C5; -webkit-box-shadow: 1px 1px 3px #C5C5C5;padding: 15px }
+.crm_right .btn-myapp { border-color: #03a9f4; width: 40px; height: 34px; background: url(../images/search.png) #03a9f4 no-repeat center center }
+.crm_right .treeViewContent .sidebar-title { font-size: 16px; color: #606060l; font-weight: bold }
+.crm_right .treeViewContent .treeview { margin-top: 10px; overflow: auto }
+.crm_right .treeViewContent .treeview li { border: none; white-space: pre; }
+.crm_right .treeViewContent .treeview .list-group-item { padding: 5px 0px }
+.crm_right .treeViewContent .treeview .list-group { border-radius: 0px; box-shadow: none }
+.crm_right .treeViewContent .treeview .list-group-item span.icon { margin: 0px 5px; display: inline-block; width: 16px; height: 16px; position: relative; top: 3px; }
+.crm_right .treeViewContent .treeview .list-group-item:first-child, .crm_right .treeViewContent .treeview .list-group-item:last-child { border-radius: 0px }
+.crm_right .treeViewContent .treeview .list-group-item span.tree01 { background: url(../images/ico_tree01.png) no-repeat; }
+.crm_right .treeViewContent .treeview li, .crm_right .treeViewContent .treeview li a { color: #a7a7a7 }
+
+.viewselect iframe { width:100%; height:470px}
+.viewselect .container-fluid { }
+.viewselect .container-fluid .row{ padding:0px}
+.viewselect .container-fluid .col-xs-6 { padding:0px}
+.viewselect .container-fluid .col-xs-12 { border-top:solid 1px #f1f1f1}
+.viewselect .container-fluid .col-xs-12 .nav {   position: relative;  left: 43%;  width: 200px; margin-top:15px}
+.viewselect .container-fluid .nav-pills li { border-radius:4px; border :solid 1px #ccc}
+
+#view_iframe { background:#f7f7f7; padding:15px}
+#view_iframe .searchDiv { margin-top:0px}
+#view_iframe .form-group { width:110px; margin-bottom:0px}
+#view_iframe .form-group .form-control { padding:3px; height:31px}
+#view_iframe .col-xs-2,#view_iframe .col-xs-4,#view_iframe .col-xs-12 { padding:0px}
+#view_iframe .searchDiv .btn{ padding:3px 5px; height:31px;}
+#view_iframe .form-group .btn { padding:3px 5px; height:31px}
+#view_iframe .pagination { margin:0 10px 0 0}
+#view_iframe .searchDiv .row { margin:5px 0}
+#view_iframe .searchDiv .row .form-control { width: 100%; height:34px}
+#view_iframe .searchDiv .nav li a{ padding:7px 15px}
+#view_iframe .searchDiv .row .col-xs-2 { color:#a7a7a7}
+#view_iframe .searchDiv .row .col-xs-12 .btn { margin-top:6px}
+

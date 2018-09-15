@@ -1,0 +1,113 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- department package -->
+	<package name="department-front" extends="myapps-default"
+		namespace="/portal/department">
+		<action name="departTree"
+			class="cn.myapps.core.department.action.DepartmentRuntimeAction"
+			method="departTree">
+		</action>
+
+		<!-- superuser actions-->
+		<action name="new"
+			class="cn.myapps.core.department.action.DepartmentAction" method="doNew">
+			<result name="success" type="dispatcher">
+				/portal/share/department/superfront/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="edit"
+			class="cn.myapps.core.department.action.DepartmentAction" method="doEdit">
+			<result name="success" type="dispatcher">
+				/portal/share/department/superfront/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="save"
+			class="cn.myapps.core.department.action.DepartmentAction" method="doSave">
+			<result name="input" type="dispatcher">
+				/portal/share/department/superfront/content.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				/portal/share/department/superfront/content.jsp
+			</result>
+			<!-- interceptor-ref name="params" / -->
+			<interceptor-ref name="validationWorkflowStack" />
+		</action>
+		<action name="delete"
+			class="cn.myapps.core.department.action.DepartmentAction" method="doDelete">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="basicStack" />
+			<result name="success" type="dispatcher">
+				departmentlist.action?sm_superior.id=${superiorid}
+			</result>
+			<result name="input" type="dispatcher">
+				departmentlist.action?sm_superior.id=${superiorid}
+			</result>
+		</action>
+		<action name="list"
+			class="cn.myapps.core.department.action.DepartmentAction" method="doList">
+			<interceptor-ref name="chain" />
+			<interceptor-ref name="params" />
+			<result name="success" type="dispatcher">
+				/portal/share/department/superfront/departmentframe.jsp
+			</result>
+		</action>
+		<action name="departmentlist"
+			class="cn.myapps.core.department.action.DepartmentAction" method="doList">
+			<result name="success" type="dispatcher">
+				/portal/share/department/superfront/list.jsp
+			</result>
+			<interceptor-ref name="chain" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="get-nodes"
+			class="cn.myapps.core.department.action.DepartmentAction" method="getNodes">
+			<result name="success">
+				/portal/share/department/superfront/get-nodes.jsp
+            </result>
+		</action>
+		<action name="subNodes"
+			class="cn.myapps.core.department.action.DepartmentFrontAction" method="getSubNodes">
+			<result name="success" type="dispatcher">
+				/portal/share/department/superfront/get-nodes.jsp
+			</result>
+		</action>
+		<!--
+			<action name="departTree"
+			class="cn.myapps.core.department.action.DepartmentAction"
+			method="departTree"> </action>
+		-->
+		<action name="saveAndNew"
+			class="cn.myapps.core.department.action.DepartmentAction" method="doSaveAndNew">
+			<result name="input" type="dispatcher">
+				/portal/share/department/superfront/content.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				/portal/share/department/superfront/content.jsp
+			</result>
+			<!-- interceptor-ref name="params" / -->
+			<interceptor-ref name="validationWorkflowStack" />
+		</action>
+		<action name="userListUnjoinedDept" class="cn.myapps.core.user.action.UserAction"
+			method="doUserListUnjoinedDept">
+			<result name="success" type="dispatcher">
+			/portal/share/user/superfront/userUnjoinDept.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="userListUnjoinedRole" class="cn.myapps.core.user.action.UserAction"
+			method="doUserListUnjoinedRole">
+			<result name="success" type="dispatcher">
+			/portal/share/user/superfront/userUnjoinRole.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		 <action name="getDepartmentTreeByParent"
+        	class="cn.myapps.core.department.action.DepartmentAction"
+        	method="getDepartmentTreeByParent">
+        </action>
+	</package>
+</struts>

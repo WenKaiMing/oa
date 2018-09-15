@@ -1,0 +1,4434 @@
+###########################多语言标签命名原则#######################################
+## 1.名词、专业术语、专有名词等可以单独一个单词或单词下划线连接起来作为标签（可重复引用）
+## 如：
+##name = 名称
+##summary = 摘要
+##login = 登录
+##logout = 注销
+##chance = 取消
+##cross_report = Cross Report
+##template_form = 模板表单
+##srearch_form = 查询表单
+######################################################################################
+##2.短语和句子一定要在标签中能表达（模块）位置和意图，本模块下不能引用用其他模块定义的多语言
+##core.sysconfig.sms.lable.timeout = 超时(单位“秒”)
+##core.usbkey.tip.usbkeyNotfound = 没有找到USBKEY，请插入USBKEY设备，点击扫描按钮！
+##core.dynaform.activity.attr.type.save_and_exit = 保存并退出
+##core.dynaform.activity.attr.type.save_and_back = 保存并返回
+###########################多语言标签命名原则###########################################
+
+
+###########################专有名词    START###########################################
+OBPMRuntimeException = 运行时异常
+Empty = 清空
+Km = 文档库
+Front = 前台
+Abort = 中断
+Account = 账号
+Activity = 操作
+Open=打开
+Apply =应用
+Result = 结果
+Administrator = 管理员
+Administrators = 管理员
+#Advanced_Domain = 高级企业域
+AfterActionScript = 动作执行后脚本
+Alias = 别名
+Align = 对齐
+Align_To_Border = 底边框对齐
+All = 所有
+Part = 部份
+#All_rights_reserved = 保留所有权利
+App = 软件
+Application = 软件
+SelectAboutField = 左右选择框
+Application(s) = 软件
+Applications = 软件
+Approve = 提交
+ASC = 升序
+ActionScript = 动作执行脚本
+Attachment = 附件
+asc = 升序
+AuditDate = 审批日期
+Auditor = 审批人
+AuditorNames = 审批人名称
+#Auditing_Group = 审批组别
+#Auditing_Edit_Mode 审批编辑模式
+Auditing_Script = 审批脚本
+Authority = 权限
+Author = 作者
+Auto = 自动
+AutoNode = 自动节点
+#AutoNodeInfo = 节点信息
+Back = 返回
+Background = 背景
+#Background_color_of_font = 字体背景色
+#Background_Image = 背景图
+#Base_Line = 底线对齐
+#Button_Type = 按钮的类型
+Basic = 基本
+#BasicInfo = 基本信息
+Batch_Approve = 批量提交
+Batch.Author = 批量授权
+BeforeActionScript = 动作执行前脚本
+BeforopenScript = 表单禁用脚本
+#Belong = 所属
+#between.zero.and.Onethousand = (0~1000]
+#between.zero.and.Twothousand = (0~2000]
+#Binding_Form = 审批过程中的表单绑定
+#IsOpenAbleScript=是否可打开脚本
+#IsEditAbleScriptTips=注意：只有列表视图、树形视图支持该属性，且打开类型不能为网格
+#IsEditAbleScript=是否可编辑脚本
+Boldfaced = 粗体
+Border = 边框
+Branch = 分支
+#Branch_Integrate = 分支合并
+ButtonField = 按钮
+CalculateField = 计算脚本
+Calendar = 日历
+#Calendar-Info = 日历信息
+#Calendar-Type = 日历类型
+Cancel = 取消
+#can.only.for = 只能是
+#Cancel_Checked = 取消选中
+#Cancel_Linkage = 取消链接
+Center_Align = 居中
+#CldViewDateColum=日历视图过滤字段
+Cell = 单元格
+Cellspacing = 单元格间距
+#Copy_Success = 复制成功 
+Cellpadding = 单元格边距
+center = 中
+#Center = 中
+Center_Line = 删除线
+Caption = 说明
+Character = 字符
+Characters = 字符
+CheckBox = 复选框
+Choose = 选择
+Clear = 清除
+Click = 点击
+#Click_Download_Template = 点击下载模板
+Close = 关闭
+Code = 代码
+Col = 列
+Color = 颜色
+Column = 列
+column.display.word_type = 显示文字方式
+column.display.word_length = 显示文字长度
+column.show.title = 显示提示文字
+#Column_Info = 列信息
+#ColumnName = 列名称
+#ColumnWidth = 列宽
+Columns = 列
+Confirm_To_Commit = 确认提交
+Commit = 提交
+Commit_To = 提交至
+Common = 普通
+Compare = 比较
+Complete = 完成
+Completed = 完成
+#CompleteNodeInfo = 完成节点信息
+Component = 组件
+Components = 组件
+#Customer_Management = 客户管理
+Cut = 剪切
+Condition = 条件
+Condition_Type = 条件类型
+Configuration = 配置
+Configurations = 配置
+Confirm = 确认
+Content = 内容
+Contraction = 收缩
+Copy = 复制
+Create = 创建
+#CREATED = 创建时间
+Created = 创建时间
+#Create_Activity = 创建操作按钮
+#Create_Page = 创建页
+#Create_Help = 创建帮助
+#Create_View = 创建视图
+Creator = 创建人
+#Create.Overview = 生成概览
+Current_Processor = 当前处理人
+#Current = 当前
+#customized = 定制
+catalog = 目录
+#Click.to.select = 点击选择
+file_catalog = 目录
+Details = 详细信息
+#Corresponding.formField = 对应表单字段
+#Corresponding.sessionKey = 对应Session键名 
+#Field.details = 字段详细信息
+#Corresponding.form = 对应表单
+#FormField.type = 表单字段类型
+Metadate = 元数据
+Daily = 每日
+Data = 数据
+DateField = 日期选择框
+Database = 数据库
+DataSource = 数据源
+#DataSourceExist = 该数据源名称已存在
+Hour = 小时
+Date = 日期
+Day = 日
+Day-off = 非工作日
+DB = 数据库
+DB_Driver = 数据库驱动
+DB_Password = 数据库密码
+DB_PoolSize = 连接池大小
+DB_Timeout = 连接超时时间
+DB_Type = 数据库类型
+DB_URL = 数据库连接字
+DB_Username = 数据库用户名
+#Decrease_Editor = 缩小编辑器
+Default = 默认
+DefaultType = 默认类型
+DEFAULT = 默认
+DriverClass = 数据驱动
+Define = 定义
+Definition = 定义
+Delete = 删除
+#Please_Delete_List_Application = 请在软件列表中删除此软件
+#Delete_This_Module = 确认删除本模块(包括其子级)？
+Department = 部门
+DepartmentField = 部门选择框
+#Department_Information = 部门信息
+#Department_List = 部门列表
+Departments = 部门
+Department_Level = 部门等级
+#DESC = 降序
+desc = 降序
+Description = 描述
+Deselect = 取消选择
+Design = 设计
+Procedure = 存储过程
+Detail = 详细
+DetailSheet = 子工作表
+Developer = 开发者
+Diagram = 图表
+Dimension = 尺寸
+Disable = 非激活
+#Directory_List = 列表
+#Do_not_repeat = 不重复
+Document = 文档
+Domain = 企业域
+Domain(s) = 企业域
+#Domain_Definition = 企业域定义
+#Domain_Detail = 企业域详细
+#Domain_Info = 企业域信息
+#Domain_Level = 企业域等级
+#DomainLevel_Detail = 企业域等级详细
+#Domain_List = 企业域列表
+#DomainLevel = 企业域等级
+DomainLevels = 企业域等级
+#DomainLevel_List = 企业域等级列表
+#DomainLevel_Info = 企业域等级信息
+#DomainLevel_Management = 企业域等级管理
+#Domain_Management = 企业域管理
+DomainAdmin = 企业域管理员
+DomainName = 企业域名称
+Domains = 企业域
+Draft = 草稿
+#DriverClass = 数据驱动类
+#Excel_Export = 导出Excel
+#Excel_Import = 导入Excel
+Edit = 编辑
+Editor = 编辑器
+#Edit_Help = 编辑帮助
+Effective = 生效
+#Effective_Date = 生效日期
+#eg = 例如
+Email = 电子信箱
+#Exp/Imp = 导入/导出
+#ImpMmenu = 导入菜单
+Enable = 激活
+End = 结束
+#EndNodeInfo = 结束节点信息
+English = 英语
+Errors = 错误
+#Excel_Import_Configurations = Excel导入配置
+#ExcelConf = Excel导入配置
+#ExcelName = Excel名称
+Exit = 退出
+Export = 导出
+Fail = 失败
+FangSong = 仿宋
+#Time_Range = 时间范围
+#TimeLog = 时效报告
+Field = 字段
+Fields = 字段
+#FieldName = 字段名称
+#FieldType = 字段类型
+File = 文件
+Find = 查找
+#Form_List = 表单列表
+#Filter = 过滤条件
+#FilterMode = 过滤形式
+Finish = 完成
+#Fit_Text = 适合文本
+Flow = 流程
+#Focus_Key = 焦点切换键
+Key= 键
+SubFlow = 子流程
+Folder = 文件夹
+Font = 字体
+Font_7 = 七号
+Font_6 = 六号
+Font_5 = 五号
+Font_4 = 四号
+Font_3 = 三号
+Font_2 = 二号
+Font_1 = 一号
+Font_Color = 字体颜色
+Font-size = 字体大小
+#Financial_Management = 财务管理
+#For_All = 给所有
+Form = 表单
+Forms = 表单
+FormField = 表单字段
+SelectField = 下拉框
+selectField = 选用字段
+FormType = 表单类型
+Form_Style = 表单风格
+FlowReturnCss = 流程回退标识
+Format = 格式
+Friday = 星期五
+From = 从
+function = 函数
+Function_Management = 函数管理
+General = 常用
+Global_Object = 全局对象
+Guide = 手册
+Group = 批量
+#Create_Application = 新建软件应用
+#Batch = 批量
+#GoTo = 跳转到
+Home_Page = 待填写
+User_List = 用户列表
+UserField = 用户选择框
+#Hello = 你好
+Human_Resources = 人力资源
+HeiTi = 黑体
+Height = 高
+Help = 帮助
+Helper_Info = 帮助信息
+#HERE = 此处
+#Here = 此处
+Hide = 隐藏
+hide = 隐藏
+Hidden = 隐藏
+Hidden_Script = 隐藏条件
+Hidden_Print_Script = 打印时隐藏条件
+History = 历史
+Home = 主页
+HomePage = 首页
+#HomePage_List = 首页列表
+Horizontal = 水平
+Icon = 图标
+#IMPMappingConfigInfo = 导入配置信息
+Import = 导入
+#Internal= 内部
+#In = 在
+#Inbox = 收件箱
+#Increase_Editor = 扩大编辑器
+Image = 图像
+#ImageName  = 标识图像
+#IncludeType = 包含元素类型
+IncludeField = 包含元素
+Info = 信息
+Information = 信息
+InputField = 文本框
+TextAreaField = 多行文本框
+CheckboxField = 复选框
+RadioField = 单选框
+ImageUploadField = 图片上传
+AttachmentUploadField = 文件上传
+OnLineTakePhotoField = 在线拍照
+FileManagerField = 文件管理
+TreeDepartmentField = 树形部门选择框
+HTMLEditorField = HTML编辑器
+WordField = word编辑器
+#GridNotSupportWordField = 网格视图不支持word编辑器
+ImageUploadToDataBaseField = 图片上传到数据库
+AttachmentUploadToDataBaseField = 文件上传到数据库
+ReminderField = 待办提醒
+MapField = 地图
+TabField = 选项卡
+CalctextField = 计算脚本
+ViewDialogField = 视图选择框
+NumberField = 数字框
+Insert = 插入
+#Insert_Calculation = 插入计算框
+#Insert_Checkbox = 插入复选框
+#Insert_Component = 插入组件
+#Insert_DateField = 插入日期选择框
+#Insert_Department_Select = 插入部门选择框
+#Insert_File_Upload_Box = 插入文件上传框
+#Insert_Frame = 插入帧
+#Insert_HTML_Editor = 插入HTML编辑框
+#Insert_Image = 插入图片
+#Insert_Image_Upload_Field = 插入图片上传框
+#Insert_Include = 插入包含元素
+#Insert_Level-ruler = 插入水平线
+#Insert_Linkage = 插入超链接
+#Insert_Multi-text_Box = 插入多行文本框
+#Insert_Radio_Button = 插入单选框
+#Insert_Selectbox = 插入下拉列表
+#Insert_SuggestField = 插入下拉提示框
+#Insert_Special_Symbol = 插入特殊符号
+#Insert_Tab_Menu = 插入页签
+#Insert_Textbox = 插入文本框
+#Insert_ViewDialog = 插入视图框
+#Insert_WORD_Editor = 插入WORD编辑框
+#IntegrateToPage = 嵌入到页
+#Invalid = 不生效
+#Invalid_File_Format = 不合法的文件格式
+Joined = 已加入的
+Unjoined = 未加入的
+LimitByUser = 受用户限制
+AddAuditor = 自定义审批人
+Pagination = 分页
+Popup = 弹出窗口
+PopDIV = 弹出层
+Protected = 受保护
+Refresh = 刷新
+Rename = 重命名
+previousMonth = 上一月
+previousYear = 上一年
+previousWeek = 上一周
+previousDay = 前一天
+pattern = 模式
+#MetadataManager = 元数据管理
+nextMonth = 下一月
+nextYear = 下一年
+nextWeek = 下一周
+nextDay = 后一天
+#Prev_Name = 开始日期字段名
+#ProxyUser = 代理人用户
+Proxy = 代理
+#ShowLog = 显示操作历史
+Show = 显示
+Setup = 设置
+Retracement = 回撤
+ShowView = 显示视图
+Distribute = 审批送出设置
+Centralized = 审批到达设置
+IsPublished = 发布
+SMS = 短信
+SendFormat = 发送模板
+E-mail = 邮件
+TimeLimit = 时限
+Unit = 单位
+#NotifySuperior = 通知上级
+Urgent = 催办
+#NeedToRemind = 是否需要催办
+SendMode = 发送方式
+#Software_Development =软件开发
+Italic = 斜体
+Item = 项
+#Justify = 适合文本
+justify = 适合文本
+KaiTi = 楷体
+Label = 标签
+Language = 语言
+#LAST_MODIFIED = 最新修改时间
+Layout = 布局
+layer = 层
+LayoutType = 布局类型
+Leave = 离开
+left = 左
+Left = 左
+Left_Align = 左对齐
+Legend = 图例
+Length = 长度
+Level = 等级
+Libraries = 库
+LiShu = 隶书
+List = 列表
+Light  =灯泡
+Limit = 限制
+Loading = 载入中
+Login = 登录
+Logout = 注销
+LogoUrl = 图标
+Loop_Self = 自循环
+Lower = 下级
+LastModified = 最后修改时间
+LastFlowOperation = 最后流程操作
+Location = 当前位置
+Macro = 函数库
+Macro_List = 函数库列表
+Macro_Library = 函数库
+Make = 设为
+Mobile_Applications = 移动应用
+#Market_Management = 市场管理
+Macro_Libraries = 函数库
+MacroLibs = 函数库
+#Match_With = 比较
+Manager = 管理人
+#Manual = 手动
+ManualNode = 人工节点
+Mapping = 映射
+Mass = 群发
+MasterSheet = 主工作表
+Master/Detail = 主/子表单
+MaximumSize = 最大值
+Maximize = 最大化
+menu = 菜单
+#Menu = 菜单
+MainMenu = 主菜单
+#Menu_List = 菜单列表
+Message = 短信
+Messages = 短信息
+Merge = 合并
+Mobile = 手机
+#MobileUserCount = 手机用户数
+Modify = 修改
+Module = 模块
+#ModuleExist = 该模块名称已存在
+Monday = 星期一
+Monthly = 每月
+More = 更多
+Move_Down = 向下移动
+Move_Up = 向上移动
+Up = 向上
+Down = 向下
+Multi_Select = 多项选择
+MultiLanguage = 多语言
+MultiLanguages = 多语言
+#My = 我的
+#My_Application_List = 我的软件列表
+#My_Domain_List = 我的企业域列表
+#My_HomePage = 我的主页
+Name = 名称
+#NeedReply = 需要回复
+New = 新建
+New_Module = 新建
+New_Wizard = 向导
+#New_App = 新建软件
+#New_Module = 新建模块
+#New-Calendar-Name = 新日历名称
+Next = 下一步
+No = 否
+#None = 无
+none = 无
+Normal = 普通
+Notification =通知
+#Normal_Domain = 普通企业域
+#NORMAL = 普通
+Notice = 注意
+#Nothing = 无
+#No_Template = 没有模板
+#No_Database = 缺少数据库
+Number = 数字
+#Object_Background_Color = 对象背景颜色
+OK = 确认
+#On = 在
+#OnActionFlow = 作用流程
+#FlowInfoShowType = 流程信息显示方式
+#FlowInfoShowType_default = 默认方式
+#FlowInfoShowType_div = 弹出层方式
+#OnActionForm = 作用表单
+#OnActionView = 作用视图
+#OnActionExcel = 导出文件名称
+#OnSaveStartFlow = 保存单据时启动流程
+#Open_Type = 打开类型
+#OverdueNotice = 过期通知
+#Open_Pop_Window = 新窗口中打开
+#Open_Working_Area = 在工作区域中打开
+Operator = 操作符
+#OrderBy = 排序根据
+OrderNumber = 排序号
+Other = 其它
+#OtherUrl = URL地址
+Option_Script = 选项
+Ok_Script = 确定条件
+Options = 选项
+#OR = 或
+#Outbox = 发件箱
+#Orderly_AND = 按顺序与
+page = 页
+Page = 页
+#Page_List = 页列表
+Pages = 页
+Paragraph = 段落
+Paragraph_Style = 段落样式
+Paste = 粘贴
+Password = 密码
+#Path_Name = 路径名称
+Pending = 待办
+#Pending_Personal = 待办人
+Permission = 权限
+Personal = 个人
+PersonalMessage = 消息中心
+Percent = 百分比
+Pixel = 像素
+IsRead = 已读
+NoRead = 未读
+#Vote = 投票
+#Votes = 票
+#Voted = 已投票
+Announcement = 公告
+Period = 周期
+Picture = 图片
+Platform = 平台
+#Please = 请
+#Please_Save = 请保存
+#PoolSize = 连接池大小
+#Powered_by = 技术支持
+Prev = 上一步
+Preview = 预览
+Price = 金额
+Print = 打印
+Print_Script = 打印脚本
+Profile = 个人资料
+Property = 属性
+Prompt = 提示
+Process = 处理
+Processed = 处理过
+Published = 发布
+Path_Condition_Script= 路径进入条件脚本
+Path_Action_Script=  路径执行脚本
+Path_Validate_Script= 路径送出校验脚本
+#Px = 像素
+public = 公有
+private = 私有
+file_pattern = 模式
+Query = 查询
+RadioBox = 单选框
+#Reminder_List　=提醒列表
+Readonly = 只读
+ReadOnly_Script = 只读条件
+Recalculate = 重计算
+Receiver = 接收者
+#ReceivedMessage = 接收信息
+#ReceivedDate = 接收日期
+ShortMessage = 短信息
+#Sent = 已发送
+#Failure = 发送失败
+Red = 红色
+Draft = 草稿
+#RejectNotice =退回通知
+#Redo = 重做
+Refresh = 刷新
+Relation = 关联
+#RelationNodeInfo = 关联信息
+#Related_Field = 相关字段
+#Relative = 相关
+#Reload_Properties = 重新加载所有语言属性
+Remark = 备注
+Remarks = 备注
+Reminder = 提醒
+#Remote = 远程
+Remove = 移除
+#Remove_Activity = 移除操作按钮
+#Remove_Style = 移除样式
+Repeats = 重复
+Read-only = 只读
+Regular = 常规
+Reply = 回复
+#RejectType = 回退类型
+Reset = 重置
+Resource = 资源
+Resources = 资源
+#Return = 回退
+right = 右
+#Right = 右
+Right_Align = 右对齐
+Role = 角色
+Roles = 角色
+Row = 行
+RowNum = 序号
+#Row_Insert_Above = 插入行（上方）
+#Row_Insert_Below = 插入行（下方）
+#Col_Insert_Left = 插入列（左方）
+#Col_Insert_Right = 插入列（右方）
+#RemoveReminder=移除提醒
+Replace = 替换
+#Replace_with = 替换成
+#Runing = 运行
+#Running = 运行
+#Runtimes = 运行次数
+#Running_Back = 回退
+#Running_Next = 运行
+Russian = 俄语
+Saturday = 星期六
+Save = 保存
+Save&Back = 保存并返回
+Save&Close = 保存并关闭
+Save&Copy = 保存并复制
+Save&New = 保存并新建
+Script = 脚本
+Search = 查询
+SearchForm = 查询表单
+SEARCHFORM = 查询表单
+#Search_Template = 相关查询表单
+seconds = 秒
+#Self = 自身
+Select = 选择
+SelectBox = 选择框
+SuggestField = 下拉提示框
+StartNode = 开始节点
+Send = 发送
+Sender = 发送者
+Submit = 提交
+#Submitter = 当前提交人
+#SendDate = 发送时间
+#ReceiveDate = 接收时间
+SerialNum = 序列号码
+#ShowTotalRows = 显示记录总数
+Simplified_Chinese = 简体中文
+Single = 单个
+Size = 大小
+SongTi = 宋体
+Special = 例外
+Split = 拆分
+Standard = 标准
+Start = 开始
+Startup = 启动
+#StartNodeInfo = 开始节点信息
+State = 状态
+StateLabel = 状态标签
+StateToShow = 状态
+#Statistics = 统计
+Status = 状态
+State_Label = 状态标签
+Step = 步骤
+steps = 步骤
+Stopped = 停止
+String = 字符串
+Style = 样式
+Style_one =  样式一
+Style_two =  样式二
+Style_three =  样式三
+Style_four =  样式四
+Style_Library = 样式库
+Style_Libraries = 样式库
+StyleLib = 样式库
+StyleLibs = 样式库
+SubForm = 子表单
+#Submit_WorkFlow = 提交流程
+SUBFORM = 子表单
+Subject = 主题
+#SubUserLoginURL = 子用户登录地址
+#Subscript = 子脚本
+Success = 成功
+#Success.total.imported = 已成功导入记录
+#Successful = 成功
+Save_Success = 保存成功
+Sunday = 星期日
+#Super = 超级
+SuperAdmin = 超级管理员
+#SuperAdmin_Management_List = 超级管理员管理列表
+Super_Domain = 超级企业域
+#SuperUser_List = 特权用户列表
+#SuperUser_Information = 特权用户信息
+Superior = 上级
+#Superscript = 上级脚本
+SuperUser = 特权用户
+#SuperUser_Management = 特权用户管理
+Suspend = 挂起
+#SuspendNodeInfo = 挂起节点信息
+Suspended = 挂起
+Switch = 切换
+System_Var = 系统变量
+Symbol = 符号
+Standard_Calendar = 标准日历
+StartFlowScript = 流程启动脚本
+Summary = 摘要
+C24_Calendar = 24小时日历
+Night_Calendar = 夜班日历
+Eight_TimeZone = 8时区
+Tab = 选项卡
+Task = 任务
+Table = 表格
+Table_Menu = 表格菜单
+Terminate = 终止
+#TerminateNodeInfo = 终止节点信息
+#Termsdefinition
+Test = 测试
+Text = 文本
+Number = 数字
+Textbox = 文本框
+Textarea = 多行文本框
+TextType = 显示
+Textbox_Type = 文本框类型
+Thursday = 星期四
+Time = 时间
+Timeout = 超时
+time.consuming = 耗时
+Tips = 提示
+Title = 标题
+Title_1 = 标题一
+Title_2 = 标题二
+Title_3 = 标题三
+Title_4 = 标题四
+Title_5 = 标题五
+Title_6 = 标题六
+#To = 至
+Tools = 工具
+#To_Summary_Fields = 需要显示的字段
+#to_getting_start = 开始创建
+Today = 今天
+Top = 顶部
+Total = 总计
+TotalRows = 总记录数
+Trash = 回收箱
+Traditional_Chinese = 繁体中文
+Tuesday = 星期二
+Type = 类型
+#UserCount = 用户数
+Underline = 下划线
+URL = 地址
+Undo = 撤销
+Upload = 上传
+Upload_File = 文件上传
+#Upload_Template = 模板上传
+#Upgrade_Domain = 升级企业域
+User = 用户
+#User_Information = 用户信息
+#User_List = 用户列表
+#Insert_User_Select = 插入用户选择框
+#User_Management = 用户管理
+#User_Name = 用户名称
+Users = 用户
+#UserType = 用户类型
+Validate = 校验
+Validate_Script = 校验
+Validate_Library = 校验库
+Validate_Libraries = 校验库
+ValidateLibs = 校验库
+ValLibs = 校验库
+#Value = 值
+#VideoDemoUrl = 演示视频
+Value_Script = 值
+#Value_Type = 值类型
+Vertical = 垂直
+View = 视图
+ViewDialog = 视图框
+#View_Info = 视图信息
+Views = 视图
+#VIP_Domain = VIP企业域
+Visit = 访问
+Wednesday = 星期三
+Week = 周
+Weekly = 每周
+#Welcome = 欢迎
+WelcomePage = 欢迎页
+Width = 宽
+Window = 窗口
+#WithOut = 不连同
+Wizard = 向导
+Workflow = 流程
+Workflows = 流程
+Workflow_Info = 流程信息
+Workflow_History = 流程历史
+Workflow_Diagram = 流程图表
+WorkCalendar = 工作日历
+Working_Calendar = 工作日历
+Working-day = 工作日
+Working-weeks = 工作周
+Yes = 是
+Year = 年
+Month = 月
+Zoom_In = 放大
+Zoom_Out = 缩小
+Days = 天
+Hours = 小时
+Minutes = 分
+Seconds = 秒
+SUN = 日
+MON = 一
+TUE = 二
+WED = 三
+THU = 四
+FRI = 五
+SAT = 六
+EndPage = 末页
+FirstPage = 首页
+PrevPage = 上一页
+NextPage = 下一页
+InPage = 第
+#InPage = 第
+#Jump = 跳转
+MsgBox  = 系统信箱
+Sysbox = 系统信息
+#IsPrimaryKey = 是否主键
+#IsRelate = 是否为父子关系
+PrimaryKey = 主键
+Client = 客户端
+Debug = 调试
+Console = 控制台
+#Step_Over = 单步跳过
+#Step_Into = 单步进入
+#Step_Out = 单步退出
+#Go = 断续
+#LineNumber = 行数
+#Input = 输入
+connect = 连接
+Operate = 操作
+#OperateType = 操作类型
+#NameRequired = 名称必填
+#isVisible = 列显示设置
+#invocation = 是否启用
+#version_manage = 版本管理
+#delete_checked = 删除选中项
+#join_mode = 拼接模式
+#current_page = 当页
+
+#---------------------------------------------------------
+NormalForm = 普通表单
+NORMALFORM = 普通表单
+TemplateForm = 模版表单
+TEMPLATEFORM = 模版表单
+
+###########################专有名词   END###########################################
+
+############Sentence###########
+core.field.has.datas = 字段存在数据
+core.field.name.was.duplicate = 字段名重复
+core.create_field.type.incompatible = 表单名或字段名存在无效字符
+core.field.has.exist = 字段已存在
+core.field.type.incompatible = 字段转换类型不兼容
+core.view.has.exist = 视图已存在
+core.view.grid.operate = 当有操作列时,视图打开类型不能为网格显示
+core.view.name.exist.invalidchar = 视图名存在无效字符
+core.form.has.exist = 表单已存在
+core.form.name.exist.invalidchar = 表单名存在无效字符
+core.form.fieldname.invalid = 是系统保留关键字，请重新命名
+core.form.has.datas = 表单存在数据
+core.form.type.tableName.select = 请选择映射数据库表格
+core.mapping.field.select = 请选择映射字段
+core.mapping.primarykey.select = 请选择主键字段
+core.mapping.field.was.duplicate.with.sys = 映射数据库字段名不能与系统数据库字段名重复
+core.superuser.exist = 用户帐号已存在，请重新选择用户帐号!
+core.superadmin.cannotdel = 此用户是超级管理员用户, 不能被删除!
+core.superuser.referenced = 此用户已被其它数据引用, 不能被删除!
+core.superuser.notexist = 账号或密码错误
+core.superuser.noeffectived = 用户未被激活
+core.superuser.password.error = 账号或密码错误
+core.util.cannotsave = 您此前编辑的文档不是最新版本，无法进行保存操作， 现系统已为您加载到最新版本！
+core.form.submit.norepeat = 当前文档正在流程处理中，请勿重复提交！
+core.department.exist = 部门名字已经存在，请选择另一个名字
+core.department.hassub = 部门存在下级部门
+core.department.hasuser = 部门存在用户
+core.department.name.illegal = 输入的部门名称不合法,不能为空
+core.domain.user.hassub = 此企业域存在用户
+core.resource.hasuser = 此菜单存在下级
+core.resource.hasrole = 此菜单已被角色引用
+core.application.referenced = 此软件已经被企业域所引用，无法被删除
+core.application.hasrelation = 此软件下模块间存在关联，无法被删除
+core.application.delete.nosuccess = 此软件下模块间存在关联或已经被企业域所引用，无法被删除
+core.application.exist = 此软件已经存在，请选择另一个名字
+core.appliction.datasource.empty = 请选择数据源
+core.module.commitfailed = 提交失败
+core.domain.exist = 该企业域名称已经被使用，请选择另一个名字
+core.domain.department.hassub = 该企业域存在部门
+core.domain.notChoose = 没有记录被选中，请选择记录
+core.domain.notexist = 企业域不存在或域未生效
+core.domain.cannotremove = 当前管理员不允许被移除
+core.domain.noapp = 当前企业域没有添加任何软件
+core.domain.user.noapp = 当前用户没有任何软件或角色可使用
+core.domain.hasapp = 当前企业域存在软件
+core.domain.name.illegal = 输入的企业域名称不合法
+core.domain.name.exist = 该企业域已存在
+core.domain.file.mistake = 导入文件出错,请检查导入文件并重新导入
+core.domain.export.fail = 导出失败,请重新导出
+core.domain.synchLDAP = 同步LDAP信息
+core.domain.LDAPConfig = 请在系统设置配置管理员账户与密码
+core.domain.samedepartment = 存在同名部门,同步失败
+core.domain.sameuser = 存在同名用户,同步失败
+core.domain.configError = 同步失败,请检查LDAP配置信息
+core.domain.excel.import.fail = EXCEL导入用户失败
+core.domain.excel.export.fail = EXCEL导出用户失败
+core.message.char.illegal = 只能输入长度1-50且由汉字、数字、字母、下划线不能以下划线开头和结尾组成的字符串
+core.component.notexist = 该容器不存在
+core.document.cannotsave = 当前用户不允许编辑文档
+core.form.alteration.column.name.exist = 列名已经存在:
+core.form.alteration.table.name.exist = 表名已经存在:
+core.form.alteration.column.type.incompatible = 目标列名与原列名不兼容:
+core.form.alteration.column.hasdata = 列存在数据:
+core.form.alteration.table.hasdata = 表存在数据:
+core.form.exist = 名称已被使用
+core.form.relationname.exist = 关联名已存在
+core.form.notexist = 表名不存在
+core.dts.excelimport.config.cannotimport = 你上传的不是Excel文件,不能导入
+core.dts.excelimport.config.empty = 你上传的文件不能为空!
+core.dts.exp.columnmapping.tonameexist = toName已经存在，请选择另一个名字
+core.dts.exp.columnmapping.field = 请选择一个字段
+core.dts.exp.columnmapping.valuescript = 请输入值脚本（ValueScript）
+core.dts.exp.columnmapping.length = 请输入长度（Length）
+core.dts.exp.columnmapping.precision = 请输入精确度（Precision）
+core.dts.exp.mappingconfig.datasource = 请选择数据源（DataSource）
+core.dts.exp.mappingconfig.exist = 该映射配置名字已经被使用，请选择另一个名字
+core.role.exist = 该角色名字已经被使用，请选择另一个名字
+core.role.cannotremove = 已有用户引用此角色,不能删除
+core.security.character.error = 输入字符错误，请重新输入图片中出现的4个字符
+core.task.started = 定时任务已经启动
+core.task.choosetime = 请选择时间
+core.upload.notallow = 不允许上传这种文件类型，必须是
+core.upload.toolarge = 文件容量太大
+core.upload.invalid_File_Format = 不合法的文件格式
+core.user.account.exist = 用户帐号已存在
+core.user.notexist = 用户名或密码不正确
+core.user.cannotremove = 用户被其它数据引用，不能被删除
+core.user.noeffectived = 用户未被激活
+core.user.password.error = 用户名或密码不正确
+core.user.showAllRole = 显示所有角色
+core.user.showChoseRole = 显示选中角色
+core.user.addPageAll = 添加本页所有
+core.user.online.count = 当前在线用户数
+core.user.LiaisonOfficer = 接口人
+core.security.license.exceedlimit = 用户登录受限，已经到达最大在线用户数
+core.workflow.error = 系统错误，流程处理失败
+core.workflow.validation.error = 系统错误，流程验证失败
+core.workflow.users.error = 系统错误，获取流程处理人失败
+core.workflow.toImage.error = 系统错误，生成流程图失败
+core.workflow.runscript.error = 系统错误，执行宏语言失败
+core.workcalendar.type.notempty = 请输入日历类型
+core.workcalendar.name.notempty = 请输入日历名字
+core.workcalendar.standard.calendarinfo = 一周5天，一天8小时，白班制工作日历。
+core.workcalendar.24.calendarinfo = 24小时制工作日历。
+core.workcalendar.night.calendarinfo = 一周5天，一天8小时，夜班制工作日历。
+core.workcalendar.special.enddate.patternerror = 结束日期输入的日期格式有误，请重新输入（格式：YYYY-MM-DD）
+core.workcalendar.special.startdate.patternerror = 开始日期输入的日期格式有误，请重新输入（格式：YYYY-MM-DD）
+style.has.been.cited = 样式已经被引用
+core.fieldextends.name.not.null = 所属字段已用尽
+copy.for = 抄送给
+##########@Page############
+page.Open_with_IscriptEditor = 打开脚本编辑器
+page.msg.mouse_hover_pause_hide = 鼠标悬停暂停隐藏
+page.loading = 载入中,请稍等
+page.website = Teemlink.com
+page.title = MyApps|OBPM 我的管理平台 - Teemlink.com
+page.cannot.delete = 不能删除
+page.timeout = 操作超时，请重新登录
+page.timeout.notice = 您没有登录或者操作已超时，系统将在数秒内返回到登录页面
+page.uneditable = 对象不可编辑
+page.records.notChoose = 没有记录被选中，请选择记录
+core.homepage.onreminder = 无任何的待办事项提醒
+page.user.notChoose = 未选择被代理用户名,请选择
+page.description.toolong = 描述输入长度超过限制
+core.homepage.nosummaryCfg = 没有这条摘要信息
+page.disptcher.fail = 抱歉,无法跳转到您指定的页面
+page.only.support.ie = 该功能仅支持IE内核浏览器使用
+page.can.not.load.document = 不能装载文档控件
+page.check.browser.security.settings = 请在浏览器的选项中检查浏览器的安全设置
+#######core.calendar#######
+page.core.calendar.enddate.patternerror = 结束日期输入的日期格式有误，请重新输入（格式：YYYY-MM-DD）
+page.core.calendar.startdate.patternerror = 开始日期输入的日期格式有误，请重新输入（格式：YYYY-MM-DD）
+page.core.calendar.endtime.patternerror = 结束时间输入的时间值格式有误，请重新输入！（格式为HH:MM，范围为00:00~23:59，例：00:00或20:30或09:00)
+page.core.calendar.starttime.patternerror = 开始时间输入的时间值格式有误，请重新输入！(格式为HH:MM，范围为00:00~23:58，例：00:00或20:30或09:00)
+page.core.calendar.endtime.notempty = 开始时间值不为空，结束时间必须填写！
+page.core.calendar.starttime.notempty = 结束时间值不为空，开始时间必须填写！
+page.core.calendar.overoftime = 开始时间值不得晚于结束时间值！
+page.core.calendar.special.info = 设置特例日期的时间
+page.core.calendar.standard.info = 设置工作周的工作时间
+
+##########alisoft############
+page.alisoft.backalisoft = 返回到“我的软件”页面
+page.alisoft.userinvalid = 用户未激活
+page.alisoft.autoback = 秒之后自动返回到“我的软件”页面
+page.alisoft.nodomain = 用户激活成功,但还未被管理员添加为企业域管理者,请联系管理员
+
+#######core.security#######
+page.login.account = 请输入您的账号
+page.login.password = 请输入您的密码
+page.login.domain = 请输入企业域名
+page.login.character = 请输入图片显示的4个字符，不分大小写
+page.login.keepinfo = 记住我的信息
+page.login.keeppwd  = 记住密码
+page.login.infoerror = 密码错误
+page.login.user_type = 用户类型
+page.login.remember.label = 下次自动登录
+page.login.remember.tip = 为了确保您的信息安全，不建议在网吧等公共环境勾选此项
+page.core.dynaform.activity.content.onactionview = 请选择作用视图
+page.core.dynaform.activity.content.onactionform = 请选择作用表单
+page.core.dynaform.activity.content.onactionflow = 请选择作用流程
+page.core.dynaform.oneKeyCreateView = 查询表单不能生成视图
+page.core.dynaform.activity.content.approveLimit = 请选择下一个审批状态
+page.core.dynaform.activity.content.confirm.beforeAction = 动作执行前确认框
+page.core.dynaform.activity.content.confirm.detail = 确认框内容
+page.core.dynaform.activity.content.confirm.detail.empty = 请填写确认框内容
+page.core.dynaform.forddin = 你不能执行此操作
+page.core.dynaform.activity.content.jump.validate = 跳转设置:模块、目标表单必填
+
+page.core.deploy.delete = 请选择软件或模块后再删除
+page.core.deploy.have.module = 此模块与其它模块相关联
+page.core.admin.detail.appdelete = 请选择软件后再删除
+page.core.deploy.copy = 请选择软件或模块后再复制
+
+#######core.webeditor#######
+page.includefield.module=请选择模块
+page.includefield.view =请选择视图
+
+#######View#######
+core.dynaform.view.authfield = 权限字段
+core.dynaform.view.authfield.scope.itself = 自己
+core.dynaform.view.authfield.scope.superior = 直属上级用户
+core.dynaform.view.authfield.scope.lower = 直属下级用户
+core.dynaform.view.authfield.scope.all_superior = 所有上级用户
+core.dynaform.view.authfield.scope.all_lower = 所有下级用户
+core.dynaform.view.authfield.scope.author.dept.default = 默认部门
+core.dynaform.view.authfield.scope.author.dept.allsuperior = 所有上级部门
+core.dynaform.view.authfield.scope.author.dept.alllower = 所有下级部门
+core.dynaform.view.authfield.scope.author.dept.linesuperior = 直属上级部门
+core.dynaform.view.authfield.scope.author.dept.linelower = 直属下级部门
+core.dynaform.view.activity.msg.cleanall =您确定要清空所有的数据吗？
+core.dynaform.view.column.total = 只支持设计模式视图
+core.dynaform.view.column.visible = 视图页面可见
+core.dynaform.view.column.visible4ExpExcel = Excel导出显示
+core.dynaform.view.column.visible4Print = 自定义打印显示
+core.dynaform.view.column.visible4PagePrint = 网页打印显示
+core.dynaform.view.column.format.example = 示例
+core.dynaform.view.column.format.normal.explain = 常规类型的列格式不包含任何特定的数字格式
+core.dynaform.view.column.format.decimals = 小数位数
+core.dynaform.view.column.format.thousandsign = 使用千位分隔符
+core.dynaform.view.column.format.number.explain = 数值格式用于一般的数值格式
+core.dynaform.view.column.format.currency.type = 货币类型
+core.dynaform.view.column.format.currency.explain = 货币格式用于表示一般货币数值
+core.dynaform.view.column.format.color.background = 底色
+core.dynaform.view.column.format.normal = 常规
+core.dynaform.view.column.format.number = 数值
+core.dynaform.view.column.format.currency = 货币
+core.dynaform.view.column.format.currency.Renminbi = 人民币
+core.dynaform.view.column.format.currency.dollar = 美元
+core.dynaform.view.column.format.currency.yen = 日圆
+core.dynaform.view.column.format.currency.pound = 英镑
+core.dynaform.view.column.format.reset = 将列的格式恢复为默认设置
+core.dynaform.view.column.icon.value = 值
+core.dynaform.view.column.label.icon = 按图标显示
+core.dynaform.view.activity.expSub = 是否导出子表单数据
+core.dynaform.view.filter.field.description = 提示：</br>1.在日期比较运算中，需要把日期精确到时分秒;</br>2.操作符为“IN”或“NOT IN”时,在比较内容中填写的多个匹配项间请用“半角逗号”隔开 如：arg1,arg2
+core.dynaform.view.filter.authority_condition.tip = 提示：</br>1.当筛选字段为【用户选择框】类型的字段时，作用域的选项会因字段的【选择模式】属性值而不同：</br>&nbsp;&nbsp;&nbsp;如果是“单选”，则有：上级用户可见、下级用户可见、自己可见</br>&nbsp;&nbsp;&nbsp;如果是“多选”，则仅有自己可见
+cn.myapps.core.dynaform.view.common_filter_fields.tip = 提示：</br>1.
+core.dynaform.view.basic.displayType = 数据呈现方式
+core.dynaform.view.basic.displayType.relatedForm = 按数据来源表单的格式呈现
+core.dynaform.view.basic.displayType.templateForm = 按模板表单的格式呈现
+#######core.workflow#######
+page.core.workflow.billflow.statelabel = 状态名
+
+page.name.notexist = 请输入名称
+page.area.format = 大小格式为100或100px或100%，高度不能设为百分比
+page.statelabel.notexist = 请输状态标签
+page.url.notexist = 请输入url
+page.driver.notexist = 请输入驱动名
+page.type.notexist = 请输入数据库类型
+page.name.exist = 名称已经存在
+page.content.notexist = 内容不能为空,请输入内容
+page.description.notexist = 请输入描述
+page.description.llegal = 非法的描述字符
+page.dbtimeout.illegal = 输入连接超时时间不合法，只能输入数字  
+page.dbpoolsize.illegal = 输入连接池大小不合法，只能输入数字  
+page.role.notexist = 请选择角色名称
+page.module.notexist = 请输入模块名称
+page.moduleid.notexist = 请选择模块
+page.formid.notexist = 请选择表单
+page.orderby.notexist = 请选择排序字段
+page.options.mappingfield.notexist = 请选择选项映射字段
+page.realvalue.choose.field.unique = 真实值最好选择数据唯一的字段
+page.obj.dofailure = 操作失败
+page.user.account.notexist = 请输入用户帐号
+page.user.account.notexist = 请输入用户帐号
+page.user.account.illegal = 输入的用户帐号不合法，只能输入1-20个字母、可带数字、“_”、“.”的字串
+########page.user.account.new_illegal是修改Bug #5615 时添加的新key########
+page.user.account.new_illegal = 输入的用户帐号不合法，只能输入1-20个字母或中文、可带数字、“_”、“.”的字串
+page.user.email.illegal = 不是合法的邮箱地址
+page.user.telephone.illegal = 输入的用户手机号不合法，必须以数字开头，除数字外，可含有“-”
+page.user.loginpwd.illegal = 输入的用户密码不合法，只能输入6-20个字母、数字、下划线
+page.user.loginpwd.new_illegal = 输入的用户密码不合法，只能输入不超过25个字母、数字、下划线
+page.user.loginpwd.blank = 输入的用户密码不可为空
+page.user.number.legal = 请输入大于0的整数
+page.user.orderbyno.legal = 排序号须为0-1000000之间的整数
+page.user.defaultdepartment.required = 请在部门节点上点击右键设置一个默认部门
+through_any_approval,node_through = 任一审批人通过,则节点通过
+through_all_approval,node_through = 所有审批人通过,则节点通过
+through_one_approval,node_through = 所有审批人一个接一个审批通过,则节点通过（按顺序审批）
+the_current_approval_approval_who_decide_next_step  = 所有审批人通过,则节点通过（按顺序审批）
+step-by-step_approval_current_node_only_choose = 当下步有多个审批节点时,只能选择一个节点
+step-by-step_approval_current_node,select_multiple_nodes= 当下步有多个审批节点时,可以选择多个节点
+multiple-step_approval_nodes,completion_one_node,arrival_process = 当上步有多个审批节点时,只要任一节点完成,则流程到达
+step-by-step_approval_node,select_multiple_nodes = 当上步有多个审批节点时,所有节点完成,流程可以到达
+page.resource.action.notchoose = 请选择一个动作
+page.resource.view.notchoose = 请选择一个视图
+page.resource.other.notexist = 请输入一个URL地址
+page.resource.Excel_Import_Configurations.notchoose = 请输入一个Excel导入配置
+page.current.node.not.approver = 节点没有合法的审批人!
+page.column.empty = 列为空
+
+page.view.pageline = 条记录/页
+page.user.pageline = 用户/页
+
+page.macro.type.notchoose = 请输入类型
+page.macro.content.notexist = 请输入函数内容
+
+page.workflow.progress  = 流程进度跟踪
+page.workflow.subject.notexist = 请输入流程主题
+page.workflow.form.select = 请选择表单
+page.workflow.chooseaction = 请选择一项操作
+page.workflow.chooseaction.back = 请选择回退至选项
+page.workflow.noaction = 没有操作能被执行
+page.workflow.manualnode.choosegroup = 请选择审批组
+page.workflow.manualnode.choosesendmode = 请选择发送方式
+page.workflow.manualnode.choosesendnotftype = 请选择通知类型
+page.workflow.select.form = 此功能供用户给当前表单开启不同的流程
+
+page.wizard.module_exist = 该模块名称已存在
+page.wizard.steps = 操作步骤
+page.wizard.steps.create.module = 创建模块
+page.wizard.steps.create.form = 创建表单
+page.wizard.steps.create.flow = 创建流程
+page.wizard.steps.create.menu = 创建菜单
+page.wizard.steps.create.view = 创建视图
+page.wizard.step1.title = 步骤一：创建模块
+page.wizard.step1.description = 模块的功能
+page.wizard.step1.description1 = 系统的功能是由模块实现的，例如“客户管理系统”是一个模块
+page.wizard.step1.description2 = 模块根据其功能的强弱一般由表单、视图、流程等组成
+page.wizard.step2.formtype.title = 步骤二：创建表单（选择表单类型）
+page.wizard.step2.formtype.description = 定义表单的类型
+page.wizard.step2.formtype.single = 单个模式将会创建一张表单，包含一些必要的字段
+page.wizard.step2.formtype.master = 采用主/子表单模式，将会创建两个表单，其中一个表单以视图的方式呈现
+page.wizard.step2.info.title = 步骤二：创建表单
+page.wizard.step2.info.subtitle = 步骤二：创建子表单
+page.wizard.step2.info.description = 定义表单的基本信息
+page.wizard.step2.info.description1 = 表单是软件的基本组成部分，用户可以通过表单来进行数据的录入及维护
+page.wizard.step2.info.description2 = 其主要元素包括有字段和操作
+page.wizard.step2.info.description3 = 操作是指用户在表单录入过程中可能会涉及的一些动作，比如保存表单，新建表单，等等
+page.wizard.step2.info.subdescription = 定义子表单的基本信息
+page.wizard.step2.info.subdescription1 = 此处定义子表单所需要的信息
+page.wizard.step2.fields.title = 步骤二：创建表单（添加字段）
+page.wizard.step2.fields.field_name = 字段名称
+page.wizard.step2.fields.field_type = 字段类型
+page.wizard.step2.fields.description = 为表单添加字段
+page.wizard.step2.fields.subtitle = 步骤二：创建子表单（添加字段）
+page.wizard.step2.fields.subdescription = 为子表单添加字段
+page.wizard.step2.style.subdescription = 选择子表单风格
+page.wizard.step2.column.subdescription = 为子表单的视图增加列
+page.wizard.step2.style.title = 步骤二：创建表单（选择表单风格）
+page.wizard.step2.style.subtitle = 步骤二：创建子表单（选择子表单风格）
+page.wizard.step2.style.description = 选择表单风格
+page.wizard.step2.style.description1 = 此处定义字段的排列类型
+page.wizard.step2.style.description2 = 字段的排列类型有竖排式（在一列中排列所有字段）、横排式（在一行中排列所有字段）、两列式（在两列中排列所有字段）
+page.wizard.step2.style.subdescription = 选择子表单风格
+page.wizard.step2.fields.tip1 = 1，长度：请使用大于0的整数，单位是字符
+page.wizard.step2.fields.tip2 = 2，选项：选项之间请用分号(;)隔开。
+page.wizard.step2.fields.tip3 = 3，格式：日期格式默认为yyyy-MM-dd
+page.wizard.step2.subview.title = 步骤二：为子表单创建视图（添加列）
+page.wizard.step2.subview.description = 为视图添加列
+page.wizard.step2.subview.description1 = 选择子表单的视图所需要显示的字段以及在视图中所需要的操作
+page.wizard.step2.success.title = 创建表单
+page.wizard.step2.success.adjust = 如果您想修改表单，
+page.wizard.step2.success.checkbox = 如果您想为表单创建流程，请选中下面的复选框
+page.wizard.step2.success.tostep3 = 为表单创建流程
+page.wizard.step3.title = 步骤三：创建流程
+page.wizard.step3.description = 基本信息
+page.wizard.step3.branch_integrate = 分支合并
+page.wizard.step3.description1 = 此处定义在软件中所使用的流程
+page.wizard.step3.description2 = 流程用于描述表单的变迁状态，比如，某申请单从甲交给乙审批，再从乙转到丙审批完成，即是一个流程
+page.wizard.step3.type.title = 步骤三：创建流程（选择流程类型）
+page.wizard.step3.type.description = 为流程选择类型
+page.wizard.step3.type.description1 = 普通类型定义了线状流程，流程由第一节点发起，到最后节点结束，依次传递给流程线中的每个节点
+page.wizard.step3.type.description2 = 分支合并类型的流程，由第一节点发起，分散到第二节点和第三节点，最后合并到第四节点
+page.wizard.step3.type.description3 = 分支类型的流程，自发起时即分散到两个节点中，两个节点并行推进
+page.wizard.step3.role.title = 步骤三：创建流程（选择角色）
+page.wizard.step3.role.description = 选择角色
+page.wizard.step3.role.description1 = 定义在流程中的节点名称及其审批的角色
+page.wizard.step3.success.title = 步骤三：创建流程
+page.wizard.step3.success = 创建流程成功！
+page.wizard.step3.success.adjust = 如果您想对流程进行修改，
+page.wizard.step4.title = 步骤四：创建菜单
+page.wizard.step4.menu.description1 = 菜单是视图及表单的入口
+page.wizard.step4.menu.description2 = 描述是指菜单在页面上显示的内容
+page.wizard.step4.menu.description3 = 定义序列号可以对多个菜单进行排序
+page.wizard.step4.menu.description4 = 定义菜单的上级，可以使菜单位于某一级菜单的后面
+page.wizard.step5.title = 步骤五：创建视图
+page.wizard.step5.description = 视图的基本信息
+page.wizard.step5.show_total_rows = 显示记录总数
+page.wizard.step5.export_to_excel = 导出到Excel
+page.wizard.step5.description1 = 视图是表单记录的集合，以列表的形式显示各个表单
+page.wizard.step5.description2 = 描述是视图在页面中的显示内容
+page.wizard.step5.description3 = 视图名称并不会在页面中显示
+page.wizard.step5.description4 = 仅作为后台中辨识的名称
+page.wizard.step5.type.title = 步骤五：创建视图（选择类型）
+page.wizard.step5.type.description = 定义视图的类型
+page.wizard.step5.type.description1 = 勾选待办记录，将会创建多一个视图，该视图根据角色的权限显示特定的记录
+page.wizard.step5.type.all = 列表显示所有记录
+page.wizard.step5.type.pending = 列表显示待办记录
+page.wizard.step5.column.title = 步骤五：创建视图（增加列）
+page.wizard.step5.column.description = 为视图增加列
+page.wizard.step5.column.description1 = 在表单字段中选择所需要在视图中显示的列
+page.wizard.step5.column.description2 = 如图中的“订单编号”，“订单日期”等字段
+page.wizard.step5.column.description3 = 在表单字段中选择所需要在视图中显示的过滤条件
+page.wizard.step5.column.description4 = 如图中的“联系电话”，“日期”两个输入框
+page.wizard.step5.filter.title = 步骤五：创建视图（增加过滤条件字段）
+page.wizard.step5.filter.description = 定义视图的过滤条件字段
+page.wizard.step5.success = 准备步骤完成
+page.wizard.step5.success.description = 至此，所有的准备步骤已经完成，点击下面的确认按键，进行创建！
+
+##########@copy Module############
+page.copymodule.chooseform = 复制模块
+page.copyview.success.title= 复制视图
+#ViewList = 视图列表
+#CopyFlow = 复制流程
+#CopyForm= 复制表单
+#FlowList =流程列表
+#FormList =表单列表
+#CopyView = 复制视图
+#CopyAll =  复制
+page.copymodule.chooseview = 复制视图选项
+page.copyflow.ToNext = 复制流程
+page.copyview.ToNext = 复制视图
+page.copymodule.chooseflow =复制视图选项
+page.copyform.success = 复制表单成功
+page.copymodule.success.title = 复制模块成功
+page.copymodule.success =  复制模块成功
+page.copymodule.choosemodule=复制模块选项
+page.copyflow.success.title = 复制流程成功
+page.copyflow.success  = 复制流程成功
+#NewModuleName = 复制模块名
+#NewDescription = 复制模块描述
+#CopyModule = 新复制模块
+#ModuleList =模块列表
+#Copy_Wizard = 复制模块向导
+page.copyview.success = 复制视图成功
+page.copymodule.error = 复制错误
+#Not_Choose = 没有选择任何要复制的对象
+Error=错误
+System=系统
+Warn=警告
+Elements = 元素
+#go.to = 转至
+########## Global Message ############
+page.name.required=名称必填
+page.name.startingit=名称只能输入以汉字、字母或下划线（“_”）开头的字串!
+page.name.check = 名称只能含有汉字、数字、字母、下划线，不能以数字开头！
+page.length.allowtype = 长度只能输入正整数
+page.prevname.notexist=请输入开始日期字段名
+page.type.required=动作必填
+delete.successful=删除成功
+please.choose.application = 请选择软件
+please.choose.module = 请选择模块
+please.choose.one = 请选择其中一项或多项
+please.choose.type = 请选择类型
+#Minute = 分钟
+#DelayTime = 滞后时间
+#DateTime = 日期时间
+#Arrive = 到达
+#Reject = 回退
+#Overdue = 过期
+can.not.exist.invalidchar = 不能含有非法字符
+catalog.notexist = 目录名不能为空
+catalog.startingit = 目录名应该以“/”开头！
+########## Application Message ############
+connect.database.failed=数据库连接失败
+########## Module Message ############
+module.name.invalid=名称无效，不能包含下列字符 ^ \ / : * ? " < >
+########## Workflow Message ############
+workflow.subject.exist=流程主题已存在
+workflow.subject.exist.invalidchar=流程主题存在非法字符
+workflow.limittimecount.positive = 时限必须为正数
+workflow.limittimecount.great.than = 单位为小时，时限必须大于0.5
+Auto.Audit.Type = 自动审批类型
+#Immediately = 立刻
+#Specify = 指定
+#Delay = 滞后
+#NewPrincipal = 新待办人
+#OrigPrincipal = 原待办人
+#Isnotifysuperior = 是否通知上级
+file.not.exist = 文件不存在
+########## Form Message ############
+#Collapse=折叠
+#ShowMode = 显示模式
+NORMAL_MAPPING = 普通(映射)
+#DefaultOption = 默认选项
+#EmptyOption = 空选项
+#FirstOption = 第一个选项
+department.of.user = 用户所属部门
+#PDF_Export=PDF导出
+form.name.invalid=名称无效，只支持字母、数字和下划线
+component.reference.by = 删除失败，组件已被表单所引用
+fix.errores.save.again = 你必须修正所有错误，然后再重新保存
+alias.setting.desc = 别名设置方式，字段名称包含在“${    }”中，如：${字段名称}
+confirm.clear.data = 是否确定清除所有数据
+confirm.reset.all.field.id = 是否确定重设所有字段ID
+reset.field.id.success = 重置字段编号成功
+clear.success = 清除成功
+########## View/Column Message ############
+Open.in.pop.window = 弹出框显示
+Open.in.working.area = 父窗口区域显示
+Open.in.working.own = 当前区域显示
+Open.in.working.currpage = 当前页打开
+Open.in.working.div = 弹出层显示
+Open.in.grid = 网格显示
+#is.sum = 是否汇总
+Unit.is.px.or.% = 单位是px或%
+########## Import/Export Message ############
+expimp.choose.import.file = 请选择导入文件
+expimp.choose.appliaction.or.module = 请右键选择软件或模块之后，再点击导出|导入
+expimp.import.successful = 导入成功
+expimp.import.failure = 导入失败
+expimp.export.failure = 导出失败
+expimp.choose.export.type = 请选择导出类型
+expimp.choose.import.type = 请选择导入类型
+import.type.not.match = 导入类型不匹配，导出的类型为
+#Gantt=甘特
+########## Upload Message ############
+upload.file.empty = 无效的上传文件，文件为空或大小为0kb
+########## Reoport Message ############
+#SUM = 汇总
+#AVERAGE = 平均
+#DISTINCT = 唯一
+#COUNT = 计数
+#MAX = 最大值
+#MIN = 最小值
+#TestReport = 测试报表
+#Report = 报表
+#CrossReport = 交叉报表
+#Total = 小计
+#Grant_Total = 总计
+#Column_Info = 列信息
+#Row_Info = 行信息
+#Data_Info = 数据列信息
+#Filter_Info = 过滤列信息
+#MappingConfig = 映射
+core.shortmessage.norecvlist = 接收者不能为空。
+core.shortmessage.nosender = 当前登录用户的手机号码为空,不能发送短信！
+core.shortmessage.sending = 发送中
+core.shortmessage.sent = 已发送
+core.shortmessage.failure = 发送失败
+core.shortmessage.sender.split.comma = 多个接收者时请以英文逗号(,)号隔开
+########## Repository Messsge ##########
+duplicate_name = 库名称重复 ,请重新命名再保存！
+function.name.exist = 定义的函数名已存在
+######### user－role Message #####
+#User_Role_Select = 角色选择
+#SMSMemberCode = 短信发送编码
+#SMSMemberPwd = 短信发送密码
+######### flex upload Message ###########
+#File_Name = 文件名
+#File_Size = 大小
+#File_Type = 类型
+#File_Status = 状态
+#Finish = 完成
+#Prompt = 提示
+#Prompt_Message = 一次最多只能上传
+#Prompt_Message1 = 个文件
+#Prompt_Message2 = 大于限制大小
+############Word###############
+Abort = 中断
+#AbortNodeInfo = 中断节点信息
+Account = 账号
+#Action = 执行
+Activity = 操作
+#Actions = 操作
+Add = 添加
+all = 所有
+#AliSoftAppKey = 阿里软件ID
+#AliSoftCertCode = 阿里软件验证串
+Administrator = 管理员
+#Administrator_List = 管理员列表
+#ArrivesNotice = 到达通知
+Administrators = 管理员
+#Advance = 高级
+#Advanced = 高级
+#Advanced_Domain = 高级企业域
+AfterActionScript = 动作执行后脚本
+#Alias = 别名
+#Align = 对齐
+#Align_To_Border = 底边框对齐
+#All = 所有
+#All_Applications = 所有软件
+#All_checked = 选择所有
+#all_datas = 所有数据
+#All_Fields = 所有字段
+#Add_Reminder = 已添加的提醒
+#All_rights_reserved = 保留所有权利
+#AllowViewDoc = 允许查看文档
+#AND = 与
+App = 软件
+Application = 软件
+SelectAboutField = 左右选择框
+Application(s) = 软件
+#Application_Detail = 软件详细
+#Application_Information = 软件信息
+#Application_List = 软件列表
+#Application_Management = 软件管理
+
+Resource.has.been.cited = 资源已经被引用
+Resource.has.been.cited.try.again = 请确认资源不被引用后再尝试操作
+############ Class: GanttType ###############
+StartDate = 开始日期
+EndDate = 结束日期
+Completeness = 完成度
+IsGroup = 是否分组
+IsMilestone = 是否里程碑
+Resource = 资源
+ParentTaskID = 上级任务ID
+IsOpen = 是否打开
+Dependency = 依赖
+Link = 链接
+Forum.Links = 论坛链接
+Caption = 说明文字
+require.mapping = 必须映射
+Open_All = 展开所有
+Flod_All = 折叠所有
+Left_Slide = 左滑动
+Right_Slide = 右滑动
+######### one key create view #########
+OneKey_Creview = 一键生成视图
+Create_View_Success = 一键生成视图成功
+viewExist = 该视图名称已存在
+######### file manager ################
+#FileManager = 文件管理
+#rootPath = 根目录
+######### departmenttree ##############
+core.departmenttree.addDepartment = 添加部门
+core.departmenttree.editDepartment = 编辑部门
+core.departmenttree.deleteDepartment = 删除部门
+core.departmenttree.selectDepartment = 请选择要删除的部门
+core.departmenttree.ensure = 确定删除选中部门（包括其子部门）吗？
+core.departmenttree.hasChild = 含有子部门不能删除
+core.departmenttree.rootdepartment = 不能删除根部门
+core.departmenttree.hasUser = 存在用户不能删除 
+core.departmenttree.searchdepartment = 查找部门 
+############ Skin ###########
+Skin = 皮肤
+select_one_at_least = 请至少选择一个
+######多语言#####
+page.content.label = 标签不能为空
+page.content.text = 文本不能为空
+#############
+page.function.info1 = 面向最终用户，简单易用
+page.function.info2 = 并非从零开始，引用成功案例
+page.function.info3 = 自我进化，不断完善
+page.function.info4 = 支持手机等智能设备接入
+page.function.info.sms.resent = 重发短信
+page.function.info.sms.message = 系统已经发送验证码到您的手机，请您查收并输入短信中的验证码以完成登录操作。
+page.function.info.sms.code = 手机验证码
+###############
+page.title.notexist = 请输入标题
+######synchronouslyData######
+please.select = 请选择
+please.select.datasource = 请选择数据源
+synchronouslyDataSuccess = 数据同步成功
+hasSynchronouslyData = 已进行了同步
+selectNodeNoIs = 选择该节点不是
+synchronouslyData = 同步数据
+Synchronization = 同步
+Synchronize_Form_Table = 同步表单数据
+Sys.form.data.structure = 同步表单数据结构
+noPrimaryKeyName = 映射数据库表格中没有映射主键字段
+#####resources##########
+#####permission#########
+Authorize = 授权
+IsAuthorize = 是否授权
+Allocation = 已分配
+Unappropriated = 未分配
+#######
+smsApproval=开启短信审批
+
+##############fieldExtends################
+field.extends.menu=字段扩展管理
+field.extends.addField=添加字段
+field.extends.name=所属字段
+field.extends.label=显示标签
+field.extends.type=类型
+field.extends.isNull=是否为空
+field.extends.forTable=所属模块
+field.extends.forTable.user=用户模块
+field.extends.forTable.dept=部门模块
+field.extends.isNull.yes=是
+field.extends.isNull.no=否
+field.extends.type.string=字符串
+field.extends.type.date=日期
+field.extends.type.clob=大字段
+field.extends.enabel=是否在列表中显示
+field.extends.sortNumber=排序
+field.extends.isDelete=确定删除字段吗？
+field.extends.message.getListError=获取列表失败！
+field.extends.message.labelNullError=标签不能为空！
+field.extends.message.repeatError=该字段已被分配使用，请选择其它字段！
+field.extends.message.failed=失败
+field.extends.message.label.failed=该标签在指定的属性表已存在
+field.extends.message.hasDataError=该字段当前已存在数据，不能对类型进行修改！
+field.extends.message.deleteSuccess=删除成功！
+field.extends.message.deleteError=删除失败！要删除的字段存在数据！
+field.extends.message.fieldHasData=要删除的字段存在数据，删除字段将会把字段的数据一起删除，确定要删除吗？
+#################gis#######################
+map = 地图
+core.field.name.illegal = 输入的标签不合法
+#hiddenValue = 隐藏时显示值
+menu.name.exist = 菜单名称已存在
+#Node = 节点
+#Tree = 树形
+#Need = 必填
+#ID = 编号
+save.current.application = 请先保存当前应用
+################# Activity #######################
+Save_Without_Workflow=保存(不带流程)
+Save_With_Workflow=保存(带流程)
+Save_Back=保存并返回
+Save_New_With_Old=保存并新建(带旧数据)
+Save_New_WithOut_Old=保存并新建(不带旧数据)
+Save_WithOut_Validate=保存草稿(不进行校验)
+Save_Copy=保存并复制
+Save_Close_Window=保存并关闭窗口
+Print_With_FlowHis = 网页打印(包含流程历史)
+Close_Window = 关闭窗口
+Edit_Auditor = 编辑流程审批人
+Pdf_Export = 导出Pdf
+File_Download=文件下载
+Clear_All_Datas = 清空所有数据
+WorkflowProcess = 流程处理
+WorkflowRetracement = 流程回撤
+StartupWorkflow = 流程启动
+WorkflowAdjustment = 流程调整
+disableFlowNode = 不允许增删流程节点
+changeFlowOperator = 仅允许修改操作人
+changeFlowCc = 仅允许修改抄送人
+Dispatcher = 重定向
+DispatcherUrl = 重定向地址
+Dispatcher = 跳转页面
+DispatcherMode = 模式
+DispatcherUrl = 地址
+Forward = 转发
+Redirect = 重定向
+################# Operation #######################
+Isview=可视
+Invisible=不可视
+FolderCreate=文件夹创建
+FolderRename=文件夹重命名
+FolderDelete=文件夹删除
+FileReview=文件夹查看
+FileEdit=文件编辑
+FileDelete=文件删除
+FileDownload=文件下载
+FileMove=文件移动
+FileCopy=文件复制
+FileCopyAll=全部文件复制
+UploadFile=文件上传
+AddChooseFile=添加选择文件
+Disabled=禁止
+Hidden_When_Modify_Forbid=修改(如果禁止则隐藏)
+Readonly_When_Modify_Forbid=修改(如果禁止则只读)
+page.description.error = 当前同级菜单中已经存在该菜单名称，请重新输入
+
+############WordControlFunction############
+secsign.function = 电子印章功能
+please.select.server.secsign = 请选择服务器印章
+apply.select.secsign = 加盖选择的印章
+apply.local.secsign = 加盖本地的印章
+autograph = 手写签名
+secsign.management = 印章管理
+upload.secsign = 上传印章
+template.and.redhead.function = 模板和套红功能
+please.select.redhead = 请选择模板套红
+apply.select.redhead = 套用选择红头
+upload.redhead = 红头文件上传
+please.select.template = 请选择模板打开
+apply.select.template = 使用选择模板
+upload.template = 模板文件上传
+trace.function = 痕迹保留功能
+keep.trace = 保留痕迹
+cancel.trace = 取消留痕
+show.trace = 显示痕迹
+hide.trace = 隐藏痕迹
+accept.modify = 接受修订
+
+##########flash player提示安装########
+Flash_Player_Install = HTML内容应需要Adobe Flash播放器。安装
+
+##########NetworkDisk #####
+NetworkDisk = 网盘
+Capacity = 容量
+PublicSharing = 公共共享
+HasUse = 已使用
+
+
+
+
+########帮助########
+Help_Document_Help = 帮助文档
+MyApps_Menus_Help = MyApps帮助目录
+Home_Page_Help = 主页
+Domain_Help = 域
+Domain_List_Help = 域列表
+Domain_Edit_Help = 域编辑
+Domain_Info_Help = 域基本信息
+Domain_Dept_Help = 域部门
+Domain_Dept_List_Help = 域部门列表
+Domain_Dept_Info_Help = 域部门信息
+Domain_Dept_AddUser_Help = 域部门添加用户
+Domain_User_Help = 用户
+Domain_User_List_Help = 域用户列表
+Domain_User_Info_Help = 域用户信息
+Domain_Application_List_Help = 域软件列表
+Domain_Application_List_addApplication_Help = 域软件列表添加软件
+Domain_Manager_List_Help = 域管理员列表
+Domain_Manager_List_addManager_Help = 域管理员列表添加管理
+Domain_MultiLanguages_Help = 域多语言
+Domain_MultiLanguages_List_Help = 多语言列表
+Domain_MultiLanguages_Info_Help = 多语言信息
+Domain_WorkCalendar_Help = 工作日历
+Domain_WorkCalendar_List_Help = 工作日历列表
+Domain_WorkCalendar_Info_Help = 工作日历信息
+Domain_WorkCalendar_Info_ExceptionDay_Info_Help = 例外日信息
+Domain_WorkCalendar_Info_ExceptionDay_List_Help = 例外日列表
+Domain_WorkCalendar_Info_WorkWeek_Info_Help = 工作周信息
+Domain_WorkCalendar_Info_WorkWeek_List_Help = 工作周列表
+Domain_WorkCalendar_List_WorkWeek_New_Help = 新建工作周
+Domain_Fieldextends_Help = 扩展字段
+Domain_Fieldextends_List_Help = 扩展字段列表
+Domain_Fieldextends_Info_Help = 扩展字段信息
+
+Domain_NetworkDisk_Help = 网盘
+Domain_NetworkDisk_List_Help = 网盘列表
+Domain_NetworkDisk_Config_Help = 网盘配置
+Domain_NetworkDisk_Share_Help = 网盘公共共享
+Domain_NetworkDisk_Share_File_Management_Help = 文件管理
+Domain_NetworkDisk_Share_Permission_Config_Help = 权限配置
+Domain_NetworkDisk_Share_Permission_Config_User_Help = 通过用户
+Domain_NetworkDisk_Share_Permission_Config_Department_Help = 通过部门
+Domain_NetworkDisk_Share_Permission_Config_Role_Help = 通过角色
+Domain_NetworkDisk_Share_Permission_Config_Group_Help = 通过组
+
+Domain_Log_Help = 操作日志
+Domain_log_List_Help = 操作日志列表
+Domain_log_Info_Help = 操作日志信息
+
+Domain_WorkflowMonitor_Help = 流程监控
+Domain_WorkflowMonitor_List_Help = 流程监控列表
+Domain_WorkflowMonitor_Info_Help = 流程监控信息
+
+Domain_WorkflowPanel_Help = 流程仪表盘
+
+All_Repository_Help = 函数库
+All_Repository_List_Help = 函数库列表
+All_Repository_Info_Help = 函数库编辑
+
+Superuser_Help = 特殊用户
+Superuser_List_Help = 特殊用户列表
+Superuser_Info_Help = 特殊用户信息
+
+Application_Help = 软件
+Application_List_Help = 软件列表
+Application_New_Help = 软件新建
+Application_Info_Help = 软件信息
+Application_Info_Base_Help = 基本信息
+Application_Info_GeneralTools_Help = 常用工具
+Application_Info_GeneralTools_Role_Help = 角色
+Application_Info_GeneralTools_Role_List_Help = 角色列表
+Application_Info_GeneralTools_Role_Info_Help = 角色信息
+Application_Info_GeneralTools_Role_Info_AddUserToRole_Help = 角色信息添加用户
+Application_Info_GeneralTools_Role_Info_ResourceAuthorize_Help = 角色信息资源授权
+Application_Info_GeneralTools_Role_Info_BatchAuthorize_Help = 批量授权
+Application_Info_GeneralTools_Menu_Help = 菜单
+Application_Info_GeneralTools_Menu_List_Help = 菜单列表
+Application_Info_GeneralTools_Menu_ChooseLink_Help = 菜单列表选择链接
+Application_Info_GeneralTools_Menu_Info_Help = 菜单信息
+Application_Info_GeneralTools_Menu_Copy_Help = 复制菜单
+Application_Info_GeneralTools_HomePage_Help = 首页
+Application_Info_GeneralTools_HomePage_List_Help = 首页列表
+Application_Info_GeneralTools_HomePage_Info_Help = 首页信息
+Application_Info_GeneralTools_HomePage_AddReminder_Help = 首页信息添加提醒
+Application_Info_GeneralTools_HomePage_LinkRole_Help = 首页信息添加角色
+Application_Info_GeneralTools_Reminder_Help = 提醒
+Application_Info_GeneralTools_Reminder_List_Help = 提醒列表
+Application_Info_GeneralTools_Reminder_Info_Help = 提醒信息
+Application_Info_GeneralTools_StateLabel_Help = 标签状态
+Application_Info_GeneralTools_StateLabel_List_Help = 标签状态列表
+Application_Info_GeneralTools_StateLabel_Info_Help = 标签状态信息
+Application_Info_GeneralTools_Operation_Help = 操作
+Application_Info_GeneralTools_Operation_List_Help = 操作列表
+Application_Info_GeneralTools_Operation_Info_Help = 操作信息
+Application_Info_GeneralTools_Resources_Help = 资源
+Application_Info_GeneralTools_Resources_List_Help = 资源列表
+Application_Info_GeneralTools_Resources_Info_Help = 资源信息
+Application_Info_GeneralTools_Resources_Info_ChooseResources_Help = 资源信息选择资源
+Application_Info_GeneralTools_Links_Help = 链接
+Application_Info_GeneralTools_Links_List_Help = 链接列表
+Application_Info_GeneralTools_Links_Info_Help = 链接信息
+
+Application_Info_Libraries_Help = 库
+Application_Info_Libraries_MacroLibs_Help = 函数库
+Application_Info_Libraries_MacroLibs_List_Help = 函数库列表
+Application_Info_Libraries_MacroLibs_Info_Help = 函数库信息
+Application_Info_Libraries_MacroLibs_StyleLibs_Help = 样式库
+Application_Info_Libraries_MacroLibs_StyleLibs_List_Help = 样式库列表
+Application_Info_Libraries_MacroLibs_StyleLibs_Info_Help = 样式库信息
+Application_Info_Libraries_MacroLibs_ValidateLibs_Help = 校验库
+Application_Info_Libraries_MacroLibs_ValidateLibs_List_Help = 校验库列表
+Application_Info_Libraries_MacroLibs_ValidateLibs_Info_Help = 校验库信息
+
+
+Application_Info_AdvancedTools_Help = 高级工具
+Application_Info_AdvancedTools_Developer_List_Help = 开发者列表
+Application_Info_AdvancedTools_Developer_List_AddDeveloper_Help = 开发者列表添加开发者
+Application_Info_AdvancedTools_ExcelConf_Help = Excel导入配置
+Application_Info_AdvancedTools_ExcelConf_List_Help = Excel导入配置列表
+Application_Info_AdvancedTools_ExcelConf_Info_Help = Excel导入配置信息
+Application_Info_AdvancedTools_ExcelConf_Info_Col_FileUpload_Help = Excel导入配置信息文件上传
+Application_Info_AdvancedTools_ExcelConf_Info_Maintable_Help = Excel导入配置主工作表
+Application_Info_AdvancedTools_ExcelConf_Info_Childtable_Help = Excel导入配置子工作表
+Application_Info_AdvancedTools_ExcelConf_Info_Col_Help = Excel导入配置列
+Application_Info_AdvancedTools_DataSource_Help = 数据源
+Application_Info_AdvancedTools_DataSource_List_Help = 数据源列表
+Application_Info_AdvancedTools_DataSource_Info_Help = 数据源信息
+Application_Info_AdvancedTools_MetadataManager_Help = 元数据管理
+Application_Info_AdvancedTools_Page_Help = 页
+Application_Info_AdvancedTools_Page_List_Help = 页列表
+Application_Info_AdvancedTools_Page_Info_Help = 页信息
+Application_Popmenu_Wizard_Info_Help = 新建向导
+Application_Popmenu_Importexport_Info_Help = 导入和导出
+
+SysConfig_Help = 系统管理
+SysConfig_LDAP_Info_Help = LDAP
+SysConfig_Auth_Info_Help = 身份验证设置
+SysConfig_Email_Info_Help = 邮件设置
+SysConfig_IM_Info_Help = IM配置
+SysConfig_Version_Info_Help = 版本管理
+SysConfig_ResPermission_Info_Help = 资源授权设置
+SysConfig_UserMassageConfig_Info_Help = 用户密码策略
+SysConfig_Cache_data_manager_Info_Help = 缓存与数据管理
+core.sysconfig.sms.authenticate = 是否开启手机短信验证
+core.sysconfig.sms.AffectMode = 作用类型
+core.sysconfig.sms.AffectMode.all = 所有ip
+core.sysconfig.sms.AffectMode.match = 匹配ip范围
+core.sysconfig.sms.AffectMode.exclude = 排除ip范围
+core.sysconfig.sms.AffectRange = 作用ip范围
+core.sysconfig.sms.timeout = 超时(单位“秒”)
+core.sysconfig.sms.content = 短信内容(“$”代表验证码)
+core.sysconfig.ldapUrl.config = 请确认LDAP服务器地址配置
+Action_Button_Help=操作按钮
+Form_Activity_Button_Info_Help = 表单操作按钮信息
+View_Activity_Button_Info_Help = 视图操作按钮信息
+Print_Info_Help=打印信息
+Print_List_Help=打印列表
+Print_Help=打印
+Report_Col_Help=报表列
+Report_Info_Help=报表信息
+Report_List_Help=报表列表
+Report_Help=报表
+Task_Info_Help=任务信息
+Task_List_Help=任务列表
+Task_Help=任务
+Sub_Node_Help=子节点
+Finish_Node_Help=完成节点
+Cancle_Node_Help=取消节点
+Stop_Node_Help=终止节点
+Suspend_Node_Help=挂起节点
+Start_Node_Help=开始节点
+Auto_Node_Help=自动节点
+Relation_Help=关联
+Manual_Node_Help=手动节点
+Flow_Node_Help=流程节点
+Flow_Info_Help=流程信息
+Flow_List_Help=流程列表
+Flow_Help=流程
+View_Info_Action_Help=视图信息操作
+View_Col_Info_Help=视图列信息
+View_Info_Col_Help=视图信息列
+View_Info_Content_Help=视图信息内容
+View_Info_Help=视图信息
+View_List_Help=视图列表
+View_Help=视图
+Form_Info_Action_Help=表单信息操作
+Form_Info_Mapping_Help=表单信息映射
+HTML_Editor_Control_Help=HTML编辑器控件
+WORD_Editor_Control_Help=WORD编辑器控件
+Map_Control_Help=地图控件
+Pending_Control_Help=待办控件
+Online_Photo_Control_Help=在线拍照控件
+File_Manage_Control_Help=文件管理控件
+Picture_Upload_Database_Control_Help=图片上传到数据库控件
+Picture_Upload_Control_Help=图片上传控件
+File_Upload_Database_Control_Help=文件上传到数据库控件
+File_Upload_Control_Help=文件上传控件
+Include_Element_Control_Help=包含元素控件
+Calculate_Script_Control_Help=计算脚本控件
+Tab_Control_Help=选项卡控件
+View_Selectbox_Control_Help=视图选择框控件
+Pulldown_Selectbox_Control_Help=下拉提示框控件
+About_Selectbox_Control_Help=左右选择框控件
+Tree_Department_Selectbox_Control_Help=树形部门选择框控件
+Department_Selectbox_Control_Help=部门选择框控件
+User_Selectbox_Control_Help=用户选择框控件
+Date_Selectbox_Control_Help=日期选择框控件
+Button_Control_Help=按钮控件
+Pulldown_Box_Control_Help=下拉框控件
+Textarea_Control_Help=多行文本框控件
+Text_Control_Help=单行文本框控件
+Radio_Control_Help=单选框控件
+Checkbox_Control_Help=复选框控件
+Form_Info_Advance_Help=表单信息高级
+Form_Info_Help=表单信息
+Form_List_Help=表单列表
+Form_Help=表单
+Form_Reminder_Info_Help = 摘要信息
+Form_Reminder_List_Help = 摘要列表
+Form_Reminder_Help = 摘要
+Module_Info_Help=模块信息
+Module_Help=模块
+Iscript_Help=iScript帮助
+General_Script_Examples_Help=开发常见问题及解答
+Auto_Number_Help=自动编号
+Iforno_Allow_Editor_Script_Help=是否允许编辑脚本
+View_Selectbox_Confirm_Script_Help=视图选择框确定脚本
+Option_Script_Help=选项脚本
+View_Filter_Pending_Script_Help=视图过滤待办脚本
+View_Filter_Achieve_Script_Help=视图过滤已办脚本
+View_Select_Mapping_List_Data_Help=视图查询映射表数据
+Calculate_Script_Produce_Button_Help=计算脚本生成按钮
+Timing_Task_Script_Help=定时任务脚本
+Flow_Node_Approver_Script_Help=流程节点审批人脚本
+Current_Open_Document_Function_Help=当前打开文档函数
+Document_Function_Help=文档函数
+Email_Function_Help=邮件函数
+Info_Function_Help=信息函数
+Number_Function_Help=数字函数
+Charactorstring_Function_Help=字符串函数
+Create_Java_Class_Example_Function_Help=创建JAVA类实例函数
+Date_Function_Help=日期函数
+Counter_Function_Help=计数器函数
+System_Function_Help=系统函数
+Other_Function_Help=其他函数
+Define_Functin_Help=自定义函数
+Customize_Report_Help=自定义报表
+#######LOG###########
+log.operator = 操作人
+log.operation.log = 操作日志
+
+########systemConfig(系统管理配置)############
+System.Management = 系统管理
+System.config.info = 系统配置信息
+auth.config = 身份验证设置
+config = 设置
+email.config = 邮件设置
+basic.config = 基本设置
+is.sso = 是否使用单点登录
+auth.pattern = 身份验证模式
+interface.login = 界面登录
+local.server.name = cas服务器名称
+cas.server.login.url = cas服务器登录url
+cas.server.url.prefix = cas服务器url前缀
+sso.login = 单点登录
+auth.type = 登录验证方式
+sso.type = 单点登录验证方式
+cas.server = Cas 服务器
+ad.domain.controller = AD域所在服务器IP
+ad.default.domain = AD域名
+ad.admin.loginno = AD域所在服务器管理员账号
+ad.admin.loginnopw = AD域所在服务器管理员密码
+ad.login.domain = AD域登录企业域
+homepage.redirect.url = 首页重定向地址
+logout.redirect.url = 注销重定向地址
+user.synchronize.config = 用户同步设置
+default.email.address = 默认邮箱地址
+default.password = 默认密码
+after.auth.user.info.save.config = 认证后用户信息保存设置
+save.type = 保存方式
+data.encryption.type = 数据加密方式
+user.loginno.key.name = 用户登录账号键名称
+domain.key.name = 企业域键名称
+user.login.password.key.name = 用户登录密码键名称
+user.email.key.name = 用户邮箱键名称
+
+server.url = 服务器地址
+ldapConfig.url.need = ldap服务地址不能为空
+ldapConfig.baseDN.need = ldap的baseDN不能为空
+ldapConfig.dirStructure.need = 用户DN结构不能为空
+ldap.dirStructure.format.illegal = 用户DN结构格式不正确
+ldap.baseDN.format.illegal = baseDN格式不正确
+ldap.domain=登陆企业域
+ldapConfig.loginno.need = 映射的登陆账号不能为空
+ldapConfig.loginpwd.need = 映射的登录密码不能为空
+userDn = 用户DN
+ldap.pooled = 是否池化
+user.field.mapping.config = 用户字段映射设置
+user.id = 用户ID
+user.name = 用户名称
+user.loginno = 用户登录账号
+user.login.password = 用户登录密码
+user.login.time = 登录时间
+email.address = 邮箱地址
+telephone = 电话号码
+ldap.manager = 管理账户
+ldap.managerpassword = 管理账户密码
+user.class = 用户类
+department.field.mapping.config = 部门字段映射设置
+department.class = 部门类
+top.department = 顶级部门
+
+system.email.config = 系统邮件发送设置
+email.send.host = 邮件发送主机
+email.send.address = 邮件发出地址
+email.send.account = 邮件发送账号
+email.send.password = 邮件发送密码
+email.cc.address = 邮件抄送地址
+
+is.use.email.client = 是否使用邮件客户端
+email.function.domain = 邮件功能域
+
+email.clientAndServer.file.mapping = 邮件客户端与服务器的文件映射
+trash = 垃圾箱
+send = 发送箱
+draft = 草稿
+deleted = 已删除
+
+email.outer.config = 外部邮件设置
+email.income.config = 收邮件配置
+email.income.server = 收取邮件服务器
+email.income.server.port = 收取邮件服务器端口
+email.income.protocol = 收取邮件协议
+is.need.certificate = 是否需要证书
+
+email.send.config = 发邮件配置
+email.send.server = 发送邮件服务器
+email.send.server.port = 发送邮件服务器端口
+enable.accessories = 是否可带附件
+
+import.file = 导入文件
+exit.and.refresh = 退出并刷新
+empty.file.to.import = 导入文件不能为空
+#################End####################
+core.special.symbols.error = 不能包含特殊符号
+core.domain.log = 是否记录用户操作日志
+Record = 记录
+core.task.error.runing = 当前任务正在运行，或被禁止运行
+core.special.symbols.error = 查询参数包含非法字符
+core.special.symbols.excel_select_error = 防止sql注入，请更换查询字符
+The.condition.expression.is.not.correct = 条件表达式不正确
+#############Email#####################
+core.email.fromdep = 发件人所在部门
+core.email.startdate = 请选择开始时间
+core.email.enddate = 请选择结束时间
+core.email.attachment.nofound = 找不到附件
+core.email.attachment.dowonload.error = 附件下载失败
+core.email.folder.null = 邮件文件夹为空，无法读取邮件
+core.email.save.drafts.success = 草稿保存成功
+core.email.save.sent.error = 邮件发送或保存草稿失败
+core.email.move.error = 邮件移动失败
+core.email.mark.error = 邮件标记失败
+core.email.reply.info = 回复邮件信息 
+core.email.transport = 通过邮件或手机短信分享
+core.email.transport.info = 转发邮件信息
+core.email.to = 收件人
+core.email.from = 发件人
+core.email.internal.error = 内部邮件不支持该方法调用
+core.email.account.create.error = 该内部邮件账号已经被
+core.email.account.change = 用户使用,请更换一个
+core.email.folder.cannot.null = 文件夹名称不能为空
+core.email.folder.created = 文件夹名称已被创建
+core.email.user.error = 无法获取当前邮件用户
+core.email.folder.create.error = 当前文件夹尚未创建，无法更新
+core.email.folder.delete.error = 文件夹删除失败
+core.email.folder.deleted = 文件夹存在邮件，不能被删除
+core.email.folder.saved = 文件夹已保存
+core.email.info = 邮件详细信息
+core.email.attachment.p = 普通附件
+core.email.attachment.download = 下载
+core.email.cc = 抄送
+core.email.bcc = 密抄
+core.email.one = 个
+core.error.tip = 错误提示
+core.email.folder.add = 添加自定义邮件文件夹
+core.email.folder.name = 文件夹名称
+core.email.folder.manager = 文件夹管理
+core.email.folder.new = 新建文件夹
+core.email.folder.edit = 编辑文件夹
+core.email.folder.delete.confrm = 你确定要删除该文件夹
+core.email.folder.system = 系统文件夹
+core.email.unread = 未读邮件
+core.email.read = 已读邮件
+core.email.tatol = 邮件总数
+core.email.folder.other = 自定义或其他文件夹
+core.email.platforminfo = 平台邮箱
+core.email.homepage = 邮箱首页
+core.email.inbox = 进入收件箱
+core.email.function.init.error = 邮件功能初始化失败
+core.email.system.use.email.error = 系统禁止使用邮件功能
+core.email.cannot.find.user = 当前用户找不到所对应的邮件用户，请注销再登陆试试
+core.email.wirte = 写邮件
+core.email.delete.cc = 删除抄送
+core.email.add.cc = 添加抄送
+core.email.delete.bcc = 删除密抄
+core.email.add.bcc = 添加密抄
+core.email.drafts.save.error = 没有草稿箱，无法保存
+core.email.nosave.close = 该邮件尚未保存，你确定要关闭嚒
+core.email.attachment.delete.confrm = 你确定要删除这些附件
+core.email.attachment.delete.error = 删除附件失败
+core.email.attachment.add = 添加附件
+core.email.select.move = 请选择需要移动的邮件
+core.email.select.delete = 请选择需要删除的邮件
+core.email.deleted.confrim = 你确定要删除这些邮件？删除后邮件将不可恢复
+core.email.nomove = 已在但前邮箱下，不需要移动
+core.email.select.mark = 请选择需要标记的邮件
+core.email.deleted = 彻底删除
+core.email.tatol.one = 共
+core.email.other.label = 其中
+core.email.mark.label = 标记为
+core.email.move.label = 移动到
+core.email.send.tip = 发送提示
+core.email.user.setting = 用户信息设置
+core.email.user.account = 用户邮件账号
+core.email.user.pwd = 用户邮件密码
+core.email.check = 全选/不选　本页所有邮件
+core.email.type = 邮件类型
+core.email.att.mark = 附件标识
+core.email.null = 该文件夹没有邮件
+core.email.fanxuan = 反选
+core.email.chose.no = 不选
+core.email.in.manager = 进入文件夹管理页面
+core.email.folder.inbox = 收件箱
+core.email.folder.junk = 垃圾箱
+core.email.folder.sent = 发送箱
+core.email.folder.removed = 已删除
+core.email.folder.drafts = 草稿箱
+core.email.feng = 封
+core.email.domain.error = 系统不支持使用其他邮件域
+core.email.sent = 已发送
+core.email.failure = 发送失败
+core.email.senddate = 发送日期
+core.email.receviedate = 接收日期
+core.email.draftsdate = 创建日期
+core.email.attchment.size = 附件大小
+core.email.msglevel.important = 重要
+core.email.msglevel.veryImportant = 非常重要
+###########End Email#################
+
+###########Start Work#################
+core.dynaform.work.myWork =我的工作
+core.dynaform.work.flowcenter =流程中心
+core.dynaform.work.monitoringWork =工作监控
+core.dynaform.work.label.monitoringPeople =受监控人
+core.dynaform.work.label.processing =办理中
+core.dynaform.work.label.processed =办理过
+core.dynaform.work.label.to.read = 待阅
+core.dynaform.work.label.readed = 已阅
+core.dynaform.work.label.Processor = 处理人
+core.dynaform.work.label.copy.time = 抄送时间
+core.dynaform.work.label.read.time = 阅读时间
+core.dynaform.work.label.host = 主办
+core.dynaform.work.label.doFlow = 流转
+core.dynaform.work.label.entrust = 委托
+core.dynaform.work.label.entrust.current.step = 当前步骤
+core.dynaform.work.label.entrust.to = 将工作委托给
+###########End Work#################
+
+###########Start Form#################
+core.dynaform.form.checkout = 签出
+core.dynaform.form.checkin = 签入
+core.dynaform.form.success.checkout = 签出成功
+core.dynaform.form.success.checkin = 签入成功
+core.dynaform.form.message.warning.be.checkedout.by.other.developers = 当前资源已经被其他开发者签出，您目前没有修改权限
+core.dynaform.form.modifiedTime = 修改时间
+core.dynaform.form.modifier = 修改人
+core.dynaform.form.activity.transpond.way = 请选择要分享的方式
+core.dynaform.form.activity.transpond.people = 请选择要分享的人员
+core.dynaform.form.activity.transpond.no.template = 未配置摘要模板，请后台配置
+core.dynaform.form.action.FormHelper.relatedFrom = 数据来源表单
+core.dynaform.form.action.FormHelper.noticeCreateFrom = 你没可选的数据来源表单，你需要新建表单
+core.dynaform.form.nullValues = 空值
+core.dynaform.form.activity.transpond.template = 摘要模板
+core.dynaform.form.formfield.tips.could_not_get_label = 无法获取
+core.dynaform.form.formfield.tips.contact_administrator = 请联系管理员
+core.dynaform.form.formfield.validate.checkEmpty_system = 非空校验
+core.dynaform.form.formfield.validate.checkEmail_system = 邮箱校验
+core.dynaform.form.formfield.validate.checkIDcard_system = 身份证校验
+core.dynaform.form.formfield.validate.checkPhone_system = 手机号/电话校验
+core.dynaform.form.formfield.validate.checkFieldUnique_system = 数据唯一校验
+core.dynaform.form.formfield.validate.checkEmpty_tip = 必须填写！
+core.dynaform.form.formfield.validate.checkEmail_tip = 格式错误
+core.dynaform.form.formfield.validate.checkPhone_tip = 格式错误
+core.dynaform.form.formfield.validate.checkFieldUnique_tip = 不能重复
+core.dynaform.form.formfield.validate.checkIDcard_tip1 = 验证通过！
+core.dynaform.form.formfield.validate.checkIDcard_tip2 = 身份证号码位数不对！
+core.dynaform.form.formfield.validate.checkIDcard_tip3 = 身份证号码出生日期超出范围或含有非法字符！
+core.dynaform.form.formfield.validate.checkIDcard_tip4 = 身份证号码输入不合法！
+core.dynaform.form.formfield.validate.checkIDcard_tip5 = 身份证地区非法(前两位)！
+core.dynaform.form.formfield.prev_audit_node = 上一步流程状态
+core.dynaform.form.formfield.prev_audit_user = 上一步流程提交人
+core.dynaform.form.formfield.flowhistoryfiled.show_mode = 展现方式
+core.dynaform.form.formfield.flowhistoryfiled.show_mode.text = 文本列表
+core.dynaform.form.formfield.flowhistoryfiled.show_mode.diagram = 图表
+core.dynaform.form.formfield.flowhistoryfiled.show_mode.text_and_diagram = 文本列表与图表 
+core.dynaform.form.formfield.flowhistoryfiled.list.title.auditor = 办理人
+core.dynaform.form.formfield.flowhistoryfiled.list.title.node_name = 审批节点
+core.dynaform.form.formfield.flowhistoryfiled.list.title.next_node_name = 目标审批节点
+core.dynaform.form.formfield.flowhistoryfiled.list.title.flow_operation = 签核动作
+core.dynaform.form.formfield.flowhistoryfiled.list.title.attitude = 签核意见
+core.dynaform.form.formfield.flowhistoryfiled.list.title.process_time = 办理时间
+core.dynaform.form.formfield.suggestfiled.datamode.lable = 搜索方式
+core.dynaform.form.formfield.suggestfiled.datamode.local.lable = 本地静态数据查询
+core.dynaform.form.formfield.suggestfiled.datamode.remote.lable = 服务器动态数据查询(选项脚本通过"__keyword"参数获取输入内容)
+###########End Form#################
+
+###########Start Summary#################
+core.dynaform.form.summary.scope.pending = 待办摘要
+core.dynaform.form.summary.scope.flowNotice = 流程通知、分享
+core.dynaform.form.summary.scope.flowCc = 流程抄送
+###########End Summary#################
+
+###########Start FlowIntervention#################
+core.workflow.storage.runtime.intervention.name = 流程监控
+core.workflow.storage.runtime.intervention.panel = 流程仪表盘
+core.workflow.storage.runtime.intervention.initiator = 发起人
+core.workflow.storage.runtime.intervention.firstProcessTime = 流程开始时间
+core.workflow.storage.runtime.intervention.lastAuditor = 最后处理人
+core.workflow.storage.runtime.intervention.lastProcessTime = 最后处理时间
+core.workflow.storage.runtime.intervention.summary = 摘要
+core.workflow.storage.runtime.intervention.documents.per.workflow = 各流程单据数
+core.workflow.storage.runtime.intervention.flow.ratio = 流程各状态占比
+core.workflow.storage.runtime.intervention.flow.average.time.each.step = 流程各步所用平均时间
+core.workflow.storage.runtime.intervention.flow.processing.per.user = 各人待处理流程条数
+core.workflow.storage.runtime.intervention.flow.processing.count = 现在审批中条数
+core.workflow.storage.runtime.intervention.label.application_name = 软件名称
+core.workflow.storage.runtime.intervention.label.flow_information = 流程信息
+core.workflow.storage.runtime.intervention.label.flow_name = 流程名称
+core.workflow.storage.runtime.intervention.label.current_node = 当前节点
+core.workflow.storage.runtime.intervention.button.label.ok = 确定
+core.workflow.storage.runtime.intervention.label.submit_to = 提交到
+###########End FlowIntervention#################
+
+###########Start Workflow Proxy#################
+core.workflow.storage.runtime.proxy.setup = 流程代理
+core.workflow.storage.runtime.proxy.new = 新建流程代理信息
+core.workflow.storage.runtime.proxy.authorize = 授权
+core.workflow.storage.runtime.proxy.chooseUser = 选择委托对象
+core.workflow.storage.runtime.proxy.activation = 激活
+core.workflow.storage.runtime.proxy.disable = 禁用
+###########End Workflow Proxy####################
+
+###########Start Workflow View#################
+core.workflow.storage.runtime.view.choose.approve.node = 选择提交节点
+core.workflow.storage.runtime.view.RedLine = 红线
+core.workflow.storage.runtime.view.currentNode = 节点为流程当前节点
+core.workflow.storage.runtime.view.GreenLine = 绿线
+core.workflow.storage.runtime.view.processedLine = 已处理的流程路线
+core.workflow.storage.runtime.view.BlackLine = 黑线
+core.workflow.storage.runtime.view.processingLine = 待处理的流程路线
+core.workflow.storage.runtime.view.YellowBackground = 黄色背景
+core.workflow.storage.runtime.view.workflowTerminated = 代表流程已终止
+###########End Workflow View####################
+
+core.name.illegal = 输入的名称不合法
+core.name.regex.illegal = 名称必须是长度为2-50，由中文、字母、数字、下划线、'.'、'-'(以中文、字母、数字开头和结尾)组成的字符串
+core.page.logout.confirm = 你确定要注销系统
+
+################### Start Homepage Template  #######################
+Select.Template = 选择模板
+Select.Template.For.Homepage.Reminder = 选择首页提醒的显示模板
+Select.Other.Template = 选择其他模板
+Add.Reminder.Element = 添加提醒元素
+Delete.Reminder.Element = 删除提醒元素
+Used = 使用
+Backstage = 后台
+################### End Homepage Template  #######################
+
+################### Start Default Homepage #######################
+myapps.homepage.default.title = 如何使用myApps轻松搭建和管理平台
+myapps.homepage.default.superAdmin.description = “超级管理员”拥有系统的最高权限，包括：管理所有“用户域”、管理“软件”、设置“特权用户”等
+myapps.homepage.default.developer.description = “开发者”的主要职责是：通过myApps平台所提供的智能表单、流程引擎、报表设计器、iScript宏语言等功能配置（开发）各类应用软件
+myapps.homepage.default.domainAdmin.description = “域管理员”的主要职责是：管理“用户域”的组织机构、管理域用户、设置用户权限、配置本“用户域”所能使用的“软件”
+myapps.homepage.default.user = 一般用户
+myapps.homepage.default.user.description = “一般用户”即最终用户，是平台的最终使用者。“一般用户”通过前台地址登录，并利用平台的各类软件完成自己的工作
+myapps.homepage.default.wizard.description = 通过创建表单、流程、菜单、视图，轻松创建模块
+myapps.homepage.default.iScript = iScript函数集
+myapps.homepage.default.iScript.description = iScript是myApps系统提供的，简单、以对象为基础的宏语言，采用目前流行的Java Script语法。iScript 紧密地与 myApps 结合，通过直接访问myApps所提供的操作对象，方便操作DynaForm,WorkFlow的内容
+myapps.homepage.default.click.demo = 点击演示
+myapps.homepage.default.create.form.single = 创建表单 - 单表
+myapps.homepage.default.create.flow.conditional = 创建流程 - 分支流程
+myapps.homepage.default.create.view.design = 创建视图 - 视图设计（查询表单）
+myapps.homepage.default.create.domain.organization = 创建域组织架构
+myapps.homepage.default.create.domainUser.and.authorized = 创建域用户及赋权
+myapps.homepage.default.use.by.mobile = 通过手机使用平台
+myapps.homepage.default.create.system.within.ten.min = 10分钟创建bugsystem
+myapps.homepage.default.iScript.number.function = 数字函数
+myapps.homepage.default.iScript.roles_users_departments.id = 角色用户部门ID
+myapps.homepage.default.iScript.local.call.dll = 调用本地dll
+myapps.homepage.default.create.form.fatherchildform = 主从表
+myapps.homepage.default.create.form.formactive = 操作执行脚本
+myapps.homepage.default.create.form.formcount = 表间计算
+myapps.homepage.default.create.form.tabsform = 页签表单
+myapps.homepage.default.create.view.datatransition = 视图列文本显示转换
+myapps.homepage.default.create.view.viewrowformjump = 视图列显示表单跳转
+myapps.homepage.default.create.view.flowbacksign = 视图列显示回退标识
+myapps.homepage.default.create.flow.repeat = 循环流程
+myapps.homepage.default.create.flow.free = 自由流程
+################### End Default Homepage #######################
+
+###################################
+VALUE_TYPE_VARCHAR = 字符串
+VALUE_TYPE_NUMBER = 数字
+VALUE_TYPE_DATE = 日期
+VALUE_TYPE_TEXT = 文本
+INCLUDE = 包含元素
+
+###################################
+Synchronize.fail = 同步失败
+Synchronize.successful = 同步成功
+
+User.defined.form.data = 用户自定义表单数据
+###################################
+View.node.info = 查看节点信息
+View.lower.view = 查看下级视图
+
+################### Start Monitor  #######################
+Monitor = 监控
+System_Monitor = 系统监控 
+editScript = 编辑脚本
+signatureScript = 签章条件
+################### End Monitor  #######################
+
+################### start WorkFlow  #######################
+core.workflow.allows.designated.next.approval = 允许当前流程执行人指定下一步审批人
+core.workflow.allows.designated.next.circulator = 允许当前流程执行人指定抄送人
+
+################### end WorkFlow  #######################
+
+################### start SubFlow  #######################
+Please.change.parent.form.colum = 请选择父表单字段
+Please.change.sub.form.colum = 请选择子表单字段
+Params.transfer = 参数传递
+Flow.wait = 流程等待
+Through.Predefined.extends = 通过预定义指定
+Through.iScript.extends = 通过iScript指定
+Through.parent.form.extends = 通过父表单字段值指定
+from.approver.group.amount = 通过审批人分组总数指定
+IScript.Script = iScript脚本
+Startup.example.count = 启动实例数
+Predefined = 预定义
+Parent.form.colum = 父表单字段值
+Params.transfer.type = 参数传递方式
+Share.parent.form = 共享主流程表单数据
+Form.mapping = 复制主流程表单数据到子流程表单
+Parentflow.form = 父流程表单
+Subflow.form = 子流程表单
+Pedding = 绑定
+Pedding.result = 绑定结果
+Callback.wait.setting = 回调等待设置
+All.sub.flow.finish.parent.flow.startup.next.node = 当全部子流程执行完成后，父流程才启动下一节点
+Startup.sub.flow.then.parent.flow.startup.next.node.rightnow = 启动子流程后，父流程立即启动下一节点
+Sub.flow.finish.then.startup.script = 子流程执行完成时执行脚本
+################### end SubFlow  #######################
+
+################### start Manual  #######################
+screening.conditions = 筛选条件
+auditor.Super = 审批人为发起人上级
+auditor.super.departmet = 审批人部门为发起人上级部门
+through.USBKEY.next.flow = 本节点需要通过USBKEY身份验证才能流转到下一步
+allow.add.auditor = 允许加签
+################### end Manual  #######################
+
+################### start Relation ####################
+Node.enter.conditions = 注意:任何判断此路径条件是否通过时都将触发一次(并非仅在路径通过时触发)
+################### end Relation ######################
+
+################### start IM  #######################
+IM=即时通信
+setting=设置
+use=使用
+reset.password.before.use.im=使用IM前请重新设置密码
+################### end IM  #######################
+
+################### start specifyAuditor  #######################
+The = 第
+Groups = 分组
+Groups.count.not.greater.than = 分组不能大于
+Groups.count.one.at.least=至少要有一分组
+Groups.not.equal = 分组不等于
+Please.add.or.del.groups.once.again = 请重新增删分组
+################### end specifyAuditor  #######################
+
+################### start viewDialog  #######################
+Maximization = 最大化
+div.size = 弹出层尺寸
+Select.Maximization.Div.Size.Not.Exist.Continue = 选择最大化后弹出层尺寸将无效，是否继续
+################### end viewDialog  #######################
+
+################### start fresh homepage  #####################
+Widget = 小工具
+Weather = 天气情况
+################### end fresh homepage  #######################
+
+################### start brisk homepage  #####################
+GeneralTools = 常用工具
+PersonalSettings = 个人设置
+################### end brisk homepage  #######################
+
+################### start message  #####################
+message.update.before.checkout = 更新前必须签出资源
+message.not.legally.authorized = myApps没有经过合法授权
+################### end start  #######################
+
+##personSetting-skin--start##
+default = 传统
+fresh = 清新
+brisk = 轻快
+blue = 蓝色
+gentle = 轻柔
+H5 = 默认
+dwz = 经典
+##personSetting-skin--end##
+
+################### skin color  #######################
+blue = 蓝色
+green = 绿色
+purple = 紫色
+silver = 银色
+azure = 天蓝
+################### skin color  #######################
+Flushbonading = 嵌入式
+core.sysconfig.permission.tabname = 资源授权设置
+show.fields.is.empty = 显示字段不能为空
+#####################密码策略 START########################################
+
+Locked = 锁定
+Unlocked = 未锁定
+AccountLocked = 登录异常锁定
+UserMassageConfig = 用户密码策略
+PasswordMaxLength.cue = （系统密码最大长度值为25）
+PasswordLengthCanNotLow = 密码长度不能小于
+PasswordLegal = 密码必须由字符和数字构成
+PasswordMinLength=最小密码长度
+MostFailedLoginAttempts =最多错误输入密码错误次数
+ModifyPasswordExpiration  = 密码过期时间（天）
+PasswordChangeNotificationPeriod = 几天后通知修改密码（天）
+ModifyPasswordNotSame = 修改密码时不可与前几次相同,规定次数为
+PasswordMinLength.cue =（设置值不能超过系统密码最大长度值，此项不填默认为1）
+Time.cue =（不填则不做此项检查）
+NoticeMethod = 密码修改通知方式
+LockedAccount = 该账号已锁定
+PasswordModifyNotice = 密码修改通知策略
+NotNoticeModifyPassword = 密码永不过期
+NoticeFrequency = 通知频率（天/一次）
+NoticeContent = 通知内容
+if.zai.fail.login = 若再失败登录
+ci.system.will.lock = 次账号将被锁定
+if.can.login = 激活登录
+Out.of.range.value1 = 保存失败
+Out.of.range.value2 = 输入的字符长度超出限制
+Input.FailTimes.illegal = 输入的错误次数不合法，只能输入大于0的整数
+Input.RegulateTimes.illegal = 输入的规定次数不合法，只能输入大于0的整数
+Input.PasswordLength.illegal = 输入的密码长度不合法，只能输入1-25的整数
+Input.Timeout.illegal = 输入的超时时间不合法，只能输入大于0的整数
+Input.Poolsize.illegal = 输入的连接池大小不合法，只能输入大于0的整数
+NotCanUseadminAsLoginno = admin账号是系统保留账号，你不能用admin作为账号！
+############################密码策略 START###########################################
+
+ThisWidgetWillBeRemoved = 你确信要删除该待办吗？
+userAlreadyBeAdd = 用户已经被添加
+userAlreadyNoEmail = 用户邮箱未设置
+userAlreadyNoTel = 用户手机号未设置
+
+################### start WorkFlow  #######################
+step-by-step_approval_current_node_only_arrival = 当下步有多个审批节点时,只能到达一个节点
+step-by-step_approval_current_node,arrival_multiple_nodes= 当下步有多个审批节点时,可以到达多个节点
+IsOpenAuditTimeLimitSetup = 是否开启审批时限设置
+################### end WorkFlow  #######################
+
+################### Manager #######################
+cache_data_manager = 缓存与数据管理
+################### Manager  #######################
+
+################### cache Manager #######################
+cache_manager = 缓存管理
+clear_cache = 此操作会清除服务器上所有数据的缓存
+clear_cache_button = 清除缓存数据
+################### cache Manager  #######################
+
+################### data Manager #######################
+data_manager = 数据管理
+clear_data = 此操作会清除业务库的冗余数据
+clear_data_button = 清除冗余数据
+################### data Manager  #######################
+
+################### metadata #######################
+core.dts.metadata.indexmanager = 索引管理
+core.dts.metadata.optimization = 优化
+core.dts.metadata.tableName = 表单名称
+core.dts.metadata.indexTotal = 索引总数
+core.dts.metadata.indexCulumnName = 索引字段名称
+core.dts.metadata.suggest = 建议
+core.dts.metadata.suggestOptimization = 建议优化
+core.dts.metadata.hasOptimization = 已经优化
+################### metadata  #######################
+
+################### usbkey #######################
+core.usbkey.cfg = USBKEY设置
+core.usbkey.tip.inputPassword = 请您输入USBKEY密码
+core.usbkey.tip.init = 初始化
+core.usbkey.tip.successInit = USBKEY初始化成功
+core.usbkey.tip.faultInit = USBKEY初始化失败
+core.usbkey.tip.usbkeyNotFound = 没有扫描到USBKEY
+core.usbkey.tip.changePin = 修改USBKEY密码
+core.usbkey.tip.oldPin = 旧密码
+core.usbkey.tip.newPin = 新密码
+core.usbkey.tip.successChangePin = 密码修改成功
+core.usbkey.tip.faultChangePin = 密码修改失败
+core.usbkey.tip.successGenKey = 生成密钥对成功
+core.usbkey.tip.faultGenKey = 生成密钥对失败
+core.usbkey.tip.notice = 您正在进行USBKEY身份认证，请您插入USBKEY设备进行登陆验证！
+core.usbkey.tip.verify = 验证
+core.usbkey.tip.findUsbKey = 扫描
+core.usbkey.tip.usbkeyNotfound = 没有找到USBKEY，请插入USBKEY设备，点击扫描按钮！
+core.sysconfig.usbkey.authenticate = USBKEY身份认证
+core.usbkey.tip.usbkeyInitNotice = 初始化操作将会抹除USBKey所有信息并将此USBKey与当前用户进行绑定，建议在第一次绑定用户时使用；初始化操作中输入的密码将会成为USBKey的新密码
+core.usbkey.tip.usbkeyChangePinNotice = 修改USBKey密码需要验证旧密码，系统不会记录用户的USBKey密码，如果USBKey的主人忘记了密码，请进行初始化操作！
+core.usbkey.tip.doflowNotice = 流程流转操作需要您进行USBKEY身份认证！
+core.usbkey.user_bingding_ekey = 绑定EKEY
+core.usbkey.tip.user_bingding_ekey = 绑定操作将会把EKEY硬件与用户进行绑定。
+core.usbkey.cfg.lable.admin_pw = 管 理 员 口 令
+core.usbkey.cfg.lable.new_pw = 新用户口令[4-16位]
+core.usbkey.cfg.lable.new_pw2 = 确认新用户口令
+core.usbkey.cfg.btn.lable.change_pw = 修改EKEY用户口令
+core.usbkey.tip.driver_download = 驱动下载
+core.usbkey.tip.driver_download.tip = 您需要安装EKEY驱动才能正常使用UKEY相关功能，如未安装，请下载并安装EKEY驱动程序！
+core.usbkey.driver_download.link = EKEY驱动下载
+core.usbkey.ekey.signtool.title = EKEY电子印章管理
+core.usbkey.ekey.lable.create_sign = 创建印章
+core.usbkey.ekey.lable.change_sign = 修改印章
+core.usbkey.ekey.lable.save_sign = 保存印章
+core.usbkey.ekey.btn.lable.open_sign = 打开EKEY印章
+core.usbkey.ekey.btn.lable.delete_sign = 从EKEY删除印章
+core.usbkey.ekey.driver_download.tip = 您需要安装EKEY驱动和Office电子签章插件才能正常使用相关功能，如未安装，请下载并安装驱动程序！
+core.usbkey.ekey.driver_download.link.ekey = EKEY驱动下载
+core.usbkey.ekey.driver_download.link.office_plugin = Office电子签章插件下载
+core.usbkey.ekey.btn.verify = EKEY身份验证
+core.usbkey.ekey.verify.tip = 提示：您需要安装EKEY驱动才能正常使用EKEY相关功能，如未安装，请<a href="../../security/usbkey/NTKOEKEYUser_4.0.exe" target="_blank">[下载]</a>并安装EKEY驱动程序！
+################### usbkey #######################
+
+################### Copyright information #######################
+myapps.teemlink.technology = 天翎科技
+myapps.All.rights.reserved = 保留所有权利
+################### Copyright information #######################
+
+################### KM #######################
+core.sysconfig.km.tab.name = 知识文档管理设置
+core.sysconfig.km.legendlabel.enable = 知识文档管理
+core.sysconfig.km.legendlabel.datasource = 数据源设置
+km.name = 知识文档管理
+km.encyclopedia = 百科
+core.sysconfig.km.role.config.domain.select = 企业域选择
+core.sysconfig.km.role.config.domain.select.alert = 请选择企业域
+core.sysconfig.km.role.config.user.select.alert = 请选择要设置角色的用户
+core.sysconfig.km.role.config.role.manage = KM角色管理
+core.sysconfig.km.role.config.select = 请选择
+core.sysconfig.km.role.config.tips = 选择需要设置KM角色的用户，此次设置将会清空用户原来的角色设置，未选择的用户将不受影响
+core.sysconfig.km.role.config.error = 数据加载失败，请检查数据源配置是否正确
+################### KM #######################
+
+#############################################
+#########下面开始是重构后的多语言资源##########
+#############################################
+
+###################[cn.myapps.km.category] START #######################
+cn.myapps.km.category.save = 保存
+cn.myapps.km.category.name = 名称
+cn.myapps.km.category.super_type = 上级类别
+cn.myapps.km.category.description = 描述
+cn.myapps.km.category.name_not_null = 名称不能为空！
+cn.myapps.km.category.delete_tip = 您确定要删除吗？
+cn.myapps.km.category.category_list = 分类列表
+cn.myapps.km.category.new = 新建
+cn.myapps.km.category.delete = 删除
+###################[cn.myapps.km.category] END #######################
+
+###################[cn.myapps.km.dir] START #######################
+cn.myapps.km.dir.success = 成功！
+cn.myapps.km.dir.my_documents = 我的文档
+cn.myapps.km.dir.my_favorites = 我的收藏
+cn.myapps.km.dir.users_share = 用户分享
+cn.myapps.km.dir.recommended_documentation = 推荐文档
+cn.myapps.km.dir.public_library = 公有文库
+cn.myapps.km.dir.my_library = 我的文库
+cn.myapps.km.dir.department_library = 部门文库
+cn.myapps.km.dir.archive_library = 归档文库
+cn.myapps.km.dir.staff = 员工
+cn.myapps.km.dir.admin_department_document = 部门文档管理员
+cn.myapps.km.dir.enterprise_document_manager = 企业文档管理员 
+###################[cn.myapps.km.dir] END #######################
+
+###################[cn.myapps.km] START #######################
+cn.myapps.km.error = 出错啦！
+cn.myapps.km.logs = 日志
+cn.myapps.km.latest_upload = 最新上传
+cn.myapps.km.searching = 检索
+cn.myapps.km.move = 移动
+cn.myapps.km.installation_wizard = 知识文档管理系统服务器组件安装向导
+cn.myapps.km.necessary_components_installed = 必要组件安装
+cn.myapps.km.server_components_necessary = 知识文档管理系统: 服务器端必要组件
+cn.myapps.km.components_name = 组件名称
+cn.myapps.km.install_state = 安装状态
+cn.myapps.km.wps_office = 金山WPS
+cn.myapps.km.installed_tip = 知识文档管理系统将在此服务器上工作，但它的功能需要借助以上两个必要组件，请参照下面的安装指引，给服务器安装配置WPS和SWFTool软件，使系统能够正常工作！
+cn.myapps.km.install_wps_office = 安装金山WPS.您可以访问
+cn.myapps.km.wps_office_tip = 下载并安装金山WPS软件。
+cn.myapps.km.install_swf_tools = 安装SWFTools.您可以访问
+cn.myapps.km.swf_tools_tip = 下载并安装SWFTools软件。
+cn.myapps.km.install_success_tip = 安装SWFTools后，还需将SWFTools的安装路径根目录添加到系统环境变量path中 （如“F:\SWFTools\”）
+cn.myapps.km.install_help = 更多信息请查看帮助文件《运行KM所必需的先决条件》
+cn.myapps.km.enter_the_system = 进入系统
+cn.myapps.km.re-tested = 重新检测
+###################[cn.myapps.km] END #######################
+
+###################[cn.myapps.km.disk] START #######################
+cn.myapps.km.disk.copy_link_success = URL已经成功复制到剪贴板！
+cn.myapps.km.disk.copy_tip = 当前浏览器不支持复制到剪切板功能，请使用IE浏览器！
+cn.myapps.km.disk.back = 返回上一级
+cn.myapps.km.disk.page_show = 每页显示
+cn.myapps.km.disk.share_file = 分享文件
+cn.myapps.km.disk.delete_tip = 您确定删除？删除后数据不可恢复！
+cn.myapps.km.disk.public_share_success = 公开分享成功！
+cn.myapps.km.disk.private_share_success = 分享给用户成功！
+cn.myapps.km.disk.all_file_types = 全部文件类型
+cn.myapps.km.disk.list_mode = 列表模式
+cn.myapps.km.disk.tree_mode = 树形模式
+cn.myapps.km.disk.view_file_error = 文件正在转换中，请您稍后再尝试打开阅读！
+cn.myapps.km.disk.view_file_damage = 文件被加密或已经损坏，无法在线预览！
+cn.myapps.km.disk.copy = 复制到
+cn.myapps.km.disk.km_name = KM系统
+cn.myapps.km.disk.homepage = 首页
+cn.myapps.km.disk.my_disk = 我的网盘
+cn.myapps.km.disk.public_disk = 公共网盘
+cn.myapps.km.disk.help = 帮助
+cn.myapps.km.disk.no_disk = *抱歉,该用户还未配置网盘!
+cn.myapps.km.disk.favorite_tip = 你可以把喜欢的文件收藏到自己的网盘里哦！
+cn.myapps.km.disk.favorite = 收藏
+cn.myapps.km.disk.close = 关闭
+cn.myapps.km.disk.popular_share = 热门分享
+cn.myapps.km.disk.copy_to_private_disk = 复制到私盘
+cn.myapps.km.disk.all = 全部文件
+cn.myapps.km.disk.load_tip = 已全部加载，共
+cn.myapps.km.disk.load_tip2 = 个
+cn.myapps.km.disk.file_name = 文件名
+cn.myapps.km.disk.uploader = 上传者
+cn.myapps.km.disk.size = 大小
+cn.myapps.km.disk.time = 时间
+cn.myapps.km.disk.checked = 已选中
+cn.myapps.km.disk.file_folder = 个文件/文件夹
+cn.myapps.km.disk.save_to_private_disk = 保存到私盘
+cn.myapps.km.disk.want_to_upload = 我要上传
+cn.myapps.km.disk.knowledge_map = 知识地图
+cn.myapps.km.disk.help_for_use = 使用帮助
+cn.myapps.km.disk.all_categories = 全部分类
+cn.myapps.km.disk.full_text = 全文
+cn.myapps.km.disk.search_tip = 请填写搜索内容!
+cn.myapps.km.disk.search = 搜索
+cn.myapps.km.disk.search_error = *抱歉,您输入的关键词找到0个结果,请更换关键词再进行搜索!
+cn.myapps.km.disk.personal_comments = 个人评价
+cn.myapps.km.disk.total = 共
+cn.myapps.km.disk.page = 页
+cn.myapps.km.disk.download = 下载
+cn.myapps.km.disk.number = 次
+cn.myapps.km.disk.contributor = 贡献者
+cn.myapps.km.disk.previous_page = 上一页
+cn.myapps.km.disk.next_page = 下一页
+cn.myapps.km.disk.move_to = 移动到
+cn.myapps.km.disk.move_to_tip = 请选择移动目标文件夹
+cn.myapps.km.disk.move_to_error = 不能移动到子节点中！
+cn.myapps.km.disk.move_to_error2 = 节点不能移为自己的子节点
+cn.myapps.km.disk.open_all = 全部展开
+cn.myapps.km.disk.close_all = 全部折叠
+cn.myapps.km.disk.cancel = 取消
+cn.myapps.km.disk.confirm = 确定
+cn.myapps.km.disk.upload = 上传
+cn.myapps.km.disk.operation_logs = 操作日志
+cn.myapps.km.disk.report_data_retrieval = 报表数据检索
+cn.myapps.km.disk.archive_disk = 归档网盘
+cn.myapps.km.disk.new_folder = 新建文件夹
+cn.myapps.km.disk.my_logs = 我的日志
+cn.myapps.km.disk.share = 分享
+cn.myapps.km.disk.more = 更多
+cn.myapps.km.disk.delete = 删除
+cn.myapps.km.disk.rename = 重命名
+cn.myapps.km.disk.knowledge_sharing_system = 知识共享系统
+cn.myapps.km.disk.user_authorization = 用户授权
+cn.myapps.km.disk.authorization = 授权
+cn.myapps.km.disk.set_administrator = 设置管理员
+cn.myapps.km.disk.copy_link_to_clipboard  = 复制文件夹链接到剪贴板 
+cn.myapps.km.disk.copy_link = 复制链接
+cn.myapps.km.disk.enterprise_domain_authorization = 企业域授权
+cn.myapps.km.disk.administrator_authorization = 管理员授权
+cn.myapps.km.disk.comments_tip = 你确定要评价吗？
+cn.myapps.km.disk.update_tip = 更新失败！
+cn.myapps.km.disk.category = 维护分类
+cn.myapps.km.disk.file_conversion_tip = 已成功向服务器发起重新生成预览文件的请求，服务器转换文件需要一点时间，请您稍候再尝试打开！
+cn.myapps.km.disk.file_conversion_error = 发生异常，请联系管理员！
+cn.myapps.km.disk.recommend = 推荐
+cn.myapps.km.disk.recommend_tip = 你可以把文件推荐到用户的个人网盘里哦！
+cn.myapps.km.disk.document_information = 文档信息
+cn.myapps.km.disk.type = 类别
+cn.myapps.km.disk.edit = 编辑
+cn.myapps.km.disk.maintenance_category = 维护分类
+cn.myapps.km.disk.save = 保存
+cn.myapps.km.disk.rebuild_preview = 重新生成预览
+cn.myapps.km.disk.view = 浏览
+cn.myapps.km.disk.star_evaluation = 星级评价
+cn.myapps.km.disk.points = 分
+cn.myapps.km.disk.select_user = 选择用户
+cn.myapps.km.disk.save_to_my_disk_tip = 保存文件到我的网盘，可在【我的网盘->用户分享】目录中找到
+cn.myapps.km.disk.select_user_tip = 请选择用户!
+cn.myapps.km.disk.public_share = 公共分享
+cn.myapps.km.disk.private_share = 私密分享
+cn.myapps.km.disk.share_error = 您的文件已经被公开分享过了哦
+cn.myapps.km.disk.share_tip = 您公开的分享文件可供应其他人查看下载哦
+cn.myapps.km.disk.open_sharing = 公开分享
+cn.myapps.km.disk.share_comments = 对别人分享的文件进行评分
+cn.myapps.km.disk.select_file = 选择文件
+cn.myapps.km.disk.title_tip = 标题不允许批量编辑哦！
+cn.myapps.km.disk.introduction_tip = 简介不允许批量编辑哦！
+cn.myapps.km.disk.upload_success = 文档上传成功 | 请填写下面完善信息
+cn.myapps.km.disk.upload_start = 开始上传
+cn.myapps.km.disk.title = 标题
+cn.myapps.km.disk.introduction = 简介
+cn.myapps.km.disk.categorys = 分类
+cn.myapps.km.disk.icon = 图标
+cn.myapps.km.disk.department = 部门
+cn.myapps.km.disk.products_department = 产品部
+cn.myapps.km.disk.sales_department = 销售部
+cn.myapps.km.disk.marketing_department = 市场部
+cn.myapps.km.disk.submit_information = 提交信息
+###################[cn.myapps.km.disk] END #######################
+
+###################[cn.myapps.km.logs] START #######################
+cn.myapps.km.logs.behavior_options = 行为选项
+cn.myapps.km.logs.behavior = 行为
+cn.myapps.km.logs.operating_content = 操作内容
+cn.myapps.km.logs.rename = 重命名为
+cn.myapps.km.logs.creator = 创建者
+cn.myapps.km.logs.operation_date = 操作日期
+cn.myapps.km.logs.views = 预览量
+cn.myapps.km.logs.downloads = 下载量
+cn.myapps.km.logs.favorites = 收藏量
+cn.myapps.km.logs.share_to = 分享给
+cn.myapps.km.logs.recommend_to = 推荐给
+cn.myapps.km.logs.read = 阅读
+cn.myapps.km.logs.my_share = 我的分享
+cn.myapps.km.logs.my_recommend = 我的推荐
+cn.myapps.km.logs.my_favorite = 我的收藏
+###################[cn.myapps.km.logs] END #######################
+
+###################[cn.myapps.km.permission] START #######################
+cn.myapps.km.permission.user_authorization_check_null = 至少要勾选一项权限
+cn.myapps.km.permission.user_authorization_check_time = 时效要填写完整
+cn.myapps.km.permission.user_authorization_check_user = 请选择用户
+cn.myapps.km.permission.user_authorization_check_role = 请选择角色
+cn.myapps.km.permission.basic_setup = 基本设置
+cn.myapps.km.permission.temporary_authorization = 临时授权
+cn.myapps.km.permission.name = 名称
+cn.myapps.km.permission.authorization_to = 授权给
+cn.myapps.km.permission.user_name = 用户名
+cn.myapps.km.permission.role_name = 角色名
+cn.myapps.km.permission.select_role = 选择角色
+cn.myapps.km.permission.permissions = 权限
+cn.myapps.km.permission.aging = 时效
+cn.myapps.km.permission.to = 到
+cn.myapps.km.permission.authorization_list = 授权列表
+cn.myapps.km.permission.add = 增加
+cn.myapps.km.permission.authorization_type = 授权类型
+cn.myapps.km.permission.authorization_object = 授权对象
+cn.myapps.km.permission.user_role_name = 用户/角色名称
+cn.myapps.km.permission.read = 阅读
+cn.myapps.km.permission.download = 下载
+cn.myapps.km.permission.fullcontrol = 完全控制
+cn.myapps.km.permission.bannedaltogether = 完全禁止
+cn.myapps.km.permission.forever = 永久
+cn.myapps.km.permission.invalid = 失效
+###################[cn.myapps.km.permission] END #######################
+
+###################[cn.myapps.km.report] START #######################
+cn.myapps.km.report.professional_list = 各专业上传量排名统计表
+cn.myapps.km.report.department_list = 部门上传量排名统计表
+cn.myapps.km.report.file_download_list = 文档下载排名统计表
+cn.myapps.km.report.person_upload_list = 人员上传量排名统计表
+cn.myapps.km.report.file_view_list = 文档浏览量排名统计表
+cn.myapps.km.report.start_time = 开始时间
+cn.myapps.km.report.end_time = 结束时间
+cn.myapps.km.report.records = 显示记录数
+cn.myapps.km.report.time_type = 时间选项
+cn.myapps.km.report.professional_type = 专业选项
+cn.myapps.km.report.department_type = 部门选项
+cn.myapps.km.report.person_type = 人员选项
+cn.myapps.km.logs.behavior_type = 行为类型
+cn.myapps.km.logs.subcategory = 子类别
+cn.myapps.km.logs.root_category = 根类别
+###################[cn.myapps.km.report] END #######################
+
+###################[page.km] START #######################
+page.km.login_title = 翎盘 - 免费知识文档管理 | 网络硬盘 | 云存储 - 首页
+page.km.teemlink_disk = 翎盘
+page.km.teemlink_official_website = 天翎官网
+page.km.manager_login = 管理员登录
+page.km.version = 版本
+page.km.unlimited_number_of_user = 不限用户数
+page.km.updated = 更新时间
+page.km.login_teemlink_disk = 登录翎盘
+page.km.no = 还没有
+page.km.teemlink_disk_account = 翎盘帐号？
+page.km.register = 立即注册
+page.km.domain = 企业名/单位名
+page.km.user_name = 用户名
+page.km.password_enter = 请输入您的密码 
+page.km.automatic_login  = 下次自动登录
+page.km.forgot_your_password = 忘记密码？ 
+page.km.no_account = 如果你还没有翎盘帐号，请
+page.km.sign_in = 点击注册
+page.km.tip_a = 超大免费空间，永久免费
+page.km.tip_b = 20G超大容量，不限用户数，永久免费使用。
+page.km.tip_c = 云端阅读，无需下载
+page.km.tip_d = Word、PPT、Excel、WPS在线阅读，无需下载。
+page.km.tip_e = 企业知识，一键分享
+page.km.tip_f = 公盘、私盘一键分享，方便知识传递。
+page.km.tip_g = 全文搜索，轻松查询
+page.km.tip_h = 支持全文检索、自动分类，评价，轻松查找。
+page.km.tip_i = 权限管控，坚如磐石
+page.km.tip_j = 目录、文件授权，临时授权等，方便管控。
+page.km.tip_k = 天翎出品，安全可靠
+page.km.tip_l = 所有文件多份多机房备份，安全稳定可靠，永不丢失。
+page.km.forum = 论坛
+page.km.use_agreement = 使用协议
+page.km.register_title = 注册翎盘 - 免费知识文档管理
+page.km.domain_not_null = 企业名称不能为空
+page.km.email_not_null = 电子邮件不能为空
+page.km.illegal_email = 非法的电子邮件
+page.km.password_number = 密码最少6位 
+page.km.password_error = 2次密码输入不一致
+page.km.service_tip = 请仔细阅读协议并同意
+page.km.register_tip = 欢迎注册天翎.翎盘
+page.km.domain_name = 企业名称
+page.km.domain_name_tip = 需以字母或汉字开头
+page.km.email = 邮件地址
+page.km.domain_account = 企业域管理员帐号
+page.km.email_tip = 合法的邮箱地址，可使用字母、数字、下划线，需以字母开头
+page.km.password = 密码 
+page.km.confirm_password = 确认密码
+page.km.password_tip = 请再次填写密码
+page.km.agree = 同意 
+page.km.terms_of_service = 服务条款
+page.km.detail = 内容
+page.km.service_tel = 客服电话 
+page.km.tel_tip_a = 温馨提示：仅限中国大陆用户使用
+page.km.tel_tip_b = 拨打免费，不产生任何费用
+page.km.about_teemlink = 关于天翎 
+page.km.teemlink_tip = 天翎公司版权所有
+page.km.retrieve_password = 找回密码
+page.km.retrieve_password_tip_a = 本系统为企业级应用，出于安全考虑，不提供自动找回密码功能。
+page.km.retrieve_password_tip_b = 如需帮助，请联系企业/单位的系统管理员！
+###################[page.km] END #######################
+
+###################[cn.myapps.core.deploy.application] START #######################
+cn.myapps.core.deploy.application.delete_current_application = 确认删除软件
+cn.myapps.core.deploy.application.page.name.toolong = 名称输入长度超过限制，长度为不超过50个字符，请重新输入！
+cn.myapps.core.deploy.application.please_delete_list_application = 请在软件列表中删除此软件
+cn.myapps.core.deploy.application.delete_this_module = 确认删除本模块(包括其子级)？
+cn.myapps.core.deploy.application.application_management = 软件管理
+cn.myapps.core.deploy.application.application_list = 软件列表
+cn.myapps.core.deploy.application.create_overview = 生成概览
+cn.myapps.core.deploy.application.synchronization_data_table = 同步数据表单
+cn.myapps.core.deploy.application.application_information = 软件信息
+cn.myapps.core.deploy.application.basic_info = 基本信息
+cn.myapps.core.deploy.application.label.state = 状态
+cn.myapps.core.deploy.application.general_tools = 常用工具
+cn.myapps.core.deploy.application.select_dataSource = 选择数据源
+cn.myapps.core.deploy.application.synchronization_table_date = 同步表单数据
+cn.myapps.core.deploy.application.application_name = 软件名称
+cn.myapps.core.deploy.application.application_type = 软件类型
+cn.myapps.core.deploy.application.application_logo = 软件图标
+cn.myapps.core.deploy.application.test_db = 测试数据库
+cn.myapps.core.deploy.application.back_to_application_list = 返回软件列表
+cn.myapps.core.deploy.application.create_succeed = 创建成功
+cn.myapps.core.deploy.application.new_application = 新建软件
+cn.myapps.core.deploy.application.delete_application = 删除软件
+cn.myapps.core.deploy.application.search_form = 软件查询表单
+cn.myapps.core.deploy.application.search_by_app_name = 按软件名称查询
+cn.myapps.core.deploy.application.search_by_app_description = 按软件描述查询
+cn.myapps.core.deploy.application.joined_developer_list = 已加入的开发者列表
+cn.myapps.core.deploy.application.unjoined_developer = 未加入的开发者
+cn.myapps.core.deploy.application.add_developer = 添加开发者
+cn.myapps.core.deploy.application.developer_list = 开发者列表
+cn.myapps.core.deploy.application.use_type = 使用类型
+cn.myapps.core.deploy.application.database_type = 数据库类型
+cn.myapps.core.deploy.application.user_name = 用户名称
+cn.myapps.core.deploy.application.datasource_info_list = 数据源信息列表
+cn.myapps.core.deploy.application.save_current_application = 请保存当前软件
+cn.myapps.core.deploy.application.synchronization_success = 同步成功
+cn.myapps.core.deploy.application.synchronization_fail_info = 同步失败详细信息
+cn.myapps.core.deploy.application.add_success = 添加成功
+cn.myapps.core.deploy.application.remove_success = 移除成功
+cn.myapps.core.deploy.application.connect_success = 连接成功
+cn.myapps.core.deploy.application.connect_error = 连接错误
+cn.myapps.core.deploy.application.financial_management = 财务管理
+cn.myapps.core.deploy.application.market_management = 市场管理
+cn.myapps.core.deploy.application.customer_management = 客户管理
+cn.myapps.core.deploy.application.software_development = 软件开发
+cn.myapps.core.deploy.application.here = 此处
+cn.myapps.core.deploy.application.to_getting_start = 开始创建
+cn.myapps.core.deploy.application.copy_all = 复制
+###################[cn.myapps.core.deploy.application] END #######################
+
+###################[cn.myapps.core.role] START #######################
+cn.myapps.core.role.please_input_name = 请输入名称
+cn.myapps.core.role.default_role = 系统默认角色
+cn.myapps.core.role.label.id = 编号
+cn.myapps.core.role.belong_user = 所属用户
+cn.myapps.core.role.role_list = 角色列表
+cn.myapps.core.role.group_resources = 批量资源
+cn.myapps.core.role.group_authorize = 批量授权
+cn.myapps.core.role.search_role = 查询角色
+cn.myapps.core.role.role_info = 角色信息
+cn.myapps.core.role.configuration_resources = 配置资源
+cn.myapps.core.role.resources_authorize = 资源配置
+###################[cn.myapps.core.role] END #######################
+
+###################[cn.myapps.core.report.crossreport] START #######################
+cn.myapps.core.report.crossreport.name = 交叉报表
+cn.myapps.core.report.crossreport.column_info = 列信息
+cn.myapps.core.report.crossreport.row_info = 行信息
+cn.myapps.core.report.crossreport.data_info = 数据列信息
+cn.myapps.core.report.crossreport.info = 交叉报表信息
+cn.myapps.core.report.crossreport.please_select_columm = 请选择列
+cn.myapps.core.report.crossreport.please_select_data_columm = 请选择数据列
+cn.myapps.core.report.crossreport.data_columm_unique = 数据列只能唯一
+cn.myapps.core.report.crossreport.please_select_show_row_sum = 请选择显示行汇总
+cn.myapps.core.report.crossreport.please_select_show_column_sum = 请选择显示列汇总
+cn.myapps.core.report.crossreport.show_column_sum = 显示列汇总
+cn.myapps.core.report.crossreport.show_row_sum = 显示行汇总
+cn.myapps.core.report.crossreport.please_select_column_info = 请选择列信息
+cn.myapps.core.report.crossreport.please_select_row_info = 请选择行信息
+cn.myapps.core.report.crossreport.sum = 汇总
+cn.myapps.core.report.crossreport.average = 平均
+cn.myapps.core.report.crossreport.distinct = 唯一    
+cn.myapps.core.report.crossreport.count = 计数
+cn.myapps.core.report.crossreport.max = 最大值
+cn.myapps.core.report.crossreport.min = 最小值
+cn.myapps.core.report.crossreport.list = 交叉报表列表
+cn.myapps.core.report.crossreport.not_number_type = 非数字类型
+cn.myapps.core.report.crossreport.report = 报表
+cn.myapps.core.report.crossreport.graph_report_tools = 图形报表工具
+cn.myapps.core.report.crossreport.aging_report = 时效报表
+###################[cn.myapps.core.report.crossreport] END #######################
+
+###################[cn.myapps.core.report.standardreport] START #######################
+cn.myapps.core.report.standardreport.please_select_data = 据条件统计后的结果,该报表统计的数据行超过500条，不适合做图形报表展示,请重新选择!
+cn.myapps.core.report.standardreport.please_confirm_select_value = 请确认所有的选择框中的值不一样.
+cn.myapps.core.report.standardreport.not_add_col = 不允许再添加列了。
+cn.myapps.core.report.standardreport.select_col = 选择列
+cn.myapps.core.report.standardreport.remove_col = 移除列
+cn.myapps.core.report.standardreport.add_col = 增加列
+cn.myapps.core.report.standardreport.excelExport = 导出Excel
+cn.myapps.core.report.standardreport.columnchart = 柱形图
+cn.myapps.core.report.standardreport.linechart = 线型图
+cn.myapps.core.report.standardreport.piechart = 饼图
+###################[cn.myapps.core.report.standardreport] END #######################
+
+###################[cn.myapps.core.resource] START #######################
+cn.myapps.core.resource.please_input_name = 请输入名称
+cn.myapps.core.resource.please_select_module = 请选择模块
+cn.myapps.core.resource.please_select_form = 请选择作用表单
+cn.myapps.core.resource.please_select_view = 请选择作用视图
+cn.myapps.core.resource.please_select_report = 请选择作用报表
+cn.myapps.core.resource.please_select_excel = 请选择作用Excel导入
+cn.myapps.core.resource.please_input_link = 请输入自定义链接
+cn.myapps.core.resource.tree_menu = 树形菜单
+cn.myapps.core.resource.copy_menu = 复制菜单
+cn.myapps.core.resource.mobile_menu = 手机菜单
+cn.myapps.core.resource.webpage_menu = 网页菜单
+cn.myapps.core.resource.general_menu = 通用菜单
+cn.myapps.core.resource.menu = 菜单
+cn.myapps.core.resource.copy_to_mobilemenu = 复制到手机菜单
+cn.myapps.core.resource.copy_mobilemenu = 复制手机菜单
+cn.myapps.core.resource.copy_mobilemenu_success = 复制手机菜单成功
+cn.myapps.core.resource.links_type = 链接类型
+cn.myapps.core.resource.workarea_open = 工作区域打开
+cn.myapps.core.resource.newwindow_open = 新窗口打开
+cn.myapps.core.resource.form = 表单/发起
+cn.myapps.core.resource.report = 报表
+cn.myapps.core.resource.raq_report = 润乾报表
+cn.myapps.core.resource.customize_report = 自定义报表
+cn.myapps.core.resource.excel_import = Excel导入
+cn.myapps.core.resource.customize_links_external = 自定义链接外部
+cn.myapps.core.resource.customize_links_internal = 自定义链接内部
+cn.myapps.core.resource.script_links = 脚本链接
+cn.myapps.core.resource.email_links = 邮件链接
+cn.myapps.core.resource.network_disk_links = 网盘链接(已过时)
+cn.myapps.core.resource.parameter = 参数
+cn.myapps.core.resource.parameter_name = 参数名称
+cn.myapps.core.resource.parameter_value = 参数值
+cn.myapps.core.resource.menu_info = 菜单信息
+cn.myapps.core.resource.select_link = 选择链接
+cn.myapps.core.resource.report = 报表
+cn.myapps.core.resource.excel_import = Excel导入
+cn.myapps.core.resource.manual_input_links = 手动输入链接
+cn.myapps.core.resource.script_links = 脚本链接
+cn.myapps.core.resource.select_icon = 选择图标
+cn.myapps.core.resource.select_multiLanguage = 选择多语言
+cn.myapps.core.resource.open_link = 打开链接
+cn.myapps.core.resource.mobile_icon = 手机图标
+cn.myapps.core.resource.raq_report_template_file = 润乾报表模板文件
+cn.myapps.core.resource.customize_links = 自定义链接
+cn.myapps.core.resource.script_editor = 脚本编辑器
+cn.myapps.core.resource.links = 链接
+cn.myapps.core.resource.create_succeed = 创建成功
+cn.myapps.core.resource.sava_succeed = 保存成功
+cn.myapps.core.resource.manual_link = 手动链接
+cn.myapps.core.resource.open_all = 打开所有
+cn.myapps.core.resource.close_all = 关闭所有
+cn.myapps.core.resource.none = 无
+cn.myapps.core.resource.create_fail = 创建失败
+cn.myapps.core.resource.show_total = (连接为视图时)是否显示记录总数
+cn.myapps.core.resource.page.label.permission_type = 权限：
+cn.myapps.core.resource.attr.permission_type.public = 所有用户可用
+cn.myapps.core.resource.attr.permission_type.private = 仅授权角色可用
+cn.myapps.core.resource.showtype = 显示方式
+cn.myapps.core.resource.showtype.both = 菜单与流程中心都显示
+cn.myapps.core.resource.showtype.menu = 仅菜单中显示
+cn.myapps.core.resource.showtype.flowcenter = 仅流程中心显示
+###################[cn.myapps.core.resource] END #######################
+
+###################[cn.myapps.core.user] START #######################
+cn.myapps.core.user.tip.calendartype = 请选择日历
+cn.myapps.core.user.tip.phone1 = 手机1格式错误
+cn.myapps.core.user.tip.phone2 = 手机2格式错误
+cn.myapps.core.user.tip.email = 邮箱格式错误
+cn.myapps.core.user.tip.defaultdepartment = 请选择默认部门
+cn.myapps.core.user.tip.proxyenddate_currenttime = 代理结束日期不得晚于当前时间
+cn.myapps.core.user.tip.proxyenddate = 请输入代理结束日期
+cn.myapps.core.user.tip.proxystartdate = 请输入代理开始日期
+cn.myapps.core.user.label.publish_or_not =  是否发布
+cn.myapps.core.user.display_specify_role = 显示指定角色
+cn.myapps.core.user.display_all_role = 显示所有角色
+cn.myapps.core.user.customize = 自定义
+cn.myapps.core.user.no = 否
+cn.myapps.core.user.homepage = 首页
+cn.myapps.core.user.task = 任务
+cn.myapps.core.user.statelabel = 状态标签
+cn.myapps.core.user.show_type = 显示类型
+cn.myapps.core.user.homepage_info = 首页信息
+cn.myapps.core.user.select_role = 选择角色
+cn.myapps.core.user.please_input_name = 请输入名称
+cn.myapps.core.user.add_widget = 添加小工具
+cn.myapps.core.user.show_type = 显示类型
+cn.myapps.core.user.define_type = 定义类型
+cn.myapps.core.user.create_type = 创建类型
+cn.myapps.core.user.add_user_to_role = 添加用户到角色
+cn.myapps.core.user.by_user_name = 按用户名称
+cn.myapps.core.user.by_role = 按角色
+cn.myapps.core.user.by_department = 按部门
+cn.myapps.core.user.online_user = 在线用户
+cn.myapps.core.user.by_name = 按名称
+cn.myapps.core.user.by_account = 按账户
+cn.myapps.core.user.already_choose_user = 已选择用户
+cn.myapps.core.user.isdimission = 是否离职
+cn.myapps.core.user.isdimission.dimission = 离职
+cn.myapps.core.user.isdimission.on_job = 在职
+cn.myapps.core.user.isdimissioned = 该用户已离职
+###################[cn.myapps.core.user] END #######################
+
+###################[cn.myapps.core.validate.repository] START #######################
+cn.myapps.core.validate.repository.please_input_name = 请输入名称
+cn.myapps.core.validate.repository.please_input_content = 请输入内容
+cn.myapps.core.validate.repository.advanced_tools = 高级工具
+cn.myapps.core.validate.repository.excelconf = Excel导入配置
+cn.myapps.core.validate.repository.upload_template = 模板上传
+cn.myapps.core.validate.repository.metadatamanager = 元数据管理
+###################[cn.myapps.core.validate.repository] END #######################
+
+###################[cn.myapps.core.task] START #######################
+cn.myapps.core.task.runtimes = 运行次数
+cn.myapps.core.task.label.running_time = 运行时间
+cn.myapps.core.task.banned = 禁止
+cn.myapps.core.task.manual = 手动
+cn.myapps.core.task.do_not_repeat = 不重复
+cn.myapps.core.task.immediately = 立刻
+cn.myapps.core.task.minute = 分钟
+cn.myapps.core.task.terminate_condition = 终止条件
+cn.myapps.core.task.content = 任务内容
+cn.myapps.core.task.info = 任务信息
+cn.myapps.core.task.name = 名称
+cn.myapps.core.task.startup_type = 启动类型
+cn.myapps.core.task.modify_time = 修改时间
+cn.myapps.core.task.script_editor = 脚本编辑器
+cn.myapps.core.task.save_success = 保存成功
+cn.myapps.core.task.running_on = 运行在
+cn.myapps.core.task.running_date = 运行日期
+cn.myapps.core.task.list = 任务列表
+cn.myapps.core.task.select_running_time = 请选择运行时间
+cn.myapps.core.task.stop_success = 停止成功
+###################[cn.myapps.core.task] END #######################
+
+###################[cn.myapps.core.workflow] START #######################
+cn.myapps.core.workflow.label.copy_for = 抄送给
+cn.myapps.core.workflow.label.value = 值
+cn.myapps.core.workflow.label.Exist = 状态标签的值已经存在
+cn.myapps.core.workflow.start_workflow = 启动流程
+cn.myapps.core.workflow.manual_adjustment_flow = 手动调整流程
+cn.myapps.core.workflow.submit_flow = 提交流程
+cn.myapps.core.workflow.return_to = 返回至
+cn.myapps.core.workflow.approve_remarks = 提交备注
+cn.myapps.core.workflow.commit_to = 提交至
+cn.myapps.core.workflow.specify_auditor = 指定审批人
+cn.myapps.core.workflow.please_choose = 请选择
+cn.myapps.core.workflow.flow_state = 流程状态
+cn.myapps.core.workflow.audit_time = 审批时间
+cn.myapps.core.workflow.basic_info = 基本信息
+cn.myapps.core.workflow.audit_setup = 审批人设置
+cn.myapps.core.workflow.send_setup = 抄送设置
+cn.myapps.core.workflow.audit_setup = 审批设置
+cn.myapps.core.workflow.activity_setup = 操作设置
+cn.myapps.core.workflow.input_auditing_script = 请输入审批脚本
+cn.myapps.core.workflow.select_form = 选择表单
+cn.myapps.core.workflow.select_role = 选择角色
+cn.myapps.core.workflow.manualnode_info = 手动节点信息
+cn.myapps.core.workflow.front_manual_adjustment_flow = 前台手动调整流程
+cn.myapps.core.workflow.auditing_edit_mode = 审批编辑模式
+cn.myapps.core.workflow.audit_role = 审批角色
+cn.myapps.core.workflow.auditing_script = 审批脚本
+cn.myapps.core.workflow.script_editor = 脚本编辑器
+cn.myapps.core.workflow.distribute = 审批送出设置
+cn.myapps.core.workflow.centralized = 审批到达设置
+cn.myapps.core.workflow.disperse_startnode = 分散开始节点
+cn.myapps.core.workflow.return_setup = 回退设置
+cn.myapps.core.workflow.retracement_setup = 回撤设置
+cn.myapps.core.workflow.allow_return = 允许回退
+cn.myapps.core.workflow.not_allow_return = 不允许回退
+cn.myapps.core.workflow.can_retracement = 可回撤
+cn.myapps.core.workflow.can_not_retracement = 不可回撤
+cn.myapps.core.workflow.script = 脚本
+cn.myapps.core.workflow.default_return = 默认回退
+cn.myapps.core.workflow.customized_return = 定制回退
+cn.myapps.core.workflow.node_list = 节点列表
+cn.myapps.core.workflow.retracement_setup = 回撤设置
+cn.myapps.core.workflow.mobile_sms = 手机短信
+cn.myapps.core.workflow.notification_type = 通知类型
+cn.myapps.core.workflow.action = 动作
+cn.myapps.core.workflow.reject = 回退
+cn.myapps.core.workflow.reject_confirm = 确认回退
+cn.myapps.core.workflow.doFlow = 流转
+cn.myapps.core.workflow.overdue = 过期
+cn.myapps.core.workflow.arrive = 到达
+cn.myapps.core.workflow.submitter = 当前提交人
+cn.myapps.core.workflow.origPrincipal = 原待办人
+cn.myapps.core.workflow.rejectType = 回退类型
+cn.myapps.core.workflow.pending_personal = 待办人
+cn.myapps.core.workflow.isnotify_superior = 是否通知上级
+cn.myapps.core.workflow.audit_user = 审批用户
+cn.myapps.core.workflow.open_send_or_not = 是否开机抄送功能
+cn.myapps.core.workflow.binding_form = 审批过程中的表单绑定
+cn.myapps.core.workflow.send_edit_model = 抄送编辑模式
+cn.myapps.core.workflow.input_predefined_value = 请输入预定义值
+cn.myapps.core.workflow.must_be_num = 类型必须是数字
+cn.myapps.core.workflow.select_subform = 选择子表单
+cn.myapps.core.workflow.subFlow_info = 子表单信息
+cn.myapps.core.workflow.cancel_node_info = 取消节点信息
+cn.myapps.core.workflow.select_audit_user = 请选择审批用户
+cn.myapps.core.workflow.select_user = 选择用户
+cn.myapps.core.workflow.select_subflow = 选择子流程
+cn.myapps.core.workflow.setup_form_authority = 设置表单权限
+cn.myapps.core.workflow.audit_organization = 审批组织
+cn.myapps.core.workflow.audit_field = 审批字段
+cn.myapps.core.workflow.send_edit_pattern = 抄送编辑模式
+cn.myapps.core.workflow.audit_timelimit_setup = 审批时限设置
+cn.myapps.core.workflow.authority_setup = 权限设置
+cn.myapps.core.workflow.specify_subFlow = 指定子流程
+cn.myapps.core.workflow.startup_setup = 启动设置
+cn.myapps.core.workflow.cancel_node = 取消节点
+cn.myapps.core.workflow.complete_node = 完成节点
+cn.myapps.core.workflow.input_overduenotice_timelimit = 请输入过期通知时限
+cn.myapps.core.workflow.input_send_info = 请输入抄送信息
+cn.myapps.core.workflow.pedding_subflow = 请绑定子流程
+cn.myapps.core.workflow.choose_specify_auditor = 请选择指定审批人
+cn.myapps.core.workflow.choose_audit_setup_specify_auditor = 请选择审批设置指定审批人
+cn.myapps.core.workflow.list = 流程列表
+cn.myapps.core.workflow.form_list = 表单列表
+cn.myapps.core.workflow.clear_all = 清除所有
+cn.myapps.core.workflow.user_select = 用户选择
+cn.myapps.core.workflow.approve_remarks = 提交备注
+cn.myapps.core.workflow.flow_history = 流程历史
+cn.myapps.core.workflow.flow_diagram = 流程图标
+cn.myapps.core.workflow.name = 流程名称
+cn.myapps.core.workflow.switch = 切换流程
+cn.myapps.core.workflow.choose_start_workflow = 选择启动流程
+
+cn.myapps.core.workflow.front_manual_adjustment_flow = 前台手动调整流程
+cn.myapps.core.workflow.organization = 组织
+cn.myapps.core.workflow.IsOpenCCFuntion = 是否开启抄送功能
+cn.myapps.core.workflow.OpenCCFuntion = 开启抄送功能
+cn.myapps.core.workflow.suspend_node = 挂起节点
+cn.myapps.core.workflow.terminate_node = 终止节点
+cn.myapps.core.workflow.subflow_node = 子流程节点
+cn.myapps.core.workflow.form_list = 表单列表
+cn.myapps.core.workflow.flow_list = 流程列表
+cn.myapps.core.workflow.delay_time = 滞后时间
+cn.myapps.core.workflow.specify = 指定
+cn.myapps.core.workflow.delay = 滞后
+cn.myapps.core.workflow.date_time = 日期时间
+
+cn.myapps.core.workflow.running = 运行
+cn.myapps.core.workflow.auto_node_info = 自动节点信息
+cn.myapps.core.workflow.loop_self = 自循环
+
+cn.myapps.core.workflow.current_processor = 当前处理人
+cn.myapps.core.workflow.please_choose = 请选择
+cn.myapps.core.workflow.resume_flow = 恢复流程
+cn.myapps.core.workflow.input_audit_remark = 请输入审批备注
+cn.myapps.core.workflow.params.transfer.iscript = 通过iScript脚本计算子流程表单数据
+cn.myapps.core.workflow.must_be_num = 类型必须是数字
+
+cn.myapps.core.workflow.by_flow_name = 按流程名称
+cn.myapps.core.workflow.by_current_node = 按当前节点
+cn.myapps.core.workflow.by_initiator = 按发起人
+cn.myapps.core.workflow.by_date = 按日期
+cn.myapps.core.workflow.by_lastauditor = 按最后处理人
+cn.myapps.core.workflow.by_lastprocesstime = 按最后处理时间
+cn.myapps.core.workflow.add_auditor = 加签
+
+cn.myapps.core.workflow.notification.sended = 已送出通知
+cn.myapps.core.workflow.notification.pending = 待办通知
+cn.myapps.core.workflow.notification.pending.overdue = 待办超期通知
+cn.myapps.core.workflow.notification.rollback = 回退通知
+
+cn.myapps.core.workflow.suspend = 挂起
+cn.myapps.core.workflow.recover = 恢复
+cn.myapps.core.workflow.intervene = 干预
+cn.myapps.core.workflow.timelimit = 过期
+cn.myapps.core.workflow.skip = 跳过
+cn.myapps.core.workflow.retracement = 回撤
+cn.myapps.core.workflow.suspend.success = 挂起成功
+cn.myapps.core.workflow.suspend.fail = 挂起失败
+cn.myapps.core.workflow.recover.success = 恢复成功
+cn.myapps.core.workflow.recover.fail = 恢复失败
+cn.myapps.core.workflow.suspend.suspended = 该流程已经被挂起,请恢复后再尝试
+cn.myapps.core.workflow.tips.invalid_next_node = 你提交的下一步节点类型非法！
+###################[cn.myapps.core.workflow] END #######################
+
+###################[cn.myapps.core.multilanguage] START #######################
+cn.myapps.core.multilanguage.please_input_label = 请输入标签
+cn.myapps.core.multilanguage.please_input_text = 请输入文本
+cn.myapps.core.multilanguage.reload_properties = 重新加载所有语言属性
+cn.myapps.core.multilanguage.reload_properties_success = 重新加载所有语言属性成功
+cn.myapps.core.multilanguage.label = 多语言标签
+###################[cn.myapps.core.multilanguage] END #######################
+
+###################[cn.myapps.core.dynaform.dts.excelimport] START #######################
+cn.myapps.core.dynaform.dts.excelimport.none_upload_template = 无模板上传
+cn.myapps.core.dynaform.dts.excelimport.upload_template = 模板上传
+cn.myapps.core.dynaform.dts.excelimport.click_download_template = 点击下载模板
+cn.myapps.core.dynaform.dts.excelimport.success.total.imported = 已成功导入记录
+###################[cn.myapps.core.dynaform.dts.excelimport] END #######################
+
+###################[cn.myapps.core.dynaform.dts.datasource] START #######################
+cn.myapps.core.dynaform.dts.datasource.validat_is_valid = 数据源详细信息不生效
+cn.myapps.core.dynaform.dts.datasource.please_choose_one = 请选择其中一项或多项
+cn.myapps.core.dynaform.dts.datasource.delete_datasource = 确认删除该数据源吗
+###################[cn.myapps.core.dynaform.dts.datasource] END #######################
+
+###################[cn.myapps.core.dynaform.dts.metadata] START #######################
+cn.myapps.core.dynaform.dts.metadata.correponding_form = 对应表单
+cn.myapps.core.dynaform.dts.metadata_field_details = 字段详细信息
+###################[cn.myapps.core.dynaform.dts.metadata] END #######################
+
+###################[cn.myapps.core.dynaform.printer] START #######################
+cn.myapps.core.dynaform.printer.info = 打印信息
+cn.myapps.core.dynaform.printer.switch_form = 切换表单
+cn.myapps.core.dynaform.printer.content_clear = 内容清除
+cn.myapps.core.dynaform.printer.goon_or_not = 是否继续
+cn.myapps.core.dynaform.printer.relative_form = 相关表单
+cn.myapps.core.dynaform.printer.list = 打印列表
+cn.myapps.core.dynaform.save_success = 保存成功
+cn.myapps.core.dynaform.printer.add_field_error_first = 此打印模板已经被
+cn.myapps.core.dynaform.printer.add_field_error_second = 签出，您目前没有修改的权限！
+###################[cn.myapps.core.dynaform.printer] END #######################
+
+###################[cn.myapps.core.deploy.copymodule] START #######################
+cn.myapps.core.deploy.copymodule.new_module_name = 复制模块名
+cn.myapps.core.deploy.copymodule.new_description = 复制模块描述
+cn.myapps.core.deploy.copymodule.module_list = 模块列表
+cn.myapps.core.deploy.copymodule.copy_module = 新复制模块
+cn.myapps.core.deploy.copymodule.yes = 是
+cn.myapps.core.deploy.copymodule.no = 否
+cn.myapps.core.deploy.copymodule.copy_flow = 复制流程
+cn.myapps.core.deploy.copymodule.flow_list =流程列表
+###################[cn.myapps.core.deploy.copymodule] END #######################
+
+###################[cn.myapps.core.deploy.module] START #######################
+cn.myapps.core.deploy.module.module_exist = 该模块名称已存在
+cn.myapps.core.deploy.module.basic_info = 基本信息
+cn.myapps.core.deploy.module.info = 信息
+cn.myapps.core.deploy.module.commit_succeed = 提交成功
+cn.myapps.core.deploy.module.commit_back = 回退成功
+cn.myapps.core.deploy.module.goto = 跳转至
+cn.myapps.core.deploy.module.module_info = 模块信息
+cn.myapps.core.deploy.module.module_name = 模块名称
+cn.myapps.core.deploy.module.superior_module = 上级模板
+cn.myapps.core.deploy.module.module_ordernumber = 模块排序号
+cn.myapps.core.deploy.module.module_description = 模块描述
+cn.myapps.core.deploy.module.customized_module = 定制模块
+cn.myapps.core.deploy.module.exp_imp = 导入/导出
+cn.myapps.core.deploy.module.customized_module = 定制模块
+cn.myapps.core.deploy.module.path = 路径
+cn.myapps.core.deploy.module.statistics = 统计
+cn.myapps.core.deploy.module.elements = 模块元素
+###################[cn.myapps.core.deploy.module] END #######################
+
+###################[cn.myapps.core.dynaform.view] START #######################
+cn.myapps.core.dynaform.view.Mobile_client_does_not_support = 手机微信端不支持该类型操作
+cn.myapps.core.dynaform.view.current_user_account = 当前用户账号
+cn.myapps.core.dynaform.view.current_user_name = 当前用户名称
+cn.myapps.core.dynaform.view.current_user_id = 当前用户ID
+cn.myapps.core.dynaform.view.current_user_role_id = 当前用户角色ID
+cn.myapps.core.dynaform.view.current_user_department_id = 当前用户部门ID
+cn.myapps.core.dynaform.view.session = 当前会话
+cn.myapps.core.dynaform.view.corresponding_session_key = 对应Session键名 
+cn.myapps.core.dynaform.view.map_dissupport_open_in_grid = 地图视图不支持网格显示
+cn.myapps.core.dynaform.view.map_dissupport_open_in_working_div = 地图视图不支持弹出层显示
+cn.myapps.core.dynaform.view.module_form_can_not_empty = 模板表单不能为空
+cn.myapps.core.dynaform.view.common_filter_condition_nums = 常用查询条件数量不大于2
+cn.myapps.core.dynaform.view.common_filter_condition_not_empty = 常用查询条件不能为空
+cn.myapps.core.dynaform.view.common_filter_condition_not_same = 常用查询条件不能相同
+cn.myapps.core.dynaform.view.select_link = 选择链接
+cn.myapps.core.dynaform.view.create_menu = 创建菜单
+cn.myapps.core.dynaform.view.type = 视图类型
+cn.myapps.core.dynaform.view.node_link = 节点链接
+cn.myapps.core.dynaform.view.form_dofilter_confition = 表单过滤条件
+cn.myapps.core.dynaform.view.script_editor = 脚本编辑器
+cn.myapps.core.dynaform.view.new_col = 新建列
+cn.myapps.core.dynaform.view.edit_col_info = 编辑列信息
+cn.myapps.core.dynaform.view.batch_create = 批量创建
+cn.myapps.core.dynaform.view.create_col_guide = 创建列手册
+cn.myapps.core.dynaform.view.remove_col = 删除列
+cn.myapps.core.dynaform.view.new_activity_button = 新建操作按钮
+cn.myapps.core.dynaform.view.edit_activity_button = 编辑操作按钮
+cn.myapps.core.dynaform.view.info = 视图信息
+cn.myapps.core.dynaform.view.please_save = 请保存
+cn.myapps.core.dynaform.view.by = 按
+cn.myapps.core.dynaform.view.dofilter = 数据
+cn.myapps.core.dynaform.view.only = 仅
+cn.myapps.core.dynaform.view.visible = 可见
+cn.myapps.core.dynaform.view.open_type = 打开类型
+cn.myapps.core.dynaform.view.show_total_rows = 显示记录总数
+cn.myapps.core.dynaform.view.no = 否
+cn.myapps.core.dynaform.view.code_procedure = 代码存储过程
+cn.myapps.core.dynaform.view.search_template = 相关查询表单
+cn.myapps.core.dynaform.view.filter_system = 系统筛选条件
+cn.myapps.core.dynaform.view.filter_fields = 筛选字段
+cn.myapps.core.dynaform.view.common_filter_fields = 常用查询字段
+cn.myapps.core.dynaform.view.scope = 作用域
+cn.myapps.core.dynaform.view.match_with = 比较
+cn.myapps.core.dynaform.view.filter_script = 过滤脚本
+cn.myapps.core.dynaform.view.create_col = 创建列
+cn.myapps.core.dynaform.view.create_activity = 创建操作
+cn.myapps.core.dynaform.view.remove_activity = 删除操作
+cn.myapps.core.dynaform.view.create_view = 创建视图
+cn.myapps.core.dynaform.view.IsOrderByField = 默认排序
+cn.myapps.core.dynaform.view.col_info = 列信息
+cn.myapps.core.dynaform.view.new_view = 新建视图
+cn.myapps.core.dynaform.view.list_view = 列表视图
+cn.myapps.core.dynaform.view.map_view = 地图视图
+cn.myapps.core.dynaform.view.gantt_view = 甘特视图
+cn.myapps.core.dynaform.view.tree_view = 树形视图
+cn.myapps.core.dynaform.view.calendar_view = 日历视图
+cn.myapps.core.dynaform.view.collapsible_view = 折叠视图
+cn.myapps.core.dynaform.view.please_choose = 请选择
+cn.myapps.core.dynaform.view.need = 必填
+cn.myapps.core.dynaform.view.dissupport_order = 此字段不支持排序功能
+cn.myapps.core.dynaform.view.select_state = 选择状态
+cn.myapps.core.dynaform.view.select_multilanguage = 选择多语言
+cn.myapps.core.dynaform.view.name_required = 名称必填
+cn.myapps.core.dynaform.view.to = 至
+cn.myapps.core.dynaform.view.col_info_save_success = 列信息保存成功
+cn.myapps.core.dynaform.view.col_name = 列名称
+cn.myapps.core.dynaform.view.col_width = 列宽
+cn.myapps.core.dynaform.view.multilanguage_label = 多语言标签
+cn.myapps.core.dynaform.view.operate_type = 操作类型
+cn.myapps.core.dynaform.view.mapping_config = 映射
+cn.myapps.core.dynaform.view.to_summary_form = 目标表单
+cn.myapps.core.dynaform.view.param_name = 参数名称
+cn.myapps.core.dynaform.view.param_value = 参数值(列)
+cn.myapps.core.dynaform.view.value_type = 值类型
+cn.myapps.core.dynaform.view.real_value = 真实值
+cn.myapps.core.dynaform.view.text_value = 显示值
+cn.myapps.core.dynaform.view.value_script = 值脚本
+cn.myapps.core.dynaform.view.form_field = 表单字段
+cn.myapps.core.dynaform.view.Chinese = 中文
+cn.myapps.core.dynaform.view.ImageName = 标识图像
+cn.myapps.core.dynaform.view.current_page_total = 当前页小计
+cn.myapps.core.dynaform.view.Grant_Total = 总计
+cn.myapps.core.dynaform.view.approve_to = 提交至
+cn.myapps.core.dynaform.view.isVisible = 列显示设置
+cn.myapps.core.dynaform.view.mapping_field = 映射表单
+cn.myapps.core.dynaform.view.search_template = 查询模板
+cn.myapps.core.dynaform.view.OnActionForm = 作用表单
+cn.myapps.core.dynaform.view.OnActionView = 作用视图
+cn.myapps.core.dynaform.view.OnActionFlow = 作用流程
+cn.myapps.core.dynaform.view.OnActionReport = 作用报表
+cn.myapps.core.dynaform.view.OnActionExcelImport = 作用Excel导入
+cn.myapps.core.dynaform.view.adjustment_permission = 调整权限
+cn.myapps.core.dynaform.view.operate_type = 操作类型
+cn.myapps.core.dynaform.view.sum = 汇总
+cn.myapps.core.dynaform.view.OrderBy = 排序根据
+cn.myapps.core.dynaform.view.new_menu = 新建菜单
+cn.myapps.core.dynaform.view.menu_name = 菜单名称
+cn.myapps.core.dynaform.view.superior_menu = 上级菜单
+cn.myapps.core.dynaform.view.list = 视图列表
+cn.myapps.core.dynaform.view.delete_current_view = 确认删除当前选择视图
+cn.myapps.core.dynaform.view.Readonly = 只读
+cn.myapps.core.dynaform.view.InnerType = 节点点击打开类型
+cn.myapps.core.dynaform.view.input_audit_remark = 输入审批备注
+cn.myapps.core.dynaform.view.choose_value = 选择值
+cn.myapps.core.dynaform.view.search_value = 查询值
+cn.myapps.core.dynaform.view.col_hidden_display_in_view = 列隐藏时，在视图选择框中仍可使用
+cn.myapps.core.dynaform.view.ClearFile = 清空
+cn.myapps.core.dynaform.view.delete_checked = 删除选中项
+cn.myapps.core.dynaform.view.current_page = 当页
+cn.myapps.core.dynaform.view.Superior_node_id = 上级节点编号
+cn.myapps.core.dynaform.view.current_node_id = 当前节点编号
+cn.myapps.core.dynaform.view.current_node_name = 当前节点名称
+cn.myapps.core.dynaform.view.CldViewDateColum = 日历视图过滤字段
+cn.myapps.core.dynaform.view.GridNotSupportWordField = 网格视图不支持word编辑器
+cn.myapps.core.dynaform.view.GridNotSupportMapField = 网格视图不支持地图控件
+cn.myapps.core.dynaform.view.Required_integer = (*必填，必须是整数!)
+cn.myapps.core.dynaform.view.Display_value = 显示长度不能为空
+cn.myapps.core.dynaform.view.copy.error = 复制视图出错,请重新复制
+cn.myapps.core.dynaform.view.copy.success = 复制成功
+cn.myapps.core.dynaform.view.page.tip.filter_field_request_qequired = 表单过滤条件的配置中不能存在字段为空的配置项！
+###################[cn.myapps.core.dynaform.view] END #######################
+
+###################[cn.myapps.core.dynaform.links] START #######################
+cn.myapps.core.dynaform.links.report = 报表
+cn.myapps.core.dynaform.links.excel_import = Excel 导入
+cn.myapps.core.dynaform.links.customize_links_internal = 自定义链接（内部）
+cn.myapps.core.dynaform.links.customize_links_External = 自定义链接（外部）
+cn.myapps.core.dynaform.links.script_links = 脚本链接
+cn.myapps.core.dynaform.links.email_links = 邮件链接
+cn.myapps.core.dynaform.links.customize_report = 自定义报表
+cn.myapps.core.dynaform.links.raq_report = 润乾报表
+cn.myapps.core.dynaform.links.raq_report_module_file = 润乾报表模板文件
+cn.myapps.core.dynaform.links.inner_link = 内部链接
+cn.myapps.core.dynaform.links.outter_link = 外部链接
+cn.myapps.core.dynaform.links.list = 链接列表
+cn.myapps.core.dynaform.links.customize_link = 自定义链接
+cn.myapps.core.dynaform.links.manual_link = 手动链接
+cn.myapps.core.dynaform.links.OnActionForm = 作用表单
+cn.myapps.core.dynaform.links.OnActionView = 作用视图
+cn.myapps.core.dynaform.links.OnActionFlow = 作用流程
+cn.myapps.core.dynaform.links.OnActionReport = 作用报表
+cn.myapps.core.dynaform.links.OnActionExcelImport = 作用Excel导入
+cn.myapps.core.dynaform.view.page.label.permission_type = 权限：
+cn.myapps.core.dynaform.view.attr.permission_type.public = 所有用户可用
+cn.myapps.core.dynaform.view.attr.permission_type.private = 仅授权角色可用
+###################[cn.myapps.core.dynaform.links] END #######################
+
+
+
+###################[cn.myapps.core.domain] START #######################
+cn.myapps.core.domain.label.name = 企业域名称
+cn.myapps.core.domain.label.name.illegal = 企业域名称不能为空
+cn.myapps.core.domain.wechatCorpIDBind = 微信企业号绑定
+cn.myapps.core.domain.wechatCorpIDShow = 启用微信企业号
+cn.myapps.core.domain.domaintowechat = 同步企业域组织架构到微信企业号
+cn.myapps.core.domain.wechattodomain = 同步微信企业号组织架构到企业域
+cn.myapps.core.domain.CorpID = 企业号CorpID
+cn.myapps.core.domain.AppSecret = 开发者凭据
+cn.myapps.core.domain.CorpID2 = 企业微信CorpID
+cn.myapps.core.domain.AppSecret2 = 通讯录Secret
+cn.myapps.core.domain.AppID = 企业应用ID (用于跳转链接)
+cn.myapps.core.domain.DomainName = 外网访问系统地址
+cn.myapps.core.domain.basicset = 基本信息设置
+cn.myapps.core.domain.validation = 验证连接
+cn.myapps.core.domain.failure = 验证失败
+cn.myapps.core.domain.success = 验证成功
+cn.myapps.core.domain.timedout = 连接超时
+
+###################[cn.myapps.core.domain] END #######################
+
+
+###################[cn.myapps.core.dynaform.form] START #######################
+cn.myapps.core.dynaform.form.delete_current_form = 确认删除该表单
+cn.myapps.core.dynaform.form.webeditor.label.inputFormat = /自定义文件夹名
+cn.myapps.core.dynaform.form.webeditor.label.callbackscript = 确定后执行脚本
+cn.myapps.core.dynaform.form.webeditor.label.questionscript = 问卷脚本
+cn.myapps.core.dynaform.form.webeditor.prev_name = 开始日期字段名
+cn.myapps.core.dynaform.form.value = 值
+cn.myapps.core.dynaform.form.node = 节点
+cn.myapps.core.dynaform.form.menu.menu_name = 菜单名称
+cn.myapps.core.dynaform.form.menu.new_menu = 新建菜单
+cn.myapps.core.dynaform.form.menu.superior_menu = 上级菜单
+cn.myapps.core.dynaform.form.label.showlog = 显示操作日志
+cn.myapps.core.dynaform.form.label.isOpenAbleScript = 是否可打开脚本
+cn.myapps.core.dynaform.form.label.IsEditAbleScript = 是否可编辑脚本
+cn.myapps.core.dynaform.form.label.layoutType = 手机端表单控件布局样式
+cn.myapps.core.dynaform.form.label.layoutType.horizontal = 水平布局
+cn.myapps.core.dynaform.form.label.layoutType.vertical = 垂直布局
+cn.myapps.core.dynaform.form.tip.showlog = （模板表单只控制是否需要在页面上显示日志！日志表的创建需要原表单支持）
+cn.myapps.core.dynaform.form.tip.isEditAbleScriptTips = 注意：只有列表视图、树形视图支持该属性，且打开类型不能为网格
+cn.myapps.core.dynaform.form.webeditor.label.focusKey = 焦点切换键
+cn.myapps.core.dynaform.form.webeditor.label.onlyShowText = 只读状态时仅显示文本
+cn.myapps.core.dynaform.form.webeditor.label.readOnlyShowValOnly = 只读时仅显示值
+cn.myapps.core.dynaform.form.webeditor.label.hiddenValue = 隐藏时显示值
+cn.myapps.core.dynaform.form.webeditor.label.printHiddenValue = 打印隐藏时显示值
+cn.myapps.core.dynaform.form.webeditor.label.customize = 自定义
+cn.myapps.core.dynaform.form.webeditor.label.customizeType.notexist = 自定义上传文件类型不能为空
+cn.myapps.core.dynaform.form.webeditor.label.defaultOptionType = 默认值
+cn.myapps.core.dynaform.form.webeditor.label.firstOption = 第一个选项
+cn.myapps.core.dynaform.form.webeditor.label.emptyOption = 选项中包含空值
+cn.myapps.core.dynaform.form.webeditor.label.openType = 打开类型
+cn.myapps.core.dynaform.form.webeditor.label.joinMode = 拼接模式
+cn.myapps.core.dynaform.form.webeditor.label.allowViewDoc = 允许查看文档
+cn.myapps.core.dynaform.form.webeditor.label.columnName = 列名称
+cn.myapps.core.dynaform.form.webeditor.label.fieldName = 字段名称
+cn.myapps.core.dynaform.form.webeditor.label.to = 至
+cn.myapps.core.dynaform.form.webeditor.label.tabSelectedScript = 页签选中脚本
+cn.myapps.core.dynaform.form.webeditor.label.showMode = 显示模式
+cn.myapps.core.dynaform.form.webeditor.label.isAllowSameName = 是否允许同名
+cn.myapps.core.dynaform.form.webeditor.label.collapse=折叠
+cn.myapps.core.dynaform.form.webeditor.label.isOpenAll = 是否全部展开
+cn.myapps.core.dynaform.form.webeditor.label.includeType = 包含元素类型
+cn.myapps.core.dynaform.form.webeditor.label.isRelate = 是否为父子关系
+cn.myapps.core.dynaform.form.webeditor.label.maxUploadFileNum = 最大上传数量
+cn.myapps.core.dynaform.form.webeditor.label.rootPath = 根目录
+cn.myapps.core.dynaform.form.webeditor.label.shieldingProperties = 启动功能
+cn.myapps.core.dynaform.form.webeditor.label.electronicSeal =  签章脚本
+cn.myapps.core.dynaform.form.webeditor.label.templatesAndTaoHong = 模板和套红脚本
+cn.myapps.core.dynaform.form.webeditor.label.retainTracesOf = 痕迹保留脚本
+cn.myapps.core.dynaform.form.webeditor.label.mostoption = 最多可选
+cn.myapps.core.dynaform.form.webeditor.tip.realvalue = 真实值
+cn.myapps.core.dynaform.form.webeditor.tip.textvalue = 显示值
+cn.myapps.core.dynaform.form.wordfield.label.Mobile_client_does_not_support = 手机微信端不支持WORD控件
+cn.myapps.core.dynaform.form.mapfield.label.Mobile_client_does_not_support = 手机微信端不支持地图控件
+cn.myapps.core.dynaform.form.field.label.Mobile_client_does_not_support = 手机微信端不支持控件
+cn.myapps.core.dynaform.form.label.show = 显示
+cn.myapps.core.dynaform.form.label.superior_department = 上级部门联动字段
+cn.myapps.core.dynaform.form.label.optional = 可选
+cn.myapps.core.dynaform.form.label.all_department = 所有部门
+cn.myapps.core.dynaform.form.label.no1 = 一级部门
+cn.myapps.core.dynaform.form.label.no2 = 二级部门
+cn.myapps.core.dynaform.form.label.no3 = 三级部门
+cn.myapps.core.dynaform.form.label.no4 = 四级部门
+cn.myapps.core.dynaform.form.label.no5 = 五级部门
+cn.myapps.core.dynaform.form.label.current_department = 仅显示当前用户所属部门及下属部门
+cn.myapps.core.dynaform.form.label.type = 类型
+cn.myapps.core.dynaform.form.iscript = IScript脚本
+cn.myapps.core.dynaform.form.action = 动作
+cn.myapps.core.dynaform.form.label.display_type = 显示方式
+cn.myapps.core.dynaform.form.label.display_div = 弹出层显示
+cn.myapps.core.dynaform.form.label.display_in_page = 嵌入在页面显示
+cn.myapps.core.dynaform.form.process_startup_mode = 指定流程启动模式
+cn.myapps.core.dynaform.form.select_mode = 选择模式
+cn.myapps.core.dynaform.form.multiple_choice = 多选
+cn.myapps.core.dynaform.form.single_choice = 单选
+cn.myapps.core.dynaform.form.show_size = 显示大小
+cn.myapps.core.dynaform.form.limit_file_size = 限制单个上传文件大小
+cn.myapps.core.dynaform.form.file_pattern = 存放路径
+cn.myapps.core.dynaform.form.open_water_mark = 是否添加水印
+cn.myapps.core.dynaform.form.water_mark_type = 添加水印模式
+cn.myapps.core.dynaform.form.water_mark_scrpit = 添加水印脚本
+cn.myapps.core.dynaform.form.water_mark_preview = 预览时水印
+cn.myapps.core.dynaform.form.water_mark_download = 下载时水印
+cn.myapps.core.dynaform.form.water_mark_print = 打印时水印
+cn.myapps.core.dynaform.activity.supportSorting = 允许文件排序
+cn.myapps.core.dynaform.form.file_pattern = 存放路径
+cn.myapps.core.dynaform.form.file_pattern = 存放路径
+cn.myapps.core.dynaform.form.system_catalog = 服务器目录
+cn.myapps.core.dynaform.form.only_download = 仅下载
+cn.myapps.core.dynaform.form.Allows_browser_open = 允许在浏览器中打开
+cn.myapps.core.dynaform.form.image_pattern = 图像存放路径
+cn.myapps.core.dynaform.form.image_catalog = 图像目录
+cn.myapps.core.dynaform.form.webeditor.label.default = 系统默认
+cn.myapps.core.dynaform.form.webeditor.label.Unit = 单位：PX或％
+cn.myapps.core.dynaform.form.webeditor.label.Unit2 = 单位：PX
+cn.myapps.core.dynaform.form.create_menu = 创建菜单
+cn.myapps.core.dynaform.form.reset_field_id = 重置字段编号
+cn.myapps.core.dynaform.form.clear_data = 清除数据
+cn.myapps.core.dynaform.form.eg = 例如
+cn.myapps.core.dynaform.form.field_name = 字段名称
+cn.myapps.core.dynaform.form.corresponding_formField=对应表单字段
+cn.myapps.core.dynaform.form.formField_type = 表单字段类型
+cn.myapps.core.dynaform.form.ColumnName = 列名称
+cn.myapps.core.dynaform.form.please_save = 请保存
+cn.myapps.core.dynaform.form.complete_all_mapped_fields=请把所有映射字段添加完整
+core.dynaform.form.type.templateform = 模板表单
+core.dynaform.form.type.open_by_templateform  = 以模板表单方式打开
+core.dynaform.form.userfield.front.page.tip.can_not_found_user = 找不到用户
+core.dynaform.form.type.Jump = 跳转
+core.dynaform.form.Submit_WorkFlow = 提交流程
+core.dynaform.form.browse = 浏览
+core.dynaform.form.clear = 清空
+core.dynaform.form.clear_list = 清除上传列表
+core.dynaform.form.file_name = 文件名
+core.dynaform.form.file_size = 大小
+core.dynaform.form.file_type = 类型
+core.dynaform.form.file_status = 状态
+core.dynaform.form.upload_success  = 文件上传成功
+core.dynaform.form.prompt_message = 一次最多只能上传
+core.dynaform.form.prompt_message1 = 个文件
+core.dynaform.form.prompt_message2 = 大于限制大小
+core.dynaform.form.file_select = 选择文件
+core.dynaform.form.file_size_zero = 文件大小为0
+core.dynaform.form.file_limit_exceed = 文件上传数量超过限制,当前剩余上传量
+core.dynaform.form.file_ready = 准备就绪
+core.dynaform.form.file_upload_max = 最大上传数
+core.dynaform.form.file_upload_residue = 剩余上传数
+core.dynaform.form.file_confirm = 确定
+core.dynaform.form.file_remind_description = 请选择文件进行上传
+
+
+cn.myapps.core.dynaform.form.page.label.permission_type = 权限：
+cn.myapps.core.dynaform.form.attr.permission_type.public = 所有用户可用
+cn.myapps.core.dynaform.form.attr.permission_type.private = 仅授权角色可用
+cn.myapps.core.dynaform.form.type.fragment = 标签页
+cn.myapps.core.dynaform.qrcode.refreshonchanged.label = 回调脚本执行完后刷新表单
+cn.myapps.core.dynaform.form.field.refreshMode = 刷新方式
+cn.myapps.core.dynaform.form.field.refreshMode.global = 全局刷新
+cn.myapps.core.dynaform.form.field.refreshMode.local = 局部刷新
+cn.myapps.core.dynaform.form.field.refreshFields = 局部刷新字段
+cn.myapps.core.dynaform.form.field.valid.msg.refreshfield_not_empty = 局部刷新方式下，局部刷新字段不能为空，请选择局部刷新字段！
+###################[cn.myapps.core.dynaform.form] END #######################
+
+###################[cn.myapps.core.dynaform.activity] START #######################
+cn.myapps.core.dynaform.activity.label.onActionFlow = 作用流程
+cn.myapps.core.dynaform.activity.label.onActionView = 作用视图
+cn.myapps.core.dynaform.activity.label.onActionForm = 作用表单
+cn.myapps.core.dynaform.activity.label.onActionPrint = 选择打印模板
+cn.myapps.core.dynaform.activity.label.action = 执行
+cn.myapps.core.dynaform.activity.label.jumpConfig = 跳转设置
+cn.myapps.core.dynaform.activity.label.targetForm = 目标表单
+cn.myapps.core.dynaform.activity.label.flowInfoShowType = 流程信息显示方式
+cn.myapps.core.dynaform.activity.label.adjustmentPermission = 调整权限
+cn.myapps.core.dynaform.activity.label.sumbitToNextNode = 提交至下一步节点
+cn.myapps.core.dynaform.activity.label.ImportMappingConfig = 导入映射
+cn.myapps.core.dynaform.activity.label.parameter = 参数
+cn.myapps.core.dynaform.activity.label.parameterName = 参数名称
+cn.myapps.core.dynaform.activity.label.parameterValue = 参数值
+cn.myapps.core.dynaform.activity.label.filePathScript = 文件路径脚本
+cn.myapps.core.dynaform.activity.label.jumpActOpenType = 打开方式
+cn.myapps.core.dynaform.activity.label.opentype_currentpage = 当前页面
+cn.myapps.core.dynaform.activity.label.opentype_poplayer = 弹出层
+cn.myapps.core.dynaform.activity.label.opentype_tab = 页签
+cn.myapps.core.dynaform.activity.label.opentype_newpage = 新窗口
+cn.myapps.core.dynaform.activity.label.withold = 带旧数据
+cn.myapps.core.dynaform.activity.label.actionType = 操作类型
+cn.myapps.core.dynaform.activity.label.nothing = 无
+cn.myapps.core.dynaform.activity.label.return = 返回
+cn.myapps.core.dynaform.activity.label.close = 关闭
+cn.myapps.core.dynaform.activity.label.jump = 跳转
+cn.myapps.core.dynaform.activity.label.colorType = 颜色类型
+cn.myapps.core.dynaform.activity.label.colorType.default = 默认
+cn.myapps.core.dynaform.activity.label.colorType.primary = 原始
+cn.myapps.core.dynaform.activity.label.colorType.success = 成功
+cn.myapps.core.dynaform.activity.label.colorType.info = 信息
+cn.myapps.core.dynaform.activity.label.colorType.warning = 警告
+cn.myapps.core.dynaform.activity.label.colorType.danger = 危险
+cn.myapps.core.dynaform.activity.label.colorType_tip = 只支持H5和PHONE皮肤
+cn.myapps.core.dynaform.activity.label.Mobile_client_does_not_support = 手机微信端不支持该类型操作
+cn.myapps.core.dynaform.activity.flowInfoShowType.default = 表单中显示流程操作
+cn.myapps.core.dynaform.activity.flowInfoShowType.div = 弹出显示流程操作
+cn.myapps.core.dynaform.activity.flowInfoShowType.hide = 隐藏流程操作
+cn.myapps.core.dynaform.activity.type.nothing = 自定义
+cn.myapps.core.dynaform.activity.type.nothing.action_selection = 动作处理方式
+cn.myapps.core.dynaform.activity.type.nothing.action_selection_custom = 完成动作执行前脚本，直接进行动作执行脚本 
+cn.myapps.core.dynaform.activity.type.nothing.action_selection_form_related = 完成动作执行前脚本，可获取模板表单的参数，再进行动作执行脚本
+cn.myapps.core.dynaform.activity.type.nothing.form_related = 动作关联表单
+cn.myapps.core.dynaform.activity.type.nothing.action_script = 动作执行脚本
+cn.myapps.core.dynaform.activity.type.flexPrint = 自定义打印
+cn.myapps.core.dynaform.activity.type.pdfExport = PDF导出
+cn.myapps.core.dynaform.activity.type.signature = 金格电子签章
+cn.myapps.core.dynaform.activity.type.jump = 跳转
+cn.myapps.core.dynaform.activity.type.jumpMode = 模式
+cn.myapps.core.dynaform.activity.type.jump.form = 跳转到动态表单
+cn.myapps.core.dynaform.activity.type.jump.url = 跳转到指定URL
+cn.myapps.core.dynaform.activity.type.addAuditor = 流程加签
+cn.myapps.core.dynaform.activity.type.batchSignature = 批量签章
+cn.myapps.core.dynaform.activity.type.excelImport = 导入Excel
+cn.myapps.core.dynaform.activity.type.excelExport = 导出Excel
+cn.myapps.core.dynaform.activity.type.successfully_saved_and_open_process = 成功保存并开启流程
+cn.myapps.core.dynaform.activity.position = 显示位置
+cn.myapps.core.dynaform.activity.position.necessary = 显示位置必须选择一个
+cn.myapps.core.dynaform.activity.toolbar = 工具栏按钮
+cn.myapps.core.dynaform.activity.contextMenu = 右键菜单项
+cn.myapps.core.dynaform.activity.print = 网页打印
+cn.myapps.core.dynaform.activity.reflash = 刷新：字段值改变时，触发表单刷新动作
+cn.myapps.core.dynaform.activity.not_recommended = *不建议使用,该功能将会在后续版本中屏蔽!
+cn.myapps.core.dynaform.activity.recalculate = 重计算：表单刷新时，重新计算本字段内容
+cn.myapps.core.dynaform.activity.phone = 手机可用
+cn.myapps.core.dynaform.activity.preview_edit = office文档预览时可编辑
+cn.myapps.core.dynaform.activity.supportSorting = 文件排序功能
+cn.myapps.core.dynaform.activity.button.edittemplate = 编辑打印模板
+cn.myapps.core.dynaform.activity.qrcode.content_script = 内容脚本
+cn.myapps.core.dynaform.activity.qrcode.callback_script = 回调脚本
+cn.myapps.core.dynaform.activity.qrcode.process_mode = 扫码处理方式
+cn.myapps.core.dynaform.activity.qrcode.size = 大小
+cn.myapps.core.dynaform.activity.qrcode.text = 显示内容
+cn.myapps.core.dynaform.activity.qrcode.link = 打开表单
+cn.myapps.core.dynaform.activity.qrcode.callback = 执行回调脚本
+cn.myapps.core.dynaform.activity.type.flow_processing = 流程处理
+cn.myapps.core.dynaform.activity.type.flow_terminate = 终止流程
+cn.myapps.core.dynaform.activity.type.save = 保存
+cn.myapps.core.dynaform.activity.type.save_and_start_flow = 保存并启动流程
+cn.myapps.core.dynaform.activity.type.start_flow = 流程启动
+cn.myapps.core.dynaform.activity.attr.editMode.predefined = 由开发者预先指定
+cn.myapps.core.dynaform.activity.attr.editMode.select_by_user = 由前台用户选择指定
+cn.myapps.core.dynaform.activity.attr.editMode.iscript = 由Iscript脚本运算结果指定
+cn.myapps.core.dynaform.activity.type.document_query = 载入视图
+
+cn.myapps.core.dynaform.activity.archive.message.unsupport = 自由流程不支持归档功能
+cn.myapps.core.dynaform.activity.archive.name = 归档
+cn.myapps.core.dynaform.activity.archive.message.success = 归档成功
+cn.myapps.core.dynaform.activity.archive.message.fail = 归档失败
+cn.myapps.core.dynaform.activity.type.sign = 签章
+cn.myapps.core.dynaform.activity.type.sign.manager = 印章管理
+cn.myapps.core.dynaform.activity.type.sign.select_sign = 印章
+
+###################[cn.myapps.core.dynaform.activity] END #######################
+
+###################[cn.myapps.core.dynaform.summary] START #######################
+cn.myapps.core.dynaform.summary.label.scope = 摘要类型
+cn.myapps.core.dynaform.summary.label.orderBy = 排序根据
+cn.myapps.core.dynaform.summary.label.allFields = 所有字段
+cn.myapps.core.dynaform.summary.label.createTime = 创建时间
+cn.myapps.core.dynaform.summary.label.lastModifyTime = 最新修改时间
+cn.myapps.core.dynaform.summary.scope.showDoSummary = 待办摘要
+cn.myapps.core.dynaform.summary.scope.flowNotice = 流程通知
+cn.myapps.core.dynaform.summary.scope.circulatSummary = 抄送widget摘要
+cn.myapps.core.dynaform.summary.custom_content = 内容定义
+cn.myapps.core.dynaform.summary.do_save_error = 作用域为待办的摘要信息已经存在！
+cn.myapps.core.dynaform.summary.do_save_error_title = 标题已存在！
+cn.myapps.core.dynaform.summary.do_save_error_summary = 请先为该表单配置待办摘要！
+###################[cn.myapps.core.dynaform.summary] END #######################
+
+
+###################[front.page] START #######################
+front.page.tab.label.my_homepage = 我的主页
+front.page.tab.label.email_address = 邮箱地址
+###################[front.page] END #######################
+
+###################[cn.myapps.core.personalmessage] START #######################
+cn.myapps.core.personalmessage.tab.title.inbox = 收件箱
+cn.myapps.core.personalmessage.attr.receive_date = 接收时间
+cn.myapps.core.personalmessage.system_message = 系统消息
+cn.myapps.core.personalmessage.user_message = 用户消息
+cn.myapps.core.personalmessage.announcement = 公告
+cn.myapps.core.personalmessage.vote = 投票
+###################[front.page] END #########################
+
+#---------------------------------------------------------
+Skin = 皮肤
+page.loading = 载入中,请稍等
+select_one_at_least = 请至少选择一个
+please.choose.one = 请选择其中一项或多项
+Add = 添加
+User_Name = 用户名称
+Actions = 操作
+BasicInfo = 基本信息
+Hello = 你好
+Domain_Definition = 企业域定义
+
+###################[cn.myapps.core.main] START #######################
+cn.myapps.core.main.super_admin_management_List = 超级管理员管理列表
+cn.myapps.core.main.domain_management = 企业域管理
+cn.myapps.core.main.domain_list = 企业域列表
+cn.myapps.core.main.my_domain_list = 我的企业域列表
+cn.myapps.core.main.domain_info = 企业域信息
+cn.myapps.core.main.application_management = 软件管理
+cn.myapps.core.main.application_list = 软件列表
+cn.myapps.core.main.my_application_list = 我的软件列表
+cn.myapps.core.main.application_information = 软件信息
+cn.myapps.core.main.super_user_management = 特权用户管理
+cn.myapps.core.main.super_user_list = 特权用户列表
+###################[cn.myapps.core.main] END #######################
+
+###################[cn.myapps.core.domain] START #######################
+cn.myapps.core.domain.label.name = 企业域名称
+cn.myapps.core.domain.title.new_domain = 新建企业域
+cn.myapps.core.domain.title.delete_domain = 删除企业域
+cn.myapps.core.domain.title.query_domain_name = 查询企业域名称
+cn.myapps.core.domain.title.query_manager = 查询管理人
+cn.myapps.core.domain.title.search_form = 查询表单
+cn.myapps.core.domain.title.reset_search_form = 重置查询表单
+cn.myapps.core.domain.tips.please_choose_one = 请选择其中一项或多项
+cn.myapps.core.domain.synchLDAP = 同步LDAP信息
+cn.myapps.core.domain.select_skin = 选择皮肤
+cn.myapps.core.domain.skin_preview = 皮肤预览
+cn.myapps.core.domain.system_name = 系统名称
+cn.myapps.core.domain.switch_skin = 切换皮肤
+cn.myapps.core.domain.preview_point = *预览界面不能进行操作。
+cn.myapps.core.domain.SMS_member_code = 天翎短信平台帐号
+cn.myapps.core.domain.SMS_member_pwd = 天翎短信平台密码
+cn.myapps.core.domain.field_extends_menu=字段扩展管理
+cn.myapps.core.domain.network_disk = 网盘
+cn.myapps.core.domain.log_operation_log = 操作日志
+cn.myapps.core.domain.process_monitoring = 流程监控
+cn.myapps.core.domain.page.label.test_sms = 测试短信发送
+cn.myapps.core.domain.page.label.no_account = 还没有帐号?
+cn.myapps.core.domain.page.label.change_password = 修改密码?请登录天翎短信平台！
+cn.myapps.core.domain.page.tips.invalid_sms_account = 无效的天翎短信平台账号或密码。
+cn.myapps.core.domain.page.tips.insufficient_sms = 短信剩余数量已不足，请及时充值。
+cn.myapps.core.domain.page.tips.connect_sms_server_failed = 网络无法连接到天翎短信平台服务器，请检查网络设置！
+cn.myapps.core.domain.page.tips.input_telephone = 请输入手机号码
+cn.myapps.core.domain.page.tips.invalid_telephone = 请输入11位的手机号码
+###################[cn.myapps.core.domain] END #######################
+
+###################[cn.myapps.core.domain.department] START #######################
+cn.myapps.core.domain.department.department_list = 部门列表
+cn.myapps.core.domain.department.search_department = 查询部门
+cn.myapps.core.domain.department.department_name = 部门名称
+cn.myapps.core.domain.department.department_information = 部门信息
+cn.myapps.core.domain.department.can_not_have_keyword = 不能有关键字
+cn.myapps.core.domain.department.delete_successful = 删除成功！
+cn.myapps.core.domain.department.exist = 部门名字已经存在，请选择另一个名字
+cn.myapps.core.domain.department.save_success = 保存成功
+cn.myapps.core.domain.listByDepartment.belong_users = 所属用户
+cn.myapps.core.domain.listByDepartment.add_user_to_department = 添加用户至部门
+cn.myapps.core.domain.listByDepartment.add_user_to_role = 添加用户至角色
+cn.myapps.core.domain.department.validation = 有效性
+cn.myapps.core.domain.department.valid = 有效
+cn.myapps.core.domain.department.invalid = 失效
+cn.myapps.core.domain.departmentEdit.setup_order_number = 设置排序号
+###################[cn.myapps.core.domain.department] END #######################
+
+###################[cn.myapps.core.domain.onlineUsersList] START #######################
+cn.myapps.core.domain.onlineUsersList.online_count = 当前在线用户数
+cn.myapps.core.domain.onlineUsersList.page_user_pageline = 用户/页
+cn.myapps.core.domain.onlineUsersList.login_time = 登录时间
+cn.myapps.core.domain.onlineUsersList.online_users = 在线用户
+###################[cn.myapps.core.domain.onlineUsersList] END #######################
+
+###################[cn.myapps.core.domain.editPersonal] START #######################
+cn.myapps.core.domain.editPersonal.user_management = 用户管理
+###################[cn.myapps.core.domain.editPersonal] END #######################
+
+###################[cn.myapps.core.domain.user] START #######################
+cn.myapps.core.domain.userListUnjoinedDept.not_choose = 没有记录被选中，请选择记录
+cn.myapps.core.domain.userlist.title.new_user = 新建用户
+cn.myapps.core.domain.userlist.title.delete_user = 删除用户
+cn.myapps.core.domain.userlist.title.search_user = 查询用户
+cn.myapps.core.domain.userlist.title.superior_name = 上级名称
+cn.myapps.core.domain.userlist.title.by_superior = 按上级名称
+cn.myapps.core.domain.userlist.title.by_name = 按名称
+cn.myapps.core.domain.userlist.title.by_account = 按帐号
+cn.myapps.core.domain.userEdit.user_information = 用户信息
+cn.myapps.core.domain.userEdit.superior_select = 上级选择
+cn.myapps.core.domain.userEdit.proxy_user = 代理人用户
+cn.myapps.core.domain.userEdit.proxy_user_select = 代理用户人选择
+cn.myapps.core.domain.userEdit.workCalendar_list_select = 工作日历选择
+cn.myapps.core.domain.userEdit.proxy_start_date = 代理开始日期
+cn.myapps.core.domain.userEdit.proxy_end_date = 代理结束日期
+cn.myapps.core.domain.userEdit.setup_domain_admin_authority = 设置企业域管理员权限
+cn.myapps.core.domain.userEdit.IM_setting = 即时通讯设置
+cn.myapps.core.domain.userEdit.use_IM = 使用即时通讯
+cn.myapps.core.domain.userEdit.setup_order_number = 设置排序号
+cn.myapps.core.domain.userEdit.account_locked = 登录异常锁定
+cn.myapps.core.domain.userEdit.locked = 锁定
+cn.myapps.core.domain.userEdit.unlocked = 未锁定
+cn.myapps.core.domain.userEdit.show_all_role = 显示所有角色
+cn.myapps.core.domain.userEdit.show_chose_role = 显示选中角色
+cn.myapps.core.domain.userEdit.role_name = 角色名称
+cn.myapps.core.domain.userEdit.user_role_select = 角色选择
+cn.myapps.core.domain.userEdit.tips.please_select_department = 请选择部门
+cn.myapps.core.domain.userEdit.tips.page_login_password = 请输入您的密码
+cn.myapps.core.domain.userEdit.tips.orderbyno_legal = 排序号须为0-1000000之间的整数
+cn.myapps.core.domain.userEdit.make_default = 设为默认
+cn.myapps.core.domain.selectproxyuser.select_proxy_user = 选择代理人用户
+cn.myapps.core.domain.selectproxyuser.able_to_select_current_online_user = 可选的当前在线用户
+cn.myapps.core.domain.selectproxyuser.can_not_find_user = 没找到用户
+cn.myapps.core.domain.selectproxyuser.roles_list = 角色列表
+cn.myapps.core.domain.selectproxyuser.can_not_find_role = 没找到角色
+cn.myapps.core.domain.selectproxyuser.user_already_be_add = 用户已经被添加
+cn.myapps.core.domain.selectproxyuser.title.click_delete = 点击删除
+cn.myapps.core.domain.selectproxyuser.by_role = 按角色
+cn.myapps.core.domain.selectproxyuser.by_department = 通过部门
+cn.myapps.core.domain.selectproxyuser.online_user = 在线用户
+cn.myapps.core.domain.selectproxyuser.add_page_all = 添加本页所有
+cn.myapps.core.domain.selectproxyuser.remove_proxy_user = 移除代理人用户
+cn.myapps.core.domain.selectproxyuser.already_choose_user = 已选择用户
+cn.myapps.core.domain.selectproxyuser.by_user_name = 按用户名
+cn.myapps.core.domain.selectproxyuser.search_result = 查询结果
+cn.myapps.core.domain.selectsuperior.remove_superior = 移除上级
+cn.myapps.core.domain.selectsuperior.select_superior = 选择上级
+cn.myapps.core.domain.holdApp.title.add_application = 添加软件
+cn.myapps.core.domain.holdApp.application_list = 软件列表
+cn.myapps.core.domain.holdApp.custom_application = 自定义软件配置
+cn.myapps.core.domain.holdApp.base_application = 基础软件配置
+cn.myapps.core.domain.holdApp.enable_pm = 启用任务管理软件
+cn.myapps.core.domain.holdApp.enable_qm = 启用调查问卷软件
+cn.myapps.core.domain.holdApp.enable_am = 启用微考勤软件
+cn.myapps.core.domain.holdApp.enable_cm = 启用联系人管理软件
+cn.myapps.core.domain.holdApp.enable_km = 启用知识文档管理软件
+cn.myapps.core.domain.holdApp.title.remove_application = 移除软件
+cn.myapps.core.domain.holdApp.title.search_application = 查询软件
+cn.myapps.core.domain.holdApp.application_name = 软件名称
+cn.myapps.core.domain.holdApp.title.by_application_name = 按软件名称
+cn.myapps.core.domain.holdApp.title.by_application_description = 按软件描述
+cn.myapps.core.domain.holdApp.activation = 激活
+cn.myapps.core.domain.holdApp.disable = 禁用
+cn.myapps.core.domain.addApp.all_applications = 所有软件
+###################[cn.myapps.core.domain.user] END #######################
+
+###################[cn.myapps.core.domain.administrator] START #######################
+cn.myapps.core.domain.holdAdmin.administrator_list = 管理员列表
+cn.myapps.core.domain.holdAdmin.title.add_administrator = 添加管理员
+cn.myapps.core.domain.holdAdmin.title.search_administrator = 查询管理员
+cn.myapps.core.domain.holdAdmin.title.by_administrator_name = 按管理员名称
+cn.myapps.core.domain.holdAdmin.user_type = 用户类型
+cn.myapps.core.domain.addAdmin.default_department = 默认部门
+###################[cn.myapps.core.domain.administrator] END #######################
+
+###################[cn.myapps.core.domain.calendarr] START #######################
+cn.myapps.core.domain.calendarlist.title.create_workCalendar = 创建工作日历
+cn.myapps.core.domain.calendarlist.title.edit_workCalendar = 编辑工作日历
+cn.myapps.core.domain.calendarlist.workCalendar_list = 工作日历列表
+cn.myapps.core.domain.calendarlist.calendar_name = 日历名称
+cn.myapps.core.domain.content.from_calendar = 从日历
+cn.myapps.core.domain.content.copy_to = 复制至
+cn.myapps.core.domain.content.new-calendar-name = 新日历名称
+cn.myapps.core.domain.content.title.new_calendar = 新建日历
+cn.myapps.core.domain.displayView.working-weeks_list = 工作周列表
+cn.myapps.core.domain.displayView.title.special_Day_List = 例外日列表
+cn.myapps.core.domain.displayView.special_day = 例外日
+cn.myapps.core.domain.displayView.work_calendar_name = 工作日历名称
+cn.myapps.core.domain.displayView.calendar_info = 日历信息
+cn.myapps.core.domain.standard.list.working_weeks_info = 工作周信息
+cn.myapps.core.domain.standard.list.runing = 运行
+cn.myapps.core.domain.special.list.new_special_day = 新建例外日
+cn.myapps.core.domain.special.list.special_day = 例外日
+cn.myapps.core.domain.special.list.title.edit_special_day = 编辑例外日
+cn.myapps.core.domain.special.list.start_date = 开始日期
+cn.myapps.core.domain.special.list.end_date = 结束日期
+cn.myapps.core.domain.calendar.standard.edit.patternerror = 开始时间输入的时间值格式有误，请重新输入！(格式为HH:MM，范围为00:00~23:58，例：00:00或20:30或09:00)
+cn.myapps.core.domain.calendar.standard.edit.notempty = 结束时间值不为空，开始时间必须填写！
+cn.myapps.core.domain.calendar.standard.edit.endtime.patternerror = 结束时间输入的时间值格式有误，请重新输入！（格式为HH:MM，范围为00:00~23:59，例：00:00或20:30或09:00)
+cn.myapps.core.domain.calendar.standard.edit.endtime.notempty = 开始时间值不为空，结束时间必须填写！
+cn.myapps.core.domain.calendar.standard.edit.overoftime = 开始时间值不得晚于结束时间值！
+cn.myapps.core.domain.calendar.standard.edit.standard.info = 设置工作周的工作时间
+cn.myapps.core.domain.calendar.standard.edit.running = 运行
+cn.myapps.core.domain.calendar.standard.edit.start_time = 开始时间
+cn.myapps.core.domain.calendar.standard.edit.end_time = 结束时间
+cn.myapps.core.domain.calendar.special.new.info = 设置特例日期的时间
+cn.myapps.core.domain.calendar.special.new.Time_Range = 时间范围
+###################[cn.myapps.core.domain.calendarr] END #######################
+
+###################[cn.myapps.core.domain.fieldextends] START #######################
+cn.myapps.core.domain.fieldextends.extends.menu = 字段扩展管理
+cn.myapps.core.domain.fieldextends.extends.title.search_field = 查询字段
+cn.myapps.core.domain.fieldextends.extends.type.clob = 大字段
+cn.myapps.core.domain.fieldextends.extends.forTable = 所属模块
+cn.myapps.core.domain.fieldextends.extends.user = 用户模块
+cn.myapps.core.domain.fieldextends.extends.dept = 部门模块
+cn.myapps.core.domain.fieldextends.extends.name = 所属字段
+cn.myapps.core.domain.fieldextends.extends.label = 显示标签
+cn.myapps.core.domain.fieldextends.extends.enabel = 是否在列表中显示
+cn.myapps.core.domain.fieldextends.extends.content.addField = 添加字段
+cn.myapps.core.domain.fieldextends.extends.content.title.save_field = 保存字段
+cn.myapps.core.domain.fieldextends.extends.content.title.save_new_field = 保存并新建字段
+cn.myapps.core.domain.fieldextends.extends.content.sortNumber = 排序
+cn.myapps.core.domain.fieldextends.extends.content.no = 否
+###################[cn.myapps.core.domain.fieldextends] END #######################
+
+###################[cn.myapps.core.domain.networkList] START #######################
+cn.myapps.core.domain.networkList.list.network_disk = 网盘
+cn.myapps.core.domain.networkList.list.configurations_network_disk = 配置网盘
+cn.myapps.core.domain.networkList.list.user_account = 用户帐号
+cn.myapps.core.domain.networkList.list.network_disk_grant_total_capacity = 网盘总计容量
+cn.myapps.core.domain.networkList.list.network_disk_limit_upload_capacity = 网盘限制上传容量
+cn.myapps.core.domain.networkList.list.network_disk_has_use_capacity = 网盘已使用容量
+cn.myapps.core.domain.networkList.network_disk_status = 网盘状态
+cn.myapps.core.domain.networkList.network_disk_public_sharing = 网盘公共共享
+cn.myapps.core.domain.networkList.network_disk_user_list = 网盘用户列表
+cn.myapps.core.domain.networkList.edit.grant_total_capacity = 总计容量
+cn.myapps.core.domain.networkList.edit.limit_upload_capacity = 限制上传容量
+###################[cn.myapps.core.domain.networkList] END #######################
+
+###################[cn.myapps.core.domain.logger] START #######################
+cn.myapps.core.domain.logger.operation.log = 操作日志
+cn.myapps.core.domain.logger.search_log_operation_log = 查询操作日志
+cn.myapps.core.domain.logger.domain_log = 是否记录用户操作日志
+cn.myapps.core.domain.logger.delete_log_operation_log = 删除操作日志
+cn.myapps.core.domain.logger.log_operator = 操作人
+cn.myapps.core.domain.logger.title.by_log_operator = 按操作人
+cn.myapps.core.domain.logger.title.by_type = 按类型
+cn.myapps.core.domain.logger.title.by_date = 按日期
+cn.myapps.core.domain.logger.title.not_record = 不记录
+cn.myapps.core.domain.logger.title.by_ip = 按IP
+###################[cn.myapps.core.domain.logger] END #######################
+
+###################[cn.myapps.core.superuser] START #######################
+cn.myapps.core.superuser.please_input_password = 请输入密码
+cn.myapps.core.superuser.please_input_name = 请输入名称
+cn.myapps.core.superuser.please_input_loginno = 请输入账户
+cn.myapps.core.superuser.label.super_user_List = 特权用户列表
+cn.myapps.core.superuser.title.new_super_user = 新建特权用户
+cn.myapps.core.superuser.title.delete_super_user = 删除特权用户
+cn.myapps.core.superuser.title.search_by_super_user_name = 查询按特权用户名称
+cn.myapps.core.superuser.title.search_by_super_user_account = 查询按特权用户账号
+cn.myapps.core.superuser.super_user_information = 特权用户信息
+cn.myapps.core.superuser.content.title.super_user_name = 特权用户名称
+cn.myapps.core.superuser.content.title.super_user_account = 特权用户帐号
+cn.myapps.core.superuser.content.title.super_user_password = 特权用户密码
+cn.myapps.core.superuser.content.title.super_user_email = 特权用户电子信箱
+cn.myapps.core.superuser.content.title.super_user_status = 特权用户状态
+cn.myapps.core.superuser.content.title.super_user_type = 特权用户类型
+cn.myapps.core.superuser.content.Domain_Level = 企业域等级
+###################[cn.myapps.core.superuser] END #######################
+
+###################[cn.myapps.core.sysconfig] START #######################
+cn.myapps.core.sysconfig.content.system_config_info = 系统配置信息
+cn.myapps.core.sysconfig.content.auth_config = 身份验证设置
+cn.myapps.core.sysconfig.content.LDAP_config = LDAP设置
+cn.myapps.core.sysconfig.content.email_config = 邮件设置
+cn.myapps.core.sysconfig.content.km_tab_name = 知识文档管理设置
+cn.myapps.core.sysconfig.content.im_Configuration = IM配置
+cn.myapps.core.sysconfig.content.hx_config = 环信IM配置
+cn.myapps.core.sysconfig.content.version_manage = 版本管理
+cn.myapps.core.sysconfig.content.permission_tabname = 资源授权设置
+cn.myapps.core.sysconfig.content.user_massage_config = 用户密码策略
+cn.myapps.core.sysconfig.content.cache_data_manager = 缓存与数据管理
+cn.myapps.core.sysconfig.user_role_select = 角色选择
+###################[cn.myapps.core.sysconfig] END #######################
+
+###################[cn.myapps.core.sysconfig.authConfig] START #######################
+cn.myapps.core.sysconfig.authConfig.basic_config = 基本设置
+cn.myapps.core.sysconfig.authConfig.auth_pattern = 身份验证模式
+cn.myapps.core.sysconfig.authConfig.auth_type = 登录验证方式
+cn.myapps.core.sysconfig.authConfig.interface_login = 界面登录
+cn.myapps.core.sysconfig.authConfig.sso_login = 单点登录
+cn.myapps.core.sysconfig.authConfig.sms_authenticate = 是否开启手机短信验证
+cn.myapps.core.sysconfig.authConfig.sms = 手机短信验证
+cn.myapps.core.sysconfig.authConfig.sms_affect_mode = 作用类型
+cn.myapps.core.sysconfig.authConfig.affect_mode_all = 所有ip
+cn.myapps.core.sysconfig.authConfig.affect_mode_match = 匹配ip范围
+cn.myapps.core.sysconfig.authConfig.affect_mode_exclude = 排除ip范围
+cn.myapps.core.sysconfig.authConfig.sms_affect_range = 作用ip范围
+cn.myapps.core.sysconfig.authConfig.sms_timeout = 超时(单位“秒”)
+cn.myapps.core.sysconfig.authConfig.sms_content = 短信内容(“$”代表验证码)
+cn.myapps.core.sysconfig.authConfig.usbkey_authenticate = USBKEY身份认证
+cn.myapps.core.sysconfig.authConfig.start_ip = 开始IP
+cn.myapps.core.sysconfig.authConfig.end_ip = 结束IP
+cn.myapps.core.sysconfig.sso_type = 单点登录验证方式
+cn.myapps.core.sysconfig.sso_type.cas_tips = 注意:修改CAS服务器信息需要重启服务器后才生效
+cn.myapps.core.sysconfig.login_url = cas服务器登录url
+cn.myapps.core.sysconfig.url_prefix = cas服务器url前缀
+cn.myapps.core.sysconfig.controller = AD域所在服务器IP
+cn.myapps.core.sysconfig.ad_default_domain = AD域名
+cn.myapps.core.sysconfig.ad_admin_loginno = AD域所在服务器管理员账号
+cn.myapps.core.sysconfig.ad_admin_loginnopw = AD域所在服务器管理员密码
+cn.myapps.core.sysconfig.ad_login_domain = AD域登录企业域
+cn.myapps.core.sysconfig.user_synchronize._config = 用户同步设置
+cn.myapps.core.sysconfig.default_email_address = 默认邮箱地址
+cn.myapps.core.sysconfig.default_password = 默认密码
+cn.myapps.core.sysconfig.after_auth_user_info_save_config = 认证后用户信息保存设置
+cn.myapps.core.sysconfig.save_type = 保存方式
+cn.myapps.core.sysconfig.data_encryption_type = 数据加密方式
+cn.myapps.core.sysconfig.user_loginno_key_name = 用户登录账号键名称
+cn.myapps.core.sysconfig.domain_key_name = 企业域键名称
+cn.myapps.core.sysconfig.user_login_password_key_name = 用户登录密码键名称
+cn.myapps.core.sysconfig.user_email_key_name = 用户邮箱键名称
+cn.myapps.core.sysconfig.cas_server = Cas 服务器
+cn.myapps.core.sysconfig.homepage_redirect_url = 首页重定向地址
+cn.myapps.core.sysconfig.logout_redirect_url = 注销重定向地址
+cn.myapps.core.sysconfig.local_server_name = cas服务器名称
+cn.myapps.core.sysconfig.authConfig.authType.ssl_pkcs12 = 通过PKCS12客户端证书登录
+###################[cn.myapps.core.sysconfig.authConfig] END #######################
+
+###################[cn.myapps.core.sysconfig.ldap] START #######################
+cn.myapps.core.sysconfig.ldap.server_url = 服务器地址
+cn.myapps.core.sysconfig.ldap.user_dn = 用户DN
+cn.myapps.core.sysconfig.ldap_pooled = 是否池化
+cn.myapps.core.sysconfig.ldap_manager = 管理账户
+cn.myapps.core.sysconfig.ldap.ldap_managerpassword = 管理账户密码
+cn.myapps.core.sysconfig.ldap.ldap_domain = 登陆企业域
+cn.myapps.core.sysconfig.ldap.user_field_mapping_config = 用户字段映射设置
+cn.myapps.core.sysconfig.ldap.user_class = 用户类
+cn.myapps.core.sysconfig.ldap.user_id = 用户ID
+cn.myapps.core.sysconfig.ldap.user_loginno = 用户登录账号
+cn.myapps.core.sysconfig.ldap.user_login_password = 用户登录密码
+cn.myapps.core.sysconfig.ldap.email_address = 邮箱地址
+cn.myapps.core.sysconfig.ldap.telephone = 电话号码
+cn.myapps.core.sysconfig.ldap.department_field_mapping_config = 部门字段映射设置
+cn.myapps.core.sysconfig.ldap.department_class = 部门类
+cn.myapps.core.sysconfig.ldap.top_department = 顶级部门
+top.department = 顶级部门
+###################[cn.myapps.core.sysconfig.ldap] END #######################
+
+###################[cn.myapps.core.sysconfig.email] START #######################
+cn.myapps.core.sysconfig.email.system_email_config = 系统邮件发送设置
+cn.myapps.core.sysconfig.email.email_send_host = 邮件发送主机
+cn.myapps.core.sysconfig.email.email_send_address = 邮件发出地址
+cn.myapps.core.sysconfig.email.email_send_account = 邮件发送账号
+cn.myapps.core.sysconfig.email.email_send_password = 邮件发送密码
+cn.myapps.core.sysconfig.email.email._cc_address = 邮件抄送地址
+cn.myapps.core.sysconfig.email.email.is_use_email_client = 是否使用邮件客户端
+cn.myapps.core.sysconfig.email.email.email_function_domain = 邮件功能域
+cn.myapps.core.sysconfig.email.email.email_clientAndServer_file_mapping = 邮件客户端与服务器的文件映射
+cn.myapps.core.sysconfig.email.email_deleted = 已删除
+cn.myapps.core.sysconfig.email.email_send_config = 发邮件配置
+cn.myapps.core.sysconfig.email.email_send_server = 发送邮件服务器
+cn.myapps.core.sysconfig.email.email_send_server_port = 发送邮件服务器端口
+cn.myapps.core.sysconfig.email.enable_accessories = 是否可带附件
+cn.myapps.core.sysconfig.email.is_need_certificate = 是否需要证书
+cn.myapps.core.sysconfig.email.email_income_protocol = 收取邮件协议
+cn.myapps.core.sysconfig.email.email_outer_config = 外部邮件设置
+cn.myapps.core.sysconfig.email.email_income_config = 收邮件配置
+cn.myapps.core.sysconfig.email.email_income_server = 收取邮件服务器
+cn.myapps.core.sysconfig.email.email_income_server_port = 收取邮件服务器端口
+###################[cn.myapps.core.sysconfig.email] END #######################
+
+###################[cn.myapps.core.sysconfig.kmConfig] START #######################
+cn.myapps.core.sysconfig.km.role_manage = KM角色管理
+cn.myapps.core.sysconfig.km.legendlabel_datasource = 数据源设置
+cn.myapps.core.sysconfig.km.legendlabel_enable = 知识文档管理
+cn.myapps.core.sysconfig.km.invocation = 是否启用
+cn.myapps.core.sysconfig.km.test_link = 测试连接
+###################[cn.myapps.core.sysconfig.kmConfig] END #######################
+
+###################[cn.myapps.core.sysconfig.im] START #######################
+cn.myapps.core.sysconfig.im.confirm_clear_data = 是否确定清除所有数据
+cn.myapps.core.sysconfig.im.synchronous_data = 同步数据中,请稍后
+cn.myapps.core.sysconfig.im.manage_backstage = 管理后台
+cn.myapps.core.sysconfig.im.synchronization_domain = 同步企业域
+cn.myapps.core.sysconfig.im.synchronization_department = 同步部门
+cn.myapps.core.sysconfig.im.synchronization_user = 同步用户
+###################[cn.myapps.core.sysconfig.im] END #######################
+
+###################[cn.myapps.core.sysconfig.version_manag] START #######################
+cn.myapps.core.sysconfig.version_manag.version_manage = 版本管理
+###################[cn.myapps.core.sysconfig.iversion_manag] END #######################
+
+###################[cn.myapps.core.sysconfig.permission] START #######################
+cn.myapps.core.sysconfig.permission.tabname = 资源授权设置
+###################[cn.myapps.core.sysconfig.ipermission] END #######################
+
+###################[cn.myapps.core.sysconfig.loginConfig用户密码策略] START #######################
+cn.myapps.core.sysconfig.loginConfig.password_max_length_cue = （系统密码最大长度值为25）
+cn.myapps.core.sysconfig.loginConfig.password_min_length = 最小密码长度
+cn.myapps.core.sysconfig.loginConfig.password_min_length_cue =（设置值不能超过系统密码最大长度值，此项不填默认为1）
+cn.myapps.core.sysconfig.loginConfig.most_failed_login_attempts = 最多错误输入密码错误次数
+cn.myapps.core.sysconfig.loginConfig.time_cue =（不填则不做此项检查）
+cn.myapps.core.sysconfig.loginConfig.password_legal = 密码必须由字符和数字构成
+cn.myapps.core.sysconfig.loginConfig.modify_password_not_same = 修改密码时不可与前几次相同,规定次数为
+cn.myapps.core.sysconfig.loginConfig.password_modify_notice = 密码修改通知策略
+cn.myapps.core.sysconfig.loginConfig.not_notice_modify_password = 密码永不过期
+cn.myapps.core.sysconfig.loginConfig.modify_password_expiration  = 密码过期时间（天）
+cn.myapps.core.sysconfig.loginConfig.password_change_notification_period = 几天后通知修改密码（天）
+cn.myapps.core.sysconfig.loginConfig.notice_method = 密码修改通知方式
+cn.myapps.core.sysconfig.loginConfig.notice_content = 通知内容
+###################[cn.myapps.core.sysconfig.loginConfig用户密码策略] END #######################
+
+###################[cn.myapps.core.sysconfig.clearCacheAndData] START #######################
+cn.myapps.core.sysconfig.cache.cache_manager = 缓存管理
+cn.myapps.core.sysconfig.cache.clear_cache = 此操作会清除服务器上所有数据的缓存
+cn.myapps.core.sysconfig.cache.clear_cache_button = 清除缓存数据
+cn.myapps.core.sysconfig.cache.data_manager = 数据管理
+cn.myapps.core.sysconfig.cache.clear_data = 此操作会清除业务库的冗余数据
+cn.myapps.core.sysconfig.cache.please_choose_application = 请选择软件
+cn.myapps.core.sysconfig.cache.clear_data_button = 清除冗余数据
+###################[cn.myapps.core.sysconfig.clearCacheAndData] END #######################
+
+###################[front.page] START #######################
+front.page.nav.label.manage = 管理
+front.page.nav.label.internal_forum = 内部论坛
+front.page.gentle.nav.label.forum = 论坛
+front.page.default.nav.label.switch_to = 切换至
+front.page.tab.label.my_homepage = 我的主页
+front.page.login.copyright = Copyright &copy; 2013 TEEMLINK 广州市天翎网络科技有限公司 版权所有
+###################[front.page] END #######################
+
+###################[cn.myapps.core.personalmessage] START #######################
+cn.myapps.core.personalmessage.tab.title.inbox = 收件箱
+cn.myapps.core.personalmessage.tab.title.outbox = 发件箱
+cn.myapps.core.personalmessage.attr.receive_date = 接收时间
+cn.myapps.core.personalmessage.attr.send_date = 发送时间
+cn.myapps.core.personalmessage.vote = 投票
+cn.myapps.core.personalmessage.votes = 票
+###################[cn.myapps.core.personalmessage] END #########################
+
+###################[cn.myapps.core.personalsettings] START #######################
+cn.myapps.core.personalsettings.basic.lable.basic_information = 基本信息
+cn.myapps.core.personalsettings.basic.lable.modify_password = 修改密码
+cn.myapps.core.personalsettings.basic.lable.user_name = 用户名称
+cn.myapps.core.personalsettings.basic.lable.original_password = 原密码
+cn.myapps.core.personalsettings.basic.lable.new_password = 新密码
+cn.myapps.core.personalsettings.basic.lable.comfirm_password = 确认密码
+cn.myapps.core.personalsettings.basic.lable.ComfirmAndPasswordNotSame = 两次输入的密码不一致
+cn.myapps.core.personalsettings.basic.lable.input_a_password = 请输入密码
+cn.myapps.core.personalsettings.basic.lable.originalPasswordError = 原密码错误
+cn.myapps.core.personalsettings.basic.lable.proxy_user = 代理人用户
+cn.myapps.core.personalsettings.tip.email_illegal = 输入的邮箱地址不合法
+cn.myapps.core.personalsettings.tip.phone_illegal = 输入的手机号不合法
+cn.myapps.core.personalsettings.pending.used.customized_pending = 后台定制待办
+cn.myapps.core.personalsettings.pending.used.customize_pending = 自定义待办
+###################[cn.myapps.core.personalsettings] END #########################
+
+###################[cn.myapps.core.manage] START #######################
+cn.myapps.core.manage.title.domain_info_manage = 企业域信息管理
+cn.myapps.core.manage.tab.title.department_list_manage = 部门列表管理
+cn.myapps.core.manage.tab.title.user_list_manage = 用户列表管理
+cn.myapps.core.manage.tab.title.online_research_manage = 在线调查管理
+cn.myapps.core.manage.attr.department_list = 部门列表
+cn.myapps.core.manage.attr.content_list = 内容列表
+cn.myapps.core.manage.attr.questionnaire_target = 问卷对象
+cn.myapps.core.manage.btn.add_questionnaire = 新增问卷
+cn.myapps.core.manage.btn.modify_questionnaire = 修改问卷
+cn.myapps.core.manage.btn.delete_questionnaire = 删除问卷
+cn.myapps.core.manage.btn.questionnaire_edit = 问卷内容编辑
+cn.myapps.core.manage.btn.term_review = 终止评议
+cn.myapps.core.manage.btn.show_result = 查看结果
+cn.myapps.core.manage.is_anonymous = 是否匿名
+###################[cn.myapps.core.manage] END #########################
+
+###################[cn.myapps.core.email] START #######################
+cn.myapps.core.email.attr.all_checked = 选择所有
+cn.myapps.core.email.customize.attr.actions = 操作
+cn.myapps.core.email.write.choose.tab.title.by_role = 按角色
+cn.myapps.core.email.write.choose.tab.title.by_department = 按部门
+cn.myapps.core.email.write.choose.tab.title.online_user = 在线用户
+cn.myapps.core.email.write.choose.delete_all.allready_choose_user = 已选择用户
+cn.myapps.core.email.write.choose.attr.current_online_user = 当前在线用户
+cn.myapps.core.email.write.choose.attr.by_username = 按用户名称
+cn.myapps.core.email.write.prompt_add_attachment =  添加小于 10M 的文件作为附件
+###################[cn.myapps.core.email] END #########################
+
+###################[cn.myapps.core.macro.debuger] START #######################
+cn.myapps.core.macro.debuger.line_number = 行数
+cn.myapps.core.macro.debuger.go = 断续
+cn.myapps.core.macro.debuger.step_over = 单步跳过
+cn.myapps.core.macro.debuger.step_into = 单步进入
+cn.myapps.core.macro.debuger.step_out = 单步退出
+###################[cn.myapps.core.macro.debuger] END #########################
+
+###################[cn.myapps.core.expimp] START #######################
+cn.myapps.core.expimp.module_list = 模块列表
+cn.myapps.core.expimp.handleMode = 导入方式
+cn.myapps.core.expimp.handleMode.update = 更新
+cn.myapps.core.expimp.handleMode.copy = 复制
+###################[cn.myapps.core.expimp] END #########################
+
+###################[cn.myapps.core.permission] START #######################
+cn.myapps.core.permission.all_menu = 所有菜单
+cn.myapps.core.permission.menu_resource = 菜单资源
+cn.myapps.core.permission.permission_type.public = 公共
+cn.myapps.core.permission.permission_type.private = 私有
+###################[cn.myapps.core.permission] END #########################
+
+###################[cn.myapps.core.desktop] START #######################
+cn.myapps.core.desktop.personal.sent = 已发送
+cn.myapps.core.desktop.personal.failure = 发送失败
+###################[cn.myapps.core.desktop] END #########################
+
+###################[cn.myapps.core.dynaform.activity] START #######################
+cn.myapps.core.dynaform.activity.content.tips.file_name_must_be = 文件路径脚本必填
+cn.myapps.core.dynaform.activity.content.tips.new_file_and_return= 创建文件并返回文件路径或文件对象
+cn.myapps.core.dynaform.activity.content.tips.button_action_script = 描述：动作触发前执行&#10;返回值：&#10;     1.无返回值，不做处理&#10;     2.返回字符串      --弹出警告框（Alert）&#10;     3.返回Message对象 --弹出对话框（Comfirm）
+cn.myapps.core.dynaform.activity.content.tips.button_after_action_script = 描述：动作触发后执行&#10;返回值：&#10;     1.无返回值&#10;     
+cn.myapps.core.dynaform.activity.content.tips.return_boolean_value = 返回布尔值
+cn.myapps.core.dynaform.activity.content.tips.start_flow_script = 描述：根据返回的流程ID字符串启动流程 &#10;返回值：&#10;     1.必须有返回值且返回值数据类型为字符串
+cn.myapps.core.dynaform.activity.content.tips.start_flow_script_required = 流程启动脚本不能为空！
+cn.myapps.core.dynaform.activity.content.tips.dispatcher_url_must_be = 地址脚本必填
+cn.myapps.core.dynaform.activity.content.tips.action_related_form_must_be = 动作关联表单不能为空
+cn.myapps.core.dynaform.activity.content.tips.button_tab_selected_script = 返回页签的名称,作为默认打开的页签
+cn.myapps.core.dynaform.activity.content.tips.button_recalculate_value_script = 返回字符串，字符串的内容可作为HTML代码片断嵌入到页面中显示
+cn.myapps.core.dynaform.activity.content.tips.button_validate_rule = 描述：动作触发前执行&#10;返回值：&#10;     1.无返回值，不做处理&#10;     2.返回字符串      --弹出警告框（Alert）&#10;
+cn.myapps.core.dynaform.activity.content.tips.button_value = 返回值作为该控件的默认值 
+cn.myapps.core.dynaform.activity.content.tips.button_value_script = 返回字符串，字符串的内容作为列值显示在页面 
+cn.myapps.core.dynaform.activity.content.tips.button_options_script = 返回字符串或Options对象作为该控件的可选选项
+###################[cn.myapps.core.dynaform.activity] END #######################
+
+###################[cn.myapps.core.workflow.billflow.defi.addSubflow_parentFlowForm] START #######################
+cn.myapps.core.workflow.billflow.defi.addSubflow_parentFlowForme.re_val = 描述：&#10;     与表单字段类型相符的值，返回值以参数形式传递给表单字段。
+###################[cn.myapps.core.workflow.billflow.defi.addSubflow_parentFlowForm] END #######################
+
+###################[cn.myapps.core.workflow.statelabel] START #######################
+cn.myapps.core.workflow.statelabel.please_input_value = 请输入值
+cn.myapps.core.workflow.statelabel.please_input_name = 请输入名称
+###################[cn.myapps.core.workflow.statelabel] END #######################
+
+
+###################[cn.myapps.core.dynaform.document] START #######################
+cn.myapps.core.dynaform.document.success_to_edit_auditor = 更改审批人成功
+cn.myapps.core.dynaform.document.reminder.cancel = 取消
+cn.myapps.core.dynaform.document.reminder.sended = 已发送
+cn.myapps.core.dynaform.document.reminder = 催办
+cn.myapps.core.dynaform.document.submit_to = 提交至
+cn.myapps.core.dynaform.document.opinion = 意见
+cn.myapps.core.dynaform.document.common_opinion = 常用意见
+cn.myapps.core.dynaform.document.remarks = 备注
+cn.myapps.core.dynaform.document.say_something = 说点什么吧...
+cn.myapps.core.dynaform.document.reminder.please_tick_the_process_node_need_reminders = 请勾选需要催办的流程节点!
+cn.myapps.core.dynaform.document.reminder.please_fill_in_the_note_reminders = 请填写催办备注!
+cn.myapps.core.dynaform.document.reminder.reminders_note_too_long = 催办备注太长，仅支持200个字符。
+###################[cn.myapps.core.dynaform.document] END #######################
+
+###################[cn.myapps.core.versions] START #######################
+cn.myapps.core.versions.sysinfo = 系统信息
+cn.myapps.core.versions.versions_logs = 版本与日志
+cn.myapps.core.versions.versions_info = 版本信息
+cn.myapps.core.versions.logs_info = 升级日志
+cn.myapps.core.versions.logs_info_list = 日志列表
+cn.myapps.core.versions.version_name = 版本名称
+cn.myapps.core.versions.version_number = 版本号
+cn.myapps.core.versions.type = 类型
+cn.myapps.core.versions.upgrade_date = 升级日期
+cn.myapps.core.versions.remark = 备注
+cn.myapps.core.versions.type_sourcecode_upgrade = 程序升级
+cn.myapps.core.versions.type_data_upgrade = 数据升级
+cn.myapps.core.versions.curr_info = 当前程序版本为
+cn.myapps.core.versions.not.find = 没找到版本日志记录
+###################[cn.myapps.core.versions] END #######################
+
+###################[cn.myapps.core.usergroup] START #######################
+cn.myapps.core.usergroup.rename.success = 重命名成功
+cn.myapps.core.usergroup.rename.fail = 重命名失败
+cn.myapps.core.usergroup.create.success = 创建成功
+cn.myapps.core.usergroup.create.fail = 创建失败
+cn.myapps.core.usergroup.add.success = 添加成功
+cn.myapps.core.usergroup.add.fail = 添加失败
+cn.myapps.core.usergroup.remove.success = 移除成功
+cn.myapps.core.usergroup.remove.fail = 移除失败
+cn.myapps.core.usergroup.addtogroup = 添加至分组
+cn.myapps.core.usergroup.inputname = 输入分组名称
+cn.myapps.core.usergroup.new = 新建分组
+cn.myapps.core.usergroup.allcontact = 全部联系人
+cn.myapps.core.usergroup.submit = 确定
+cn.myapps.core.usergroup.remove = 移除出分组
+cn.myapps.core.usergroup.submit.contacts = 通讯录
+cn.myapps.core.usergroup.must.selectone = 请至少选择一个用户
+cn.myapps.core.usergroup.contact.List = 分组列表
+cn.myapps.core.usergroup.user_name = 用户名称
+cn.myapps.core.usergroup.group_select = 请选择分组！
+cn.myapps.core.usergroup.group_exist = 分组已存在！
+###################[cn.myapps.core.usergroup] END #######################
+###################[cn.myapps.core.widget] START #######################
+cn.myapps.core.widget.general_widget = 网页和手机都显示
+cn.myapps.core.widget.webpage_widget = 网页显示
+cn.myapps.core.widget.mobile_widget  = 手机显示
+cn.myapps.core.widget.name = Widget
+cn.myapps.core.widget.lable.auth_mode = 授权方式
+cn.myapps.core.widget.attr.authMode.all_roles = 授权给所有角色使用
+cn.myapps.core.widget.attr.authMode.same_roles = 授权给选定角色使用
+cn.myapps.core.widget.btn.lable.ok = 确定
+cn.myapps.core.widget.btn.lable.exit = 退出
+cn.myapps.core.widget.title.add = 添加Widget
+cn.myapps.core.widget.title.edit = 编辑Widget
+cn.myapps.core.widget.type.link = 快速入口
+cn.myapps.core.widget.type.page = 链接内容
+cn.myapps.core.widget.type.workflow_analyzer = 流程分析仪表
+cn.myapps.core.widget.lable.workflow_analyzer_type = 统计方式：
+cn.myapps.core.widget.workflow_analyzer.type.analyzer_actor_time_consuming_topx = 流程结点耗时-TOP10
+cn.myapps.core.widget.workflow_analyzer.type.flowtime_consuming_accounting = 流程耗时占比
+cn.myapps.core.widget.workflow_analyzer.type.flow_accounting = 流程实例占比
+cn.myapps.core.widget.workflow_analyzer.type.flow_and_node_time_consuming = 流程&节点耗时统计
+cn.myapps.core.widget.lable.page_addr = 链接地址(URL):
+cn.myapps.core.widget.lable.link_content = 快速入口内容:
+cn.myapps.core.widget.lable.order_number = 排序号
+cn.myapps.core.widget.list.order_number = 排序号
+cn.myapps.core.widget.type.iscript = 计算脚本值
+cn.myapps.core.widget.lable.iscript = Iscript脚本内容：
+cn.myapps.core.widget.type.announcement = 企业公告
+cn.myapps.core.widget.type.workflow = 流程处理
+cn.myapps.core.widget.type.weather = 天气预报
+cn.myapps.core.widget.weChatHomeSettings = 微信端首页设置
+cn.myapps.core.widget.weChatHomeSettings.enable_banner = 启用Banner图
+cn.myapps.core.widget.weChatHomeSettings.enable_workflow = 启用流程处理
+cn.myapps.core.widget.weChatHomeSettings.enable_menuicon = 启用菜单图标
+###################[cn.myapps.core.widget] END #######################
+
+###################[cn.myapps.base.web.tag] START #######################
+cn.myapps.base.web.tag = 每页显示:
+cn.myapps.base.web.tab.amount = 总数
+###################[cn.myapps.base.web.tag] END #######################
+
+###################[front.mainframe] START #######################
+front.message = 消息
+front.email = 电子邮件
+front.Management = 管理
+front.teemlink = 天翎
+front.workbench = 工作台
+front.flowcnter = 流程中心
+front.tracking = 跟踪
+front.project = 项目
+front.dynamic = 动态
+front.current_page = 当前页面
+front.close_all = 关闭全部窗口
+front.survey = 调查问卷
+front.survey.home_page = 问卷首页
+front.survey.issued = 问卷中心
+front.survey.write = 问卷填写
+front.task = 任务
+front.task.my_task = 我的任务
+front.task.project = 项目
+front.task.label = 标签
+###################[front.mainframe] END #######################
+
+###################[front.logout] START #######################
+front.logout.cancel = 取消
+front.logout.exit = 退出
+front.logout.logout_or_not = 是否退出当前登录?
+###################[front.logout] START #######################
+
+###################[front.flowcenter] START #######################
+flow.start = 发起
+flow.Pending = 待办
+flow.processing = 经办
+flow.state = 流程状态
+flow.finish = 完结
+flow.unfinished = 未完
+flow.instrument = 仪表
+flow.analyze = 分析
+flow.last_time = 最后处理时间
+flow.my = 我的
+message.instation_GoNews = 站内微讯
+message.phone_SMS = 手机SMS 
+list.open = 展开
+list.fold = 折叠
+instrument.week = 本周
+instrument.month = 本月
+instrument.year=本年
+show.all= 显示所有用户
+front.i.started = 我发起的
+front.i.am.handling.the = 我经办的
+front.choose.process = 选择流程
+front.please.input.search.content = 请输入搜索内容
+front.total = 总条数
+front.start_date = 开始日期
+front.end_date = 结束日期
+average.time.consuming.process = 流程平均耗时
+number.of.process.instances = 流程实例数量
+front.finished = 已完成
+front.unfinished = 未完成
+front.workbench = 工作台
+front.workflowcenter = 流程中心
+front.workflowcenter.All = 全部
+front.workflowcenter.new = 发起新建
+front.workflowcenter.pending = 我的待办
+front.workflowcenter.tracking = 经办跟踪
+front.workflowcenter.history = 历史查询
+front.workflowcenter.analyze = 仪表分析
+front.workflowcenter.nocontent = 沒有查询到数据
+front.workflowcenter.agent_for_display = 显示代理的待办
+front.workflow.name = 流程名称
+number.of.instances = 实例数量
+front.average.time = 平均耗时
+front.node.name = 节点名称
+front.node.number = 节点个数
+front.personal.name = 人员名称
+front.instances.state = 实例状态
+front.auditor = 办理人
+front.node.start_date = 节点开始时间
+front.node.end_date = 节点结束时间
+###################[front.flowcenter] END #######################
+
+###################[phone.core.component.qrcodefield] START #####################
+phone.core.component.qrcodefield.confirm = 确认
+phone.core.component.qrcodefield.cancel = 取消
+phone.core.component.qrcodefield.msg1 = 您正在进行
+phone.core.component.qrcodefield.msg2 = 操作，是否确认？
+###################[phone.core.component.qrcodefield] END #######################
+
+cn.myapps.core.message.confirm.delete = 您确定清空本页所有数据吗?
+
+cn.myapps.core.domain.weixinProxyType.none=不开启微信服务
+cn.myapps.core.domain.weixinProxyType.local=本地手工配置模式(微信企业号)
+cn.myapps.core.domain.weixinProxyType.EnterpriseWeChat=本地手工配置模式(企业微信)
+cn.myapps.core.domain.weixinProxyType.cloud=云端智能托管模式
+cn.myapps.core.domain.weixinProxyType.gotoCloud=启动
+cn.myapps.core.domain.weixinConfig = 微信配置

@@ -1,0 +1,19 @@
+@IMPORT url("viewCommon.css");/**视图公共样式**/
+@IMPORT url("../../../../share/css/documentModule.css");/**表单控件样式**/
+
+/**Calendar view styles start**/
+.calendar-table table {
+	table-layout: fixed;
+}
+.eventTD {
+	vertical-align: top;
+	background-color: #ffffff;
+	background: url(../../../../share/images/view/checker.png) repeat;
+}
+
+.front-font-viewdata {
+	font-family: Arial, Vendera;
+	font-size: 12px;
+	z-index: 100;
+}
+/**Calendar view styles end**/

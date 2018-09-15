@@ -1,0 +1,68 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+<title>queryByDQLWithCache(dql)</title>
+<link type="text/css" rel="stylesheet" rev="stylesheet"
+	href="../style.css" media="all"><script type="text/javascript"
+	src="../scripts/shCore.js"></script> <script type="text/javascript"
+	src="../scripts/shBrushJScript.js"></script>
+<link type="text/css" rel="stylesheet"
+	href="../styles/shCoreDefault.css" />
+<script type="text/javascript">
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.all();
+</script>
+</head>
+<body id="split">
+<a title="" href="../index_iscript_help.jsp">返回</a>
+<div id="content">
+<div rel="jQuery">
+<h2>queryBySQLWithCache(sql)</h2>
+<h3>概述</h3>
+<div class="example">
+<p>根据sql查询符合条件的Document，结果以Collection对象返回，并启用缓存。</p>
+<div class="longdesc">
+<p></p>
+</div>
+</div>
+<div>
+<h3>返回值</h3>
+<h4><strong>java.util.Collection</strong></h4>
+</div>
+<div>
+<h3>参数</h3>
+<h4><strong>1、sql</strong><span>String</span></h4>
+<p>查询符合条件语句</p>
+</div>
+<div class="example">
+<h3>示例</h3>
+<h4 xmlns="">描述:</h4>
+<p xmlns="">实现queryBySQLWithCache(sql)函数的应用，带缓存查询文档记录(SQL)</p>
+<!--  <h5 xmlns="">HTML 代码:</h5>-->
+<pre xmlns=""></pre>
+<h5 xmlns="">iScript 代码:</h5>
+<pre class="brush: js;" xmlns="">
+//主子表单，主表单某字段值为当前子文档列表某字段值总和 (值脚本)
+(function(){
+var docid = getId();
+var temp="";
+var sql="select * from tlk_带缓存查询文档记录SQL子表 where parent='"+docid+"'"
+var subdocs = queryBySQLWithCache(sql);
+if(subdocs!= null && subdocs.size() > 0) {
+	println("subdocs----> "+subdocs.size());
+for (var iter = subdocs.iterator(); iter.hasNext();) {
+var subdoc = iter.next();
+      temp += subdoc .getItemValueAsString("缓存子单价");
+println("temp-----> "+temp);
+}
+}
+return temp;
+})()
+</pre>
+<!--<h5 xmlns="">结果:</h5>-->
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@IMPORT url("viewCommon.css");/**视图公共样式**/
+@IMPORT url("../../../../share/css/documentModule.css");/**表单控件样式**/
+
+/**body标签**/
+.front-margin1 {
+	margin-left: 0;
+}
+
+/**div#dataTable**/
+.front-border-top {
+	border-top: 1px solid #99bbe8;
+}
+
+/**翻页行**/
+.page-nav {
+	background:#ECF2F4;
+	height: 27px;
+	line-height:27px;
+	margin-top: 0;
+	width: 100%;
+}
+
+/**div#container**/
+.front-visibility-hidden {
+	visibility: hidden;
+}
+
+/**dataTable重构前样式**/
+.viewTable {
+	border-collapse:collapse;
+	width:100%;
+}
+.viewTable td{
+	border: 1px solid #000;
+}

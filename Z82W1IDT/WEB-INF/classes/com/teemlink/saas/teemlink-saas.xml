@@ -1,0 +1,343 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<!-- domain package -->
+	<package name="saas" extends="myapps-default"
+		namespace="/saas">
+		
+        <action name="changeLanguageKm"
+			class="cn.myapps.core.multilanguage.action.MultiLanguageAction"
+			method="doChange">
+			<result name="success" type="dispatcher">
+				kmlogin.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="register"
+			class="com.teemlink.saas.RegisterAction"
+			method="doRegister">
+			<result name="success" type="dispatcher">
+				registersuccess.jsp
+			</result>
+			<result name="input" type="dispatcher">register.jsp</result>
+			
+			<interceptor-ref name="defaultStack">
+			    <param name="workflow.excludeMethods">default</param>
+			</interceptor-ref>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="displayView"
+			class="com.teemlink.saas.SaasDomainAction"
+			method="doDisplayView">
+			<result name="success" type="dispatcher">
+				domain/domain.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="kmlogin"
+			class="cn.myapps.core.security.action.LoginAction"
+			method="doLogin">
+			<result name="success" type="redirect">
+				/km/kmindex.jsp
+			</result>
+			<result name="error" type="dispatcher">
+				kmlogin.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				kmlogin.jsp
+			</result>
+		   	<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+		</action>
+
+	</package>
+	
+	<package name="saas_admin" extends="myapps-default" namespace="/saas/admin">
+		<action name="login"
+			class="com.teemlink.saas.SaasAdminLoginAction"
+			method="doLogin">
+			<result name="manage" type="redirect">
+				main.jsp
+			</result>
+			<result name="error" type="dispatcher">
+				login.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				login.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+
+	<package name="saas_domain" extends="myapps-default"
+		namespace="/saas/admin/domain">
+		<action name="basicInfo"
+			class="com.teemlink.saas.SaasDomainAction"
+			method="doEdit">
+			<result name="success" type="dispatcher">
+				basicinfo.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>		
+		<action name="saveBasic"
+			class="com.teemlink.saas.SaasDomainAction"
+			method="doSave">
+			<result name="input" type="dispatcher">
+				basicinfo.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				basicinfo.jsp
+			</result>
+			<interceptor-ref name="defaultStack">
+			    <param name="workflow.excludeMethods">default</param>
+			</interceptor-ref>
+		</action>
+	   <action name="displayView"
+			class="com.teemlink.saas.SaasDomainAction"
+			method="doDisplayView">
+			<result name="success" type="dispatcher">
+				domain.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+
+	</package>
+
+	<package name="saas_department" extends="myapps-default"
+		namespace="/saas/admin/department">
+		<action name="list"
+			class="com.teemlink.saas.SaasDepartmentAction"
+			method="doList">
+			<interceptor-ref name="chain" />
+			<interceptor-ref name="params" />
+			<result name="success" type="dispatcher">departmentframe.jsp</result>
+			<result name="input" type="dispatcher">departmentframe.jsp</result>
+		</action>
+		<action name="departmentlist"
+			class="com.teemlink.saas.SaasDepartmentAction" method="doList">
+			<result name="success" type="dispatcher">list.jsp</result>
+			<result name="input" type="dispatcher">list.jsp</result>
+			<interceptor-ref name="chain" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="new"
+			class="com.teemlink.saas.SaasDepartmentAction"
+			method="doNew">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="edit"
+			class="com.teemlink.saas.SaasDepartmentAction"
+			method="doEdit">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+        <action name="departTree"
+	        class="com.teemlink.saas.SaasDepartmentAction"
+    	    method="departTree">
+        </action>
+		<action name="save"
+			class="com.teemlink.saas.SaasDepartmentAction"
+			method="doSave">
+			<result name="input" type="dispatcher">
+				content.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<!-- interceptor-ref name="params" / -->
+			<interceptor-ref name="validationWorkflowStack"/>
+		</action>
+		<action name="saveAndNew"
+			class="com.teemlink.saas.SaasDepartmentAction"
+			method="doSaveAndNew">
+			<result name="input" type="dispatcher">
+				content.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<!-- interceptor-ref name="params" / -->
+			<interceptor-ref name="validationWorkflowStack"/>
+		</action>
+		<action name="delete"
+			class="com.teemlink.saas.SaasDepartmentAction"
+			method="doDelete">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="basicStack" />
+			<result name="success" type="dispatcher">departmentlist.action
+			
+			</result>
+			<result name="input" type="dispatcher">departmentlist.action
+			</result>
+		</action>
+		
+	</package>
+
+	<package name="saas_user" extends="myapps-default"
+		namespace="/saas/admin/user">
+		
+		
+		<action name="removeRole" class="cn.myapps.core.user.action.UserAction"
+			method="removeRole">
+			<result name="success" type="chain">listRole</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="removeDepartment" class="cn.myapps.core.user.action.UserAction"
+			method="removeDepartment">
+			<result name="success" type="chain">
+				listByDepartment
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="listByDepartment" class="com.teemlink.saas.SaasUserAction"
+			method="listUser">
+			<result name="success" type="dispatcher">user.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="list" class="com.teemlink.saas.SaasUserAction"
+			method="doList">
+			<result name="success" type="dispatcher">list.jsp</result>
+			<result name="input" type="dispatcher">list.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="treelist" class="com.teemlink.saas.SaasUserAction"
+			method="doTreeList">
+			<result name="success" type="dispatcher">userlist.jsp</result>
+			<result name="input" type="dispatcher">userlist.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="new" class="com.teemlink.saas.SaasUserAction"
+			method="doNew">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="edit" class="com.teemlink.saas.SaasUserAction"
+			method="doEdit">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="save" class="com.teemlink.saas.SaasUserAction"
+			method="doSave">
+			<result name="input" type="dispatcher">content.jsp</result>
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="saveAndNew" class="com.teemlink.saas.SaasUserAction"
+			method="doSaveAndNew">
+			<result name="input" type="dispatcher">content.jsp</result>
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="userListUnjoinedDept" class="com.teemlink.saas.SaasUserAction"
+			method="doUserListUnjoinedDept">
+			<result name="success" type="dispatcher">userUnjoinDept.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="addUserToDept" class="com.teemlink.saas.SaasUserAction"
+			method="doAddUserToDept">
+			<result name="success" type="dispatcher">success.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="listRole" class="com.teemlink.saas.SaasUserAction"
+			method="listUser">
+			<result name="success" type="dispatcher">user.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="list2" class="com.teemlink.saas.SaasUserAction"
+			method="doList">
+			<result name="success" type="dispatcher">userlist.jsp</result>
+			<result name="input" type="dispatcher">userlist.jsp</result>
+			<interceptor-ref name="chain"></interceptor-ref>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="delete" class="com.teemlink.saas.SaasUserAction"
+			method="doDelete">
+			<result name="success" type="chain">list2</result>
+			<result name="input" type="chain">list2</result>
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+
+	<package name="saas_networkdisk" extends="myapps-default"
+		namespace="/saas/admin/networkdisk">
+		<action name="networkList"
+			class="com.teemlink.saas.SaasNetworkDiskAction"
+			method="networkList">
+			<result name="success" type="dispatcher">
+				list.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				list.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>	
+		
+		<action name="edit"
+			class="com.teemlink.saas.SaasNetworkDiskAction" method="doEdit">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="save"
+			class="com.teemlink.saas.SaasNetworkDiskAction" method="doSave">
+			<result name="input" type="dispatcher">content.jsp</result>
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="saveAll"
+			class="com.teemlink.saas.SaasNetworkDiskAction" method="doSaveAll">
+			<result name="input" type="dispatcher">content.jsp</result>
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+			
+	</package>
+	
+	<package name="saas_multilanguage" extends="myapps-default"
+		namespace="/saas/multilanguage">
+		<action name="changeLanguage"
+			class="cn.myapps.core.multilanguage.action.MultiLanguageAction"
+			method="doChange">
+			<result name="success" type="dispatcher">/saas/admin/login.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+	
+</struts>

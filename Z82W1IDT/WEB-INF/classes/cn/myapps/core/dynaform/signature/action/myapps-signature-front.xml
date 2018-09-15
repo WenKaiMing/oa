@@ -1,0 +1,20 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="myapps-signature-front" extends="myapps-default" namespace="/portal/dynaform/mysignature">
+
+		<action name="doCommand"
+			    class="cn.myapps.core.dynaform.signature.action.SignatureAction"
+			    method="doCommand">
+		</action>
+		<action name="getDocument"
+			    class="cn.myapps.core.dynaform.signature.action.SignatureAction"
+			    method="getDocument">
+		</action>
+		<action name="getBatchDocument"
+			    class="cn.myapps.core.dynaform.signature.action.SignatureAction"
+			    method="getBatchDocument">
+		</action>
+	</package>
+</struts>

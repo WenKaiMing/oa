@@ -1,0 +1,155 @@
+body, html, div,form,table {padding:0px;margin:0px;}
+html {font-size: 62.5%}
+html,body,form {height: 100%;}
+body {
+	text-align: center;
+	font-size:12px;
+	scrollbar-3dlight-color:#f2f2f2;
+	scrollbar-arrow-color:#006699;
+	scrollbar-base-color:#f8f8f8;
+	scrollbar-darkshadow-color:#ffffff;
+	scrollbar-face-color:#f2f2f2;
+	scrollbar-highlight-color:#ffffff;
+	scrollbar-shadow-color:#595959;
+	scrollbar-track-color:#fefefe;
+	background:url(../images/login/login-bg.png) center center no-repeat;
+}
+
+img{border:0px;}
+ul{ margin:0; padding:0; display:block;list-style-type:none;}
+li{margin:0; padding:0; display:block;}	
+a:link{text-decoration:none; color:#4c4c4c;}
+a:hover{text-decoration:none; color:#4c4c4c;}
+a:visited{text-decoration:none; color:#4c4c4c;}
+.loginBg{behavior: url(../../share/css/iepngfix.htc);}
+
+.container{width:100%; height:100%;}
+.language{position:absolute; right:50px; top:25px;height:30px;line-height:30px;}
+.language span{display:block; float:left;color:#ffffff;}
+.language select{display:block; float:left;width:94px; height:24px;line-height:24px; border:1px solid #4d4d4d;}
+
+.login{/*position:absolute;top:217px; left:266px; width:480px; height:241px; padding:20px 10px 15px 15px;*/ color:#4c4c4c;z-index:99;}
+.login-box .login .logo {padding-top: 15px;text-align:center;}
+.login-box{position:relative;margin:0 auto;padding-bottom:30px;width:360px; *width:340px;background: #f8f8f8;border-radius: 30px;-webkit-border-radius: 30px;-moz-border-radius: 30px;behavior: url(portal/share/css/PIE.htc);}
+.login-box .login .logo .logo-pic {width: 128px;height: 128px;margin: 0px auto;overflow: hidden;/*-webkit-border-radius: 48px;-moz-border-radius: 48px;border-radius: 48px;*/background: url(../images/login/logo_center.png) no-repeat;}
+.login-box .login .logo .title {text-align: center;font-size: 20px;color: #7b7b7b;margin: 15px 0 20px 0;}
+.titleName{width:170px; margin-right:15px;}
+.titleName li{text-align:center;}
+.english{font-size:22px; font-family:Arial, Helvetica, sans-serif;}
+.chinese{font-size:18px; font-family:锟斤拷圆; font-weight:bold;}
+.loginInfo{width:100%;}
+.loginInfo span{display:block; float:left; text-align:left;}
+
+.domainLi{position:relative;height:40px;margin-bottom:15px;z-index:100;}
+.selectdoMain{/*position:absolute;left:62px;width:182px; height:26px;*/width:280px;height:40px;}
+.selectdoMain input{background:url(../images/login/select-more.png) 98% center no-repeat !important;}
+.domain{position:absolute;width:238px;overflow:auto;left:40px;top:40px;border:1px solid #4d4d4d;display:none;background:#ffffff;}
+.domain li{height:35px;line-height:35px;text-align:left;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.domain li a{padding-left:5px;display:block;}
+.domain li a:hover{padding-left:5px;display:block;background:#e3e3e3;}
+
+/*.userName,.password,input{background:url(../images/login/input.png) no-repeat 100% 0%;display:block;float:left;margin-top:3px; border:0; width:182px; padding:0 5px; height:26px; line-height:26px; _vertical-align:middle;}*/
+*+html input{vertical-align:middle;}
+.checkCode{/*margin-bottom:15px;overflow:hidden;*/}
+.checkCode input{display:block;float:left;margin-right:5px;width:70px;height:26px;line-height:26px;background:none;border: 1px solid #e1e1e1;}
+.checkCode img{display:block;float:left;}
+.checkCode .invisibility{width:43px;text-decoration: underline;display: inline;color:#1461cc;cursor: pointer;}
+.notcheckCode{/*height:20px;line-height:20px;*/}
+.keepInfo{ _margin-top:1px;height:20px;line-height:20px;text-align:left;width:280px;margin:0 auto;color:#b4b4b4;font-size:1.4rem;}
+.keepInfo input{display:block;float:left;margin-right:3px;width:14px; height:14px; vertical-align:middle; padding:0;border: 1px solid #e1e1e1;background:none;}
+
+.tipsArea{height:22px!important;line-height:22px!important;_height:20px!important;_line-height:20px!important;padding-left:55px;text-align:left!important;word-spacing:-1px;_word-spacing:0;overflow: hidden;visibility: visible;}
+*+html .tipsArea{word-spacing:0;}
+.btnOk{/*padding-left:60px;*/margin-top:10px;}
+.loginBtn{display:block; background:url(../images/login/loginBtn.png) no-repeat; width:101px; height:33px; line-height:33px; text-align:center;}
+.errorMsg{/*position:absolute;width:480px; top:545px; left:266px;  */text-align:center;color: red;font-family: Arial;font-size: 14px;}
+.change-user{line-height: 14px;text-align: right;margin-right: 20px;height: 20px;}
+.change-user a{color: blue;}
+/********************Proxy user login style start********************/
+.userTypeLi{height:60px;padding-left:30px;line-height:22px;text-align:left;}
+.userTypeSpan{display:block;width:100%!important;text-align:left!important;font-weight:bold;color:#06547a;}
+.userTypeLi input{background:none;width:23px!important;height:23px!important;vertical-align:middle;padding:0!important;margin:0!important;}
+.userTypeLi label{background:#ffffff;display:block;float:left;width:55px;height:23px;}
+.proxyShow{height:60px;padding-left:30px;text-align:left;padding-top:15px!important;}
+.proxyShowSpan{width:auto!important;line-height:30px;font-weight:bold;color:#06547a;}
+.operationLi{padding-left:30px;}
+.operationLi input{display:block; background:url(../images/login/loginBtn.png) no-repeat; width:101px; height:33px; line-height:33px; text-align:center;}
+/********************Proxy user login style end********************/
+
+/********************login表单样式********************/
+.login-box .login .form-group {width: 280px;font-size: 14px;margin: 0 auto 15px auto;background: none;line-height: 26px; color:#b4b4b4;position: relative;}
+.login-box .login .code-group {width: 350px;font-size: 14px;margin: 0 auto 20px auto;background: none;line-height: 26px;position: relative;}
+.login-box .login .form-group i {position: absolute;top: 7px;left:0;padding: 0 10px;text-align: center;border-right: solid 1px #e1e1e1;color: #b4b4b4;font-style: normal;}
+.login-box .login .form-group .form-control {background: none;color: #b4b4b4;width: 230px;border: 1px solid #e1e1e1;height: 40px;line-height: 40px;padding-left: 50px;}
+.login-box .login .form-group input[type="text"],.login-box .login .form-group input[type="password"] {font-family: inherit;font-size: inherit;/*line-height: inherit;*/*display: inline-block;border-radius: 6px; -webkit-border-radius: 6px;-moz-border-radius: 6px;behavior: url(portal/share/css/PIE.htc);}
+.login-box .login .form-group .Password_forget {color: #b4b4b4;display: block;padding-top: 10px;}
+.login-box .login .form-group .Password_forget span a {color: #b4b4b4}
+@font-face {font-family: "iconfont";src: url("../script/bootstrap/fonts/iconfont.eot");src: url("../script/bootstrap/fonts/iconfont.eot?#iefix") format("embedded-opentype"),url("../script/bootstrap/fonts/iconfont.woff") format("woff"),url("../script/bootstrap/fonts/iconfont.ttf") format("truetype"),url("../script/bootstrap/fonts/iconfont.svg#iconfont") format("svg");}
+.iconfont {font-family: "iconfont" !important;font-size: 20px;font-style: normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.2px;-moz-osx-font-smoothing: grayscale;color: #FFFFFF;font-weight: normal;}
+.code {text-align: center;padding: 75px 0px 20px 0px}
+.login-box .login .btn-login {display: block;color: #fff;background: #5cb85c;width: 280px;height: 50px;font-size: 24px;margin: 0 auto;border: none;cursor: pointer;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;behavior: url(portal/share/css/PIE.htc);}
+/********************校验提示框样式********************/
+.tipsdiv_Domain{
+	text-align: left; 
+	display: none; 
+	position: absolute;
+	left:340px;
+	top:0px;
+}
+.tipsdiv_name{
+	text-align: left; 
+	display: none; 
+	position: absolute;
+	left:340px;
+	top:0;
+}
+.tipsdiv-pass{
+	text-align: left; 
+	display: none; 
+	position: absolute;
+	left:340px;
+	top:0;
+}
+.tipsdiv-code{
+	text-align: left; 
+	display: none; 
+	position: absolute;
+	left:340px;
+	top:0;
+}
+.easytip-text{
+	text-align: left; 
+	padding: 10px; 
+	min-width: 150px; 
+	font-size:1.4rem;
+	color: rgb(255, 255, 255); 
+	border: 1px solid rgb(92, 184, 92); 
+	border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	behavior: url(portal/share/css/PIE.htc);
+	background-color: rgb(92, 184, 92);
+	z-index:99;
+}
+.easytip-arrow{
+	padding: 0px; 
+	margin: 0px; 
+	width: 0px; 
+	height: 0px; 
+	position: absolute; 
+	border-width: 10px; 
+	border-style: solid; 
+	border-color: transparent rgb(92, 184, 92) transparent transparent; 
+	line-height: 1px; 
+	left: -20px; 
+	top: 8.5px;
+}
+.loginInfo li{
+	position:relative;
+}
+.loginInfo li.zIndex98{
+	z-index:98;
+}
+
+
+	

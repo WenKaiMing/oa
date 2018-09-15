@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="myApps" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<icon>
+		<small-icon>/logo16x16.ico</small-icon>
+		<large-icon>/logo32x32.ico</large-icon>
+	</icon>
+
+	<display-name>OBPM</display-name>
+	<!-- Encoding -->
+	<filter>
+		<filter-name>Encoding</filter-name>
+		<filter-class>
+			cn.myapps.base.web.filter.EncodingFilter
+		</filter-class>
+	</filter>
+	
+	<!-- CAS Filter -->
+	<filter>
+		<filter-name>CAS Single Sign Out Filter</filter-name>
+		<filter-class>org.jasig.cas.client.session.SingleSignOutFilter</filter-class>
+	</filter>
+	<filter>
+		<filter-name>CAS Authentication Filter</filter-name>
+		<filter-class>cn.myapps.core.sso.cas.filter.OBPMAuthenticationFilter</filter-class>
+		<!-- CAS login Server url-->
+	</filter>
+
+		<!--Ticket Validation Filter -->
+	<filter>
+		<filter-name>CAS Validation Filter</filter-name>
+		<filter-class>cn.myapps.core.sso.cas.filter.OBPMCas20ProxyReceivingTicketValidationFilter</filter-class>
+	</filter>
+
+	<filter>
+		<filter-name>CAS HttpServletRequest WrapperFilter</filter-name>
+		<filter-class>org.jasig.cas.client.util.HttpServletRequestWrapperFilter</filter-class>
+	</filter>
+
+	<filter>
+		<filter-name>CAS Assertion Thread Local Filter</filter-name>
+		<filter-class>org.jasig.cas.client.util.AssertionThreadLocalFilter</filter-class>
+	</filter>
+	<!-- END CAS Filter -->
+	
+	<filter>
+		<filter-name>hibernate</filter-name>
+		<filter-class>
+			cn.myapps.base.web.filter.PersistenceFilter
+		</filter-class>
+	</filter>
+	
+	<filter>
+		<filter-name>Security</filter-name>
+		<filter-class>
+			cn.myapps.base.web.filter.SecurityFilter
+		</filter-class>
+	</filter>
+	
+	<filter>
+		<filter-name>KMSecurity</filter-name>
+		<filter-class>
+			cn.myapps.km.base.filter.KMSecurityFilter
+		</filter-class>
+	</filter>
+
+	<filter>
+		<filter-name>BaikeSecurity</filter-name>
+		<filter-class>
+			cn.myapps.km.base.filter.BaikeSecurityFilter
+		</filter-class>
+	</filter>
+	
+	<filter>
+		<filter-name>dwr-filter</filter-name>
+		<filter-class>
+			cn.myapps.base.web.dwr.filter.DWRFilter
+		</filter-class>
+	</filter>
+
+	<filter>
+        <filter-name>struts2</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+    </filter>
+	
+	<filter-mapping>
+		<filter-name>Encoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- CAS Filter Mapping -->
+		<!-- Logout -->
+	<filter-mapping>
+		<filter-name>CAS Single Sign Out Filter</filter-name>
+		<url-pattern>/portal/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>CAS Authentication Filter</filter-name>
+		<url-pattern>/portal/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>CAS Validation Filter</filter-name>
+		<url-pattern>/portal/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>CAS HttpServletRequest WrapperFilter</filter-name>
+		<url-pattern>/portal/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>CAS Assertion Thread Local Filter</filter-name>
+		<url-pattern>/portal/*</url-pattern>
+	</filter-mapping>
+	<!-- END CAS Filter Mapping -->
+	
+	<filter-mapping>
+		<filter-name>Security</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>BaikeSecurity</filter-name>
+		<url-pattern>/km/baike/*</url-pattern>
+	</filter-mapping>
+		
+	<filter-mapping>
+		<filter-name>KMSecurity</filter-name>
+		<url-pattern>/km/*</url-pattern>
+	</filter-mapping>
+
+	<!--
+		filter-mapping> <filter-name>multilang</filter-name>
+		<url-pattern>/*</url-pattern> </filter-mapping
+	-->
+
+	<filter-mapping>
+		<filter-name>hibernate</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>dwr-filter</filter-name>
+		<url-pattern>/dwr/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>  
+    	<dispatcher>FORWARD</dispatcher> 
+    </filter-mapping>
+    
+    <filter>
+    <filter-name>DruidWebStatFilter</filter-name>
+    <filter-class>com.alibaba.druid.support.http.WebStatFilter</filter-class>
+    <init-param>
+        <param-name>exclusions</param-name>
+        <param-value>*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>DruidWebStatFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+	
+
+	<listener>
+		<listener-class>
+			cn.myapps.base.web.listener.StartupListener
+		</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>
+			cn.myapps.base.web.listener.SessionListener
+		</listener-class>
+	</listener>
+	<listener>
+		<listener-class>
+			org.apache.axis.transport.http.AxisHTTPSessionListener
+		</listener-class>
+	</listener>
+	<!-- Http Flex Session attribute and binding listener support -->
+	<listener>
+		<listener-class>flex.messaging.HttpFlexSession</listener-class>
+	</listener>
+
+	<servlet>
+		<servlet-name>dwr-invoker</servlet-name>
+		<servlet-class>uk.ltd.getahead.dwr.DWRServlet</servlet-class>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>false</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AxisServlet</servlet-name>
+		<servlet-class>
+			org.apache.axis.transport.http.AxisServlet
+		</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AdminServlet</servlet-name>
+		<servlet-class>
+			org.apache.axis.transport.http.AdminServlet
+		</servlet-class>
+		<load-on-startup>100</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>SOAPMonitorService</servlet-name>
+		<servlet-class>
+			org.apache.axis.monitor.SOAPMonitorService
+		</servlet-class>
+		<init-param>
+			<param-name>SOAPMonitorPort</param-name>
+			<param-value>5001</param-value>
+		</init-param>
+		<load-on-startup>100</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>checkCodeServlet</servlet-name>
+		<servlet-class>cn.myapps.util.CheckCodeServlet</servlet-class>
+	</servlet>
+	<!-- the fckeditor connector servlet -->
+	<servlet>
+		<servlet-name>ConnectorServlet</servlet-name>
+		<servlet-class>
+			net.fckeditor.connector.ConnectorServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>UploadServlet</servlet-name>
+		<servlet-class>
+			cn.myapps.core.upload.UploadServlet</servlet-class>
+		<init-param>
+			<param-name>excludeType</param-name>
+			<param-value>jsp|class</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>FrontFileAndImageUploadServlet</servlet-name>
+		<servlet-class>
+			cn.myapps.core.upload.FrontFileAndImageUploadServlet</servlet-class>
+		<init-param>
+			<param-name>excludeType</param-name>
+			<param-value>jsp|class</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>AppUploadServlet</servlet-name>
+		<servlet-class>
+			cn.myapps.runtime.mobile.upload.AppUploadServlet</servlet-class>
+		<init-param>
+			<param-name>excludeType</param-name>
+			<param-value>jsp|class</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>SignUploadServlet</servlet-name>
+		<servlet-class>
+			cn.myapps.core.upload.SignUploadServlet</servlet-class>
+		<init-param>
+			<param-name>excludeType</param-name>
+			<param-value>jsp|class</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>CommonUploadServlet</servlet-name>
+		<servlet-class>
+			cn.myapps.core.upload.CommonUploadServlet</servlet-class>
+		<init-param>
+			<param-name>excludeType</param-name>
+			<param-value>jsp|class</param-value>
+		</init-param>
+	</servlet>
+	<!-- MessageBroker Servlet -->
+	<servlet>
+		<servlet-name>MessageBrokerServlet</servlet-name>
+		<servlet-class>flex.messaging.MessageBrokerServlet</servlet-class>
+		<init-param>
+			<param-name>services.configuration.file</param-name>
+			<param-value>/WEB-INF/flex/services-config.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>FileManagerUploadServlet</servlet-name>
+		<servlet-class>
+			cn.myapps.core.filemanager.FileManagerUploadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FileManagerSaveFileServlet</servlet-name>
+		<servlet-class>
+			cn.myapps.core.filemanager.FileManagerSaveFileServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>onLineTakePhotoServlet</servlet-name>
+		<servlet-class>
+			cn.myapps.core.onlinetakephoto.OnLineTakePhotoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UploadToDataBaseServlet</servlet-name>
+		<servlet-class>
+			cn.myapps.core.upload.UploadToDataBaseServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ShowImageServlet</servlet-name>
+		<servlet-class>
+			cn.myapps.core.upload.ShowImageServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>NetworkDiskUploadServlet</servlet-name>
+		<servlet-class>
+			cn.myapps.core.networkdisk.action.NetworkDiskUploadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>NetworkDiskAdminUploadServlet</servlet-name>
+		<servlet-class>
+			cn.myapps.core.networkdisk.action.NetworkDiskAdminUploadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AttachmentServlet</servlet-name>
+		<servlet-class>cn.myapps.core.email.attachment.action.AttachmentServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>PersonalMessageAttachmentServlet</servlet-name>
+		<servlet-class>cn.myapps.core.personalmessage.attachment.action.AttachmentServlet</servlet-class>
+	</servlet>
+	<!-- proxool datasource admin -->
+	<servlet>
+		<servlet-name>ProxoolAdmin</servlet-name>
+		<servlet-class>cn.myapps.base.web.servlet.ProxoolAdminServlet</servlet-class>
+	</servlet>
+	
+	<!-- runqianReport -->
+	<servlet>
+		<servlet-name>reportServlet</servlet-name>
+		<servlet-class>com.runqian.util.webutil.SetContextServlet</servlet-class>
+		<init-param>
+		<param-name>configFile</param-name>
+		<param-value>/WEB-INF/reportConfig.xml</param-value>
+		</init-param>
+	    <load-on-startup>1</load-on-startup>
+	  </servlet>
+	  
+	 <servlet>
+    	<servlet-name>DisplayChart</servlet-name>
+    	<servlet-class>org.jfree.chart.servlet.DisplayChart</servlet-class>
+  	</servlet>
+  	
+  	 <servlet>
+        <servlet-name>TrayBreakpointUpload</servlet-name>
+        <servlet-class>cn.myapps.support.tray.action.BreakpointUploadServlet</servlet-class>
+    </servlet>
+  	
+  	<servlet>
+        <servlet-name>KmUpload</servlet-name>
+        <servlet-class>cn.myapps.km.disk.action.NDiskUploadServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>KmBreakpointUpload</servlet-name>
+        <servlet-class>cn.myapps.km.desktop.upload.BreakpointUploadServlet</servlet-class>
+    </servlet>
+    <servlet>  
+        <servlet-name>WeixinServlet</servlet-name>  
+        <servlet-class>  
+            cn.myapps.base.web.servlet.WeixinServlet
+        </servlet-class>  
+    </servlet>  
+    
+    <!-- PM upload -->
+    <servlet>
+        <servlet-name>PmUpload</servlet-name>
+        <servlet-class>cn.myapps.pm.task.action.TaskUploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PmUpload</servlet-name>
+        <url-pattern>/pm/task/addAttach</url-pattern>
+    </servlet-mapping>  
+    
+    <!-- QM upload -->
+    <servlet>
+        <servlet-name>QmUpload</servlet-name>
+        <servlet-class>cn.myapps.qm.questionnaire.action.QuestionUploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QmUpload</servlet-name>
+        <url-pattern>/qm/servlet/upload</url-pattern>
+    </servlet-mapping>
+    
+     <!-- Message upload -->
+    <servlet>
+        <servlet-name>MessageUpload</servlet-name>
+        <servlet-class> cn.myapps.message.base.action.MessageUploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MessageUpload</servlet-name>
+        <url-pattern>/message/servlet/upload</url-pattern>
+    </servlet-mapping>  
+    <servlet-mapping>
+        <servlet-name>TrayBreakpointUpload</servlet-name>
+        <url-pattern>/tray/service/upload</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>KmUpload</servlet-name>
+        <url-pattern>/km/servlet/upload</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>KmBreakpointUpload</servlet-name>
+        <url-pattern>/km/servlet/breakpointUpload</url-pattern>
+    </servlet-mapping>
+	<servlet-mapping>  
+        <servlet-name>WeixinServlet</servlet-name>  
+        <url-pattern>/weixin/WeixinServlet</url-pattern>  
+    </servlet-mapping>  
+     <!--金格weboffice控件服务端入口-->
+	  <servlet>
+		  <display-name>OfficeServer</display-name>
+		  <servlet-name>OfficeServer</servlet-name>
+		  <servlet-class>cn.myapps.support.goldgrid.servlet.OfficeServer</servlet-class> 
+	 </servlet>
+	 <servlet-mapping>
+		 <servlet-name>OfficeServer</servlet-name>
+		 <url-pattern>/support/goldgrid/server</url-pattern>
+	 </servlet-mapping>
+	<!-- servlet mapping -->
+	<servlet-mapping>
+		<servlet-name>AttachmentServlet</servlet-name>
+		<url-pattern>/portal/email/attachment/uploadServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>PersonalMessageAttachmentServlet</servlet-name>
+		<url-pattern>/portal/personalmessage/attachment/uploadServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- runqianReport -->
+	<servlet-mapping>
+	    <servlet-name>reportServlet</servlet-name>
+	    <url-pattern>/reportServlet</url-pattern>
+	  </servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>dwr-invoker</servlet-name>
+		<url-pattern>/dwr/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>/servlet/AxisServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>*.jws</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>/services/*</url-pattern>
+	</servlet-mapping>
+<!--
+	<servlet-mapping>
+		<servlet-name>SOAPMonitorService</servlet-name>
+		<url-pattern>/SOAPMonitor</url-pattern>
+	</servlet-mapping>
+-->
+	<servlet-mapping>
+		<servlet-name>checkCodeServlet</servlet-name>
+		<url-pattern>/checkCodeImg</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ConnectorServlet</servlet-name>
+		<!--
+			Do not wrap this line otherwise Glassfish will fail to load this file
+		-->
+		<url-pattern>/fckeditor/editor/filemanager/connectors/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>UploadServlet</servlet-name>
+		<url-pattern>/UploadServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>FrontFileAndImageUploadServlet</servlet-name>
+		<url-pattern>/portal/FrontFileAndImageUploadServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AppUploadServlet</servlet-name>
+		<url-pattern>/runtime/app/upload</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>SignUploadServlet</servlet-name>
+		<url-pattern>/portal/share/component/sign/upload</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CommonUploadServlet</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>MessageBrokerServlet</servlet-name>
+		<url-pattern>/messagebroker/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FileManagerUploadServlet</servlet-name>
+		<url-pattern>/portal/FileManagerUploadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FileManagerSaveFileServlet</servlet-name>
+		<url-pattern>/portal/FileManagerSaveFileServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>onLineTakePhotoServlet</servlet-name>
+		<url-pattern>/onLineTakePhotoServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadToDataBaseServlet</servlet-name>
+		<url-pattern>/UploadToDataBaseServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ShowImageServlet</servlet-name>
+		<url-pattern>/ShowImageServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>NetworkDiskUploadServlet</servlet-name>
+		<url-pattern>/portal/NetworkDiskUploadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>NetworkDiskAdminUploadServlet</servlet-name>
+		<url-pattern>/portal/NetworkDiskAdminUploadServlet</url-pattern>
+	</servlet-mapping>
+   <servlet-mapping>
+        <servlet-name>DisplayChart</servlet-name>
+        <url-pattern>/servlet/DisplayChart</url-pattern>
+    </servlet-mapping>
+	<!-- uncomment this if you want the admin servlet -->
+	<servlet-mapping> 
+		<servlet-name>AdminServlet</servlet-name>
+		<url-pattern>/servlet/AdminServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ProxoolAdmin</servlet-name>
+		<url-pattern>/proxoolAdmin</url-pattern>
+	</servlet-mapping>
+	<!-- Druid -->
+	<servlet>       
+	  <servlet-name>DruidStatView</servlet-name>     
+	  <servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>  
+	</servlet>   
+	<servlet-mapping>     
+	   <servlet-name>DruidStatView</servlet-name>  
+	   <url-pattern>/core/monitor/druid/*</url-pattern>  
+	 </servlet-mapping>  
+ <!-- Druid --> 
+	<!-- Script Link -->
+	<servlet>
+		<servlet-name>LinkForScript</servlet-name>
+		<servlet-class>cn.myapps.core.links.action.LinkForScriptServlet</servlet-class>
+	</servlet>
+    <servlet-mapping>
+		<servlet-name>LinkForScript</servlet-name>
+		<url-pattern>/portal/LinkForScript</url-pattern>
+	</servlet-mapping>
+	<!-- Script Resource -->
+	<servlet>
+		<servlet-name>ResourceForScript</servlet-name>
+		<servlet-class>cn.myapps.core.resource.action.ResourceForScriptServlet</servlet-class>
+	</servlet>
+    <servlet-mapping>
+		<servlet-name>ResourceForScript</servlet-name>
+		<url-pattern>/portal/ResourceForScript</url-pattern>
+	</servlet-mapping>
+
+    <servlet>
+        <servlet-name>MbImageService</servlet-name>
+        <servlet-class>cn.myapps.mobile2.view.MbImageService</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>MbImageService</servlet-name>
+        <url-pattern>/mobile2/MbImageService</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SuggestFieldQueryServlet</servlet-name>
+        <servlet-class>cn.myapps.core.dynaform.form.action.SuggestFieldQueryServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>SuggestFieldQueryServlet</servlet-name>
+        <url-pattern>/portal/document/suggestfield/query</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>QRCodeFiledScanEventHandlerServlet</servlet-name>
+        <servlet-class>cn.myapps.core.dynaform.form.action.QRCodeFiledScanEventHandlerServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>QRCodeFiledScanEventHandlerServlet</servlet-name>
+        <url-pattern>/portal/document/qrcodefield/handle</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>QRCodeFiledScanEventReadyServlet</servlet-name>
+        <servlet-class>cn.myapps.core.dynaform.form.action.QRCodeFiledScanEventReadyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QRCodeFiledScanEventReadyServlet</servlet-name>
+        <url-pattern>/portal/document/qrcodefield/ready</url-pattern>
+    </servlet-mapping>
+
+	<session-config>
+		<!-- Default to 30 minute session timeouts -->
+		<session-timeout>30</session-timeout>
+	</session-config>
+
+	<!--
+		currently the W3C havent settled on a media type for WSDL;
+		http://www.w3.org/TR/2003/WD-wsdl12-20030303/#ietf-draft for now we go
+		with the basic 'it's XML' response
+	-->
+	<mime-mapping>
+		<extension>wsdl</extension>
+		<mime-type>text/xml</mime-type>
+	</mime-mapping>
+
+	<mime-mapping>
+		<extension>xsd</extension>
+		<mime-type>text/xml</mime-type>
+	</mime-mapping>
+
+	<mime-mapping>
+		<extension>jad</extension>
+		<mime-type>text/vnd.sun.j2me.app-descriptor</mime-type>
+	</mime-mapping>
+
+	<mime-mapping>
+		<extension>jar</extension>
+		<mime-type>application/java-archive</mime-type>
+	</mime-mapping>
+
+	<mime-mapping>
+		<extension>docx</extension>
+		<mime-type>
+			application/vnd.openxmlformats-officedocument.wordprocessingml.document</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>pptx</extension>
+		<mime-type>
+			application/vnd.openxmlformats-officedocument.presentationml.presentation</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>xlsx</extension>
+		<mime-type>
+		
+			application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</mime-type>
+	</mime-mapping>
+	
+	
+	<mime-mapping>
+	<extension>zip</extension>
+   <mime-type>application/zip</mime-type>
+    </mime-mapping>
+    <mime-mapping> 
+   <extension>rar</extension> 
+   <mime-type>application/rar</mime-type> 
+   </mime-mapping>
+    <mime-mapping>
+     <extension>tif</extension> 
+     <mime-type>image/tiff</mime-type> 
+     </mime-mapping>
+	<mime-mapping>
+	    <extension>wps</extension>
+	    <mime-type>application/kswps</mime-type>
+	</mime-mapping>
+	
+	<jsp-config>
+        <taglib>
+            <taglib-uri>webwork</taglib-uri>
+            <taglib-location>/WEB-INF/struts-tags.tld</taglib-location>
+        </taglib>
+        
+        <!-- runqianReport -->
+		<taglib>
+		    <taglib-uri>runqianReport4</taglib-uri>
+		    <taglib-location>/WEB-INF/runqianReport4.tld</taglib-location>
+		</taglib>
+	
+		<taglib>
+			<taglib-uri>myapps</taglib-uri>
+			<taglib-location>/WEB-INF/myapps.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>http://java.sun.com/jstl/core</taglib-uri>
+			<taglib-location>/WEB-INF/c-1_0.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>http://java.sun.com/jstl/core_rt</taglib-uri>
+			<taglib-location>/WEB-INF/c-1_0-rt.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>http://java.sun.com/jstl/fmt</taglib-uri>
+			<taglib-location>/WEB-INF/fmt-1_0.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>http://java.sun.com/jstl/fmt_rt</taglib-uri>
+			<taglib-location>/WEB-INF/fmt-1_0-rt.tld</taglib-location>
+		</taglib>
+    </jsp-config>
+	
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<!-- error -->
+	<error-page>
+	    <error-code>404</error-code>
+	    <location>/common/errorpage/404.html</location>
+	</error-page>
+	<error-page>
+	    <error-code>500</error-code>
+	    <location>/common/errorpage/500.html</location>
+	</error-page>
+	<error-page>
+	    <error-code>503</error-code>
+	    <location>/common/errorpage/503.html</location>
+	</error-page>
+</web-app>

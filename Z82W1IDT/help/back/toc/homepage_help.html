@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>帮助页面</title>
+<link type="text/css" rel="stylesheet" rev="stylesheet"	href="help.css" media="all">
+<script type="text/javascript">
+function init(){
+	var superadmin = window.parent.frames[0].document.getElementById("superadmin");
+	var domainuser = window.parent.frames[0].document.getElementById("domainuser");
+	var developer = window.parent.frames[0].document.getElementById("developer");
+	if(superadmin != null && superadmin != ""){
+		document.getElementById("ifSuperAdmin").style.display = "block";
+	}
+	if(domainuser != null && domainuser != ""){
+		document.getElementById("ifDomainUser").style.display = "block";
+	}
+	if(developer != null && developer != ""){
+		document.getElementById("ifDeveloper").style.display = "block";
+	}
+}
+</script>
+	
+</head>
+<body style="margin: 0; padding: 0;" onLoad="init()">
+<div clas="helpitem">
+<div class="title">当前任务描述</div>
+<div class="content">
+<ul>
+	<li>obpm平台后台主页（根据登录用户的不同角色显示其所对应的列表信息）
+</ul>
+</div>
+</div>
+<div clas="helpitem">
+<div class="title">功能说明</div>
+<div class="content" id="ifSuperAdmin" style="display:none;">
+<ul>
+	<li><b>域管理：</b>对域中的用户、部门等信息进行维护，域管理员、超级管理员可用</li>
+	<li><b>软件管理：</b>对其包含的各软件信息进行维护，开发者、超级管理员可用</li>
+	<li><b>特权用户管理：</b>特权用户包括超级管理员、开发者、域管理员(只有超级管理员才有此权限)</li>
+	<li><b>系统管理：</b>对前台用户登录相关信息的配置</li>
+</ul>
+</div>
+<div class="content" id="ifDomainUser" style="display:none;">
+<ul>
+	<li><b>我的企业域列表：</b>列出我有操作权限的企业域，可对域中的用户、部门等信息进行维护</li>
+</ul>
+</div>
+<div class="content" id="ifDeveloper" style="display:none;">
+<ul>
+	<li><b>我的软件列表：</b>列出我有操作权限的软件，可对各软件包含的信息进行维护</li>
+</ul>
+</div>
+<div class="content">
+<ul>
+	<li><b>DEBUG：</b>对软件内的脚本进行调试</li>
+	<li><b>系统监控：</b>对程序运行效率进行监控</li>
+</ul>
+</div>
+</div>
+<!-- 
+<div clas="helpitem">
+<div class="title">相关模块</div>
+<div class="content">
+<ul>
+	<li>1、企业域
+	<li>2、软件
+	<li>3、特权用户
+	<li>4、函数
+</ul>
+</div>
+</div>
+<div clas="helpitem">
+<div class="title">其他操作</div>
+<div class="content">
+<ul>
+	<li>1、注销
+	<li>2、显示或隐藏帮助
+	<li>3、编辑当前用户信息
+	<li>4、Debug模式
+	<li>5、显示当前位置
+</ul>
+</div>
+</div>
+ -->
+</body>
+</html>

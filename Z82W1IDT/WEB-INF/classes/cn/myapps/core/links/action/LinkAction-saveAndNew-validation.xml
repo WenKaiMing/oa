@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+  <!DOCTYPE validators PUBLIC 
+  		"-//Apache Struts//XWork Validator 1.0.2//EN"
+  		"http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="content.name">
+		<field-validator type="requiredstring">
+			<message>{*[page.name.notexist]*}!</message>
+		</field-validator>
+	</field>
+	<field name="content.type">
+		<field-validator type="requiredstring">
+			<message>{*[page.type.notexist]*}!</message>
+		</field-validator>
+	</field>
+	<field name="content.actionContent">
+		<field-validator type="requiredstring">
+			<message>{*[page.content.notexist]*}!</message>
+		</field-validator>
+	</field>
+</validators>
+

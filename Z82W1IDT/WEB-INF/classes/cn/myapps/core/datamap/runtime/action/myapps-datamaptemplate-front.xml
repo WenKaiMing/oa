@@ -1,0 +1,59 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<!-- domain package -->
+	<package name="datamaptemplate-front" extends="myapps-default"
+		namespace="/portal/datamap/runtime">
+		
+	<interceptors>
+		<interceptor-stack name="basicStack">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</interceptor-stack>
+
+
+		<interceptor-stack name="validationWorkflowStack">
+			<interceptor-ref name="basicStack" />
+			<interceptor-ref name="validation" />
+			<interceptor-ref name="workflow" />
+		</interceptor-stack>
+	</interceptors>
+	
+	<action name="getTemplate" class="cn.myapps.core.datamap.runtime.action.DataMapTemplateAction"
+	    method="doGetTemplate">
+	    <result name="success" type="OBPMdispatcher">
+	    /portal/share/datamap/runtime/result/result.jsp
+	    </result>
+	    <interceptor-ref name="params" />
+	</action>
+	
+	<action name="getMapContent"
+		class="cn.myapps.core.datamap.runtime.action.DataMapTemplateAction"
+		method="doGetMapContent">
+		<result name="success" type="OBPMdispatcher" >
+		/portal/share/datamap/runtime/result/result.jsp
+		</result>
+		<interceptor-ref name="params" />
+	</action>
+	
+	<action name="save"
+		class="cn.myapps.core.datamap.runtime.action.DataMapTemplateAction"
+		method="doSave">
+		<result name="success" type="OBPMdispatcher" >
+		/portal/share/datamap/runtime/content.jsp
+		</result>
+		<interceptor-ref name="params" />
+	</action>
+	
+	<action name="edit"
+		class="cn.myapps.core.datamap.runtime.action.DataMapTemplateAction"
+		method="doEdit">
+		<result name="success" type="OBPMdispatcher" >
+		/portal/share/datamap/runtime/content.jsp
+		</result>
+		<interceptor-ref name="params" />
+	</action>
+	
+	</package>
+</struts>

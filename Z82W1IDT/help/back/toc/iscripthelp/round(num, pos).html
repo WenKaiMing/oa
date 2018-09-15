@@ -1,0 +1,63 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+<title>round(num, pos)</title>
+<link type="text/css" rel="stylesheet" rev="stylesheet"
+	href="../style.css" media="all"><script type="text/javascript"
+	src="../scripts/shCore.js"></script> <script type="text/javascript"
+	src="../scripts/shBrushJScript.js"></script>
+<link type="text/css" rel="stylesheet"
+	href="../styles/shCoreDefault.css" />
+<script type="text/javascript">
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.all();
+</script>
+</head>
+<body id="split">
+<a title="" href="../index_iscript_help.jsp">返回</a>
+<div id="content">
+<div rel="jQuery">
+<h2>round(num, pos)</h2>
+<h3>概述</h3>
+<div class="example">
+<p>提供精确的小数位四舍五入处理。</p>
+<div class="longdesc">
+<p></p>
+</div>
+</div>
+<div>
+<h3>返回值</h3>
+<h4><strong>double</strong></h4>
+</div>
+<div>
+<h3>参数</h3>
+<h4><strong>1、num</strong><span>number</span></h4>
+<p>需要四舍五入的数字</p>
+<h4><strong>2、pos</strong><span>int</span></h4>
+<p>小数点后保留几位</p>
+</div>
+<div class="example">
+<h3>示例</h3>
+<h4 xmlns="">描述:</h4>
+<p xmlns="">实现round(num, pos)函数的应用，四舍五入函数</p>
+<!--  <h5 xmlns="">HTML 代码:</h5>-->
+<pre xmlns=""></pre>
+<h5 xmlns="">iScript 代码:</h5>
+<pre class="brush: js;" xmlns="">
+//表单中有两个字段A、B，B字段的值为A字段四舍五入后的值 (值脚本) 
+(function(){
+var value=getItemValueAsDouble("价格");
+var rtn="";
+if(value!=null){
+   rtn=round(value,2);
+}
+return rtn;
+})()
+</pre>
+<!--<h5 xmlns="">结果:</h5>-->
+</div>
+</div>
+</body>
+</html>

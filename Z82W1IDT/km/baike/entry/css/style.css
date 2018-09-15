@@ -1,0 +1,155 @@
+#wrap {
+    margin: 0 auto;
+    width: 90%;
+}
+#logo, #search-content, #help {
+    float: left;
+}
+#logo {
+    margin-top: 0px;
+    position: relative;
+    width: 152px;
+}
+#logo img {
+    display: block;
+
+}
+#page, #header, #content, #footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+#view, #wrap {
+    margin-top: 1px;
+}
+#header {
+    margin-top: 6px;
+}
+fieldset, img {
+    border: 0 none;
+}
+div, input {
+    font-family: Arial;
+}
+
+.edithistory {
+    min-width: 1000px;
+}
+#search {
+    margin-bottom: 25px;
+    position: relative;
+    width: 900px;
+    z-index: 2;
+}
+#search .s_btn {
+    background: url("1.png") repeat scroll 0 0 #DDDDDD;
+    border: 0 none;
+    cursor: pointer;
+    font-size: 14px;
+    height: 32px;
+    padding: 0;
+    width: 95px;
+}
+
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+}
+.tab {
+
+    font-family: "????";
+    position: relative;
+}
+
+.tab li {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #FFFFFF #FFFFFF -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    color: #136EC2;
+    font-size: 14px;
+    line-height: 20px;
+}
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+body, button, input, select, textarea {
+    font: 13px/1.5 arial,����,sans-serif;
+}
+
+div, input {
+    font-family: Arial;
+}
+#search .s_ipt {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 0 none;
+    font: 16px/22px arial;
+    height: 22px;
+    margin: 5px 0 0 7px;
+    outline: 0 none;
+    padding: 0;
+    width: 398px;
+}
+
+#search .s_ipt_wr {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("1.png") no-repeat scroll -304px 0 rgba(0, 0, 0, 0);
+    border-color: #7B7B7B #B6B6B6 #B6B6B6 #7B7B7B;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    height: 30px;
+    margin-right: 5px;
+    vertical-align: top;
+    width: 408px;
+}
+#userbar {
+
+    color: #000000;
+    font: 12px/18px Arial;
+    right:70px;
+    text-align: right;
+    top: 3px;
+}
+#footer, #footer a:link, #footer a:visited {
+    clear: both;
+    color: #000000;
+    font: 12px/1 Arial;
+    margin-bottom: 15px;
+    margin-top: 60px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#search .s_btn {
+    background: url("http://img.baidu.com/img/baike/logo/bg_search.png") repeat scroll 0 0 #DDDDDD;
+    border: 0 none;
+    cursor: pointer;
+    font-size: 14px;
+    height: 32px;
+    padding: 0;
+    width: 95px;
+}
+.baikeLogo{
+	width:287px;
+	hight:40px;
+}

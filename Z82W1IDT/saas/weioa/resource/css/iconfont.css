@@ -1,0 +1,69 @@
+
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.eot'); /* IE9*/
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-size20{
+  font-size:20px;
+}
+.icon-size30{
+  font-size:30px;
+}
+.icon-size40{
+  font-size:40px;
+}
+.icon-size50{
+  font-size:50px;
+}
+.icon-size60{
+  font-size:60px;
+}
+.icon-account:before { content: "\e601"; }
+
+.icon-appcenter:before { content: "\e602"; }
+
+.icon-contacts:before { content: "\e603"; }
+
+.icon-groupsend:before { content: "\e604"; }
+
+.icon-help:before { content: "\e605"; }
+
+.icon-logout:before { content: "\e606"; }
+
+.icon-look:before { content: "\e607"; }
+
+.icon-myapp:before { content: "\e608"; }
+
+.icon-newsnotice:before { content: "\e609"; }
+
+.icon-noticeset:before { content: "\e60a"; }
+
+.icon-org:before { content: "\e60b"; }
+
+.icon-psd:before { content: "\e600"; }
+
+.icon-pwd:before { content: "\e60c"; }
+.icon-unread:before { content: "\e60d"; }
+
+.icon-read:before { content: "\e60e"; }
+
+.icon-hire:before { content: "\e60f"; }
+.icon-binding:before { content: "\e610"; }
+.icon-permission:before { content: "\e610"; }
+.icon-systeminfo:before { content: "\e611"; }
+
+.icon-officialinfo:before { content: "\e612"; }
+.icon-permission:before { content: "\e613"; }

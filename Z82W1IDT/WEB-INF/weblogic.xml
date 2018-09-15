@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<weblogic-web-app xmlns="http://www.bea.com/ns/weblogic/90">
+    <session-descriptor>
+        <cookie-path>/</cookie-path>
+    </session-descriptor>    
+
+    <jsp-descriptor>
+        <keepgenerated>true</keepgenerated>
+        <page-check-seconds>60</page-check-seconds>
+        <precompile>false</precompile>
+        <precompile-continue>true</precompile-continue>
+    </jsp-descriptor>
+
+    <container-descriptor>
+        <optimistic-serialization>true</optimistic-serialization>        
+        <prefer-web-inf-classes>false</prefer-web-inf-classes>
+        <show-archived-real-path-enabled>true</show-archived-real-path-enabled>
+        <prefer-application-packages>  
+	        <package-name>antlr</package-name>  
+	        <package-name>org.hibernate</package-name>  
+	        <package-name>javax.persistence</package-name>  
+			<package-name>org.slf4j</package-name>  
+			<package-name>org.mozilla</package-name>
+        </prefer-application-packages>  
+    </container-descriptor>        
+</weblogic-web-app>

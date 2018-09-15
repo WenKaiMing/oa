@@ -1,0 +1,218 @@
+/**
+	表单控件样式
+**/
+/**表单页面初始化样式**/
+@IMPORT url("documentBase.css");
+/**左右选择框控件样式**/
+@IMPORT url("../component/selectAboutField/css/jquery.multiselect2side.css");
+/**下拉提示框控件样式**/
+/*@IMPORT url("../component/suggest/jquery.autocomplete.css");*/
+@IMPORT url("../component/suggest/typeahead.css");
+/**树形部门选择框控件样式**/
+@IMPORT url("../component/dialog/css/dialog.css");
+
+/**单行文本框、用户选择框、下拉提示框样式**/
+.input-cmd {
+	align: left;
+	background-color: #FFF;
+	border: 1px solid #999;
+	margin: 1px;
+	padding: 1px;
+	width: auto;
+}
+
+/**选项卡开始**/
+.basictab {
+	background-color: #ebeef4;
+	background-image: url("../component/tabField/tab/images/tab_container_back.gif");
+	background-repeat: repeat;
+	overflow:hidden;
+	height:26px;
+	text-align: left;
+}
+
+.basictab table {
+	font: bold 12px Verdana;
+	list-style-type: none;
+	margin-bottom: 0;
+	margin-left: 0;
+	text-align: left;
+	/*set to left, center, or right to align the menu as desired*/
+}
+
+.basictab div {
+	margin: 0 5px;
+}
+
+.basictab div a {
+	color: #416aa3;
+	font-weight: 400;
+	height: 23px;
+	line-height: 23px;
+	margin-right: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-decoration: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	display: block;
+}
+
+.basictab div a.current {
+	color: #15428b;
+	background-image: url("../component/tabField/tab/images/tab_back_curr.gif");
+	background-repeat: repeat-x;
+	background-position: bottom;
+	border-left: 1px solid #adbcd4;
+	border-right: 1px solid #adbcd4;
+	border-bottom: 0px;
+	font-weight: bold;
+}
+
+.tabcontainer {
+	clear: left;
+	width: 100%;
+	/*height of 2nd level sub menus. Set to largest's sub menu's height to avoid jittering.*/
+}
+
+.tabcontent {
+	display: none;
+}
+/**选项卡结束**/
+
+
+.msg-attachment-pic {
+    margin: 10px 0px;
+}
+
+.msg-attachment-pic .msg-attachment-pic-item {
+    display: inline-block;
+    padding-bottom: 4px;
+    cursor: pointer;
+    margin: auto 5px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.msg-attachment-pic img {
+	height: 100%;
+}
+
+
+/**fileupload--start**/
+.btnAdd {
+	border: 1px solid #43c7ea;
+	color: #43c7ea;
+}
+
+.btnAdd:hover {
+    color: #43c7ea;
+}
+
+.btnAdd img{
+	margin-right: 5px;
+	vertical-align: baseline;
+}
+
+.showOptions {
+	background-color: #F5F5F5;
+}
+
+.hidepic .del {
+	width: 16px;
+    height: 16px;
+    line-height: 14px;
+    border-radius: 8px;
+    display: block;
+    background-color: rgba(0,0,0,.3);
+    color: #e5e5e5;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+	right: 15px;
+    top: 8px;
+    opacity : 0;
+    z-index : 0;
+    text-align: center;
+    transition: opacity 0.25s ease, right 0.25s ease;
+}
+
+.hidepic .btn {
+	height: 30px;
+    line-height: 30px;
+	padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 8px;
+}
+
+.hidepic .showOptions:hover .del {
+	opacity : 1;
+	z-index : 2;
+	right: 2px;
+}
+
+.hidepic .pic {
+	background : url('../../share/images/formModule/fileUpload.png');
+	width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.hidepic .pdf {
+	background-position : -4px -4px;
+}
+
+.hidepic .word {
+	background-position : -24px -4px;
+}
+
+.hidepic .excel {
+	background-position : -44px -4px;
+}
+
+.hidepic .txt {
+	background-position : -64px -4px;
+}
+
+.hidepic .audio {
+	background-position : -84px -4px;
+}
+
+.hidepic .video {
+	background-position : -104px -4px;
+}
+
+.hidepic .ppt {
+	background-position : -124px -4px;
+}
+
+.hidepic .ios {
+	background-position : -4px -24px;
+}
+
+.hidepic .android {
+	background-position : -24px -24px;
+}
+
+.hidepic .psd {
+	background-position : -44px -24px;
+}
+
+.hidepic .ai {
+	background-position : -64px -24px;
+}
+
+.hidepic .rar {
+	background-position : -84px -24px;
+}
+
+.hidepic .img {
+	background-position : -104px -24px;
+}
+
+.hidepic .other {
+	background-position : -124px -24px;
+}
+/**fileupload--end**/

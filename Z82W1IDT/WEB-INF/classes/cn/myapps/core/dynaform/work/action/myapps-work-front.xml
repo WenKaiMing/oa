@@ -1,0 +1,161 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- document package -->
+	<package name="work-front" extends="myapps-default"
+		namespace="/portal/dynaform/work">
+
+		<interceptors>
+			<interceptor-stack name="basicStack">
+				<interceptor-ref name="params" />
+				<interceptor-ref name="prepare" />
+			</interceptor-stack>
+
+
+			<interceptor-stack name="validationWorkflowStack">
+				<interceptor-ref name="basicStack" />
+				<interceptor-ref name="validation" />
+				<interceptor-ref name="workflow" />
+			</interceptor-stack>
+		</interceptors>
+
+		<action name="workList"
+			class="cn.myapps.core.dynaform.work.action.WorkAction"
+			method="doWorkList">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/work/list.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="flow"
+			class="cn.myapps.core.dynaform.work.action.WorkAction"
+			method="doFlow">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/work/list.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="flowHandup"
+			class="cn.myapps.core.workflow.engine.StateMachineAction" method="doFlowHandup">
+			<result name="success" type="chain">
+				workList
+			</result>
+			<result name="input" type="chain">
+				workList
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="flowRecover"
+			class="cn.myapps.core.workflow.engine.StateMachineAction" method="doFlowRecover">
+			<result name="success" type="chain">
+				workList
+			</result>
+			<result name="input" type="chain">
+				workList
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="commissionedWork"
+			class="cn.myapps.core.dynaform.work.action.WorkAction"
+			method="doCommissionedWork">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/work/list.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="removeWork"
+			class="cn.myapps.core.dynaform.work.action.WorkAction"
+			method="doRemoveWork">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/work/list.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="pendingList"
+			class="cn.myapps.core.dynaform.work.action.WorkAction"
+			method="doGetPendingList">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/work/list.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="processedList"
+			class="cn.myapps.core.dynaform.work.action.WorkAction"
+			method="doGetProcessedList">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/work/list.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="pendingCount"
+			class="cn.myapps.core.dynaform.work.action.WorkAction"
+			method="doGetPendingCount">
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="processedCount"
+			class="cn.myapps.core.dynaform.work.action.WorkAction"
+			method="doGetProcessedCount">
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="historyList"
+			class="cn.myapps.core.dynaform.work.action.WorkAction"
+			method="doGetHistoryList">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/work/list.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="historyListNew"
+			class="cn.myapps.core.dynaform.work.action.WorkAction"
+			method="doGetHistoryList">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/work/listNew.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="allHistoryList"
+			class="cn.myapps.core.dynaform.work.action.WorkAction"
+			method="doGetAllHistoryList">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/work/list.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="getFlowListByApplication"
+			class="cn.myapps.core.dynaform.work.action.WorkAction"
+			method="getFlowListByApplication">
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="widgetPendingList"
+			class="cn.myapps.core.dynaform.work.action.WorkAction"
+			method="doGetWidgetPendingList">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/work/list.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="widgetProcessedList"
+			class="cn.myapps.core.dynaform.work.action.WorkAction"
+			method="doGetWidgetProcessedList">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/work/list.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+</struts>

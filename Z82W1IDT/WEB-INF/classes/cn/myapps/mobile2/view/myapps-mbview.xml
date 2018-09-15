@@ -1,0 +1,24 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="mbview" extends="myapps-default" namespace="/mobile2/view">
+		<action name="displayview"
+			class="cn.myapps.mobile2.view.MbViewAction"
+			method="doDisplayView">
+			<result name="success" type="dispatcher">
+			    /mobile2/result.jsp
+			</result>
+		   	<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="searchdocument" class="cn.myapps.mobile2.view.MbViewAction" method="doSearchDocument">
+		    <result name="success" type="dispatcher">
+			    /mobile2/result.jsp
+			</result>
+		   	<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+</struts>

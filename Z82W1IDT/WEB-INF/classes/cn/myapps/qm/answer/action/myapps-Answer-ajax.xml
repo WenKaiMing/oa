@@ -1,0 +1,40 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<include file="webwork-default.xml" />
+	<package name="qm-answer-ajax" extends="myapps-default,json-default"
+		namespace="/qm/answerservice">
+
+		<action name="view"
+			class="cn.myapps.qm.answer.action.AnswerServiceAction"
+			method="doView">
+			<result type="json">
+				<param name="root">dataMap</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		<action name="save"
+			class="cn.myapps.qm.answer.action.AnswerServiceAction"
+			method="doSave">
+			<result type="json">
+				<param name="root">dataMap</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		<action name="inputreportform"
+			class="cn.myapps.qm.answer.action.AnswerServiceAction"
+			method="doInputReportForm">
+			<result type="json">
+				<param name="root">dataMap</param>
+				<param name="excludeNullProperties">false</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+	</package>
+</struts>

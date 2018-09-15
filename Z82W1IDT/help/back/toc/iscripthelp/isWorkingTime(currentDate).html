@@ -1,0 +1,67 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+<title>isWorkingTime(currentDate)</title>
+<link type="text/css" rel="stylesheet" rev="stylesheet"
+	href="../style.css" media="all"><script type="text/javascript"
+	src="../scripts/shCore.js"></script> <script type="text/javascript"
+	src="../scripts/shBrushJScript.js"></script>
+<link type="text/css" rel="stylesheet"
+	href="../styles/shCoreDefault.css" />
+<script type="text/javascript">
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.all();
+</script>
+</head>
+<body id="split">
+<a title="" href="../index_iscript_help.jsp">返回</a>
+<div id="content">
+<div rel="jQuery">
+<h2>isWorkingTime(currentDate)</h2>
+<h3>概述</h3>
+<div class="example">
+<p>判断输入的时间是否为工作时间</p>
+<div class="longdesc">
+<p></p>
+</div>
+</div>
+<div>
+<h3>返回值</h3>
+<h4><strong>long</strong></h4>
+</div>
+<div>
+<h3>参数</h3>
+<h4><strong>currentDate</strong><span>String</span></h4>
+<p>"yyyy-MM-dd HH:mm:ss"或者"yyyy-MM-dd HH:mm"格式的字符串</p>
+</div>
+<div class="example">
+<h3>示例</h3>
+<h4 xmlns="">描述:</h4>
+<p xmlns="">实现isWorkingTime(currentDate)函数的应用，判断输入的时间是否为工作时间</p>
+<!--  <h5 xmlns="">HTML 代码:</h5>-->
+<pre xmlns=""></pre>
+<h5 xmlns="">iScript 代码:</h5>
+<pre class="brush: js;" xmlns="">
+//表单中有一个日期控件，日期的格式为年月日时分，然后单行文本框的值脚本写代码，
+//根据日期控件的值是否为工作时间来确实给单行文本框不同的值，具体的代码如下（第二个方法中的第二个参数是工作日历的id）
+(function(){
+var value=getItemValueAsDate("时间");
+var rtn="";
+if(value!=null) {
+   var datevalue=$TOOLS.DATE_UTIL.getDateTimeStr(value);
+   if(isWorkingTime(datevalue)){
+       rtn="当前输入的时间是该用户的工作时间";
+   }else {
+         rtn="当前输入的时间是该用户的非工作时间，用户可以自由安排";
+        }
+}
+return rtn;
+})()
+</pre>
+<!--<h5 xmlns="">结果:</h5>-->
+</div>
+</div>
+</body>
+</html>

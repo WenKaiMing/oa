@@ -1,0 +1,44 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<include file="webwork-default.xml" />
+	<package name="Comments" extends="myapps-default"
+		namespace="/km/comments">
+	 
+	<action name="save"
+			class="cn.myapps.km.comments.action.CommentsAction" method="doSave">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+
+	<action name="delete"
+			class="cn.myapps.km.comments.action.CommentsAction" method="doDelete">
+			<result name="success" type="dispatcher">
+				
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+
+	<action name="update"
+			class="cn.myapps.km.comments.action.CommentsAction" method="doUpdate">
+			<result name="success" type="dispatcher">
+				
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+
+	
+
+
+
+
+
+
+
+
+
+	</package>
+</struts>

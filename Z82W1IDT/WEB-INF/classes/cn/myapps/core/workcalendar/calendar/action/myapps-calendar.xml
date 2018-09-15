@@ -1,0 +1,94 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- department package -->
+	<package name="calendar" extends="myapps-default"
+		namespace="/core/calendar">
+		
+		<action name="calendarlist"
+			class="cn.myapps.core.workcalendar.calendar.action.CalendarAction"
+			method="doCalendarlist">
+			<result name="success" type="dispatcher">list.jsp</result>
+			<result name="input" type="dispatcher">list.jsp</result>
+			<interceptor-ref name="params" />
+			
+		</action>
+		<action name="calendarlistSelect"
+			class="cn.myapps.core.workcalendar.calendar.action.CalendarAction"
+			method="doCalendarlist">
+			<result name="success" type="dispatcher">selectCalendarType.jsp</result>
+			<result name="input" type="dispatcher">selectCalendarType.jsp</result>
+			<interceptor-ref name="params" />
+			
+		</action>
+		
+		<action name="delete"
+			class="cn.myapps.core.workcalendar.calendar.action.CalendarAction"
+			method="doDelete">
+			<result name="success" type="chain">calendarlist</result>
+			<result name="input" type="chain">calendarlist</result>
+			<interceptor-ref name="params" />
+			
+		</action>
+		 
+		<action name="displayView"
+			class="cn.myapps.core.workcalendar.calendar.action.CalendarAction"
+			method="doDisplayView">
+			<result name="success" type="dispatcher">displayView.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+			
+		</action>
+		
+		<action name="view"
+			class="cn.myapps.core.workcalendar.calendar.action.CalendarAction"
+			method="doDisplayView">
+			<result name="success" type="dispatcher">calendar.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+			
+		</action>
+		
+		<action name="list"
+			class="cn.myapps.core.workcalendar.calendar.action.CalendarAction"
+			method="listStandardAndSpecial">
+			<result name="success" type="dispatcher">listStandardAndSpecial.jsp</result>
+			<result name="input" type="dispatcher">listStandardAndSpecial.jsp</result>
+			<interceptor-ref name="params" />
+			
+		</action>
+			
+		<action name="save"
+			class="cn.myapps.core.workcalendar.calendar.action.CalendarAction"
+			method="doSave">
+			<result name="input" type="dispatcher">
+				content.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				success.jsp
+			</result>
+			<!-- interceptor-ref name="params" / -->
+			<interceptor-ref name="validationWorkflowStack"/>
+		
+		</action>
+
+		<action name="new"
+			class="cn.myapps.core.workcalendar.calendar.action.CalendarAction"
+			method="doNew">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			
+		</action>
+		
+		<action name="edit"
+			class="cn.myapps.core.workcalendar.calendar.action.CalendarAction"
+			method="doEdit">
+			<result name="success" type="dispatcher">content.jsp</result>
+			<result name="input" type="dispatcher">content.jsp</result>
+		</action>
+		
+		
+	</package>
+</struts>

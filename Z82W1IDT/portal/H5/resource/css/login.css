@@ -1,0 +1,46 @@
+.login { background: url(../images/login_bg.jpg) no-repeat fixed; background-size: cover }
+.login .box { width: 370px; top: 20%; margin: 0 auto; padding: 15px 0 15px; float: none; box-shadow: 1px 1px 3px #C5C5C5; -moz-box-shadow: 1px 1px 3px #C5C5C5; -webkit-box-shadow: 1px 1px 3px #C5C5C5;border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.5); -webkit-border-radius: 10px; -moz-border-radius: 10px; background: #FFFFFF; position: relative; }
+.login .box .logo { text-align: center; width: 100%; }
+.login .box .logo img { border-radius: 48px; -webkit-border-radius: 48px; -moz-border-radius: 48px;box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.3);-moz-box-shadow: 1px 1px 3px #C5C5C5; -webkit-box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.3);
+ }
+.login .box .title { font-size: 20px; color: #515151; text-align: center; margin: 15px 0 15px 0 }
+.login .box .form-group { width: 280px; height: 40px; font-size: 14px; margin: 0 auto 20px auto; background: none; line-height: 26px; position: relative }
+.login .box .form-control { background: none; color: #b4b4b4; width: 100%; border: 1px solid #e1e1e1; height: 40px; padding-left: 60px }
+.login .box .vcode { padding: 0 80px 0 100px; }
+.login .box .form-group img { position: absolute; right: 10px; top: 10px }
+.login .box .form-group i { position: absolute; top: 7px; padding: 0 10px; width: 50px; text-align: center; border-right: solid 1px #e1e1e1; color: #b4b4b4; font-style: normal; }
+
+.login .box .checkbox { color:#b4b4b4; font-size:16px}
+
+
+.login .box input { font-family: inherit; font-size: inherit; line-height: inherit; }
+.login .box .btn-login { display: block; color: #fff; background-color: #5cb85c; width: 280px; height: 50px; font-size: 24px; margin: 0 auto; }
+.login .box .btn-login:active, .login .box .btn-login:hover { color: #fff; background-color: #45a445; }
+@font-face { font-family: "iconfont"; src: url('../fonts/iconfont-h5.eot'); src: url('../fonts/iconfont-h5.eot?#iefix') format('embedded-opentype'), url('../fonts/iconfont-h5.woff') format('woff'), url('../fonts/iconfont-h5.ttf') format('truetype'), url('../fonts/iconfont-h5.svg#iconfont') format('svg'); }
+.iconfont-h5 { font-family: "iconfont" !important; font-size: 20px; font-style: normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.2px; -moz-osx-font-smoothing: grayscale; color: #FFFFFF; font-weight: normal; }
+.icon-icon011:before { content: "\e600"; }
+.icon-icon02:before { content: "\e601"; }
+.login .language { position: absolute; top: 10px; right: 10px; }
+.login .language select { font-size: 12px }
+.login .copyright { text-align: center; color: #FFFFFF; margin: 20px 0; position: absolute; width: 100%; bottom: 0px; }
+.login .box-proxy { width: 730px; top: 25%; margin: 0 auto; float: none; box-shadow: 1px 1px 3px #C5C5C5; -moz-box-shadow: 1px 1px 3px #C5C5C5; -webkit-box-shadow: 1px 1px 3px #C5C5C5;border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.5); -webkit-border-radius: 10px; -moz-border-radius: 10px; background: url(../images/b05.png); position: relative; }
+.login .box-proxy .logo { text-align: center; width: 250px; background-color: #2e363f; border-radius: 10px 0 0 10px; height: 290px }
+.login .box-proxy .logo img { margin-top: 60px; border-radius: 48px; -webkit-border-radius: 48px; -moz-border-radius: 48px; }
+.login .box-proxy .title { font-size: 20px; color: #FFFFFF; text-align: center; margin: 30px 0 20px 0 }
+.login .box-proxy .content { width: 290px; height: 290px; margin: 0 90px }
+.login .box-proxy .content h4 { text-align: center; color: #FFFFFF; margin: 30px }
+.login .box-proxy .content label { padding-left: 0px; color: #FFFFFF; font-size: 16px }
+.login .box-proxy .content .radio { padding: 10px }
+.login .box-proxy .form-control { background: none; color: #fff; width: 100%; border: 1px solid #6c6e69; height: 40px; padding-left: 80px }
+.login .box-proxy .form-group { width: 280px; height: 40px; font-size: 14px; margin: 0 auto 20px auto; background: none; line-height: 26px; position: relative }
+.login .box-proxy .form-group img { position: absolute; right: 10px; top: 10px }
+.login .box-proxy .form-group i { position: absolute; top: 7px; padding: 0 10px; width: 60px; text-align: center; border-right: solid 1px #6c6e69; color: #FFFFFF; font-style: normal; }
+.login .box-proxy select { font-family: inherit; font-size: inherit; line-height: inherit; }
+.login .box-proxy option { color: #000000 }
+.login .box-proxy .btn-login { display: block; color: #fff; background-color: #5cb85c; width: 280px; height: 50px; font-size: 24px; margin: 0 auto; }
+.login .box-proxy .btn-login:active, .login .box-proxy .btn-login:hover { color: #fff; background-color: #45a445; }
+.login .box-proxy .content input[type=radio] { -webkit-appearance: none; appearance: none; width: 13px; height: 13px; margin: 0; cursor: pointer; vertical-align: bottom; background: #fff; border: 1px solid #dcdcdc; -webkit-border-radius: 1px; -moz-border-radius: 1px; border-radius: 1px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: relative; }
+.login .box-proxy .content input[type=radio]:active { border-color: #c6c6c6; background: #ebebeb; }
+.login .box-proxy .content input[type=radio] { -webkit-border-radius: 1em; -moz-border-radius: 1em; border-radius: 1em; width: 20px; height: 20px; }
+.login .box-proxy .content input[type=radio]:checked::after { content: ''; display: block; position: relative; top: 0px; left: 0px; width: 20px; height: 20px; background-image: url(../images/login_radio.png); -webkit-border-radius: 1em; -moz-border-radius: 1em; border-radius: 1em; }
+.login .box-proxy .form-group .s_a { background: url(../images/login_s_a.png) no-repeat; width: 16px; height: 20px; display: block; position: absolute; right: 0px; top: 9px }

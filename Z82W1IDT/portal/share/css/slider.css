@@ -1,0 +1,45 @@
+.container1, .container1 * { 
+	margin:0; 
+	padding:0; 
+}
+.container1 {
+	overflow:hidden; 
+	position:relative; 
+	*position:static;
+}
+.slider1 { 
+	position:absolute; 
+}
+.slider1 li { 
+	list-style:none; 
+	display:inline; 
+}
+.slider1 img {
+	display:block; 
+}
+.slider2 { 
+	width:100000px; 
+}
+.slider2 li { 
+	float:left; 
+}
+.num { 
+	position:absolute; 
+	right:5px; 
+	bottom:5px; 
+}
+.num li { 
+	float: left; 
+	color: #FF7300; 
+	text-align: center; 
+	line-height: 16px; 
+	width: 16px; 
+	height: 16px; 
+	font-family: Arial; 
+	font-size: 12px; 
+	cursor: pointer; 
+	overflow: hidden; 
+	margin: 3px 1px; 
+	border: 1px solid #FF7300; 
+	background-color: #fff; 
+}

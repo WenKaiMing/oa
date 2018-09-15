@@ -1,0 +1,44 @@
+/**ºóÌ¨ main**/
+
+body{margin: 0px;}
+
+a {text-decoration: none;font-size: 12px;color: #636365; cursor: pointer;}
+a:active {color: #636365;}
+a:HOVER {color: ;text-shadow: black;}
+
+#container{border: 0px solid #E2E2E2;width: 100%;}
+#header{background:#c8d0d5;}
+#contentMain{width: 100%;height: 100%; border: 0px solid #E2E2E2;}
+
+#currentPosition{float: left;margin-top: 2px;}
+
+/**back  resouce list content**/
+.table_hasborder{border: 1px solid #C6D6FD;width:100%; border-collapse: collapse;border-spacing: 0px;}
+.table_noborder{width:100%; border-collapse: collapse;border-spacing: 0px;}
+.mouseontr{background-color: #FFFFEE;}
+/**
+.input-cmd{width: 250px;}
+**/
+
+.loading-indicator {
+    font-size:8pt; 
+    background-image:url(/webapp/resource/images/loading.gif);
+    background-repeat: no-repeat;  
+    background-position:top left; 
+    padding-left:20px;
+	height:18px;
+	text-align:left;
+}
+ 
+#loading{
+	position:absolute;
+	left:40%;
+	top:40%;
+	border:3px solid #B2D0F7;
+	background:white url(/webapp/resource/images/block-bg.gif) repeat-x;
+	padding:10px;
+	font:bold 14px verdana,tahoma,helvetica; 
+	color:#003366;
+	width:180px;
+	text-align:center;
+}

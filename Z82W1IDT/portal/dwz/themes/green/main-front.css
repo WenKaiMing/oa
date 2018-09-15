@@ -1,0 +1,1072 @@
+/* CSS Document */ /* default cstyle */
+	/* body {margin-left: 0px;	margin-top: 0px; margin-right: 0px;} */
+html,body,div,form,ul,ol,li,dl,dt,dd,p {
+	margin: 0;
+	padding: 0;
+}
+table{
+	border-collapse:collapse;
+}
+img {
+	border: 0 solid #FFF;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+label {
+	background-color: #FFF;
+	background-image: none;
+	font-size: 12px;
+	width: 80px;
+}
+
+body,tbody {
+	font-size: 12px;
+}
+
+radio {
+	background-color: #000;
+	border: 1px solid #FFF;
+	font-family: Arial, Vendera, Tahoma;
+	margin: 1px;
+	padding: 1px;
+	width: auto;
+}
+
+a {
+	color: #636365;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+a:active {
+	color: #636365;
+}
+
+a:HOVER {
+	color: #000;
+	text-shadow: #000;
+}
+
+/**pre中内容超出时自动换行**/
+pre {
+	white-space: pre-wrap; /** css-3 **/
+	white-space: -moz-pre-wrap; /** Mozilla, since 1999 **/
+	white-space: -pre-wrap; /** Opera 4-6 **/
+	white-space: -o-pre-wrap; /** Opera 7 **/
+	word-wrap: break-word; /** Internet Explorer 5.5+ **/
+}
+
+.table_noborder {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+.button-image {
+	background-image: url(../imgv2/front/main/btn_back.gif);
+	background-position: center;
+	background-repeat: repeat-x;
+	border: 1px solid #14a4c1;
+	color: #FFF;
+	cursor: pointer;
+	font-family: Arial, Helvetica;
+	font-size: 14px;
+	font-weight: 700;
+	height: 26px;
+	line-height: 26px;
+	vertical-align: middle;
+}
+
+.back-class {
+	background-color: #F1F3F5;
+	border-color: #FFF;
+	border-width: 0;
+	fon-size: auto;
+	font-family: Arial, Helvetica,;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.line-position {
+	border-color: #A1A1A1;
+	border-style: dashed;
+	border-width: 0 0 1px;
+}
+
+.line-position2 {
+	border-color: #A1A1A1;
+	border-width: 0;
+	width: 80px;
+}
+
+.input-cmd {
+	align: left;
+	background-color: #FFF;
+	border: 1px solid #999;
+	margin: 1px;
+	padding: 1px;
+	width: auto;
+}
+
+.list-table {
+	background-image: none;
+	border-bottom: 1px solid #FFF;
+	border-collapse: collapse;
+	border-color: #FFF;
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #FFF;
+	border-top: 1px solid #FFF;
+	height: 20px;
+	position: relative;
+	table-layout: fixed;
+	top: -2px;
+	width: 100%;
+}
+
+.display_view-table {
+	border: 0 solid #FFF;
+	font-family: Arial, Vendera;
+	font-size: 12px;
+	width: 100%;
+	z-index: 100;
+}
+
+.column-head3 {
+	background-color: #BDC5CC;
+	background-repeat: repeat-x;
+	border-color: #fff;
+	color: #000;
+	font-family: Arial, Vendera, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	padding-left: .35em;
+	text-align: left;
+	word-wrap: break-word;
+	z-index: 100;
+}
+
+.column-head {
+	font-family: Arial, Vendera, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	padding-left: .35em;
+	text-align: left;
+	white-space: nowrap;
+	z-index: 100;
+}
+
+.column-head a {
+	color: #1268a5;
+}
+
+.column-head2 {
+	font-family: Arial, Vendera, sans-serif;
+	height: 24px;
+	text-align: center;
+	vertical-align: middle;
+	width: 22px;
+	z-index: 100;
+}
+
+.column-td {
+	padding-left: .35em;
+	text-align: left;
+}
+
+.table-text {
+	background-color: #FFF;
+	border: 1px solid #FFF;
+	border-color: #FFF;
+	color: #636365;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.table-text2 {
+	background-color: #edf7ff;
+	border-bottom: 1px solid #FFF;
+	border-color: #FFF;
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #FFF;
+	border-top: 1px solid #FFF;
+	color: #636365;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.text-label {
+	color: #AB0101;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	text-align: left;
+	text-valign: bottom;
+}
+
+.image-label {
+	color: #7EB8C6;
+	font-family: sans-serif;
+	font-size: 16px;
+	position: relative;
+	top: -0;
+	vertical-align: middle;
+}
+
+.pagenav {
+	background-color: #FFF;
+	background-image: none;
+	color: #666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.table-td {
+	font-family: Arial, Vendera, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	width: 22px;
+}
+
+.table-tr .column-head {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.table-tr-onchange {
+	background-color: #ebfbc5;
+	border-bottom: 1px solid #b4ccee;
+	border-right: 1px solid #b4ccee;
+}
+
+.table-td2 {
+	vertical-align: center;
+}
+
+.content-label {
+	background-image: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	width: 25%;
+}
+
+.head-text {
+	color: #999;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	max-width: 60px;
+	width: auto;
+}
+
+.btcaption {
+	background-color: transparent;
+	background-image: url(../imgv2/front/main/btn_select.gif);
+	background-repeat: no-repeat;
+	border: 0 hidden;
+	color: #000;
+	cursor: pointer;
+	height: 22px;
+	padding-top: 2px;
+	text-align: center;
+	vertical-align: text-top;
+	width: 68px;
+}
+
+.btcaption-selected {
+	background-color: transparent;
+	background-image: url(../imgv2/front/main/btn_selected.gif);
+	background-repeat: no-repeat;
+	border: 0 hidden;
+	color: #4f4e4e;
+	cursor: pointer;
+	font-weight: 700;
+	height: 22px;
+	padding-top: 2px;
+	text-align: center;
+	vertical-align: text-top;
+	width: 68px;
+}
+
+.list-toolbar {
+	background-color: #FFF;
+	background-image: url(../image/main_06.gif);
+	height: 45px;
+}
+
+.input {
+	background-color: #FFF;
+	border: 1px solid #999;
+	margin: 1px;
+	padding: 1px;
+}
+
+.errorMessage {
+	color: red;
+	font-family: Arial;
+	font-size: 14px;
+}
+
+.turn-button {
+	background-color: #F7F7F7;
+	border-color: #EAEAEA;
+	border-width: 1px;
+	fon-size: 12px;
+	font-family: Arial, Helvetica,;
+	height: 30px;
+	margin-bottom: 1px;
+	padding-bottom: 1px;
+	width: 80px;
+}
+
+.input-password {
+	align: left;
+	background-color: #FFF;
+	border: 1px solid #999;
+	margin: 1px;
+	padding: 1px;
+	width: 151px;
+}
+
+.commFont {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	width: auto;
+}
+
+.commLabel {
+	padding-right: 8px;
+	text-align: right;
+}
+
+/* Form Tab style start*/
+.basictab {
+	background-color: #ebeef4;
+	background-image: url(../imgv2/front/main/tab_container_back.gif);
+	background-repeat: repeat;
+	overflow:hidden;
+	height:26px;
+	text-align: left;
+}
+
+.basictab table {
+	font: bold 12px Verdana;
+	list-style-type: none;
+	margin-bottom: 0;
+	margin-left: 0;
+	text-align: left;
+	/*set to left, center, or right to align the menu as desired*/
+}
+
+.basictab div {
+	margin: 0 5px;
+}
+
+.basictab div a {
+	color: #416aa3;
+	font-weight: 400;
+	height: 23px;
+	line-height: 23px;
+	margin-right: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-decoration: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	display: block;
+}
+
+.basictab div a.current {
+	color: #15428b;
+	background-image: url("../imgv2/front/main/tab_back_curr.gif");
+	background-repeat: repeat-x;
+	background-position: bottom;
+	border-left: 1px solid #adbcd4;
+	border-right: 1px solid #adbcd4;
+	border-bottom: 0px;
+	font-weight: bold;
+}
+
+.ordertag {
+	color: #000;
+}
+
+.tabcontainer {
+	clear: left;
+	height: 100%; /*width of 2nd level sub menus*/
+	width: 100%;
+	/*height of 2nd level sub menus. Set to largest's sub menu's height to avoid jittering.*/
+}
+
+.button-cmd a {
+	background: url(../../resource/imgv2/front/main/btn_back2.gif) left 0 repeat-x;
+	color: #000;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 23px;
+	text-decoration: none;
+}
+
+.button-cmd a:hover {
+	background: url(../../resource/imgv2/front/main/btn_back.gif) left 0;
+	background-repeat: repeat-x;
+	color: #000;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 23px;
+	text-decoration: none;
+}
+
+.button-cmd a span {
+	background: url(../../resource/imgv2/front/main/btn_back2.gif) right 0;
+	background-repeat: repeat-x;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 23px;
+	margin: 0 0 0 10px;
+	padding: 3px 10px 3px 0;
+}
+
+.button-cmd a:hover span {
+	background: url(../../resource/imgv2/front/main/btn_back.gif) right 0;
+	background-repeat: repeat-x;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 23px;
+	margin: 0 0 0 10px;
+	padding: 3px 10px 3px 0;
+}
+
+.button-document a {
+	color: #000;
+	cursor: pointer;
+	float: left;
+	height: 25px;
+	text-decoration: none;
+}
+
+.button-document a span {
+	float: left;
+	height: 16px;
+	margin: 0 0 0 10px;
+	padding: 3px 10px 3px 0;
+}
+
+.button-document a:hover {
+	color: #FFF;
+}
+
+.page-nav {
+	height: 27px;
+	line-height:27px;
+	width: 100%;
+}
+
+.page-nav2 {
+	background-image: url(../imgv2/front/main/act_back2.gif);
+	background-repeat: repeat-x;
+	height: 27px;
+	margin-top: 0;
+	width: 100%;
+}
+
+.body-front {
+	background-color: #DCF798;
+	margin:0px;
+}
+
+/*******start dtree.css********/ /****maiFrame css***/
+.dtree {
+	color: #000;
+	font-family: Arial;
+	font-size: 12px;
+	position: absolute;
+	white-space: nowrap;
+}
+
+.dtree IMG {
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	font-family: Arial;
+	vertical-align: middle;
+}
+
+.dtree A.node {
+	color: #636365;
+	font-family: Arial;
+	font-size: 12px;
+	padding: 1px 2px;
+	white-space: nowrap;
+}
+
+.dtree A.node:hover {
+	background-color: #eceaed;
+	color: #FFF;
+	font-family: Arial;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.dtree A.nodeSel {
+	background-color: #fff1cf;
+	color: Gray;
+	font-family: Arial;
+	font-size: 12px;
+	padding: 1px 2px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.dtree .clip {
+	overflow: hidden;
+}
+
+.dtree .checkbox {
+	align: center;
+	height: 16px;
+	valign: middle;
+	width: 16px;
+}
+
+/*******end dtree.css********/ /****maiFrame css***/
+	/*****front skin css*****/
+#detail {
+	margin-left: 5px;
+}
+
+.linktag {
+	color: #6B6B6B;
+}
+
+/***********table tr td****************/
+.front-table-common {
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.front-table-full-width {
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+.actBtn .button-document a span {
+	display: block;
+	white-space: nowrap;
+}
+
+.actBtn span {
+	float: left;
+}
+
+.actBtn div {
+	float: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.processor{
+	height: 27px;
+	line-height: 27px;
+	padding-right: 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 130px;
+}
+
+.divFormFlowCls,.flowstate{
+	overflow: hidden;
+	height: 27px;
+	line-height: 27px;
+	padding-right: 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 130px;
+}
+
+/**************font****************/
+.front-font-viewdata {
+	font-family: Arial, Vendera;
+	font-size: 12px;
+	z-index: 100;
+}
+
+/*********menus**********/
+/*********icon***********/
+.icon {
+	border: 0;
+	cursor: pointer;
+}
+
+/*****P *******/
+/*******margin**********/
+/********scroll *********/
+.front-scroll-hidden {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.front-scroll-auto {
+	overflow-x: auto;
+	overflow-y: auto;
+}
+
+/*****visibility****/
+.front-visibility-hidden {
+	visibility: hidden;
+}
+
+/*****align******/
+.front-align-top {
+	vertical-align: top;
+}
+
+/**********bgcolor*************/
+.front-bgcolor1 {
+	background-color: #ACE424;
+}  /*for document*/
+.front-bgcolor2 {
+	background-color: #FFF;
+}
+
+.front-bgcolor3 {
+	background-color: #edf4ff;
+}  /**contentTable**/ /******border******/
+.front-border-bottom {
+	border-bottom: 1px solid #5B9700;
+	margin: 0;
+	padding: 0;
+}
+
+.front-border-top {
+	border-top: 1px solid #99bbe8;
+}
+
+/************div****************/
+.front-div-dialog-popWindows {
+	background-color: #FFF;
+	border: 3px solid #9dbae4;
+	display: none;
+	left: 250px;
+	overflow: hidden;
+	position: absolute;
+	text-align: center;
+	top: 60px;
+	z-index: 10009;
+}
+
+.front-div-dialog-title {
+	float: left;
+	height: 26px;
+	line-height: 26px;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	width: 80%;
+}
+
+.front-div-loadingback {
+	background-color: #000;
+	display: none;
+	filter: alpha(opacity = 20);
+	height: 100%;
+	left: 0;
+	opacity: 0.20;
+	position: absolute;
+	top: 0;
+	width: 104%;
+	z-index: 50;
+}
+
+.front-div-loading {
+	display: none;
+	height: 60%;
+	left: 40%;
+	position: absolute;
+	top: 40%;
+	width: 60%;
+	z-index: 100;
+}
+
+.calendar-table table {
+	table-layout: fixed;
+}
+
+#dspview_divid {
+	border: 1px solid #b5b8c8;
+	width: 100%\9;
+}
+
+.button-cmd {
+	background-repeat: repeat-x;
+	color: #000;
+	cursor: pointer;
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/**表单操作按钮**/
+.button-document {
+	background: url(../../resource/imgv2/front/main/act_seperate.gif) right center
+		no-repeat;
+	cursor: pointer;
+	display: block;
+	font-family: Arial, Helvetica;
+	font-weight: 700;
+	vertical-align: middle;
+}
+
+/****操作按钮图片****/
+.button-onchange {
+	color: #000;
+	cursor: pointer;
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+	font-weight: 700;
+	vertical-align: middle;
+}
+
+.title img {
+	float: right;
+}
+
+/*************原来dialog.css（整理没彻底，留做备份）*************/
+.title { /*below two rows copy from above .title -- jack tidy 11-03-11*/
+	float: left;
+	font-size: 10pt;
+	height: 26px;
+	line-height: 26px;
+	pending: 2px;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	width: 80%;
+}
+
+/*打印表格样式*/
+.button-class {
+	background-color: #FFF;
+	border-width: 0;
+	cursor: pointer;
+	font-family: Arial, Helvetica;
+	font-size: auto;
+	height: 22px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	padding-right: 5px;
+}
+
+/***view****/
+#treeViewContent {
+	border: 1px solid #99BBE8;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#usersetup #activityTable {
+	border: 1px solid #99BBE8;
+	border-bottom: 0;
+	width: 100%;
+}
+#activityTable{
+	
+}
+#usersetup #searchFormTable {
+	background-color: #FFF;
+	border-left: 1px solid #5B9700;
+	border-right: 1px solid #5B9700;
+	padding-bottom: 5px;
+	padding-top: 7px;
+}
+
+/*usersetup*/
+.contentLeft {
+	background-color: #DFE8F6;
+	float: left;
+	padding-top: 5px;
+	width: 120px;
+}
+
+.contentRight {
+	background-color: #FBFBF9;
+	float: right;
+	padding-top: 10px;
+}
+
+.leftmenulist {
+	border-bottom: 1px solid #DFE8F6;
+	cursor: pointer;
+	font-size: 12px;
+	height: 23px;
+	margin-bottom: 3px;
+	padding-left: 15px;
+	padding-top: 5px;
+}
+
+.selleftmenulist {
+	background-color: #FBFBF9;
+	color: #000;
+	font-weight: 700;
+}
+
+.showcontent {
+	display: inline;
+}
+
+tr.grid-rowselected {
+	background-color: #F9E5BE;
+	border: 1px dashed #f3d49b;
+}
+
+/************** homepage start *******************/
+.templateTable {
+	border: 1px solid #99bbe8;
+	border-collapse: collapse;
+}
+
+.templateDivSub {
+	float: left;
+	height: 100px;
+	text-align: center;
+	width: 120px;
+}
+
+.templateDivSub table {
+	border: 1px solid #99bbe8;
+	border-collapse: collapse;
+	height: 60px;
+	table-layout: fixed;
+	vertical-align: top;
+	width: 90px;
+}
+
+.templateDiv table .homepageTd {
+	border: 1px solid #99bbe8;
+	vertical-align: top;
+}
+
+.table-homepage {
+	background-color: #FFF;
+	border: 0;
+	width: 95%;
+}
+
+.table-homepage td a {
+	text-decoration: none;
+}
+
+*,body,input,textarea,select {
+	font-family: Arial, Vendera, Tahoma;
+}
+
+.dtable-header,.front-table-header {
+	background-color: #ACE424;
+	height: 24px;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	z-index: 100;
+}
+
+.dtable-header td,.ptable-header td,.table-tr td,.table-tr-onchange td {
+	border-bottom: 1px solid #CDEF7D;
+	border-right: 1px solid #CDEF7D;
+}
+
+.display,.tabcontent,.hidecontent {
+	display: none;
+}
+
+.act_table,.front-table-act {
+	height: 23px;
+	vertical-align: middle;
+}
+
+.act_table2,.front-table-act2 {
+	background-image: url(../../themes/green/images/accordion/accordion.png);
+	background-repeat: repeat;
+	height: 27px;
+	vertical-align: middle;
+}
+
+.dtree A,.dtree A.nodeSel:hover {
+	color: #636365;
+	font-family: Arial;
+	font-size: 12px;
+	text-decoration: none;
+}
+.front-boder,.templateDivSub table td {
+	border: 1px solid #99bbe8;
+}
+
+/***********start dialog.css***************/
+.front-div-dialog-black_overlay,.black_overlay {
+	-moz-opacity: 0.8;
+	background-color: threeddarkshadow;
+	display: none;
+	filter: alpha(opacity = 30);
+	height: 100%;
+	left: 0;
+	opacity: .80;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1001;
+}
+
+.front-div-dialog-white_content,.white_content {
+	background-color: #FFF;
+	border: 3px solid #9dbae4;
+	display: none;
+	left: 50px;
+	overflow: hidden;
+	position: absolute;
+	text-align: center;
+	top: 36px;
+	z-index: 10002;
+}
+
+.front-div-dialog-dheader,.dheader {
+	background-image: url(../imgv2/front/main/frame_header.gif);
+	background-repeat: repeat-x;
+	height: 26px;
+	width: 100%;
+}
+
+.front-div-dialog-close,.close {
+	float: right;
+	height: 26px;
+	line-height: 26px;
+	padding-right: 3px;
+	padding-top: expression(this.offsetHeight-closeImg.offsetHeight)/ 2px;
+	position: relative;
+	text-align: right;
+	vertical-align: middle;
+	width: 10%;
+}
+
+.front-div-dialog-dbody,.dbody {
+	overflow: auto;
+	text-align: center;
+}
+
+/***********end dialog.css***************/
+#content,#usersetup #container {
+	height: 100%;
+	width: 100%;
+}
+#treeViewSearchHeader{font-size:12px!important;}
+#tree {font-size:10px;}
+.jstree-clicked {font-size:12px;}
+#usersetup #dataTable,#usersetup #contentTable {
+	background-color: #FFF;
+	border: 1px solid #99BBE8;
+	overflow: auto;
+}
+
+.widget{list-style:none;margin:0px;}
+.widget-head h3{color:#1268A5;font-size:14px;margin:0px;}
+
+/**Calendar view styles start**/
+.eventTD {vertical-align: top;background-color: #ffffff;background: url(../../../share/images/view/checker.png) repeat;}
+/**Calendar view styles end**/
+
+/**ListView && DisplayView--start**/
+.viewTable {/**未重构时表格样式**/
+	border-collapse:collapse;
+	width:100%;
+}
+.viewTable td{/**未重构时表格td样式**/
+	border: 1px solid #000;
+}
+
+/**以下为重构后样式**/
+.listDataTable {/**表格**/
+	font-family: Arial, Vendera;
+	font-size: 12px;
+	z-index: 100;
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border-top: 1px solid #5B9700;
+}
+.listDataTable td {/**单元格**/
+	border-bottom: 1px solid #5B9700;
+	border-right: 1px solid #5B9700;
+}
+.listDataTh {/**标题行**/
+	background-color: #ACE424;
+	height: 24px;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 100;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.listDataThFirstTd {/**标题行第一个单元格**/
+	font-family: Arial, Vendera, sans-serif;
+	height: 24px;
+	text-align: center;
+	vertical-align: middle;
+	width: 22px;
+	z-index: 100;
+}
+.listDataThTd {/**标题行其他单元格**/
+	color: #1268a5;
+	font-family: Arial, Vendera, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	padding-left: .35em;
+	text-align: left;
+	z-index: 100;
+}
+
+.nowrap{
+	white-space: nowrap;
+}
+
+.listDataTr .listDataThTd {/**标题行其他单元格**/
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.listDataThTd a {/**标题行其他单元格中A标签**/
+	color: #1268a5;
+}
+.listDataTrFirstTd {/**其他行第一个单元格**/
+	font-family: Arial, Vendera, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	width: 22px;
+}
+.listDataTr_over {/**其他行鼠标滑过**/
+	background-color: #D0FC68;
+}
+/**ListView--end**/
+
+.flowbtn .flowicon {background:url('../../../../resource/imgv2/front/act/act_5.gif') no-repeat!important; background-position:left!important;padding-left:18px!important;}
+.flowbtn .icon16{width:16px; height:16px;}
+.flowbtn .button-cmd div{height:23px; line-height:23px;	float:left;}
+.flowbtn .btn_left {width:3px;background:url('../../../../resource/imgv2/front/main/btn_left.png') no-repeat;margin-left:2px;}
+.flowbtn .btn_mid {background:url('../../../../resource/imgv2/front/main/btn_middle.png') repeat-x; padding:0 2px;}
+.flowbtn .btn_right {width:3px;background:url('../../../../resource/imgv2/front/main/btn_right.png') no-repeat;margin-right:2px;}
+.flowbtn .button-cmd {width:85px;}
+.flowbtn .button-cmd img {border: 0px solid white;}
+.flowbtn .button-cmd a {color: black;text-decoration: none;	cursor: pointer;background: none;width:auto;float: none;}
+.flowbtn .button-cmd a:hover {color: #438733;background: none;}

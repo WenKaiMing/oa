@@ -1,0 +1,372 @@
+.showItem {
+    border-radius: 5px;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    line-height: 2.7em;
+    min-height: 2.7em;
+}
+
+.contact-form .formfield-wrap .readCls{
+	background-color : rgb(239, 239, 239);
+	color : #333;
+}
+
+/**gps**/
+.formfield-wrap canvas {
+	margin-bottom: 0.5em;
+}
+
+.table-address {
+	margin-bottom: 1em;
+    border-radius: 0.4em;
+    background-color: #fafafa;
+    min-height: 2.8em;
+}
+
+
+/**fileupload--start**/
+.btnAdd {
+	border: 1px solid #43c7ea;
+	color: #43c7ea;
+}
+
+.btnAdd:hover {
+    color: #43c7ea;
+}
+
+.btnAdd img{
+	margin-right: 5px;
+	vertical-align: baseline;
+}
+
+.upload-box .filePanel {
+	padding: 0.4em;
+	min-height: 2.7em;
+	margin-bottom: 1em;
+	border-radius: 0.5em;
+}
+
+.upload-box .del {
+	width: 20px;
+    height: 20px;
+    line-height: 18px;
+    border-radius: 10px;
+    display: block;
+    background-color: rgba(0,0,0,.3);
+    color: #e5e5e5;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    text-align: center;
+}
+
+.upload-box .fileRow {
+	display: -moz-box; 
+	display: -ms-flexbox;
+	display: -webkit-flex;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 0.4em;
+    padding-left: 8px;
+    border-radius: 0.4em;
+    background-color: #F5F5F5;
+}
+
+.upload-box .fileBtn {
+	border-radius: 0.4em;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.upload-box .pic {
+	position: relative;
+    top: 10px;
+    background: url(../../../share/images/formModule/fileUpload.png);
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin-right: 2px;
+    vertical-align: sub;
+}
+.upload-box .fileTitle {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 1px;
+    }
+.upload-box .extname{
+	display: block;
+    position: relative;
+    top: 0px;
+    margin-right: 34px;
+}
+.upload-box .pdf {
+	background-position : -4px -4px;
+}
+
+.upload-box .word {
+	background-position : -24px -4px;
+}
+
+.upload-box .excel {
+	background-position : -44px -4px;
+}
+
+.upload-box .txt {
+	background-position : -64px -4px;
+}
+
+.upload-box .audio {
+	background-position : -84px -4px;
+}
+
+.upload-box .video {
+	background-position : -104px -4px;
+}
+
+.upload-box .ppt {
+	background-position : -124px -4px;
+}
+
+.upload-box .ios {
+	background-position : -4px -24px;
+}
+
+.upload-box .android {
+	background-position : -24px -24px;
+}
+
+.upload-box .psd {
+	background-position : -44px -24px;
+}
+
+.upload-box .ai {
+	background-position : -64px -24px;
+}
+
+.upload-box .rar {
+	background-position : -84px -24px;
+}
+
+.upload-box .img {
+	background-position : -104px -24px;
+}
+
+.upload-box .other {
+	background-position : -124px -24px;
+}
+/**fileupload--end**/
+
+.confirmPanel {
+	position: fixed;
+    top: 30%;
+    left: 15%;
+    background-color: #fff;
+    border-radius: 0.4em;
+    width: 70%;
+    z-index: 9999;
+    border: 1px solid #ccc;
+    padding: 0.8em;
+}
+
+.confirmPanel .btn {
+	margin-right: 1em;
+	font-size: 1em;
+}
+
+.confirmPanel .btn-delete {
+	color: #f8282f;
+}
+
+/**layoutType-Horizontal--start**/
+.contact-form {
+    padding: 0;
+    font-size: 14px;
+    color: #a7a7a7;
+}
+.contact-form .formfield-wrap {
+    margin-top: .77em;
+    padding: 0 15px;
+}
+.contact-form .record-panel{
+	padding: 0;
+}
+.flexbox{
+	position: relative;
+	padding: 10px 15px !important;
+	display: -moz-box; 
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	-webkit-align-items:center;
+	background-color: #fff;
+}
+.flexbox .flexlable{
+	width: 96px;
+	line-height: 1.41176471;
+	word-wrap: break-word;
+}
+.flexbox .flexright{
+	display: block;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.flexbox .contactField,
+.flexbox .table-address,
+.flexbox .btn-record,
+.flexbox  canvas,
+.flexbox .smallpic{
+	margin-bottom:0;
+}
+.flexbox .smallpic,
+.flexbox .filePanel  {
+	padding-left:0;
+	margin-bottom: 0em;
+}
+.contact-form .flexbox .flexright .record-panel{
+	padding-top:0;
+	margin-top: 0;
+}
+.contact-form .flexbox .flexlable{
+	padding-bottom:0px;
+	font-size: 14px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.flexbox .showItem{
+    border-radius: 5px;
+    margin-bottom: 0em;
+    padding-left: 0em;
+    line-height: inherit;
+    min-height: inherit;
+    padding: 0 8px;
+    color: #999999;
+}
+
+.flexbox  input[type=color], 
+.flexbox  input[type=date], 
+.flexbox  input[type=datetime-local], 
+.flexbox  input[type=datetime], 
+.flexbox  input[type=email], 
+.flexbox  input[type=month], 
+.flexbox  input[type=number], 
+.flexbox  input[type=password], 
+.flexbox  input[type=search], 
+.flexbox  input[type=tel], 
+.flexbox  input[type=text], 
+.flexbox  input[type=time], 
+.flexbox  input[type=url], 
+.flexbox  input[type=week], 
+.flexbox  select{
+	padding: 0;
+    height: 24px;
+    line-height: 24px;
+    -webkit-tap-highlight-color:transparent;
+	box-shadow: none;
+}
+.flexbox select:focus,
+.flexbox input:focus{
+	outline:none;
+}
+.contact-form .flexbox  textarea {
+	padding:0;
+}
+.contact-form .flexbox .contactField{
+	font-size:14px;
+	color: #000;
+	border:none;
+	margin-bottom: 0;
+}
+.contact-form .flexbox  .readCls {
+    padding: 0 8px;
+    color: #999999;
+}
+.contact-form .flexbox .radio-box {
+    border-radius: 3px;
+    border: 1px solid #cacaca;
+}
+.contact-form .flexbox span.tree-department {
+    border: none;
+}
+/*userBox*/
+.flexbox .userSelectBox .userField{
+	height:35px;
+}
+/*checkbox\radio*/
+.contact-form .isVertical{
+	padding: 0;
+}
+.contact-form .isVertical .flexlable{
+	padding-left: 15px;
+    padding-right: 15px;
+    color: #999999;
+    font-size: 14px;
+    background-color:#f8f8f8;
+    padding-bottom:.3em;
+    padding-top: .77em;
+}
+.contact-form .isVertical .flexright{
+	position: relative;
+	background-color: #fff;
+}
+.contact-form .isVertical .radio-box{
+	border:none;
+	margin-bottom: 0;
+}
+.isVertical .radio-box .radio-list{
+	padding: 10px 15px;
+    position: relative;
+    border-bottom:none;
+}
+.isVertical .radio-list:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    left: 15px;
+}
+.flexbox:before,
+.isVertical .flexright:before{
+	content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+.contact-form .flexbox,
+.contact-form .isVertical{
+    margin-top: 0px;
+}
+/**layoutType-Horizontal--end**/

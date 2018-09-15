@@ -1,0 +1,357 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<!-- domain package -->
+	<package name="domain" extends="myapps-default"
+		namespace="/core/domain">
+
+	   <action name="displayView"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doDisplayView">
+			<result name="success" type="dispatcher">
+				domain.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="new"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doNew">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="defaultStack">
+			    <param name="workflow.excludeMethods">default</param>
+			</interceptor-ref>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="edit"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doEdit">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="basicInfo"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doEdit">
+			<result name="success" type="dispatcher">
+				basicinfo.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>		
+		
+		<action name="saveBasic"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doSave">
+			<result name="input" type="dispatcher">
+				basicinfo.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				basicinfo.jsp
+			</result>
+			<interceptor-ref name="defaultStack">
+			    <param name="workflow.excludeMethods">default</param>
+			</interceptor-ref>
+		
+		</action>
+		
+		<action name="save"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doSave">
+			<result name="input" type="dispatcher">
+				content.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="defaultStack">
+			    <param name="workflow.excludeMethods">default</param>
+			</interceptor-ref>
+		
+		</action>
+		
+		<action name="delete"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doDelete">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+			<result name="success" type="chain">list</result>
+			<result name="input" type="chain">list</result>
+		</action>
+		
+		<action name="list"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doList">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+			<result name="success" type="dispatcher">list.jsp</result>
+			<result name="input" type="dispatcher">list.jsp</result>
+		</action>
+		
+		<action name="addApp"
+			class="cn.myapps.core.deploy.application.action.ApplicationAction"
+			method="doAddApp">
+			<result name="success" type="dispatcher">listallapps.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="addAdmin"
+			class="cn.myapps.core.superuser.action.SuperUserAction"
+			method="doAddAdmin">
+			<result name="success" type="dispatcher">listallusers.jsp</result>
+			<interceptor-ref name="chain" />
+			<interceptor-ref name="params" />
+		</action>		
+		
+		<action name="removeApp"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doRemoveApp">
+			<interceptor-ref name="defaultStack" />
+			<result name="input" type="dispatcher">
+				holdapplist.jsp
+			</result>
+			<result name="success" type="chain">holdApp</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="removeAdmin"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doRemoveAdmin">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+			<result name="input" type="dispatcher">
+				holdadminlist.jsp
+			</result>
+			<result name="success" type="chain">holdAdmin</result>
+		</action>
+		
+		<action name="holdApp"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doListApps">
+			<result name="success" type="dispatcher">holdapplist.jsp</result>
+			<result name="input" type="dispatcher">holdapplist.jsp</result>
+			<interceptor-ref name="params" />
+		</action>	
+		
+		<action name="confirm"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="confirm">
+			<interceptor-ref name="defaultStack" />
+			<result name="input" type="chain">
+				addApp
+			</result>
+			<result name="success" type="dispatcher">exit.jsp</result>
+			<interceptor-ref name="params" />
+		</action>	
+		<action name="confirmAdmin"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="confirmAdmin">
+			<interceptor-ref name="defaultStack" />
+			<result name="input" type="chain">
+				addAdmin
+			</result>
+			<result name="success" type="dispatcher">exit.jsp</result>
+			<interceptor-ref name="params" />
+		</action>	
+		
+		
+		<!-- action name="holdAdmin"
+			class="cn.myapps.core.domain.action.DomainAction" method="holdAdmin">
+			<result name="success" type="dispatcher">holdadminlist.jsp</result>
+			<interceptor-ref name="params" />
+		</action-->	
+		<action name="holdAdmin"
+			class="cn.myapps.core.superuser.action.SuperUserAction" method="doListByDomain">
+			<result name="success" type="dispatcher">holdadminlist.jsp</result>
+			<result name="input" type="dispatcher">holdadminlist.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="findManager"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="findManager">
+			<interceptor-ref name="defaultStack" />
+			<result name="success" type="dispatcher">list.jsp</result>
+			<result name="input" type="dispatcher">list.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="startexport"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="startexport">
+			<result name="success" type="dispatcher">
+				export.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				export.jsp
+			</result>
+		</action>
+		
+		<action name="startimport"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="startimport">
+			<result name="success" type="dispatcher">
+				import.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				import.jsp
+			</result>
+		</action>
+		
+		<action name="export"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doExport">
+			<result name="success" type="dispatcher">
+				export.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				export.jsp
+			</result>
+		</action>
+		
+		<action name="import"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doImport">
+			<result name="success" type="dispatcher">
+				import.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				import.jsp
+			</result>
+		</action>
+		
+		<action name="download"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doDownload">
+		</action>
+		
+		<action name="synchLDAP"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doSynchLDAP">
+			<result name="success" type="dispatcher">
+				basicinfo.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				basicinfo.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="testSMS"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doTestSMS">
+		</action>
+		<action name="synchFromWeixin"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doSynchFromWeixin">
+			<result name="success" type="dispatcher">
+				result4Weixin.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				result4Weixin.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="synch2Weixin"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doSynch2Weixin">
+			<result name="success" type="dispatcher">
+				result4Weixin.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				result4Weixin.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="testWeChat"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="testWeChat">
+		</action>
+		<action name="updateWeixinAgentId"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doUpdateWeixinAgentId">
+		</action>
+		<action name="updateWeixinSecret"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doUpdateWeixinSecret">
+		</action>
+		
+		<action name="excelImportUserAndDept"
+			class="cn.myapps.core.domain.action.DomainAction" method="excelImportUserAndDept">
+			<interceptor-ref name="params" />
+			<result name="success" type="OBPMdispatcher">
+				result.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				result.jsp
+			</result>
+		</action>
+		
+		<action name="excelExportUserAndDept"
+			class="cn.myapps.core.domain.action.DomainAction" method="excelExportUserAndDept">
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="updateSystemApplication"
+			class="cn.myapps.core.domain.action.DomainAction" method="updateSystemApplication">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="syn2Lanxin"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doSyn2Lanxin">
+			<result name="success" type="dispatcher">
+				result4Lanxin.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				result4Lanxin.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="synFromLanxin"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doSynFromLanxin">
+			<result name="success" type="dispatcher">
+				result4Lanxin.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				result4Lanxin.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="configureWeixin"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doConfigureWeixin">
+			<result name="success" type="dispatcher">
+				configureWeixin.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				configureWeixin.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="getWeinxinURL"
+			class="cn.myapps.core.domain.action.DomainAction"
+			method="doGetWeinxinURL">
+			<result name="success" type="dispatcher">
+				weixinurl.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				weixinurl.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+	</package>
+</struts>

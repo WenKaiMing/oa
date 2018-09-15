@@ -1,0 +1,63 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+<title>isNotNull(val)</title>
+<link type="text/css" rel="stylesheet" rev="stylesheet"
+	href="../style.css" media="all"><script type="text/javascript"
+	src="../scripts/shCore.js"></script> <script type="text/javascript"
+	src="../scripts/shBrushJScript.js"></script>
+<link type="text/css" rel="stylesheet"
+	href="../styles/shCoreDefault.css" />
+<script type="text/javascript">
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.all();
+</script>
+</head>
+<body id="split">
+<a title="" href="../index_iscript_help.jsp">返回</a>
+<div id="content">
+<div rel="jQuery">
+<h2>isNotNull(val)</h2>
+<h3>概述</h3>
+<div class="example">
+<p>判断值是否不为空,为数字时不为0，为字符串时长度大于0，为日期时不为null。</p>
+<div class="longdesc">
+<p></p>
+</div>
+</div>
+<div>
+<h3>返回值</h3>
+<h4><strong>boolean</strong></h4>
+</div>
+<div>
+<h3>参数</h3>
+<h4><strong>1、val</strong><span></span></h4>
+<p>要作判断的值</p>
+</div>
+<div class="example">
+<h3>示例</h3>
+<h4 xmlns="">描述:</h4>
+<p xmlns="">实现isNotNull(val)函数的应用，非空值校验(写在控件校验脚本中)</p>
+<!--  <h5 xmlns="">HTML 代码:</h5>-->
+<pre xmlns=""></pre>
+<h5 xmlns="">iScript 代码:</h5>
+<pre class="brush: js;" xmlns="">
+//表单保存时要校验某控件值不为空  (校验脚本)
+(function(){
+var value=getItemValue("编号")
+var flag = isNotNull(value);
+println("编号："+flag);
+var rtn="";
+if(!flag){
+  rtn="编号字段不能为空！";
+}
+return rtn;
+})()
+</pre>
+<!--<h5 xmlns="">结果:</h5>-->
+</div>
+</div>
+</body>
+</html>

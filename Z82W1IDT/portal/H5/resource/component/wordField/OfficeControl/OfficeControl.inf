@@ -1,0 +1,12 @@
+;千航网络NTKO Office文档控件
+;http://www.ntko.com
+;版权所有2003-2004,刘伶训
+;保留所有权利
+[Add.Code]
+OfficeControl.ocx=OfficeControl.ocx
+
+[OfficeControl.ocx]
+file=thiscab
+clsid={C9BC4DFF-4248-4a3c-8A49-63A7D317F404}
+RegisterServer=yes
+FileVersion=3,0,0,2

@@ -1,0 +1,22 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<package name="portal-resource" extends="myapps-default"
+		namespace="/portal/resource">
+	<action name="menuslist" class="cn.myapps.core.resource.action.ResourceAction"
+			method="getHtmlOfSubMenus">
+		<result name="success" type="dispatcher">
+				content.jsp
+		</result>
+		<interceptor-ref name="params" />
+	</action>
+	
+	<action name="getTotalRowByResourceid" class="cn.myapps.core.resource.action.ResourceAction"
+			method="getTotalRowByResourceid">
+		<interceptor-ref name="params" />
+	</action>
+	
+</package>
+
+</struts>

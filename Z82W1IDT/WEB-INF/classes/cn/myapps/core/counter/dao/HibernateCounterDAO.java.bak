@@ -1,0 +1,40 @@
+package cn.myapps.core.counter.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+
+import cn.myapps.base.dao.HibernateBaseDAO;
+import cn.myapps.core.counter.ejb.CounterVO;
+import cn.myapps.core.dynaform.view.ejb.Column;
+
+public class HibernateCounterDAO extends HibernateBaseDAO implements CounterDAO {
+	/**
+	 * @param voClassName The value object class name.
+	 */
+	public HibernateCounterDAO(String voClassName) {
+		super(voClassName);
+	}
+
+	/* (non-Javadoc)
+	 * @see cn.myapps.core.counter.dao.CounterDAO#removeByName(java.lang.String)
+	 */
+	public void removeByName(String name,String application) throws Exception {
+	
+        String hql = "delete from " + _voClazzName
+        + " vo where vo.name='" + name	+"' and vo.application.d = '" + application + "' ";
+      
+        execHQL(hql);
+//        session.createQuery(hql).setString("name", name).executeUpdate();
+	}
+
+	/* (non-Javadoc)
+	 * @see cn.myapps.core.counter.dao.CounterDAO#findByName(java.lang.String)
+	 */
+	public CounterVO findByName(String name,String application) throws Exception {
+		String hql = "FROM " + _voClazzName + " vo where vo.name='" + name
+		+"' and vo.application.d = '" + application + "' ";
+         return (CounterVO) getData(hql);
+
+	}
+}

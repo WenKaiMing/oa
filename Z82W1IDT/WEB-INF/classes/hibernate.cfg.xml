@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!--
+        <property name="hibernate.connection.driver_class">net.sourceforge.jtds.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:jtds:sqlserver://192.168.0.123:1433/test</property>
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.connection.password">helloworld</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+		-->
+		<!--
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql:///myapps</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">7758gm58</property>
+		-->
+		
+		<property name="hibernate.connection.SetBigStringTryClob">true</property>
+		
+		<!-- PO mapping -->
+		<mapping resource="cn/myapps/core/department/ejb/DepartmentVO.hbm.xml" />
+        <mapping resource="cn/myapps/core/role/ejb/RoleVO.hbm.xml" />
+        <mapping resource="cn/myapps/core/user/ejb/UserVO.hbm.xml" />
+        <mapping resource="cn/myapps/core/user/ejb/UserDefined.hbm.xml" />
+        
+        <mapping resource="cn/myapps/core/usersetup/ejb/UserSetupVO.hbm.xml" />
+        
+        <mapping resource="cn/myapps/core/deploy/application/ejb/ApplicationVO.hbm.xml" />
+        <mapping resource="cn/myapps/core/deploy/application/ejb/DomainApplicationSet.hbm.xml" />
+        <mapping resource="cn/myapps/core/deploy/module/ejb/ModuleVO.hbm.xml" />
+        <mapping resource="cn/myapps/core/dynaform/view/ejb/View.hbm.xml" /> 
+     <!--    <mapping resource="cn/myapps/core/dynaform/dts/exp/columnmapping/ejb/ColumnMapping.hbm.xml" /> 
+        <mapping resource="cn/myapps/core/dynaform/dts/exp/mappingconfig/ejb/MappingConfig.hbm.xml" />  -->
+        <mapping resource="cn/myapps/core/dynaform/printer/ejb/Printer.hbm.xml" />
+        <mapping resource="cn/myapps/core/dynaform/form/ejb/Form.hbm.xml" />   
+        <mapping resource="cn/myapps/core/workflow/storage/definition/ejb/BillDefiVO.hbm.xml" />
+        <mapping resource="cn/myapps/core/style/repository/ejb/StyleRepositoryVO.hbm.xml"  /> 
+        <mapping resource="cn/myapps/core/resource/ejb/ResourceVO.hbm.xml" />
+        <mapping resource="cn/myapps/core/macro/repository/ejb/RepositoryVO.hbm.xml" /> 
+		<mapping resource="cn/myapps/core/multilanguage/ejb/MultiLanguage.hbm.xml" /> 
+		<mapping resource="cn/myapps/core/task/ejb/Task.hbm.xml" /> 
+		<mapping resource="cn/myapps/core/dynaform/dts/datasource/ejb/DataSource.hbm.xml" />
+<!--         <mapping resource="cn/myapps/core/report/reportconfig/ejb/ReportConfig.hbm.xml" />
+		<mapping resource="cn/myapps/core/report/tablecolumn/ejb/TableColumn.hbm.xml" /> -->
+		<!-- <mapping resource="cn/myapps/core/report/query/ejb/Query.hbm.xml" />
+		<mapping resource="cn/myapps/core/report/query/ejb/Parameter.hbm.xml" /> -->
+        <mapping resource="cn/myapps/core/validate/repository/ejb/ValidateRepositoryVO.hbm.xml" />
+		<mapping resource="cn/myapps/core/permission/ejb/PermissionVO.hbm.xml" /> 
+		<mapping resource="cn/myapps/core/dynaform/dts/excelimport/config/ejb/IMPMappingConfigVO.hbm.xml" />
+		<!-- <mapping resource="cn/myapps/core/report/dataprepare/ejb/DataPrepare.hbm.xml" />
+		<mapping resource="cn/myapps/core/report/dataprepare/ejb/SqlSentence.hbm.xml" /> -->
+    	<mapping resource="cn/myapps/core/workflow/statelabel/ejb/StateLabel.hbm.xml" />
+    	
+    	<mapping resource="cn/myapps/core/workcalendar/calendar/ejb/CalendarVO.hbm.xml" />
+    	<mapping resource="cn/myapps/core/workcalendar/standard/ejb/StandardDayVO.hbm.xml" />
+    	<mapping resource="cn/myapps/core/workcalendar/special/ejb/SpecialDayVO.hbm.xml" />
+    	<mapping resource="cn/myapps/core/domain/ejb/DomainVO.hbm.xml" />
+    	<mapping resource="cn/myapps/core/superuser/ejb/SuperUserVO.hbm.xml" />
+    	
+    	<mapping resource="cn/myapps/core/fieldextends/ejb/FieldExtendsVO.hbm.xml" />
+    	
+    	
+    	<!-- homepage -->
+    	<mapping resource="cn/myapps/core/homepage/ejb/HomePage.hbm.xml" />
+    	<mapping resource="cn/myapps/core/homepage/ejb/Reminder.hbm.xml" />
+    	
+    	<mapping resource="cn/myapps/core/personalmessage/ejb/PersonalMessageVO.hbm.xml" />
+    	<mapping resource="cn/myapps/core/personalmessage/ejb/MessageBody.hbm.xml" />
+    	<mapping resource="cn/myapps/core/personalmessage/ejb/VoteOptionsVO.hbm.xml" />
+    	<mapping resource="cn/myapps/core/personalmessage/attachment/ejb/AttachmentVO.hbm.xml" />
+    	
+    	<mapping resource="cn/myapps/core/shortmessage/submission/ejb/SubmitMessageVO.hbm.xml" />
+    	<mapping resource="cn/myapps/core/shortmessage/received/ejb/ReceivedMessageVO.hbm.xml" />
+    	
+    	<!-- report -->
+    	<mapping resource="cn/myapps/core/report/crossreport/definition/ejb/CrossReportVO.hbm.xml" />
+    	<mapping resource="cn/myapps/core/user/ejb/UserDepartmentSet.hbm.xml" />
+    	<mapping resource="cn/myapps/core/user/ejb/UseRoleSet.hbm.xml" />
+    	
+    	<!-- signature -->
+    	<mapping resource="cn/myapps/core/dynaform/signature/ejb/Htmlhistory.hbm.xml"/>
+    	<mapping resource="cn/myapps/core/dynaform/signature/ejb/Htmlsignature.hbm.xml"/>
+    	
+    	<!-- resources -->
+    	<mapping resource="cn/myapps/core/privilege/res/ejb/ResVO.hbm.xml"/>
+        <mapping resource="cn/myapps/core/privilege/operation/ejb/OperationVO.hbm.xml"/>
+        
+        <!-- Links -->
+        <mapping resource="cn/myapps/core/links/ejb/LinkVO.hbm.xml"/>
+        
+         <!-- networkdisk -->
+        <mapping resource="cn/myapps/core/networkdisk/ejb/NetDisk.hbm.xml"/>
+        <mapping resource="cn/myapps/core/networkdisk/ejb/NetDiskFile.hbm.xml"/>
+        <mapping resource="cn/myapps/core/networkdisk/ejb/NetDiskPemission.hbm.xml"/>
+        <mapping resource="cn/myapps/core/networkdisk/ejb/NetDiskGroup.hbm.xml"/>
+        <mapping resource="cn/myapps/core/networkdisk/ejb/NetDiskFolder.hbm.xml"/>
+		
+		<!-- Email -->
+        <mapping resource="cn/myapps/core/email/folder/ejb/EmailFolder.hbm.xml"/>
+        <mapping resource="cn/myapps/core/email/email/ejb/Email.hbm.xml"/>
+        <mapping resource="cn/myapps/core/email/email/ejb/EmailUser.hbm.xml"/>
+        <mapping resource="cn/myapps/core/email/email/ejb/EmailBody.hbm.xml"/>
+        <mapping resource="cn/myapps/core/email/attachment/ejb/Attachment.hbm.xml"/>
+        
+        <!-- Log -->
+        <mapping resource="cn/myapps/core/logger/ejb/LogVO.hbm.xml"/>
+        
+        <!-- SummaryCfg -->
+        <mapping resource="cn/myapps/core/dynaform/summary/ejb/SummaryCfgVO.hbm.xml"/>
+        <!-- DataMapCfg -->
+        <mapping resource="cn/myapps/core/datamap/definition/ejb/DataMapCfgVO.hbm.xml"/>
+        
+        <mapping resource="cn/myapps/core/widget/ejb/PageWidget.hbm.xml"/>
+		
+		<!-- obpm_versions -->
+		<mapping resource="cn/myapps/core/versions/ejb/VersionsVO.hbm.xml"/>
+        
+        <!-- usergroup -->
+        <mapping resource="cn/myapps/core/usergroup/ejb/UserGroup.hbm.xml"/>
+        <mapping resource="cn/myapps/core/usergroup/ejb/UserGroupSet.hbm.xml"/>
+        
+        <!-- scheduler -->
+        <mapping resource="cn/myapps/core/scheduler/ejb/TriggerVO.hbm.xml"/>
+        
+    </session-factory>
+</hibernate-configuration>

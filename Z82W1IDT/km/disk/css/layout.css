@@ -1,0 +1,48 @@
+@charset "utf-8";
+/**common-start**/
+a{text-decoration: none;color:#666;}
+*{font-size: 12px;}
+html,body {background-color: #FFFFFF;}
+body,div,html,form,ul,ol,li,dl,dt,dd,p {margin: 0px;padding: 0px;}
+table{border-collapse:collapse;}
+li {list-style-type: none;}
+img {border: none;}
+body,input,textarea,select {font-family: Arial, Vendera, Tahoma;}
+/**common-end**/
+
+/** 个性化定义 **/
+body { font-family: Arial, Helvetica, sans-serif; }
+/* @end */
+*{margin:0px;padding:0px;font-size:12px;}
+a{text-decoration:none;cursor:pointer;}
+ul li{list-style:none;}
+.no_border_top{border-top:none!important;}
+.container{width:100%;margin:3px auto;} 
+img{border:none;vertical-align:middle;}
+.clear{width:0;height:0;font-size:0;line-height:0;float:none!important;clear:both!important;}
+.km_header{height:85px;background:url(../images/km2_headerbg.gif) repeat-x;}
+.logo{float:left;}
+.act {width:345px;height:35px;line-height:35px;float:right;margin:20px 23px 0 0 ;_margin-right:11px;}
+.act_left,.act_center,.act_right{float:left;}
+.act_left{width:15px;height:35px;background:url(../images/act_left.gif) no-repeat;}
+.act_center{width:314px;height:35px;background:url(../images/act_center.gif) repeat-x;}
+.act_right{width:15px;height:35px;background:url(../images/act_right.gif) no-repeat;}
+.search{width:170px;height:25px;float:left;margin-top:5px;}
+.search div{float:left;height:25px;line-height:25px;}
+.search_left{width:10px;background:url(../images/search_left.gif) no-repeat;}
+.search_center{width:150px;background:url(../images/search_center.gif) repeat-x;}
+.search_right{width:10px;background:url(../images/search_right.gif) no-repeat;}
+.ipt_search{border:none;width:146px;height:20px;line-height:20px;margin-top:3px;background-color:transparent;}
+.action{float:right;width:280px;}
+.action a{color:#fff;text-decoration:none;}
+.dbank{padding:0 10px 0 16px;background:url(../images/dbank_icon.gif) 0px -1px no-repeat;border-right:1px solid #476994;}
+.setting{padding:0 10px 0 20px;background:url(../images/setting_icon.gif) 0px -2px no-repeat;border-right:1px solid #476994;}
+.help{padding-left:20px;background:url(../images/help_icon.gif) 0px -1px no-repeat;}
+.diskFrame_box{width:100%;}
+
+
+
+
+
+
+

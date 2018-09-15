@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">  
+<properties>  
+	<comment>IK Analyzer 扩展配置</comment>
+	<!--用户可以在这里配置自己的扩展字典 -->
+	<entry key="ext_dict">
+		/extdict/广州市城市信息精选.txt;
+		/extdict/全国餐饮企业名录.txt;
+		/extdict/四级行政区地名词库.txt;
+		/extdict/新三板挂牌企业词库.txt;
+		/extdict/最详细的全国地名大全.txt;
+		/extdict/ext.dic;
+		/extdict/ext.txt;
+		/extdict/httpcws_dict.txt;
+	</entry> 
+	
+	<!--用户可以在这里配置自己的扩展停止词字典-->
+	<entry key="ext_stopwords">
+		/extdict/stopword.dic;
+		/extdict/stopword-chinese.dic;
+	</entry> 
+	
+</properties>

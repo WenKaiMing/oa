@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cn.myapps.core.datamap.definition.ejb.DataMapCfgVO"
+		table="T_DATAMAPCFG"
+		dynamic-update="true">
+
+		<id name="id" column="ID" type="java.lang.String">
+			<generator class="assigned">
+				<!--
+					To add non XDoclet generator parameters, create a file named 
+					hibernate-generator-params-DepartmentVO.xml 
+					containing the additional parameters and place it in your merge dir. 
+				-->
+			</generator>
+		</id>
+		
+		
+		<property name="name" type="java.lang.String" 
+			update="true" insert="true"
+			column="NAME"/>
+			
+		<property
+            name="relatedForm"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="RELATEDFORM"
+        />
+        
+        <property
+            name="clueField"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="CLUEFIELD"
+        />
+        
+        <property
+            name="clueField2"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="CLUEFIELD2"
+        />
+		
+		<property
+            name="summaryField"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="SUMMARYFIELD"
+        />	
+        
+        <property
+            name="relatedFlow"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="RELATEDFLOW"
+        />
+
+		<property name="stateLableColorMapping" type="text"
+			insert="true" update="true"
+			column="STATELABELCOLORMAPPING" />
+			
+		<property
+            name="showFlowProgressbar"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+            column="SHOWFLOWPROGRESSBAR"
+        />	
+			
+		<many-to-one
+			name="module"
+			class="cn.myapps.core.deploy.module.ejb.ModuleVO"
+			cascade="none"
+			outer-join="auto"
+			update="true"
+			insert="true"
+			column="MODULE"
+			/>
+	
+	
+	      <property
+            name="applicationid"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="APPLICATIONID"
+        />
+        
+	</class>
+
+</hibernate-mapping>

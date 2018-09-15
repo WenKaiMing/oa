@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+ <globalConfiguration>
+  <parameter name="adminPassword" value="admin"/>
+  <!-- <parameter name="attachments.Directory" value="C:\attachments"/> -->
+  <parameter name="attachments.implementation" value="org.apache.axis.attachments.AttachmentsImpl"/>
+  <parameter name="sendXsiTypes" value="true"/>
+  <parameter name="sendMultiRefs" value="true"/>
+  <parameter name="sendXMLDeclaration" value="true"/>
+  <parameter name="axis.sendMinimizedElements" value="true"/>
+  
+  <requestFlow>
+   <handler type="java:org.apache.axis.handlers.JWSHandler">
+    <parameter name="scope" value="session"/>
+   </handler>
+   <handler type="java:org.apache.axis.handlers.JWSHandler">
+    <parameter name="scope" value="request"/>
+    <parameter name="extension" value=".jwr"/>
+   </handler>
+  </requestFlow>
+ </globalConfiguration>
+ 
+ <handler name="LocalResponder" type="java:org.apache.axis.transport.local.LocalResponder"/>
+ <handler name="Authenticate" type="java:org.apache.axis.handlers.SimpleAuthenticationHandler"/>
+ <handler name="URLMapper" type="java:org.apache.axis.handlers.http.URLMapper"/>
+ <handler name="Authentication" type="java:cn.myapps.webservice.handler.AuthenticationHandler"/>
+ 
+ <service name="Version" provider="java:RPC">
+  <parameter name="allowedMethods" value="getVersion"/>
+  <parameter name="className" value="org.apache.axis.Version"/>
+ </service>
+ 
+ <!-- ************************* ApplicationService *********************************** -->
+ <service name="ApplicationService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="cn.myapps.webservice.ApplicationService"/>
+  <namespace>http://client.webservice.myapps.cn</namespace>
+  <beanMapping qname="myns:SimpleApplication" xmlns:myns="urn:model.webservice.myapps.cn" 
+  	languageSpecificType="java:cn.myapps.webservice.model.SimpleApplication"/>
+  
+  <typeMapping qname="myns:ApplicationServiceFault" xmlns:myns="urn:fault.webservice.myapps.cn"   
+  	type="java:cn.myapps.webservice.fault.ApplicationServiceFault"   
+    serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"   
+    deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"   
+    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>   
+ </service>
+ <!-- ************************* DomainService *********************************** -->
+ <service name="DomainService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="cn.myapps.webservice.DomainService"/>
+  <namespace>http://client.webservice.myapps.cn</namespace>
+  
+  <beanMapping qname="myns:SimpleDomain" xmlns:myns="urn:model.webservice.myapps.cn" 
+  	languageSpecificType="java:cn.myapps.webservice.model.SimpleDomain"/>
+  
+  <typeMapping qname="myns:DomainServiceFault" xmlns:myns="urn:fault.webservice.myapps.cn"   
+  	type="java:cn.myapps.webservice.fault.DomainServiceFault"   
+    serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"   
+    deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"   
+    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>   
+ </service>
+ <!-- ************************* UserService *********************************** -->
+ <service name="UserService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="cn.myapps.webservice.UserService"/>
+  <namespace>http://client.webservice.myapps.cn</namespace>
+  
+  <beanMapping qname="myns:SimpleUser" xmlns:myns="urn:model.webservice.myapps.cn" 
+  	languageSpecificType="java:cn.myapps.webservice.model.SimpleUser"/>
+  	
+  <beanMapping qname="myns:SimpleAdmin" xmlns:myns="urn:model.webservice.myapps.cn" 
+  	languageSpecificType="java:cn.myapps.webservice.model.SimpleAdmin"/>
+  
+  <typeMapping qname="myns:UserServiceFault" xmlns:myns="urn:fault.webservice.myapps.cn"   
+  	type="java:cn.myapps.webservice.fault.UserServiceFault"   
+    serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"   
+    deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"   
+    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>  
+ </service>
+ <!-- ************************* RoleService *********************************** -->
+ <service name="RoleService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="cn.myapps.webservice.RoleService"/>
+  <namespace>http://client.webservice.myapps.cn</namespace>
+  
+  <beanMapping qname="myns:SimpleRole" xmlns:myns="urn:model.webservice.myapps.cn" 
+  	languageSpecificType="java:cn.myapps.webservice.model.SimpleRole"/>
+  
+  <typeMapping qname="myns:RoleServiceFault" xmlns:myns="urn:fault.webservice.myapps.cn"   
+  	type="java:cn.myapps.webservice.fault.RoleServiceFault"   
+    serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"   
+    deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"   
+    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>  
+ </service>
+  <!-- ************************* DepartmentService *********************************** -->
+ <service name="DepartmentService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="cn.myapps.webservice.DepartmentService"/>
+  <namespace>http://client.webservice.myapps.cn</namespace>
+  
+  <beanMapping qname="myns:SimpleDepartment" xmlns:myns="urn:model.webservice.myapps.cn" 
+  	languageSpecificType="java:cn.myapps.webservice.model.SimpleDepartment"/>
+  
+  <typeMapping qname="myns:DepartmentServiceFault" xmlns:myns="urn:fault.webservice.myapps.cn"   
+  	type="java:cn.myapps.webservice.fault.DepartmentServiceFault"   
+    serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"   
+    deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"   
+    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>  
+ </service>
+ <!-- ************************* DocumentService *********************************** -->
+ <service name="DocumentService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="cn.myapps.webservice.DocumentService"/>
+  <namespace>http://client.webservice.myapps.cn</namespace>
+  
+  <beanMapping qname="myns:SimpleDocument" xmlns:myns="urn:model.webservice.myapps.cn" 
+  	languageSpecificType="java:cn.myapps.webservice.model.SimpleDocument"/>
+  
+  <typeMapping qname="myns:DocumentServiceFault" xmlns:myns="urn:fault.webservice.myapps.cn"   
+  	type="java:cn.myapps.webservice.fault.DocumentServiceFault"  
+    serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"   
+    deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"   
+    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>  
+ </service>
+  <!-- ************************* SecurityService *********************************** -->
+ <service name="SecurityService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="cn.myapps.webservice.SecurityService"/>
+  <namespace>http://client.webservice.myapps.cn</namespace>
+  
+  <beanMapping qname="myns:SimpleUser" xmlns:myns="urn:model.webservice.myapps.cn" 
+  	languageSpecificType="java:cn.myapps.webservice.model.SimpleUser"/>
+  
+  <typeMapping qname="myns:SecurityServiceFault" xmlns:myns="urn:fault.webservice.myapps.cn"   
+  	type="java:cn.myapps.webservice.fault.SecurityServiceFault"  
+    serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"   
+    deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"   
+    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>  
+ </service>
+  <!-- ************************* WorkService *********************************** -->
+ <service name="WorkService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="cn.myapps.webservice.WorkService"/>
+  <namespace>http://client.webservice.myapps.cn</namespace>
+  
+  <beanMapping qname="myns:SimpleWork" xmlns:myns="urn:model.webservice.myapps.cn" 
+  	languageSpecificType="java:cn.myapps.webservice.model.SimpleWork"/>
+  	
+  <beanMapping qname="myns:SimpleCirculator" xmlns:myns="urn:model.webservice.myapps.cn" 
+  	languageSpecificType="java:cn.myapps.webservice.model.SimpleCirculator"/>
+  
+  <typeMapping qname="myns:WorkServiceFault" xmlns:myns="urn:fault.webservice.myapps.cn"   
+  	type="java:cn.myapps.webservice.fault.WorkServiceFault"  
+    serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"   
+    deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"   
+    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>  
+ </service>
+    <!-- ************************* FlowHistoryService *********************************** -->
+ <service name="FlowHistoryService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="cn.myapps.webservice.FlowHistoryService"/>
+  <namespace>http://client.webservice.myapps.cn</namespace>
+  
+  <beanMapping qname="myns:SimpleFlowHistory" xmlns:myns="urn:model.webservice.myapps.cn" 
+  	languageSpecificType="java:cn.myapps.webservice.model.SimpleFlowHistory"/>
+  	
+  <beanMapping qname="myns:SimpleRelationHIS" xmlns:myns="urn:model.webservice.myapps.cn" 
+  	languageSpecificType="java:cn.myapps.webservice.model.SimpleRelationHIS"/>
+  	
+  <beanMapping qname="myns:SimpleActorHIS" xmlns:myns="urn:model.webservice.myapps.cn" 
+  	languageSpecificType="java:cn.myapps.webservice.model.SimpleActorHIS"/>
+  	
+  <typeMapping qname="myns:FlowHistoryServiceFault" xmlns:myns="urn:fault.webservice.myapps.cn"   
+  	type="java:cn.myapps.webservice.fault.FlowHistoryServiceFault"  
+    serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"   
+    deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"   
+    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>  
+ </service>
+   <!-- ************************* WorkFlowProcessService *********************************** -->
+ <service name="WorkFlowProcessService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="cn.myapps.webservice.WorkFlowProcessService"/>
+  <namespace>http://client.webservice.myapps.cn</namespace>
+  
+  <typeMapping qname="myns:WorkFlowProcessServiceFault" xmlns:myns="urn:fault.webservice.myapps.cn"   
+  	type="java:cn.myapps.webservice.fault.WorkFlowProcessServiceFault"  
+    serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"   
+    deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"   
+    encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>  
+ </service>
+ <!-- ************************* AdminSerivce *********************************** -->
+ <service name="AdminService" provider="java:MSG">
+  <parameter name="allowedMethods" value="AdminService"/>
+  <parameter name="enableRemoteAdmin" value="false"/>
+  <parameter name="className" value="org.apache.axis.utils.Admin"/>
+  <namespace>http://xml.apache.org/axis/wsdd/</namespace>
+ </service>
+ <!-- ************************* PersonnelMessageService *********************************** -->
+ <service name="PersonalMessageService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="cn.myapps.webservice.PersonalMessageService"/>
+  <namespace>http://client.webservice.myapps.cn</namespace>
+ </service> 
+ 
+ <transport name="local">
+  <responseFlow>
+   <handler type="LocalResponder"/>
+  </responseFlow>
+ </transport>
+ 
+ <transport name="http">
+  <requestFlow>
+   <handler type="URLMapper"/>
+   <handler type="java:org.apache.axis.handlers.http.HTTPAuthHandler"/>
+  </requestFlow>
+ </transport>
+</deployment>

@@ -1,0 +1,1 @@
+<script type='text/javascript' src='<s:url value='/portal/phone/resource/common/main_form_view.min.js?v=2018041811301101723'/>'></script>

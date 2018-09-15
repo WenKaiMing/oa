@@ -1,0 +1,21 @@
+.button_searchdel2{
+	font-size: 12px; 
+	background: url(../images/userselect.gif); 
+	border: 0px; 
+	width: 16px; 
+	height: 17px;
+}
+.button_searchdel3{
+	font-size: 12px; 
+	background: url(../images/dept.gif); 
+	border: 0px; 
+	width: 16px; 
+	height: 17px;
+}
+.button_searchdel4{
+	font-size: 12px; 
+	background: url(../images/camera.png); 
+	border: 0px; 
+	width: 16px; 
+	height: 17px;
+}

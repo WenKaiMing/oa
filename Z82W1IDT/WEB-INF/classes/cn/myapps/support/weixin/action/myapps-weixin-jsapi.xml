@@ -1,0 +1,80 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<include file="webwork-default.xml" />
+	<package name="weixin-jsapi" extends="myapps-default,json-default"
+		namespace="/portal/weixin/jsapi">
+		
+		
+		<action name="getJsapiConfig"
+			class="cn.myapps.support.weixin.action.WeixinServiceAction" method="getJsapiConfig">
+			<result type="json">   
+                <!-- 这里指定将被Struts2序列化的属性，该属性在action中必须有对应的getter方法 -->
+                <!-- 默认将会序列所有有返回值的getter方法的值，而无论该方法是否有对应属性 -->
+                <param name="root">dataMap</param>
+                <!-- 指定是否排除序列化空的属性 -->
+                <param name="excludeNullProperties">true</param>
+                <!-- 这里指定将序列化dataMap中的那些属性 
+                <param name="includeProperties">
+                </param>
+               	-->
+                <!-- 这里指定将要从dataMap中排除那些属性，这些排除的属性将不被序列化，一般不与上边的参数配置同时出现 -->
+                <!--  
+                <param name="excludeProperties">
+                    data.sortId,data.applicationid,data.version,data.lazyLoad
+                </param>
+                 -->   
+           </result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="upload"
+			class="cn.myapps.support.weixin.action.WeixinServiceAction" method="doUpload">
+			<result type="json">   
+                <!-- 这里指定将被Struts2序列化的属性，该属性在action中必须有对应的getter方法 -->
+                <!-- 默认将会序列所有有返回值的getter方法的值，而无论该方法是否有对应属性 -->
+                <param name="root">dataMap</param>
+                <!-- 指定是否排除序列化空的属性 -->
+                <param name="excludeNullProperties">true</param>
+                <!-- 这里指定将序列化dataMap中的那些属性 
+                <param name="includeProperties">
+                </param>
+               	-->
+                <!-- 这里指定将要从dataMap中排除那些属性，这些排除的属性将不被序列化，一般不与上边的参数配置同时出现 -->
+                <!--  
+                <param name="excludeProperties">
+                    data.sortId,data.applicationid,data.version,data.lazyLoad
+                </param>
+                 -->   
+           </result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="PMupload"
+			class="cn.myapps.support.weixin.action.WeixinServiceAction" method="doPMUpload">
+			<result type="json">   
+                <!-- 这里指定将被Struts2序列化的属性，该属性在action中必须有对应的getter方法 -->
+                <!-- 默认将会序列所有有返回值的getter方法的值，而无论该方法是否有对应属性 -->
+                <param name="root">dataMap</param>
+                <!-- 指定是否排除序列化空的属性 -->
+                <param name="excludeNullProperties">true</param>
+                <!-- 这里指定将序列化dataMap中的那些属性 
+                <param name="includeProperties">
+                </param>
+               	-->
+                <!-- 这里指定将要从dataMap中排除那些属性，这些排除的属性将不被序列化，一般不与上边的参数配置同时出现 -->
+                <!--  
+                <param name="excludeProperties">
+                    data.sortId,data.applicationid,data.version,data.lazyLoad
+                </param>
+                 -->   
+           </result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+	</package>
+</struts>

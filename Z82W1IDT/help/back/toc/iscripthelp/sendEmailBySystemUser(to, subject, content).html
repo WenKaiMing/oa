@@ -1,0 +1,66 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+<title>sendMail(from, to, subject, body, host, user, password,
+bbc, validate)</title>
+<link type="text/css" rel="stylesheet" rev="stylesheet"
+	href="../style.css" media="all"><script type="text/javascript"
+	src="../scripts/shCore.js"></script> <script type="text/javascript"
+	src="../scripts/shBrushJScript.js"></script>
+<link type="text/css" rel="stylesheet"
+	href="../styles/shCoreDefault.css" />
+<script type="text/javascript">
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.all();
+</script>
+</head>
+<body id="split">
+<a title="" href="../index_iscript_help.jsp">返回</a>
+<div id="content">
+<div rel="jQuery">
+<h2>sendEmailBySystemUser(to, subject, content)</h2>
+<h3>概述</h3>
+<div class="example">
+<p>发送邮件给指定用户。</p>
+<div class="longdesc">
+<p></p>
+</div>
+</div>
+<div>
+<h3>返回值</h3>
+<h4><strong>无</strong></h4>
+</div>
+<div>
+<h3>参数</h3>
+<h4><strong>1、to</strong><span>String</span></h4>
+<p>接收人地址</p>
+<h4><strong>2、subject</strong><span>String</span></h4>
+<p>主题</p>
+<h4><strong>4、content</strong><span>String</span></h4>
+<p>内容</p>
+</div>
+<div class="example">
+<h3>示例</h3>
+<h4 xmlns="">描述:</h4>
+<p xmlns="">实现sendEmailBySystemUser(to, subject,
+content)函数的应用，以系统配置的用户发送邮件</p>
+<!--  <h5 xmlns="">HTML 代码:</h5>-->
+<pre xmlns=""></pre>
+<h5 xmlns="">iScript 代码:</h5>
+<pre class="brush: js;" xmlns="">
+//在平台系统设置中配置好了邮件，想点表单某操作时给表单中的某控件值对应的邮箱发送邮件，可在操作按钮的动作执行前写脚本
+(function(){
+var to=getItemValueAsString("接收人地址");  
+var subject=getItemValueAsString("主题");
+var content=getItemValueAsString("邮件内容");
+sendEmailBySystemUser(to,subject,content);
+})()
+</pre>
+<!--<h5 xmlns="">结果:</h5>-->
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="Index" extends="myapps-default,json-default"
+		namespace="/km/index">
+		
+		<action name="rebuild"
+			class="cn.myapps.km.index.action.IndexAction" method="rebuildIndex">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+	</package>
+</struts>
+

@@ -1,0 +1,284 @@
+.con_right { margin: 15px; }
+
+/*----------OA---------*/
+.bgcolor-white {
+    background-color: #fff;
+}
+.oa_right .searchDiv .nav li a { font-size: 14px; padding: 6px 12px; border: solid 1px #cccccc; color: #606060 }
+/*.oa_right .searchDiv .nav li a:hover { background: #5cb85c; color: #FFFFFF }*/
+.oa_right .searchDiv fieldset { border-radius: 4px; border: solid 1px #d9d9d9 }
+.oa_right .searchDiv legend { border: none; width: 80px; margin-left: 10px; margin-bottom: 0px; font-size: 16px; color: #33333f; padding-left: 15px; }
+.oa_right .searchDiv fieldset .radio { color: #494953; margin-left: 30px }
+.oa_right .searchDiv fieldset textarea { border: none; box-shadow: none; resize: none }
+.oa_right .searchDiv fieldset .btn-pen { background: url(../images/btn_pen.png) no-repeat; width: 90px; height: 22px; padding: 0px; border: none; margin: 10px }
+.oa_right .searchDiv fieldset .btn-reset { background: url(../images/btn_reset.png) no-repeat; width: 67px; height: 22px; padding: 0px; border: none; margin: 10px; display: none }
+.oa_right .searchDiv .btn { /*padding: 6px 30px; background: #5cb85c; color: #FFFFFF;*/ }
+.oa_right .searchDiv .btn:hover {/* background-color: #5A9A5A; color: #FFFFFF; */}
+.oa_right #flowprocessDiv { display: none; margin:10px 0px; }
+.oa_right #div_button_place {margin-top: 10px;}
+.formTable {/*  background-color: #FFFFFF;  */padding: 15px }
+.formTable table { /* width: 100%; */margin:0 auto; }
+.formTable .title { margin: 10px; color: #a7a7a7; }
+.formTable td { padding: 10px; }
+.formTable td.listDataThFirstTd {
+    width: 40px;
+}
+.formTable #table_container .listDataTable { width: 100%; margin:0 auto; }
+.formTable #table_container .listDataTable td { min-width: 75px; border: 1px solid #ddd;}
+.formTable .basictab table {width: auto;margin: 0px;}
+.formTable .basictab table td { padding: 0px; vertical-align: bottom; }
+.formTable .listDataTh a, .dataTable .listDataTh { font-size: 14px; color: #323232; background-color: #efefef }
+.formTable .listDataTr a, .dataTable .listDataTr { font-size: 14px; color: #767676; }
+.formTable .listDataTr_over a, .dataTable .listDataTr_over { font-size: 14px; background: #f4f4f4;color: #171717; }
+
+.formTable label.checkbox-inline, .formTable label.radio-inline {width:auto;}
+
+.formTable .tabcontent .form-control {
+	width: auto;
+	display: inline;
+}
+
+.formTable .tab-collapse td { padding: 0px; }
+
+.formTable .tab-collapse td.white {
+	color: #ffffff;
+}
+
+/*----------form-page---------*/
+
+#form-content {
+	
+}
+
+.activity-box {
+    background-color: #f4f8fb;
+    background:repeat-x  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA2CAYAAAAGavOcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZSURBVChTY/gPBCOTAAI+EMEDIjiBmIEdAN/3x2MfLOF1AAAAAElFTkSuQmCC");
+   
+    padding: 10px 15px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+}
+
+/*----------component---------*/
+
+.component-input,.component-select {
+	display: inline-block;
+	width: auto;
+	line-height: 2;
+}
+
+.component-input-readonly[disabled],
+.component-input-readonly[readonly],
+.component-input-readonly {
+	/*background: none;
+    border: none;
+    padding-left: 0px;
+    box-shadow: none;*/
+}
+
+.basictab{/*
+	margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;*/
+}
+.basictab div a{
+    background-color: #f6f7fb;
+    border-radius:4px 4px 0 0;
+    margin: 4px 4px 0 4px;
+    border-top:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-left:1px solid #ddd;
+	padding:6px 8px;
+	display:block;
+	color: #555;
+	float: left;
+}
+.basictab div a.current{
+    padding-top: 12px;
+	color: #FFFFFF;
+    background-color: #337ab7;
+    border-top:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-left:1px solid #ddd;
+    border-bottom-color: transparent;
+    border-radius: 4px 4px 0 0;
+}
+
+.upload-box div.upload-pic-box {
+	display: inline-table;
+	position: relative;
+	line-height: 0px;
+}
+
+.upload-box div.upbtns-panel {
+    position: absolute;
+    height: 0;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#80000000', endColorstr='#80000000')\0;
+    background: rgba( 0, 0, 0, 0.5 );
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 300;
+}
+
+.upload-box div.upbtns-panel span {
+    width: 24px;
+    height: 24px;
+    display: inline;
+    float: right;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(../component/upload/images/icons.png) no-repeat;
+    margin: 5px 1px 1px;
+    cursor: pointer;
+}
+
+.upload-box div.upbtns-panel span.upbtn-edit {
+    background-position: -72px -24px;
+}
+.upload-box div.upbtns-panel span.upbtn-edit:hover {
+    background-position: -72px 0;
+}
+
+.upload-box div.upbtns-panel span.upbtn-cancel {
+    background-position: -48px -24px;
+}
+.upload-box div.upbtns-panel span.upbtn-cancel:hover {
+    background-position: -48px 0;
+}
+
+.commonOpinions {
+	position: absolute;
+    background: #fff;
+	color:#000;
+	width: 180px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    max-height: 350px;
+    overflow-y: auto;
+    min-width: 190px;
+    z-index: 2;
+    margin-left: 12px;
+}
+
+.commonOpinions ul {
+	margin:0;
+	padding: 0;
+}
+
+.commonOpinions li {
+	margin:0 16px;
+	height: 26px;
+    line-height: 26px;
+    list-style-type: none;
+    cursor:pointer;
+}
+
+.commonOpinions li i{
+	display: none;
+	float: right;
+	color: #1984DF;
+	margin-top: 7px;
+}
+
+.commonOpinions li .editSub{
+	float: right;
+	color: #1c84e2;
+	margin-left: 10px;
+}
+
+.commonOpinions li .del{
+	float: right;
+	color: #ef6051;
+}
+
+.commonOpinions .edit {
+    width: 157px;
+    height: 60px;
+    line-height: 30px;
+    margin: 3px 10px;
+    border-radius: 3px;
+}
+
+.commonOpinions .edit input{
+	border: 1px solid #BABABA;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 3px;
+    width: 157px;
+}
+
+.commonOpinions .edit span{
+	float: right;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.commonOpinions .save{
+	color:#76C79C;
+}
+
+.commonOpinions .cancel{
+    color: #BABABA;
+}
+
+.commonOpinions .addBtn {
+    border: 1px solid #0074de;
+    color: #1c84e2;
+    width: 157px;
+    height: 30px;
+    line-height: 30px;
+    margin: 3px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.commonOpinions .addBtn i{
+	margin: 5px 0px 0px 30px;
+    background: url(./../images/add_edit.png);
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+.commonOpinions .addBtn span{
+	margin-left: 5px;
+    float: left;
+}
+
+.commonOpinions .editBtn {
+    width: 157px;
+    height: 30px;
+    line-height: 30px;
+    margin: 3px 10px;
+    border-radius: 3px;
+    border: 1px solid #BABABA;
+    color: #BABABA;
+    cursor: pointer;
+}
+
+.commonOpinions .editBtn i{
+	margin: 5px 0px 0px 30px;
+    background: url(./../images/add_edit.png) -20px;
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+.commonOpinions .editBtn span{
+	margin-left: 5px;
+    float: left;
+}
+
+#flow-panel .flow-state-panel{
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+.flow-state-panel .panel-body {
+	display: flex;
+}

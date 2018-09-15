@@ -1,0 +1,91 @@
+@charset "utf-8";
+/*
+ * artDialog skin
+ * http://code.google.com/p/artdialog/
+ * (c) 2009-2011 TangBin, http://www.planeArt.cn
+ *
+ * This is licensed under the GNU LGPL, version 2.1 or later.
+ * For details, see: http://creativecommons.org/licenses/LGPL/2.1/
+ */
+ 
+.aui_outer{
+	padding:5px;
+
+}
+.aui_border{
+	border-radius: 5px; 
+ 	background-color: #fff;
+ 	padding-bottom:5px;
+}
+.aui_header {
+	background: #f8f8f8;
+	border-radius: 5px 5px 0px 0px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 15px;
+} 
+.aui_header .aui_title {
+	font-size: 14px;
+	font-weight: bold;
+}
+.aui_header .aui_close {
+	padding: 0px 15px;
+	float: right;
+	line-height: 40px;
+}
+.aui_main{
+	position: relative;
+}
+.aui_buttons {
+	text-align: center;
+}
+.aui_buttons .aui_state_highlight {
+	color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.aui_buttons button{
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 0px 5px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.aui_content.aui_state_full {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0!important;
+    height: 100%;
+}
+.aui_se{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	height: 5px;
+    width: 10px;
+}
+.aui_header .aui_icon .aui_iconBg{
+	float:left;
+	width: 30px;
+    height: 40px;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+}

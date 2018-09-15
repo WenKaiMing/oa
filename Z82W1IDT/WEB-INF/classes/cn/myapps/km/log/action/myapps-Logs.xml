@@ -1,0 +1,32 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<include file="webwork-default.xml" />
+	<package name="km-logs" extends="myapps-default"
+		namespace="/km/logs">
+	 
+	<action name="save"  class="cn.myapps.km.log.action.LogsAction" method="doSave">
+			
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+	</action>
+
+	<action name="queryBy"  class="cn.myapps.km.log.action.LogsAction" method="doQuery">
+			<result name="success" type="dispatcher">
+				list_personal.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+	</action>
+	
+	<action name="query"  class="cn.myapps.km.log.action.LogsAction" method="doManagerQuery">
+			<result name="success" type="dispatcher">
+				list_logs.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+	</action>
+	
+	</package>
+</struts>

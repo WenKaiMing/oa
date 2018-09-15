@@ -1,0 +1,52 @@
+.editmain_left
+{   
+    /*margin-right:10px;
+    margin-left:10px;*/
+    float:left;
+    width:150px;
+    height:100%;
+    overflow:auto;
+}
+.funbutton
+{
+    border:1px solid #a5b6d2;
+    background-color:#e9f7ff;
+    margin-bottom:5px;
+}
+ul
+{
+    margin-left:3px;
+    margin-right:3px;
+    margin-top:4px;
+    list-style: none;
+    padding:auto;
+}
+li
+{
+    background-image:url('images/edit_button_background.jpg');
+    background-repeat:repeat-x;
+    width:100%;
+    line-height:23px;
+    border:1px solid #a5b6d2;
+    margin-top:2px;
+    text-decoration:none;
+    text-align:center;
+    vertical-align:middle;
+    color:#343333;
+    cursor: pointer;
+}
+.listtile
+{
+    color:#f00;
+    border:none;
+    background:none;
+    text-align:left;
+}
+select
+{
+    border: 1px solid #a5b6d2;
+    /*width: 118px;*/
+    width:100%;
+    text-align: left;
+    color:#343333;
+}

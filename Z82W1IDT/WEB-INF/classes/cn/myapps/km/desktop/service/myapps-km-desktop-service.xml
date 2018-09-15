@@ -1,0 +1,61 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="km-desktop" extends="myapps-default"
+		namespace="/km/desktop/service">
+		
+		<action name="getDiskInfo"
+			class="cn.myapps.km.desktop.service.KmServicesAction"
+			method="doGetDiskInfo">
+		</action>
+		
+		<action name="login"
+			class="cn.myapps.km.desktop.service.KmServicesAction"
+			method="doLogin">
+		</action>
+		
+		<action name="saveFile"
+			class="cn.myapps.km.desktop.service.KmServicesAction"
+			method="doSaveFile">
+		</action>
+		
+		<action name="saveDir"
+			class="cn.myapps.km.desktop.service.KmServicesAction"
+			method="doSaveDir">
+		</action>
+		
+		<action name="deleteFile"
+			class="cn.myapps.km.desktop.service.KmServicesAction"
+			method="doDeleteFile">
+		</action>
+		
+		<action name="renameFile"
+			class="cn.myapps.km.desktop.service.KmServicesAction"
+			method="doRenameFile">
+		</action>
+		
+		<action name="download"
+			class="cn.myapps.km.desktop.service.KmServicesAction"
+			method="doDownload">
+		</action>
+		<action name="querySynchronizeActivitys"
+			class="cn.myapps.km.desktop.service.KmServicesAction"
+			method="doQuerySynchronizeTasks">
+		</action>
+		
+		<action name="getRelativePath"
+			class="cn.myapps.km.desktop.service.KmServicesAction"
+			method="doGetRelativePath">
+		</action>
+		
+		<action name="isKmUser"
+			class="cn.myapps.km.desktop.service.KmServicesAction"
+			method="isKmUser">
+		</action>
+		
+		
+		
+	</package>
+
+</struts>

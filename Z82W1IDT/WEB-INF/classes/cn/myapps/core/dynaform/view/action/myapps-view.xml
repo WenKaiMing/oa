@@ -1,0 +1,198 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="myapps-view" extends="myapps-default"
+		namespace="/core/dynaform/view">
+		<interceptors>
+			<interceptor-stack name="default">
+				<interceptor-ref name="params" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="defaultStack" />
+
+		<!-- view action configure -->
+		<action name="preView"
+			class="cn.myapps.core.dynaform.view.action.ViewDesignTimeAction"
+			method="doPreView">
+						<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/listView.jsp
+			</result>
+			<result name="successSub" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/displayView.jsp
+			</result>
+			<result name="successCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/calendarView.jsp
+			</result>
+			<result name="successTree" type="OBPMdispatcher">
+				/portal/share/dynaform/view/treeView.jsp
+			</result>
+			<result name="successGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="successGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="successMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+			
+			<!-- Input Result -->
+			<result name="input" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/listView.jsp
+			</result>
+			<result name="inputSub" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/displayView.jsp
+			</result>
+			<result name="inputCld" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/calendarView.jsp
+			</result>
+			<result name="inputTree" type="OBPMdispatcher">
+				/portal/share/dynaform/view/treeView.jsp
+			</result>
+			<result name="inputGrid" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/subGridView.jsp
+			</result>
+			<result name="inputGantt" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/ganttView.jsp
+			</result>
+			<result name="inputMap" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/view/mapView.jsp
+			</result>
+		</action>
+		
+		<action name="dialogView"
+			class="cn.myapps.core.dynaform.view.action.ViewDesignTimeAction"
+			method="doPreDialogView">
+			<param name="isPreview">true</param>
+			<!-- Success Result -->
+			<result name="success" type="OBPMdispatcher">
+				preview/dialog/dialog_normal_preview.jsp
+			</result>
+			<result name="successSub" type="OBPMdispatcher">
+				preview/dialog/dialog_normal_preview.jsp
+			</result>
+			<result name="successCld" type="OBPMdispatcher">
+				preview/dialog/dialog_cld_preview.jsp
+			</result>
+			<result name="successTree" type="OBPMdispatcher">
+				preview/dialog/dialog_tree_preview.jsp
+			</result>
+			<result name="successGrid" type="OBPMdispatcher">
+				preview/subGrid_preview.jsp
+			</result>
+			<result name="successGantt" type="OBPMdispatcher">
+				preview/gantt_preview.jsp
+			</result>
+			<result name="successMap" type="OBPMdispatcher">
+				preview/map_preview.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				preview/detail.jsp
+			</result>
+		</action>
+		
+		<action name="displayView"
+			class="cn.myapps.core.dynaform.view.action.ViewDesignTimeAction"
+			method="doPreDisplayView">
+			<param name="isPreview">true</param>
+			<!-- Success Result -->
+			<result name="success" type="OBPMdispatcher">preview/detail.jsp</result>
+			<result name="successSub" type="OBPMdispatcher">preview/display_view.jsp</result>
+			<result name="successCld" type="OBPMdispatcher">preview/cld_preview.jsp</result>
+			<result name="successTree" type="OBPMdispatcher">preview/tree_preview.jsp</result>
+			<result name="successGrid" type="OBPMdispatcher">preview/subGrid_preview.jsp</result>
+			<result name="successGantt" type="OBPMdispatcher">preview/gantt_preview.jsp</result>
+			<result name="successMap" type="OBPMdispatcher">preview/map_preview.jsp</result>
+			<result name="input" type="dispatcher">preview/detail.jsp</result>
+		</action>
+		
+		<action name="innerPage"
+			class="cn.myapps.core.dynaform.view.action.ViewDesignTimeAction"
+			method="doInnerPage">
+			<result name="success" type="OBPMdispatcher">displayView.action</result>
+			<result name="successForm" type="OBPMdispatcher">/core/dynaform/document/preview.action</result>
+			<result name="successView" type="OBPMdispatcher">displayView.action</result>
+		</action>
+		
+		<action name="list"
+			class="cn.myapps.core.dynaform.view.action.ViewDesignTimeAction"
+			method="list">
+			<result name="success" type="dispatcher">list.jsp</result>
+			<result name="input" type="dispatcher">list.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="copy"
+			class="cn.myapps.core.dynaform.view.action.ViewDesignTimeAction"
+			method="doCopy">
+			<result name="success" type="chain">list</result>
+			<result name="input" type="chain">list</result>
+		</action>
+
+		<action name="new"
+			class="cn.myapps.core.dynaform.view.action.ViewDesignTimeAction"
+			method="doNew">
+			<result name="success" type="dispatcher">
+				viewinfo.jsp
+			</result>
+		</action>
+		
+		<action name="edit"
+			class="cn.myapps.core.dynaform.view.action.ViewDesignTimeAction"
+			method="doView">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+		</action>
+		
+		<action name="delete"
+			class="cn.myapps.core.dynaform.view.action.ViewDesignTimeAction"
+			method="doDelete">
+			<result name="success" type="chain">list</result>
+			<result name="input" type="chain">list</result>
+		</action>
+
+		<action name="saveviewinfo"
+			class="cn.myapps.core.dynaform.view.action.ViewDesignTimeAction"
+			method="doSave">
+			<result name="input" type="dispatcher">viewinfo.jsp</result>
+			<result name="success" type="dispatcher">
+				success.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+		</action>
+		
+		<action name="save"
+			class="cn.myapps.core.dynaform.view.action.ViewDesignTimeAction"
+			method="doSave">
+			<result name="input" type="dispatcher">content.jsp</result>
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+		</action>
+		
+		<action name="checkout" class="cn.myapps.core.dynaform.view.action.ViewDesignTimeAction"
+		method="doCheckout">
+			<result name="success" type="dispatcher">content.jsp</result>
+			<result name="input" type="dispatcher">content.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="basicStack" />
+		</action>
+		
+		<action name="checkin" class="cn.myapps.core.dynaform.view.action.ViewDesignTimeAction"
+		method="doCheckin">
+			<result name="success" type="dispatcher">content.jsp</result>
+			<result name="input" type="dispatcher">content.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="basicStack" />
+		</action>
+		
+		<action name="changePermisionType" class="cn.myapps.core.dynaform.view.action.ViewDesignTimeAction"
+		method="doChangePermisionType">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="basicStack" />
+		</action>
+	</package>
+</struts>

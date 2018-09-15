@@ -1,0 +1,21 @@
+.smallpic{ padding:10px; min-height: 2.7em; margin-bottom:1em;border-radius: 0.5em;}
+.smallpic a{float:left;width:48px;height:48px;line-height:48px;text-align:center;margin-right:16px;color:#e8e9e9;overflow:hidden;border:1px solid #e8e9e9;}
+.smallpic a img{display:block; height:48px;width:auto;}
+.bigpic {left: 0px;z-index:9997;}
+.bigpic .bigpicbox{position:relative;height:100%;}
+.bigpic .bigpicbox .content{bottom:44px;}
+.bigpic .lookImg{width:100%;height:100%;overflow:auto;}
+.bigpic .lookImg img{display:block;width:100%;margin:0 auto;}
+.zhezhao{width:100%;height:100%;position:absolute;top:0;left:0;display:none; background:#000;opacity:0;z-index:998;}
+.bar-footer{background:black;border-top:0px;}
+.bar-footer .pull-left{ background:transparent; color:#fff;}
+.bar-footer .title{ color:#fff; text-align:center;}
+.tanchu{display:none;position:fixed; top:20%; left:10%;z-index:9999; width:80%;height:auto;margin£º0 auto; background:#fff; border-radius:4px;padding:10px}
+.tanchu .header{font-size:17px;line-height:34px;color:#000;font-weight:500;}
+.tanchu .container{margin:10px 0;}
+.block{ display:block;}
+.tanchu .contenter p{ color:#333;}
+.tanchu .foot{border-top:1px solid #ddd;padding-top: 15px;}
+.tanchu .foot .gay{color:#777}
+.tanchu .foot .red{color:#f8282f}
+.tanchu .btn-delete{margin-left:20px;}

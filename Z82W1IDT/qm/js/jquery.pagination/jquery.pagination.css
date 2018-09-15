@@ -1,0 +1,111 @@
+@charset "utf-8";  
+
+#pagination-panel {
+	text-align: center;
+	font: 12px/1.5 tahoma,"microsoft yahei","\5FAE\8F6F\96C5\9ED1";
+}
+
+#pagination-panel .pagination-body, #pagination-panel .pagination-other {
+	display: inline-block;
+}
+    
+#pagination-panel a {
+    text-decoration: none;
+}
+
+#pagination-panel a.glyphicon , #pagination-panel span.glyphicon  {
+    margin-right: 0px;
+    padding: 0px;
+    line-height: initial;
+}
+
+#pagination-panel a, #pagination-panel span {
+    display: inline-block;
+    margin-right: 3px;
+    padding: 1px 9px;
+    color: #333;
+    height: 23px;
+    line-height: 23px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+#pagination-panel a:hover {
+    padding: 0 8px;
+    border: 1px solid #eee;
+    background-color: #eee;
+    color: #333;
+    text-decoration: none;
+}
+
+#pagination-panel .current.prev, #pagination-panel .current.next{
+	display:none;
+}
+
+#pagination-panel .current {
+	padding: 0 8px;
+    border: 1px solid #488fcd;
+    background-color: #488fcd;
+    color: #fff;
+    margin-right: 3px;
+    height: 23px;
+    line-height: 23px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+#pagination-panel .totalRowPanel{
+	display: inline-block;
+	padding: 0 8px;
+    color: #333;
+    margin-right: 3px;
+    height: 24px;
+    line-height: 24px;
+}
+
+#pagination-panel .showItemPanel{
+	/* display: inline-block; */
+	display: none;
+	padding: 0px;
+    background-color: #eee;
+    color: #333;
+    margin-right: 3px;
+    height: 24px;
+    line-height: 24px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    position: relative;
+}
+#pagination-panel .showItemPanel .showItemBtn{
+	padding: 0 8px;
+	cursor: pointer;
+}
+
+#pagination-panel .showItemPanel ul{
+	background-color: #eee;
+	-webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    position: absolute;
+    width: 100%;
+    bottom: 17px;
+}
+
+#pagination-panel .showItemPanel ul li{
+	cursor: pointer;
+}
+
+
+#pagination-panel .showItemPanel ul li:hover{
+	color: #fff;
+	-webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+	background-color: #488fcd;
+}
+
+

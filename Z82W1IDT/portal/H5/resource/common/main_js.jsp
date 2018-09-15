@@ -1,0 +1,1 @@
+<script type='text/javascript' src='<s:url value='/portal/H5/resource/common/main.min.js?v=201803211856104693'/>'></script>

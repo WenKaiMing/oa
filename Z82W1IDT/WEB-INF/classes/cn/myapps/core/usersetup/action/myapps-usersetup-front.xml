@@ -1,0 +1,71 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="usersetup-front" extends="myapps-default"
+		namespace="/portal/usersetup">
+		
+		<action name="userSetup"
+			class="cn.myapps.core.usersetup.action.UserSetupAction"
+			method="doUserSetup">
+			<result name="success" type="dispatcher">
+				main.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="userSetupOnMainFrame"
+			class="cn.myapps.core.usersetup.action.UserSetupAction"
+			method="doUserSetupOnMainFrame">
+			<result name="switchskin" type="dispatcher">
+				/portal/share/success.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="ConfigOnWxViewCoulum"
+			class="cn.myapps.core.usersetup.action.UserSetupAction"
+			method="doConfigOnWxViewCoulum">
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="getConfigOnWxViewColumn"
+			class="cn.myapps.core.usersetup.action.UserSetupAction"
+			method="getConfigOnWxViewColumn">
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="addCommonOpinion"
+			class="cn.myapps.core.usersetup.action.UserSetupAction"
+			method="addCommonOpinion">
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="getCommonOpinion"
+			class="cn.myapps.core.usersetup.action.UserSetupAction"
+			method="getCommonOpinion">
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="deleteCommonOpinion"
+			class="cn.myapps.core.usersetup.action.UserSetupAction"
+			method="deleteCommonOpinion">
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="updateCommonOpinion"
+			class="cn.myapps.core.usersetup.action.UserSetupAction"
+			method="updateCommonOpinion">
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		
+	</package>
+	
+</struts>

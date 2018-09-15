@@ -1,0 +1,31 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="flowanalyzer" extends="myapps-default" namespace="/core/workflow/analyzer">
+		<action name="timeConsumingTopX"
+			class="cn.myapps.core.workflow.analyzer.AnalyzerAction"
+			method="doAnalyzerActorTimeConsumingTopX">
+			<result name="success" type="dispatcher">timeConsumingTopX.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="flowAccounting"
+			class="cn.myapps.core.workflow.analyzer.AnalyzerAction"
+			method="doAnalyzerFlowAccounting">
+			<result name="success" type="dispatcher">flowAccounting.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="flowTimeConsumingAccounting"
+			class="cn.myapps.core.workflow.analyzer.AnalyzerAction"
+			method="doAnalyzerFlowTimeConsumingAccounting">
+			<result name="success" type="dispatcher">flowTimeConsumingAccounting.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="flowAndNodeTimeConsuming"
+			class="cn.myapps.core.workflow.analyzer.AnalyzerAction"
+			method="doAnalyzerFlowAndNodeTimeConsuming">
+			<result name="success" type="dispatcher">flowAndNodeTimeConsuming.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+</struts>

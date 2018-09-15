@@ -1,0 +1,35 @@
+.read_icon {
+	background-image:url('../images/ico.gif');
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: -168px -4px;
+	height: 22px;
+	width: 22px;
+}
+
+.att_icon {
+	background-image:url('../images/ico.gif');
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: -136px -4px;
+	height: 18px;
+	width: 18px;
+}
+
+.readed {
+	background-image:url('../images/ico.gif');
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: -200px -69px;
+	height: 18px;
+	width: 18px;
+}
+
+.unread {
+	background-image:url('../images/ico.gif');
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: -200px -4px;
+	height: 18px;
+	width: 18px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="_openfire" extends="myapps-default" namespace="/core/sysconfig/desktop">
+		<action name="MenuPanel" class="cn.myapps.desktop.login.SparkDataAction"
+			method="getMenuList">
+			<result name="success" type="dispatcher">
+				/core/sysconfig/desktop/xml.jsp
+			</result>
+			<result name="error" type="dispatcher">
+				error.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				error.jsp
+			</result>
+		    <interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="PendingGroupPanel" class="cn.myapps.desktop.login.SparkDataAction"
+			method="getPendingList">
+			<result name="success" type="dispatcher">
+				/core/sysconfig/desktop/xml.jsp
+			</result>
+			<result name="error" type="dispatcher">
+				error.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				error.jsp
+			</result>
+		    <interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="ContactListPanel" class="cn.myapps.desktop.login.SparkDataAction"
+			method="getUserList">
+			<result name="success" type="dispatcher">
+				/core/sysconfig/desktop/xml.jsp
+			</result>
+			<result name="error" type="dispatcher">
+				error.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				error.jsp
+			</result>
+		    <interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		
+		
+	<!--  	<action name="domainlist" class="cn.myapps.desktop.login.DLoginAction"
+		    method="doDomainList">
+		    <result name="success" type="dispatcher">
+		        /core/sysconfig/desktop/xml.jsp
+		    </result>
+		    <interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="update" 
+			class="cn.myapps.desktop.login.DLoginAction"
+			method="update">
+			<result name="success" type="dispatcher">
+				/core/sysconfig/desktop/xml.jsp
+			</result>
+			<result name="error" type="dispatcher">
+				error.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				error.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="change" class="cn.myapps.desktop.login.DLoginAction"
+			method="doChange">
+			<result name="success" type="dispatcher">
+				/core/sysconfig/desktop/xml.jsp
+			</result>
+			<result name="error" type="dispatcher">
+				error.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				error.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="refreshApplication" class="cn.myapps.desktop.login.DLoginAction"
+			method="doRefreshApplication">
+			<result name="success" type="dispatcher">
+				/core/sysconfig/desktop/xml.jsp
+			</result>
+			<result name="error" type="dispatcher">
+				error.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				error.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="logout" class="cn.myapps.desktop.login.DLoginAction"
+			method="doLogout">
+			<result name="success" type="dispatcher">
+				/core/sysconfig/desktop/xml.jsp
+			</result>
+		</action>
+		<action name="refreshuser" class="cn.myapps.desktop.login.DLoginAction"
+			method="doRefreshUser">
+			<result name="success" type="dispatcher">
+				/core/sysconfig/desktop/xml.jsp
+			</result>
+		</action>-->
+	</package>
+
+
+</struts>

@@ -1,0 +1,93 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- billflow package -->
+	<package name="billflow-front" extends="myapps-default" namespace="/portal/share/workflow/runtime/billflow/defi">
+		<action name="view"
+			class="cn.myapps.core.workflow.storage.definition.action.BillDefiAction"
+			method="doViewFront">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+
+		<action name="new"
+			class="cn.myapps.core.workflow.storage.definition.action.BillDefiAction"
+			method="doNew">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+
+		<action name="save"
+			class="cn.myapps.core.workflow.storage.definition.action.BillDefiAction"
+			method="doSaveFront">
+			<result name="input" type="dispatcher">
+				content.jsp
+           </result>
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+			<interceptor-ref name="validationWorkflowStack" />
+		</action>
+
+		<action name="edit"
+			class="cn.myapps.core.workflow.storage.definition.action.BillDefiAction"
+			method="doEdit">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+		<action name="editWorkFlow"
+			class="cn.myapps.core.workflow.storage.definition.action.BillDefiAction"
+			method="doEdit">
+			<result name="success" type="dispatcher">
+				content2.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+
+		<action name="list"
+			class="cn.myapps.core.workflow.storage.definition.action.BillDefiAction"
+			method="doList">
+			<result name="success" type="dispatcher">list.jsp</result>
+			<result name="input" type="dispatcher">list.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+		<action name="delete"
+			class="cn.myapps.core.workflow.storage.definition.action.BillDefiAction"
+			method="doDelete">
+			<result name="success" type="chain">list</result>
+			<result name="input" type="chain">list</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+
+		<action name="selectflow"
+			class="cn.myapps.core.workflow.storage.definition.action.BillDefiAction"
+			method="doList">
+			<result name="success" type="dispatcher">selectflow.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+
+		<action name="selectsubform" class="cn.myapps.core.dynaform.form.action.FormAction"
+			method="doFormList">
+			<result name="success" type="dispatcher">selectsubform.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+	</package>
+
+</struts>

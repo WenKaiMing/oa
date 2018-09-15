@@ -1,0 +1,189 @@
+package cn.myapps.core.standardreport.action;
+
+import cn.myapps.core.dynaform.form.ejb.Form;
+import cn.myapps.core.dynaform.form.ejb.FormProcessBean;
+import cn.myapps.util.DbTypeUtil;
+import cn.myapps.util.StringUtil;
+
+public class CreateDynamicSql {
+	
+	public static String getSummaryQuerySql(String formId,String startdate,String enddate,String [] columnName,String application) throws Exception
+	{
+		if (!StringUtil.isBlank(application)){
+			String dbType = DbTypeUtil.getDBType(application);
+			if (dbType.equals(DbTypeUtil.DBTYPE_ORACLE)) {
+				return getOracleSummaryQuerySql(formId, startdate, enddate, columnName);
+			} else if (dbType.equals(DbTypeUtil.DBTYPE_MSSQL)) {
+				return getMSSQLSummaryQuerySql(formId, startdate, enddate, columnName);
+			} else if (dbType.equals(DbTypeUtil.DBTYPE_MYSQL)) {
+				return getMYSQLSummaryQuerySql(formId, startdate, enddate, columnName);
+			} else if (dbType.equals(DbTypeUtil.DBTYPE_HSQLDB)) {
+			
+			} else if (dbType.equals(DbTypeUtil.DBTYPE_DB2)) {
+				return getDb2SummaryQuerySql(formId,startdate,enddate,columnName,application);
+			}
+		}
+		return "";
+	}
+
+	private static String getOracleSummaryQuerySql(String formId,String startdate,String enddate,String [] columnName) throws Exception{
+		FormProcessBean fpb = new FormProcessBean();
+		Form form = (Form)fpb.doView(formId);
+		String wheresql = "";
+		String usedTimeCol ="";
+		String relationName ="t_relationhis";
+
+		
+		//ȡ��tlk_����
+		String formname = "TLK_"+form.getName();
+		usedTimeCol = "round((to_date(to_char(processtime,'YYYY-MM-dd HH24:MI:ss'),'YYYY-MM-dd HH24:MI:ss')" +
+		"-to_date(to_char(actiontime,'YYYY-MM-dd HH24:mi:ss'),'YYYY-MM-dd HH24:MI:ss'))*24,2) usedtime ";
+		
+		//���startdate��enddate�����Ӧ��where���
+		if(startdate != null && !startdate.equals(""))
+		   wheresql += " and actiontime >="+"to_date('"+startdate+"','YYYY-MM-dd') ";
+		
+		if(enddate != null && !enddate.equals(""))
+		  wheresql += " and actiontime <="+"to_date('"+enddate+"','YYYY-MM-dd') ";
+		
+		
+		String sql = "select sum(usedtime) USEDTIME "+getColums(columnName)+" from ("+getGeneralsql(formname,relationName,wheresql,usedTimeCol)+") group by "
+		              +getGroupAndOrderBy(columnName)+" order by "+getGroupAndOrderBy(columnName);
+
+		return sql;
+	}
+	
+	private static String getDb2SummaryQuerySql(String formId,String startdate,String enddate,String [] columnName,String application) throws Exception{
+		FormProcessBean fpb = new FormProcessBean();
+		Form form = (Form)fpb.doView(formId);
+		String wheresql = "";
+		String usedTimeCol ="";
+		String relationName ="";
+		String schema = DbTypeUtil.getSchema(application).toUpperCase();
+		
+		//ȡ��schema�������db2��ѯ��Ҫschema,�͵��6�db2д���㺯��
+		String formname = schema +".TLK_"+form.getName();
+		relationName  = schema +".T_RELATIONHIS";
+		usedTimeCol = "(DAYS(processtime) - DAYS(actiontime)) * 86400+ (MIDNIGHT_SECONDS(processtime) - MIDNIGHT_SECONDS(actiontime)) usedtime ";
+		
+		
+		//���startdate��enddate�����Ӧ��where���
+		if(startdate != null && !startdate.equals(""))
+		   wheresql += " and actiontime >="+"timestamp('"+startdate+" 00:00:00') ";
+		
+		if(enddate != null && !enddate.equals(""))
+		  wheresql += " and actiontime <="+"timestamp('"+enddate+" 00:00:00') ";
+		
+		
+		String sql = "select round((cast(sum(usedtime) as float)/60)/60,2) USEDTIME "+getColums(columnName)+" from ("+getGeneralsql(formname,relationName,wheresql,usedTimeCol)+")  group by "
+		              +getGroupAndOrderBy(columnName)+" order by "+getGroupAndOrderBy(columnName);		
+		return sql;
+		
+	}
+	
+	private static String getMSSQLSummaryQuerySql(String formId,String startdate,String enddate,String [] columnName) throws Exception{
+		FormProcessBean fpb = new FormProcessBean();
+		Form form = (Form)fpb.doView(formId);
+		String wheresql = "";
+		String usedTimeCol ="";
+		String relationName ="t_relationhis";
+
+		
+		//ȡ��tlk_����
+		String formname = "TLK_"+form.getName();
+		usedTimeCol = " round(cast(DateDiff (\"Minute\",actiontime,processtime) as FLOAT)/60 ,2) usedtime ";
+		
+		//���startdate��enddate�����Ӧ��where���
+		if(startdate != null && !startdate.equals(""))
+		   wheresql += " cast('"+startdate+"' as  datetime) >= actiontime ";
+		
+		if(enddate != null && !enddate.equals(""))
+		  wheresql += " cast('"+enddate+"' as  datetime) <= actiontime ";
+		
+		
+		String sql = "select sum(usedtime) USEDTIME "+getColums(columnName)+" from ("+getGeneralsql(formname,relationName,wheresql,usedTimeCol)+") a group by "
+		              +getGroupAndOrderBy(columnName)+" order by "+getGroupAndOrderBy(columnName);
+		return sql;
+		
+	}
+	
+private static String getMYSQLSummaryQuerySql(String formId,String startdate,String enddate,String [] columnName) throws Exception{
+		FormProcessBean fpb = new FormProcessBean();
+		Form form = (Form)fpb.doView(formId);
+		String wheresql = "";
+		String usedTimeCol ="";
+		String relationName ="t_relationhis";
+
+		
+		//ȡ��tlk_����
+		String formname = "TLK_"+form.getName();
+		usedTimeCol = " round((timestampdiff(minute,actiontime,processtime))/60,2) usedtime ";
+		
+		//���startdate��enddate�����Ӧ��where���
+		if(startdate != null && !startdate.equals(""))
+		   wheresql += " timestamp('"+startdate+"') >= actiontime ";
+		
+		if(enddate != null && !enddate.equals(""))
+		  wheresql += " timestamp('"+enddate+"') <= actiontime ";
+		
+		
+		String sql = "select sum(usedtime) USEDTIME "+getColums(columnName)+" from ("+getGeneralsql(formname,relationName,wheresql,usedTimeCol)+") a group by "
+		              +getGroupAndOrderBy(columnName)+" order by "+getGroupAndOrderBy(columnName);		
+		return sql;
+		
+	}
+	private static String getGeneralsql(String formname,String relationName,String wheresql,String usedTimeCol)
+	{
+
+		String sql =  "select relation.AUDITOR, actiontime arrivedtime,processtime sendouttime,ENDNODENAME NODENAME,";
+	
+		sql += usedTimeCol;
+		sql += ",tabs.* ";
+		
+		sql += " from "+relationName+" relation,  "+formname+" tabs where relation.docid = tabs.id and tabs.istmp=0 and relation.auditor is not null";
+
+		sql += wheresql;
+		return sql;
+	}
+	
+	private static String getColums(String [] columnName)
+	{
+		String columns ="";
+		
+		//�����ѡ���column��b��Ӧ��columm
+		if(columnName!=null && columnName.length>0)
+		{
+			
+			for(int i=0;i<columnName.length;i++)
+			   {
+				columns = columns + ","+columnName[i];
+				}
+		}else
+		{
+			columns = ","+"AUDITOR ";
+		}
+		
+		return columns;
+	}
+	
+	
+	private static String getGroupAndOrderBy(String [] columnName)
+	{
+		String groupOrderBy ="";		
+		//�����ѡ���column��b��Ӧ��group by ���Ҳ��orderby���
+		if(columnName!=null && columnName.length>0)
+		{
+			
+			for(int i=0;i<columnName.length;i++)
+			   {
+				groupOrderBy = groupOrderBy + columnName[i]+",";
+				}
+		}else
+		{
+			groupOrderBy = " AUDITOR ";
+		}
+		
+		groupOrderBy = groupOrderBy.substring(0, groupOrderBy.length()-1);
+		return groupOrderBy;
+	}
+}

@@ -1,0 +1,460 @@
+<!--
+Title: Tigra Calendar
+URL: http://www.softcomplex.com/products/tigra_calendar/
+Version: 3.2
+Date: 10/14/2002 (mm/dd/yyyy)
+Feedback: feedback@softcomplex.com (specify product title in the subject)
+Note: Permission given to use this script in ANY kind of applications if
+   header lines are left unchanged.
+Note: Script consists of two files: calendar?.js and calendar.html
+About us: Our company provides offshore IT consulting services.
+    Contact us at sales@softcomplex.com if you have any programming task you
+    want to be handled by professionals. Our typical hourly rate is $20.
+-->
+<html>
+<head>
+<title>choose date</title>
+<style>
+	td {font-family: Tahoma, Verdana, sans-serif; font-size: 12px;}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script language="JavaScript">
+var RE_NUM = /^\-?\d+$/;
+// if two digit year input dates after this year considered 20 century.
+var NUM_CENTYEAR = 30;
+// is time input control required by default
+var BUL_TIMECOMPONENT = false;
+// are year scrolling buttons required by default
+var BUL_YEARSCROLL = true;
+// if need input time
+var TIME_COMP = true;
+
+// months as they appear in the calendar's title
+var ARR_MONTHS = ["{*[Jan]*}", "{*[Feb]*}", "{*[March]*}", "{*[Apr]*}", "{*[May]*}", "{*[Jun]*}",
+		"{*[Jul]*}", "{*[Aug]*}", "{*[Sep]*}", "{*[Oct]*}", "{*[Nov]*}", "{*[Dec]*}"];
+// week day titles as they appear on the calendar
+var ARR_WEEKDAYS = ["{*[Sunday]*}", "{*[Monday]*}", "{*[Tuesday]*}", "{*[Wednesday]*}", "{*[Thursday]*}", "{*[Friday]*}", "{*[Saturday]*}"];
+// day week starts from (normally 0-Mo or 1-Su)
+var NUM_WEEKSTART = 0;
+// path to the directory where calendar images are stored. trailing slash req.
+var STR_ICONPATH = '../resource/images/calendar/';
+
+//var dt_current = (window.dialogArguments) ? new Date(new Number(RegExp.$1)) : new Date());
+//this.dt_current = this.prs_tsmp(str_datetime ? str_datetime : this.target.value);
+var dt_current = new Date();
+if (window.dialogArguments != null) {
+  var arg = window.dialogArguments;
+  var date = prs_tsmp(arg.str_datetime);
+  if (date) {
+  	dt_current = date;
+  }
+  //alert(dt_current);
+  TIME_COMP = arg.time_comp;
+}
+
+
+// get same date in the previous year
+var dt_prev_year = new Date(dt_current);
+
+// get same date in the next year
+var dt_next_year = new Date(dt_current);
+
+// get same date in the previous month
+var dt_prev_month = new Date(dt_current);
+
+// get same date in the next month
+var dt_next_month = new Date(dt_current);
+
+// get first day to display in the grid for current month
+var dt_firstday = new Date(dt_current);
+
+
+function init() {
+  dt_prev_year = new Date(dt_current);
+  dt_next_year = new Date(dt_current);
+  dt_prev_month = new Date(dt_current);
+  dt_next_month = new Date(dt_current);
+  dt_firstday = new Date(dt_current);
+
+  dt_prev_year.setFullYear(dt_prev_year.getFullYear() - 1);
+  if (dt_prev_year.getDate() != dt_current.getDate())
+    dt_prev_year.setDate(0);
+
+  dt_next_year.setFullYear(dt_next_year.getFullYear() + 1);
+  if (dt_next_year.getDate() != dt_current.getDate())
+    dt_next_year.setDate(0);
+
+  dt_prev_month.setMonth(dt_prev_month.getMonth() - 1);
+  if (dt_prev_month.getDate() != dt_current.getDate())
+    dt_prev_month.setDate(0);
+
+  dt_next_month.setMonth(dt_next_month.getMonth() + 1);
+  if (dt_next_month.getDate() != dt_current.getDate())
+    dt_next_month.setDate(0);
+
+  dt_firstday.setDate(1);
+  dt_firstday.setDate(1 - (7 + dt_firstday.getDay() - NUM_WEEKSTART) % 7);
+}
+
+init();
+
+function print_yearmonth() {
+  var strYearMonth = '<table cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td>';
+  strYearMonth += '<span style="cursor:hand" onclick="javascript:set_datetime(' + dt_prev_year.valueOf() + ')">';
+  strYearMonth += '<img src="' + STR_ICONPATH + 'prev_year.gif" width="16" height="16" border="0" alt="previous year">';
+  strYearMonth += '</span>&nbsp;';
+  strYearMonth += '<span style="cursor:hand" onclick="javascript:set_datetime(' + dt_prev_month.valueOf() + ')">';
+  strYearMonth += '<img src="' + STR_ICONPATH + 'prev.gif" width="16" height="16" border="0" alt="previous month">';
+  strYearMonth += '</span>';
+  strYearMonth += '</td>';
+  strYearMonth += '<td align="center" width="100%"><font color="#ffffff">' + ARR_MONTHS[dt_current.getMonth()] + ' ' + dt_current.getFullYear() + '</font></td>';
+  strYearMonth += '<td>';
+  strYearMonth += '<span style="cursor:hand" onclick="javascript:set_datetime(' + dt_next_month.valueOf() + ')">';
+  strYearMonth += '<img src="' + STR_ICONPATH + 'next.gif" width="16" height="16" border="0" alt="next month">';
+  strYearMonth += '</span>&nbsp;';
+  strYearMonth += '<span style="cursor:hand" onclick="javascript:set_datetime(' + dt_next_year.valueOf() + ')">';
+  strYearMonth += '<img src="' + STR_ICONPATH + 'next_year.gif" width="16" height="16" border="0" alt="next year">';
+  strYearMonth += '</span>';
+  strYearMonth += '</td></tr></table>';
+  yearmonth.innerHTML = strYearMonth;
+}
+
+function print_calendar() {
+  var strCalendar = '<table cellspacing="1" cellpadding="3" border="0" width="100%">';
+
+  // print weekdays titles
+  for (var n=0; n<7; n++)
+    strCalendar += ('<td bgcolor="#87cefa" align="center"><font color="#ffffff">' + ARR_WEEKDAYS[(NUM_WEEKSTART+n)%7] + '</font></td>');
+
+  var dt_current_day = new Date(dt_firstday);
+  while (dt_current_day.getMonth() == dt_current.getMonth() ||
+    dt_current_day.getMonth() == dt_firstday.getMonth()) {
+    // print row heder
+    strCalendar += ('<tr>');
+    for (var n_current_wday=0; n_current_wday<7; n_current_wday++) {
+      if (dt_current_day.getDate() == dt_current.getDate() &&
+        dt_current_day.getMonth() == dt_current.getMonth())
+        // print current date
+        strCalendar += ('<td bgcolor="#ffb6c1" align="center" width="14%">');
+      else if (dt_current_day.getDay() == 0 || dt_current_day.getDay() == 6)
+        // weekend days
+        strCalendar += ('<td bgcolor="#dbeaf5" align="center" width="14%">');
+      else
+        // print working days of current month
+        strCalendar += ('<td bgcolor="#ffffff" align="center" width="14%">');
+
+      strCalendar += ('<span  style="cursor:hand" onclick="javascript:set_datetime(' + dt_current_day.valueOf() + ', true);">');
+
+      if (dt_current_day.getMonth() == this.dt_current.getMonth())
+        // print days of current month
+        strCalendar += ('<font color="#000000">');
+      else
+        // print days of other months
+        strCalendar += ('<font color="#606060">');
+
+      strCalendar += (dt_current_day.getDate()+'</font></a></td>');
+      dt_current_day.setDate(dt_current_day.getDate()+1);
+    }
+    // print row footer
+    strCalendar += ('</tr>');
+  }
+  strCalendar += ('</table>');
+  calendar.innerHTML = strCalendar;
+}
+
+// timestamp generating function
+function gen_tsmp (dt_datetime) {
+	return(this.gen_date(dt_datetime) + ' ' + this.gen_time(dt_datetime));
+}
+
+// date generating function
+function gen_date (dt_datetime) {
+	return (
+		dt_datetime.getFullYear() + "-"
+    + (dt_datetime.getMonth() < 9 ? '0' : '') + (dt_datetime.getMonth() + 1) + "-"
+    + (dt_datetime.getDate() < 10 ? '0' : '') + dt_datetime.getDate()
+	);
+}
+// time generating function
+function gen_time (dt_datetime) {
+	return (
+		(dt_datetime.getHours() < 10 ? '0' : '') + dt_datetime.getHours() + ":"
+		+ (dt_datetime.getMinutes() < 10 ? '0' : '') + (dt_datetime.getMinutes()) + ":"
+		+ (dt_datetime.getSeconds() < 10 ? '0' : '') + (dt_datetime.getSeconds())
+	);
+}
+
+// timestamp parsing function
+function prs_tsmp (str_datetime) {
+	// if no parameter specified return current timestamp
+	if (!str_datetime)
+		return (new Date());
+	
+	// if positive integer treat as milliseconds from epoch
+	if (RE_NUM.exec(str_datetime))
+		return new Date(parseFloat(str_datetime));
+	
+	// else treat as date in string format
+	var arr_datetime = str_datetime.split(' ');
+	return this.prs_time(arr_datetime[1], this.prs_date(arr_datetime[0]));
+}
+
+// date parsing function
+function prs_date (str_date) {
+
+	var arr_date = str_date.split('-');
+
+	if (arr_date.length != 3) return cal_error ("Invalid date format: '" + str_date + "'.\nFormat accepted is dd-mm-yyyy.");
+	if (!arr_date[2]) return cal_error ("Invalid date format: '" + str_date + "'.\nNo day of month value can be found.");
+	if (!RE_NUM.exec(arr_date[2])) return cal_error ("Invalid day of month value: '" + arr_date[0] + "'.\nAllowed values are unsigned integers.");
+	if (!arr_date[1]) return cal_error ("Invalid date format: '" + str_date + "'.\nNo month value can be found.");
+	if (!RE_NUM.exec(arr_date[1])) return cal_error ("Invalid month value: '" + arr_date[1] + "'.\nAllowed values are unsigned integers.");
+	if (!arr_date[0]) return cal_error ("Invalid date format: '" + str_date + "'.\nNo year value can be found.");
+	if (!RE_NUM.exec(arr_date[0])) return cal_error ("Invalid year value: '" + arr_date[2] + "'.\nAllowed values are unsigned integers.");
+
+	var dt_date = new Date();
+	dt_date.setDate(1);
+
+	if (arr_date[1] < 1 || arr_date[1] > 12) return cal_error ("Invalid month value: '" + arr_date[1] + "'.\nAllowed range is 01-12.");
+	dt_date.setMonth(arr_date[1]-1);
+
+	if (arr_date[0] < 100) arr_date[0] = Number(arr_date[0]) + (arr_date[0] < NUM_CENTYEAR ? 2000 : 1900);
+	dt_date.setFullYear(arr_date[0]);
+
+	var dt_numdays = new Date(arr_date[0], arr_date[1], 0);
+	dt_date.setDate(arr_date[2]);
+	if (dt_date.getMonth() != (arr_date[1]-1)) return cal_error ("Invalid day of month value: '" + arr_date[2] + "'.\nAllowed range is 01-"+dt_numdays.getDate()+".");
+
+	return (dt_date)
+}
+
+// time parsing function
+function prs_time (str_time, dt_date) {
+
+	if (!dt_date) return null;
+	var arr_time = String(str_time ? str_time : '').split(':');
+
+	if (!arr_time[0]) dt_date.setHours(0);
+	else if (RE_NUM.exec(arr_time[0]))
+		if (arr_time[0] < 24) dt_date.setHours(arr_time[0]);
+		else return cal_error ("Invalid hours value: '" + arr_time[0] + "'.\nAllowed range is 00-23.");
+	else return cal_error ("Invalid hours value: '" + arr_time[0] + "'.\nAllowed values are unsigned integers.");
+
+	if (!arr_time[1]) dt_date.setMinutes(0);
+	else if (RE_NUM.exec(arr_time[1]))
+		if (arr_time[1] < 60) dt_date.setMinutes(arr_time[1]);
+		else return cal_error ("Invalid minutes value: '" + arr_time[1] + "'.\nAllowed range is 00-59.");
+	else return cal_error ("Invalid minutes value: '" + arr_time[1] + "'.\nAllowed values are unsigned integers.");
+
+	if (!arr_time[2]) dt_date.setSeconds(0);
+	else if (RE_NUM.exec(arr_time[2]))
+		if (arr_time[2] < 60) dt_date.setSeconds(arr_time[2]);
+		else return cal_error ("Invalid seconds value: '" + arr_time[2] + "'.\nAllowed range is 00-59.");
+	else return cal_error ("Invalid seconds value: '" + arr_time[2] + "'.\nAllowed values are unsigned integers.");
+
+	dt_date.setMilliseconds(0);
+	return dt_date;
+}
+
+function cal_error (str_message) {
+	alert (str_message);
+	return null;
+}
+
+// function passing selected date to calling window
+function set_datetime(n_datetime, b_close) {
+	var dt_datetime = prs_time(
+		(document.cal ? document.cal.txtHour.value + ':' + document.cal.txtMinute.value + ':' + document.cal.txtSecond.value : ''),
+		new Date(n_datetime)
+	);
+
+	if (!dt_datetime) return;
+	if (b_close) {
+    window.returnValue = (document.cal ? gen_tsmp(dt_datetime)	: gen_date(dt_datetime));
+		window.close();
+	}
+	else
+   dt_current = dt_datetime;
+   init();
+   print_yearmonth();
+   print_calendar();
+}
+
+var oldHour = 0;
+var oldMinute = 0;
+var oldSecond = 0;
+
+function set_time() {
+  oldHour = dt_current.getHours();
+  oldMinute = dt_current.getMinutes();
+  oldSecond = dt_current.getSeconds();
+  document.cal.txtHour.value = oldHour;
+  document.cal.txtMinute.value = oldMinute;
+  document.cal.txtSecond.value = oldSecond;
+}
+
+function txtHour_onkeydown() {
+  if (event.ctrlKey) {
+    event.returnValue = false;
+    return false;
+  }
+  if (event.keyCode == 8 || event.keyCode == 9) {
+  } else if (event.keyCode == 10 || event.keyCode == 13) {
+  } else if (event.keyCode >= 33 && event.keyCode <= 40) {
+  } else if (event.keyCode == 45 || event.keyCode == 46) {
+  } else if (event.keyCode == 144) {
+  } else if (event.keyCode < 96 || event.keyCode > 105 ) {
+    event.returnValue = false;
+    return false;
+  }
+  return true;
+}
+
+function txtHour_onkeyup() {
+  hour = parseInt(document.cal.txtHour.value);
+  if (hour > 23) {
+    document.cal.txtHour.value = oldHour;
+    event.returnValue = false;
+    return false;
+  }
+  oldHour = document.cal.txtHour.value;
+  return true;
+}
+
+function txtMinute_onkeydown() {
+  if (event.ctrlKey) {
+    event.returnValue = false;
+    return false;
+  }
+  if (event.keyCode == 8 || event.keyCode == 9) {
+  } else if (event.keyCode == 10 || event.keyCode == 13) {
+  } else if (event.keyCode >= 33 && event.keyCode <= 40) {
+  } else if (event.keyCode == 45 || event.keyCode == 46) {
+  } else if (event.keyCode == 144) {
+  } else if (event.keyCode < 96 || event.keyCode > 105 ) {
+    event.returnValue = false;
+    return false;
+  }
+  return true;
+}
+
+function txtMinute_onkeyup() {
+  hour = parseInt(document.cal.txtMinute.value);
+  if (hour > 59) {
+    document.cal.txtMinute.value = oldMinute;
+    event.returnValue = false;
+    return false;
+  }
+  oldMinute = document.cal.txtMinute.value;
+  return true;
+}
+
+function txtSecond_onkeydown() {
+  if (event.ctrlKey) {
+    event.returnValue = false;
+    return false;
+  }
+  if (event.keyCode == 8 || event.keyCode == 9) {
+  } else if (event.keyCode == 10 || event.keyCode == 13) {
+  } else if (event.keyCode >= 33 && event.keyCode <= 40) {
+  } else if (event.keyCode == 45 || event.keyCode == 46) {
+  } else if (event.keyCode == 144) {
+  } else if (event.keyCode < 96 || event.keyCode > 105 ) {
+    event.returnValue = false;
+    return false;
+  }
+  return true;
+}
+
+function txtSecond_onkeyup() {
+  hour = parseInt(document.cal.txtSecond.value);
+  if (hour > 59) {
+    document.cal.txtSecond.value = oldSecond;
+    event.returnValue = false;
+    return false;
+  }
+  oldSecond = document.cal.txtSecond.value;
+  return true;
+}
+
+function btnHourDown_onclick() {
+  oldHour --;
+  if (oldHour == -1) oldHour = 23;
+  document.cal.txtHour.value = oldHour;
+}
+
+function btnHourUp_onclick() {
+  oldHour ++;
+  if (oldHour == 24) oldHour = 0;
+  document.cal.txtHour.value = oldHour;
+}
+
+function btnMinuteDown_onclick() {
+  oldMinute --;
+  if (oldMinute == -1) oldMinute = 59;
+  document.cal.txtMinute.value = oldMinute;
+}
+
+function btnMinuteUp_onclick() {
+  oldMinute ++;
+  if (oldMinute == 60) oldMinute = 0;
+  document.cal.txtMinute.value = oldMinute;
+}
+
+function btnSecondDown_onclick() {
+  oldSecond --;
+  if (oldSecond == -1) oldSecond = 59;
+  document.cal.txtSecond.value = oldSecond;
+}
+
+function btnSecondUp_onclick() {
+  oldSecond ++;
+  if (oldSecond == 60) oldSecond = 0;
+  document.cal.txtSecond.value = oldSecond;
+}
+
+</script>
+</head>
+<body bgcolor="#FFFFFF" marginheight="5" marginwidth="5" topmargin="5" leftmargin="5" rightmargin="5">
+<table class="clsOTable" cellspacing="0" border="0" width="100%">
+  <tr>
+    <td bgcolor="#4682B4"> <table cellspacing="1" cellpadding="1" border="0" width="100%">
+        <tr>
+          <td colspan="7"> <div id="yearmonth"></div></td>
+        </tr>
+        <tr>
+          <td colspan="7"> <div id="calendar"></div></td>
+        </tr>
+        <script language="JavaScript">
+// print time
+if (TIME_COMP) {
+  document.write('<form onsubmit="javascript:set_datetime(' + dt_current.valueOf() + ', true)" name="cal"><tr><td colspan="7" bgcolor="#87CEFA">');
+  document.write('  <table border="0" cellspacing="2" cellpadding="0">');
+  document.write('    <tr>');
+  document.write('      <td width="90" rowspan="2" valign="middle" align="right" nowarp>Time：<input id=txtHour name=txtHour style="WIDTH: 25px; TEXT-ALIGN: right" maxLength=2 LANGUAGE=javascript onkeydown="return txtHour_onkeydown()" onkeyup="return txtHour_onkeyup()"></td>');
+  document.write('      <td width="20"><input id=btnHourUp type=button value=∧ name=btnHourUp style="FONT-WEIGHT: bold; FONT-SIZE: 5pt; WIDTH: 15px; HEIGHT: 10px" tabIndex=-1 LANGUAGE=javascript onclick="return btnHourUp_onclick()"></td>');
+  document.write('      <td width="25" rowspan="2"><input id=txtMinute name=txtMinute style="WIDTH: 25px; TEXT-ALIGN: right" maxLength=2 LANGUAGE=javascript onkeydown="return txtMinute_onkeydown()" onkeyup="return txtMinute_onkeyup()"></td>');
+  document.write('      <td width="20"><input id=btnMinuteUp type=button value=∧ name=btnMinuteUp style="FONT-WEIGHT: bold; FONT-SIZE: 5pt; WIDTH: 15px; HEIGHT: 10px" tabIndex=-1 LANGUAGE=javascript onclick="return btnMinuteUp_onclick()"></td>');
+  document.write('      <td width="25" rowspan="2"><input id=txtSecond name=txtSecond style="WIDTH: 25px; TEXT-ALIGN: right" maxLength=2 LANGUAGE=javascript onkeydown="return txtSecond_onkeydown()" onkeyup="return txtSecond_onkeyup()"></td>');
+  document.write('      <td width="20"><input id=btnSecondUp type=button value=∧ name=btnSecondUp style="FONT-WEIGHT: bold; FONT-SIZE: 5pt; WIDTH: 15px; HEIGHT: 10px" tabIndex=-1 LANGUAGE=javascript onclick="return btnSecondUp_onclick()"></td>');
+  document.write('    </tr>');
+  document.write('    <tr>');
+  document.write('      <td width="20"><input id=btnHourDown type=button value=∨ name=btnHourDown style="FONT-WEIGHT: bold; FONT-SIZE: 5pt; WIDTH: 15px; HEIGHT: 10px" tabIndex=-1 LANGUAGE=javascript onclick="return btnHourDown_onclick()"></td>');
+  document.write('      <td width="20"><input id=btnMinuteDown type=button value=∨ name=btnMinuteDown style="FONT-WEIGHT: bold; FONT-SIZE: 5pt; WIDTH: 15px; HEIGHT: 10px" tabIndex=-1 LANGUAGE=javascript onclick="return btnMinuteDown_onclick()"></td>');
+  document.write('      <td width="20"><input id=btnSecondDown type=button value=∨ name=btnSecondDown style="FONT-WEIGHT: bold; FONT-SIZE: 5pt; WIDTH: 15px; HEIGHT: 10px" tabIndex=-1 LANGUAGE=javascript onclick="return btnSecondDown_onclick()"></td>');
+  document.write('    </tr>');
+  document.write('  </table>');
+  document.write('</td></tr></form>');
+  set_time();
+}
+</script>
+      </table></tr><td></td>
+</table>
+<script language="JavaScript">
+print_yearmonth();
+</script>
+<script language="JavaScript">
+print_calendar();
+</script>
+</body>
+</html>

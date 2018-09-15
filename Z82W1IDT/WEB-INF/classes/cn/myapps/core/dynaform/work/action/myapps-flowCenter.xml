@@ -1,0 +1,70 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="flowCenter" extends="myapps-default,json-default"
+		namespace="/portal/flowcenter">
+		<action name="getAppList" class="cn.myapps.core.dynaform.work.action.FlowCenterAction" method="doGetAppList">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="getPendingFlowList" class="cn.myapps.core.dynaform.work.action.FlowCenterAction" method="doGetPendingFlowList">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="getAllPendingFlowList" class="cn.myapps.core.dynaform.work.action.FlowCenterAction" method="doGetAllPendingFlowList">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="getPendingList" class="cn.myapps.core.dynaform.work.action.FlowCenterAction" method="doGetPendingList">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="getProcessedFlowList" class="cn.myapps.core.dynaform.work.action.FlowCenterAction" method="doGetProcessedFlowList">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="getAllProcessedFlowList" class="cn.myapps.core.dynaform.work.action.FlowCenterAction" method="doGetAllProcessedFlowList">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="getProcessedList" class="cn.myapps.core.dynaform.work.action.FlowCenterAction" method="doGetProcessedList">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+	</package>
+</struts>

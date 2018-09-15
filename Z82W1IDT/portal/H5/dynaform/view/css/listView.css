@@ -1,0 +1,22 @@
+/**缈婚〉琛�*/
+.page-nav {
+	background:#ECF2F4;
+	height: 27px;
+	line-height:27px;
+	margin-top: 0;
+	width: 100%;
+}
+
+/**#container div**/
+.front-visibility-hidden {
+	visibility: hidden;
+}
+
+/**dataTable閲嶆瀯鍓嶆牱寮�*/
+.viewTable {
+	border-collapse:collapse;
+	width:100%;
+}
+.viewTable td{
+	border: 1px solid #000;
+}

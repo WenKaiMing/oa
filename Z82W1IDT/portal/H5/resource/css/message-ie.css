@@ -1,0 +1,51 @@
+html {min-height:100%; height:100%; background:#f7f7f7; overflow-y:auto; overflow-x:hidden;}
+#if_right,#con_right { _display: inline;min-height: 100%; height: auto; padding:0px;}
+#if_right iframe,#con_right iframe {width: 100%;height: 100%;_display: inline; }
+#right { min-height: 100%;background:#f7f7f7;  }
+
+
+.message { _display: inline; background-color: #FFFFFF; border: 1px solid #E3E3E3; height: 100%; width:130px; float:left}
+.message .title { font-size:24px; color:#3497db; text-align:center; height:45px; line-height:45px;}
+.message .content { height:100%;}
+.message .content li { height:50px; position:relative;}
+.message .content li a { height:50px; line-height:50px; padding:0px 15px;font-size:16px; color:#6b6b6b;display:block }
+.message .content li a:hover ,.message .content li.active a { background-color:#f7f7f7;  color:#22aae9}
+
+/*.message .content li a i { height:16px; width:16px; display:block; position:absolute; top:17px; }*/
+.message .content li a i.icon-message { background:url(../images/ico_act.png) no-repeat -96px 0}
+.message .content li a:hover i.icon-message,.act .content li.active a i.icon-message{ background-position:-96px -20px}
+.message .content li a i.icon-sms { background:url(../images/ico_act.png) no-repeat -80px 0}
+.message .content li a:hover i.icon-sms,.act .content li.active a i.icon-sms{ background-position:-80px -20px}   
+
+
+/*----------write---------*/
+
+.crm_right { margin:0px; padding:0px 15px 15px 15px;}
+.crm_right .searchDiv { margin-bottom:15px ; padding: 15px; }
+
+#message-body .nav-tabs {height: 43px;}
+#message-body .nav-tabs li {position:static ;z-index: 0; background: none;filter:none;}
+#message-body .nav-tabs li a {position:static ;}
+#message-body .nav-tabs li.active {border-top: 1px solid #ddd;border-left: 1px solid #ddd;border-right: 1px solid #ddd;}
+#message-body .nav-tabs li.active a{border: none;}
+#message-body .nav-tabs li a:hover{border-top: 1px solid #ddd;border-left: 1px solid #ddd;border-right: 1px solid #ddd; margin-top: 1px}
+#message-body .tab-content{color: #060606;margin-top:15px;margin-bottom: 15px}
+#message-body .tab-content div.active  {display: block;background: none}
+#message-body .tab-content div.active div {display: block;}
+#message-body .tab-content .searchDiv{box-shadow: none;border: none;padding: 10px 15px 0 15px;margin-bottom: 0px}
+
+#message-body .tab-content .form-control {float:left;padding:0px 5px; line-height: 36px;}
+#message-body .tab-content .input-group .btn{float: left;}
+
+#message-body .form-group table .form-group .input-group .form-control {float:left;padding:0px 5px; line-height: 36px; _width:65px; height: 35px;_margin-right:-3px;}
+#message-body .form-group table .form-group .input-group .btn{float: left; _width:50px}
+
+.crm_right .dataTable { margin-top: 15px; }
+
+
+.dataTable li .time {_right: 50px ;}
+#user .dataTable li .time {_right: 50px ;}
+
+.pagination li a, .pagination li span { color: #a7a7a7 }
+
+.crm_right .btn-myapp { border-color: #03a9f4; width: 40px; height: 34px; background: url(../images/search.png) #03a9f4 no-repeat center center }

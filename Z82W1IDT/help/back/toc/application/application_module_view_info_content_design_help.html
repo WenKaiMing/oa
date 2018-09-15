@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>帮助页面</title>
+<link type="text/css" rel="stylesheet" rev="stylesheet"
+	href="../help.css" media="all">
+</head>
+<body style="margin: 0; padding: 0;">
+<a href onClick="parent.history.back(); return false; return true;"
+	style="color: blue; font-size: 12px"></a>
+<div clas="helpitem">
+<div class="title">当前任务描述：</div>
+<div class="content">
+<ul>
+	<li>设计模式是建立视图的一种最便捷的方式。
+	</ul>
+</div>
+</div>
+<div clas="helpitem">
+<div class="title">功能说明：</div>
+<div class="content">
+<ul>
+    <li>通过绑定表单获取数据，不需要任何的编程脚本便可完成，设计模式由权限和字段两部分组成，权限是对作者、审批人和权限字段的设置：</li>
+    <li>
+      (1)如果设置为作者的话，视图的信息只能为作者本人所见；</li>
+    <li>(2)如果设置为审批人的话，视图的信息只能为审批人或者作者本人所见；</li>
+    <li>
+      权限字段（对应表单的权限部门字段）设有以下三个级别：</li>
+    <li>
+      自身：只有本部门内部人员可查阅；</li>
+    <li>
+      上级：本部门和上级部门人员可查阅；</li>
+    <li>
+      下级：本部门和下级部门可查阅。</li>
+    <li>
+      字段主要是对查询表单的查询条件进行设置。例如上面所举的例子，权限部分不进行设置，字段部分对&ldquo;申请单号&rdquo;和&ldquo;请假类型&rdquo;进行设置。&ldquo;申请单号&rdquo;的设置是&ldquo;请假申请查询表单&rdquo;的&ldquo;申请单号&rdquo;字段所获的值与&ldquo;请假申请&rdquo;的&ldquo;申请单号&rdquo;字段的比配。同理，&ldquo;请假类型&rdquo;的设置是&ldquo;请假申请查询表单&rdquo;的&ldquo;请假类型&rdquo;字段所获的值与&ldquo;请假申请&rdquo;的&ldquo;请假类型&rdquo;字段的比配。设计模式的界面如下图所示：</li>
+    <li><a target="_blank"
+		href="../images/view_dql.jpg"><img alt="41" src="../images/view_dql.jpg" /></a></li>
+</ul>
+</div>
+</div>
+</body>
+</html>

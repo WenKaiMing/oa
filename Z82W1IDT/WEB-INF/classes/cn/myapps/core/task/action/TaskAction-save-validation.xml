@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+  <!DOCTYPE validators PUBLIC 
+  		"-//Apache Struts//XWork Validator 1.0.2//EN"
+  		"http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="content.name">
+		<field-validator type="requiredstring">
+			<message>{*[page.name.notexist]*}!</message>
+		</field-validator>
+	</field>
+	<validator type="expression">
+	    <param name="expression"><![CDATA[content.runtimes > 0]]></param>
+	    <message>Runtimes must be greater than 0</message>
+    </validator>
+	
+</validators>

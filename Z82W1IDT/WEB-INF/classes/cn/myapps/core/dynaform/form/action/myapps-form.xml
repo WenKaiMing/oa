@@ -1,0 +1,168 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="dynaform_form" extends="myapps-default"
+		namespace="/core/dynaform/form">
+		
+		<action name="select"
+			class="cn.myapps.core.dynaform.form.action.FormAction"
+			method="doSelect">
+			<result name="success" type="dispatcher">select.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="selectFormName"
+			class="cn.myapps.core.dynaform.form.action.FormAction"
+			method="doSelectFormNameById">
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="selectField"
+			class="cn.myapps.core.dynaform.form.action.FormAction"
+			method="doSelectField">
+			<result name="success" type="dispatcher">
+				selectfield.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="new"
+			class="cn.myapps.core.dynaform.form.action.FormAction"
+			method="doNew">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="edit"
+			class="cn.myapps.core.dynaform.form.action.FormAction"
+			method="doEdit">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="save"
+			class="cn.myapps.core.dynaform.form.action.FormAction"
+			method="doSave">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack"/>
+		</action>
+		
+		<!-- one key create view -->
+		<action name="onekeycreview"
+			class="cn.myapps.core.dynaform.form.action.FormAction"
+			method="doOnekeycreview">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="saveforminfo"
+			class="cn.myapps.core.dynaform.form.action.FormAction"
+			method="doSave">
+			<result name="success" type="dispatcher">
+				success.jsp
+			</result>
+			<result name="input" type="dispatcher">
+			 	forminfo.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack"/>
+		</action>
+		
+		<action name="delete"
+			class="cn.myapps.core.dynaform.form.action.FormAction"
+			method="delete">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="basicStack" />
+			<result name="success" type="chain">list</result>
+			<result name="input" type="chain">list</result>
+		</action>
+		
+		<action name="list"
+			class="cn.myapps.core.dynaform.form.action.FormAction"
+			method="doFormList">
+			<!-- 			<interceptor-ref name="basicStack" />  -->
+			<result name="success" type="dispatcher">list.jsp</result>
+			<result name="input" type="dispatcher">list.jsp</result>
+			<interceptor-ref name="chain" />
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="synchronouslyData"
+			class="cn.myapps.core.dynaform.form.action.FormAction"
+			method="synchronouslyData">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="cleardata"
+			class="cn.myapps.core.dynaform.form.action.FormAction"
+			method="doClearData">
+			<result name="success" type="dispatcher">
+				deletedata.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				deletedata.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="basicStack" />
+		</action>
+		
+		<action name="beforecleardata"
+			class="cn.myapps.core.dynaform.form.action.FormAction"
+			method="doEdit">
+			<result name="success" type="dispatcher">
+				deletedata.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				deletedata.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="basicStack" />
+		</action>
+		
+		<action name="checkout" class="cn.myapps.core.dynaform.form.action.FormAction"
+		method="doCheckout">
+			<result name="success" type="dispatcher">content.jsp</result>
+			<result name="input" type="dispatcher">content.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="basicStack" />
+		</action>
+		
+		<action name="checkin" class="cn.myapps.core.dynaform.form.action.FormAction"
+		method="doCheckin">
+			<result name="success" type="dispatcher">content.jsp</result>
+			<result name="input" type="dispatcher">content.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="basicStack" />
+		</action>
+		
+		<action name="changePermisionType" class="cn.myapps.core.dynaform.form.action.FormAction"
+		method="doChangePermisionType">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="basicStack" />
+		</action>
+		
+	</package>
+
+
+</struts>

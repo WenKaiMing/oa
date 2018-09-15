@@ -1,0 +1,58 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+<title>自定义函数调用</title>
+<link type="text/css" rel="stylesheet" rev="stylesheet"
+	href="../style.css" media="all"><script type="text/javascript"
+	src="../scripts/shCore.js"></script> <script type="text/javascript"
+	src="../scripts/shBrushJScript.js"></script>
+<link type="text/css" rel="stylesheet"
+	href="../styles/shCoreDefault.css" />
+<script type="text/javascript">
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.all();
+</script>
+</head>
+<body id="split">
+<a title="" href="../index_iscript_help.jsp">返回</a>
+<div id="content">
+<div rel="jQuery">
+<h2>自定义函数调用</h2>
+<h3>概述</h3>
+<div class="example">
+<p>自定义函数调用</p>
+<div class="longdesc">
+<p></p>
+</div>
+</div>
+<div class="example">
+<h3>示例</h3>
+<h4 xmlns="">描述:</h4>
+<p xmlns="">自定义函数调用</p>
+<!--  <h5 xmlns="">HTML 代码:</h5>-->
+<pre xmlns=""></pre>
+<h5 xmlns="">iScript 代码:</h5>
+<pre class="brush: js;" xmlns="">
+//通过宏脚本调用本地dll文件
+function calldll(classname, funname, v1, v2){
+  if(name=="" || funname =="" || v1=="" || v2 ==""){
+     return "";
+   }else{
+    var array = new array();
+    array[0]=v1;
+    array[1]=v2;
+//该方法是结合传递的参数利用Jnative实现对系统dll文件进行处理
+var result=Packages.exampleinfo.Testdellinfo.calldll(
+array,name.funname); 
+// (其中array为参数列表；name为dll名称;funname为dll文件的方法名)
+    return result;
+    }
+}
+</pre>
+<!--<h5 xmlns="">结果:</h5>-->
+</div>
+</div>
+</body>
+</html>

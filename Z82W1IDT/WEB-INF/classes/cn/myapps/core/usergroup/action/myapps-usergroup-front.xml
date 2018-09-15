@@ -1,0 +1,91 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="myapps-usergroup-front" extends="myapps-default"
+		namespace="/portal/usergroup">
+		<action name="save" class="cn.myapps.core.usergroup.action.UserGroupAction"
+			method="doSave">
+			<result name="success" type="dispatcher">
+				/portal/share/user/contacts/inputusergroupname.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				/portal/share/user/contacts/inputusergroupname.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="saveNew" class="cn.myapps.core.usergroup.action.UserGroupAction"
+			method="doSaveNew">
+			<result name="success" type="dispatcher">
+				/portal/share/user/contacts/inputusergroupname.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				/portal/share/user/contacts/inputusergroupname.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="view" class="cn.myapps.core.usergroup.action.UserGroupAction"
+			method="doView">
+			<result name="success" type="dispatcher">
+				/portal/share/user/contacts/contacts.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="addtogroup" class="cn.myapps.core.usergroup.action.UserGroupAction"
+			method="doAddToGroup">
+			<result name="success" type="dispatcher">
+				/portal/share/user/contacts/addtogroup.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				/portal/share/user/contacts/addtogroup.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="list" class="cn.myapps.core.user.action.UserAction"
+			method="doList4Contacts">
+			<result name="success" type="dispatcher">
+				/portal/share/user/contacts/userlist.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="remove" class="cn.myapps.core.usergroup.action.UserGroupAction"
+			method="doRemove">
+			<result name="success" type="chain">
+				list
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="removegroup" class="cn.myapps.core.usergroup.action.UserGroupAction"
+			method="doRemoveGroup">
+			<result name="success" type="chain">
+				view
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="rename" class="cn.myapps.core.usergroup.action.UserGroupAction"
+			method="doRename">
+			<result name="success" type="chain">
+				view
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="getContancts" class="cn.myapps.core.usergroup.action.UserGroupAction" method="doContancts">
+			<result name="success" type="dispatcher">/portal/share/user/htmlData.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="getUserListBycontancts" class="cn.myapps.core.user.action.UserRunTimeAction" method="doUserListBycontancts">
+			<result name="success" type="dispatcher">/portal/share/user/htmlData.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+	</package>
+</struts>

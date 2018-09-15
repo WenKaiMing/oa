@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+html {
+	font-size: 62.5%;
+}
+
+body, html {
+	height: 100%;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	font-size: 1.4rem;
+	background-color: #f8f8f8;
+}
+
+ul, ol, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.weiui-cells-am {
+	margin-top: 0;
+}
+
+.weiui-cells-am .weui-cell {
+	padding-top: 0;
+}
+
+.amList p {
+	font-size: 12px;
+	line-height: 25px;
+}
+
+.amList .work {
+	color: #4A4A4A;
+}
+
+.amList .status-1 {
+	color: #6DB765;
+}
+
+.amList .status-2 {
+	color: #4DBCFF;
+}
+
+.amList .status-3 {
+	color: #FF8624;
+}
+
+.amList .workAddress, .amList .overAddress {
+	color: #C7C7C7;
+}
+
+.workDuration p, .noRecord p {
+	font-size: 12px;
+	line-height: 25px;
+}
+
+.workDuration .longtime {
+	color: #C7C7C7;
+}
+
+.weui-cells-detail {
+	background-color: #fff;
+	line-height: 1.41176471;
+	font-size: 17px;
+	overflow: hidden;
+	position: relative
+}
+
+.weui-cells-detail:before {
+	top: 0;
+	border-top: 1px solid #d9d9d9;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5)
+}
+
+.weui-cells-detail:last-child:after, .weui-cells-detail:before {
+	content: " ";
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 1px;
+	color: #d9d9d9
+}
+
+.weui-cells-detail:last-child:after {
+	bottom: 0;
+	border-bottom: 1px solid #d9d9d9;
+	-webkit-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5)
+}
+
+.weui-cells__title+.weui-cells-detail {
+	margin-top: 0
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<!-- domain package -->
+	<package name="datamapcfg" extends="myapps-default"
+		namespace="/core/datamap/definition">
+		
+		<interceptors>
+			<interceptor-stack name="basicStack">
+				<interceptor-ref name="params" />
+				<interceptor-ref name="prepare" />
+			</interceptor-stack>
+
+
+			<interceptor-stack name="validationWorkflowStack">
+				<interceptor-ref name="basicStack" />
+				<interceptor-ref name="validation" />
+				<interceptor-ref name="workflow" />
+			</interceptor-stack>
+		</interceptors>
+
+	<action name="save"
+		class="cn.myapps.core.datamap.definition.action.DataMapCfgAction"
+		method="doSave">
+		<result name="success" type="dispatcher">content.jsp</result>
+		<result name="input" type="dispatcher">content.jsp</result>
+	</action>
+	<action name="list"
+			class="cn.myapps.core.datamap.definition.action.DataMapCfgAction"
+			method="doList">
+			<result name="success" type="dispatcher">list.jsp</result>
+			<result name="input" type="dispatcher">list.jsp</result>
+		</action>
+		
+	<action name="new"
+			class="cn.myapps.core.datamap.definition.action.DataMapCfgAction"
+			method="doNew">
+			<result name="success" type="dispatcher">content.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+	<action name="edit"
+		class="cn.myapps.core.datamap.definition.action.DataMapCfgAction"
+		method="doEdit">
+		<result name="success" type="dispatcher">content.jsp</result>
+	</action>
+	
+	<action name="delete"
+		class="cn.myapps.core.datamap.definition.action.DataMapCfgAction"
+		method="doDelete">
+		<result name="success" type="chain">list</result>
+		<result name="input" type="chain">list</result>
+	</action>
+	
+	</package>
+</struts>

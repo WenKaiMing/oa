@@ -1,0 +1,221 @@
+@IMPORT url("../../../../share/css/base.css"); /**椤甸潰鍒濆鍖栨牱寮�*/
+
+/**瑙嗗浘鍏湁鏍峰紡**/
+
+/**瑙嗗浘鎸夐挳--start**/
+.button-document {
+	background: url(./../../../resource/document/act_seperate.gif) right center
+		no-repeat;
+	cursor: pointer;
+	display: block;
+	font-family: Arial, Helvetica;
+	font-weight: 700;
+	vertical-align: middle;
+}
+.button-document[alt="print"] {
+	background: url(./../../../resource/document/act_seperate.gif) right center
+		no-repeat #e5edf8;
+	cursor: pointer;
+	display: block;
+	font-family: Arial, Helvetica;
+	font-weight: 700;
+	vertical-align: middle;
+	padding: 6px 10px;
+    margin: 10px;
+    color: #1268a5;
+    border: 1px solid #b4ccee;
+}
+.button-document a {
+	color: #000;
+	cursor: pointer;
+	float: left;
+	height: 25px;
+	text-decoration: none;
+}
+.button-document a span {
+	float: left;
+	height: 16px;
+	margin: 0 0 0 10px;
+	padding: 3px 10px 3px 0;
+}
+.button-document a:hover {
+	color: #FFF;
+}
+.actBtn .button-document a span {
+	display: block;
+	white-space: nowrap;
+}
+.actBtn span {
+	float: left;
+}
+.actBtn div {
+	float: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+/**瑙嗗浘鎸夐挳--end**/
+
+/**8涓鍥炬煡璇㈣〃鍗曟寜閽�-start**/
+.button-cmd {
+	background-repeat: repeat-x;
+	color: #000;
+	cursor: pointer;
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: center;
+	vertical-align: middle;
+}
+.button-cmd a {
+	background: url("./../../../resource/document/btn_back2.gif") left 0 repeat-x;
+	color: #000;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 23px;
+	text-decoration: none;
+}
+.button-cmd a:hover {
+	background: url(./../../../resource/document/btn_back.gif) left 0;
+	background-repeat: repeat-x;
+	color: #000;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 23px;
+	text-decoration: none;
+}
+.button-cmd a span {
+	background: url(./../../../resource/document/btn_back2.gif) right 0;
+	background-repeat: repeat-x;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 23px;
+	margin: 0 0 0 10px;
+	padding: 3px 10px 3px 0;
+}
+.button-cmd a:hover span {
+	background: url(./../../../resource/document/btn_back.gif) right 0;
+	background-repeat: repeat-x;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 23px;
+	margin: 0 0 0 10px;
+	padding: 3px 10px 3px 0;
+}
+/**8涓鍥炬煡璇㈣〃鍗曟寜閽�-end**/
+
+/**collapsible,list,display,map,subGrid**/
+.listDataTable {/**琛ㄦ牸class**/
+	font-family: Arial, Vendera;
+	font-size: 12px;
+	z-index: 100;
+	border: 1px;
+	border-collapse: collapse;
+	border-spacing: 1px;
+	width: 100%;
+	border-top: 1px solid #99BBE8;
+	border-left: 1px solid #99BBE8;
+}
+
+.listDataTable td {/**鍗曞厓鏍糲lass**/
+	border-bottom: 1px solid #b4ccee;
+	border-right: 1px solid #b4ccee;
+}
+
+.listDataTable td a {
+	cursor: pointer;
+}
+
+.listDataTh {/**鏍囬琛宑lass**/
+	background-color: #e5edf8;
+	height: 24px;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 100;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.listDataThFirstTd {/**鏍囬琛岀涓�釜鍗曞厓鏍糲lass**/
+	font-family: Arial, Vendera, sans-serif;
+	height: 24px;
+	text-align: center;
+	vertical-align: middle;
+	width: 22px;
+	z-index: 100;
+}
+.listDataThTd {/**鏍囬琛屽叾浠栧崟鍏冩牸class**/
+	color: #1268a5;
+	font-family: Arial, Vendera, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	padding-left: .35em;
+	text-align: left;
+	z-index: 100;
+}
+
+.listDataTr .listDataThTd {/**鏁版嵁琛宑lass锛屾爣棰樿鍏朵粬鍗曞厓鏍糲lass**/
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.listDataThTd a {/**鏍囬琛屽叾浠栧崟鍏冩牸class涓婣鏍囩**/
+	color: #1268a5;
+}
+
+.listDataTrFirstTd {/**鏁版嵁琛岀涓�釜鍗曞厓鏍糲lass**/
+	font-family: Arial, Vendera, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	width: 22px;
+}
+
+.listDataTr_over {/**鏁版嵁琛屾粦杩嘽lass**/
+	background-color: #fbefda;
+}
+
+/**calendar,collapsible,gantt,list,map**/
+.body-front {
+	background-color: #F3F7F9;
+	margin-left: 2px;
+	margin-top: 0;
+}
+
+/**calendar,collapsible,dialogCalendar,gantt,list,map,subGrid**/
+.front-table-full-width {
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+/**calendar,collapsible,dialogCalendar,gantt,list,map,subGrid**/
+.front-scroll-hidden {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+/**calendar,collapsible,dialogCalendar,list,map**/
+.front-scroll-auto {
+	overflow-x: auto;
+	overflow-y: auto;
+}
+
+/**calendar,collapsible,dialogCalendar,gantt,list,map,subGrid**/
+.front-bgcolor2 {
+	background-color: #FFF;
+}
+
+/**calendar,collapsible,gantt,list,map**/
+.front-table-act {
+	height: 23px;
+	vertical-align: middle;
+}
+
+/**calendar,collapsible,gantt,list,map**/
+.front-border-bottom {
+	border-bottom: 1px solid #99bbe8;
+	margin: 0;
+	padding: 0;
+}

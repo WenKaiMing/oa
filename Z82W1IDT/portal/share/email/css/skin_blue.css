@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+
+/*--通用Class 开始--*/
+
+	/*连接*/
+	a:link,a:visited,.Acolor{color:#0068b7; text-decoration:underline;}
+	a:hover{color:#0075cd; text-decoration:underline;}
+	
+	/*按钮*/
+	.Btn,.ABtn{border:1px solid #72a1bd; background-color:#fff;}
+	.BtnHv,.ABtn:hover{border:1px solid #A2904D; background-color:#fff;}
+
+	/*输入框*/
+	.Ipt,.IptOnF{border:1px solid #a8b7c0; }
+
+	.Hr{border-top:1px solid #D1D8DB; border-bottom:1px solid #f6f9fb;}
+	.HrSub{border-top:1px solid #D1D8DB; border-bottom:none;}/*子分隔线*/
+	.HrSub2{border-top:none;border-bottom:1px solid #ededed;}/*子子分隔线*/
+
+	.Tips_Nml_C{ border:1px solid #e0e5e5; background-color:#f6fafd;}
+	
+	/*通用背景框（一级）*/ /*写信页面，读信等页面公用*/
+	.gCBgWp{background-color:#f6fafd; border-top:1px solid #eff4f7; border-bottom:1px solid #e0e7ed;}
+
+	/*通用系统对话框*/
+	.gSW_Con_WpIn,.gSW_Footer_WpIn{border:1px solid #608da8;}
+	.gSW_Con_WpIn{border-top:none; border-bottom:none;}
+	.gSW_Footer_Wp{background-color:#F6FAFD;}
+	.gSW_Footer_WpIn{border-top:none;}
+	.gSW_Footer_WpIn .HrSub{border-top-color:#cbdde5;}
+
+/*--通用Class 结束--*/
+
+
+
+/*--图片集成 开始--*/
+	/*--f1.gif，纵向平铺、框架元素以及非浅色背景的ico集合。--*/
+	.F1Img,.HeadWpInner,.SchBtn,.SchMenuBtn,.SidebarBdWp,.BigBtnWp a.aShouXIN,.BigBtnWp a.aXieXIN,.BigBtnWp,.PanelCon li.On a.fileItem,.Sb_Line
+	{/*background-image:url('../images/f1.gif');background-repeat:no-repeat;*/}
+
+	/*--f2.gif，横向平铺--*/
+	.F2Img,.HeadWp,.Btn,.BtnHv,.ABtn
+	{background-image:url('../images/f2.gif');background-repeat:repeat-x;}
+
+	/*--ico.gif，浅色背景的ico集合。--*/
+	.IcoImg,.icoOpCls,.icoCls,.icoTips,.icoIbx,.icoInfo
+	{background-image:url('../images/ico.gif');background-repeat:no-repeat;}
+
+	/*--loading.gif，加载中Loading小图标。--*/
+	.IcoLoading
+	{background-image:url('../images/loading.gif');background-repeat:no-repeat; background-position:0px 0px;}
+
+	/*--theme.gif，皮肤主题附加图片。--*/
+	.HeadThemeWp,.SidebarThemeWp{background-image:url('../images/theme.gif');background-repeat:no-repeat; background-position:0px 0px;}
+
+/*--图片集成 结束--*/
+
+
+
+/*--框架 开始--*/
+
+	.SidebarBdWp{background-repeat:repeat-y;}
+
+	/*--theme.gif，皮肤主题附加图片。--*/
+	.HeadThemeWp{background-position:right 0px;}
+	.SidebarThemeWp{background-position:0px -192px;}
+
+/*--框架 结束--*/
+
+
+
+/*--写信 开始--*/
+	.Cmp_tip table tr td.Cmp_TipOn,.Cmp_RTcont a:hover{ background-color:#E6F3FB}/*鼠标划过背景蓝色*//*通讯录可用*/
+	.Cmp_att{ background-color:#E7F1FA;}/*附件区域背景色*/
+	.Cmp_tip table tr td b{ color:#0068B7}/*写信提示命中文字颜色*/
+	.ctn{ background-color:#A5DD3D}/*上传进度条内部色*/
+	.Cmp_editor_wide,.Cmp_editor,.Cmp_table td input.Ipt,.Cmp_table td textarea.Ipt{border-color:#839BB1}/*写信输入框边框颜色*/
+	.Cmp_txlbox,.Cmp_TBtit a{border-color:#C9D3DB}/*写信的通讯录边框色*/
+	.Cmp_TBtit a{background-color:#F6FAFD}/*写信通讯录标签未选定背景色*/
+	.Cmp_RHcont a.on,.Cmp_RHcont a.on:hover{ background-color:#ffeda1;border-color:#FFC467}/*写信信纸选中的背景及边框色*/
+	.Cmp_cpt_txlW{border-color:#C9D3DB}/*写信成功快速添加通讯录边框色*/
+	.CMPth_lbtab{ border-top-color:#E0EBF5; border-bottom-color:#E0EBF5; background-color:#F9FCFE}/*添加到通讯录上下边框色及其背景色*/
+	.CMPth_lbtab th{ border-bottom-color:#E4EBF0; background-color:#F3F9FC}/*表格头部色彩及底边色*/
+/*--写信 结束--*/
+

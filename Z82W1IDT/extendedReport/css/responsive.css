@@ -1,0 +1,7 @@
+@import url("responsive-phone.css") screen and (min-width:200px) and (max-width:660px);
+@import url("responsive-pc.css") screen and (min-width:660px);
+
+
+.list-row {
+	cursor: pointer;
+}

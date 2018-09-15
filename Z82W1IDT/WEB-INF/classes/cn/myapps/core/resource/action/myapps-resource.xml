@@ -1,0 +1,104 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<package name="resource" extends="myapps-default"
+		namespace="/core/resource">
+		<action name="new"
+			class="cn.myapps.core.resource.action.ResourceAction"
+			method="doNew">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="edit"
+			class="cn.myapps.core.resource.action.ResourceAction"
+			method="doEdit">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="save"
+			class="cn.myapps.core.resource.action.ResourceAction"
+			method="doSave">
+			<result name="input" type="dispatcher">
+				content.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack"/>
+		</action>
+		<action name="delete"
+			class="cn.myapps.core.resource.action.ResourceAction"
+			method="delete">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="basicStack" />
+			<result name="success" type="dispatcher">list.jsp</result>
+			<result name="input" type="dispatcher">list.jsp</result>
+		</action>
+		<action name="list"
+			class="cn.myapps.core.resource.action.ResourceAction"
+			method="doList">
+			<interceptor-ref name="chain" />
+			<interceptor-ref name="basicStack" />
+			<result name="success" type="dispatcher">list.jsp</result>
+			<result name="input" type="dispatcher">list.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+		
+		<action name="toCopyResource"
+			class="cn.myapps.core.resource.action.ResourceAction"
+			method="toCopyResource">
+			<result name="success" type="dispatcher">
+				copyresource.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="gettree"
+			class="cn.myapps.core.resource.action.ResourceAction"
+			method="getTree">
+		</action>
+		
+		<action name="copyResource"
+			class="cn.myapps.core.resource.action.ResourceAction"
+			method="copyResource">
+			<result name="success" type="dispatcher">
+				copyresource.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				copyresource.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="saveAndNew"
+			class="cn.myapps.core.resource.action.ResourceAction"
+			method="doSaveAndNew">
+			<result name="input" type="dispatcher">
+				content.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack"/>
+		</action>
+		
+		<!-- 在视图中创建菜单 -->
+		<action name="createMenuByView" class="cn.myapps.core.resource.action.ResourceAction" method="doCreateMenuByView">
+			<result name="success">success.jsp</result>
+			<result name="input">/core/dynaform/view/menu.jsp</result>
+		</action>
+		
+		<!-- 在表单中创建菜单 -->
+		<action name="createMenuByForm" class="cn.myapps.core.resource.action.ResourceAction" method="doCreateMenuByForm">
+			<result name="success">success.jsp</result>
+			<result name="input">/core/dynaform/form/menu.jsp</result>
+		</action>
+	</package>
+
+</struts>

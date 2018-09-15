@@ -1,0 +1,79 @@
+.flow-submit fieldset {
+	margin: 0px;
+	padding: 10px 15px;
+	border: 0px;
+	background: #fff;
+	position: relative;
+	border-bottom: 1px solid #D9D9D9;
+}
+
+.flow-submit fieldset legend {
+	position: absolute;
+	color: #777777;
+    height: 3em;
+    line-height: 2.5em;
+}
+
+.flow-submit fieldset select {
+	margin-left: 50px;
+	width: auto;
+	float: right;
+	margin-bottom: 0px;
+	font-size: 12px;
+	padding: 0 8px;
+    height: 3em;
+}
+
+.flow-submit fieldset div {
+	margin-left: 70px;
+	text-align: right;
+}
+
+.flow-submit fieldset div label {
+	color: #b7b7b7;
+	font-size: 12px;
+}
+
+.flow-submit fieldset div label input {
+	vertical-align: sub;
+	margin-right: 5px;
+}
+
+.test-body {
+	/* position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0; */
+	overflow: hidden;
+}
+
+.flowToPerson .flowToPerson-Input {
+	border: 0px;
+	margin: 0px 10px;
+	border-bottom: 1px solid #C9C9C9;
+	border-radius: 0px;
+	height: 22px;
+	font-size: 12px;
+	width: 150px;
+	overflow-x: auto;
+}
+.flowToPerson .icon-person {
+	margin-right:10px;
+}
+.copyToPerson .flowToPerson-Input {
+	border: 0px;
+	margin: 0px 10px;
+	border-bottom: 1px solid #C9C9C9;
+	border-radius: 0px;
+	height: 22px;
+	font-size: 12px;
+	width: 150px;
+	overflow-x: auto;
+}
+.copyToPerson .icon-person {
+	margin-right:10px;
+}
+.copyToPerson{
+	display:inline-block !important;
+}

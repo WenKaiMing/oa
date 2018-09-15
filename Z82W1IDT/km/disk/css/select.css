@@ -1,0 +1,21 @@
+@charset "utf-8";
+/**common-start**/
+a{text-decoration: none;color:#666;}
+*{font-size: 12px;}
+html,body {background-color: #FFFFFF;}
+body,div,html,form,ul,ol,li,dl,dt,dd,p {margin: 0px;padding: 0px;}
+table{border-collapse:collapse;}
+li {list-style-type: none;}
+img {border: none;}
+body,input,textarea,select {font-family: Arial, Vendera, Tahoma;}
+/**common-end**/
+
+.content{margin:20px;height:190px;border:1px solid #DEDEDE;}
+.content h3{height:40px;line-height:40px;background:#EEEFF1;}
+.content h3 a{background:url(../images/upload_icon.gif) no-repeat 10px center;padding-left:30px;}
+.uplaod{height:47px;line-height:47px;width:155px;margin:40px auto;}
+.upload_Btn_left,.upload_Btn_center,.upload_Btn_right{float:left;}
+.upload_Btn_left{width:10px;height:47px;background:url(../images/choose_left.gif) no-repeat;}
+.upload_Btn_center{height:47px;background:url(../images/choose_center.gif) repeat-x;}
+.upload_Btn_right{width:10px;height:47px;background:url(../images/choose_right.gif) no-repeat;}
+.upload_Btn_center a{padding:0 35px;color:#fff;font-size:14px;font-weight:bold;display:inline-block;height:47px;background:url(../images/choose_upload.gif) no-repeat 5px center ;}

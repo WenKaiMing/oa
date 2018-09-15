@@ -1,0 +1,201 @@
+html{height:100%;}
+#right { position: relative; min-height: 100%; }
+#right .fc_topFix {height: 60px; position: fixed; z-index: 10; width: 100%; background: #fff;}
+
+.con_right {height:100%;}
+.launch { 
+	background-color: #FFFFFF; 
+	/*border:1px solid #dcdcdc;*/
+	border-top:none;
+	min-height:100%;
+}
+.launch .title { 
+	height: 46px; 
+	font-size: 24px; 
+	line-height: 46px; 
+	border-bottom: solid 2px #e5e5e5;
+	border-top: solid 2px #e5e5e5; 
+	color: #6b6b6b;
+}
+.launch .title i {font-size: 28px; margin:0px 10px;}
+
+.noApp {
+	padding-top: 20%;
+}
+
+.menu_dl{
+display:none;
+}
+
+.top_border{
+	border-top: 3px solid #2a91da;
+}
+
+.launch .app_Title {
+
+}
+.launch .app_Title .title_line {
+-webkit-box-flex: 1;
+  margin: 23px 20px 0px;
+  height: 1px;
+}
+
+
+
+.launch .app_Title i {
+  font-size: 28px;
+  margin: 0px 10px;
+}
+
+.launch .app_List {
+	padding: 20px;
+	
+}
+
+.launch .app_List span {
+  display: block;
+  text-align: center;
+  float: left;
+  width:100px;
+  margin:5px 2px;
+  padding: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 12px;
+  
+}
+.launch .app_List span:hover {
+
+  background: url(../images/appList_hov.png) center no-repeat;
+}
+.launch .app_List span.active {
+
+  background: url(../images/appList_act.png) center no-repeat;
+}
+
+
+.launch .app_List span i.menuLiIcon {
+	display: block;
+  height: 64px;
+  width: 64px;
+  margin:15px auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.launch .app_List span i.menuLiArrow {
+	display: block;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  left: 64px;
+  background: url('resource/images/Triangle.png')
+}
+
+.launch .app_List span i.menuLiTxt{
+	font-style: normal;
+	  cursor: pointer;
+}
+
+.launch .app_List span img.menuLiArrow {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  left: 46px;
+  top: 46px;
+}
+
+
+
+.clearfix:after{
+display:block;
+width:0px;
+height:0px;
+overflow: hidden;
+content:".";
+clear:both;
+}
+
+
+.top_menu_box{
+}
+
+.second_menu_box{
+border-top: 1px solid #dfe0e2;
+margin-top: 10px;
+  padding-top: 10px;
+}
+.third_menu_box{
+ 
+    border-top: 1px solid #dfe0e2;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+
+
+
+.launch .menu { width: 50%; padding: 10px; }
+.launch .menu .menu-title { height: 36px; line-height: 36px; font-size: 16px; /*border-bottom: solid 1px #e5e5e5;*/ color: #6b6b6b }
+.launch .menu .menu-title i {
+	font-size: 24px; 
+	margin-right: 5px
+}
+.launch .menu li { float: left; width: 50%; margin: 8px 0 }
+.launch .menu li a { font-size: 14px; height: 24px; line-height: 24px; margin: 0 24px; position: relative; display: block; color: #969696 }
+.launch .menu li a:hover { color: #22aae9 }
+.launch .menu li a i { display: block; width: 24px; height: 24px; position: absolute; }
+.launch .menu li a i.ico-menuli { background: url(../images/ico_con_menu_li.png) no-repeat 0 0; left: -24px }
+.launch .menu li a i.ico-arr { background: url(../images/ico_con_menu_li.png) no-repeat -24px 0; right: -24px }
+
+.launch-tab{
+	background-color: rgb(251,251,251);
+	border-bottom: 0px;
+	padding-left: 7px;
+}
+.launch-tab>li.active>a, .launch-tab>li.active>a:focus, .launch-tab>li.active>a:hover {
+    background: transparent!important;
+    color: #5ab45a;
+    border: none;
+    border-bottom: 3px solid #5ab45a;
+    margin-top: 1px;
+}
+.launch-tab>li>a{
+	padding:0;
+	margin-right: 0;
+    line-height: 1.42857143;
+    border: none;
+    border-radius: 0 0 0 0;
+    position: relative;
+    display: block;
+    padding: 10px 0;
+    margin: 0 8px;
+    color: rgb(159,159,159);
+}
+.launch-tab>li>a:focus,.launch-tab>li>a:hover {
+    text-decoration: none;
+    background-color: #eee;
+    border-radius: 0 0 0 0;
+}
+
+
+.content-space-pic {
+	width: 100%;
+    font-size:80px;
+    text-align: center;
+    color: #adadad;
+}
+.content-space-txt {
+	width: 100%;
+    font-size:22px;
+    text-align: center;
+    color: #adadad;
+    margin-bottom:18px;
+}
+.content-space-txt1 {
+	width: 100%;
+    font-size:14px;
+    text-align: center;
+    color: #adadad;
+}

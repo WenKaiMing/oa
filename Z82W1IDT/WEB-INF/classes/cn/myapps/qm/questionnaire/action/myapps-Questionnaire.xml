@@ -1,0 +1,113 @@
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="qm-questionnaire" extends="myapps-default" namespace="/qm/questionnaire">
+		<action name="list" class="cn.myapps.qm.questionnaire.action.QuestionnaireAction"
+			method="doList">
+			<result name="success" type="dispatcher">
+				list.jsp
+			</result>
+			<result name="mobile" type="dispatcher">
+				../wap/questionnaire/issued.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="delete" class="cn.myapps.qm.questionnaire.action.QuestionnaireAction"
+			method="doDelete">
+			<result name="success" type="dispatcher">
+				list.action
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="edit" class="cn.myapps.qm.questionnaire.action.QuestionnaireAction"
+			method="doEdit">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<result name="mobile" type="dispatcher">
+				../wap/questionnaire/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="new" class="cn.myapps.qm.questionnaire.action.QuestionnaireAction"
+			method="doNew">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<result name="mobile" type="dispatcher">
+				../wap/questionnaire/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="save" class="cn.myapps.qm.questionnaire.action.QuestionnaireAction"
+			method="doSave">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<result name="mobile" type="dispatcher">
+				../wap/questionnaire/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="showresult" class="cn.myapps.qm.questionnaire.action.QuestionnaireAction"
+			method="doShowResult">
+			<result name="success" type="dispatcher">
+				chart.jsp
+			</result>
+			<result name="mobile" type="dispatcher">
+				../wap/questionnaire/chart.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="publishforId" class="cn.myapps.qm.questionnaire.action.QuestionnaireAction"
+			method="doPublishforId">
+			<result name="success" type="dispatcher">
+				../result.jsp
+			</result>
+			<result name="mobile" type="dispatcher">
+				../wap/result.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="publish" class="cn.myapps.qm.questionnaire.action.QuestionnaireAction"
+			method="doPublish">
+			<result name="success" type="dispatcher">
+				list.action
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="recover" class="cn.myapps.qm.questionnaire.action.QuestionnaireAction"
+			method="doRecover">
+			<result name="success" type="dispatcher">
+				../result.jsp
+			</result>
+			<result name="mobile" type="dispatcher">
+				../wap/result.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="voteNumber" class="cn.myapps.qm.questionnaire.action.QuestionnaireAction"
+			method="doVoteNumber">
+			<result name="success" type="dispatcher">
+				../result.jsp
+			</result>
+			<result name="mobile" type="dispatcher">
+				../wap/result.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="rebuild" class="cn.myapps.qm.questionnaire.action.QuestionnaireAction"
+			method="doRebuild">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<result name="mobile" type="dispatcher">
+				../wap/questionnaire/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+</struts>

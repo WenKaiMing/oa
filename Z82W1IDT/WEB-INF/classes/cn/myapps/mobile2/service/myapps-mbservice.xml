@@ -1,0 +1,59 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="mbservice2" extends="myapps-default"
+		namespace="/mobile2/service">
+		
+		<action name="service"
+			class="cn.myapps.mobile2.service.MbServiceAction"
+			method="doAction">
+			<result name="success" type="dispatcher">
+			    /mobile2/result.jsp
+			</result>
+		</action>
+		
+		<action name="before"
+		   class="cn.myapps.mobile2.service.MbServiceAction"
+			method="doBefore">
+			<result name="success" type="dispatcher">
+			   /mobile2/result.jsp
+			</result>
+		</action>
+		
+		<action name="after"
+		   class="cn.myapps.mobile2.service.MbServiceAction"
+			method="doAfter">
+			<result name="success" type="dispatcher">
+			    /mobile2/result.jsp
+			</result>
+		</action>
+		
+		<action name="viewdialogconfirm"
+		   class="cn.myapps.mobile2.service.MbServiceAction"
+			method="doViewDialogConfirm">
+			<result name="success" type="dispatcher">
+			    /mobile2/result.jsp
+			</result>
+		</action>
+		
+		<action name="showFlowHis"
+			class="cn.myapps.mobile2.service.MbServiceAction"
+			method="doShowFlowHis">
+			<result name="success" type="dispatcher">/mobile2/result.jsp</result>
+		</action>
+		
+		<action name="flowhistory"
+			class="cn.myapps.mobile2.service.MbServiceAction"
+			method="doFlowHistory">
+			<result name="success" type="dispatcher">/mobile2/result.jsp</result>
+		</action>
+		
+        <!-- 流程启动获取参数 -->
+		<action name="startworkflow" class="cn.myapps.mobile2.service.MbServiceAction"
+		    method="doStartWorkFlow">
+		   <result name="success" type="dispatcher">/mobile2/result.jsp</result>
+		</action>
+
+    </package>
+</struts>

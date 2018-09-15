@@ -1,0 +1,90 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="activity-front-ajax" extends="myapps-default,json-default"
+		namespace="/portal/dynaform/activity">
+		
+		<!-- 
+		<action name="execute"
+			class="cn.myapps.core.dynaform.activity.action.ActivityAction" method="doExecute">
+			<result type="json">   
+                <param name="root">dataMap</param>
+                <param name="excludeProperties">
+                </param>
+           </result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		 -->
+		<!--  
+		<action name="refreshForm"
+			class="cn.myapps.core.dynaform.activity.action.ActivityAction" method="doRefreshForm">
+			<result type="json">   
+                <param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+                <param name="excludeProperties">
+                </param>
+           </result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		-->
+		<action name="execute"
+			class="cn.myapps.core.dynaform.activity.action.ActivityAction"
+			method="doExecute">
+			<result name="success" type="dispatcher">
+				/portal/share/dynaform/activity/result.jsp
+			</result>
+		</action>
+		<action name="process"
+			class="cn.myapps.core.dynaform.activity.action.ActivityAction"
+			method="doProcess">
+			<result name="form" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/content.jsp
+			</result>
+			<result name="view" type="chain">
+				<param name="namespace">/portal/dynaform/view</param>
+				<param name="actionName">displayView</param>
+			</result>
+			<result name="dispatcher.jsp" type="OBPMdispatcher">
+				/portal/share/dynaform/dispatcher/dispatcher.jsp
+			</result>
+		</action>
+		<action name="runbeforeactionscript"
+			class="cn.myapps.core.dynaform.activity.action.ActivityAction"
+			method="doRunbeforeactionscript">
+			<interceptor-ref name="chain" />
+		</action>
+		<action name="refreshForm"
+			class="cn.myapps.core.dynaform.activity.action.ActivityAction"
+			method="doRefreshForm">
+			<result name="success" type="dispatcher">
+				/portal/share/dynaform/activity/result.jsp
+			</result>
+		</action>
+		<action name="refreshView"
+			class="cn.myapps.core.dynaform.activity.action.ActivityAction"
+			method="doRefreshView">
+			<result name="success" type="dispatcher">
+				/portal/share/dynaform/activity/result.jsp
+			</result>
+		</action>
+		<action name="newDocument"
+			class="cn.myapps.core.dynaform.activity.action.ActivityAction"
+			method="doNewDocument">
+			<result name="success" type="dispatcher">
+				/portal/share/dynaform/activity/result.jsp
+			</result>
+		</action>
+		<action name="print"
+			class="cn.myapps.core.dynaform.activity.action.ActivityAction"
+			method="doPrint">
+			<result name="success" type="dispatcher">
+				/portal/share/dynaform/document/print.jsp
+			</result>
+			<interceptor-ref name="chain" />
+		</action>
+		
+	</package>
+</struts>

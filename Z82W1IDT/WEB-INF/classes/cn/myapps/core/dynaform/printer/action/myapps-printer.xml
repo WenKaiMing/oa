@@ -1,0 +1,116 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<!-- domain package -->
+	<package name="printer" extends="myapps-default"
+		namespace="/core/dynaform/printer">
+		
+		
+		
+		<interceptors>
+			<interceptor-stack name="basicStack">
+				<interceptor-ref name="params" />
+				<interceptor-ref name="prepare" />
+			</interceptor-stack>
+
+
+			<interceptor-stack name="validationWorkflowStack">
+				<interceptor-ref name="basicStack" />
+				<interceptor-ref name="validation" />
+				<interceptor-ref name="workflow" />
+			</interceptor-stack>
+		</interceptors>
+
+	<action name="save"
+		class="cn.myapps.core.dynaform.printer.action.PrinterAction"
+		method="doSave">
+		<result name="success" type="dispatcher">content.jsp</result>
+		<result name="input" type="dispatcher">content.jsp</result>
+	</action>
+	<action name="list"
+			class="cn.myapps.core.dynaform.printer.action.PrinterAction"
+			method="doList">
+			<result name="success" type="dispatcher">list.jsp</result>
+			<result name="input" type="dispatcher">list.jsp</result>
+		</action>
+		
+	<action name="new"
+			class="cn.myapps.core.dynaform.printer.action.PrinterAction"
+			method="doNew">
+			<result name="success" type="dispatcher">content.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+	<action name="edit"
+		class="cn.myapps.core.dynaform.printer.action.PrinterAction"
+		method="doEdit">
+		<result name="success" type="dispatcher">content.jsp</result>
+	</action>
+	
+	<action name="delete"
+		class="cn.myapps.core.dynaform.printer.action.PrinterAction"
+		method="doDelete">
+		<result name="success" type="chain">list</result>
+		<result name="input" type="chain">list</result>
+	</action>
+	
+	<action name="getFields"
+		class="cn.myapps.core.dynaform.printer.action.PrinterAction"
+		method="doGetFields">
+		<result name="success" type="OBPMdispatcher" >result/getFields.jsp</result>
+		<interceptor-ref name="params" />
+	</action>
+	<action name="getSubViews"
+		class="cn.myapps.core.dynaform.printer.action.PrinterAction"
+		method="doGetSubViews">
+		<result name="success" type="OBPMdispatcher" >result/getSubViews.jsp</result>
+		<interceptor-ref name="params" />
+	</action>
+		<action name="checkout" class="cn.myapps.core.dynaform.printer.action.PrinterAction"
+		method="doCheckout">
+			<result name="success" type="dispatcher">content.jsp</result>
+			<result name="input" type="dispatcher">content.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="basicStack" />
+		</action>
+		
+		<action name="checkin" class="cn.myapps.core.dynaform.printer.action.PrinterAction"
+		method="doCheckin">
+			<result name="success" type="dispatcher">content.jsp</result>
+			<result name="input" type="dispatcher">content.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="basicStack" />
+		</action>
+		
+		<action name="listforact" class="cn.myapps.core.dynaform.printer.action.PrinterAction"
+		method="doList">
+			<result name="success" type="dispatcher">listforact.jsp</result>
+			<result name="input" type="dispatcher">listforact.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="basicStack" />
+		</action>
+		
+		<action name="editforact" class="cn.myapps.core.dynaform.printer.action.PrinterAction"
+		method="doEdit">
+			<result name="success" type="dispatcher">contentforact.jsp</result>
+			<result name="input" type="dispatcher">contentforact.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="basicStack" />
+		</action>
+		
+		<action name="saveforact"
+		class="cn.myapps.core.dynaform.printer.action.PrinterAction"
+		method="doSave">
+		<result name="success" type="dispatcher">contentforact.jsp</result>
+		<result name="input" type="dispatcher">contentforact.jsp</result>
+		</action>
+		
+		<action name="newforact"
+			class="cn.myapps.core.dynaform.printer.action.PrinterAction"
+			method="doNew">
+			<result name="success" type="dispatcher">contentforact.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,38 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- document package -->
+	<package name="metadatamanage" extends="myapps-default"
+		namespace="/core/dynaform/dts/metadata">
+
+		<action name="optimization"
+			class="cn.myapps.core.dynaform.dts.metadata.action.MetadataManageAction"
+			method="doIndexOptimization">
+			<result name="success" type="dispatcher">
+				list.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				list.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+
+		<action name="list"
+			class="cn.myapps.core.dynaform.dts.metadata.action.MetadataManageAction"
+			method="doList">
+			<result name="success" type="dispatcher">
+				list.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				list.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+
+
+	</package>
+
+</struts>

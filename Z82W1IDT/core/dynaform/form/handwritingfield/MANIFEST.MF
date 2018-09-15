@@ -1,0 +1,828 @@
+Manifest-Version: 1.0
+
+Name: org/apache/commons/httpclient/util/URIUtil.class
+SHA1-Digest: SQQlpOkc89/M/Akz3KRzP/5jbN8=
+
+Name: org/apache/commons/httpclient/auth/DigestScheme.class
+SHA1-Digest: ZWcgLQwkQts4GDqzsv26z9MzNqo=
+
+Name: org/apache/commons/logging/impl/NoOpLog.class
+SHA1-Digest: JYiyl6ZCrokde6dTXasGMeJV6K4=
+
+Name: META-INF/LICENSE.txt
+SHA1-Digest: YSrWUKMomQCHlZQWp+L9Fgsdrqk=
+
+Name: org/apache/commons/httpclient/HttpMethodDirector.class
+SHA1-Digest: mRpOMMGA9QBU+goPhNveTbcyBso=
+
+Name: org/apache/commons/httpclient/methods/ByteArrayRequestEntity.cla
+ ss
+SHA1-Digest: mamSgsu14WAhq2suodvsoBqy/8Y=
+
+Name: org/apache/commons/logging/LogFactory$3.class
+SHA1-Digest: HSC4YJay+s+boX+QttnNYdwM9v4=
+
+Name: org/apache/commons/codec/net/BCodec.class
+SHA1-Digest: BidPrqWvEWXXLw6zLjc+tJDDxa4=
+
+Name: org/apache/commons/codec/language/Soundex.class
+SHA1-Digest: Ia/oxFg5gBiOCv6ueA9+Re9h1gs=
+
+Name: org/apache/commons/httpclient/auth/AuthChallengeException.class
+SHA1-Digest: B2t+r17hIImAk0AXmtFCkCueEUY=
+
+Name: org/apache/commons/httpclient/protocol/SSLProtocolSocketFactory.
+ class
+SHA1-Digest: sy7uix+UPsctlSvfOxqX/Q5fVFo=
+
+Name: org/apache/commons/httpclient/methods/UrlHeadMethod.class
+SHA1-Digest: M1OfAurePbjdJJNlHN48UfvdAXA=
+
+Name: org/apache/commons/httpclient/HttpException.class
+SHA1-Digest: E8/dSIdJ4vjfK+I2XY61RBF4ZlY=
+
+Name: org/apache/commons/httpclient/NTLM.class
+SHA1-Digest: +HZJBjfRE3lFqLauXuuIMfkApbs=
+
+Name: com/cyberway/component/applet/upload/TestApplet.class
+SHA1-Digest: bAH8Tdjvj7PJUu6xme6iO+oIOYw=
+
+Name: org/apache/commons/logging/LogConfigurationException.class
+SHA1-Digest: bYDaPGbA9Q1+KXakGistEjobxVA=
+
+Name: org/apache/commons/httpclient/methods/UrlDeleteMethod.class
+SHA1-Digest: HamGUVyN/sLpdxVsUtxog2ssmXg=
+
+Name: org/apache/commons/httpclient/methods/GetMethod.class
+SHA1-Digest: plzAvxBaCxwA9oHbq40aKBOhvcw=
+
+Name: org/apache/commons/httpclient/methods/multipart/PartSource.class
+SHA1-Digest: qp5qUwWs+f7iL/8MpUtYf59qVIc=
+
+Name: org/apache/commons/logging/impl/SimpleLog.class
+SHA1-Digest: NGIdaL/+LVfRo7tJDwa0cPzhhvs=
+
+Name: com/cyberway/component/applet/signature/SignatureCanvers$1.class
+SHA1-Digest: /EWn5uwXovhdsiZ+t1DJ9mcbI1Y=
+
+Name: org/apache/commons/httpclient/protocol/ProtocolSocketFactory.cla
+ ss
+SHA1-Digest: azEmbutX0FYAv0hzaW4oFGiqhs8=
+
+Name: org/apache/commons/httpclient/util/IdleConnectionTimeoutThread.c
+ lass
+SHA1-Digest: gI86mKqKO1m8p+eUW/RzhgZ4wFg=
+
+Name: org/apache/commons/httpclient/HttpClientError.class
+SHA1-Digest: TsirTtn68JqFBzWyowwCQxdY7+o=
+
+Name: com/cyberway/component/applet/upload/UploadRunner.class
+SHA1-Digest: Ii9kz0vAel7P/eQ9TUYWt7pH3LM=
+
+Name: com/cyberway/component/applet/upload/Thumbs.db
+SHA1-Digest: TC9D2kkuFM+yoS6IeXCTme6mV6w=
+
+Name: org/apache/commons/httpclient/HttpStatus.class
+SHA1-Digest: gUizsdhleFUOVU1zIVBZh73/V18=
+
+Name: org/apache/commons/codec/EncoderException.class
+SHA1-Digest: Fk7Su7enghZFQuR+kh+0JliAqNs=
+
+Name: org/apache/commons/httpclient/HttpsURL.class
+SHA1-Digest: mN+2SFB7qZBGH54iVSzEe3DDLwU=
+
+Name: org/apache/commons/codec/language/SoundexUtils.class
+SHA1-Digest: drrFBL6CIe8XOexL2wypjMY2Cjs=
+
+Name: org/apache/commons/httpclient/params/HttpMethodParams.class
+SHA1-Digest: Su/D0y4IqF+sJ9yoiQzGHNpZlN0=
+
+Name: org/apache/commons/httpclient/methods/EntityEnclosingMethod.clas
+ s
+SHA1-Digest: ew0W+T6AuY8wMJH/K/9+y0fsK7w=
+
+Name: com/cyberway/component/applet/upload/xls.gif
+SHA1-Digest: +d2pIe2aOhIfiuGTkQ+6iBNNPC4=
+
+Name: org/apache/commons/logging/Log.class
+SHA1-Digest: cAxDjKenzX9PjDTT6rf/U44sugA=
+
+Name: org/apache/commons/httpclient/auth/BasicScheme.class
+SHA1-Digest: FyaQBW2FzRJ1gs7wzE9xVsysbJU=
+
+Name: com/cyberway/component/applet/upload/error.gif
+SHA1-Digest: LaADG7vj3lnNaDqEsEGewHU0ZM4=
+
+Name: com/cyberway/component/applet/upload/UploadApplet$2.class
+SHA1-Digest: 1+AFX+Chc6rcTR35CVj8dsQUf34=
+
+Name: org/apache/commons/codec/binary/Hex.class
+SHA1-Digest: /t7rhsWwTvS3Tcu3pli2evjcoPM=
+
+Name: com/cyberway/component/applet/signature/SignatureCanvers$2.class
+SHA1-Digest: SAoDmDXbDiltGXmB8iYkl7aLWyA=
+
+Name: org/apache/commons/codec/Encoder.class
+SHA1-Digest: ZInAbr5npd6EtHL7yUYrG0zIiHk=
+
+Name: org/apache/commons/httpclient/Cookie.class
+SHA1-Digest: IhzSI3lFKZ627GHYMfQJ8CLNOJg=
+
+Name: org/apache/commons/httpclient/HostConfiguration.class
+SHA1-Digest: QrkCX5eK840XkE2UMaPRkAdm43A=
+
+Name: org/apache/commons/httpclient/HttpUrlMethod.class
+SHA1-Digest: 2G/3pD1AzoD/jtt5lDfgjzYvU/c=
+
+Name: org/apache/commons/httpclient/HttpConnectionManager.class
+SHA1-Digest: VWCj7+CVCq6rkZcOPrdEFgic+Jk=
+
+Name: com/cyberway/component/applet/upload/unknow.gif
+SHA1-Digest: d4EMnMhv4sp7pB4+UWdgQtgiAI4=
+
+Name: org/apache/commons/httpclient/auth/AuthState.class
+SHA1-Digest: it5JqJwunSD7hL4Br4rUWwE3AhU=
+
+Name: com/cyberway/component/applet/signature/SignatureApplet.class
+SHA1-Digest: otlyUAMDSnl47zeDYslthCCjiLM=
+
+Name: org/apache/commons/httpclient/RequestOutputStream.class
+SHA1-Digest: vkarC6bce/dJvJr4WUh8Hvt4Es0=
+
+Name: org/apache/commons/httpclient/DefaultMethodRetryHandler.class
+SHA1-Digest: RIDsK7J9PBTVU1ILRrp75wwh/aw=
+
+Name: org/apache/commons/httpclient/auth/HttpAuthenticator.class
+SHA1-Digest: E9PCLnlv00kGLLMGbe5A6Wk7iMk=
+
+Name: com/cyberway/component/applet/upload/file.gif
+SHA1-Digest: nBaU4RQMKFXiehi1UCbR/D2hgfU=
+
+Name: org/apache/commons/httpclient/HttpVersion.class
+SHA1-Digest: UiTq1Ux5t+HRwTLw+ovnl/EznRI=
+
+Name: org/apache/commons/logging/package.html
+SHA1-Digest: jlhff5I8+7tFatDnv115BjAmrZc=
+
+Name: com/cyberway/component/applet/upload/FileObject.class
+SHA1-Digest: r7Z9ZciO+vIGD7NT1qbIOMw7BsU=
+
+Name: org/apache/commons/httpclient/auth/AuthChallengeProcessor.class
+SHA1-Digest: bWONPh+MAL9qXjad0H9pEaA++tg=
+
+Name: org/apache/commons/httpclient/Credentials.class
+SHA1-Digest: TRDLNG/rzB0HyXhyFyN1vkBXHCQ=
+
+Name: org/apache/commons/httpclient/ProxyClient$ConnectResponse.class
+SHA1-Digest: tkEIliMF7DiYzvL0ju6gCToIHYI=
+
+Name: org/apache/commons/httpclient/ConnectMethod.class
+SHA1-Digest: sK9awZPriDMobwA1p66pbBXjtlU=
+
+Name: org/apache/commons/httpclient/HttpURL.class
+SHA1-Digest: pEsA3aCoLY2WBYgtoCgxb2WbQ+8=
+
+Name: com/cyberway/component/applet/upload/UploadApplet$6.class
+SHA1-Digest: pHuxFdSbD+7/S6D9TZ7bHj++oSo=
+
+Name: org/apache/commons/httpclient/URIException.class
+SHA1-Digest: bIabJLTANsPuVSWIAk9iXU+l0TU=
+
+Name: org/apache/commons/httpclient/cookie/CookiePolicy.class
+SHA1-Digest: DDPF4rieTnHFDFTXYN0LCcDByIY=
+
+Name: org/apache/commons/httpclient/auth/NTLM.class
+SHA1-Digest: iqoJ+Btuk0tbeL92Z16f+QT9+OE=
+
+Name: org/apache/commons/httpclient/methods/HeadMethod.class
+SHA1-Digest: Iq+1934BUsD3toVskk3goy7E0KQ=
+
+Name: org/apache/commons/httpclient/protocol/ControllerThreadSocketFac
+ tory$1.class
+SHA1-Digest: EkstfaFHPyGZpVRcl+Oh5S52ZWU=
+
+Name: com/cyberway/component/applet/upload/hlp.gif
+SHA1-Digest: ES+7wp7/zCWmrEu0F+lOkiRWyNs=
+
+Name: org/apache/commons/logging/impl/Jdk14Logger.class
+SHA1-Digest: mVJQDl9kbs0kLLRTng8vYtDdwVs=
+
+Name: org/apache/commons/httpclient/params/HttpClientParams.class
+SHA1-Digest: y2es3KWfzjet7WqEPsNxQdho9h0=
+
+Name: org/apache/commons/httpclient/HttpState.class
+SHA1-Digest: ZjOCaBxN26Aa/R3bD9HJAuQc2TQ=
+
+Name: org/apache/commons/httpclient/params/HttpParams.class
+SHA1-Digest: Q7IKbpPB/TRNpxkaDW7R6OGDZuQ=
+
+Name: org/apache/commons/httpclient/AutoCloseInputStream.class
+SHA1-Digest: vWrxUPrj2nAqc4Gp9d1VO3EYWmg=
+
+Name: org/apache/commons/logging/impl/LogFactoryImpl.class
+SHA1-Digest: E088D0Gpbnt3p9ubvQv+fqsRkOI=
+
+Name: org/apache/commons/httpclient/util/LangUtils.class
+SHA1-Digest: y58ITQlLMyuN1bXH/m1XErUqUTc=
+
+Name: org/apache/commons/httpclient/auth/CredentialsNotAvailableExcept
+ ion.class
+SHA1-Digest: i8ntFmPoNjjvioumJZhxKbGUfdg=
+
+Name: org/apache/commons/httpclient/RedirectException.class
+SHA1-Digest: QQSO3ZGp5dX+MZNOU9L7wmCCqMc=
+
+Name: org/apache/commons/httpclient/HeaderGroup.class
+SHA1-Digest: 5LxK3mN7ff66VEbgzMzTiba44Vg=
+
+Name: org/apache/commons/logging/impl/package.html
+SHA1-Digest: wuiw5sqpnOnGHNV+obeTfzoi9I4=
+
+Name: org/apache/commons/httpclient/params/HttpConnectionManagerParams
+ .class
+SHA1-Digest: B9DT4CHK/O49Kz6rXzpp5wbzxDE=
+
+Name: org/apache/commons/httpclient/methods/UrlPostMethod.class
+SHA1-Digest: rUbczNY6SVu5e77UJRxrgIwR4rA=
+
+Name: org/apache/commons/httpclient/params/DefaultHttpParamsFactory.cl
+ ass
+SHA1-Digest: zWUonYYm6mIY51zwhrCHhnBhvFA=
+
+Name: com/cyberway/component/applet/upload/FlowLayout2.java.bak
+SHA1-Digest: 2OvD5RAPHaq1N9wNIYTpeJmImkE=
+
+Name: org/apache/commons/httpclient/params/DefaultHttpParams.class
+SHA1-Digest: H9mu25eQZFFNyPiQhOEad3loZyM=
+
+Name: org/apache/commons/httpclient/auth/NTLMScheme.class
+SHA1-Digest: oD0Xgeedag+qeAlf7U5NmvfiG/c=
+
+Name: org/apache/commons/httpclient/HttpConnection$WrappedOutputStream
+ .class
+SHA1-Digest: MqbP/PQ1VI4xnpGe8ytuBw8vdbU=
+
+Name: org/apache/commons/codec/language/Metaphone.class
+SHA1-Digest: gS06Vm1prQoBuksykEbndctL2tw=
+
+Name: org/apache/commons/httpclient/auth/MalformedChallengeException.c
+ lass
+SHA1-Digest: pYihWTisWWcnJuD118xMZvW1R+Y=
+
+Name: org/apache/commons/httpclient/util/DateParser.class
+SHA1-Digest: 2EIQ+BKZQj5NPdY3BfPVT7dXlJc=
+
+Name: org/apache/commons/httpclient/HttpConnection.class
+SHA1-Digest: Ae0MGc+Ou9dmZ9+/cNLY6ew2+Bs=
+
+Name: com/cyberway/component/applet/upload/uploading.gif
+SHA1-Digest: Ue8CC4YxV9wiPFCoauXC1hxgvoU=
+
+Name: org/apache/commons/httpclient/Wire.class
+SHA1-Digest: BLhimjddF4VjSKxkJJU4gtunwag=
+
+Name: org/apache/commons/httpclient/auth/AuthChallengeParser.class
+SHA1-Digest: 798D5qHcimXQ6nMDzcCQs8v8cw4=
+
+Name: org/apache/commons/logging/impl/LogKitLogger.class
+SHA1-Digest: epKJRXB1Paeb/aBWJ/26LkazTAs=
+
+Name: org/apache/commons/httpclient/params/HttpConnectionParams.class
+SHA1-Digest: lSAEOY7mThdjwurDkkuwhyTZqTQ=
+
+Name: org/apache/commons/httpclient/methods/multipart/Part.class
+SHA1-Digest: 6w4ZHMdUY13+OtQquTSDoSrBrC4=
+
+Name: com/cyberway/component/applet/upload/prepare.gif
+SHA1-Digest: v4C521n2Nv76s7qCTddYJetJCqc=
+
+Name: org/apache/commons/httpclient/methods/multipart/PartBase.class
+SHA1-Digest: YDIEW6KjssoMiU2x6Z1GYkhnGmY=
+
+Name: org/apache/commons/codec/digest/DigestUtils.class
+SHA1-Digest: Cz00bWLWr+JtwnMClJHerQUo+2A=
+
+Name: org/apache/commons/httpclient/HttpConnection$ConnectionTimeoutEx
+ ception.class
+SHA1-Digest: FOE/AdbcSJA6Trp3fapAIbQpQRY=
+
+Name: org/apache/commons/httpclient/URI$LocaleToCharsetMap.class
+SHA1-Digest: d8Zt+rsvVVtvPpuXp8x8jA39uns=
+
+Name: org/apache/commons/httpclient/protocol/ControllerThreadSocketFac
+ tory$SocketTask.class
+SHA1-Digest: TObSpAOl7bctxMpkc3njG4rDkpg=
+
+Name: org/apache/commons/codec/StringEncoderComparator.class
+SHA1-Digest: E5KW+Rrj8Zno9z0r5G/XJB5vHoU=
+
+Name: org/apache/commons/httpclient/ResponseInputStream.class
+SHA1-Digest: 5RHs1CzA/+KvpptNF0tBTeICNwg=
+
+Name: org/apache/commons/httpclient/HttpHost.class
+SHA1-Digest: UZ7JXY1HXIAobdZJoyedjr0lL0Q=
+
+Name: org/apache/commons/httpclient/HttpParser.class
+SHA1-Digest: H1JG4QvzbEO4TQ2sTQbv02hWxXg=
+
+Name: org/apache/commons/httpclient/WireLogInputStream.class
+SHA1-Digest: GM7ngBf8jx1wIgKJHZ0u/QOXA8g=
+
+Name: org/apache/commons/httpclient/util/IdleConnectionHandler.class
+SHA1-Digest: 24trITzS0EuQf1tb/g3OCVfBJSQ=
+
+Name: org/apache/commons/logging/impl/SimpleLog$1.class
+SHA1-Digest: ITO9u42AaZikutbHZYfCl6CPDHY=
+
+Name: org/apache/commons/httpclient/util/DateUtil.class
+SHA1-Digest: wyrbMMsWNiXmFt2AslmCbPlWR2s=
+
+Name: org/apache/commons/codec/StringDecoder.class
+SHA1-Digest: qQRLU9SaBoxT55CVe/eoqCPlGvo=
+
+Name: org/apache/commons/httpclient/auth/AuthScope.class
+SHA1-Digest: sikRBI373Or59A9eZ0U1D/XLgSQ=
+
+Name: org/apache/commons/httpclient/util/TimeoutController.class
+SHA1-Digest: G3ujW7fk5uX9f7Ke/vEFJCGSDJU=
+
+Name: org/apache/commons/httpclient/WireLogOutputStream.class
+SHA1-Digest: Vs7NUV5UUnVVFXxGAKXXA0TEbY4=
+
+Name: org/apache/commons/httpclient/methods/UrlGetMethod.class
+SHA1-Digest: 1Qol3/NY+/fbi2EVXl4q8KFRrMM=
+
+Name: com/cyberway/component/applet/upload/zip.gif
+SHA1-Digest: Bo1bvaDnW0kwy6bLnnwKfNlVLZY=
+
+Name: com/cyberway/component/applet/upload/exe.gif
+SHA1-Digest: Y2fzpdEFdPbfcTQOuRVTaTI3gYQ=
+
+Name: com/cyberway/component/applet/signature/SignatureCanvers.class
+SHA1-Digest: Mmp0K7EIILkF/K0TEXQhEWJZ1sg=
+
+Name: org/apache/commons/httpclient/cookie/NetscapeDraftSpec.class
+SHA1-Digest: 9hW/G64/tcMqWVrcss+NRaXQGQA=
+
+Name: org/apache/commons/codec/binary/BinaryCodec.class
+SHA1-Digest: pSjtjADTpSOlEYYECNT0ByWRRHI=
+
+Name: org/apache/commons/codec/language/package.html
+SHA1-Digest: tJM1fjeYTcbuKzn5l8l9hj6oNyI=
+
+Name: org/apache/commons/logging/impl/LogFactoryImpl$1.class
+SHA1-Digest: BIa8ZFrrCGdPNUEC2cqNmin1Xso=
+
+Name: org/apache/commons/codec/net/StringEncodings.class
+SHA1-Digest: xvHyfxu7PF4LD1yn0JKT/giyzI8=
+
+Name: com/cyberway/component/applet/upload/UploadApplet.jbx
+SHA1-Digest: yFWor4J4GGGyK+OjNH6BFl1yljE=
+
+Name: com/cyberway/component/applet/upload/rm.gif
+SHA1-Digest: uiLjjRMOSL/Uvv7+tXTkZoG/7QU=
+
+Name: org/apache/commons/httpclient/auth/RFC2617Scheme.class
+SHA1-Digest: no21eBlFvmMh4IiqXoDTDzPUysI=
+
+Name: org/apache/commons/httpclient/methods/multipart/StringPart.class
+SHA1-Digest: 9FogRMhUfOGiLaPlF/Qt/YH4Q1A=
+
+Name: com/cyberway/component/applet/upload/mp3.gif
+SHA1-Digest: bn9+jGHc0WHWhmidem6FHcTBrWs=
+
+Name: org/apache/commons/logging/LogFactory$1.class
+SHA1-Digest: Zdeg2hJRyuI8rhYbr7C5aq4KOtI=
+
+Name: org/apache/commons/httpclient/StatusLine.class
+SHA1-Digest: q4zbxniV63E+rq9wYNL0IvW/hBU=
+
+Name: org/apache/commons/httpclient/protocol/ControllerThreadSocketFac
+ tory.class
+SHA1-Digest: Ch7sHzuMHyg+NNOfqgnmgPHyO5Y=
+
+Name: org/apache/commons/logging/impl/Log4jFactory.class
+SHA1-Digest: KP7sYIpUOxo4mCcXvQAdq3tAYFA=
+
+Name: org/apache/commons/codec/Decoder.class
+SHA1-Digest: eX1SmhWsfIqH+fB0qnTNCu2u0lY=
+
+Name: com/cyberway/component/applet/upload/jsp.gif
+SHA1-Digest: oliNOtudNvg0sXPLWHkxT7m2+vc=
+
+Name: org/apache/commons/httpclient/MultiThreadedHttpConnectionManager
+ $HttpConnectionWithReference.class
+SHA1-Digest: IxvUnp6tniDDHFnqg1rBrnW2nyU=
+
+Name: org/apache/commons/httpclient/MultiThreadedHttpConnectionManager
+ $ConnectionSource.class
+SHA1-Digest: EOS51wgZrnVkv+A/JXcLJX+VUSM=
+
+Name: org/apache/commons/httpclient/util/ExceptionUtil.class
+SHA1-Digest: oD7ngx1qEZKT7w18NoELzpIRies=
+
+Name: org/apache/commons/httpclient/URI$DefaultCharsetChanged.class
+SHA1-Digest: vK1KDBx7miDy2L1CvmiMuzftNh8=
+
+Name: org/apache/commons/httpclient/MultiThreadedHttpConnectionManager
+ $ReferenceQueueThread.class
+SHA1-Digest: L+v6ICERyfM9x/GtJm2c+ghALVM=
+
+Name: org/apache/commons/httpclient/ContentLengthInputStream.class
+SHA1-Digest: hjQkVWkToAmB1rQsSAlLi+Nu7OE=
+
+Name: org/apache/commons/httpclient/HttpClient.class
+SHA1-Digest: 54HZ9/6qqVVNOfei2Y9n+KBUVGc=
+
+Name: org/apache/commons/httpclient/MethodRetryHandler.class
+SHA1-Digest: zTUs7/WOjbevvKEOdGJSPBhi6Bw=
+
+Name: org/apache/commons/codec/net/QCodec.class
+SHA1-Digest: RWP6Hx8uiE+eg6lwGGLd3oUQeLc=
+
+Name: org/apache/commons/httpclient/HttpMethodBase$1.class
+SHA1-Digest: HTiU8HLW1wnVEkSpZIZo1GYUAeE=
+
+Name: org/apache/commons/httpclient/HttpRecoverableException.class
+SHA1-Digest: ukrQFBOnr7Ws6LCSGRJgcUzAKyk=
+
+Name: org/apache/commons/codec/DecoderException.class
+SHA1-Digest: 4fj/CaK0HNm2jD3+kESM7YBARa0=
+
+Name: org/apache/commons/httpclient/util/Base64.class
+SHA1-Digest: 4t/8qRcwOU44npZCszvK2l6/scU=
+
+Name: org/apache/commons/httpclient/MultiThreadedHttpConnectionManager
+ $HostConnectionPool.class
+SHA1-Digest: gz6MNQWzyyOynHk9FJM0hWuM+/c=
+
+Name: org/apache/commons/httpclient/NameValuePair.class
+SHA1-Digest: V4WOX+M/eQDz+qmVUvSo9gG+UU0=
+
+Name: com/cyberway/component/applet/upload/doc.gif
+SHA1-Digest: 27zcPhwRAm3ioBgqkS3ySzIell0=
+
+Name: org/apache/commons/httpclient/MultiThreadedHttpConnectionManager
+ $HttpConnectionAdapter.class
+SHA1-Digest: m4wyntEXiE9fsgKzOhoUvKoM3Pk=
+
+Name: org/apache/commons/httpclient/ProxyClient.class
+SHA1-Digest: TUJ0D0IFe/fqBRqz4XKDbAQU+w4=
+
+Name: com/cyberway/component/applet/upload/pic.gif
+SHA1-Digest: c7yvZz/mV+GKcBmYjvlvlh0qBUw=
+
+Name: org/apache/commons/httpclient/auth/AuthSchemeBase.class
+SHA1-Digest: wutlSoe/A5OTZyJbAIzQRsgzyuc=
+
+Name: org/apache/commons/logging/impl/Log4JCategoryLog.class
+SHA1-Digest: lQI5+MoWDyil3bHxPC8AJHglzJc=
+
+Name: com/cyberway/component/applet/upload/asp.gif
+SHA1-Digest: cJ1fDiToDaab5SSeMJvteM5SQXM=
+
+Name: org/apache/commons/httpclient/URI.class
+SHA1-Digest: Dwj1xEVb5heml0uVjgkREYy55dU=
+
+Name: org/apache/commons/httpclient/UsernamePasswordCredentials.class
+SHA1-Digest: RE9nRQ+C115oEGsoCEYoiToXgtY=
+
+Name: org/apache/commons/codec/language/RefinedSoundex.class
+SHA1-Digest: VpdfjROVVk+GyGEstgb+svO8X8c=
+
+Name: org/apache/commons/httpclient/ProxyClient$1.class
+SHA1-Digest: l5jNPxAVv3ATp/5EiJtWSKvmDmo=
+
+Name: org/apache/commons/httpclient/ResponseConsumedWatcher.class
+SHA1-Digest: XEGKur+Ca46IVjjCNZ18ryhGLO8=
+
+Name: org/apache/commons/httpclient/methods/UrlPutMethod.class
+SHA1-Digest: MELvtfDFodp0s0UpE2F+PSZyzEg=
+
+Name: org/apache/commons/httpclient/MultiThreadedHttpConnectionManager
+ .class
+SHA1-Digest: fIlBONqTmULCyQsmGnVw56GX5+8=
+
+Name: org/apache/commons/httpclient/MultiThreadedHttpConnectionManager
+ $1.class
+SHA1-Digest: KscdixV5Y+2ThekKJq6JLGlTu4A=
+
+Name: org/apache/commons/codec/package.html
+SHA1-Digest: UUrM9ExPCzFtOWiJTpQsCRRUlao=
+
+Name: com/cyberway/component/applet/upload/vssver.scc
+SHA1-Digest: 1OujfeyoXH5aFkt21lcFUGCGnug=
+
+Name: org/apache/commons/codec/binary/Base64.class
+SHA1-Digest: yT6ilLhCa7eSAbkwC8RKm5IH7mY=
+
+Name: org/apache/commons/httpclient/util/ParameterParser.class
+SHA1-Digest: mye3OaItlpihNYu6nWyl1gRMnUk=
+
+Name: org/apache/commons/httpclient/cookie/RFC2109Spec.class
+SHA1-Digest: LER8eyW7yMSH+Bgl66u/vQAcjDU=
+
+Name: org/apache/commons/httpclient/methods/PutMethod.class
+SHA1-Digest: EbL5K1j4isy/5QbO/xcxS8uS6PA=
+
+Name: org/apache/commons/httpclient/CircularRedirectException.class
+SHA1-Digest: 4J+TvyoIp/yHn7Vq2qJoD4yfDiA=
+
+Name: org/apache/commons/httpclient/cookie/IgnoreCookiesSpec.class
+SHA1-Digest: s+ZUytCSf3Z0HD7Pu4SxUr0+wmE=
+
+Name: org/apache/commons/httpclient/ProxyClient$DummyConnectionManager
+ .class
+SHA1-Digest: BIOMj8Hs9N1RrQhcDQBQ+Nv8vR0=
+
+Name: org/apache/commons/codec/net/QuotedPrintableCodec.class
+SHA1-Digest: DZJqqH6k/g2jQ+k7Gnu05IAHLKU=
+
+Name: com/cyberway/component/applet/upload/UploadApplet$4.class
+SHA1-Digest: U2nOd9A+SIns4tCuWNShg+/F1Cg=
+
+Name: org/apache/commons/httpclient/protocol/DefaultProtocolSocketFact
+ ory.class
+SHA1-Digest: irDS/FoCI97R3WnxVQsooz0q3Ts=
+
+Name: org/apache/commons/httpclient/methods/multipart/FilePart.class
+SHA1-Digest: unwUOtwg6YhxSN73PDlE8aJX2I8=
+
+Name: org/apache/commons/httpclient/MultiThreadedHttpConnectionManager
+ $ConnectionPool.class
+SHA1-Digest: oM0Fq9kQZW8+2xah0zTRM02ViG4=
+
+Name: TestApplet.html
+SHA1-Digest: YBtRuTakCxPE/aMfYKlhLKmCUaw=
+
+Name: org/apache/commons/codec/binary/package.html
+SHA1-Digest: SjDb+egZhfry8Q2jv0BXoFgIImw=
+
+Name: org/apache/commons/httpclient/methods/multipart/ByteArrayPartSou
+ rce.class
+SHA1-Digest: 96CNpodqq9nD1SILBCbEk5zKcjs=
+
+Name: org/apache/commons/httpclient/Authenticator.class
+SHA1-Digest: wi3HCp6toLY1Sze3OzIjGZ/ADhI=
+
+Name: org/apache/commons/httpclient/methods/ExpectContinueMethod.class
+SHA1-Digest: /rez23SH0yq0ZvWYB4JCLkuqJ7E=
+
+Name: org/apache/commons/httpclient/util/TimeoutController$TimeoutExce
+ ption.class
+SHA1-Digest: 6YDHQNE6FYN49mdR2uwiO9xgs4Q=
+
+Name: org/apache/commons/codec/net/URLCodec.class
+SHA1-Digest: bJHWcVQtH6v/GdMrinJO8EmVEGo=
+
+Name: com/cyberway/component/applet/upload/UploadApplet$3.class
+SHA1-Digest: v+iKsHmcZ4krrbWxJVkby9j3+o4=
+
+Name: org/apache/commons/httpclient/MultiThreadedHttpConnectionManager
+ $WaitingThread.class
+SHA1-Digest: /P20gWScNwpe3dF8TCXsYMpfhmk=
+
+Name: org/apache/commons/httpclient/protocol/Protocol.class
+SHA1-Digest: i7PZnqpaL/78ZtkrKm7Yhv0CJEk=
+
+Name: org/apache/commons/httpclient/methods/UrlOptionsMethod.class
+SHA1-Digest: WBt63eadUFVp15YZwzK4Ax+ByFc=
+
+Name: UploadApplet.html
+SHA1-Digest: a5BXJ9+746oyskTIp9Yt6IrnyFw=
+
+Name: org/apache/commons/httpclient/util/URIUtil$Coder.class
+SHA1-Digest: 4mYwdERmUwUUGQN4J71izvdx/KM=
+
+Name: org/apache/commons/httpclient/methods/DeleteMethod.class
+SHA1-Digest: wwsMN8AWLeuFLXdbE3k+oN6iKoY=
+
+Name: com/cyberway/component/applet/upload/FlowLayout2.class
+SHA1-Digest: 5u1ZQq6TKU5MnCdgzvbFR0+/kLk=
+
+Name: com/cyberway/component/applet/upload/txt.gif
+SHA1-Digest: WxDKL7CWCAiRCTiTAasDDEBNrfc=
+
+Name: com/cyberway/component/applet/upload/pdf.gif
+SHA1-Digest: Xja6njQOuGlTeVsntkwh3uIWaVU=
+
+Name: org/apache/commons/httpclient/methods/TraceMethod.class
+SHA1-Digest: 2YybOU2qWFfQohTuXQHhyDFyVuQ=
+
+Name: org/apache/commons/logging/impl/Log4JLogger.class
+SHA1-Digest: 8waiP98j1LnIBhSaF82Wn+g/Hos=
+
+Name: org/apache/commons/httpclient/methods/multipart/MultipartRequest
+ Entity.class
+SHA1-Digest: apQPkiKq3YtYz+KIty9NImw4H+c=
+
+Name: com/cyberway/component/applet/upload/avi.gif
+SHA1-Digest: KNGx3F/67N9kkUrxnMrKPRGNIFQ=
+
+Name: com/cyberway/component/applet/upload/checked.gif
+SHA1-Digest: 9xSzFLjqlUuFnAqfsDeYE1/rmkY=
+
+Name: org/apache/commons/httpclient/ProtocolException.class
+SHA1-Digest: 7zWkHW+JKOHEdzfjj5Qpr6zbd/k=
+
+Name: org/apache/commons/logging/LogFactory$2.class
+SHA1-Digest: HceWdpr5/T0CaHRg3piTJbvxqd0=
+
+Name: org/apache/commons/httpclient/auth/CredentialsProvider.class
+SHA1-Digest: nID0ggJJhK32Jh+zXajwObLUT78=
+
+Name: org/apache/commons/httpclient/NTCredentials.class
+SHA1-Digest: 6d5OjPo27MiESruqnWuiyZvaWu0=
+
+Name: com/cyberway/component/applet/upload/audio.gif
+SHA1-Digest: sl6pnBkByX9oVjjlQ+eLUyPgOOM=
+
+Name: org/apache/commons/codec/digest/package.html
+SHA1-Digest: Yf7liq6nK/rwiTLDmaxdmvEBFPs=
+
+Name: org/apache/commons/httpclient/SimpleHttpConnectionManager.class
+SHA1-Digest: qvXkJM5893XeAobCmZYQLJjkuxM=
+
+Name: com/cyberway/component/applet/upload/UploadApplet$5.class
+SHA1-Digest: 1tmWjc6iqoKxnP3Jj/2qQQDpO2Y=
+
+Name: org/apache/commons/logging/LogFactory.class
+SHA1-Digest: RH3W/K/MGc+FnVn6edu3GbJxRsE=
+
+Name: org/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphon
+ eResult.class
+SHA1-Digest: ghtT+x3JfUT20rrEO7zJKWIOJh4=
+
+Name: org/apache/commons/httpclient/methods/PostMethod.class
+SHA1-Digest: ZhD5xrN2BYRAHh10Tn4eDhEld78=
+
+Name: org/apache/commons/httpclient/protocol/ReflectionSocketFactory.c
+ lass
+SHA1-Digest: w4DQ5nIQaercl/jElw5ADt3EGBc=
+
+Name: com/cyberway/component/applet/upload/swf.gif
+SHA1-Digest: A2owvt6ydPGlerUykHql3hcsNqE=
+
+Name: org/apache/commons/httpclient/methods/MultipartPostMethod.class
+SHA1-Digest: GASRhoR04UTRl9P9Thk5icxqLCI=
+
+Name: com/cyberway/component/applet/upload/ppt.gif
+SHA1-Digest: 8vXETadcqxr1ezNUbc31l8bQU8I=
+
+Name: org/apache/commons/httpclient/util/HttpURLConnection.class
+SHA1-Digest: Xmi9xQczWc9LepJ641oDSqT5GPA=
+
+Name: com/cyberway/component/applet/upload/htm.gif
+SHA1-Digest: OLaW5Q7zXoLniEflnKvpMlHCbKA=
+
+Name: org/apache/commons/httpclient/HttpConnection$1.class
+SHA1-Digest: amsz7Ot1ja4KS3OO9K3PjxZ3oso=
+
+Name: com/cyberway/component/applet/upload/mid.gif
+SHA1-Digest: zfKXME6kZLWU3eGPb+sBWVNTI+c=
+
+Name: org/apache/commons/httpclient/ProxyHost.class
+SHA1-Digest: VEnuHtk5nUhAvhuoifEVajPXCzI=
+
+Name: org/apache/commons/httpclient/auth/AuthPolicy.class
+SHA1-Digest: xMlGVglUP/z3zNu6ikBOXPBqTv0=
+
+Name: org/apache/commons/codec/language/DoubleMetaphone.class
+SHA1-Digest: GqaIW5OwqCEOHbty7xTK+mGyAmg=
+
+Name: com/cyberway/component/applet/upload/mdb.gif
+SHA1-Digest: 56BnRZ+dvtiRLyZ6uw6jNxP5r0o=
+
+Name: org/apache/commons/httpclient/methods/OptionsMethod.class
+SHA1-Digest: WqpGA6teHGlSvytj4K/xlD9HaNc=
+
+Name: org/apache/commons/logging/LogSource.class
+SHA1-Digest: 2Yr+/MWiBbQKanofoPtXJv2fFVE=
+
+Name: org/apache/commons/httpclient/auth/InvalidCredentialsException.c
+ lass
+SHA1-Digest: AL72LHQHDvVEdf23lj33aYJpZ60=
+
+Name: org/apache/commons/httpclient/methods/multipart/FilePartSource.c
+ lass
+SHA1-Digest: BYzVowJHoqUc5csfj8nlNNQAHLc=
+
+Name: org/apache/commons/httpclient/HttpMethod.class
+SHA1-Digest: qe4p2+uokX1PpDHtG0HC+P2LB38=
+
+Name: org/apache/commons/httpclient/params/HttpParamsFactory.class
+SHA1-Digest: hm6zz6DwudI1WuomhK0LK+SI3XY=
+
+Name: com/cyberway/component/applet/upload/mp.gif
+SHA1-Digest: YOx7GJQJxkNTJSxNQGzx0tQUr0Q=
+
+Name: org/apache/commons/httpclient/HttpMethodRetryHandler.class
+SHA1-Digest: ZGOYUaBxKvK+lcpyp6C1oeplCR0=
+
+Name: org/apache/commons/codec/net/package.html
+SHA1-Digest: HvSk26/kAAaosw/HdduDEJ0T05I=
+
+Name: org/apache/commons/httpclient/auth/AuthenticationException.class
+SHA1-Digest: 1NFrNXvcHP1DjuaM440QAWvmYio=
+
+Name: com/cyberway/component/applet/upload/UploadApplet$1.class
+SHA1-Digest: yzbTCM22gneeeqwpqtQoz/5/ixs=
+
+Name: org/apache/commons/httpclient/HttpConnection$SocketTask.class
+SHA1-Digest: sc6sQE+hb/qyv2BbA+klvvbVkok=
+
+Name: org/apache/commons/httpclient/params/HostParams.class
+SHA1-Digest: GXjJ9Fsn3cogpJBUyE7ZAoHlw7Q=
+
+Name: org/apache/commons/httpclient/methods/RequestEntity.class
+SHA1-Digest: u91Azad+zOw0xLUba3+jgKbtX08=
+
+Name: org/apache/commons/codec/StringEncoder.class
+SHA1-Digest: 53B46mjkfFPSSFK3CDUo1yT/QUU=
+
+Name: org/apache/commons/httpclient/util/EncodingUtil.class
+SHA1-Digest: 3N0XVUcaXqtw5kW5LPL4HlFcsvA=
+
+Name: org/apache/commons/httpclient/ChunkedInputStream.class
+SHA1-Digest: kRAEvcgRbo6drRGNB/ZCvN8ER7s=
+
+Name: org/apache/commons/httpclient/cookie/MalformedCookieException.cl
+ ass
+SHA1-Digest: pB3W/8Ug9ups5cEy9HDHoxT5Gs0=
+
+Name: org/apache/commons/httpclient/HttpConstants.class
+SHA1-Digest: SfIJtWCIHbMkNYHAa/U6+S3OeM0=
+
+Name: org/apache/commons/httpclient/protocol/SecureProtocolSocketFacto
+ ry.class
+SHA1-Digest: z1FAqan+uxB0KRawWjRAAEhIXpw=
+
+Name: org/apache/commons/codec/net/RFC1522Codec.class
+SHA1-Digest: xw/JFSddB4HxIqUMuYI22+Pbh2A=
+
+Name: org/apache/commons/codec/BinaryDecoder.class
+SHA1-Digest: 8bzTi3RYPcQV/2IfpgBEM8Dgjns=
+
+Name: org/apache/commons/httpclient/util/DateParseException.class
+SHA1-Digest: 6JnpTPcoy5FUyDVSg4A5QKDaFXI=
+
+Name: org/apache/commons/httpclient/HeaderElement.class
+SHA1-Digest: 23nhY86nJj2b13kRkHG4gPD82mc=
+
+Name: org/apache/commons/httpclient/ChunkedOutputStream.class
+SHA1-Digest: P9B0WCs1qpbVVfW1NGUZ/C3ykCw=
+
+Name: org/apache/commons/httpclient/DefaultHttpMethodRetryHandler.clas
+ s
+SHA1-Digest: BtLAEvQHXoUj9uHApUtjoimmMuA=
+
+Name: org/apache/commons/httpclient/HttpMethodBase.class
+SHA1-Digest: JOCQ0ZVKCvHwzpCYsVMbow5SmUU=
+
+Name: org/apache/commons/httpclient/ConnectionPoolTimeoutException.cla
+ ss
+SHA1-Digest: tJ+RJBf1pwnX1i0/nz/3Ha5Excg=
+
+Name: org/apache/commons/codec/overview.html
+SHA1-Digest: 6FXmtL02xUIWZi/2zxL9pPpdMds=
+
+Name: org/apache/commons/httpclient/methods/InputStreamRequestEntity.c
+ lass
+SHA1-Digest: adEA6+aymde6z3kOMMMYAn8A6Ww=
+
+Name: org/apache/commons/codec/BinaryEncoder.class
+SHA1-Digest: riCJiseW1q/NpdxuzMSNVQOS6Ek=
+
+Name: org/apache/commons/httpclient/cookie/CookieSpec.class
+SHA1-Digest: mP+OT9SCiVscgcCp+3AtCxE3QEo=
+
+Name: org/apache/commons/httpclient/Header.class
+SHA1-Digest: A7pQZrGsRdaf/oRwQJYuya3eWYQ=
+
+Name: org/apache/commons/httpclient/NoHttpResponseException.class
+SHA1-Digest: 18+27E4GZv5xyUy3jSQZX8A1a8M=
+
+Name: com/cyberway/component/applet/upload/rar.gif
+SHA1-Digest: oBo7u5J3T4HEE5pBm/QScTbWw/w=
+
+Name: com/cyberway/component/applet/upload/success.gif
+SHA1-Digest: 9xSzFLjqlUuFnAqfsDeYE1/rmkY=
+
+Name: org/apache/commons/httpclient/auth/HttpAuthRealm.class
+SHA1-Digest: qwqLux90x7p98qBpEyqZsxIwjVI=
+
+Name: org/apache/commons/httpclient/auth/AuthScheme.class
+SHA1-Digest: 9FGJZ1uQA0hfxmJBWNAUN4KCpPc=
+
+Name: org/apache/commons/httpclient/methods/StringRequestEntity.class
+SHA1-Digest: ztGBSUO1ycu8BXsbrFmmLAdSGsY=
+
+Name: org/apache/commons/httpclient/cookie/CookieSpecBase.class
+SHA1-Digest: m23930CqQTNr8ghpY5WdOLfYy/0=
+
+Name: org/apache/commons/httpclient/ConnectTimeoutException.class
+SHA1-Digest: 8Si3dkCkf/6oFZ8ewlzappPp+xE=
+
+Name: com/cyberway/component/applet/upload/UploadApplet.class
+SHA1-Digest: BzPszx57EXSiQ85fKpr3gw4j3FM=
+

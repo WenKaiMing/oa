@@ -1,0 +1,224 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="myapps-login-front" extends="myapps-default" namespace="/portal/login">
+		<action name="sso"
+			class="cn.myapps.core.security.action.LoginAction"
+			method="doSSO">
+			<result name="controlPanel" type="OBPMredirect">
+				/saas/weioa/controlPanel.jsp
+			</result>
+			<result name="success" type="OBPMredirect">
+				/portal/share/index.jsp?returnUrl=${returnUrl}&amp;application=${application}
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/share/security/ssoerror.jsp
+			</result>
+			<result name="proxy" type="dispatcher">
+				/portal/share/security/agent.jsp
+			</result>
+			<result name="adssoProxy" type="dispatcher">
+				/portal/share/security/agent.jsp?_ssoType=ad
+			</result>
+			<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+			<!-- <interceptor-ref name="cookies" /> -->
+			<interceptor-ref name="logInterceptor">
+ 				<param name="type">{*[Login]*}</param>
+ 				<param name="description">{*[Login]*}{*[System]*}</param>
+ 			</interceptor-ref>
+		</action>
+		<action name="loginInDialog"
+			class="cn.myapps.core.security.action.LoginAction"
+			method="doLoginWithCiphertext">
+			<result name="success" type="OBPMredirect">
+				/portal/share/security/loginInDialogSuccess.jsp
+			</result>
+			<result name="error" type="OBPMdispatcher">
+				/portal/share/security/loginInDialog.jsp
+			</result>
+			<result name="error" type="OBPMdispatcher">
+				/portal/share/security/loginInDialog.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/share/security/login.jsp
+			</result>
+		</action>	
+		<action name="login"
+			class="cn.myapps.core.security.action.LoginAction"
+			method="doLogin">
+			<result name="debug" type="OBPMredirect">
+				/portal/share/debug.jsp?returnUrl=${returnUrl}&amp;application=${application}
+			</result>
+			<result name="success" type="OBPMredirect">
+				/portal/share/index.jsp?returnUrl=${returnUrl}&amp;application=${application}
+			</result>
+			<result name="success1" type="dispatcher">
+				../share/security/handle.jsp
+			</result>
+			<result name="proxy" type="dispatcher">
+				/portal/share/security/agent.jsp
+			</result>
+			<result name="smsauth" type="chain">smsauth</result>
+			<result name="error" type="OBPMdispatcher">
+				/portal/share/security/login.jsp
+			</result>
+			<result name="usbkeyAuth" type="chain">usbkeyAuth</result>
+			<result name="error" type="OBPMdispatcher">
+				/portal/share/security/login.jsp
+			</result>
+			<result name="errorPhone" type="OBPMdispatcher">
+				/portal/phone/login.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/share/security/login.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+			<!-- <interceptor-ref name="cookies" /> -->
+			<interceptor-ref name="logInterceptor">
+ 				<param name="type">{*[Login]*}</param>
+ 				<param name="description">{*[Login]*}{*[System]*}</param>
+ 			</interceptor-ref>
+		</action>
+			<action name="loginWithCiphertext"
+			class="cn.myapps.core.security.action.LoginAction"
+			method="doLoginWithCiphertext">
+			<result name="debug" type="OBPMredirect">
+				/portal/share/debug.jsp?returnUrl=${returnUrl}&amp;application=${application}
+			</result>
+			<result name="success" type="OBPMredirect">
+				/portal/share/index.jsp?returnUrl=${returnUrl}&amp;application=${application}
+			</result>
+			<result name="success1" type="dispatcher">
+				../share/security/handle.jsp
+			</result>
+			<result name="proxy" type="dispatcher">
+				/portal/share/security/agent.jsp
+			</result>
+			<result name="smsauth" type="chain">smsauth</result>
+			<result name="error" type="OBPMdispatcher">
+				/portal/share/security/login.jsp
+			</result>
+			<result name="usbkeyAuth" type="chain">usbkeyAuth</result>
+			<result name="error" type="OBPMdispatcher">
+				/portal/share/security/login.jsp
+			</result>
+			<result name="errorPhone" type="OBPMdispatcher">
+				/portal/phone/login.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/share/security/login.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+			<!-- <interceptor-ref name="cookies" /> -->
+			<interceptor-ref name="logInterceptor">
+ 				<param name="type">{*[Login]*}</param>
+ 				<param name="description">{*[Login]*}{*[System]*}</param>
+ 			</interceptor-ref>
+		</action>
+		<action name="smsauth"
+			class="cn.myapps.core.security.action.LoginAction"
+			method="doSMSAuth">
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/security/smsAuth.jsp
+			</result>
+			<result name="error" type="OBPMdispatcher">
+				/portal/share/security/login.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/share/security/login.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+			<!-- <interceptor-ref name="cookies" /> -->
+		</action>
+
+		<action name="urlLogin"
+			class="cn.myapps.core.security.action.LoginAction"
+			method="doUrlLogin">
+			<result name="success" type="OBPMdispatcher">
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="loginProxy"
+			class="cn.myapps.core.security.action.LoginAction"
+			method="doLoginProxy">
+			<result name="success" type="OBPMredirect">
+				/portal/share/index.jsp?returnUrl=${returnUrl}&amp;application=${application}
+			</result>
+			<result name="success1" type="dispatcher">
+				../share/security/handle.jsp
+			</result>
+			<result name="error" type="OBPMdispatcher">
+				/portal/share/security/agent.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/share/security/agent.jsp
+			</result>
+			<result name="proxy" type="OBPMdispatcher">
+				/portal/share/security/agent.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+			<!-- <interceptor-ref name="cookies" /> -->
+		</action>
+		
+		<action name="loginSMS"
+			class="cn.myapps.core.security.action.LoginAction"
+			method="doLoginSMS">
+			<result name="success" type="OBPMredirect">
+				/portal/share/index.jsp?returnUrl=${returnUrl}&amp;application=${application}
+			</result>
+			<result name="error" type="OBPMdispatcher">
+				/portal/share/security/login.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/share/security/login.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+			<!-- <interceptor-ref name="cookies" /> -->
+		</action>
+		
+		<action name="usbkeyAuth"
+			class="cn.myapps.core.security.action.LoginAction"
+			method="doUsbKeyAuth">
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/security/usbkeyAuth.jsp
+			</result>
+			<result name="error" type="OBPMdispatcher">
+				/portal/share/security/login.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/share/security/login.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+			<!-- <interceptor-ref name="cookies" /> -->
+		</action>
+		
+		<action name="loginUsbKey"
+			class="cn.myapps.core.security.action.LoginAction"
+			method="doLoginUsbKey">
+			<result name="success" type="OBPMredirect">
+				/portal/share/index.jsp?returnUrl=${returnUrl}&amp;application=${application}
+			</result>
+			<result name="error" type="OBPMdispatcher">
+				/portal/share/security/login.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/share/security/login.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+			<!-- <interceptor-ref name="cookies" /> -->
+		</action>
+		
+	</package>
+
+	
+</struts>

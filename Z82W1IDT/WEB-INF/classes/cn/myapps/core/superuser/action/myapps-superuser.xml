@@ -1,0 +1,71 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="superuser" extends="myapps-default"
+		namespace="/core/superuser">
+		<action name="new" class="cn.myapps.core.superuser.action.SuperUserAction"
+			method="doNew">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="edit"
+			class="cn.myapps.core.superuser.action.SuperUserAction" method="doEdit">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="editPersonal"
+			class="cn.myapps.core.superuser.action.SuperUserAction" method="doEdit">
+			<result name="success" type="dispatcher">
+				personalSetting.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="save"
+			class="cn.myapps.core.superuser.action.SuperUserAction" method="doSave">
+			<result name="input" type="dispatcher">content.jsp</result>
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="savePersonal"
+			class="cn.myapps.core.superuser.action.SuperUserAction"
+			method="doSavePersonal">
+			<result name="input" type="dispatcher">
+				personalSetting.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				personalSetting.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+		</action>
+
+		<action name="delete"
+			class="cn.myapps.core.superuser.action.SuperUserAction" method="doDelete">
+			<interceptor-ref name="params" />
+			<result name="success" type="chain">list</result>
+			<result name="input" type="dispatcher">list.jsp</result>
+		</action>
+
+		<action name="list"
+			class="cn.myapps.core.superuser.action.SuperUserAction" method="doList">
+			<result name="success" type="dispatcher">list.jsp</result>
+			<result name="input" type="dispatcher">list.jsp</result>
+		</action>
+			
+		
+	</package>
+
+</struts>

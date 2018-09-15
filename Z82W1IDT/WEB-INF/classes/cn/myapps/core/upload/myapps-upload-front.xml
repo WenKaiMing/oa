@@ -1,0 +1,55 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<!-- workflow FlogLog package -->
+	<package name="upload-front" extends="myapps-default"
+		namespace="/portal/upload">
+
+		<action name="delete" class="cn.myapps.core.upload.UploadAction"
+			method="doDelete">
+			<result name="success" type="OBPMdispatcher">
+				success.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="uploadfile" class="cn.myapps.core.upload.UploadAction" method="doUploadFile">
+			<result name="success" type="OBPMdispatcher">/portal/share/component/wordField/upload.jsp</result>
+			<result name="input" type="OBPMdispatcher">/portal/share/component/wordField/upload.jsp</result>
+			<result name="saveSignSuccess" type="OBPMdispatcher">/portal/share/component/wordField/secSaveSuccess.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="uploadword"
+			class="cn.myapps.core.upload.UploadAction" method="dosaveWord">
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/component/wordField/wordEditor.jsp
+			</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="deleteOne" class="cn.myapps.core.upload.UploadAction"
+			method="doDeleteOne">
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="fileManagerdelete" class="cn.myapps.core.upload.UploadAction"
+			method="doFileManagerDelete">
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="fileInfor" class="cn.myapps.core.upload.UploadAction"
+			method="doFileInfor">
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="deleteToDataBaseFile" class="cn.myapps.core.upload.UploadAction"
+			method="deleteToDataBaseFile">
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+</struts>

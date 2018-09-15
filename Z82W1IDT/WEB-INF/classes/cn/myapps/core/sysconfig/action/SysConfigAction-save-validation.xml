@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+  <!DOCTYPE validators PUBLIC 
+  		"-//Apache Struts//XWork Validator 1.0.2//EN"
+  		"http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+
+	<field name="loginConfig.length">
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[[1-9]{1}|([1-2]{1}[0-5]?)|(\s)*]]></param>
+			<message>{*[Input.PasswordLength.illegal]*}!</message>
+		</field-validator>
+	</field>
+	
+	<field name="loginConfig.failLoginTimes">
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[([1-9]{1}[0-9]*)|(\s)*]]></param>
+			<message>{*[Input.FailTimes.illegal]*}!</message>
+		</field-validator>
+	</field>
+
+	<field name="loginConfig.maxUpdateTimes">
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[([1-9]{1}[0-9]*)|(\s)*]]></param>
+			<message>{*[Input.RegulateTimes.illegal]*}!</message>
+		</field-validator>
+	</field>
+
+	<field name="kmConfig.timeout">
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[([1-9]{1}[0-9]*)|(\s)*]]></param>
+			<message>{*[Input.Timeout.illegal]*}!</message>
+		</field-validator>
+	</field>
+	
+	<field name="kmConfig.poolsize">
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[([1-9]{1}[0-9]*)|(\s)*]]></param>
+			<message>{*[Input.Poolsize.illegal]*}!</message>
+		</field-validator>
+	</field>
+</validators>
+

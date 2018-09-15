@@ -1,0 +1,63 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+<title>parseDate(str, format)</title>
+<link type="text/css" rel="stylesheet" rev="stylesheet"
+	href="../style.css" media="all"><script type="text/javascript"
+	src="../scripts/shCore.js"></script> <script type="text/javascript"
+	src="../scripts/shBrushJScript.js"></script>
+<link type="text/css" rel="stylesheet"
+	href="../styles/shCoreDefault.css" />
+<script type="text/javascript">
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.all();
+</script>
+</head>
+<body id="split">
+<a title="" href="../index_iscript_help.jsp">返回</a>
+<div id="content">
+<div rel="jQuery">
+<h2>parseDate(str, format)</h2>
+<h3>概述</h3>
+<div class="example">
+<p>将字符串按给定格式转换为日期型。</p>
+<div class="longdesc">
+<p></p>
+</div>
+</div>
+<div>
+<h3>返回值</h3>
+<h4><strong>java.util.Date</strong></h4>
+</div>
+<div>
+<h3>参数</h3>
+<h4><strong>1、str</strong><span>String</span></h4>
+<p>待转换的字符串,需符合format指定的格式</p>
+<h4><strong>2、format</strong><span>String</span></h4>
+<p>日期格式</p>
+</div>
+<div class="example">
+<h3>示例</h3>
+<h4 xmlns="">描述:</h4>
+<p xmlns="">实现parseDate (str,fromat)函数的应用，日期转换函数</p>
+<!--  <h5 xmlns="">HTML 代码:</h5>-->
+<pre xmlns=""></pre>
+<h5 xmlns="">iScript 代码:</h5>
+<pre class="brush: js;" xmlns="">
+//表单某字段值为转换格式之后的日期 (值脚本)
+(function(){
+var starttime = getItemValue("字符串");
+var startdate=null;
+if(starttime!=null && starttime.trim().length()>0){
+    startdate= parseDate(starttime,"yyyy-MM-dd HH:mm:ss"); 
+}
+return startdate;
+})()
+</pre>
+<!--<h5 xmlns="">结果:</h5>-->
+</div>
+</div>
+</body>
+</html>

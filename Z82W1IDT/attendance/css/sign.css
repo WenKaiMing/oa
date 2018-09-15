@@ -1,0 +1,224 @@
+/**************************common class********************************/
+*{margin: 0; padding: 0;}
+html{ height:100%; width:100%; -webkit-text-size-adjust: 100%;	-ms-text-size-adjust: 100%; background:#f0eff4; }
+body{height:100%; width:100%; font-size:12px; }
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box; margin:0; padding:0;-webkit-appearance: none; }
+.body{ min-width:320px;margin:auto;min-height:100%;	position:relative;	display:block;	background-size:100% 100%;	-webkit-box-sizing: border-box; min-width:320px;}
+.btn{ display:block; background:#06be04; border-radius:5px; height:42px; line-height:42px; color:#fff; font-size:16px; text-align:center; text-decoration:none;}
+html{ background:#f2f2f4;}
+a{text-decoration: none;}
+
+/*signIn*/
+.signIn .box2.positionLoading{ display:none; height:400px; padding-top:250px;
+ text-align:center; color:#525252; font-size:16px;background:url(../../iOther/images/IWORK-loading3.gif) no-repeat center 65px; background-size: 90px auto;}
+
+.signIn header{ position:relative; 
+}
+.signIn header .yao{ width:150px; height:150px;background:url(../images/yao1.png) no-repeat right center ; background-size: auto 150px; -webkit-transform: rotate(-15deg); margin:0 auto; margin-top:70px; -webkit-transform-origin:30% bottom; 
+animation:myfirst 0.5s;
+-moz-animation:myfirst 0.5s; /* Firefox */
+-webkit-animation:myfirst 0.8s; /* Safari and Chrome */
+-o-animation:myfirst 0.5s; /* Opera */
+animation-iteration-count:infinite;
+-moz-animation-iteration-count:infinite;
+-webkit-animation-iteration-count:infinite;
+-o-animation-iteration-count:infinite;
+}
+@keyframes myfirst
+{
+0% {-webkit-transform: rotate(-15deg);}
+50% {-webkit-transform: rotate(15deg);}
+100%{-webkit-transform: rotate(-15deg);}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0% {-webkit-transform: rotate(-15deg);}
+50% {-webkit-transform: rotate(15deg); -webkit-animation-delay:0.5s;}
+100%{-webkit-transform: rotate(-15deg);}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0% {-webkit-transform: rotate(-15deg);}
+50% {-webkit-transform: rotate(15deg);  -webkit-animation-delay:0.5s;}
+100%{-webkit-transform: rotate(-15deg);}}
+
+@-o-keyframes myfirst /* Opera */
+{
+0% {-webkit-transform: rotate(-15deg);}
+50% {-webkit-transform: rotate(15deg);}
+100%{-webkit-transform: rotate(-15deg);}
+}
+
+.signIn.faild #positionLoading{ display: none;}
+.signIn.faild #signSuccess{ display: none;}
+.signIn.faild #signFail{ display: block;}
+.signIn.faild #signFail_position{ display: none;}
+
+.signIn.success #positionLoading{ display: none;}
+.signIn.success #signSuccess{ display: block;}
+.signIn.success #signFail{ display: none;}
+.signIn.success #signFail_position{ display: none;}
+
+.signIn.faild.position #positionLoading{ display: none;}
+.signIn.faild.position #signSuccess{ display: none;}
+.signIn.faild.position #signFail{ display: none;}
+.signIn.faild.position #signFail_position{ display: block;}
+
+
+
+.signIn header span{color:#b7b7b7; text-shadow:1px 1px 0px #fff; position:absolute; bottom:40px; width:100%; text-align:center; font-size:18px}
+.signIn.faild{ background: #fff;}
+
+.signIn.faild.position .box2 .btndiv{ width: 100%;}
+.signIn.faild.position .box2 .btndiv.blue .btn{ background: #1183fb}
+.signIn.success{ background: #fff;}
+.signIn.success .top{ background: #f5f5f5; float: left;
+padding: 15px 0; width: 100%}
+.signIn.success .box2 .content{ -webkit-border-image: url(../images/border_light.gif) 2 stretch; border-width: 1px 0px 1px 0px;}
+.signIn .box1{ background:#fff; font-size:14px; height:43px; line-height:43px; -webkit-box-flex: 1; -webkit-border-image: url(../images/border_light.gif) 2 stretch;border-width: 1px 0px 1px 0; padding:0 15px;margin-bottom:20px; float:left; width:100%; }
+.signIn .box1.color1{ color:#888;}
+.signIn .box1.color1>span{ font-size:14px;}
+.signIn .box1.color2{ color:#393939;}
+.signIn .box1 a{ color:#44ce43; text-decoration:none; font-size:14px; margin-left:5px;}
+
+.signIn .box2 { float:left; width:100%; display: none; }
+.signIn .box2 .btndiv{ padding:20px 14px 20px; width:100%; float:left;}
+.signIn .box2 .content{ width:100%; float:left;  background:#fff;  }
+.signIn .box2 .content.fail{padding:135px 0 24px; background: url(../images/sign_fail.png) center 40px no-repeat;
+background-size: auto 90px;}
+.signIn .box2 .content.fail label{ margin-top:10px;}
+.signIn .box2 .content.success{padding:135px 0 24px; background: url(../images/sucess.png) center 40px no-repeat;
+background-size: auto 90px;}
+.signIn .box2 .content.success label{ margin-top:10px;}
+.signIn .box2 .content.fail> span{height:40px; background: none; text-align:center; font-size: 17px; color:#232323;}
+.signIn .box2 .content.success> span{height:40px; background: none; text-align:center; font-size: 17px; color:#232323;}
+.signIn .box2 .content> span{background:url(../images/sucess.png) left center no-repeat; height: 60px;
+ background-size: auto 60px; display:block; color:#222222; font-weight:bold; font-size:24px; 
+text-align: right;line-height: 60px;width: 150px;margin: 0 auto; color: #06be04;}
+.signIn .box2 .content> span.out{background:url(../images/out_success.png) left center no-repeat; 
+ background-size: auto 60px;}
+.signIn .box2 .content >label{ padding: 0 50px; display:block; color:#7a7a7a;  width:100%; text-align:center; line-height:24px;}
+.signIn .box2 .content> div{ width:100%;  text-align:center; color:#7a7a7a; line-height:24px;}
+.signIn .box2 .content.expression{ padding-left:15px;}
+
+.signIn .box2 .content.expression .express{ padding:10px 15px 0px 0; }
+.signIn .box2 .content.expression .express .box{ display:table;height:60px;-webkit-border-image: url(../images/border_light.gif) 2 stretch; border-width: 1px 1px 1px 1px;  width:100%;}
+.signIn .box2 .content.expression .express .box>span{ line-height: 18px; display:table-cell; vertical-align:middle; padding-left:5px; text-align:left; }
+.signIn .box2 .content.expression .express .box>span.img{ width:60px; text-align:center; -webkit-border-image: url(../images/border_light.gif) 2 stretch; border-width: 0px 1px 0px 0px; ; padding-left:0px;}
+.signIn .box2 .content.expression .express .box>span.img img{ width:40px; height:40px;}
+
+
+.signIn .box2 .content.expression >.des{ -webkit-border-image: url(../images/border_light.gif) 2 stretch; border-width: 1px 0px 0px 0px; margin-top:10px; padding:10px 15px 10px 0; height:110px; float:left;}
+.signIn .box2 .content.expression >.des>textarea{ width:100%; height:100%; background:#ebebeb; border-radius:8px; padding:8px 5px; line-height:20px; outline:none;resize:none;  border:1px solid #e5e5e5;}
+.signIn .box2 .content.expression .expressionlist { padding-right:25px; padding-left:15px;float:left; overflow:hidden;   width:100%; position:relative; height:65px;}
+.signIn .box2 .content.expression .expressionlist .scroll_content{  overflow:hidden;  width:100%; position:relative; height:65px;}
+.signIn .box2 .content.expression .expressionlist .scroll_content ul{ list-style:none; float:left; line-height:22px;}
+.signIn .box2 .content.expression .expressionlist .scroll_content ul li{ float:left; min-width:40px;}
+.signIn .box2 .content.expression .expressionlist .scroll_content ul li img{ width:30px; margin:7px auto 0; height:30px;}
+.signIn .box2 .content.expression .expressionlist .scroll_content ul li label{ line-height:12px; text-align:center; display:block; width:100%; }
+.signIn .box2 .content.expression .expressionlist>span{ cursor:pointer; position:absolute; text-align:center; font-weight:bold;  z-index:10; width:15px; height:100%;  line-height:65px;bottom:23px; width:10px; height:10px; border:2px solid #c7c7cc; transform: transform: rotate(45deg);
+-ms-transform: rotate(45deg);		/* IE 9 */
+-webkit-transform: rotate(45deg);	/* Safari and Chrome */
+-o-transform: rotate(45deg);		/* Opera */
+-moz-transform: rotate(45deg);		/* Firefox */}
+.signIn .box2 .content.expression .expressionlist>span.left{left:2px;  border-right:none; border-top:none;}
+.signIn .box2 .content.expression .expressionlist>span.right{right:15px; border-left:none; border-bottom:none;}
+.signIn .mooddiv{ background:#fff; padding:8px 15px ; line-height:24px; margin-top:20px; webkit-border-image: url(../images/border_light.gif) 2 stretch; border-width: 1px 0px 1px 0px;color:#888; float:left; width:100%;}
+.signIn .mooddiv .des >span{ color:#be0404;}
+.signIn .mooddiv .moodbtn{ text-align:center;}
+
+header{ float:left; width:100%;}
+section{  float:left; width:100%;}
+.copyright{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:center;
+    align-items:center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #FFFFFF;
+    border-top: 1px solid #dddddd;
+
+}
+
+.divfooter{
+    flex-grow: 1; /* default 0 */
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.divfooter .sign_color1{
+     display: block;
+     text-align: center;
+     padding: 4px;
+ }
+
+a:active {
+    -webkit-tap-highlight-color: #FFFFFF;
+}
+
+.divfooter.active .sign_txt {
+    color: #108ee9;
+    font-size: 12px;
+}
+
+.divfooter .sign_txt {
+    color: #979797;
+    font-size: 12px;
+}
+
+.divfooter .sign_img {
+    width: 28px;
+    height: 28px;
+    text-align:center;
+    top: 0px;
+    margin-top: 0px;
+    padding-top:0px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.divfooter-signin .sign_img {
+    background:url("../images/Attendance_Sign@2x.png");
+    background-size: cover;
+    background-position: center center;
+ }
+
+.divfooter-signin.active .sign_img {
+    background:url("../images/Attendance_Sign_hover@2x.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.divfooter-signout .sign_img {
+    background:url("../images/Attendance_Sign_out@2x.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.divfooter-signout.active .sign_img {
+    background:url("../images/Attendance_Sign_out_hover@2x.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.divfooter-record .sign_img {
+    background:url("../images/Attendance_recording@2x.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.divfooter-record.active .sign_img {
+    background:url("../images/Attendance_recording_hover@2x.png");
+    background-size: cover;
+    background-position: center center;
+}

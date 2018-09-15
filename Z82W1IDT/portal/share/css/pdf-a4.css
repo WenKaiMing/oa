@@ -1,0 +1,26 @@
+@page {
+	size: A4;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: SimSun;
+}
+
+#container{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+}
+
+table tr td{
+	border: 1px solid #c0c0c0;
+}

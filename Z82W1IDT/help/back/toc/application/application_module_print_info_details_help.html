@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>动态打印详细帮助页面</title>
+<link type="text/css" rel="stylesheet" rev="stylesheet"
+	href="../help.css" media="all">
+<style type="text/css">
+table {
+	border: 1px solid #EBF1FD;
+	text-align: left;
+}
+tbody td {
+	height: 24px;
+	border-bottom: 1px solid #EBF1FD;
+}
+th {
+	height: 24px;
+	border-bottom: 1px solid #EBF1FD;
+	background: #cccccc;
+}
+div {
+	margin: 10px 0;
+	text-indent: 20pt;
+	line-height: 150%;
+}
+</style>
+</head>
+<body style="padding: 0;">
+<div>
+<div style="text-indent: 0pt;">动态打印设置内容详细描述：</div>
+<div>
+<table class="MsoNormalTable" border="0" cellSpacing="0" cellPadding="0" style="width: 100%; margin: 10px 0;">
+	<thead>
+		<tr>
+			<th width="20%">组件名称</th>
+			<th width="80%">组件功能</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td width="20%">Label</td>
+			<td width="80%">显示静态文本</td>
+		</tr>
+		<tr>
+			<td width="20%">Field</td>
+			<td width="80%">显示表单字段、需进行绑定</td>
+		</tr>
+		<tr>
+			<td>Line元素</td>
+			<td width="80%">显示线条</td>
+		</tr>
+		<tr>
+			<td width="20%">Form</td>
+			<td width="80%">Form区域、显示表单数据</td>
+		</tr>
+		<tr>
+			<td width="20%">Detail</td>
+			<td width="80%">区域、显示重复表单数据</td>
+		</tr>
+		<tr>
+			<td width="20%">View</td>
+			<td width="80%">区域、显示表单子视图、需进行绑定</td>
+		</tr>
+		<tr>
+			<td width="20%">Header</td>
+			<td width="80%">页头区域、显示打印页头</td>
+		</tr>
+		<tr>
+			<td width="20%">Footer区域</td>
+			<td width="80%">页脚区域、显示打印页脚</td>
+		</tr>
+		<tr>
+			<td width="20%">PageNumber工具</td>
+			<td width="80%">页码组件、显示当前页码、仅用于Footer区域</td>
+		</tr>
+	</tbody>
+</table>
+<p>使用Canvas类组件
+DynamicPrinter的Canvas组件有Form组件、Detail组件、View组件、Header组件和Footer组件。
+Canvas组件是Element组件和Tools组件的载体，以控件树的形式展现。Canvas可以通过拖动的形式定义在打印Page的位置和范围，还可定义组件特有的属性、如Deail组件和View组件可以定义重复次数、Header组件和Footer组件可以定义显示风格。</p>
+</div>
+<div></div>
+<div>下面我们通过实例介绍Canvas组件的使用：
+使用Form组件鼠标点击DynamicPrinter组件面板的Form组件图标、使之进入选中状态，然后鼠标点击画板，这样就添加了一个Form组件,Form组件内可以添加Element类组件的所有组件。</div>
+<div></div>
+<div>使用Detail组件鼠标点击DynamicPrinter组件面板的Detail组件图标、使之进入选中状态，然后鼠标点击画板，这样就添加了一个Detail组件.Detail组件内可以添加Element类组件的所有组件。双击Detail组件填出对话框设置Detail组件的属性.</div>
+<div>① 重复方式：static为静态重复、重复一样的数据。</div>
+<div>② 重复次数：可以选择重复次数也可自定义重复次数（选择自定义后出现）。</div>
+<div>③ 自定义重复次数：用户输入数字设置重复次数。</div>
+<div>④ 确定：点击后设置生效并关闭此对话框。</div>
+<div></div>
+<div>使用View组件鼠标点击DynamicPrinter组件面板的View组件图标、使之进入选中状态，然后鼠标点击画板，这样就添加了一个View组件.
+View组件内不可以添加任何组件。双击View组件出现对话框进行视图绑定和基本设置.</div>
+<div>① 视图名称：显示用户当前选择的视图名称。</div>
+<div>② 视图列表：显示当前关联表单的所有子视图。</div>
+<div>③显示条数：选择显示条数配置打印效果视图的数据条数，选择自定义选项出现。</div>
+<div>④ 自定义显示条数：用户输入数字设置显示条数。</div>
+<div>⑤ 确定：点击后设置生效并关闭此对话框。</div>
+<div></div>
+<div>使用Header组件鼠标点击DynamicPrinter组件面板的Header组件图标、使之进入选中状态，然后鼠标点击画板，这样就添加了一个Header组件.
+Header组件内可以添加Element类组件的所有组件。双击Header组件出现对话框进行显示风格设置.</div>
+<div>①显示风格：选项有&ldquo;第一页显示&rdquo;、&ldquo;中间页显示&rdquo;、&ldquo;最后页显示&rdquo;和&ldquo;所有页显示&rdquo;。</div>
+<div>② 确定：点击后设置生效并关闭此对话框。</div>
+<div></div>
+<div>使用Element类组件
+DynamicPrinter的Element类组件有Label组件、Field组件和Line组件。
+Element类组件是Canvas组件的构建打印配置的构成元素，以子元素的形式展现。Element可以通过拖动和拉升的形式定义在Canvas区域的位置和大小，还可定义组件特有的属性。如Label组件可以输入文本、Field组件可以绑定表单字段。</div>
+<div></div>
+<div>下面我们通过实例介绍Element类组件的使用：使用Label组件鼠标点击DynamicPrinter组件面板的Label组件图标、使之进入选中状态，然后鼠标点击画板上的Canvas类组件，这样就在此Cnavas类组件添加了一个Label组件.
+双击Label组件使之进入可输入状态 输入文本后按Enter健结束并推出输入状态。</div>
+<div></div>
+<div>使用Field组件鼠标点击DynamicPrinter组件面板的Field组件图标、使之进入选中状态，然后鼠标点击画板上的Canvas类组件，这样就在此Cnavas类组件添加了一个Field组件.
+双击Field组件会弹出绑定字段的对话框进行字段绑定.</div>
+<div>① 字段名称：用户当前选择的字段名称</div>
+<div>② 表单字段列表：显示相关联表单的所有字段名称</div>
+<div>③ 确定：点击后设置生效并关闭此对话框。</div>
+<div></div>
+<div>使用Line组件鼠标点击DynamicPrinter组件面板的Line组件图标、使之进入选中状态，然后鼠标点击画板上的Canvas类组件，这样就在此Cnavas类组件添加了一个Line组件.
+Line组件的位置、方向、长度可以通过鼠标拖动、控制方格拖动进行控制。</div>
+<div>使用Tools类组件
+DynamicPrinter的Tools类组件目前只有PageNumber组件。
+Tools类组件是Canvas组件的构建打印配置的构成元素，以子元素的形式展现。Tools可以通过拖动和拉升的形式定义在Canvas区域的位置和大小。</div>
+<div>下面我们通过实例介绍Tools类组件的使用：</div>
+<div></div>
+<div>使用pageNumber组件鼠标点击DynamicPrinter组件面板的Field组件图标、使之进入选中状态，然后鼠标点击画板上的Footer组件，这样就在此Footer组件添加了一个pageNumber组件.
+pageNumber组件的位置可以通过鼠标拖动进行控制。</div>
+<div></div>
+<div>创建表单动态打印操作在表单中新建一项操作 设置如下：</div>
+<div><a target="_blank"
+	href="../images/print19.png"><img alt=""
+	src="../images/print19.png" /></a></div>
+<div></div>
+<div></div>
+<div>保存成功后 前台表单效果如下：</div>
+<div><a target="_blank"
+	href="../images/print20.png">
+	<img alt="" src="../images/print20.png" /></a></div>
+<div></div>
+<div>效果演示配置效果如下：</div>
+<div><a target="_blank"
+	href="../images/print21.png"><img alt=""
+	src="../images/print21.png" /></a></div>
+<div></div>
+<div>打印效果如下：</div>
+<div><a target="_blank"
+	href="../images/print23.png"><img alt=""
+	src="../images/print23.png" /></a></div>
+</div>
+</div>
+</body>
+</html>

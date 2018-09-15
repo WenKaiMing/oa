@@ -1,0 +1,48 @@
+@IMPORT url("viewCommon.css");/**视图公共样式**/
+@IMPORT url("../../../../share/css/documentModule.css");/**表单控件样式**/
+
+/**遮挡层**/
+.black_overlay {
+	-moz-opacity: 0.8;
+	background-color: threeddarkshadow;
+	display: none;
+	filter: alpha(opacity = 30);
+	height: 100%;
+	left: 0;
+	opacity: .80;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1001;
+}
+
+/**按钮和查询表单行的table**/
+.display_view-table {
+	border: 0 solid #FFF;
+	font-family: Arial, Vendera;
+	font-size: 12px;
+	width: 100%;
+	z-index: 100;
+}
+
+/**div#dspview_divid**/
+#dspview_divid {
+	border: 1px solid #b5b8c8;
+	width: 100%\9;
+}
+
+/**按钮行**/
+.act_table2 {
+	background:#e5edf8;
+	height: 27px;
+	vertical-align: middle;
+}
+
+/**dataTable重构前样式**/
+.viewTable {
+	border-collapse:collapse;
+	width:100%;
+}
+.viewTable td{
+	border: 1px solid #000;
+}

@@ -1,0 +1,139 @@
+#reg_content{margin: 5px auto; clear: both; border: 1px #cccccc solid; padding: 2px; overflow:hidden; }
+#reg_content .top{margin: 2px auto; height: 36px; border-bottom:3px solid #4aa3e2; margin-top: 30px; width: 80%;}
+#reg_content .top p{ font-size:24px; color:#000000; float:left; margin-left:36px; margin-top:6px; width: 180px;}
+#reg_content .reg_form, #reg_content .agreements{margin:0 auto 20px;width:620px;}
+#reg_content .reg_form div {overflow:hidden;padding:8px 0;position:relative;width:100%;}
+#reg_content .reg_form .form-caption {float:left;font-size:14px;line-height:27px;padding-right:5px;text-align:right;width:120px;}
+#reg_content .reg_form .input-text {width: 230px; }
+.input-text {background-color: #FFFFFF;border-color:#7E7E7E #DFDFDF #DFDFDF;border-right:1px solid #DFDFDF;border-style:solid;border-width:1px;padding:4px 5px;}
+#reg_content .reg_form div#passbar{overflow:hidden; height:5px; width:242px; background-color:#CCC; padding:0; margin-top:2px;}
+#reg_content .reg_form div#result{overflow:hidden; height:8px; padding:0;}
+#reg_content .reg_form div.result-fc-1{color:#900;}
+#reg_content .reg_form div.result-fc-2{color:#393;}
+#reg_content .reg_form div.result-fc-3{color:#09C;}
+#reg_content .reg_form div.result-fc-4{color:#008000;}
+#reg_content .reg_form div.result-fc-5,.result-fc-0{ color:#ccc;}
+#reg_content .reg_form div.result_0{ width:20%; background-color:#999;}
+#reg_content .reg_form div.result_1{ width:40%; background-color:#900;}
+#reg_content .reg_form div.result_2{ width:65%; background-color:#393;}
+#reg_content .reg_form div.result_3{ width:80%; background-color:#09C;}
+#reg_content .reg_form div.result_4{width:100%; background-color:#008000;}
+#reg_content .reg_form div.result_5{width:0;}
+
+#reg_content .success {
+    width: 680px;
+    background-color: #FDFBE6;
+    border: 1px solid #F8DC3D;
+    height: 230px;
+    padding-left: 40px;
+    margin: 30px auto;
+}
+
+#reg_logo{
+	background:url("../img/reg_ok.png") no-repeat scroll 0 50% transparent;
+}
+#reg_content .success p{
+    margin-left: 10px; font-size: 18px; font-weight: bolder; line-height: 64px; padding-left: 70px; }
+.form-tips {color:#999999;display:block;margin-left:125px;margin-top:3px;}
+
+
+.flow-steps {margin:10px 0;overflow:hidden; margin-right: 12px;}
+
+.flow-steps li.current {background-color:#5491D4; color:#FFFFFF;}
+.flow-steps li.last {background-position:100% -138px;}
+.flow-steps li.last-current {background-position:100% -161px;}
+.flow-steps li.done {background-color:#A3D3FF;background-position:100% -46px;color:#FF6600;}
+.flow-steps li.current-prev {background-position:100% -23px !important;}
+.flow-steps .num3 li {width:150px;}
+.flow-steps li {
+    background:url("../img/user_center/flow_steps_bg.png") no-repeat scroll 100% 0 #E4E4E4;
+    color:#404040;
+    float:left;
+    font-size:14px;
+    font-weight:bold;
+    height:23px;
+    line-height:23px;
+    overflow:hidden;
+    padding:0 15px 0 0;
+    text-align:center;
+}
+.flow-steps li.current .first {
+    background-color:#5491D4;
+    background-position:-12px -92px;
+}
+
+.flow-steps li.done .first{
+    background-color:#A3D3FF;
+    background-position:-12px -115px;
+}
+.flow-steps li .first{
+    background:url("../img/user_center/flow_steps_bg.png") no-repeat scroll -12px -69px #E4E4E4;
+}
+
+.flow-steps li span, .flow-steps li strong {display:block; font-size:14px;}
+.flow-steps li strong {color:#FFFFFF;}
+.flow-steps li.done span{color:#FF6600;}
+#reg_content .reg_form .valicode {width:70px;}
+#securimage, #reg-a {
+color:#0066CC;
+cursor:pointer;
+}
+img.code-img {
+vertical-align:bottom;
+}
+.button {
+color:#000000;
+font-size:14px;
+font-weight:bold;
+padding:3px 8px;
+cursor:pointer;
+}
+.btn-white {
+background:none repeat scroll 0 0 #FFFFFF;
+border:1px groove #000000;
+}
+
+.btn-green{
+	background:#67a54b;
+	border:1px #3b6e22 solid;
+}
+.btn-blue{
+	background:#3e95d4;
+	border:1px #3f87bc outset;
+}
+.btn-gray{
+	background:#fafafa;
+	border:1px #ccc solid;
+	color:#333;
+	font-weight:normal;
+}
+
+
+#reg_content .agreements div {
+background-color:#F8F8F8;
+border:1px solid #CCCCCC;
+margin-bottom:10px;
+padding-bottom:10px;
+}
+
+#reg_content .agreements div p.tit{
+padding:10px 10px 0; font-size:14px; font-weight: bold;
+}
+
+#reg_content .agreements div.content {
+background-color:white;
+border:1px solid #E9E9E9;
+height:200px;
+margin:0 10px;
+overflow:auto;
+padding:2px;
+}
+
+.f6 {color: #FF6600; padding-right: 4px; font-size: 18px;}
+.get_user {width: 470px; margin: 0px auto;}
+.get_user a{margin: 0px 20px;}
+.get_info {width: 460px; border-top: 1px dashed #E9E9E9; margin: 20px auto;}
+.get_info p {line-height: 36px;}
+.get_info div#but{width: 310px; line-height: 36px; margin: 10px auto;}
+.Mright{margin-right: 20px;}
+.Mleft{margin-left: 20px;}

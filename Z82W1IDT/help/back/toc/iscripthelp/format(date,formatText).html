@@ -1,0 +1,72 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+<title>format(date,formatText)</title>
+<link type="text/css" rel="stylesheet" rev="stylesheet"
+	href="../style.css" media="all"><script type="text/javascript"
+	src="../scripts/shCore.js"></script> <script type="text/javascript"
+	src="../scripts/shBrushJScript.js"></script>
+<link type="text/css" rel="stylesheet"
+	href="../styles/shCoreDefault.css" />
+<script type="text/javascript">
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.all();
+</script>
+</head>
+<body id="split">
+<a title="" href="../index_iscript_help.jsp">返回</a>
+<div id="content">
+<div rel="jQuery">
+<h2>format(date,formatText)</h2>
+<h3>概述</h3>
+<div class="example">
+<p>把其日期参数转化成指定格式的字符串。</p>
+<div class="longdesc">
+<p></p>
+</div>
+</div>
+<div>
+<h3>返回值</h3>
+<h4><strong>String</strong></h4>
+</div>
+<div>
+<h3>参数</h3>
+<h4><strong>1、date</strong><span>Date</span></h4>
+<p>日期型参数</p>
+<h4><strong>2、formatText</strong><span>String</span></h4>
+<p>指定字串格式</p>
+</div>
+<div class="example">
+<h3>示例</h3>
+<h4 xmlns="">描述:</h4>
+<p xmlns="">实现format(date,formatText)函数的应用，日期转换函数</p>
+<!--  <h5 xmlns="">HTML 代码:</h5>-->
+<pre xmlns=""></pre>
+<h5 xmlns="">iScript 代码:</h5>
+<pre class="brush: js;" xmlns="">
+//判断表单中的结束日期必须填写和结束日期必须晚于开始日期 (校验脚本)
+(function(){
+var starttime = getItemValueAsDate("开始日期");
+var deadline = getItemValueAsDate("结束日期");
+var retvar = "";
+if(deadline==null) {
+	retvar = "结束日期必须填写！";
+}else{
+	     var starttime = format(starttime,"yyyy-MM-dd HH:mm:ss"); 
+       var deadline =  format(deadline,"yyyy-MM-dd HH:mm:ss");
+	     if(starttime != null && deadline != null) {
+		      if(starttime >= deadline) {
+		           retvar = "结束日期必须晚于开始日期";
+		       }
+        }
+}
+return retvar;
+})()
+</pre>
+<!--<h5 xmlns="">结果:</h5>-->
+</div>
+</div>
+</body>
+</html>

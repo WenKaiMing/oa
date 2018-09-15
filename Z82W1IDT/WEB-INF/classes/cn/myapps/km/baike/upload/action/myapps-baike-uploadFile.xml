@@ -1,0 +1,32 @@
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="baike_upload" extends="myapps-default"
+		namespace="/km/baike/upload">
+		
+		<action name="new"
+			class="cn.myapps.km.baike.upload.action.UploadFileAction" method="doNew">
+			<result name="success" type="dispatcher">
+				/km/baike/uploads/jsp/upload.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="save"
+			class="cn.myapps.km.baike.upload.action.UploadFileAction" method="doSave">
+			<result name="success" type="dispatcher">
+				/km/baike/uploads/jsp/upload-success.jsp?_acResult=success
+			</result>
+			<result name="input" type="dispatcher">
+				/km/baike/uploads/jsp/upload.jsp?_acResult=input
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+	</package>
+</struts>

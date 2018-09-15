@@ -1,0 +1,210 @@
+    #right {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 10px;
+  visibility: hidden;
+  z-index: 1;
+  /*width: 60%;*/
+  background-color: #f9f9f9;
+  overflow-y: auto;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .4s 0s, visibility 0s .4s;
+  -moz-transition: -moz-transform .4s 0s, visibility 0s .4s;
+  transition: transform .4s 0s, visibility 0s .4s;
+  -webkit-transform: translateX(80px);
+  -moz-transform: translateX(80px);
+  -ms-transform: translateX(80px);
+  -o-transform: translateX(80px);
+  transform: translateX(80px);
+  box-shadow: -2px 0 5px #CCC;
+}
+#right.lateral-menu-is-open {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  visibility: visible;
+  -webkit-transition: -webkit-transform .4s 0s, visibility 0s 0s;
+  -moz-transition: -moz-transform .4s 0s, visibility 0s 0s;
+  transition: transform .4s 0s, visibility 0s 0s;
+  -webkit-overflow-scrolling: touch;
+}
+
+#left.lateral-menu-is-open {
+  -webkit-transform: translateX(-60%);
+  -moz-transform: translateX(-60%);
+  -ms-transform: translateX(-60%);
+  -o-transform: translateX(-60%);
+  transform: translateX(-60%);
+}
+#left {
+  min-height: 100%;
+  position: relative;
+  background-color: #fff;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+#left>#leftcontent>div>font{padding-left:5px;}
+#leftMask{
+    background: rgba(0,0,0,0);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 3;
+}
+#lefthead .tabName{
+
+}
+.list_div{color:#353535;}
+.list_div, .list_div_user{
+	font-size: 16px;
+	border-bottom:1px solid #ececec;
+}
+.list_div>input{
+	display:inline-block;
+	padding:20px 0;
+}
+.list_div>span{
+	display:inline-block;
+	padding:20px 0;
+	color:#353535;
+}
+.leftContent .list_div>.selectImg_right{margin:0 10px;}
+.leftContent .list_div>input{width:10%;}
+.leftContent .list_div>span{width:90%;}
+#righttitle{
+}
+#rightcontent{
+}
+.searchBox {
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+}
+.searchTitle {
+	display: block;
+	font-size: 16px;
+	line-height: 35px;
+  padding-right: 5px;
+}
+input.searchInput {
+	display: block;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	box-flex: 1;
+	border-right: none;
+	margin-bottom: 0px;
+	font-size: 14px;
+	border: 1px solid transparent;
+	margin-right: 5px;
+}
+#searchBtn {
+	display: block;
+	  width: 45px;
+  height: 35px;
+  border: 1px solid transparent;
+
+  padding: 6px 8px 7px;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  color: #333;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: top;
+  cursor: pointer;
+  background-color: transparent;
+  
+}
+#searchBtn .icon {
+	font-size: 20px;
+}
+.user_run_page{
+	border:none !important;
+}
+.user_run_page a {
+  border: 1px #ececec solid;
+  border-radius: 4px;
+  display: inline-block;
+  height: 32px;
+  color: black;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 5px;
+  margin: 0;
+}
+.selectUserIS-box{
+    position: absolute;
+    top: 38px;
+    bottom: 57px;
+    width: 100%;
+    overflow: hidden;
+}
+/*重构在线用户样式*/
+.UserListTableDiv table tr{
+	border-top:1px solid #ececec;
+	border-bottom:1px solid #ececec;
+}
+.UserListTableDiv .user_run_page{
+	text-align: center;
+}
+.UserListTableDiv .secondTdImgDiv{
+	width:20%;
+	float:left;
+}
+.UserListTableDiv .secondTdImg{
+	height:40px;
+	width:40px;
+	color:#fff;
+	margin:10px auto;
+	text-align:center;
+	line-height:40px;
+	font-size: 12px;
+	border-radius: 6px;
+	background:#428bcb;
+}
+.UserListTableDiv .Usercont{
+	float:left;
+	width:80%;
+	margin:10px 0 ;
+}
+.UserListTableDiv .secondTdName{
+	height:20px;
+	line-height:20px;
+	overflow: hidden;
+}
+.UserListTableDiv .secondTdPhone{
+	height:20px;
+	line-height:20px;
+	color:#cccccc;
+	font-size:12px;
+}
+/*重构按部门、按角色界面的样式*/
+#rightcontent .UserListTableDiv .secondTdImgDiv{width:30%;}
+#rightcontent .UserListTableDiv .Usercont{width:70%;}
+#rightcontent .UserListTableDiv .secondTdImg{
+	width:32px;
+	height:32px;
+	line-height:32px;
+	margin:10px 5px 10px 5px;
+}
+#leftcontent.jstree-default li {background:none;border-top: 1px #ececec solid;margin-left: 0;padding-left: 18px;}
+#leftcontent.jstree-default>ul>li {padding-left:0;border-top: none;}
+
+#leftcontent.jstree-default .jstree-open > ins { background-position:-146px -75px; }
+#leftcontent.jstree-default .jstree-closed > ins { background-position:-108px -75px; }
+#leftcontent.jstree-default .jstree-leaf > ins {background-position: -108px -109px;}
+#leftcontent.jstree ul li a {border:none;}

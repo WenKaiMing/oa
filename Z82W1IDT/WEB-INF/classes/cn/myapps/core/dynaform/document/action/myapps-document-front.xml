@@ -1,0 +1,395 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- document package -->
+	<package name="document-front" extends="myapps-default"
+		namespace="/portal/dynaform/document">
+
+		<interceptors>
+		
+		<interceptor-stack name="defaufltStack">
+                <interceptor-ref name="exception"/>
+                <interceptor-ref name="alias"/>
+                <interceptor-ref name="servletConfig"/>
+                <interceptor-ref name="i18n"/>
+                <interceptor-ref name="chain"/>
+                <interceptor-ref name="scopedModelDriven"/>
+                <interceptor-ref name="modelDriven"/>
+                <interceptor-ref name="fileUpload"/>
+                <interceptor-ref name="checkbox"/>
+                <interceptor-ref name="multiselect"/>
+                <interceptor-ref name="staticParams"/>
+                <interceptor-ref name="actionMappingParams"/>
+                <interceptor-ref name="params">
+                    <param name="excludeParams">dojo\..*,^struts\..*,^session\..*,^request\..*,^application\..*,^servlet(Request|Response)\..*,parameters\...*</param>
+                </interceptor-ref>
+                <!-- 更换prepare顺序 -->
+                 <interceptor-ref name="prepare"/>
+                <interceptor-ref name="conversionError"/>
+                <interceptor-ref name="validation">
+                    <param name="excludeMethods">input,back,cancel,browse</param>
+                </interceptor-ref>
+                <interceptor-ref name="workflow">
+                    <param name="excludeMethods">input,back,cancel,browse</param>
+                </interceptor-ref>
+                <interceptor-ref name="debugging"/>
+            </interceptor-stack>
+            
+			    <interceptor-stack name="basicStack">
+                <interceptor-ref name="exception"/>
+                <interceptor-ref name="servletConfig"/>
+                <interceptor-ref name="prepare"/>
+                <interceptor-ref name="checkbox"/>
+                <interceptor-ref name="multiselect"/>
+                <interceptor-ref name="actionMappingParams"/>
+                <interceptor-ref name="params">
+                    <param name="excludeParams">dojo\..*,^struts\..*,^session\..*,^request\..*,^application\..*,^servlet(Request|Response)\..*,parameters\...*</param>
+                </interceptor-ref>
+                <interceptor-ref name="conversionError"/>
+            </interceptor-stack>
+
+
+			<interceptor-stack name="validationWorkflowStack">
+				<interceptor-ref name="basicStack" />
+				<interceptor-ref name="validation">
+					<param name="excludeMethods">input,back,cancel,browse</param>
+				</interceptor-ref>
+				<interceptor-ref name="workflow">
+					<param name="excludeMethods">input,back,cancel,browse</param>
+				</interceptor-ref>
+
+			</interceptor-stack>
+		</interceptors>
+
+		<action name="view"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doView">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/content.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/content.jsp
+			</result>
+			<result name="forbid" type="OBPMdispatcher">
+				/portal/share/forbid.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="view-nogray"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doView">
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/dynaform/document/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="moreDoc"
+			class="cn.myapps.core.dynaform.pending.action.PendingAction" method="doList">
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/dynaform/pending/list-showDiv.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="newWithJump"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doNew">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/content.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="newWithPermission"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doNew">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/content.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/content.jsp
+			</result>
+			<result name="forbid" type="OBPMdispatcher">
+				/portal/share/forbid.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="new4tmpForm"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doNew">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/templateContent.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/templateContent.jsp
+			</result>
+			<result name="forbid" type="OBPMdispatcher">
+				/portal/share/forbid.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="edit"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doView">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="deleteMap"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doDeleteMap">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dynaform/view/dialogView.action
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/dynaform/view/dialogView.action
+		    </result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="select"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doSelect">
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/dynaform/document/selectfield.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="beforeStartWorkFlow"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doBeforeStartWorkFlow">
+			<interceptor-ref name="chain" />
+			<interceptor-ref name="defaultStack" />
+		</action>
+
+		<action name="viewFlow"
+			class="cn.myapps.core.workflow.engine.StateMachineAction" method="doViewFlow">
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/workflow/runtime/flowview.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="flowHandup"
+			class="cn.myapps.core.workflow.engine.StateMachineAction" method="doFlowHandup">
+			<result name="success" type="chain">view</result>
+			<result name="input" type="chain">view</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="flowRecover"
+			class="cn.myapps.core.workflow.engine.StateMachineAction" method="doFlowRecover">
+			<result name="success" type="chain">view</result>
+			<result name="input" type="chain">view</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="flowReminder"
+			class="cn.myapps.core.workflow.engine.StateMachineAction" method="doFlowReminder">
+			<result name="success" type="chain">view</result>
+			<result name="input" type="chain">view</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="preview"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doPreview">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/preview.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/preview.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="pendinglist"
+			class="cn.myapps.core.dynaform.pending.action.PendingAction" method="doList">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/pending/list.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="newword"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doNewWord">
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/component/wordField/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="editSec"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doSecEdit">
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/component/wordField/secEdit.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="dostart"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doStart">
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/component/wordField/wordEditor.jsp
+			</result>
+			<interceptor-ref name="defaufltStack" />
+		</action>
+		
+		<action name="doViewWordFile"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doViewWordFile">
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/component/wordField/wordEditor4uploadFiles.jsp
+			</result>
+			<interceptor-ref name="defaufltStack" />
+		</action>
+		
+		<action name="selectByFlow"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doSelectByFlow">
+			<result name="success" type="dispatcher">
+			/portal/share/user/htmlData.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="fileDownload"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doFileDownload">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="fileDownloadWithWaterMark"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doFileDownloadWithWaterMark">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="filePrintWithWaterMark"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doFilePrintWithWaterMark">
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/common/preview/printer.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="previewWaterMark"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="getUploadFieldWaterMark">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="connect"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doConnect">
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="retracement"
+			class="cn.myapps.core.workflow.engine.StateMachineAction"
+			method="doRetracement">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/content.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="addAuditor"
+			class="cn.myapps.core.workflow.engine.StateMachineAction"
+			method="doAddAuditor">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/content.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="editAuditor"
+			class="cn.myapps.core.workflow.engine.StateMachineAction"
+			method="doEditAuditor">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/content.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="terminateFlow"
+			class="cn.myapps.core.workflow.engine.StateMachineAction"
+			method="doTerminateFlow">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/content.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="showFlowHistory"
+			class="cn.myapps.core.workflow.engine.StateMachineAction"
+			method="showFlowHistory">
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/workflow/runtime/flowhis/flowhistory.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/share/workflow/runtime/flowhis/flowhistory.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="refreshFlowPanelHTML"
+			class="cn.myapps.core.workflow.engine.StateMachineAction"
+			method="doRefreshFlowPanelHTML">
+			<result name="success" type="dispatcher">
+				/portal/share/dynaform/activity/result.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+	    <action name="checkWordFieldIsEdit"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="checkWordFieldIsEdit">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="doExixtWordField"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doExixtWordField">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+	   <action name="updateFileSorting"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doUpdateFileSorting">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+	</package>
+</struts>

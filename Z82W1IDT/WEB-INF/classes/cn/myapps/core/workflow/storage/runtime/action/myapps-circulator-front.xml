@@ -1,0 +1,92 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- document package -->
+	<package name="circulator-front" extends="myapps-default"
+		namespace="/portal/workflow/storage/runtime">
+
+		<!--
+		<interceptors>
+			<interceptor-stack name="defaultStack">
+                <interceptor-ref name="exception"/>
+                <interceptor-ref name="alias"/>
+                <interceptor-ref name="servlet-config"/>
+                <interceptor-ref name="i18n"/>
+                <interceptor-ref name="chain"/>
+                <interceptor-ref name="model-driven"/>
+                <interceptor-ref name="fileUpload"/>
+                <interceptor-ref name="static-params"/>
+                <interceptor-ref name="params"/>
+                 更换prepare顺序 
+                <interceptor-ref name="prepare"/>
+                <interceptor-ref name="conversionError"/>
+                <interceptor-ref name="validation">
+                    <param name="excludeMethods">input,back,cancel,browse</param>
+                </interceptor-ref>
+                <interceptor-ref name="workflow">
+                    <param name="excludeMethods">input,back,cancel,browse</param>
+                </interceptor-ref>
+            </interceptor-stack>
+		
+			<interceptor-stack name="basicStack">
+				<interceptor-ref name="exception" />
+				<interceptor-ref name="alias" />
+				<interceptor-ref name="servlet-config" />
+				<interceptor-ref name="prepare" />
+				<interceptor-ref name="i18n" />
+				<interceptor-ref name="chain" />
+				<interceptor-ref name="model-driven" />
+				<interceptor-ref name="fileUpload" />
+				<interceptor-ref name="static-params" />
+				<interceptor-ref name="params" />
+				<interceptor-ref name="conversionError" />
+			</interceptor-stack>
+
+
+			<interceptor-stack name="validationWorkflowStack">
+				<interceptor-ref name="basicStack" />
+				<interceptor-ref name="validation">
+					<param name="excludeMethods">input,back,cancel,browse</param>
+				</interceptor-ref>
+				<interceptor-ref name="workflow">
+					<param name="excludeMethods">input,back,cancel,browse</param>
+				</interceptor-ref>
+
+			</interceptor-stack>
+		</interceptors>
+		-->
+		<action name="circulatorlist"
+			class="cn.myapps.core.workflow.storage.runtime.action.CirculatorAction" method="doList">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/pending/readList.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="more-circulatorlist-default"
+			class="cn.myapps.core.workflow.storage.runtime.action.CirculatorAction" method="doList">
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/dynaform/pending/read-list-showDiv.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="circulatorlist-default"
+			class="cn.myapps.core.workflow.storage.runtime.action.CirculatorAction" method="doList">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/pending/readList.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="workList"
+			class="cn.myapps.core.workflow.storage.runtime.action.CirculatorAction" method="doWorkList">
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/dynaform/work/list.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+
+	</package>
+</struts>

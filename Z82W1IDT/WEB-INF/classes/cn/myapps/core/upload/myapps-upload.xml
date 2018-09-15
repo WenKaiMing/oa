@@ -1,0 +1,45 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<!-- workflow FlogLog package -->
+	<package name="upload" extends="myapps-default"
+		namespace="/core/upload">
+
+		<action name="getPercs"
+			class="cn.myapps.core.upload.UploadAction" method="getPercs">
+			<result name="success" type="dispatcher">upload.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="clearPerc"
+			class="cn.myapps.core.upload.UploadAction" method="clearPerc">
+			<result name="success" type="dispatcher">upload.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="upload"
+			class="cn.myapps.core.upload.UploadAction">
+			<result name="success" type="dispatcher">upload.jsp</result>
+			<result name="input" type="dispatcher">upload.jsp</result>
+			<interceptor-ref name="defaultStack" />
+		</action>
+
+		<action name="uploadimage"
+			class="cn.myapps.core.upload.UploadAction">
+			<result name="success" type="dispatcher">
+				successImage.jsp
+			</result>
+			<interceptor-ref name="defaultStack" />
+		</action>
+
+		<action name="delete" class="cn.myapps.core.upload.UploadAction"
+			method="doDelete">
+			<result name="success" type="dispatcher">
+				success.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+</struts>

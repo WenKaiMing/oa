@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cn.myapps.core.scheduler.ejb.TriggerVO" table="T_TRIGGER"
+		lazy="false" batch-size="10">
+
+		<id name="id" column="ID" type="java.lang.String">
+			<generator class="assigned">
+				<!--  
+					To add non XDoclet generator parameters, create a file named 
+					hibernate-generator-params-RoleVO.xml 
+					containing the additional parameters and place it in your merge dir. 
+				-->
+			</generator>
+		</id>
+		
+		<property name="token" type="java.lang.String" update="true"
+			insert="true" column="TOKEN" />
+		
+		<property name="jobType" type="java.lang.Integer" update="true"
+			insert="true" column="JOB_TYPE" />
+			
+		<property name="jobData" type="text" update="true"
+			insert="true" column="JOB_DATA" />
+		
+		<property name="state" type="java.lang.String" update="true"
+			insert="true" column="STATE" />
+		<property name="loop" type="java.lang.Boolean" update="true"
+			insert="true" column="IS_LOOP" />
+		<property name="deadline" type="java.lang.Long" update="true"
+			insert="true" column="DEADLINE" />
+		
+	</class>
+
+</hibernate-mapping>

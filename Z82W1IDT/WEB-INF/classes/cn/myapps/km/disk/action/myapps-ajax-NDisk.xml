@@ -1,0 +1,64 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="km-NDisk-ajax" extends="myapps-default,json-default"
+		namespace="/km/disk">
+		<action name="diskOfMine" class="cn.myapps.km.disk.action.NDiskAjaxAction" method="diskOfMine">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		<action name="diskOfPublic" class="cn.myapps.km.disk.action.NDiskAjaxAction" method="diskOfPublic">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		<action name="diskOfArchive" class="cn.myapps.km.disk.action.NDiskAjaxAction" method="diskOfArchive">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		<action name="diskOfHost" class="cn.myapps.km.disk.action.NDiskAjaxAction" method="diskOfHost">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		<action name="initDisk" class="cn.myapps.km.disk.action.NDiskAjaxAction" method="initDisk">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		<action name="folderPathOfInitDisk" class="cn.myapps.km.disk.action.NDiskAjaxAction" method="getFolderPathOfInitDisk">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		<action name="isStartInitDisk" class="cn.myapps.km.disk.action.NDiskAjaxAction" method="isStartInitDisk">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+	</package>
+</struts>

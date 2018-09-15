@@ -1,0 +1,42 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<!-- domain package -->
+	<package name="datamapcfg-front" extends="myapps-default"
+		namespace="/portal/datamap/definition">
+		
+	<interceptors>
+		<interceptor-stack name="basicStack">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</interceptor-stack>
+
+
+		<interceptor-stack name="validationWorkflowStack">
+			<interceptor-ref name="basicStack" />
+			<interceptor-ref name="validation" />
+			<interceptor-ref name="workflow" />
+		</interceptor-stack>
+	</interceptors>
+	
+	<action name="getClueColumns"
+		class="cn.myapps.core.datamap.definition.action.DataMapCfgAction"
+		method="doGetClueFields">
+		<result name="success" type="OBPMdispatcher" >
+		/portal/share/datamap/definition/result/result.jsp
+		</result>
+		<interceptor-ref name="params" />
+	</action>
+	
+	<action name="getSummaryColumns"
+		class="cn.myapps.core.datamap.definition.action.DataMapCfgAction"
+		method="doGetSummaryFields">
+		<result name="success" type="OBPMdispatcher" >
+		/portal/share/datamap/definition/result/result.jsp
+		</result>
+		<interceptor-ref name="params" />
+	</action>
+
+	</package>
+</struts>

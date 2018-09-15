@@ -1,0 +1,204 @@
+@IMPORT url("../../../../share/css/base.css"); /**页面初始化样式**/
+
+/**视图公有样式**/
+
+/**视图按钮--start**/
+.button-document {
+	background: url(./../../../resource/document/act_seperate.gif) right center
+		no-repeat;
+	cursor: pointer;
+	display: block;
+	font-family: Arial, Helvetica;
+	font-weight: 700;
+	vertical-align: middle;
+}
+.button-document a {
+	color: #000;
+	cursor: pointer;
+	float: left;
+	height: 25px;
+	text-decoration: none;
+}
+.button-document a span {
+	float: left;
+	height: 16px;
+	margin: 0 0 0 10px;
+	padding: 3px 10px 3px 0;
+}
+.button-document a:hover {
+	color: #FFF;
+}
+.actBtn .button-document a span {
+	display: block;
+	white-space: nowrap;
+}
+.actBtn span {
+	float: left;
+}
+.actBtn div {
+	float: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+/**视图按钮--end**/
+
+/**8个视图查询表单按钮--start**/
+.button-cmd {
+	background-repeat: repeat-x;
+	color: #000;
+	cursor: pointer;
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: center;
+	vertical-align: middle;
+}
+.button-cmd a {
+	background: url("./../../../resource/document/btn_back2.gif") left 0 repeat-x;
+	color: #000;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 23px;
+	text-decoration: none;
+}
+.button-cmd a:hover {
+	background: url(./../../../resource/document/btn_back.gif) left 0;
+	background-repeat: repeat-x;
+	color: #000;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 23px;
+	text-decoration: none;
+}
+.button-cmd a span {
+	background: url(./../../../resource/document/btn_back2.gif) right 0;
+	background-repeat: repeat-x;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 23px;
+	margin: 0 0 0 10px;
+	padding: 3px 10px 3px 0;
+}
+.button-cmd a:hover span {
+	background: url(./../../../resource/document/btn_back.gif) right 0;
+	background-repeat: repeat-x;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 23px;
+	margin: 0 0 0 10px;
+	padding: 3px 10px 3px 0;
+}
+/**8个视图查询表单按钮--end**/
+
+/**collapsible,list,display,map,subGrid**/
+.listDataTable {/**表格class**/
+	font-family: Arial, Vendera;
+	font-size: 12px;
+	z-index: 100;
+	border: 1px;
+	border-collapse: collapse;
+	border-spacing: 1px;
+	width: 100%;
+	border-top: 1px solid #99BBE8;
+	border-left: 1px solid #99BBE8;
+}
+
+.listDataTable td {/**单元格class**/
+	border-bottom: 1px solid #b4ccee;
+	border-right: 1px solid #b4ccee;
+}
+
+.listDataTh {/**标题行class**/
+	background-color: #e5edf8;
+	height: 24px;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 100;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.listDataThFirstTd {/**标题行第一个单元格class**/
+	font-family: Arial, Vendera, sans-serif;
+	height: 24px;
+	text-align: center;
+	vertical-align: middle;
+	width: 22px;
+	z-index: 100;
+}
+.listDataThTd {/**标题行其他单元格class**/
+	color: #1268a5;
+	font-family: Arial, Vendera, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	padding-left: .35em;
+	text-align: left;
+	z-index: 100;
+}
+
+.listDataTr .listDataThTd {/**数据行class，标题行其他单元格class**/
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.listDataThTd a {/**标题行其他单元格class下A标签**/
+	color: #1268a5;
+}
+
+.listDataTrFirstTd {/**数据行第一个单元格class**/
+	font-family: Arial, Vendera, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	width: 22px;
+}
+
+.listDataTr_over {/**数据行滑过class**/
+	background-color: #fbefda;
+}
+
+/**calendar,collapsible,gantt,list,map**/
+.body-front {
+	background-color: #F3F7F9;
+	margin-left: 2px;
+	margin-top: 0;
+}
+
+/**calendar,collapsible,dialogCalendar,gantt,list,map,subGrid**/
+.front-table-full-width {
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+/**calendar,collapsible,dialogCalendar,gantt,list,map,subGrid**/
+.front-scroll-hidden {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+/**calendar,collapsible,dialogCalendar,list,map**/
+.front-scroll-auto {
+	overflow-x: auto;
+	overflow-y: auto;
+}
+
+/**calendar,collapsible,dialogCalendar,gantt,list,map,subGrid**/
+.front-bgcolor2 {
+	background-color: #FFF;
+}
+
+/**calendar,collapsible,gantt,list,map**/
+.front-table-act {
+	height: 23px;
+	vertical-align: middle;
+}
+
+/**calendar,collapsible,gantt,list,map**/
+.front-border-bottom {
+	border-bottom: 1px solid #99bbe8;
+	margin: 0;
+	padding: 0;
+}

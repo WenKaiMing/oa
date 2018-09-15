@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cn.myapps.core.deploy.application.ejb.ApplicationVO"
+		table="T_APPLICATION" lazy="false" dynamic-update="true">
+
+		<id name="id" column="ID" type="java.lang.String">
+			<generator class="assigned">
+				<!--
+					To add non XDoclet generator parameters, create a file named
+					hibernate-generator-params-ApplicationVO.xml containing the
+					additional parameters and place it in your merge dir.
+				-->
+			</generator>
+		</id>
+
+		<property name="description" type="text" update="true"
+			insert="true" column="DESCRIPTION"/><!--
+
+		<property name="isdefaultsite" type="boolean" update="true"
+			insert="true" column="ISDEFAULTSITE" />
+
+		<property name="ispublished" type="boolean" update="true"
+			insert="true" column="ISPUBLISHED" />
+
+		--><property name="name" type="java.lang.String" update="true"
+			insert="true" column="NAME" />
+
+		<set name="owners" table="T_APPLICATION_SUPERUSER_SET" lazy="false"
+			inverse="false" cascade="all" sort="unsorted">
+
+			<key column="APPLICATIONID"></key>
+
+			<many-to-many class="cn.myapps.core.superuser.ejb.SuperUserVO"
+				column="USERID" outer-join="auto" />
+
+		</set>
+		
+		<property name="logourl" type="java.lang.String" update="true"
+			insert="true" column="logourl" />
+		
+		<property name="type" type="java.lang.String" update="true"
+			insert="true" column="type" />
+		
+		<property name="sortId" type="java.lang.String" update="true"
+			insert="true" column="SORTID" />
+
+		<property name="orderId" type="java.lang.Integer" update="true"
+			insert="true" column="ORDERID" />
+
+		<property name="applicationid" type="java.lang.String"
+			update="true" insert="true" column="APPLICATIONID" />
+			
+		<property name="datasourceid" type="java.lang.String" 
+			update="true" insert="true" column="DATASOURCEID" />
+			
+		
+		<!-- 
+		<set name="domainApplicationSet" table="T_DOMAIN_APPLICATION_SET" lazy="false"
+			cascade="delete" sort="unsorted">
+			<key column="APPLICATIONID"></key>
+			<one-to-many class="cn.myapps.core.deploy.application.ejb.DomainApplicationSet" />
+		</set>
+		 -->
+		<!-- 
+		<set name="domains" table="T_DOMAIN_APPLICATION_SET" lazy="false"
+			inverse="true" cascade="none" sort="unsorted">
+
+			<key column="APPLICATIONID"></key>
+
+			<many-to-many class="cn.myapps.core.domain.ejb.DomainVO"
+				column="DOMAINID" outer-join="auto" />
+
+		</set>
+	 	-->
+		
+		<property name="activated" type="boolean" update="true"
+			insert="true">
+			<column name="ACTIVATED" default="1" />
+		</property>
+		
+		<property name="systemWidgetSetting" type="java.lang.String" 
+			update="true" insert="true" column="SYSTEM_WIDGET_SETTING" />
+		
+		<!--
+			To add non XDoclet property mappings, create a file named
+			hibernate-properties-ApplicationVO.xml containing the additional
+			properties and place it in your merge dir.
+		-->
+		
+	</class>
+
+</hibernate-mapping>

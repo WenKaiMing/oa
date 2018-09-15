@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ubbEditor Demo</title>
+<script type="text/javascript" src="../ubbeditor/ubbEditor.js"></script>
+</head>
+<body style="height=100%;width=100%;margin:0px">
+<textarea id="content" name="content" style="WIDTH: 600px; HEIGHT: 300px"></textarea>
+<script type="text/javascript">
+var nEditor = new ubbEditor('content');
+nEditor.tLang = 'zh-cn';
+nEditor.tToolbar = 'mini';
+nEditor.tInit('nEditor', '../ubbeditor/');
+
+LoadContent(Request('id'));
+function LoadContent(ContentID) {
+	if (typeof (window.frames["content-iframe"]) == "object") {
+		var OldContent = window.parent.document.getElementById(ContentID).value;
+		nEditor.tinsertHTML(OldContent);
+		eval("setInterval(\"SaveContent('" + ContentID + "')\",500)");
+	} else {
+		eval("setTimeout(\"LoadContent('" + ContentID + "')\",200)");
+	}
+}
+function SaveContent(ContentID){
+	var OldContent = window.parent.document.getElementById(ContentID).value;
+	var NewContent = nEditor.tGetHTML();
+	if(OldContent!=NewContent){
+		window.parent.document.getElementById(ContentID).value = NewContent;
+	}
+}
+function Request(name) {//获取页面ID参数
+	var reg = new RegExp("(^|\\?|&)" + name + "=([^&]*)(\\s|&|$)", "i");
+	if (reg.test(location.href))
+		return unescape(RegExp.$2.replace(/\+/g, " "));
+	return "";
+}
+</script>
+</body>
+</html>

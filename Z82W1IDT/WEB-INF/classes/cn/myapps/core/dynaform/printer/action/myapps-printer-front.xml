@@ -1,0 +1,16 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<!-- domain package -->
+	<package name="printer-front" extends="myapps-default"
+		namespace="/portal/dynaform/printer">
+
+	<action name="print"
+		class="cn.myapps.core.dynaform.printer.action.PrinterAction"
+		method="doPrint">
+		<result name="success" type="OBPMdispatcher">/portal/share/dynaform/printer/result/getReportData.jsp</result>
+	</action>
+	
+	</package>
+</struts>

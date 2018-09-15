@@ -1,0 +1,44 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<!-- workflow FlogLog package -->
+	<package name="wizard_app" extends="myapps-default"
+		namespace="/core/wizard/application">
+
+		<action name="step1_login"
+			class="cn.myapps.core.security.action.LoginAction"
+			method="doLogin">
+			<result name="success" type="redirect">
+				step2_content.jsp
+			</result>
+			<result name="error" type="dispatcher">
+				step2_content.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				step2_content.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="step2_create"
+			class="cn.myapps.core.deploy.application.action.ApplicationAction"
+			method="doNew">
+			<result name="success" type="dispatcher">step2_content.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="step2_save"
+			class="cn.myapps.core.deploy.application.action.ApplicationAction"
+			method="doSave">
+			<result name="input" type="dispatcher">step2_content.jsp</result>
+			<result name="success" type="redirect">
+				/admin/detail.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+</struts>

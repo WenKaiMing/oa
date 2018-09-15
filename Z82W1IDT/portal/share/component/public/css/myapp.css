@@ -1,0 +1,38 @@
+/*html5*/
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+
+* { margin: 0; padding: 0 }
+img,iframe { border: 0 }
+html { min-height: 100%; height: 100%; }
+body { font-size: 12px; font-family: "Microsoft YaHei", "PingHei","Lucida Grande", "Lucida Sans Unicode", "STHeiti", "Helvetica","Arial","Verdana","sans-serif"; min-height: 100%; height: 100% }
+a { text-decoration: none; color: #000; cursor: pointer }
+a:hover { text-decoration: none; }
+ul, ol, li { list-style-image: none; list-style-type: none }
+button { display: block }
+.clear { clear: both }
+.fl { float: left }
+.fr { float: right }
+.w130 { width: 130px }
+.w250 { width: 250px }
+.w300 { width: 300px }
+.w350 { width: 350px }
+.w410 { width: 410px }
+.w450 { width: 450px }
+.w500 { width: 500px }
+.h85 { height: 85px }
+.h95 { height: 95px }
+.btn { padding: 6px 12px; margin-bottom: 0; font-size: 14px; font-weight: 400; text-align: center; white-space: nowrap; vertical-align: middle; background-image: none; border-radius: 4px }
+.btn:focus, .btn:hover { color: #333; text-decoration: none }
+.btn-green { color: #606060; background-color: #f8f8f8; }
+.btn-green:active, .btn-green:hover { color: #fff; background-color: #5cb85c; }
+
+/*----------content-searchdiv---------*/
+
+.searchDiv { margin: 0 0 15px 0; background-color: #FFFFFF; box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1); padding: 15px }
+.searchDiv .col-lg-12 select { background: none; box-shadow: none; }
+.searchDiv .col-lg-12 { padding: 0px }
+.searchDiv .col-lg-12 .btn-myapp { border-color: #03a9f4; width: 80px; background: url(../images/search.png) #03a9f4 no-repeat center center }
+.searchDiv .open .btn, .searchDiv .btn, .searchDiv .form-control { height: 45px; border: solid 1px #d9d9d9; color: #606060 }
+.searchDiv .btn-group { margin-right: 20px }
+.searchDiv .btn-group .btn { width: 80px; height: 38px }
+.searchDiv .btn-group .btn-green:active, .searchDiv .btn-group .btn-green:hover { color: #fff; background-color: #5cb85c; }

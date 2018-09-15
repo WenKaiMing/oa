@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Default configuration for XMPP. -->
+<xmpp>
+	<!-- 是否启用Openfire服务器 -->
+	<enable>false</enable>
+
+    <!-- Host and port of the XMPP server to use -->
+    <host>localhost</host>
+    <port>5222</port>
+
+    <username>admin</username>
+    <password>teemlink</password>
+
+    <!-- Chat and MUC domain names to use -->
+    <chat>chat</chat>
+    <muc>conference</muc>
+    
+    <!-- XMPP connection max size-->
+    <min_size>5</min_size>
+    <max_size>10</max_size>
+    
+    <spark_version>Spark 2.6.3</spark_version>
+    <username_domain_separator>#</username_domain_separator>
+    <debug>false</debug>
+</xmpp>

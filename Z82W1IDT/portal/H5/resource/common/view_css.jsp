@@ -1,0 +1,1 @@
+<link rel='stylesheet' href='<s:url value='/portal/H5/resource/common/view.min.css?v=2018022414531262373'/>'/>

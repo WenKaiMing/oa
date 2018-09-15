@@ -1,0 +1,8 @@
+.nowrap {table-layout: fixed;}
+.viewRight{width:99%;overflow:auto;height:92%;}
+.buttoncontainer{margin:3px 0px;}
+.buttoncontainer a{margin:0 3px; cursor:pointer;}
+.viewRight{border: 1px solid #b5b8c8;margin:0px;margin-top:8px;padding:0px;}
+.tableContainer{border: 2px solid #e5e5e5;}
+.tableContainer .bordertd{border-right: 2px solid #e5e5e5;}
+.display_view-table{word-wrap : break-word ;word-break:break-all;}

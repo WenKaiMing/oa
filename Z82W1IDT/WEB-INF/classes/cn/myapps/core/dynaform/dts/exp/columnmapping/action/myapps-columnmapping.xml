@@ -1,0 +1,82 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="columnmappings" extends="myapps-default"
+		namespace="/core/dynaform/dts/exp/columnmapping">
+		<action name="list"
+			class="cn.myapps.core.dynaform.dts.exp.columnmapping.action.ColumnMappingAction"
+			method="doList">
+      
+			<result name="success" type="dispatcher">list.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+
+		<action name="view"
+			class="cn.myapps.core.dynaform.dts.exp.columnmapping.action.ColumnMappingAction"
+			method="doView">
+
+			<!-- 			<interceptor-ref name="basicStack" />  -->
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+
+		<action name="new"
+			class="cn.myapps.core.dynaform.dts.exp.columnmapping.action.ColumnMappingAction"
+			method="doNew">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+        <action name="newcolumns"
+			class="cn.myapps.core.dynaform.dts.exp.columnmapping.action.ColumnMappingAction"
+			method="doNew">
+			<result name="success" type="dispatcher">
+				guidecontent.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+		<action name="save"
+			class="cn.myapps.core.dynaform.dts.exp.columnmapping.action.ColumnMappingAction"
+			method="doSave">
+			<result name="input" type="dispatcher">content.jsp</result>
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+		</action>
+
+		<action name="edit"
+			class="cn.myapps.core.dynaform.dts.exp.columnmapping.action.ColumnMappingAction"
+			method="doView">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+
+		<action name="delete"
+			class="cn.myapps.core.dynaform.dts.exp.columnmapping.action.ColumnMappingAction"
+			method="doDelete">
+			<result name="success" type="chain">list</result>
+			<result name="input" type="chain">list</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+		<action name="savecolumns"
+			class="cn.myapps.core.dynaform.dts.exp.columnmapping.action.ColumnMappingAction"
+			method="doSaveColumns">
+				      <result name="input" type="dispatcher">guidecontent.jsp</result>
+				      <result name="success" type="dispatcher">	success.jsp</result>
+ 		    <interceptor-ref name="validationWorkflowStack"/>
+		</action>
+	</package>
+</struts>

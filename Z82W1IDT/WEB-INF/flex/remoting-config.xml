@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service id="remoting-service" 
+    class="flex.messaging.services.RemotingService">
+
+    <adapters>
+        <adapter-definition id="java-object" class="flex.messaging.services.remoting.adapters.JavaAdapter" default="true"/>
+    </adapters>
+
+    <default-channels>
+        <channel ref="my-amf"/>
+    </default-channels>
+	
+	<destination id="fileOperate"> 
+    <properties> 
+        <source>cn.myapps.core.filemanager.FileOperate</source> 
+    </properties> 
+	</destination>
+	
+	<destination id="oReportUtil"> 
+    <properties> 
+        <source>cn.myapps.core.report.oreport.action.OReportUtil</source> 
+    </properties> 
+	</destination>
+	
+	<destination id="BaiduMap"> 
+    <properties> 
+        <source>cn.myapps.core.baidumap.BaiduMap</source> 
+    </properties> 
+	</destination>
+	
+	<destination id="NetworkDiskUtil"> 
+    <properties> 
+        <source>cn.myapps.core.networkdisk.action.NetworkDisk</source> 
+    </properties> 
+	</destination>
+	
+	<destination id="ApplicationUtil"> 
+    <properties> 
+        <source>cn.myapps.core.deploy.application.action.ApplicationUtil</source> 
+    </properties> 
+	</destination>
+	
+	<destination id="BillDefiHelper"> 
+    <properties> 
+        <source>cn.myapps.core.workflow.storage.definition.action.BillDefiHelper</source> 
+    </properties> 
+	</destination>
+</service>

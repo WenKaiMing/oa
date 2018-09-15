@@ -1,0 +1,120 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="km-permission" extends="myapps-default"
+		namespace="/km/permission">
+		
+		<action name="edit"
+			class="cn.myapps.km.permission.action.PermissionAction" method="doEdit">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="new"
+			class="cn.myapps.km.permission.action.PermissionAction" method="doNew">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="list"
+			class="cn.myapps.km.permission.action.PermissionAction" method="doList">
+			<result name="success" type="dispatcher">
+				list.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="doQuery"
+			class="cn.myapps.km.permission.action.PermissionAction" method="doQuery">
+			<result name="success" type="dispatcher">
+				list.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="save"
+			class="cn.myapps.km.permission.action.PermissionAction" method="doSave">
+			<result name="success" type="chain">
+				list
+			</result>
+			<result name="input" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="delete"
+			class="cn.myapps.km.permission.action.PermissionAction" method="doDelete">
+			<result name="success" type="chain">
+				list
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		
+		
+		
+		
+		<!-- manage_permission -->
+		
+		<action name="manage_permission_edit"
+			class="cn.myapps.km.permission.action.ManagePermissionAction" method="doEdit">
+			<result name="success" type="dispatcher">
+				manage_permission_content.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="manage_permission_new"
+			class="cn.myapps.km.permission.action.ManagePermissionAction" method="doNew">
+			<result name="success" type="dispatcher">
+				manage_permission_content.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="manage_permission_list"
+			class="cn.myapps.km.permission.action.ManagePermissionAction" method="doList">
+			<result name="success" type="dispatcher">
+				manage_permission_list.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="manage_permission_save"
+			class="cn.myapps.km.permission.action.ManagePermissionAction" method="doSave">
+			<result name="success" type="chain">
+				manage_permission_list
+			</result>
+			<result name="input" type="dispatcher">
+				manage_permission_content.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="manage_permission_delete"
+			class="cn.myapps.km.permission.action.ManagePermissionAction" method="doDelete">
+			<result name="success" type="chain">
+				manage_permission_list
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+	</package>
+</struts>

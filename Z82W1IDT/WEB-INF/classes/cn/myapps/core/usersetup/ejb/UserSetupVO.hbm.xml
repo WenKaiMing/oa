@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cn.myapps.core.usersetup.ejb.UserSetupVO" table="T_USERSETUP"
+		lazy="false" batch-size="10">
+
+		<id name="id" column="ID" type="java.lang.String">
+			<generator class="assigned">
+				<!--
+						To add non XDoclet generator parameters, create a file named
+						hibernate-generator-params-UserVO.xml containing the additional
+						parameters and place it in your merge dir.
+					-->
+			</generator>
+		</id>
+		
+		<many-to-one name="user"
+			class="cn.myapps.core.user.ejb.UserVO"
+			column="USERID"
+			/>
+			
+		<property name="useHomePage" type="int" update="true" insert="true" column="USEHOMEPAGE"/>
+
+		<property name="domainid" type="java.lang.String" update="true"
+			insert="true" column="DOMAINID" />
+			
+		<property name="userSkin" type="java.lang.String" update="true"
+			insert="true" column="USERSKIN" />
+			
+		<property name="userStyle" type="java.lang.String" update="true"
+			insert="true" column="USERSTYLE" />
+			
+		<property name="pendingStyle" type="text" update="true"
+			insert="true" column="PENDINGSTYLE" />
+			
+		<property name="generalPage" type="text" update="true"
+			insert="true" column="GENERALPAGE" />
+		
+		<property name="status" type="int" update="true" insert="true" column="STATUS"/>
+		
+		<property name="configure" type="text" update="true"
+			insert="true" column="CONFIGURE" />
+			
+		<property name="commonOpinion" type="text" update="true"
+			insert="true" column="COMMON_OPINION" />
+	</class>
+
+</hibernate-mapping>

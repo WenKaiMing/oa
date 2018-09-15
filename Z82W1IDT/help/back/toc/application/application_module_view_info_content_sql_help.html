@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>帮助页面</title>
+<link type="text/css" rel="stylesheet" rev="stylesheet"
+	href="../help.css" media="all">
+</head>
+<body style="margin: 0; padding: 0;">
+<a href onClick="parent.history.back(); return false; return true;"
+	style="color: blue; font-size: 12px"></a>
+<div clas="helpitem">
+<div class="title">当前任务描述：</div>
+<div class="content">
+<ul>
+	<li>使用SQL模式的目的就是为了解决当使用设计模式和模式都不能实现的问题。
+	</ul>
+</div>
+</div>
+<div clas="helpitem">
+<div class="title">功能说明：</div>
+<div class="content">
+    <ul><li>使用SQL模式的好处主要有以下几点：</li>
+<li>(1)模式能很好的利用在多表关联的查询中，而且查询效率高。</li>
+    <li>(2)能很好地使用本地数据的一些方言。</li>
+    <li>(3)能够很好地解决存储过程的查询。</li>
+    <li>下面的例子是使用SQL模式实现申请单号和请假类别的查询：</li>
+    <li>var sql = "";</li>
+    <li>if
+				(getItemValue("_申请单号")!=null && getItemValue("_申请单号").trim().length()
+			> 0){</li>
+    <li>sql = " and
+				ITEM_申请单号 like '"+getItemValue("_申请单号")+"%'";</li>
+    <li>}</li>
+    <li>if
+				(getItemValue("_请假类")!=null && getItemValue("_请假类别").trim().length()
+	  > 0){</li>
+    <li>sql += "
+	  and ITEM_请假类别'"+getItemValue("_请假类别")+"'";</li>
+    <li>}</li>
+    <li>"SELECT *
+				FROM TLK_请假申请4 where
+				istmp=0"+sql;</li>
+    <li>上面的例子是通过脚本的形式返回一个ＳＱＬ语句的字符串，系统会根据这个ＳＱＬ语句进行查询。</li></ul>
+  </div>
+</div>
+</body>
+</html>

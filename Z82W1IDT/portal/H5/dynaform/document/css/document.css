@@ -1,0 +1,313 @@
+	
+/**闂佸湱顭堥¨渚�箰瀹曞洦鍋橀悘鐐插⒔婢瑰锟介鍡樺-start**/
+.table_noborder {
+	width: 100%;
+}
+.front-table-act {
+	height: 23px;
+	vertical-align: middle;
+}
+.front-table-act2 {
+	height: 27px;
+	vertical-align: middle;
+}
+/**闂佸湱顭堥¨渚�箰瀹曞洦鍋橀悘鐐插⒔婢瑰锟介鍡樺-end**/
+
+/**闂佸湱顭堥¨渚�箰閿燂拷start**/
+.actBtn .button-document a span {
+	display: block;
+	white-space: nowrap;
+}
+
+.actBtn span {
+	float: left;
+}
+
+.actBtn div {
+	float: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.button-document {
+	background: url(./act_seperate.gif) right center no-repeat;
+	cursor: pointer;
+	display: block;
+	font-family: Arial, Helvetica;
+	font-weight: 700;
+	vertical-align: middle;
+}
+
+.button-document a {
+	color: #000;
+	cursor: pointer;
+	float: left;
+	height: 25px;
+	text-decoration: none;
+}
+
+.button-document a span {
+	float: left;
+	height: 16px;
+	margin: 0 0 0 10px;
+	padding: 3px 10px 3px 0;
+}
+
+.button-document a:hover {
+	color: #FFF;
+}
+/**闂佸湱顭堥¨渚�箰閿燂拷end**/
+
+/**body闂佸搫绉村ú銊╊敆閻戣棄鍐��鍕绾拷*/
+.body-front {
+	background-color: #F3F7F9;
+	margin-left: 2px;
+	margin-top: 0;
+}
+
+/**闂佸湱顭堥¨渚�箰瀹曞洦鍋橀悘鐐跺Г鐎氭煡鏌涢幇顒佸櫣妞ゆ梹浠璦ble闂佸搫绉撮崲鑼閿涘嫭濯奸柛鎾楀懏鐎�*/
+.front-table-full-width {
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+/*瑜版挸澧犵�鈩冨閼哄倻鍋*/
+.currentNode{
+	height: 27px;
+	line-height: 27px;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-overflow: ellipsis;
+}
+.currentNode>span{
+	display: inline-block;
+    padding: .2em .6em ;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+	background-color: #33ccff;
+    color: #fff;
+}
+/**閻熸粎澧楅幐鍛婃櫠閻樺啿绶為柛鏇ㄥ幗閸婄偛霉濠婃劖瀚�*/
+.processor {
+	height: 27px;
+	line-height: 27px;
+	padding-right: 10px;
+	text-overflow: ellipsis;
+	width: 150px;
+}
+.processor>b>.divFormFlowCls{
+	overflow:hidden;
+}
+.processor>b>.divFormFlowCls>.formFlowCls{
+    display: block;
+	width: 140px;  
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/**濠电偟绻濋懗鍫曞煝婵傚憡鍋愰柤鍝ヮ暜閹凤拷*/
+.flowstate {
+	overflow: hidden;
+	height: 27px;
+	line-height: 27px;
+	padding-right: 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 130px;
+}
+
+/**闂佹悶鍎插畷姗�Υ閸愵喖妞介悘鐐舵閸у﹪鏌涘▎鎺戠处閻炴俺椴哥粙澶愵敂閸曨剛顪岄梺鍝勭▌閹凤拷start**/
+.flowbtn .flowicon {
+	background: url('../../../../../resource/imgv2/front/act/act_5.gif')
+		no-repeat !important;
+	background-position: left !important;
+	padding-left: 18px !important;
+}
+.flowbtn .flowicon-tubiao {
+    background: url('../images/iconfont-tubiao.png')no-repeat !important;
+    background-position: left !important;
+    padding-left: 18px !important;
+}
+.flowbtn .flowicon-lishi {
+    background: url('../images/iconfont-lishi.png')no-repeat !important;
+    background-position: left !important;
+    padding-left: 18px !important;
+}
+.flowbtn .icon16 {
+	width: 16px;
+	height: 16px;
+}
+.flowbtn .button-cmd div {
+	height: 23px;
+	line-height: 23px;
+	float: left;
+}
+.flowbtn .button-cmd .btn_mid{
+	float:right;
+}
+.flowbtn .btn_left {
+	width: 3px;
+	background: url('../../../../../resource/imgv2/front/main/btn_left.png')
+		no-repeat;
+	margin-left: 2px;
+}
+.flowbtn .btn_mid {
+	padding: 0 2px;
+}
+.flowbtn .btn_right {
+	width: 3px;
+	background:
+		url('../../../../../resource/imgv2/front/main/btn_right.png')
+		no-repeat;
+	margin-right: 2px;
+}
+.flowbtn .button-cmd {
+	width: 60px;
+	font-weight: 700;
+}
+.flowbtn .button-cmd img {
+	border: 0px solid white;
+}
+.flowbtn .button-cmd a {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+	background: none;
+	width: auto;
+	float: none;
+}
+.flowbtn .button-cmd a:hover {
+	color: #438733;
+	background: none;
+}
+/**闂佹悶鍎插畷姗�Υ閸愵喖妞介悘鐐舵閸у﹪鏌涘▎鎺戠处閻炴俺椴哥粙澶愵敂閸曨剛顪岄梺鍝勭▌閹凤拷end**/
+
+/**闂佸憡鐗曢幊搴ㄥ箚閸儱绠板鑸靛姈鐏忥箓鎮跺☉妯款枂闁跨喕妫勯湁濞达綀銆�弻銈夋煕濠婂啰鐒烽柕鍡楀暣瀹曪繝寮撮悙鍙夋殽闁诲海鎳撳﹢鍗炩枔閹辩珨v**/
+.front-scroll-hidden {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+/**闁荤偞绋忛崝灞界暦閻旂厧绀冮柛娑卞弾閸熷樉iv--start**/
+.front-scroll-auto {
+	overflow-x: auto;
+	overflow-y: auto;
+}
+
+.front-bgcolor3 {
+	background-color: #fff;
+}
+
+.front-boder {
+	border: 1px solid #99bbe8;
+}
+/**闁荤偞绋忛崝灞界暦閻旂厧绀冮柛娑卞弾閸熷樉iv--end**/
+
+/**闁荤偞绋忛崝灞界暦閻旂厧绠ラ柟鎯у暱缁侇亪鏌曢崱鏇″厡闁轰焦鎹囬獮瀣箛椤栨﹫鎷烽梺鍛婎殱濡插湒F闂佸憡绮岄張顒傜矈閿斿墽鐭欓悗锝庝簻閸у﹪鏌涘▎鎴炵伐DF**/
+.front-align-top {
+	vertical-align: top;
+}
+
+/**闁荤偞绋忛崝灞界暦閻旂厧绀冮柛娑卞弾閸熷檼able**/
+.front-bgcolor2 {
+	background-color: #FFF;
+}
+
+/**word闂佺鐭囬崒娑卞仺闂備緡鍓﹂崰妤冧焊閸涱垯娌柛灞剧懃閳诲繘鏌ｉ·搴㈠缂佺虎鍙庨崰娑㈩敇婵犳艾鍙婃い鏍ㄧ閸庡﹪寮堕埡鍌﹁�婵炴挸澧庨幉浼存晸閿燂拷start**/
+.white_content {
+	background-color: #FFF;
+	border: 3px solid #9dbae4;
+	display: none;
+	left: 50px;
+	overflow: hidden;
+	position: absolute;
+	text-align: center;
+	top: 36px;
+	z-index: 10002;
+}
+
+.dheader {
+	background-image: url(../imgv2/front/main/frame_header.gif);
+	background-repeat: repeat-x;
+	height: 26px;
+	width: 100%;
+}
+
+.title {
+	float: left;
+	font-size: 10pt;
+	height: 26px;
+	line-height: 26px;
+	pending: 2px;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	width: 80%;
+}
+
+.title img {
+	float: right;
+}
+
+.close {
+	float: right;
+	height: 26px;
+	line-height: 26px;
+	padding-right: 3px;
+	padding-top: expression(this.offsetHeight-closeImg.offsetHeight)/2px;
+	position: relative;
+	text-align: right;
+	vertical-align: middle;
+	width: 10%;
+}
+
+.dbody {
+	overflow: auto;
+	text-align: center;
+}
+/**word闂佺鐭囬崒娑卞仺闂備緡鍓﹂崰妤冧焊閸涱垯娌柛灞剧懃閳诲繘鏌ｉ·搴㈠缂佺虎鍙庨崰娑㈩敇婵犳艾鍙婃い鏍ㄧ閸庡﹪寮堕埡鍌﹁�婵炴挸澧庨幉浼存晸閿燂拷end**/
+
+/**word闂佺鐭囬崒娑卞仺閻庢鍠氶幊鎾诲吹椤撶姳娌柛灞剧♁閳绘梻绱掗敓钘夊妺婵＄偛鍊块幆鍐礋椤掞拷妯嗛梻浣烘櫕閺佹笓ass(word闂佸湱顭堥¨渚�箰閹惰棄鐐婇柣鎰靛墰閸ㄨ偐绱撴担瑙勫鞍闁诲寒鍨跺畷锝夘敍濠垫挻瀚归梺鎯х箲閸ㄨ泛煤閸ф绠查柨鐕傛嫹*/
+.button-class {
+	background-color: #FFF;
+	border-width: 0;
+	cursor: pointer;
+	font-family: Arial, Helvetica;
+	font-size: auto;
+	height: 22px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	padding-right: 5px;
+}
+
+/**闂備緡鍓﹂崰妤冧焊閸涱垯娌ǎ鍥舵Бv**/
+.black_overlay {
+	-moz-opacity: 0.8;
+	background-color: threeddarkshadow;
+	display: none;
+	filter: alpha(opacity =   30);
+	height: 100%;
+	left: 0;
+	opacity: .80;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1001;
+}
+
+/**闁荤偞绋忛崝灞界暦閻旂厧绠ラ柟鎯у暱缁侇亪鏌￠崘鈺傛瀯濠电偛娲幃浠嬪Ω瑜庨悾閬嶆煛瀹ュ懎妲荤紒鎲嬫嫹*/
+@MEDIA print {
+	#activityTable {
+		display: none;
+	}
+}
+/**历史纪录**/
+#tipsMsgDivContent >table tr td{
+	padding:0 5px;
+}

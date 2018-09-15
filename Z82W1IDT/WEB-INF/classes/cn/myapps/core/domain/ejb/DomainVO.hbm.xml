@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cn.myapps.core.domain.ejb.DomainVO" table="T_DOMAIN"
+		lazy="false" batch-size="10">
+
+		<id name="id" column="ID" type="java.lang.String">
+			<generator class="assigned">
+				<!--  
+					To add non XDoclet generator parameters, create a file named 
+					hibernate-generator-params-DepartmentVO.xml 
+					containing the additional parameters and place it in your merge dir. 
+				-->
+			</generator>
+		</id>
+
+		<property name="name" type="java.lang.String" update="true"
+			insert="true" column="NAME" />
+
+		<!--<set name="departments" table="T_DEPARTMENT" inverse="true" lazy="true"
+			cascade="all" sort="unsorted">
+
+			<key column="DOMAIN_ID"></key>
+
+			<one-to-many
+				class="cn.myapps.core.department.ejb.DepartmentVO" />
+
+		</set>
+
+		-->
+        
+		<set name="users" table="T_DOMAIN_SUPERUSER_SET" lazy="false"
+			inverse="false" cascade="all" sort="unsorted">
+
+			<key column="DOMAINID"></key>
+
+			<many-to-many
+				class="cn.myapps.core.superuser.ejb.SuperUserVO" column="USERID"
+				outer-join="auto" />
+
+		</set>
+
+		<property name="sortId" type="java.lang.String" update="true"
+			insert="true" column="SORTID" />
+			
+		<property name="skinType" type="java.lang.String" update="true"
+			insert="true" column="SKINTYPE" />
+
+		<property name="description" type="text" update="true"
+			insert="true" column="DESCRIPTION" />
+
+	<!-- 
+		<set name="applications" table="T_DOMAIN_APPLICATION_SET"
+			lazy="false" inverse="false" cascade="save-update" sort="unsorted" order-by="APPLICATIONID">
+
+			<key column="DOMAINID"></key>
+
+			<many-to-many
+				class="cn.myapps.core.deploy.application.ejb.ApplicationVO"
+				column="APPLICATIONID" outer-join="auto" />
+
+		</set>
+ 	-->
+ 	
+		<property name="status" type="int" update="true" insert="true"
+			column="STATUS" />
+		<!--
+			To add non XDoclet property mappings, create a file named
+			hibernate-properties-DepartmentVO.xml
+			containing the additional properties and place it in your merge dir.
+		-->
+
+		<property name="smsMemberCode" type="java.lang.String" update="true"
+			insert="true" column="SMSMEMBERCODE" />
+		
+		<property name="smsMemberPwd" type="java.lang.String" update="true"
+			insert="true" column="SMSMEMBERPWD" />
+			
+		<property name="log" type="java.lang.Boolean" update="true"
+			insert="true" column="IS_LOG" />
+			
+		<property name="systemName" type="java.lang.String" update="true"
+			insert="true" column="SYSTEM_NAME" />
+			
+		<property name="logoUrl" type="java.lang.String" update="true"
+			insert="true" column="LOGO_URL" />
+			
+		<property name="weixinCorpID" type="java.lang.String" update="true"
+			insert="true" column="WEIXIN_CORP_ID" />
+			
+		<property name="weixinCorpSecret" type="java.lang.String" update="true"
+			insert="true" column="WEIXIN_CORP_SECRET" />
+			
+		<property name="weixinAgentId" type="java.lang.String" update="true"
+			insert="true" column="WEIXIN_AGENT_ID" />
+			
+		<property name="weixinProxyType" type="java.lang.String" update="true"
+			insert="true" column="WEIXIN_PROXY_TYPE" />
+			
+		<property name="serverHost" type="java.lang.String" update="true"
+			insert="true" column="SERVER_HOST" />
+			
+		<property name="weixinToken" type="java.lang.String" update="true"
+			insert="true" column="WEIXIN_TOKEN" />
+			
+		<property name="weixinEncodingAESKey" type="java.lang.String" update="true"
+			insert="true" column="WEIXIN_ENCODING_AESKEY" />
+			
+		<property name="systemModuleConfigJson" type="text" update="true"
+			insert="true" column="SYSTEM_MODULE_CONFIG" />
+		<property name="weixinConfigJson" type="text" update="true"
+			insert="true" column="WEIXIN_CONFIG" />
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,35 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="mbmessage" extends="myapps-default" namespace="/mobile2/message">
+		<!-- 站内短信已读 -->
+		<action name="readMessage" class="cn.myapps.mobile2.homepage.MbMessageAction"
+			method="doReadMessage">
+			<result name="success" type="dispatcher">
+				/mobile2/result.jsp
+			</result>
+		</action>
+
+		<!-- 回复站内短信 -->
+		<action name="replyMessage" class="cn.myapps.mobile2.homepage.MbMessageAction"
+			method="doReplyMessage">
+			<result name="success" type="dispatcher">
+				/mobile2/result.jsp
+			</result>
+		</action>
+
+		<action name="messagedata" class="cn.myapps.mobile2.homepage.MbMessageAction"
+			method="doMessageData">
+			<result name="success" type="dispatcher">
+				/mobile2/result.jsp
+			</result>
+		</action>
+		<action name="messagelist" class="cn.myapps.mobile2.homepage.MbMessageAction"
+			method="doMessageList">
+			<result name="success" type="dispatcher">
+				/mobile2/result.jsp
+			</result>
+		</action>
+	</package>
+</struts>

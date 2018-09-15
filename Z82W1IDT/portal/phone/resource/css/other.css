@@ -1,0 +1,542 @@
+
+/*----------content-pending---------*/
+
+.pending, .processing { 
+	background-color: #FFFFFF;
+	font-size: 12px;
+}
+.pending .title,, .processing .title { 
+	height: 46px; 
+	line-height: 46px; 
+	color: #6b6b6b;
+	display: -webkit-box;
+}
+.pending .title .title_line,.processing .title .title_line {
+  -webkit-box-flex: 1;
+  border-top: 1px solid #b0b0b0;
+  margin: 23px 20px 0px;
+  height: 1px;
+}
+.pending .panel-row-title div { padding: 8px; }
+.pending .panel-row-title {color: #606060; border-bottom: solid 1px #e5e5e5 }
+.pending .panel .panel-title a span { display: block; width: 16px; height: 17px; background: url(../images/ico_act_pending.png) no-repeat right center; margin-right: 10px }
+.pending .panel .panel-title a.collapsed span { background: url(../images/ico_act_pending.png) no-repeat left center }
+.pending .panel .panel-title span { background-color: #f66; padding: 3px; margin-left: 10px; color: #fff; font-size: 12px }
+.pending .panel .panel-body { padding: 8px 0; color: #a7a7a7; }
+.pending .panel .panel-collapse .panel-body {border: none;}
+.pending .panel .panel-body .row { padding: 8px 0px 8px 35px;  color: #a7a7a7; }
+.pending .panel .panel-body a{ color: #a7a7a7 }
+.pending .panel .panel-body:hover a { color: #22aae9 }
+.pending .container-fluid { padding-right: 0px; padding-left: 0px; }
+.pending .container-fluid .row { margin-right: 0px; margin-left: 0px; }
+
+.pending .pending-app-nav li a:hover{
+    border-color: #eee #eee #ddd;
+    border-radius: 0px;
+}
+.pending .pending-app-nav li.active {
+
+}
+.pending .pending-app-nav li.active a{
+	border:none;
+	border-bottom:1px solid #5ab45a;
+	margin-top:1px;
+}
+
+.pending .pending-tab .pending-nav {
+	font-size:12px;
+	padding-bottom: 1px;
+}
+.pending .pending-tab .pending-nav li a {
+	padding:10px 15px;
+	background: none;
+	margin-right:0px;
+	border:none;
+	
+	font-size: 12px; 
+	color: #555;
+}
+.pending .pending-tab .pending-nav li a span{
+	color:#fc4d54;
+	margin-left:5px;
+}
+.pending .pending-tab .pending-nav li a:hover{
+	background: none;
+	color:#5ab45a;
+}
+.pending .pending-tab .pending-nav li.active a {
+	color:#5ab45a;
+	border:none;
+}
+.pending .pending-tab .pending-nav li.active a span{
+    display: inline-block;
+    min-width: 10px;
+    padding: 1px 3px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #fc4d54;
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
+
+.pending .pending-tab .pending-content .tab-pane ul{
+	padding: 10px;
+	margin: 0px;
+}
+
+
+
+.pending .pending-tab .pending-content .pending-list-con {
+    display: -webkit-box;  
+	display: -moz-box; 
+	display: -ms-flexbox;      
+	display: -webkit-flex;
+	display: flex;   
+    color:#7d7d7d;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 8px;
+    margin-bottom: 4px;
+}
+
+.pending .pending-tab .pending-content .tabLiFace .noAvatar {
+	width: 38px;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    font-size: 12px;
+    border-radius: 2px;
+    background: #428bcb;
+    height: 38px;
+    margin: 4px 5px 5px 0;
+}
+    
+.pending .pending-tab .pending-content .tabLiFace {
+	position: relative;
+}
+.pending .pending-tab .pending-content .tabLiFace img {
+	height: 38px;
+    margin: 4px 5px 0 0;
+    border-radius: 2px;
+}
+
+.pending .pending-tab .pending-content .tabLiFace .isread {
+	display: none;
+}
+
+.pending .pending-tab .pending-content .tabLiFace .noread {
+	display: block;
+    position: absolute;
+    background-color: #d9544d;
+    height: 10px;
+    width: 10px;
+    top: 0px;
+    right: 0px;
+    border-radius: 100px;
+}
+    
+
+.pending .pending-tab .pending-content .tabLiCon .tabLiConBox{
+	color: #000;
+	padding-top: 5px;
+}
+
+.pending .pending-tab .pending-content .tabLiCon .tabLiConA{
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+    margin-top: -2px;
+}
+
+.pending .pending-tab .pending-content .tabLiCon .tabLiConB{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    display: box;
+}
+
+.pending .pending-tab .pending-content .tabLiCon .tabLiConB .tabLiTagLeft{
+	-webkit-box-flex: 1; 
+	-moz-box-flex: 1; 
+	-webkit-flex: 1;
+	-ms-flex: 1;
+    flex: 1;
+    box-flex: 1;
+    width: 1px;
+    display: block;
+	color: #a7a7a7;
+}
+
+.pending .pending-tab .pending-content .tabLiCon .tabLiConB .tabLiTagRight{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    box-flex: 1;
+    display: block;
+    width: 1px;
+}
+
+.pending .pending-tab .pending-content .tabLiCon .tabLiConB .tabLiCon-text{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}  
+
+.pending .pending-tab .pending-content .tabLiCon .tabLiConA .tabLiCon-stateBox{
+	position: relative;
+	display: block;
+}
+.pending .pending-tab .pending-content .tabLiCon .tabLiConA .tabLiCon-statelabel{
+	display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+}
+.pending .pending-tab .pending-content .tabLiCon .tabLiConA .tabLiCon-stateBox:after{
+	content:" ";
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.pending .pending-tab .pending-content .tabLiCon .tabLiConA .tabLiCon-stateBox:before{
+	content: " ";
+    display: block;
+    position: absolute;
+    left: -5px;
+    right: 0px;
+}
+
+
+.pending .pending-tab .pending-content .tabLiCon .tabLiConB{
+	color: #000000;
+}
+.pending .pending-tab .pending-content .tabLiCon .tabLiConB .tabLiCon-names{
+	-webkit-box-flex: 1; 
+	-moz-box-flex: 1; 
+	-webkit-flex: 1;
+	-ms-flex: 1;
+    flex: 1;
+    box-flex: 1;
+    display: block;
+    width: 1px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}  
+
+.pending .pending-tab .pending-content .tabLiCon .tabLiConB .tabLiCon-auditornames{
+	color: #999999;
+	display: inline-block;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 65px;
+}
+
+.pending .pending-tab .pending-content .tabLiCon .tabLiConB .tabLiCon-statelabel{
+    display: inline-block;
+    text-align: center;
+}
+
+.pending .pending-tab .pending-content .tabLiCon .tabLiConB .tabLiCon-status{
+	color: #aeaeae;
+    font-size: 12px;
+    border: 1px solid #aeaeae;
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 0px 3px;
+    height: 18px;
+    line-height: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+}
+    
+.pending .pending-tab .pending-content .tabLiCon .tabLiConB .tabLiCon-lastprocesstime{
+	display: inline-block;
+    font-size: 12px;
+    color: #999999;
+    margin-left: 5px;
+    vertical-align: top;
+}
+
+.pending .pending-tab .pending-content .tabLiCon{
+    display: block;
+    -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-flex: 1;         /* OLD - Firefox 19- */
+	-webkit-flex: 1;          /* Chrome */
+	-ms-flex: 1;              /* IE 10 */ 
+    flex: 1;
+    font-size: 12px;
+    width: 1px;
+}
+.pending .pending-tab .pending-content .tabLiTime{
+    display: block;
+    width: 75px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: right;
+}
+
+
+.pending .pending-tab .pending-content .tab-pane li:hover{
+	background: #f4f4f4;
+	color:#171717;
+}
+.pending .pending-tab .pending-content .col-xs-4 {
+	padding-left: 30px;
+}
+.pending .pending-tab .pending-content .row div {
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#pending .pending-tab .pending-nav li, #processing .pending-tab .pending-nav li {
+    padding: 10px 6px 10px 12px;
+}
+#pending .pending-tab .pending-nav li a, #processing .pending-tab .pending-nav li a {
+    padding: 3px 10px;
+    background: none;
+    margin-right: 0px;
+    color: #bdbdbd;
+    border: 1px solid #bcbcbc;
+    border-radius: 24px;
+}
+#pending .pending-tab .pending-nav li.active a, #processing .pending-tab .pending-nav li.active a {
+    color: #fff;
+    background: #BCBCBC;
+    border: 1px solid transparent;
+}
+#pending .pending-tab .pending-nav li a span, #processing .pending-tab .pending-nav li a span {
+    color: #fc4d54;
+    display: inline-block;
+    min-width: 10px;
+    padding: 1px 3px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #088DEC;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    position: absolute;
+    top: -3px;
+    right: -7px;
+    border-radius: 5px;
+}
+
+.pending-app-filter{
+	color: #797979;
+}
+.pending-app-filter:after{
+	content: " ";
+    display: block;
+    height: 1px;
+    border-bottom: 1px solid #bcbab6;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+}
+.pending-app-filter .pending-app-filter-item{
+	width: 50%;
+	display: inline-block;
+	margin: 10px 0px;
+	position: relative;
+}
+.pending-app-filter .pending-app-filter-item.active{
+	color: #088DEC;
+}
+.pending-app-filter .pending-app-filter-item.active .pending-app-filter-arrow{
+	transform: rotate(180deg);
+}
+.pending-app-filter .pending-app-filter-item i{
+	font-size: 16px;
+}
+.pending-app-filter .pending-app-filter-item .pending-app-filter-arrow{
+	position: absolute;
+    right: 10px;
+    top: 50%;
+    line-height: 0px;
+}
+    
+    
+.pending-app-filter .pending-app-filter-item:last-child{
+	border-left: 1px solid #DEDDDB;
+}
+
+#pending .pending-tab .pending-nav li a, #processing .pending-tab .pending-nav li a {
+    -webkit-transition: color .3s ease,border-color .3s ease;
+    -moz-transition: color .3s ease,border-color .3s ease;
+    -o-transition: color .3s ease,border-color .3s ease;
+    transition: color .3s ease,border-color .3s ease;
+}
+
+.input-group .input-group-btn select {height:34px;}
+.input-group .input-group-btn .btn {height:34px;}
+
+/*************************��ʷ*********************************/
+.finished .table-view{
+	padding: 10px;
+}
+.finished .table-view>li{
+	padding:0px;
+}
+.finished .table-view>li>a{
+	display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -moz-box; /* Firefox 17- */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: -moz-flex; /* Firefox 18+ */
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+
+	margin:0px;   
+}
+.finished .tabLiFace{
+	position: relative;
+	width:43px;
+	}
+
+.finished .tabLiFace img {
+	height: 38px;
+    margin: 4px 5px 0 0;
+    border-radius: 2px;
+}
+.finished .tabLiFace .noAvatar {
+    width: 38px;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    font-size: 12px;
+    border-radius: 2px;
+    background: #428bcb;
+    height: 38px;
+    margin: 4px 5px 5px 0;
+}
+.finished .tabLiFace .isread {
+    display: none;
+}
+.finished .tabLiFace .noread {
+	display: block;
+    position: absolute;
+    background-color: #d9544d;
+    height: 10px;
+    width: 10px;
+    top: 0px;
+    right: 0px;
+    border-radius: 100px;
+}
+.finished .tabLiCon {
+    display: block;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 12px;
+    width: 1px;
+}
+.finished .tabLiCon .tabLiConBox {
+    color: #000;
+    padding-top: 5px;
+}
+.finished .tabLiCon .tabLiConA {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+    margin-top: -2px;
+}
+.finished .tabLiCon .tabLiConB {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    display: box;
+	color:#000;
+}
+.finished .tabLiCon .tabLiConB .tabLiTagLeft {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    box-flex: 1;
+    width: 1px;
+    display: block;
+    color: #a7a7a7;
+}
+.finished  .tabLiCon .tabLiConB .tabLiCon-auditornames {
+    color: #999999;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 65px;
+}
+.finished .tabLiCon .tabLiConB .tabLiCon-lastprocesstime {
+    display: inline-block;
+    font-size: 12px;
+    color: #999999;
+    margin-left: 5px;
+    vertical-align: top;
+}
+.finished .tabLiCon .tabLiConB .tabLiTagRight {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    box-flex: 1;
+    width: 1px;
+    display: block;
+}
+.finished .tabLiCon .tabLiConB .tabLiCon-status {
+    color: #aeaeae;
+    font-size: 12px;
+    border: 1px solid #aeaeae;
+    border-radius: 3px;
+    margin-left: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 0px 3px;
+    height: 18px;
+    line-height: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+}
+.finished .navigate-right:after, .push-right:after {
+    right: 15px;
+    content: '';
+}
+.finished .search-box .search{
+	font-size:12px;
+} 
+.finished .search-box .finish-pend .finish-pend-icon{
+	position:relative;
+	top:2px;
+}

@@ -1,0 +1,21 @@
+@charset "utf-8";
+/**视图打印页面专用样式**/
+a {
+	color: #333;
+	text-decoration:none;
+	cursor: inherit;
+}
+
+#dataTable {
+	overflow:auto;
+}
+
+#bak_table_dataTable {
+	display:none!important;
+}
+@media print {
+	#dataTable {
+		overflow:hidden;
+		height: auto!important;
+	}
+}

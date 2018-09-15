@@ -1,0 +1,279 @@
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="baike_Entry" extends="myapps-default"
+		namespace="/km/baike/entry">
+		
+		
+		<!-- 删除词条 -->
+		<action name="deleteEntry"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="deleteEntry">
+			<result name="deleteEntry" type="dispatcher">
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 查勘用户资料 -->
+		<!-- <action name="doFindUserCenterByUserId"  class="cn.myapps.km.baike.entry.action.EntryAction" method="doFindUserCenterByUserId">
+			<result name="success" type="dispatcher">
+				/km/baike/center/index1.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action> -->
+		
+		
+		<!-- 修改词条 -->
+		<action name="doModifyEntryName"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doModifyEntryName">
+			<result name="success" type="stream">
+				<param name ="contentType">text/html</param>
+				<param name = "inputName">result</param>
+			</result>
+			<result name="input" type="stream">
+				<param name ="contentType">text/html</param>
+				<param name = "inputName">result</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 修改词条 -->
+		<action name="doModifyEntryNameAndCategory"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doModifyEntryNameAndCategory">
+			<result name="success" type="stream">
+				<param name ="contentType">text/html</param>
+				<param name = "inputName">result</param>
+			</result>
+			<result name="input" type="stream">
+				<param name ="contentType">text/html</param>
+				<param name = "inputName">result</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		
+		<!-- 查询最新词条 -->
+		<!-- <action name="findRecentEntry"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="findRecentEntry">
+			<result name="success" type="dispatcher">
+			/km/baike/entry/index1.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action> -->
+		
+		<!-- 获取最新词条-->
+		<action name="doFindRecentEntry"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doFindRecentEntry">
+			<result name="success" type="dispatcher">
+				/km/baike/entry/recentEntry.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+			<!-- 获取最热词条-->
+		<action name="doFindHotEntry"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doFindHotEntry">
+			<result name="success" type="dispatcher">
+				/km/baike/entry/hotEntry.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+				<!-- 获取最热词条-->
+		<action name="doFindDepartmentPoint"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doFindDepartmentPoint">
+			<result name="success" type="dispatcher">
+				/km/baike/entry/departPointEntry.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+			<!-- 获取积分排行名单-->
+		<action name="doFindPointEntry"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doFindPointEntry">
+			<result name="success" type="dispatcher">
+				/km/baike/entry/pointEntry.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+			<!-- 获取贡献名单-->
+		<action name="doFindContribute"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doFindContribute">
+			<result name="success" type="dispatcher">
+				/km/baike/entry/myContributor.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 初始化首页 -->
+		<action name="doInit"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doInit">
+			<result name="success" type="dispatcher">
+				/km/baike/entry/index.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 保存词条 -->
+		<action name="doSaveAndAddPoint"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doSaveAndAddPoint">
+			<result name="success" type="OBPMdispatcher">
+				/km/baike/content/addContent.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 创建词条并增加积分 -->
+		<action name="doSaveAndAddPoint"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doSaveAndAddPoint">
+			<result name="success" type="OBPMdispatcher">
+				/km/baike/content/addContent.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/km/baike/content/addEntry.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 根据词条ID查找词条 -->
+		<action name="doView"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doView">
+			<result name="success" type="dispatcher">
+				/km/baike/content/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		
+		<!-- 预览词条 -->
+		<action name="doPreview"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doPreview">
+			<result name="success" type="dispatcher">
+				/km/baike/content/contentPreview.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 预览词条 -->
+		<action name="doPreview1"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doPreview">
+			<result name="success" type="dispatcher">
+				/km/baike/content/contentAudit.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 为词条投票 -->
+		<action name="doVote"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doVote">
+			<result name="success" type="dispatcher">
+				doView.action
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 进入词条 -->
+		<action name="doAccess"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doAccess">
+			<result name="success" type="chain">
+				<param name="actionName">doView</param>
+    			<param name="namespace">/km/baike/entry</param>
+			</result>
+			<result name="searching" type="chain">
+				<param name="actionName">doQuery</param>
+    			<param name="namespace">/km/baike/content</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!--  已在 myapps-baike-user.xml中配置，个人中心- 当前用户创建的词条
+		<action name="doGetMyEntry"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doGetMyEntry">
+			<result name="success" type="dispatcher">
+				/km/baike/center/index.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		-->
+		
+		<!-- 根据名字查询词条 -->
+		<action name="findEntryByName"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doFindEntryByName">
+			<result name="findEntryByName" type="dispatcher">
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 根据种类查询词条 -->
+		<action name="findByCategoryId"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doFindByCategoryId">
+			<result name="findByCategoryId" type="dispatcher">
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 给词条加分 -->
+		<action name="addPoint"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="addPoint">
+			<result name="addPoint" type="dispatcher">
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 根据关键字查询词条 -->
+		<action name="findByKeyWord"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doFindByKeyWord">
+			<result name="findByKeyWord" type="dispatcher">
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		
+		
+		<!--  先根据名称,后根据关键字,再检索所有词条内容查询 -->
+		<action name="findEntry"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="findEntry">
+			<result name="findEntry" type="dispatcher">
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 遍历词条内容,查找包含关键字的词条 -->
+		<action name="findEntryByContent"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doFindEntryByContent">
+			<result name="findEntryByContent" type="dispatcher">
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+	
+	</package>
+</struts>

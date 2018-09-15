@@ -1,0 +1,18 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="portal-application-front" extends="myapps-default"
+		namespace="/portal/application">
+
+		<action name="change"
+			class="cn.myapps.core.deploy.application.action.ApplicationRunTimeAction"
+			method="doChange">
+			<result name="success" type="redirect">
+				/portal/share/success.jsp?application=${id}
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+
+</struts>

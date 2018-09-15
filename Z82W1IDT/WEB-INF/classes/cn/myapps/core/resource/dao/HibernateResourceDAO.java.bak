@@ -1,0 +1,73 @@
+package cn.myapps.core.resource.dao;
+
+import java.util.Collection;
+
+import cn.myapps.base.action.ParamsTable;
+import cn.myapps.base.dao.HibernateBaseDAO;
+import cn.myapps.base.dao.ValueObject;
+public class HibernateResourceDAO extends HibernateBaseDAO implements
+		ResourceDAO {
+	/**
+	 * @param voClassName
+	 *            The value object class name.
+	 */
+	public HibernateResourceDAO(String voClassName) {
+		super(voClassName);
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see cn.myapps.core.resource.dao.ResourceDAO#getFamilyTree(java.lang.String)
+	 */
+	public Collection getFamilyTree(String parent, String application) throws Exception {
+		String hql = "from " + _voClazzName + " vo ";
+
+		if (parent != null && parent.length() > 0)
+			hql += " where vo.parentid = '" + parent + "'";
+
+		hql += " order by vo.orderno,vo.superiorid";
+
+		   ParamsTable params=new ParamsTable();
+		   params.setParameter("application",application);
+		   return getDatas(hql, params);
+	}
+
+	public void create(ValueObject vo) throws Exception {
+		try {
+			super.create(vo);
+		} catch (Exception e) {
+			throw e;
+		}
+		finally{
+		}
+	}
+
+	public void remove(String id) throws Exception {
+		try {
+			super.remove(id);
+		} catch (Exception e) {
+			throw e;
+		}
+		finally{
+		}
+
+	}
+
+	public void update(ValueObject vo) throws Exception {
+		try {
+			super.update(vo);
+		} catch (Exception e) {
+			throw e;
+		}
+		finally{
+		}
+	}
+
+	public Collection getProtectResources(String application)throws Exception
+	{
+		String hql="from "+_voClazzName+" where isprotected is true and application.d='"+application+"' order by orderno,id";
+	    return getDatas(hql);
+	}
+	
+}

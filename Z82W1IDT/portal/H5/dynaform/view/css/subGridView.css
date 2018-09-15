@@ -1,0 +1,46 @@
+/**缂傛牞绶悰灞剧壉瀵拷*/
+tr.grid-rowselected {
+	background-color: #F9E5BE;
+	border: 1px dashed #f3d49b;
+}
+
+/**閹稿鎸抽崪灞剧叀鐠囥垼銆冮崡鏇☆攽閻ㄥ墖able**/
+.display_view-table {
+	border: 0 solid #FFF;
+	font-family: Arial, Vendera;
+	font-size: 12px;
+	width: 100%;
+	z-index: 100;
+}
+
+/**div#dspview_divid**/
+#dspview_divid {
+	width: 100%\9;
+}
+
+/**閹稿鎸崇悰锟�*/
+.act_table2 {
+	background:#e5edf8;
+	height: 27px;
+	vertical-align: middle;
+}
+
+/**dataTable闁插秵鐎崜宥嗙壉瀵拷-start**/
+.viewTable {
+	border-collapse:collapse;
+	width:100%;
+}
+.viewTable td{
+	border: 1px solid #000;
+}
+.table-td {
+	font-family: Arial, Vendera, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	width: 22px;
+}
+/**dataTable闁插秵鐎崜宥嗙壉瀵拷-end**/
+#gridview-container .activity__bd .btn{
+	margin-right: 4px;
+    padding: 6px 20px;
+}

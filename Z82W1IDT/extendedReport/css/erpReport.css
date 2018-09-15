@@ -1,0 +1,22 @@
+
+	.panel {
+		margin-top: 1.5em;
+	}
+	.headerDesc {
+		margin : 0 1em;
+	}
+	
+@media screen and (max-width:768px) {
+	
+	.head-search {
+	    float: right;
+	    margin: 8px 15px 8px 0px;
+	    border: 1px solid #ddd;
+	    background: transparent;
+	    color: #888;
+	}
+
+	.col-md-3 {
+		text-align: center;
+	}
+}

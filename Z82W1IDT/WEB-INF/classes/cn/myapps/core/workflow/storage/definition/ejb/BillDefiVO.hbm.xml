@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cn.myapps.core.workflow.storage.definition.ejb.BillDefiVO"
+		table="T_BILLDEFI"
+		dynamic-insert="true"
+		dynamic-update="true">
+
+		<id name="id" column="ID" type="java.lang.String">
+			<generator class="assigned">
+			</generator>
+		</id>
+
+		<many-to-one name="module" 
+			class="cn.myapps.core.deploy.module.ejb.ModuleVO" cascade="none"
+			outer-join="auto" update="true" insert="true" column="MODULE" />
+
+		<property name="authorname" type="java.lang.String" update="true"
+			insert="true" column="AUTHORNAME" />
+
+		<property name="authorno" type="java.lang.String" update="true"
+			insert="true" column="AUTHORNO" />
+
+		<property name="flow" type="text" update="true" insert="true"
+			column="FLOW" length="100000" />
+
+		<property name="lastmodify" type="java.util.Date" update="true"
+			insert="true" column="LASTMODIFY" />
+
+		<property name="subject" type="java.lang.String" update="true"
+			insert="true" column="SUBJECT" />
+
+		<property name="sortId" type="java.lang.String" update="true"
+			insert="true" column="SORTID" />
+
+		<property name="applicationid" type="java.lang.String"
+			update="true" insert="true" column="APPLICATIONID" />
+		<property name="checkout" 
+			type="boolean" 
+			update="true" insert="true">
+			<column name="CHECKOUT" 
+				default="0"
+			/>
+		</property>
+		
+		<property name="checkoutHandler" type="java.lang.String" update="true"
+			insert="true" column="CHECKOUTHANDLER" />
+
+	</class>
+
+</hibernate-mapping>

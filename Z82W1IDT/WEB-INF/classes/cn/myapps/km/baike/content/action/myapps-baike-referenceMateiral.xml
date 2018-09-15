@@ -1,0 +1,17 @@
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- entry content package -->
+	<package name="baike_referenceMaterial" extends="myapps-default"
+		namespace="/km/baike/content">
+		<action name="getReferenceMaterials"
+			class="cn.myapps.km.baike.content.action.ReferenceMaterialAction"
+			method="doList">
+			<result name="success" type="dispatcher">/km/baike/content/content.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+</struts>

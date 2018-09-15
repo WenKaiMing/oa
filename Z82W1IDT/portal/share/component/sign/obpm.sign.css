@@ -1,0 +1,87 @@
+
+.isignature .toolPanel
+{
+    top: 60px;
+    position: fixed;
+    right: 20px;
+    z-index: 999;
+    box-shadow: 0px 0 5px #CCC;
+    color: #616161;
+    background: #fafafa;
+    outline: 0;
+    padding: 20px;
+}
+.isignature .sign
+{
+    position: absolute;
+    cursor: move;
+    border: 2px dashed #d67171;
+    padding: 12px;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    z-index: 999;
+}
+.isignature .sign.ok
+{
+    cursor: default;
+    border-color:transparent;
+}
+.isignature .sign img
+{
+    max-height: 100%;
+    max-width: 100%;
+}
+.isignature .sign .btn
+{
+    padding: 2px 6px;
+    font-size: 11px;
+    line-height: 14px;
+    position: absolute;
+}
+
+.isignature .sign .btn.del
+{
+    top: 120px;
+    right: 1px;
+}
+.isignature .sign .btn.ok
+{
+    top: 120px;
+    right: 45px;
+}
+#sign_select{
+    width: 250px;
+    height: 34px;
+    position:relative;
+    top:15px;
+    float:left;
+    margin-left:15px;
+    margin-right:15px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.cancel_btn{
+	position:absolute;
+	right: 10px;
+    top: 5px;
+}
+.sign-group .manager_btn{
+	float:left;
+	margin:15px 0px;
+}
+.sign-group .sign_btn{
+	float:left;
+	margin:15px 0px;
+}

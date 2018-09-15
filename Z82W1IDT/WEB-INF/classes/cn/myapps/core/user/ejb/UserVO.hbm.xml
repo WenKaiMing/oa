@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cn.myapps.core.user.ejb.UserVO" table="T_USER" dynamic-update="true" lazy="false"
+		batch-size="10">
+
+		<id name="id" column="ID" type="java.lang.String">
+			<generator class="assigned">
+				<!--
+					To add non XDoclet generator parameters, create a file named
+					hibernate-generator-params-UserVO.xml containing the additional
+					parameters and place it in your merge dir.
+				-->
+			</generator>
+		</id>
+
+		<set name="userDepartmentSets" table="T_USER_DEPARTMENT_SET" lazy="true"
+			cascade="all" sort="unsorted">
+			<key column="USERID"></key>
+			<one-to-many class="cn.myapps.core.user.ejb.UserDepartmentSet" />
+		</set>
+
+		<set name="userRoleSets" table="T_USER_ROLE_SET" lazy="false"
+			cascade="all" sort="unsorted">
+			<key column="USERID"></key>
+			<one-to-many class="cn.myapps.core.user.ejb.UserRoleSet" />
+		</set>
+
+		<!--
+			<set name="departments" table="T_USER_DEPARTMENT_SET" lazy="false"
+			cascade="save-update" sort="unsorted"> <key column="USERID"></key>
+
+			<many-to-many class="cn.myapps.core.department.ejb.DepartmentVO"
+			column="DEPARTMENTID" outer-join="auto" /> </set>
+		-->
+
+		<!--
+			<set name="roles" table="T_USER_ROLE_SET" lazy="false"
+			cascade="save-update" sort="unsorted"> <key column="USERID"></key>
+
+			<many-to-many class="cn.myapps.core.role.ejb.RoleVO" column="ROLEID"
+			outer-join="auto" /> </set>
+		-->
+
+		<property name="calendarType" type="java.lang.String" update="true"
+			insert="true" column="CALENDAR" />
+
+		<property name="level" type="int" update="true" insert="true"
+			column="LEVELS" />
+
+		<property name="remarks" type="java.lang.String" update="true"
+			insert="true" column="REMARKS" />
+
+		<one-to-one name="userSetup" class="cn.myapps.core.usersetup.ejb.UserSetupVO" lazy="false"
+			fetch="join" cascade="all" />
+
+		<many-to-one name="superior" class="cn.myapps.core.user.ejb.UserVO" lazy="false"
+			cascade="none" outer-join="auto" update="true" insert="true" column="SUPERIOR" />
+
+		<many-to-one name="proxyUser" class="cn.myapps.core.user.ejb.UserVO"  lazy="false"
+			cascade="none" outer-join="auto" update="true" insert="true" column="PROXYUSER" />
+
+		<property name="defaultDepartment" type="java.lang.String"
+			update="true" insert="true" column="DEFAULTDEPARTMENT" />
+
+		<property name="defaultApplication" type="java.lang.String"
+			update="true" insert="true" column="DEFAULTAPPLICATION" />
+
+		<property name="email" type="java.lang.String" update="true"
+			insert="true" column="EMAIL" />
+
+		<property name="loginno" type="java.lang.String" update="true"
+			insert="true" column="LOGINNO" />
+
+		<property name="loginpwd" type="java.lang.String" update="true"
+			insert="true" column="LOGINPWD" />
+
+		<property name="name" type="java.lang.String" update="true"
+			insert="true" column="NAME" />
+			
+		<property name="nameLetter" type="java.lang.String" update="true"
+			insert="true" column="NAME_LETTER" />
+
+		<property name="telephone" type="java.lang.String" update="true"
+			insert="true" column="TELEPHONE" />
+
+		<property name="status" type="int" update="true" insert="true"
+			column="STATUS" />
+
+		<property name="domainid" type="java.lang.String" update="true"
+			insert="true" column="DOMAINID" />
+		
+		<property name="domainUser" type="java.lang.String" update="true"
+			insert="true" column="ISDOMAINUSER" />
+
+		<property name="startProxyTime" type="java.util.Date"
+			update="true" insert="true" column="STARTPROXYTIME"/>
+		
+		<property name="endProxyTime" type="java.util.Date"
+			update="true" insert="true" column="ENDPROXYTIME"/>
+			
+		<property name="useIM" type="java.lang.Boolean" update="true"
+			insert="true" column="USEIM" />
+			
+		<property name="orderByNo" type="java.lang.Integer" update="true" 
+			insert="true">
+			<column name="ORDERBYNO" default="10000"></column>
+		</property>
+		
+		<property name="lastModifyPasswordTime" type="java.util.Date"
+			update="true" insert="true" column="LASTMODIFYPASSWORDTIME"/>
+				
+		<property name="passwordArray" type="java.lang.String" update="true"
+			insert="true" column="PASSWORDARRAY" length="1000" />
+			
+		<property name="lockFlag" type="java.lang.Integer" update="true" insert="true" >
+			<column name="LOCKFLAG" default="1"></column>
+		</property>
+		
+		<property name="publicKey" type="java.lang.String" update="true"
+			insert="true" column="PUBLICKEY" length="1000" />	
+			
+		<property name="dimission" type="java.lang.Integer" update="true" insert="true" >
+			<column name="DIMISSION" default="1"></column>
+		</property>
+		
+		<property name="avatar" type="text" update="true"
+			insert="true" column="AVATAR" />
+		<property name="favoriteContacts" type="text" update="true"
+			insert="true" column="FAVORITE_CONTACTS" />
+			
+		<property name="permissionType" type="java.lang.String" update="true"
+			insert="true" column="PERMISSION_TYPE" />
+			
+		<property name="liaisonOfficer" type="java.lang.Boolean" update="true" insert="true" >
+			<column name="LIAISON_OFFICER" default="0"></column>
+		</property>
+		<!--
+			To add non XDoclet property mappings, create a file named
+			hibernate-properties-UserVO.xml containing the additional properties
+			and place it in your merge dir.
+		-->
+
+		<property name="telephone2" type="java.lang.String"  update="true"
+			insert="true"  column="TELEPHONE2" />
+
+		<property name="telephonePublic"  type="java.lang.Boolean"  update="true"
+			insert="true"  column="TELEPHONEPUBLIC" />
+			
+		<property name="telephonePublic2" type="java.lang.Boolean" update="true"
+			insert="true" column="TELEPHONEPUBLIC2" />
+			
+		<property name="emailPublic" type="java.lang.Boolean" update="true"
+			insert="true" column="EMAILPUBLIC" />
+			
+		<property name="userInfoPublic" type="java.lang.Boolean" update="true"
+			insert="true" column="USERINFOPUBLIC" />
+			
+		<property name="signs" type="text" update="true"
+			insert="true" column="SIGNS" />
+			
+		<property name="field1" type="java.lang.String" column="FIELD1" />
+
+		<property name="field2" type="java.lang.String" column="FIELD2" />
+
+		<property name="field3" type="java.lang.String" column="FIELD3" />
+
+		<property name="field4" type="java.lang.String" column="FIELD4" />
+
+		<property name="field5" type="java.lang.String" column="FIELD5" />
+
+		<property name="field6" type="java.lang.String" column="FIELD6" />
+
+		<property name="field7" type="java.lang.String" column="FIELD7" />
+
+		<property name="field8" type="java.lang.String" column="FIELD8" />
+
+		<property name="field9" type="java.lang.String" column="FIELD9" />
+
+		<property name="field10" type="java.lang.String" column="FIELD10" />
+	</class>
+
+</hibernate-mapping>

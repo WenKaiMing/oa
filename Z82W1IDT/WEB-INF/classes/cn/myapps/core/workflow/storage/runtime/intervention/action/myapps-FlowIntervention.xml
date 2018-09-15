@@ -1,0 +1,38 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="workflowIntervention-front" extends="myapps-default"
+		namespace="/core/workflow/storage/runtime/intervention">
+
+	<action name="list"
+		class="cn.myapps.core.workflow.storage.runtime.intervention.action.FlowInterventionAction"
+		method="doList">
+		<result name="success" type="OBPMdispatcher">list.jsp</result>
+		<result name="input" type="OBPMdispatcher">list.jsp</result>
+	</action>
+	
+	<action name="view"
+		class="cn.myapps.core.workflow.storage.runtime.intervention.action.FlowInterventionAction"
+		method="doView">
+		<result name="success" type="OBPMdispatcher">content.jsp</result>
+		<result name="input" type="OBPMdispatcher">list.jsp</result>
+	</action>
+	
+	<action name="delete"
+		class="cn.myapps.core.workflow.storage.runtime.intervention.action.FlowInterventionAction"
+		method="doDelete">
+		<result name="success" type="OBPMdispatcher">list.jsp</result>
+		<result name="input" type="OBPMdispatcher">list.jsp</result>
+	</action>
+	
+	<action name="flow"
+		class="cn.myapps.core.workflow.storage.runtime.intervention.action.FlowInterventionAction"
+		method="doFlow">
+		<result name="success" type="OBPMdispatcher">list.jsp</result>
+		<result name="input" type="OBPMdispatcher">list.jsp</result>
+	</action>
+	
+	
+	</package>
+</struts>

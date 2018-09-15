@@ -1,0 +1,32 @@
+.pagingDiv {
+	margin : 0px;
+	padding: 0px;
+	border: 0px;
+	list-style-type: none;
+	text-decoration: none;
+	font-size: 13px;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	margin: 20px auto;
+	padding: 20px;
+	margin: 0px;
+}
+
+.pagingDiv a {
+	padding: 5px;
+	border: 1px solid #CCC;
+	margin: 0px 5px;
+	text-decoration: none;
+	color: #333;
+	cursor: pointer; 
+}
+
+.pagingDiv a:hover {
+	border: 1px solid #FC0;
+	color: #F60;
+}
+
+.pagingDiv .page-active {
+	border: 1px solid #FC0;
+	color: #F60;
+}

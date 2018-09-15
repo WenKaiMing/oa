@@ -1,0 +1,145 @@
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro');
+ a {text-decoration:none;outline:none;color:#555;}
+ a:hover {color:#FF0004; text-decoration:none}/*ff7200*/
+
+ body {
+	    list-style:none;
+		font: 100%/1.5 "Microsoft Yahei","\5B8B\4F53","Arial";
+		background:url(images/texture.png) repeat; repeat; color:#525252
+		
+} 
+
+ body h2{ color:#9C9C9C;
+} 
+
+ body strong{ color:#0079EB; font-family:"微软雅黑"; margin-left:1px; margin-top:-40px; font-size:26px;
+} 
+.text-type1 { 
+	margin-left:25px;margin-top:45px; margin-bottom:25px; width:550px; float:left; 
+}
+.cam-links{ padding: 0 0 2.5% 0; margin-bottom:25px; margin-left:25px; margin-top:25px; }
+.cam-links span{ font-size: 1em; margin: 0 3em 0 0; }
+.cam-links a{ font-size: 18px; margin: 0 1.5em 0 0; color: #1570A6; text-decoration: none; margin-left:35px; }
+.cam-links a:hover{ color: #1A1A1A;}
+
+
+	
+.img-type1 {
+	margin-right:25px;margin-top:45px; margin-bottom:25px; width:550px; float:right;
+} 
+
+.text-type2 {
+	margin-right:25px;margin-top:25px; margin-bottom:25px; width:550px; float:right;
+}
+.text-type2s {
+	margin-right:25px;margin-top:25px; margin-bottom:25px; width:550px; float:right;
+}
+.text-type2ss {
+	margin-left:25px;margin-top:25px; margin-bottom:25px;
+}
+
+
+.img-type2 {
+	margin-left:25px;margin-top:25px; margin-bottom:25px; width:550px; float:left;
+}
+
+.img-type2s {
+	margin-left:35px;margin-top:5px; margin-bottom:25px; width:450px; float:left;
+}
+
+
+.text-type3 {
+	margin-left:25px;margin-top:25px; margin-bottom:25px; width:1100px;
+}
+
+.img-type3 {
+	margin-left:25px;margin-top:25px; margin-bottom:25px; width:1100px; text-align:center;
+}
+
+.floatdiv{ background:url(../images/floatdiv.gif) no-repeat; width:115px; height:223px; padding:35px 0 0 15px;}
+	.floatdiv h3{ font-size:12px;color:#000; margin:6px 0 2px 15px;}
+	.floatdiv a{ font-size:12px;height: 15px; 
+.text-type1 {
+	margin-left:25px;margin-top:25px; margin-bottom:25px; width:550px; float:left;
+}
+	
+.img-type1 {
+	margin-right:25px;margin-top:25px; margin-bottom:25px; width:550px; float:right;
+} 
+
+.text-type2 {
+	margin-right:25px;margin-top:25px; margin-bottom:25px; width:550px; float:right;
+}
+
+.img-type2 {
+	margin-left:25px;margin-top:25px; margin-bottom:25px; width:550px; float:left;
+}
+
+.text-type3 {
+	margin-left:25px;margin-top:25px; margin-bottom:25px; width:1100px;
+}
+
+.img-type3 {
+	margin-left:25px;margin-top:25px; margin-bottom:25px; width:1100px; text-align:center;
+}
+
+.text-type1 { 
+	margin-left:25px;margin-top:25px; margin-bottom:25px; width:550px; float:left; 
+}
+	
+.img-type1 {
+	margin-right:25px;margin-top:25px; margin-bottom:25px; width:550px; float:right;
+} 
+
+.text-type2 {
+	margin-right:25px;margin-top:25px; margin-bottom:25px; width:550px; float:right;
+}
+.text-type2s {
+	margin-right:125px;margin-top:25px; margin-bottom:25px; width:550px; float:right;
+}
+.text-type2ss {
+	margin-left:25px;margin-top:25px; margin-bottom:25px;
+}
+
+
+.img-type2 {
+	margin-left:25px;margin-top:25px; margin-bottom:25px; width:550px; float:left;
+}
+
+.img-type2s {
+	margin-left:35px;margin-top:5px; margin-bottom:25px; width:450px; float:left;
+}
+
+
+.text-type3 {
+	margin-left:25px;margin-top:25px; margin-bottom:25px; width:1100px;
+}
+
+.img-type3 {
+	margin-left:25px;margin-top:25px; margin-bottom:25px; width:1100px; text-align:center;
+}
+
+.text-type1 {
+	margin-left:25px;margin-top:25px; margin-bottom:25px; width:550px; float:left;
+}
+	
+.img-type1 {
+	margin-right:25px;margin-top:25px; margin-bottom:25px; width:550px; float:right;
+} 
+.img-type1 {
+	margin-right:5px;margin-top:25px; margin-bottom:25px; width:500px; float:right;
+} 
+
+.text-type2 {
+	margin-right:25px;margin-top:25px; margin-bottom:25px; width:550px; float:right;
+}
+.text-type2s {
+	margin-right:175px;margin-top:25px; margin-bottom:25px; width:550px; float:right;
+}
+.text-type2ss {
+	margin-right:85px;margin-top:75px; margin-bottom:25px; width:500px; float:right;
+}
+.img-type2s {
+	margin-left:75px;margin-top:25px; margin-bottom:25px; width:170px; float:left;
+}
+

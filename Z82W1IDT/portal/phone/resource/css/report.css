@@ -1,0 +1,21 @@
+@charset "utf-8";
+.menuReport {
+	padding-top:10px;
+}
+.report_head{
+	position:relative;
+}
+.menuReport .report_title{
+	 text-align:center;
+	 line-height: 45px;
+	 font-size: 18px;
+	 font-weight: 600;
+	 color: #4F4F4F;
+	 margin-bottom:0;
+}
+.menuReport .refreshMenuReport{
+     position: absolute;
+     right: 10px;
+     top: 14px;
+     display:none;
+}

@@ -1,0 +1,54 @@
+@charset "utf-8";
+/**common-start**/
+a{text-decoration: none;color:#666;}
+*{font-size: 12px;}
+html,body {background-color: #FFFFFF;}
+body,div,html,form,ul,ol,li,dl,dt,dd,p {margin: 0px;padding: 0px;}
+table{border-collapse:collapse;}
+li {list-style-type: none;}
+img {border: none;}
+body,input,textarea,select {font-family: Arial, Vendera, Tahoma;}
+/**common-end**/
+
+.content{margin:20px;border:1px solid #DEDEDE;}
+.content h3{height:40px;line-height:40px;background:#EEEFF1;float:left;}
+.content h3 a{display:inline-block;background:url(../images/succeed.gif) no-repeat 10px center;padding-left:40px;}
+.uploadify{margin:10px 0px;}
+.uplaodFomr{width:550px;margin:0 auto;}
+.uplaodFomr p{margin:15px 0px;}
+.uplaodFomr .lineHeight{height:20px;line-height:20px;}
+.uplaodFomr .title span{color:#f00;font-size:16px;}
+.uplaodFomr .input{width:550px;height:30px;line-height:30px;}
+.uplaodFomr .textarea{width:550px;height:60px;}
+.uplaodFomr .select_inpt{width:280px;height:30px;line-height:30px;;background:url(../images/select.gif) right center no-repeat;}
+.submit_btn_left,.submit_btn_center,.submit_btn_right{float:left;}
+.submit_btn_left{margin-left:5px;width:4px;height:30px;background:url(../images/btn_left.gif) no-repeat;}
+.submit_btn_center{height:30px;line-height:30px;background:url(../images/btn_center.gif) repeat-x;}
+.submit_btn_right{width:4px;height:30px;background:url(../images/btn_right.gif) no-repeat;}
+.submit_btn_center a{padding:0 15px;color: #000000;}
+.uploadClass{width:880px;margin:10px auto;height:490px;}
+.goupload_left,.goupload_center,.goupload_right{float:left;}
+.goupload_left{margin-left:5px;width:4px;height:30px;background:url(../images/succeed_left.gif) no-repeat;}
+.goupload_center{height:30px;line-height:30px;background:url(../images/succeed_center.gif) repeat-x;}
+.goupload_right{width:4px;height:30px;background:url(../images/succeed_right.gif) no-repeat;}
+.goupload_center a{color:#fff;padding:0 25px;background:url(../images/succeed_add.gif) no-repeat;}
+
+.complete_left,.complete_center,.complete_right{float:left;}
+.complete_left{margin-left:5px;width:4px;height:30px;background:url(../images/succeed_left.gif) no-repeat;}
+.complete_center{height:30px;line-height:30px;background:url(../images/succeed_center.gif) repeat-x;}
+.complete_right{width:4px;height:30px;background:url(../images/succeed_right.gif) no-repeat;}
+.complete_center a{color:#fff;padding:0 25px;}
+.titleDiv{
+	height:40px;background:#EEEFF1;
+}
+.downMore{background:url(../images/downMore.png) no-repeat;}
+.btn_upload{
+	float:right;width:250px;margin:20px 0;
+}
+.sort{float:left;width:100%;position:relative;}
+.uplaodFomr .sort_span{width:20px;height:20px;text-indent:-999px;padding:4px 0;position:absolute;right:15px;bottom:3px;}
+.department{width:200px;float:right;position:relative;}
+.uplaodFomr .department_inpt{width:200px;height:30px;line-height:30px;background:url(../images/select.gif) right center no-repeat;}
+.uplaodFomr .department_span{width:20px;height:20px;text-indent:-999px;padding:4px 0;position:absolute;right:0px;bottom:3px;}
+.departmentUl{width:202px; display:none;position:absolute;left:0;top:55px;}
+.departmentUl li{height:27px;line-height:27px;text-align:center;font-weight:bold;border:1px solid #DDDDDD;}

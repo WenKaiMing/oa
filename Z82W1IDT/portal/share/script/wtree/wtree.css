@@ -1,0 +1,122 @@
+* {
+	margin:0px;
+	padding:0px
+}
+html {
+	font-size:62.5%
+}
+body {
+	position:static;
+	font-size:1.4rem;
+	background:#ebebeb;
+	font-family:"Microsoft YaHei","PingHei","Lucida Grande","Lucida Sans Unicode","STHeiti","Helvetica","Arial","Verdana","sans-serif"
+}
+
+ul,ol,li {
+	list-style-type:none
+}
+
+.card_app {
+	margin:10px 0px;
+	overflow:hidden;
+	background-color:#fff;
+	border-top:1px solid #c9c9c9;
+	border-bottom:1px solid #c9c9c9
+}
+
+
+.wtree-deptlist {
+	background:#fff;
+	float:left;
+	min-width:100%;
+	-webkit-border-image:url(../images/border_light.gif) 2 stretch;
+	border-width:0px 0px 1px 0px
+}
+.wtree-deptlist .wtree-deptlist-box {
+	display:table;
+	width:100%
+}
+.wtree-deptlist .wtree-deptlist-title .wtree-deptlist-input {
+	margin-top:15px;
+	float:left;
+	margin-right:10px
+}
+.wtree-deptlist .wtree-deptlist-title .cb-checkbox {
+	margin:12px 10px 12px 0px
+}
+.wtree-deptlist .wtree-deptlist-input {
+	display:table-cell
+}
+.wtree-deptlist ul {
+	list-style:none;
+	-webkit-border-image:url(../images/border_light.gif) 2 stretch;
+	border-width:1px 0px 0px 0px;
+	float:left;
+	width:100%
+}
+.wtree-deptlist ul li {
+	-webkit-border-image:url(../images/border_light.gif) 2 stretch;
+	border-width:0px 0px 1px 0px;
+	width:100%;
+	float:left;
+	outline:none;
+	position:relative
+}
+.wtree-deptlist ul li:last-child {
+	border-bottom-width:0
+}
+
+ 
+.wtree-deptlist ul li .wtree-adron .wtree-arrow{
+width: 8px;
+  height: 8px;
+  border: 1px solid #c7c7cc;
+  border-left: none;
+  border-bottom: none;
+  -webkit-transform:rotate(45deg);
+  display: block;
+}  
+
+.wtree-deptlist ul li .wtree-adron {
+	float:left;
+	padding:18px 15px 18px;
+	display:block
+}
+.wtree-deptlist ul li .open .wtree-arrow {
+	display:block;
+	border:1px solid #c7c7cc;
+	border-top:none;
+	border-left:none
+}
+.wtree-deptlist ul li .user {
+	padding:8px 0;
+	width:100%;
+	display:table-cell
+}
+.wtree-deptlist ul li .user div {
+	vertical-align:middle
+}
+.wtree-deptlist ul li .user .head {
+	float:left;
+	width:45px;
+	margin:0 10px
+}
+.wtree-deptlist ul li .user .head div img {
+	width:100%;
+	border-radius:5px
+}
+.wtree-deptlist ul li .user .name {
+	padding-left:10px
+}
+.wtree-deptlist ul .wtree-name {
+	padding-left:10px;
+	color:#111;
+	font-weight:bold;
+	font-size:14px;
+	padding-right:15px;
+	display:block;
+	line-height:24px;
+	padding:10px 0;
+	white-space:nowrap;
+	text-align:left
+}

@@ -1,0 +1,375 @@
+@IMPORT url("../component/selectAboutField/css/jquery.multiselect2side.css");
+/*@IMPORT url("../component/suggest/jquery.autocomplete.css");*/
+@IMPORT url("../component/dialog/css/dialog.css");
+
+.input-cmd {
+	align: left;
+	background-color: #FFF;
+	border: 1px solid #999;
+	margin: 1px;
+	padding: 1px;
+	width: auto;
+}
+
+.msg-attachment-pic {
+    margin: 10px 0px;
+}
+
+.msg-attachment-pic .msg-attachment-pic-item {
+    display: inline-block;
+    padding-bottom: 4px;
+    cursor: pointer;
+    margin: auto 5px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.msg-attachment-pic img {
+	height: 100%;
+}
+
+
+/**fileupload--start**/
+.btnAdd {
+	border: 1px solid #43c7ea;
+	color: #43c7ea;
+}
+
+.btnAdd:hover {
+    color: #43c7ea;
+}
+
+.btnAdd img{
+	margin-right: 5px;
+	vertical-align: baseline;
+}
+
+.showOptions {
+	background-color: #F5F5F5;
+	border: 1px solid #ccc;
+}
+.upload-box{
+	margin-top:7px;
+}
+.hidepic{margin-bottom:13px;}
+
+.hidepic .btn {
+	padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 8px;
+}
+
+.hidepic .showOptions:hover .del {
+	opacity : 1;
+	z-index : 2;
+	right: 2px;
+}
+.hidepic .item{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	width: 100%;
+}
+.hidepic  .showOperate{
+	display: none;
+    width: 40px;
+    height: 40px;
+	cursor:pointer;
+}
+.hidepic  .showOperate span.img{
+	width:16px;
+	height:40px;
+	display: block;
+    margin: 0 auto;
+	background: url(../images/upload/icon.png) center no-repeat;
+    background-position: -142px 9px;
+}
+.hidepic .fieldName{
+	-webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.hidepic .item{
+	position: relative;
+	height: 40px;
+	font-size: 12px;
+	border-bottom: 1px solid #e9ebed;
+}
+.item .sort{
+	display: inline-block;
+	width: 10px;
+	height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor:pointer;
+}
+.item .sort >a{
+	display: block;
+    width: 10px;
+    height: 6px;
+}
+.item .sort .firstUp{
+	position: absolute;
+    top: 12px;
+	background: url(../images/upload/up-disable.png) center no-repeat;
+	cursor:default;
+}
+.item .sort .lastDown{
+	position: absolute;
+    bottom: 12px;
+	background: url(../images/upload/down-disable.png) center no-repeat;
+	cursor:default;
+}
+.item .sort .up{
+	position: absolute;
+    top: 12px;
+	background: url(../images/upload/up.png) center no-repeat;
+}
+.item .sort .up:hover{
+	background: url(../images/upload/up-hover.png) center no-repeat;
+}
+.item .sort .down{
+	position: absolute;
+    bottom: 12px;
+	background: url(../images/upload/down.png) center no-repeat;
+}
+.item .sort .down:hover{
+	background: url(../images/upload/down-hover.png) center no-repeat;
+}
+.item .fieldName{
+	display: inline-block;
+	line-height: 40px;
+	color: #888781;
+	cursor:pointer;
+	-webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 1px;		/**���flex�ſ���ȵ�bug**/
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.operate >a {
+	display: inline-block;
+	padding-left: 20px;
+    padding-right: 20px;
+	line-height: 40px;
+	color: #888781;
+}
+.operate .icon{
+	background: url(../images/upload/icon.png) center no-repeat;
+	padding-left: 20px;
+    margin-right: 10px;
+}
+.operate .fieldload .icon-load{
+    background-position: -91px -2px;
+}
+.operate .fieldload:hover .icon-load{
+    background-position: -73px -2px;
+}
+.operate .deleteCon{
+	display: inline-block;
+	position: relative;
+	padding-left: 20px;
+    padding-right: 20px;
+}
+.operate .deleteCon .first_delete{
+    line-height: 40px;
+    height: 40px;
+    display: block;
+}
+.operate .deleteCon .first_delete .icon-del{
+  background-position: -125px -2px	
+}
+.operate .deleteCon .first_delete:hover .icon-del{
+  background-position: -108px -2px;
+}
+.operate .deleteCon  .sub_deleteBox{
+    position: absolute;
+    width: 120px;
+    z-index: 1001;
+    color: #333;
+    left: -14px;
+    top: -80px;
+    border-bottom: 10px solid transparent;
+}
+.operate .deleteCon  .sub_deleteContent{
+	position: relative;
+    box-shadow: 0px 30px 30px rgba(0,0,0,.07);
+    border-radius: 3px;
+    background: #fff;
+}
+.operate .deleteCon .sub_operate{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.operate .deleteCon .sub_operate a{
+	width: 50%;
+	color: #9f9f9f;
+	line-height: 39px;
+	cursor:pointer;
+    text-align: center;
+	-webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.operate .deleteCon .sub_operate a.del{
+	color: #3096F3;}
+.operate .deleteCon .sub_deleteContent p{
+	border-bottom: 1px solid #e9ebed;
+    line-height: 40px;
+    text-align: center;
+	font-size: 14px;
+    color: #4A4A4A;
+}
+.operate .deleteCon .arrowBox{
+	position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    left: 50px;
+}
+.operate .deleteCon .arrowBox.arrowBottom .arrow {
+    border: 10px solid transparent;
+    display: inline-block;
+    vertical-align: top;
+    border-top-color: #fff;
+    border-bottom-width: 0;
+}
+
+
+.item .pic {
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+	margin-right: 10px;
+    vertical-align: sub;
+	background-image : url('../../../share/images/formModule/fileUpload.png');
+	background-position: -4px -4px;
+}
+.hidepic .operate.small{
+	position: absolute;
+	right: 0;
+	top: 40px;
+    background-color: #fff;
+    border: 1px solid #EFEFEF; 
+    z-index: 10;
+    border-radius: 4px;
+    box-shadow: 0 7px 21px rgba(0,0,0,.1);
+}
+.hidepic .operate.small>a{
+	display: block;
+}
+.hidepic .operate.small .fieldload:hover{
+	background-color: #f4f4f4;
+}
+.hidepic .operate.small .deleteCon:hover{
+	background-color: #f4f4f4;
+}
+
+.hidepic .pic {
+	background : url('../../../share/images/formModule/fileUpload.png');
+	width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.hidepic .pdf {
+	background-position : -4px -4px;
+}
+
+.hidepic .word {
+	background-position : -24px -4px;
+}
+
+.hidepic .excel {
+	background-position : -44px -4px;
+}
+
+.hidepic .txt {
+	background-position : -64px -4px;
+}
+
+.hidepic .audio {
+	background-position : -84px -4px;
+}
+
+.hidepic .video {
+	background-position : -104px -4px;
+}
+
+.hidepic .ppt {
+	background-position : -124px -4px;
+}
+
+.hidepic .ios {
+	background-position : -4px -24px;
+}
+
+.hidepic .android {
+	background-position : -24px -24px;
+}
+
+.hidepic .psd {
+	background-position : -44px -24px;
+}
+
+.hidepic .ai {
+	background-position : -64px -24px;
+}
+
+.hidepic .rar {
+	background-position : -84px -24px;
+}
+
+.hidepic .img {
+	background-position : -104px -24px;
+}
+
+.hidepic .other {
+	background-position : -124px -24px;
+}
+@-webkit-keyframes messageDivAnimationsDown {
+    0% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px)
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+@keyframes messageDivAnimationsDown {
+    0% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px)
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+.sub_deleteBox.animationsDown {
+    -webkit-animation: messageDivAnimationsDown .1s ease-in both;
+    animation: messageDivAnimationsDown .1s ease-in both
+}
+/**fileupload--end**/

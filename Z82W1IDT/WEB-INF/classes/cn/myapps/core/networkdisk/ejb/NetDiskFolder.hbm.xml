@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="cn.myapps.core.networkdisk.ejb.NetDiskFolder"
+        table="T_NETDISKFOLDER"
+    >
+
+        <id
+            name="id"
+            column="ID"
+            type="java.lang.String"
+        >
+            <generator class="assigned">
+              <!--  
+                  To add non XDoclet generator parameters, create a file named 
+                  hibernate-generator-params-RemoteServerVO.xml 
+                  containing the additional parameters and place it in your merge dir. 
+              --> 
+            </generator>
+        </id>
+       
+       <property
+            name="userid"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="USERID"
+       />
+       
+       <property
+            name="folderPath"
+            type="java.lang.String"
+            length="4000"
+            update="true"
+            insert="true"
+            column="FOLDERPATH"
+       />
+       
+       <property
+            name="parentId"
+            type="java.lang.String"
+            length="4000"
+            update="true"
+            insert="true"
+            column="PARENTID"
+       />
+       
+       <property
+            name="shareTime"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="SHARETIME"
+       />
+       
+        <property
+            name="orderno"
+            type="int"
+            update="true"
+            insert="true"
+            column="ORDERNO"
+        />
+       <many-to-one
+            name="pemission"
+            class="cn.myapps.core.networkdisk.ejb.NetDiskPemission"
+            cascade="none"
+            outer-join="auto"
+            update="true"
+            insert="true"
+            column="PEMISSION"
+        />
+       
+    </class>
+
+</hibernate-mapping>

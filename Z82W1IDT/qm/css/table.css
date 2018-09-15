@@ -1,0 +1,31 @@
+table.gridtable {
+	font-family: 'Helvetica Neue', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif, PingHei, 'Lucida Grande', Helvetica, Arial, Verdana;
+	font-size: 11px;
+	color: #4e4e4e;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+}
+
+table.gridtable thead td {
+	border-width: 0px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #e7e7e7;
+	background-color: #FAFAFA;
+}
+
+table.gridtable tbody td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #e7e7e7;
+	/* todo */
+	max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	border-left:0px;
+}

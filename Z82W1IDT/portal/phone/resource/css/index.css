@@ -1,0 +1,78 @@
+*{
+	padding: 0;
+    margin: 0;
+}
+body,html{
+		background: url("../images/login-bg.jpg");
+		background-size: cover; 
+		background-attachment: fixed; 
+	}
+body{
+	font-family: "Helvetica Neue","Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei","sans-serif","PingHei", "Lucida Grande", "Helvetica","Arial","Verdana";
+}
+.share .box {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+}
+.share .box .share-title {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin: 15px 0 30px 0;
+}
+.share .box  .share-content{
+	width:80%;
+	margin:0 auto;
+}
+.share .box .form-group {
+    width: 140px;
+    font-size: 14px;
+    margin: 10px auto;
+    background: none;
+    position: relative;
+}
+
+.share .box .btn-tiyan {
+    display: block;
+    color: #fff;
+    background-color: #5cb85c;
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    margin: 20px auto 10px auto;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+    border: none;
+}
+
+.share .box .form-group .img {
+	width: 50px;
+    height: 50px;
+	margin: 0 auto;
+	border-radius: 74px;
+	-webkit-border-radius: 74px;
+	-moz-border-radius: 74px;
+    overflow: hidden;
+	float: left; 
+}
+.share .box .form-group .img img{
+	display: block;
+    max-width: 100%;
+}
+.share .box .form-group.active .img{
+	box-shadow: 0px 0px 5px #feffa7;
+}
+.share .box .form-group.active .name{
+	color:#feffa7;
+}
+.share .box .form-group .name {
+	text-align:center;
+	color:#fff;
+}
+.share .box .form-group .name  {
+	height: 50px;
+	line-height: 50px;
+	width: 130px;
+}

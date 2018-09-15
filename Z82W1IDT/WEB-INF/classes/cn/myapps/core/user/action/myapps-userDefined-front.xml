@@ -1,0 +1,204 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="myapps-userdefined-front" extends="myapps-default"
+		namespace="/portal/user">
+		<action name="editPersonal" class="cn.myapps.core.user.action.UserAction"
+			method="doEdit">
+			<result name="success" type="dispatcher">
+				/portal/share/user/personalSetting.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="listuser" class="cn.myapps.core.user.action.UserAction"
+			method="listUserExcept">
+			<result name="success" type="dispatcher">
+				/portal/share/user/domainuserlist.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="savePersonal" class="cn.myapps.core.user.action.UserRunTimeAction"
+			method="doSavePersonal">
+			<result name="input" type="dispatcher">
+				/portal/share/user/personalSetting.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				/portal/share/user/personalSetting.jsp
+			</result>
+			<result name="switchskin" type="dispatcher">
+				/portal/share/success.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="userlist" class="cn.myapps.core.user.action.UserRunTimeAction"
+			method="doSelectUser">
+			<result name="success" type="dispatcher">
+				/portal/share/user/selectuser.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="treelist" class="cn.myapps.core.user.action.UserRunTimeAction"
+			method="doUserListByDept">
+			<result name="success" type="dispatcher">/portal/share/user/htmlData.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="getUserListByRole" class="cn.myapps.core.user.action.UserRunTimeAction"
+			method="doUserListByRole">
+			<result name="success" type="dispatcher">/portal/share/user/htmlData.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="getAllUser" class="cn.myapps.core.user.action.UserRunTimeAction"
+			method="doAllUser">
+			<result name="success" type="dispatcher">/portal/share/user/htmlData.jsp</result>			
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="getAllUserForProxyUser" class="cn.myapps.core.user.action.UserAction"
+			method="doAllUserForProxyUser">
+			<result name="success" type="dispatcher">/portal/share/user/htmlData.jsp</result>			
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="getOnLineUserList" class="cn.myapps.core.user.action.UserRunTimeAction"
+			method="doOnLineUserList">
+			<result name="success" type="dispatcher">/portal/share/user/htmlData.jsp</result>			
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="getOnLineUserForProxyUser" class="cn.myapps.core.user.action.UserAction"
+			method="doOnLineUserForProxyUser">
+			<result name="success" type="dispatcher">/portal/share/user/htmlData.jsp</result>			
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="doListBySelectToJSON" class="cn.myapps.core.user.action.UserRunTimeAction"
+			method="doListBySelectToJSON">
+			<result name="success" type="dispatcher">/portal/share/user/htmlData.jsp</result>			
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="doSearch" class="cn.myapps.core.user.action.UserRunTimeAction"
+			method="doList">
+			<result name="success" type="dispatcher">userlist.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<!-- superuser actions-->
+		<action name="list" class="cn.myapps.core.user.action.UserAction"
+			method="doList">
+			<result name="success" type="dispatcher">
+				/portal/share/user/superfront/list.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="list2" class="cn.myapps.core.user.action.UserAction"
+			method="doList">
+			<result name="success" type="dispatcher">
+				/portal/share/user/superfront/userlist.jsp
+			</result>
+			<interceptor-ref name="chain"></interceptor-ref>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="userlist2" class="cn.myapps.core.user.action.UserAction"
+			method="doList">
+			<result name="success" type="dispatcher">/portal/share/user/superfront/userlist.jsp</result>
+			<result name="input" type="dispatcher">/portal/share/user/superfront/userlist.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="superusertreelist" class="cn.myapps.core.user.action.UserAction"
+			method="doTreeList">
+			<result name="success" type="dispatcher">
+				/portal/share/user/superfront/userlist.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="new" class="cn.myapps.core.user.action.UserAction"
+			method="doNew">
+			<result name="success" type="dispatcher">
+				/portal/share/user/superfront/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="edit" class="cn.myapps.core.user.action.UserAction"
+			method="doEdit">
+			<result name="success" type="dispatcher">
+				/portal/share/user/superfront/content.jsp
+			</result>
+
+			<interceptor-ref name="params" />
+		</action>
+		<action name="save" class="cn.myapps.core.user.action.UserAction"
+			method="doSave">
+			<result name="input" type="dispatcher">
+				/portal/share/user/superfront/content.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				/portal/share/user/superfront/content.jsp
+			</result>
+
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="saveAndNew" class="cn.myapps.core.user.action.UserAction"
+			method="doSaveAndNew">
+			<result name="input" type="dispatcher">
+				/portal/share/user/superfront/content.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				/portal/share/user/superfront/content.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack" />
+			<interceptor-ref name="params" />
+		</action>
+		<action name="delete" class="cn.myapps.core.user.action.UserAction"
+			method="doDelete">
+			<result name="success" type="chain">list2</result>
+			<result name="input" type="dispatcher">
+				/portal/share/user/superfront/userlist.jsp
+			</result>
+			<result name="error" type="dispatcher">
+				error.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="listByDepartment" class="cn.myapps.core.user.action.UserAction"
+			method="listUser">
+			<result name="success" type="dispatcher">
+				/portal/share/user/superfront/user.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="listRole" class="cn.myapps.core.user.action.UserAction"
+			method="listUser">
+			<result name="success" type="dispatcher">
+				/portal/share/user/superfront/user.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="removeDepartment" class="cn.myapps.core.user.action.UserAction"
+			method="removeDepartment">
+			<result name="success" type="chain">
+				listByDepartment
+			</result>
+			<interceptor-ref name="params" />
+		</action>		
+		
+		<action name="treelistForProxyUser" class="cn.myapps.core.user.action.UserAction"
+			method="doUserListByDeptForProxyUser">
+			<result name="success" type="dispatcher">/portal/share/user/superfront/userlist.jsp</result>
+			<result name="input" type="dispatcher">/portal/share/user/superfront/userlist.jsp</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="saveAtHomePage" class="cn.myapps.core.user.action.UserDefinedAction"
+			method="saveAtHomePage">
+			<result name="success" type="dispatcher">/portal/share/user/htmlData.jsp</result>			
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+</struts>

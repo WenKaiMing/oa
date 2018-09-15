@@ -1,0 +1,31 @@
+@IMPORT url("viewCommon.css");/**视图公共样式**/
+@IMPORT url("../../../../share/css/documentModule.css");/**表单控件样式**/
+
+/**折叠视图中使用--start**/
+.FoldMaster {font-weight:bold; }
+td.collapsible {padding-left:30px; }
+
+td.collapsible.folded {
+	background: url('../../../resource/document/folded.png') no-repeat 5px;
+	padding-left:20px;
+	cursor: pointer;
+}
+
+td.collapsible.unfolded {
+	background: url('../../../resource/document/unfolded.png') no-repeat  5px;
+	padding-left:20px;
+	cursor: pointer;
+}
+
+.page-nav {
+	background:#ECF2F4;
+	height: 27px;
+	line-height:27px;
+	margin-top: 0;
+	width: 100%;
+}
+
+.front-visibility-hidden {
+	visibility: hidden;
+}
+/**折叠视图中使用--end**/

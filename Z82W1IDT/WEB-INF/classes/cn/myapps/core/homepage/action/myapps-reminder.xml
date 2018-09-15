@@ -1,0 +1,138 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<include file="webwork-default.xml" />
+	<package name="reminder" extends="myapps-default"
+		namespace="/core/homepage/reminder">
+		<action name="edit"
+			class="cn.myapps.core.homepage.action.ReminderAction"
+			method="doEdit">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+		
+			<interceptor-ref name="params" />
+		</action>
+		<action name="new"
+			class="cn.myapps.core.homepage.action.ReminderAction"
+			method="doNew">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="list"
+			class="cn.myapps.core.homepage.action.ReminderAction"
+			method="doList">
+			<result name="success" type="dispatcher">
+				list.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				list.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		<action name="save"
+			class="cn.myapps.core.homepage.action.ReminderAction"
+			method="doSave">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="delete"
+			class="cn.myapps.core.homepage.action.ReminderAction"
+			method="doDelete">
+			<result name="success" type="chain">
+				list
+			</result>
+			<result name="input" type="chain">
+				list
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		<action name="reminderlist" class="cn.myapps.core.homepage.action.ReminderAction"
+			method="doEditReminder">
+			<result name="success" type="dispatcher">
+				reminderlist.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="addreminder"
+			class="cn.myapps.core.homepage.action.ReminderAction"
+			method="doAddReminder">
+			<result name="success" type="dispatcher">
+				addreminder.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				addreminder.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="confirm"
+			class="cn.myapps.core.homepage.action.ReminderAction"
+			method="confirm">
+			<result name="success" type="dispatcher">
+				exit.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				addreminder.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="removeReminder"
+			class="cn.myapps.core.homepage.action.ReminderAction"
+			method="doRemoveReminder">
+			<result name="success" type="dispatcher">
+				reminderlist.action
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="saveAndNew"
+			class="cn.myapps.core.homepage.action.ReminderAction"
+			method="doSaveAndNew">
+			<result name="input" type="dispatcher">
+				content.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<!-- interceptor-ref name="params" / -->
+			<interceptor-ref name="validationWorkflowStack"/>
+		
+		</action>
+		<action name="selectTemplate"
+			class="cn.myapps.core.homepage.action.ReminderAction"
+			method="doSelectTemplate">
+			<result name="input" type="dispatcher">
+				selectTemplate.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				selectTemplate.jsp
+			</result>
+			<!-- interceptor-ref name="params" / -->
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		<action name="saveElement"
+			class="cn.myapps.core.homepage.action.ReminderAction"
+			method="doSaveElement">
+			<result name="input" type="dispatcher">
+				reminderlist.jsp
+			</result>
+			<result name="success" type="dispatcher">
+				reminderlist.jsp
+			</result>
+			<!-- interceptor-ref name="params" / -->
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+	</package>
+</struts>

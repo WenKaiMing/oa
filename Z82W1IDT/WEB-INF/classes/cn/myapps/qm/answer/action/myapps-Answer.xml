@@ -1,0 +1,85 @@
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="qm-answer" extends="myapps-default,json-default" namespace="/qm/answer">
+	    <action name="homepage" class="cn.myapps.qm.questionnaire.action.QuestionnaireAction"
+			method="doHomePage">
+			<result name="success" type="dispatcher">
+				homepage.jsp
+			</result>
+			<result name="mobile" type="dispatcher">
+				../wap/answer/homepage.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="view" class="cn.myapps.qm.answer.action.AnswerAction"
+			method="doView">
+			<result name="success" type="dispatcher">
+				result.jsp
+			</result>
+			<result name="mobile" type="dispatcher">
+				../wap/answer/result.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="list" class="cn.myapps.qm.answer.action.AnswerAction"
+			method="doList">
+			<result name="success" type="dispatcher">
+				list.jsp
+			</result>
+			<result name="mobile" type="dispatcher">
+				../wap/answer/list.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="edit" class="cn.myapps.qm.answer.action.AnswerAction"
+			method="doEdit">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<result name="mobile" type="dispatcher">
+				../wap/answer/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="new" class="cn.myapps.qm.questionnaire.action.QuestionnaireAction"
+			method="doNewAnswer">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<result name="mobile" type="dispatcher">
+				../wap/answer/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="save" class="cn.myapps.qm.answer.action.AnswerAction"
+			method="doSave">
+			<result name="success" type="dispatcher">
+				result.jsp
+			</result>
+			<result name="mobile" type="dispatcher">
+				../wap/answer/success.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="showResultList" class="cn.myapps.qm.answer.action.AnswerAction" method="showResultList">
+		    <result name="success" type="dispatcher">
+		        resultlist.jsp
+		    </result>
+		    <result name="mobile" type="dispatcher">
+				../wap/answer/resultlist.jsp
+			</result>
+		    <interceptor-ref name="params" />
+		</action>
+		<!-- todo -->
+		<action name="download"
+			class="cn.myapps.qm.answer.action.AnswerAction" method="exportPDF">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		<!-- todo -->
+	</package>
+</struts>

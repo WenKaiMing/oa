@@ -1,0 +1,48 @@
+/**form/view**/
+html,body,div,form,ul,ol,li,dl,dt,dd,p {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", "PingHei","Hiragino Sans GB", "Lucida Grande", "WenQuanYi Micro Hei", "Helvetica","Arial","Verdana","sans-serif";
+}
+
+body {
+	font-size: 14px;
+}
+table{
+	border-collapse:collapse;
+	border-spacing: 0;
+}
+img {
+	border: 0 solid #FFF;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+label {
+	background-color: #FFF;
+	background-image: none;
+}
+
+radio {
+	background-color: #000;
+	border: 1px solid #FFF;
+	font-family: Arial, Vendera, Tahoma;
+	margin: 1px;
+	padding: 1px;
+	width: auto;
+}
+
+a {
+	color: #636365;
+	text-decoration: none;
+}
+
+a:active {
+	color: #636365;
+}
+
+a:HOVER {
+	color: #000;
+	text-shadow: #000;
+}
+

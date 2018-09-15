@@ -1,0 +1,40 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="km-NDir-ajax" extends="myapps-default,json-default"
+		namespace="/km/dir">
+		<action name="save" class="cn.myapps.km.disk.action.NDirAjaxAction" method="save">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		<action name="deleteFolderAndFile" class="cn.myapps.km.disk.action.NDirAjaxAction" method="deleteFolderAndFile">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		<action name="rename" class="cn.myapps.km.disk.action.NDirAjaxAction" method="rename">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		<action name="view" class="cn.myapps.km.disk.action.NDirAjaxAction" method="view">
+			<result type="json">
+				<param name="root">dataMap</param>
+                <param name="excludeNullProperties">true</param>
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+	</package>
+</struts>

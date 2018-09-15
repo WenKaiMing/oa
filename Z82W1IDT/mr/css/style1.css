@@ -1,0 +1,275 @@
+
+/* Alvin */
+
+.mr-button-block{
+	float: left;
+	margin: 0 0 0 5px;
+}
+
+.mr-list-block{
+	float: right;
+	height: 31px;
+	line-height: 30px;
+	border: 1px #C2C4C8 solid;
+	background-color:#F7F7F7;
+	font-size: 14px;
+	padding-left: 0px;
+	padding-right: 6px;
+	margin-right: 15px;
+	cursor: pointer;
+	width: 75px;
+	position: relative;
+	text-align:center;
+	border-radius: 4px;
+}
+
+mr-list-block-icon{
+	
+	padding-right: 25px;
+	background: url(images/down.png) 43px 8px no-repeat
+}
+
+.mr-list-block .mr-list-block-option {
+	margin-left:-40px;
+	text-align:center;
+	display: block;
+	height: 35px;
+	line-height: 30px;
+	padding: 0 2px 0 2px;
+	border: 1px #E7E7E7 solid;
+	background: white;
+	cursor: pointer;
+	width: 75px;
+	overflow:hidden;
+}
+.mr-list-block .mr-list-block-option:hover {
+	background: #F2F2F2;
+	overflow:auto;
+}
+
+.row1 { 
+	height:35px; 
+	line-height:35px; 
+	text-align:center;
+}
+
+.row_first{
+	font-size:16px;	
+}
+
+.rowhand{
+	cursor: pointer;
+}
+/*
+.rowhand:HOVER{
+	cursor: nw-resize;
+}
+*/
+.reservation-box{
+	filter:alpha(opacity=90);  
+      -moz-opacity:0.9;  
+      -khtml-opacity: 0.9;  
+      opacity: 0.9;  
+      
+    float: right;
+	bottom: 0;
+	right:0;
+	display:none;
+	width:350px;
+	height:auto;
+	padding:10px 0;
+	background-color: white;
+	border: 2px solid #DEDEDE;
+}
+
+.management-box{
+	filter:alpha(opacity=90);  
+      -moz-opacity:0.9;  
+      -khtml-opacity: 0.9;  
+      opacity: 0.9;  
+    
+    float:right;
+	bottom: 0;
+	right:0;
+	display:none;
+	width:350px;
+	height:560px;
+	background-color: white;
+	border: 2px solid #DEDEDE;
+}
+#mr-management-div{
+	overflow: auto;
+	width:100%;
+	float:left;
+	height:560px;
+}
+#mr-management-table{
+	width:auto;
+}
+#mr-reservation-div{
+	height:auto;
+}
+#mr-reservation-table{
+	width:auto;
+}
+#mr-myreservation-div{
+	overflow: auto;
+	width:100%;
+	float:left;
+	height:560px;
+}
+#mr-myreservation-table{
+	width:auto;
+}
+
+.pagescss{
+	text-align:center;
+	font-size: 13px;
+}
+.box_title{
+	text-align: center;
+	font-family: 'Microsoft YaHei';
+}
+.myreservation-box-css{
+	padding: 0 0 0 0;
+	font-size: 14px;
+}
+
+#myreservation-box-close{
+	background: url(../images/tm-icon.png) 0 -124px no-repeat;
+	width: 25px;
+	height: 15px;
+	cursor: pointer;
+	margin: 2px;
+}
+
+#reservation-box-close{
+	background: url(../images/tm-icon.png) 0 -124px no-repeat;
+	width: 25px;
+	height: 15px;
+	cursor: pointer;
+	margin: 2px;
+}
+#management-box-close{
+	background: url(../images/tm-icon.png) 0 -124px no-repeat;
+	width: 25px;
+	height: 15px;
+	cursor: pointer;
+	margin: 2px;
+}
+.button-css{
+	background: #2686fe;
+	color:#ffffff;
+	width:60px;
+	height:25px;
+	border: 1px #369aff solid;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 4% 0 0 10%;
+}
+.button-css:HOVER {
+	background: #0169D0;
+}
+.button2-css{
+	background: #F1F1F1;
+	color:#545459;
+	width:45px;
+	height:23px;
+	border: 1px #DADADA solid;
+	border-radius: 2px;
+	cursor: pointer;
+	margin: 2% 0 2% 4%;
+}
+
+.button2-css:hover {
+	background:#CCCCCC;
+}
+
+.management-button-css{
+	background: #F1F1F1;
+	color:#000000;
+	width:83px;
+	height:28px;
+	border: 1px #369aff solid;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-right: 15px; 
+	font-size: 12px;
+}
+
+.management-button-css:hover{
+	background: #0169D0;
+	color:#ffffff;
+}
+.table_css{
+	margin:15px;	
+}
+.table_css tr{
+	height: 45px;
+	color:#606060;
+}
+
+.mr-page-reservation{
+	display: block;	
+}
+.mr-page-management{
+	display: none;	
+}
+.mr-page-myreservation{
+	display: none;	
+}
+
+.td_box{
+	width:170px;	
+	height:27px;
+	padding:2px;
+}
+.td_box1{
+	width:170px;	
+	height:54px;
+	padding:2px;
+}
+
+.font1{
+	font-family: 'Microsoft YaHei';
+}
+
+.nav-item a span{
+	color:black;
+}
+.nav-item:hover{
+	border-left :3px solid #31AFE8;
+}
+.nav-item a:hover span{
+	color:#31AFE8;
+}
+.nav-item a:hover .img_a{
+	background: url(../images/rm.png) 0px -45px no-repeat;
+}
+.nav-item a:hover .img_a1{
+	background: url(../images/rm.png) -42px -45px no-repeat;
+}
+.nav-item a:hover .img_a2{
+	background: url(../images/rm.png) -85px -45px no-repeat;
+}
+.img_a{
+	width:30px;
+	height:30px;
+	background: url(../images/rm.png) 0px -3px no-repeat;
+	float:left;
+}
+.img_a1{
+	width:30px;
+	height:30px;
+	background: url(../images/rm.png) -42px -3px no-repeat;
+	float:left;
+}
+.img_a2{
+	width:30px;
+	height:30px;
+	background: url(../images/rm.png) -85px -3px no-repeat;
+	float:left;
+}
+.btn-success:hover{
+ 	background-color: #6CBF6C;
+}

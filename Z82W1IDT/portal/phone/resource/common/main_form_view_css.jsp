@@ -1,0 +1,1 @@
+<link rel='stylesheet' href='<s:url value='/portal/phone/resource/common/main_form_view.min.css?v=2018041811301101723'/>'/>

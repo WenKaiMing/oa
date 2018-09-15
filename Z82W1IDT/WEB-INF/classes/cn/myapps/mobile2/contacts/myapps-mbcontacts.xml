@@ -1,0 +1,34 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="mbcontacts" extends="myapps-default" namespace="/mobile2/contacts">
+		<action name="contactmenu"
+			class="cn.myapps.mobile2.contacts.MbContactsAction"
+			method="doContactMenu">
+			<result name="success" type="dispatcher">
+			   /mobile2/result.jsp
+			</result>
+		   	<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="contactgroup"
+			class="cn.myapps.mobile2.contacts.MbContactsAction"
+			method="doContactGroup">
+			<result name="success" type="dispatcher">
+			   /mobile2/result.jsp
+			</result>
+		   	<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+		</action>
+		<action name="contact"
+			class="cn.myapps.mobile2.contacts.MbContactsAction"
+			method="doContact">
+			<result name="success" type="dispatcher">
+			   /mobile2/result.jsp
+			</result>
+		   	<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+</struts>

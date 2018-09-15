@@ -1,0 +1,33 @@
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="baike_category" extends="myapps-default"
+		namespace="/km/baike/category">
+		
+		<!-- 创建词条分类  -->
+		<action name="doSave"
+			class="cn.myapps.km.baike.category.action.CategoryAction" method="doSave">
+			<result name="success" type="dispatcher">
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 显示词条分类  -->
+		<action name="doList"
+			class="cn.myapps.km.baike.category.action.CategoryAction" method="doList">
+			<result name="success" type="dispatcher">
+				
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="doFindByEntryId"  class="cn.myapps.km.baike.category.action.CategoryAction" method="doFindByEntryId">
+		</action> 
+	
+	</package>
+</struts>

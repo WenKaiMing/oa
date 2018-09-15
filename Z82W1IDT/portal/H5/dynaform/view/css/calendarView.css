@@ -1,0 +1,22 @@
+/**Calendar view styles start**/
+.calendar-table table {
+	table-layout: fixed;
+}
+.eventTD {
+	vertical-align: top;
+	background-color: #ffffff;
+	background: url(../../../../share/images/view/checker.png) repeat;
+}
+
+.front-font-viewdata {
+	font-family: Arial, Vendera;
+	font-size: 12px;
+	z-index: 100;
+}
+#bodyDiv{
+	background-color:#FFFFFF;
+}
+#bodyDiv .dataTable{
+	background-color: transparent;
+}
+/**Calendar view styles end**/

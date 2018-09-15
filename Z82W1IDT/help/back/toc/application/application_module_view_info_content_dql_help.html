@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>帮助页面</title>
+<link type="text/css" rel="stylesheet" rev="stylesheet"
+	href="../help.css" media="all">
+</head>
+<body style="margin: 0; padding: 0;">
+<a href onClick="parent.history.back(); return false; return true;"
+	style="color: blue; font-size: 12px"></a>
+<div clas="helpitem">
+<div class="title">当前任务描述：</div>
+<div class="content">
+<ul>
+	<li>使用DQL模式的目的是让数据查询语句变得简洁。
+	</ul>
+</div>
+</div>
+<div clas="helpitem">
+<div class="title">功能说明：</div>
+<div class="content">
+    <ul><li>使用DQL模式的好处主要有以下两点：</li>
+<li>(1)DQL模式能使字段名简化，操作起来比较方便。</li>
+    <li>(2)DQL模式能对传递过来的参数进行处理。</li>
+    <li>DQL语法介绍：</li>
+    <li>语法格式：</li>
+    <li>$formname=&rsquo;表单名&rsquo; [AND filter1&hellip;&hellip;</li>
+    <li>说明：</li>
+    <li>$formname：标识查询的表单；</li>
+    <li>AND filter1&hellip;&hellip;：表示带过滤条件查询。</li>
+    <li>使用：</li>
+    <li>var doc = getCurrentDocument();</li>
+    <li>var dql = &ldquo;$formname=&rsquo;表单1&rsquo; AND code=&rsquo;TASK AND $id<>&rsquo;&rdquo;+doc.getId()+&rdquo;&rsquo;&rdquo;;</li>
+    <li>var datas = queryByDQL(dql);</li>
+    <li>var rtn = &ldquo;&rdquo;;</li>
+    <li>if (datas.size()>0){</li>
+    <li>rtn = &ldquo;系统中已经存在编号为：TASK0001 的记录！&rdquo;;</li>
+    <li>}</li>
+    <li>rtn;</li>
+    <li>总结：</li>
+    <li></li>
+    <li>DQL语句中使用到了code字段与$id字段进行过滤。其中$id表示使用系统字段ID；code字段为用户通过表单配置的字段名。在DQL语句中凡使用系统字段都需要在字段名前加&rdquo;$&rdquo;符号，用户配置字段可直接使用。</li></ul>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+body {
+	#margin: 0;
+	#font: 14px/1.6 "Helvetica Neue",Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Microsoft Yahei,sans-serif;
+	#background: #4990e2 url(./images/page-bg_0b099630.jpg) repeat center top;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #eee;
+}
+
+.form-signin {
+	max-width: 420px;
+	margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+		.form-signin .checkbox {
+	margin-bottom: 20px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.form-signin .checkbox {
+	font-weight: normal;
+}
+
+.form-signin .form-control {
+	position: relative;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+
+.form-signin input[type="text"] {
+	margin-bottom: 10px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="tel"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.tips {
+	text-align: center;
+	color: #f14e22;
+	; line-height: 1.8;
+}
+
+.tips h3 {
+	color: #313131;
+	font-size: 16px;
+}
+
+.container {
+	position: relative;
+	max-width: 640px;
+	min-height: 100%;
+	padding: 0 10px;
+	margin: 0 auto;
+	color: #858585;
+	overflow: hidden;
+}
+
+.ico_pro:before, .ico_tel:before {
+	display: inline-block;
+	background: url(../imgs/s.png) no-repeat;
+	background-size: 50px auto;
+}
+
+.header {
+	display: -webkit-box;
+	border-bottom: 2px solid #e4e4e4;
+	padding-top: 2px;
+	margin-top: -15px;
+}
+
+.header span {
+	position: relative;
+	display: block;
+	-webkit-box-flex: 1;
+	text-align: center;
+	line-height: 45px;
+}
+
+.header span:before, .header span:after {
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	left: 50%;
+	bottom: 0;
+}
+
+.header span:before {
+	width: 16px;
+	height: 16px;
+	background-color: #e4e4e4;
+	margin: 0 0 -9px -8px;
+ /* -9 => height/2 + borderWidth/2 */
+}
+
+.header span:after {
+	width: 10px;
+	height: 10px;
+	background-color: #06c004;
+	margin: 0 0 -6px -5px;
+	display: none;
+}
+
+.header .cur {
+	color: #313131;
+}
+
+.header .cur:after {
+	display: block;
+}
+
+.footer {
+	line-height: 38px;
+	text-align: center;
+	color: #525459;
+	font-size: 12px;
+	left: 50%;
+	bottom: 10px;
+	margin-left: -64px;
+}	
+
+
+

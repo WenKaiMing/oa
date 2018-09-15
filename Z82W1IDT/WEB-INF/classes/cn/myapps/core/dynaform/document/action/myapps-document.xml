@@ -1,0 +1,44 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- document package -->
+	<package name="document" extends="myapps-default" namespace="/core/dynaform/document">
+
+		<interceptors>
+			<interceptor-stack name="basicStack">
+				<interceptor-ref name="params" />
+				<interceptor-ref name="prepare" />
+			</interceptor-stack>
+
+
+			<interceptor-stack name="validationWorkflowStack">
+				<interceptor-ref name="basicStack" />
+				<interceptor-ref name="validation" />
+				<interceptor-ref name="workflow" />
+			</interceptor-stack>
+		</interceptors>
+
+		<action name="preview"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doPreview">
+			<result name="success" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/content.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/dispatch/dynaform/document/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+
+		<action name="newword"
+			class="cn.myapps.core.dynaform.document.action.DocumentAction"
+			method="doNewWord">
+			<result name="success" type="OBPMdispatcher">
+				/core/dynaform/form/word/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+		</action>
+
+	</package>
+</struts>

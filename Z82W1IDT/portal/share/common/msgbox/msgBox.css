@@ -1,0 +1,141 @@
+.Smohan_Layer_Shade {
+	display: none;
+	position: fixed;
+	_position: absolute;
+	zoom: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: url(images/hei.png) repeat;
+	z-index: 99900;
+}
+
+.Smohan_Layer_box {
+	height: 180px;
+	display: none;
+	width: 550px;
+	width: 580px\9;
+	max-height: auto;
+	padding: 20px;
+	background: #ffffff;
+	position: fixed;
+	_position: absolute;
+	overflow: hidden;
+	z-index: 99999;
+}
+
+.Smohan_Layer_box h3 {
+	display: block;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	padding: 0px 0px 10px 0px;
+	margin: 0;
+	border-bottom: 1px solid #cccccc;
+	overflow: hidden;
+}
+
+.Smohan_Layer_box h3 .text {
+	float: left;
+	font-size: 16px;
+	font-family: 'Microsoft JhengHei', 'Microsoft YaHei', Arial, sans-serif;
+	font-weight: 600;
+	color: #84c017;
+	text-indent: 0.5em;
+	display: block;
+}
+
+.textImg{
+	width: 22px;
+	height: 22px;
+	background: url(images/note.gif) 0px 0px
+		no-repeat;
+	float: left;
+	margin-top: 4px;
+}
+
+.Smohan_Layer_box h3 .close {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(images/Smohan.layer.close.png) 0px 0px
+		no-repeat;
+	float: right;
+}
+
+.Smohan_Layer_box h3 .close:hover {
+	background-position: 0px -31px;
+}
+
+.Smohan_Layer_box .layer_content {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.Smohan_Layer_box .layer_content .loading {
+	display: block;
+	width: 36px;
+	height: 36px;
+	background: url(images/Load.gif) center center no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#contentFull{
+	display: none;
+	background: #FFFFDD;
+	border: 1px solid #D7D7D7;
+	padding: 5px;
+	overflow: auto;
+}
+
+.layerOn{
+	display: block !important;
+}
+
+.layerContentSpan{
+	position: absolute;
+	color: #316AC5;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 5px;
+    top: 10px;
+}
+
+#layerContent{
+	display: none;
+}
+
+#layerContent a{
+	width: 80px;
+	height: 80px;
+	background: url(images/warning.png) 0px 0px
+		no-repeat;
+	float: left;
+	margin-top: 4px;
+}
+
+#layerContent div{
+	position: relative;
+	background: #FFFFDD;
+	border: 1px solid #D7D7D7;
+	float: left;
+    height: 50px;
+    margin-top: 20px;
+    padding: 2px;
+    width: 412px;
+}
+
+#contentButton{
+	float: right;
+	margin-top: 20px;
+}

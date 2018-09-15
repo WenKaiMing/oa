@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpnodes>
+	<helpnode id="Domain" name="企业域" parentid="">
+		<linkurl>
+			domain/HelpContent.jsp
+		</linkurl>
+		<description>
+			1、企业域是XXXX
+		</description>
+	</helpnode>
+	<helpnode id="New_Domain_btn" name="新建企业域" parentid="Domain">
+		<linkurl>
+			domain/HelpContent.jsp
+		</linkurl>
+		<description>
+			新建企业域操作按钮，通过此按可以新建新的企业域。 
+		</description>
+	</helpnode>
+	<helpnode id="Delete_Domain_btn" name="删除企业域" parentid="Domain">
+		<linkurl>
+			domain/HelpContent.jsp
+		</linkurl>
+		<description>
+			删除企业域操作按钮，通过此按可以删除被选中的企业域。 
+		</description>
+	</helpnode>
+	<helpnode id="Domain_search_form" name="企业域列表查询表单" parentid="Domain">
+		<linkurl>
+			domain/HelpContent.jsp
+		</linkurl>
+		<description>
+			企业域列表查询表单。 
+		</description>
+	</helpnode>
+	<helpnode id="Search_By_DomainName_Ipt" name="根据名称查找" parentid="Domain_search_form">
+		<linkurl>
+			domain/HelpContent.jsp
+		</linkurl>
+		<description>
+			1、查询条件 
+			2、根据企业域名称过滤
+		</description>
+	</helpnode>
+	<helpnode id="Search_By_ManagerName_Ipt" name="根据管理员名称查找" parentid="Domain_search_form">
+		<linkurl>
+			domain/HelpContent.jsp
+		</linkurl>
+		<description>
+			1、查询条件 
+			2、根据管理员名称过滤
+		</description>
+	</helpnode>
+	
+	
+	
+	
+	
+	
+	<helpnode id="Application" name="软件" parentid="">
+		<linkurl>
+			application/HelpContent.jsp
+		</linkurl>
+		<description>
+			1、软件是XXXX
+		</description>
+	</helpnode>
+	
+	
+	
+	
+	
+	<helpnode id="Superuser" name="特权用户" parentid="">
+		<linkurl>
+			superuser/HelpContent.jsp
+		</linkurl>
+		<description>
+			1、特权用户是XXXX
+		</description>
+	</helpnode>
+	
+	
+	
+	
+	
+	
+	<helpnode id="Function" name="函数库" parentid="">
+		<linkurl>
+			function/HelpContent.jsp
+		</linkurl>
+		<description>
+			1、函数库是XXXXX
+		</description>
+	</helpnode>
+		
+</helpnodes>

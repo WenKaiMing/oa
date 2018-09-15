@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+	>
+	<class name="cn.myapps.core.widget.ejb.PageWidget" table="T_PAGE_WIDGET" dynamic-update="true" lazy="false"
+		batch-size="10">
+		<id
+			name="id"
+			column="ID"
+			type="java.lang.String"
+			>
+			<generator class="assigned">
+				<!--  
+						  To add non XDoclet generator parameters, create a file named 
+						  hibernate-generator-params-Reminder.xml 
+						  containing the additional parameters and place it in your merge dir. 
+					  --> 
+			</generator>
+		</id>
+		<property
+			name="name"
+			type="java.lang.String"
+			update="true"
+			insert="true"
+			column="NAME"
+			/>
+		<property
+			name="description"
+			type="java.lang.String"
+			update="true"
+			insert="true"
+			column="DESCRIPTION"
+			/>
+		<property
+			name="type"
+			type="java.lang.String"
+			update="true"
+			insert="true"
+			column="TYPE"
+			/>
+		<property
+			name="applicationid"
+			type="java.lang.String"
+			update="true"
+			insert="true"
+			column="APPLICATIONID"
+			/>
+		<property
+			name="moduleid"
+			type="java.lang.String"
+			update="true"
+			insert="true"
+			column="MODULEID"
+		/>
+		<property
+			name="actionContent"
+			type="text"
+			update="true"
+			insert="true"
+			column="ACTIONCONTENT"
+			/>
+		<property
+			name="width"
+			type="java.lang.String"
+			update="true"
+			insert="true"
+			column="WIDTH"
+			/>
+		<property
+			name="height"
+			type="java.lang.String"
+			update="true"
+			insert="true"
+			column="HEIGHT"
+			/>
+		<property
+			name="queryString"
+			type="text"
+			update="true"
+			insert="true"
+			column="QUERYSTRING"
+			/>
+		<property name="authMode" type="java.lang.Integer" update="true" insert="true">
+			<column name="AUTH_MODE" default="1"></column>
+		</property>
+		<property
+			name="authRolesId"
+			type="text"
+			update="true"
+			insert="true"
+			column="AUTH_ROLES_ID"
+		/>
+		<property
+			name="authRolesName"
+			type="java.lang.String"
+			update="true"
+			insert="true"
+			column="AUTH_ROLES_NAME"
+		/>
+		<property 
+			name="published"
+			type="java.lang.Boolean"
+			update="true"
+			insert="true"
+			column="PUBLISHED"
+		/>
+		<property
+			name="icon"
+			type="java.lang.String"
+			update="true"
+			insert="true"
+			column="ICON"
+			/>
+		<property
+			name="titleColor"
+			type="java.lang.String"
+			update="true"
+			insert="true"
+			column="TITLE_COLOR"
+			/>
+		<property
+			name="titleBColor"
+			type="java.lang.String"
+			update="true"
+			insert="true"
+			column="TITLE_BCOLOR"
+			/>
+		<property 
+			name="iconShow"
+			type="java.lang.Boolean"
+			update="true"
+			insert="true"
+			column="ICONSHOW"
+		/>
+		
+        <property
+            name="orderno"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="ORDERNO"
+        />
+        
+        <property
+            name="widgetType"
+            type="java.lang.Integer"
+            update="true"
+            insert="true">
+            <column name="WIDGET_TYPE" default="0" />
+        </property>
+        
+		<!--
+				To add non XDoclet property mappings, create a file named
+					hibernate-properties-Reminder.xml
+				containing the additional properties and place it in your merge dir.
+			-->
+
+	</class>
+
+</hibernate-mapping>

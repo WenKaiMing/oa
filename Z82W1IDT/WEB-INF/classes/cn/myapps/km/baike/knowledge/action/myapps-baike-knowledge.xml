@@ -1,0 +1,102 @@
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="baike_Knowledge" extends="myapps-default"
+		namespace="/km/baike/knowledge">		
+		<!-- 遍历词条内容,查找包含关键字的词条 -->
+		<action name="doSave"
+			class="cn.myapps.km.baike.knowledge.action.KnowledgeQuestionAction" method="doSave">
+			<result name="success" type="dispatcher">/km/baike/entry/index.jsp</result>
+			<result name="error" type="dispatcher">/km/baike/content/index.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="doRemove" class="cn.myapps.km.baike.knowledge.action.KnowledgeQuestionAction" method="doRemove">
+			<result name="success" type="dispatcher">
+			queryAllQuestion.action
+			</result> 
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="doView"
+			class="cn.myapps.km.baike.knowledge.action.KnowledgeQuestionAction" method="doView">
+			<result name="success" type="dispatcher">/km/baike/entry/subAnswer.jsp</result>
+			<result name="ERROR" type="dispatcher"></result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- <action name="doQuery"
+			class="cn.myapps.km.baike.knowledge.action.KnowledgeQuestionAction" method="doQuery">
+			<result name="success" type="dispatcher"></result>
+			/km/baike/entry/searchQuestion.jsp
+			<result name="ERROR" type="dispatcher"></result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action> -->
+		
+		<action name="doQuery"
+			class="cn.myapps.km.baike.knowledge.action.KnowledgeQuestionAction" method="doQuery">
+			<result name="success" type="dispatcher">/km/baike/entry/searchQuestion.jsp</result>
+			<result name="ERROR" type="dispatcher"></result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+			<action name="doAcceptAnswer"
+			class="cn.myapps.km.baike.knowledge.action.KnowledgeAnswerAction" method="doAcceptAnswer ">
+			<result name="success" type="dispatcher">/km/baike/entry/index.jsp</result>
+			<result name="ERROR" type="dispatcher"></result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		
+		<action name="queryAllQuestion"
+			class="cn.myapps.km.baike.entry.action.EntryAction" method="doqueryAllQuestion">
+			<result name="success" type="dispatcher">/km/baike/entry/moreQuestion.jsp</result>
+			<result name="ERROR" type="dispatcher">/km/baike/entry/moreQuestion.jsp</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+	
+		<action name="doSubmit"
+			class="cn.myapps.km.baike.knowledge.action.KnowledgeAnswerAction" method="doSave">
+			<result name="success" type="dispatcher">/km/baike/entry/doInit.action</result>
+			<result name="ERROR" type="dispatcher"></result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+	
+	 	<action name="doAccess"
+					class="cn.myapps.km.baike.knowledge.action.KnowledgeQuestionAction" method="doAccess">
+					<result name="success" type="chain">
+						<param name="actionName">doView</param>
+		    			<param name="namespace">/km/baike/knowledge</param>
+					</result>
+					<result name="searching" type="chain">
+						<param name="actionName">doQuery</param>
+		    			<param name="namespace">/km/baike/knowledge</param>
+					</result>
+					<interceptor-ref name="params" />
+					<interceptor-ref name="chain" />
+		</action>
+		
+		<!-- 初始化首页 -->
+		<action name="doInit"
+			class="cn.myapps.km.baike.knowledge.action.KnowledgeQuestionAction" method="doInit">
+			<result name="success" type="dispatcher">
+				/km/baike/entry/addQuestion.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+				 
+	</package>
+</struts>
+

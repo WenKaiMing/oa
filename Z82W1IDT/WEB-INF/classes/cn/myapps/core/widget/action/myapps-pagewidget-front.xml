@@ -1,0 +1,86 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<include file="webwork-default.xml" />
+	<package name="widget-front" extends="myapps-default" namespace="/portal/widget">
+		<action name="displayWidget" class="cn.myapps.core.widget.action.PageWidgetRuntimeAction"
+			method="doDisplayWidget">
+			<result name="summary_circulator" type="OBPMdispatcher">
+				/portal/dispatch/widget/summarywidget_circulator.jsp
+			</result>
+			<result name="summary" type="OBPMdispatcher">
+				/portal/dispatch/widget/summarywidget.jsp
+			</result>
+			<result name="link" type="OBPMdispatcher">
+				/portal/dispatch/widget/linkwidget.jsp
+			</result>
+			<result name="page" type="OBPMdispatcher">
+				/portal/dispatch/widget/pagewidget.jsp
+			</result>
+			<result name="view" type="OBPMdispatcher">
+				/portal/dispatch/widget/listviewwidget.jsp
+			</result>
+			<result name="report" type="OBPMdispatcher">
+				/portal/dispatch/widget/oreportwidget.jsp
+			</result>
+			<result name="runquanReport" type="OBPMdispatcher">
+				/portal/dispatch/widget/runqianreport.jsp
+			</result>
+			<result name="activity" type="OBPMdispatcher">
+				list.jsp
+			</result>
+			<result name="customizeReport" type="OBPMdispatcher">
+				/portal/dispatch/widget/customizereportwidget.jsp
+			</result>
+			<result name="system_announcement" type="OBPMdispatcher">
+				/portal/dispatch/widget/announcementwidget.jsp
+			</result>
+			<result name="system_workflow" type="OBPMdispatcher">
+				/portal/dispatch/widget/workflowwidget.jsp
+			</result>
+			<result name="system_weather" type="OBPMdispatcher">
+				/portal/dispatch/widget/weatherwidget.jsp
+			</result>
+			<result name="workflow_analyzer" type="OBPMdispatcher">
+				/portal/dispatch/widget/workflowanalyzerwidget.jsp
+			</result>
+			<result name="iscript" type="OBPMdispatcher">
+				/portal/dispatch/widget/iscriptwidget.jsp
+			</result>
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="getCustomizeReportData" class="cn.myapps.core.widget.action.PageWidgetRuntimeAction"
+			method="doGetCustomizeReportData">
+		</action>
+		
+		<action name="showMsg" class="cn.myapps.core.widget.action.PageWidgetRuntimeAction"
+			method="doShowMsg">
+			<result name="announcement" type="OBPMdispatcher">
+				<!-- /portal/dispatch/widget/showannouncementmsg.jsp -->
+				/portal/share/personalmessage/showAnnouncementMsg.jsp
+			</result>
+		</action>
+		<action name="showWorkflowAnalyzer" class="cn.myapps.core.widget.action.PageWidgetRuntimeAction"
+			method="doShowWorkflowAnalyzer">
+			<result name="analyzerActorTimeConsumingTopX" type="OBPMdispatcher">
+				/portal/dispatch/widget/showtimeconsumingtopx.jsp
+			</result>
+			<result name="flowTimeConsumingAccounting" type="OBPMdispatcher">
+				/portal/dispatch/widget/showworkflowanalyzerchart.jsp
+			</result>
+			<result name="flowAndNodeTimeConsuming" type="OBPMdispatcher">
+				/portal/dispatch/widget/showworkflowanalyzerchart.jsp
+			</result>
+			<result name="flowAccounting" type="OBPMdispatcher">
+				/portal/dispatch/widget/showworkflowanalyzerchart.jsp
+			</result>
+		</action>
+		
+		<action name="displayWidgetTotal" class="cn.myapps.core.widget.action.PageWidgetRuntimeAction"
+			method="doDisplayWidgetTotal">
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+</struts>

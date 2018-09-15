@@ -1,0 +1,109 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<include file="webwork-default.xml" />
+	<package name="NDir" extends="myapps-default"
+		namespace="/km/disk">
+		
+		<action name="new"
+			class="cn.myapps.km.disk.action.NDirAction" method="doNew">
+			<result name="success" type="dispatcher">
+				content.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="save"
+			class="cn.myapps.km.disk.action.NDirAction" method="doSave">
+			<result name="success" type="chain">
+				viewndir
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="delete"
+			class="cn.myapps.km.disk.action.NDirAction" method="doDelete">
+			<result name="success" type="chain">
+				viewndir
+			</result>
+			<result name="input" type="chain">
+				viewndir
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="viewndir"
+			class="cn.myapps.km.disk.action.NDirAction" method="doView">
+			<result name="personalList" type="dispatcher">
+				personal/listView.jsp
+			</result>
+			<result name="publicList" type="dispatcher">
+				public/listView.jsp
+			</result>
+			<result name="personalSubTree" type="dispatcher">
+				personal/subTreeView.jsp
+			</result>
+			<result name="publicSubTree" type="dispatcher">
+				public/subTreeView.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<!--<action name="viewndirbytree"
+			class="cn.myapps.km.disk.action.NDirAction" method="doView">
+			<result name="success" type="dispatcher">
+				subTreeView.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="viewsubndirbytree"
+			class="cn.myapps.km.disk.action.NDirAction" method="doView">
+			<result name="success" type="dispatcher">
+				subTreeView.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		-->
+		
+		<action name="rename"
+			class="cn.myapps.km.disk.action.NDirAction" method="doRename">
+			<result name="success" type="chain">
+				viewndir
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="move"
+			class="cn.myapps.km.disk.action.NDirAction" method="doMove">
+			<result name="success" type="dispatcher">
+				moveTo.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				moveTo.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+		
+		<action name="getChildren"
+			class="cn.myapps.km.disk.action.NDirAction" method="getChildren">
+			<result name="success" type="dispatcher">
+				result.jsp
+			</result>
+			<result name="input" type="dispatcher">
+				result.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="chain" />
+		</action>
+	</package>
+</struts>

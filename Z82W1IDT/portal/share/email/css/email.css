@@ -1,0 +1,61 @@
+body {
+	width: 95%;
+	/*padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #99bbe8;*/
+	overflow-x: hidden;
+	margin-left: 1%;
+	width: 98.2%;
+}
+
+.content {
+	border: 0px solid #99bbe8;
+	float: left;
+	width: 100%;
+	background: #f6f9fc;
+}
+
+.content .bar {
+	height: 30px;
+	background: #EEF0F2;
+}
+
+.content .main {
+	background: #99bbe8;
+}
+
+.bar INPUT {
+	height: 26px;
+	margin: 2px 3px;
+}
+
+.bar select {
+	height: 22px;
+	margin: 4px 3px;
+}
+
+.gTitle {
+	margin-bottom: 10px; line-height: 26px; position: relative; height: 26px;
+	font-weight: bold; font-size: 14px;
+}
+
+.gTitle span {
+	padding-left: 5px;
+}
+
+.Extra {
+	float: right; white-space: nowrap;
+}
+
+.Txt {
+	float: left; margin-right: 10px;
+}
+
+.Unable {
+	color: #999;
+}
+
+.Ibx_Lst_bExtra {
+	font-weight: normal; font-size: 12px;
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; CURSOR: default; LINE-HEIGHT: 26px; PADDING-TOP: 0px; BORDER-BOTTOM: #ededed 1px solid; HEIGHT: 26px;
+}

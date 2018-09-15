@@ -1,0 +1,412 @@
+html {
+    min-height: 100%;
+    height: 100%;
+    background: #f7f7f7;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#if_right, #con_right {
+    _display: inline;
+    min-height: 100%;
+    height: auto;
+    padding: 0px;
+}
+#if_right iframe, #con_right iframe {
+    width: 100%;
+    height: 100%;
+    _display: inline;
+}
+#right {
+    min-height: 100%;
+    background: #f7f7f7;
+}
+.crossULdivleft {
+    display: inline;
+    overflow: hidden;
+    color: #000;
+    padding: 0px;
+}
+.crossULdivleft .leftContent {
+    padding: 5px 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 320px;
+}
+.crossULdivleft .list_head {
+    font-size: 14px;
+    border-bottom: solid 1px #ddd;
+    line-height: 200%;
+    padding: 5px 0px;
+    margin: 0 15px;
+}
+.crossULdivleft .list_div {
+    font-size: 12px;
+    line-height: 160%;
+    padding: 5px 0px;
+    margin: 0 15px;
+}
+.crossULdivleft .input-group {
+    margin: 0 15px;
+}
+.crossULdivleft .input-group .input-group-btn {
+    width: 35%;
+}
+.crossULdivleft .list_div input {
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+.crossULdivleft .list_div img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.crossULdivleft .list_div .face {
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    margin-right: 5px;
+    border: solid 1px #ddd;
+    padding: 2px;
+    vertical-align: middle;
+}
+
+
+.tab-left-box .crossULdivright {
+    float: right;
+    display: inline;
+    width: 39%;
+    color: #000;
+}
+
+
+.crossULdivright .crossULdivright_lef {
+    overflow: auto;
+    border: solid 1px #ddd;
+    background-color: #fff;
+    padding: 0px;
+}
+.crossULdivright .list_head {
+    font-size: 14px;
+    border-bottom: solid 1px #ddd;
+    line-height: 200%;
+    padding: 5px 0px;
+    margin: 0 15px;
+    position: relative;
+}
+.crossULdivright .list_head span {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+}
+.crossULdivright .onSelect {
+    position: relative;
+}
+.crossULdivright img {
+    display: none;
+}
+.crossULdivright .onSelect span {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+}
+.crossULdivright .crossULdivright_lef .rightContent_lef {
+    padding: 5px 0px;
+    margin: 0 15px;
+}
+.crossULdivright .crossULdivright_lef .list_head .list_div_click {
+	margin:5px 5px 5px 0px;
+}
+.crossULdivright .crossULdivright_lef .rightContent_lef .list_div {
+    font-size: 12px;
+    line-height: 160%;
+    padding: 5px 0px;
+}
+.crossULdivright .crossULdivright_lef img {
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    margin-right: 5px;
+    border: solid 1px #ddd;
+    padding: 2px;
+}
+.crossULdivright .crossULdivright_lef input {
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+.crossULdivright .crossULdivright_lef nav .page {
+    display: block;
+    float: left;
+    margin-top: 15px;
+}
+.crossULdivright .crossULdivright_rig {
+    width: 49%;
+    overflow: auto;
+    float: right;
+    border: solid 1px #ddd;
+    background-color: #fff;
+    padding: 0px;
+}
+.crossULdivright .crossULdivright_rig .selectedUserDiv {
+    font-size: 12px;
+    line-height: 160%;
+    padding: 5px 0px;
+    margin: 0 15px;
+}
+.crossULdivright .crossULdivright_rig .selectedUserDiv img {
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    margin-right: 5px;
+    border: solid 1px #ddd;
+    padding: 2px;
+}
+.crossULdivright .crossULdivright_rig .selectedUserDiv .btn {
+    display: inline-block;
+    height: auto;
+}
+
+.jstree ins {
+    display: inline-block;
+    text-decoration: none;
+    width: 18px;
+    height: 18px;
+    margin: 0 0 0 0;
+    padding: 0;
+}
+.jstree-default ins {
+    background-image: url("../images/d.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.jstree-default .jstree-open > ins {
+    background-position: -72px 0;
+}
+.jstree-default a .jstree-icon {
+    background-position: -56px -19px;
+}
+.jstree a > .jstree-icon {
+    margin-right: 3px;
+}
+.jstree a > ins {
+    height: 16px;
+    width: 16px;
+}
+.jstree > ul > li {
+    margin-left: 0px;
+}
+.jstree li {
+    display: block;
+    min-height: 18px;
+    line-height: 18px;
+    white-space: nowrap;
+    margin-left: 18px;
+    padding: 5px 0px;
+}
+.message {
+    _display: inline;
+    margin: 15px 0 0 15px;
+    background-color: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    height: 100%;
+    width: 130px;
+    float: left
+}
+.message .title {
+    font-size: 24px;
+    color: #3497db;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+}
+.message .content {
+    height: 100%;
+}
+.message .content li {
+    height: 50px;
+    position: relative;
+}
+.message .content li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 15px;
+    font-size: 16px;
+    color: #6b6b6b;
+    display: block
+}
+.message .content li a:hover, .message .content li.active a {
+    background-color: #f7f7f7;
+    color: #22aae9
+}
+.message .content li a i {
+    height: 16px;
+    width: 16px;
+    display: block;
+    position: absolute;
+    top: 17px;
+}
+.message .content li a i.icon-message {
+    background: url(../images/ico_act.png) no-repeat -96px 0
+}
+.message .content li a:hover i.icon-message, .act .content li.active a i.icon-message {
+    background-position: -96px -20px
+}
+.message .content li a i.icon-sms {
+    background: url(../images/ico_act.png) no-repeat -80px 0
+}
+.message .content li a:hover i.icon-sms, .act .content li.active a i.icon-sms {
+    background-position: -80px -20px
+}
+.message .content li a span {
+    margin-left: 26px;
+}
+/*----------write---------*/
+
+#message-body .nav-tabs {
+    height: 43px;
+}
+#message-body .nav-tabs li {
+    position: static;
+    z-index: 0;
+    background: none;
+    filter: none;
+}
+#message-body .nav-tabs li.active {
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+#message-body .nav-tabs li.active a {
+    border: none;
+}
+#message-body .nav-tabs li a:hover {
+    border: none
+}
+#message-body .tab-box {
+    _display:inline-block;
+}
+#message-body .tab-content {
+    zoom: 1;
+    _display:inline-block;
+}
+
+
+
+#message-body .tab-content-right {
+    zoom: 1;
+    width: 30%;
+    float: right;
+    _display:inline-block;
+
+}
+#message-body .tab-content-right .list_head {
+    font-size: 14px;
+    border-bottom: solid 1px #ddd;
+    line-height: 200%;
+    padding: 5px 0px;
+}
+
+#message-body .tab-content-right .crossULdivright_rig {
+    overflow: auto;
+    border: solid 1px #ddd;
+    background-color: #fff;
+    padding: 0px 10px;
+    margin-left:15px; 
+}
+#message-body .tab-content-right .crossULdivright_rig .selectedUserDiv {
+    font-size: 12px;
+    line-height: 160%;
+    padding: 5px 0px;
+}
+#message-body .tab-content-right .crossULdivright_rig .selectedUserDiv img {
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    margin-right: 5px;
+    border: solid 1px #ddd;
+    padding: 2px;
+}
+
+
+
+
+
+
+#message-body .tab-content div {
+    display: none;
+}
+#message-body .tab-content div.active {
+    display: block;
+    background: none
+}
+#message-body .tab-content div.active div {
+    display: block;
+}
+#message-body .tab-content .searchDiv {
+    box-shadow: none;
+    border: none;
+    padding: 10px 15px 0 15px;
+    margin-bottom: 0px
+}
+#message-body .tab-content .form-control {
+    float: left;
+    padding: 0px 5px;
+    line-height: 36px;
+}
+#message-body .tab-content .input-group .form-control {
+
+    _height: 34px;
+}
+#message-body .tab-content .input-group .btn {
+    float: left;
+    width: 100%
+}
+#message-body .form-group table .form-group .input-group .form-control {
+    float: left;
+    padding: 0px 5px;
+    line-height: 36px;
+    _width: 65px;
+    height: 35px;
+    _margin-right: -3px;
+}
+#message-body .form-group table .form-group .input-group .btn {
+    float: left;
+    _width: 50px
+}
+.crm_right .dataTable {
+    margin-top: 15px;
+}
+.dataTable li .time {
+    _right: 50px;
+}
+#user .dataTable li .time {
+    _right: 50px;
+}
+nav{
+	margin-bottom: 10px; 
+}
+.pagination{
+	display: inline-block;
+}
+.pagination li {
+	display: inline;
+	
+}
+
+.pagination li a {
+	position: relative;
+	padding: 5px 10px;
+	border: none;
+	
+}
+
+.pagination li a, .pagination li span {
+    color: #a7a7a7
+
+}
+.crm_right .btn-myapp {
+    border-color: #03a9f4;
+    width: 40px;
+    height: 34px;
+    background: url(../images/search.png) #03a9f4 no-repeat center center
+}

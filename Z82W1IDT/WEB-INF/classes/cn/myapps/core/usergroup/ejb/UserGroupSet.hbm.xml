@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cn.myapps.core.usergroup.ejb.UserGroupSet" table="T_USER_GROUP_SET"
+		lazy="false" batch-size="10">
+
+		<id name="id" column="ID" type="java.lang.String">
+			<generator class="assigned">
+			</generator>
+		</id>
+
+		<property name="userId" type="java.lang.String" update="true"
+			insert="true" column="USERID" />
+
+		<property name="userGroupId" type="java.lang.String" update="true"
+			insert="true" column="USERGROUPID" />
+	</class>
+</hibernate-mapping>
+

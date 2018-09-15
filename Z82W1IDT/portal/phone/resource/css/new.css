@@ -1,0 +1,49 @@
+.bd {
+	display : none;
+	height: 100%;
+}
+
+.cur {
+	display: block;
+}
+
+#iconMore {
+	background-color: #fff;
+}
+/*表单提交面板*/
+.flowPro_con {
+	position: fixed;
+	top: 44px;
+	right: 0;
+	bottom: 0px;
+	left: 0;
+	z-index:4;
+	background-color: #fff;
+}
+
+.historyCon {
+    position: absolute;
+    overflow: auto;
+    z-index: 10;
+    top: 44px;
+	right: 0;
+	bottom: 0px;
+	left: 0;
+	background-color: #fff;
+}
+
+.card_space_fix {
+	background-color: #fff;
+}
+
+.weui_grids .weui_grid {
+    width: 25%;
+    padding: 10px;
+	background-color: #fff;
+}
+
+.weui_grid_label {
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

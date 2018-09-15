@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="myapps-default" namespace="/test/ajax" extends="struts-default">
+
+        <result-types>
+			<result-type name="OBPMdispatcher" class="cn.myapps.base.web.ServletResult.OBPMServletDispatcherResult" default="true"/>
+			<result-type name="portlet" class="cn.myapps.base.web.ServletResult.OBPMPortletResult" />
+			<result-type name="OBPMredirect" class="cn.myapps.base.web.ServletResult.OBPMServletRedirectResult" default="true"/>
+		</result-types>
+		<interceptors>
+			<interceptor name="logInterceptor" class="cn.myapps.base.web.interceptor.LogInterceptor" />
+		</interceptors>
+
+    </package>
+
+    <!-- Add packages here -->
+    <!-- foreground -->
+	<include file="cn/myapps/core/dynaform/view/action/myapps-view-front.xml"/>
+	<include file="cn/myapps/core/dynaform/view/action/myapps-view-front-report.xml"/>
+	<include file="cn/myapps/core/dynaform/document/action/myapps-document-front.xml"/>
+	<include file="cn/myapps/core/dynaform/activity/action/myapps-activity-front.xml"/>
+	<include file="cn/myapps/core/dynaform/activity/action/myapps-activity-front-ajax.xml"/>
+	<include file="cn/myapps/core/upload/myapps-upload-front.xml"/>
+	<include file="cn/myapps/core/dynaform/signature/action/myapps-signature-front.xml"/>
+	<include file="cn/myapps/core/dynaform/dts/excelimport/config/action/myapps-impmappconfig-front.xml"/>
+	<include file="cn/myapps/core/dynaform/printer/action/myapps-printer-front.xml"/>
+	<include file="cn/myapps/core/security/action/myapps-login-front.xml"/>
+	<include file="cn/myapps/core/resource/action/myapps-resource-front.xml"/>
+	<include file="cn/myapps/core/department/action/myapps-department-front.xml"/>
+	<include file="cn/myapps/core/role/action/myapps-role-front.xml"/>
+	<include file="cn/myapps/core/filedownload/action/myapps-filedownload-front.xml"/>
+	<include file="cn/myapps/core/dynaform/work/action/myapps-work-front.xml"/>
+	<include file="cn/myapps/core/domain/action/myapps-domain-front.xml"/>
+	
+	<!-- flowCenter -->
+	<include file="cn/myapps/core/dynaform/work/action/myapps-flowCenter.xml"/>
+	
+	<!-- message -->
+	<include file="cn/myapps/core/personalmessage/action/myapps-personalmessage-front.xml"/>
+	<include file="cn/myapps/core/personalmessage/attachment/action/myapps-personalmessage_attachment-front.xml"/>
+	<include file="cn/myapps/core/shortmessage/submission/action/myapps-submitmessage-front.xml"/>
+	<include file="cn/myapps/core/shortmessage/received/action/myapps-receivedmessage-front.xml"/>
+	
+	<!-- home page -->
+	<include file="cn/myapps/core/helper/action/myapps-helper-front.xml"/>
+	<include file="cn/myapps/core/homepage/action/myapps-homepage-front.xml" />
+	<include file="cn/myapps/core/homepage/action/myapps-reminder-front.xml" />
+	<!-- report -->
+	<include file="cn/myapps/core/report/crossreport/definition/action/myapps-crossreport-front.xml" />
+	<include file="cn/myapps/core/report/crossreport/runtime/action/myapps-runtime-front.xml" />
+	<include file="cn/myapps/core/report/standardreport/action/myapps-standardreport-front.xml"/>
+	<!-- application-->
+	<include file="cn/myapps/core/deploy/application/action/myapps-deployApplication-front.xml"/>
+
+	<!-- user -->
+	<include file="cn/myapps/core/user/action/myapps-user-front.xml"/>
+	<include file="cn/myapps/core/usersetup/action/myapps-usersetup-front.xml"/>
+	<include file="cn/myapps/core/user/action/myapps-userDefined-front.xml"/>
+	
+	<!-- background -->
+	<include file="cn/myapps/core/dynaform/document/action/myapps-document.xml"/>
+	<include file="cn/myapps/core/dynaform/printer/action/myapps-printer.xml"/>
+	<include file="cn/myapps/core/dynaform/form/action/myapps-form.xml"/>
+	<include file="cn/myapps/core/dynaform/summary/action/myapps-summaryCfg.xml"/>
+	<include file="cn/myapps/core/dynaform/summary/action/myapps-summaryCfg-front.xml"/>
+	<include file="cn/myapps/core/admin/action/myapps-login.xml"/>
+	<include file="cn/myapps/core/dynaform/view/action/myapps-view.xml"/>
+	<include file="cn/myapps/core/dynaform/dts/exp/columnmapping/action/myapps-columnmapping.xml"/>
+	<include file="cn/myapps/core/dynaform/dts/exp/mappingconfig/action/myapps-mappingconfig.xml"/>
+	<include file="cn/myapps/core/department/action/myapps-department.xml"/>
+	<include file="cn/myapps/core/deploy/module/action/myapps-deployModule.xml"/>
+	<include file="cn/myapps/core/deploy/application/action/myapps-deployApplication.xml"/>
+	<include file="cn/myapps/core/macro/repository/action/myapps-repository.xml"/>
+	<include file="cn/myapps/core/resource/action/myapps-resource.xml"/>
+	<include file="cn/myapps/core/role/action/myapps-role.xml"/>
+	<include file="cn/myapps/core/helper/action/myapps-helper.xml"/>
+	<include file="cn/myapps/core/user/action/myapps-user.xml"/>
+	<include file="cn/myapps/core/superuser/action/myapps-superuser.xml"/>
+	<include file="cn/myapps/core/workflow/storage/definition/action/myapps-definition.xml"/>
+	<include file="cn/myapps/core/workflow/storage/definition/action/myapps-definition-front.xml"/>
+	<include file="cn/myapps/core/upload/myapps-upload.xml"/>
+	<include file="cn/myapps/core/security/action/myapps-login.xml"/>
+	<include file="cn/myapps/core/style/repository/action/myapps-stylerepository.xml"/>
+	<include file="cn/myapps/core/multilanguage/action/myapps-multilanguage.xml"/>
+	<include file="cn/myapps/core/task/action/myapps-task.xml"/>
+	<include file="cn/myapps/core/page/action/myapps-page.xml"/>
+	<include file="cn/myapps/core/dynaform/dts/datasource/action/myapps-datasource.xml" />
+	<include file="cn/myapps/core/expimp/exp/action/myapps-exp.xml" />
+	<include file="cn/myapps/core/expimp/imp/action/myapps-imp.xml" />
+	<include file="cn/myapps/core/validate/repository/action/myapps-validaterepository.xml"/>
+	<include file="cn/myapps/core/wizard/action/myapps-wizard.xml"/>
+	<include file="cn/myapps/core/dynaform/dts/excelimport/config/action/myapps-impmappconfig.xml" />
+	<include file="cn/myapps/core/workflow/statelabel/action/myapps-statelabel.xml" />
+	<include file="cn/myapps/core/wizard/application/action/myapps-wizard-application.xml" />
+	<include file="cn/myapps/core/filedownload/action/myapps-filedownload.xml" />
+	
+	<!-- for home page -->
+	<include file="cn/myapps/core/homepage/action/myapps-homepage.xml" />
+	<include file="cn/myapps/core/homepage/action/myapps-reminder.xml" />
+	<include file="cn/myapps/core/workcalendar/calendar/action/myapps-calendar.xml"/>
+	<include file="cn/myapps/core/workcalendar/special/action/myapps-specialday.xml"/>
+	<include file="cn/myapps/core/workcalendar/standard/action/myapps-standard.xml"/>
+	<include file="cn/myapps/core/domain/action/myapps-domain.xml"/>
+	<include file="cn/myapps/core/superuser/action/myapps-superuser.xml"/>
+	<include file="cn/myapps/core/wizard/domain/action/myapps-wizard-domain.xml"/>
+	<!-- copy module -->
+	<include file="cn/myapps/core/deploy/copymodule/action/myapps-copymodule.xml"/>
+	
+	<!-- mobile2 -->
+	<include file="cn/myapps/mobile2/login/myapps-mblogin.xml" />
+	<include file="cn/myapps/mobile2/homepage/myapps-mbhomepage.xml" />
+	<include file="cn/myapps/mobile2/homepage/myapps-mbmessage.xml" />
+	<include file="cn/myapps/mobile2/menu/myapps-mbmenu.xml" />
+	<include file="cn/myapps/mobile2/view/myapps-mbview.xml" />
+	<include file="cn/myapps/mobile2/document/myapps-mbdocument.xml" />
+	<include file="cn/myapps/mobile2/service/myapps-mbservice.xml" />
+	<include file="cn/myapps/mobile2/contacts/myapps-mbcontacts.xml"/>
+		<!-- 文件操作 -->
+	<include file="cn/myapps/mobile2/document/myapps-mbfile.xml"/>
+		<!-- 首页站内短信动作 -->
+	<include file="cn/myapps/mobile2/document/myapps-mbmessage.xml"/>
+	
+	<!-- report -->
+	<include file="cn/myapps/core/report/crossreport/definition/action/myapps-crossreport.xml"/>
+<!-- 	<include file="cn/myapps/core/report/reportconfig/action/myapps-reportconfig.xml" />
+	<include file="cn/myapps/core/report/tablecolumn/action/myapps-tablecolumn.xml" />
+	<include file="cn/myapps/core/report/query/action/myapps-query.xml" /> -->
+	
+
+	<include file="cn/myapps/core/dynaform/signature/action/myapps-signature.xml"></include>
+	<include file="cn/myapps/core/privilege/operation/action/myapps-operation.xml"></include>
+	<include file="cn/myapps/core/permission/action/myapps-permission.xml"></include>
+	<include file="cn/myapps/core/privilege/res/action/myapps-res.xml"></include>
+	
+	<!-- fieldExtends -->
+	<include file="cn/myapps/core/fieldextends/action/myapps-fieldExtends.xml"></include>
+
+	<!-- desktop -->
+	<include file="cn/myapps/desktop/user/myapps-dpersonal.xml" />
+	<include file="cn/myapps/desktop/login/myapps-dlogin.xml" />
+	<include file="cn/myapps/desktop/personal/myapps-dpersonal.xml" />
+	<include file="cn/myapps/desktop/view/myapps-dview.xml" />
+	<include file="cn/myapps/desktop/service/myapps-dservice.xml" />
+	<include file="cn/myapps/desktop/login/myapps-openfire.xml" />
+	
+	<!-- Links -->
+	<include file="cn/myapps/core/links/action/myapps-link.xml"></include>
+	
+	<!-- Log -->
+	<include file="cn/myapps/core/logger/action/myapps-log.xml"></include>
+	
+	<!-- FlowIntervention -->
+	<include file="cn/myapps/core/workflow/storage/runtime/intervention/action/myapps-FlowIntervention.xml"></include>
+	
+	<!-- WorkflowProxy -->
+	<include file="cn/myapps/core/workflow/storage/runtime/proxy/action/myapps-workflowProxy.xml"></include>
+	
+	<!-- NetworkDisk -->
+	<include file="cn/myapps/core/networkdisk/action/myapps-networkdisk.xml"></include>
+	
+	<!-- Email -->
+	<include file="cn/myapps/core/email/email/action/myapps-email-front.xml"></include>
+	<include file="cn/myapps/core/email/attachment/action/myapps-attachment-front.xml"></include>
+	<include file="cn/myapps/core/email/folder/action/myapps-folder-front.xml"></include>
+	<include file="cn/myapps/core/email/email/action/myapps-emailuser-front.xml"></include>
+	
+	<!-- SystemConfig -->
+	<include file="cn/myapps/core/sysconfig/action/myapps-sysConfig.xml"></include>
+	<include file="cn/myapps/core/workflow/storage/runtime/action/myapps-circulator-front.xml"></include>
+	
+	<include file="cn/myapps/core/dynaform/dts/excelimport/config/action/myapps-importexcel-front.xml"></include>
+	<!-- metadata -->
+	<include file="cn/myapps/core/dynaform/dts/metadata/action/myapps-metadatamanage.xml"></include>
+	
+	<!-- DataMapCfg -->
+	<include file="cn/myapps/core/datamap/definition/action/myapps-datamapcfg.xml"></include>
+	<include file="cn/myapps/core/datamap/definition/action/myapps-datamapcfg-front.xml"></include>
+	<include file="cn/myapps/core/datamap/runtime/action/myapps-datamaptemplate-front.xml"></include>
+
+	<!-- Widget -->	
+	<include file="cn/myapps/core/widget/action/myapps-pagewidget.xml"></include>
+	<include file="cn/myapps/core/widget/action/myapps-pagewidget-front.xml"></include>
+	
+	<!-- obpm_versions -->
+	<include file="cn/myapps/core/versions/action/myapps-versions.xml"></include>
+	
+	<include file="cn/myapps/notifications/action/myapps-notification-front.xml"></include>
+	
+	<!-- KM -->
+	<include file="cn/myapps/km/disk/action/myapps-NDisk.xml"/>
+	<include file="cn/myapps/km/disk/action/myapps-ajax-NDisk.xml"/>
+	<include file="cn/myapps/km/disk/action/myapps-NFile.xml"/>
+	<include file="cn/myapps/km/disk/action/myapps-ajax-NFile.xml"/>
+	<include file="cn/myapps/km/disk/action/myapps-NDir.xml"/>
+	<include file="cn/myapps/km/disk/action/myapps-ajax-NDir.xml"/>
+	<include file="cn/myapps/km/index/action/myapps-km-Index.xml"/>
+	<include file="cn/myapps/km/permission/action/myapps-km-Permission.xml"/>
+	<include file="cn/myapps/km/comments/action/myapps-Comments.xml"/>
+	<include file="cn/myapps/km/category/action/myapps-km-Category.xml"/>
+	<include file="cn/myapps/km/category/action/myapps-km-Category-ajax.xml"/>
+	<include file="cn/myapps/km/org/action/myapps-NRoleConfig.xml" />
+	<include file="cn/myapps/km/org/action/myapps-NRoleConfig-front.xml" />
+	<include file="cn/myapps/km/report/action/myapps-ndashboard.xml"></include>
+	<include file="cn/myapps/km/log/action/myapps-Logs.xml"></include>
+	<include file="cn/myapps/km/desktop/service/myapps-km-desktop-service.xml"></include>
+	
+	<!-- SaaS -->
+	<include file="com/teemlink/saas/teemlink-saas.xml"/>
+	
+	<!-- usergroup -->
+	<include file="cn/myapps/core/usergroup/action/myapps-usergroup-front.xml"/>
+	
+	<!-- workflow analyzer -->
+	<include file="cn/myapps/core/workflow/analyzer/myapps-analyzer.xml"/>
+	<include file="cn/myapps/core/workflow/analyzer/myapps-analyzer-front.xml"/>
+	
+	 <!-- baike -->
+	<include file="cn/myapps/km/baike/reason/action/myapps-baike-rejectReason.xml"/>
+	<include file="cn/myapps/km/baike/entry/action/myapps-baike-entry.xml"/>
+	<include file="cn/myapps/km/baike/content/action/myapps-baike-content.xml"/>
+	<include file="cn/myapps/km/baike/content/action/myapps-baike-referenceMateiral.xml"/>
+	<include file="cn/myapps/km/baike/user/action/myapps-baike-user.xml"/>
+	<include file="cn/myapps/km/baike/category/action/myapps-baike-category.xml"/>
+	<include file="cn/myapps/km/baike/knowledge/action/myapps-baike-knowledge.xml"/>
+    <include file="cn/myapps/km/baike/history/action/myapps-baike-history.xml"/>
+    <include file="cn/myapps/km/baike/upload/action/myapps-baike-uploadFile.xml"/>
+    
+    <!-- QM -->
+    <include file="cn/myapps/qm/questionnaire/action/myapps-Questionnaire.xml"></include>
+    <include file="cn/myapps/qm/questionnaire/action/myapps-Questionnaire-ajax.xml"></include>
+    <include file="cn/myapps/qm/answer/action/myapps-Answer.xml"></include>
+    <include file="cn/myapps/qm/answer/action/myapps-Answer-ajax.xml"></include>
+    
+    <!-- PM -->
+    <include file="cn/myapps/pm/project/action/myapps-Project.xml"></include>
+    <include file="cn/myapps/pm/task/action/myapps-Task.xml"></include>
+    <include file="cn/myapps/pm/tag/action/myapps-Tag.xml"></include>
+    <include file="cn/myapps/pm/activity/action/myapps-Activity.xml"></include>
+    
+    <!-- Message -->
+	<include file="cn/myapps/message/message/action/message-Message.xml"></include>
+	<include file="cn/myapps/message/comment/action/message-Comment.xml"></include>
+	<include file="cn/myapps/message/notice/action/message-Notice.xml"></include>
+	<include file="cn/myapps/message/notification/action/message-Notification.xml"></include>
+	
+    <!-- 考勤管理 -->
+    <include file="cn/myapps/attendance/location/action/myapps-location.xml"></include>
+    <include file="cn/myapps/attendance/rule/action/myapps-rule.xml"></include>
+    <include file="cn/myapps/attendance/attendance/action/myapps-attendance.xml"></include>
+    
+    <include file="cn/myapps/contacts/action/myapps-contacts.xml"></include>
+      
+     <!-- MR -->
+    <include file="cn/myapps/mr/reservation/action/myapps-Reservation.xml"/>
+    <include file="cn/myapps/mr/room/action/myapps-Room.xml"/>
+    <include file="cn/myapps/mr/area/action/myapps-Area.xml"/>
+    
+    <include file="cn/myapps/support/weixin/trial/action/myapps-weixin-trial.xml"/>
+    
+    <include file="com/teemlink/saas/weioa/org/action/weioa-org.xml"/>
+    <include file="com/teemlink/saas/weioa/application/action/weioa-app.xml"/>
+    <include file="com/teemlink/saas/weioa/role/action/weioa-role.xml"/>
+    <include file="com/teemlink/saas/weioa/security/action/weioa-security.xml"/>
+    <include file="com/teemlink/saas/weioa/suite/action/weioa-suite.xml"/>
+    
+     <include file="cn/myapps/core/user/action/myapps-component-userselect.xml"/>
+     <include file="cn/myapps/support/weixin/action/myapps-weixin-jsapi.xml"/>
+     <include file="cn/myapps/core/workflow/storage/runtime/action/myapps-flowhis-front.xml"/>
+     <include file="cn/myapps/support/weixin/weioa365/action/myapps-weioa365.xml"/>
+     <include file="cn/myapps/support/tray/action/myapps-tray.xml"/>
+     
+     <!-- APP -->
+     <include file="cn/myapps/runtime/mobile/security/action/app-security.xml"/>
+     <include file="cn/myapps/runtime/mobile/notice/action/app-notice.xml"/>
+     <include file="cn/myapps/runtime/mobile/user/action/app-user.xml"/>
+     <include file="cn/myapps/runtime/mobile/domain/action/app-domain.xml"/>
+     <include file="cn/myapps/runtime/mobile/contacts/action/app-contacts.xml"/>
+     <include file="cn/myapps/runtime/mobile/application/action/app-applications.xml"/>
+    
+</struts>

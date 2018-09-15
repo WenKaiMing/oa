@@ -1,0 +1,208 @@
+html {min-height: 100%; height: 100% ;}
+#if_right,#con_right { min-height: 100%; height: 100%; padding:0px}
+#if_right iframe,#con_right iframe {width: 100%;height: 100%;}
+#right { position: relative; min-height: 100%;background:#f7f7f7; }
+
+
+.message { 
+	margin:3px 0px 0px 15px; 
+	background-color:#FFFFFF;
+	position:fixed; 
+	height:100%; 
+	width:130px;
+}
+.message .title { 
+	font-size:24px; 
+	color:#3497db; 
+	text-align:center; 
+	height:60px; 
+	line-height:60px;
+	border-left:1px solid #E3E3E3;
+	border-right:1px solid #E3E3E3;
+}
+.message .content { 
+	height:100%;
+	border-left:1px solid #E3E3E3;
+	border-right:1px solid #E3E3E3;
+}
+.message .content li { height:50px;margin-top:0;}
+.message .content li a { height:50px; line-height:50px; padding:0px 10px;border-left:solid 2px #ffffff; font-size:14px; color:#6b6b6b}
+.message .content li a:hover ,
+.message .content li.active a { 
+	background-color:#f1f1f1; 
+	border-left:solid 2px #22aae9; 
+	color:#22aae9
+}
+.message .content li a i {font-size: 20px}
+/*.message .content li a i { height:16px; width:16px; display:block; position:absolute; top:17px}*/
+.message .content li a i.icon-message { background:url(../images/ico_act.png) no-repeat -96px 0}
+.message .content li a:hover i.icon-message,.act .content li.active a i.icon-message{ background-position:-96px -20px}
+.message .content li a i.icon-sms { background:url(../images/ico_act.png) no-repeat -80px 0}
+.message .content li a:hover i.icon-sms,.act .content li.active a i.icon-sms{ background-position:-80px -20px} 
+.message .content li a span { margin-left:10px;}
+
+
+/*----------message---------*/
+
+.crm_right { margin: 3px 15px 15px 15px; }
+.crm_right .mt105 { margin-top: 105px }
+.crm_right .searchDiv .row { color: #A7A7A7; font-size: 14px; margin-bottom: 10px }
+.crm_right .searchDiv .row .col-xs-1, .searchDiv .row .col-xs-2, .searchDiv .row .col-xs-3, .searchDiv .row .col-xs-12 { padding: 0px 10px; height: 32px; line-height: 32px }
+.crm_right .searchDiv .row .form-control { height: 32px; width: 90%; }
+.crm_right .searchDiv .row .form_date .form-control { height: 32px; width: 100%; background: none }
+.crm_right .searchDiv .row .col-xs-12 .btn { height: 34px; background: #337ab7; color: #FFFFFF; text-indent: 30px; border: none; margin-left: 10px }
+.crm_right .searchDiv .row .col-xs-12 .ico-search { background: url(../images/ico_search.png) #337ab7 no-repeat 10px center }
+.crm_right .searchDiv .row .col-xs-12 .ico-reset { background: url(../images/ico_reset.png) #337ab7 no-repeat 10px center }
+.crm_right .searchDiv .row .col-xs-12 .btn:hover { background-color: #284C6B; }
+
+#message-body .nav-tabs {border-bottom: 1px solid #ddd;padding-left:5px;margin-bottom: 0;list-style: none;background: #fff;padding-top: 20px;}
+#message-body .nav-tabs li {position: relative;display: block; float: left;}
+#message-body .nav-tabs li a {color: #9d9d9d;font-size: 15px;padding:10px 30px;position: relative;display: block;text-decoration:none;}
+#message-body .nav-tabs li a.active {color: #3a3a3a;cursor: default;background-color: #fff;border: 1px solid #ddd;border-bottom-color: transparent;}
+#message-body .nav-tabs li a:hover{border-bottom-color: transparent;}
+#message-body .tab-content {margin-top:15px;position: relative;}
+#message-body .tab-content .search_bar{position:absolute;right: 0px}
+#message-body .tab-content div.active div {display: block;}
+#message-body .tab-content div.active {display: block;padding:0px ;}
+#message-body .tab-content .searchDiv{box-shadow: none;}
+#message-body .tab-content .input-group .form-control {width: 180px}
+#message-body .tab-content .input-group .btn{background: url(../images/search2.png) #f48a03 no-repeat center center;width: 80px}
+
+#message-body .form-group table .form-group .input-group .form-control {width: 100px}
+#message-body .form-group table .form-group .input-group .btn{width: 50px}
+
+
+
+#message-body .searchDiv .title-text{ font-size:14px; color:#a7a7a7; margin-bottom:15px}
+#message-body .searchDiv .title-text i{ color:#ee8c0c;}
+#message-body .searchDiv a.btn{ height:36px;}
+#message-body .searchDiv .input-group input{ height:36px; margin-right:0px;}
+#message-body .searchDiv button.btn{ height:36px; }
+#message-body .searchDiv .input-group .btn{
+	margin-right:5px;
+}
+#message-body .searchDiv .form-group-page {width: 130px;margin-bottom: 0px;}
+#message-body .searchDiv .form-group-page .form-control { height:36px; padding:3px}
+#message-body .searchDiv .pagination {margin:0px 10px 0 0}
+#message-body .searchDiv .pagination a{height:36px; line-height:24px}
+#message-body .searchDiv .form-group { color:#a7a7a7; margin-bottom: 15px;}
+#message-body .searchDiv .form-group label {height:36px; line-height:36px; font-size:14px; font-weight:normal}
+#message-body .searchDiv .search_bar .form-control {height:36px;}
+#message-body .searchDiv .form-group .input-box-con { width:30%; margin-right:10px;}
+#message-body .searchDiv .form-group .mail_search td {padding: 10px 0px}
+#message-body .searchDiv .form-group .mail_search label {float: left;}
+#message-body .searchDiv .form-group .mail_search .form-control {width:auto; display:inherit;float: left;}
+
+
+
+.sms_dataTable .mail_content td{text-align: center;}
+.sms_dataTable .mail_content .listDataTrFirstTd{width:25px}
+.sms_dataTable .mail_select{padding: 10px 0px; color: #b4b4b4; font-size: 14px}
+.sms_dataTable .mail_content .mail_info h4 {color: #606060;}
+.sms_dataTable .mail_content .mail_info {color: #a7a7a7;font-size: 13px}
+.sms_dataTable .mail_content .mail_body {margin: 10px 0px;padding: 10px 0px;border-top:solid 1px #d9d9d9;}
+.sms_dataTable .mail_content .mail_attachment {}
+.sms_dataTable .mail_content .mail_attachment .title{font-size: 13px;color: #a7a7a7;margin: 10px 0px;padding: 10px 0px;border-bottom:solid 1px #d9d9d9;}
+
+
+.sms_dataTable { 
+	margin-top: 10px; 
+	background-color: #FFFFFF; 
+	border:1px solid #E3E3E3; 
+	padding: 10px 
+}
+.sms_dataTable table { width: 100% }
+.sms_dataTable td { border-bottom: solid 1px #e5e5e5; padding: 10px 0px }
+.sms_dataTable .listDataTh a, .sms_dataTable .listDataTh { font-size: 16px; color: #606060; line-height: 180%; background-color: #efefef }
+.sms_dataTable .listDataTr a, .sms_dataTable .listDataTr { font-size: 14px; color: #a7a7a7; line-height: 180%; }
+.sms_dataTable .listDataTr_over a, .sms_dataTable .listDataTr_over { font-size: 14px; color: #22aae9; line-height: 180%; }
+.dataTable_Th { margin: 0; background-color: #FFFFFF; box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1); }
+.dataTable_Th table { width: 100% }
+.dataTable_Th td { border: solid 1px #e5e5e5; padding: 10px 0px }
+.dataTable_Th .listDataTh a, .dataTable_Th .listDataTh { font-size: 16px; color: #606060; line-height: 180%; background-color: #efefef }
+.dataTable_Th .listDataTr a, .dataTable_Th .listDataTr { font-size: 14px; color: #a7a7a7; line-height: 180%; }
+.dataTable_Th .listDataTr_over a, .dataTable_Th .listDataTr_over { font-size: 14px; color: #22aae9; line-height: 180%; }
+#tableFix { z-index: 10; width: 100%; padding: 0px 15px; left: 0; position: absolute; overflow: hidden; height: 65px; background-color: #fff }
+#tableFix.fixed { position: fixed; top: 100px; padding-top: 5px; }
+
+.dataTable { margin: 0 0 15px 0; background-color: #FFFFFF;  }
+.dataTable ul {border: 1px solid #ddd;padding:15px;}
+.dataTable li,.dataTable li table{color: #a7a7a7;width:100%; font-size: 14px;line-height: 160%;margin: 10px 0px;position: relative;}
+.dataTable li .title {color: #f48a03;margin:0px 10px;}
+.dataTable li .time {position: absolute;right: 0px ;top:0px;text-align: right}
+
+#user .dataTable li  {font-size: 14px;line-height: 160%;margin: 15px 0px;padding-bottom:15px;position: relative;border-bottom: solid 1px #ccc}
+#user .dataTable li .text {position: absolute;top:-9px;}
+#user .dataTable li .time {position: absolute;right: 0px ;top:-9px;text-align: right}
+
+.pagination li a, .pagination li span { color: #a7a7a7 }
+
+/*knowledge*/
+#hotest span,#newest span,#publicDisk span, #personalDisk span,#archiveDisk span,#baike span{
+    margin-left: 22px;
+}
+#hotest a{
+	padding-left:20px;
+	background:url(../images/knowledge/iconfont-share.png) 15px center no-repeat;
+}
+#hotest a:hover{
+	background:url(../images/knowledge/iconfont-share1.png) 15px center no-repeat;
+}
+#hotest.active a{
+	background:url(../images/knowledge/iconfont-share1.png) 15px center no-repeat;
+}
+
+#newest a{
+	padding-left:20px;
+	background:url(../images/knowledge/iconfont-upload.png) 15px center no-repeat;
+}
+#newest a:hover{
+	background:url(../images/knowledge/iconfont-upload1.png) 15px center no-repeat;
+}
+#newest.active a{
+	background:url(../images/knowledge/iconfont-upload1.png) 15px center no-repeat;
+}
+
+#publicDisk a{
+	padding-left:20px;
+	background:url(../images/knowledge/iconfont-gonggong.png) 15px center no-repeat;
+}
+#publicDisk a:hover{
+	background:url(../images/knowledge/iconfont-gonggong1.png) 15px center no-repeat;
+}
+#publicDisk.active a{
+	background:url(../images/knowledge/iconfont-gonggong1.png) 15px center no-repeat;
+}
+
+#personalDisk a{
+	padding-left:20px;
+	background:url(../images/knowledge/iconfont-self.png) 15px center no-repeat;
+}
+#personalDisk a:hover{
+	background:url(../images/knowledge/iconfont-self1.png) 15px center no-repeat;
+}
+#personalDisk.active a{
+	background:url(../images/knowledge/iconfont-self1.png) 15px center no-repeat;
+}
+
+#archiveDisk a{
+	padding-left:20px;
+	background:url(../images/knowledge/iconfont-baocunguidang.png) 15px center no-repeat;
+}
+#archiveDisk a:hover{
+	background:url(../images/knowledge/iconfont-baocunguidang1.png) 15px center no-repeat;
+}
+#archiveDisk.active a{
+	background:url(../images/knowledge/iconfont-baocunguidang1.png) 15px center no-repeat;
+}
+
+#baike a{
+	padding-left:20px;
+	background:url(../images/knowledge/iconfont-baike.png) 15px center no-repeat;
+}
+#baike a:hover{
+	background:url(../images/knowledge/iconfont-baike1.png) 15px center no-repeat;
+}
+#baike.active a{
+	background:url(../images/knowledge/iconfont-baike1.png) 15px center no-repeat;
+}

@@ -1,0 +1,270 @@
+@IMPORT url("../../../../share/css/base.css"); 
+@IMPORT url("../../../../share/css/documentModule.css");
+	
+.table_noborder {
+	width: 100%;
+}
+.front-table-act {
+	height: 23px;
+	vertical-align: middle;
+}
+.front-table-act2 {
+	background: #e5edf8;
+	height: 27px;
+	vertical-align: middle;
+}
+
+.actBtn .button-document a span {
+	display: block;
+	white-space: nowrap;
+}
+
+.actBtn span {
+	float: left;
+}
+
+.actBtn div {
+	float: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.button-document {
+	background: url(./act_seperate.gif) right center no-repeat;
+	cursor: pointer;
+	display: block;
+	font-family: Arial, Helvetica;
+	font-weight: 700;
+	vertical-align: middle;
+}
+
+.button-document a {
+	color: #000;
+	cursor: pointer;
+	float: left;
+	height: 25px;
+	text-decoration: none;
+}
+
+.button-document a span {
+	float: left;
+	height: 16px;
+	margin: 0 0 0 10px;
+	padding: 3px 10px 3px 0;
+}
+
+.button-document a:hover {
+	color: #FFF;
+}
+
+.body-front {
+	background-color: #F3F7F9;
+	margin-left: 2px;
+	margin-top: 0;
+}
+
+.front-table-full-width {
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+.currentNode{
+	padding-right: 10px;
+	text-overflow: ellipsis;
+}
+.currentNode>span{
+	display: inline-block;
+    padding: .2em .6em ;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+	background-color: #33ccff;
+    color: #fff;
+}
+.processor {
+	height: 27px;
+	line-height: 27px;
+	padding-right: 10px;
+	text-overflow: ellipsis;
+	width: 130px;
+}
+
+.flowstate {
+	overflow: hidden;
+	height: 27px;
+	line-height: 27px;
+	padding-right: 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 130px;
+}
+
+.flowbtn .flowicon {
+	background: url('../../../../../resource/imgv2/front/act/act_5.gif')
+		no-repeat !important;
+	background-position: left !important;
+	padding-left: 18px !important;
+}
+.flowbtn .icon16 {
+	width: 16px;
+	height: 16px;
+}
+.flowbtn .button-cmd div {
+	height: 23px;
+	line-height: 23px;
+	float: left;
+}
+.flowbtn .btn_left {
+	width: 3px;
+	background: url('../../../../../resource/imgv2/front/main/btn_left.png')
+		no-repeat;
+	margin-left: 2px;
+}
+.flowbtn .btn_mid {
+	background:
+		url('../../../../../resource/imgv2/front/main/btn_middle.png')
+		repeat-x;
+	padding: 0 2px;
+}
+.flowbtn .btn_right {
+	width: 3px;
+	background:
+		url('../../../../../resource/imgv2/front/main/btn_right.png')
+		no-repeat;
+	margin-right: 2px;
+}
+.flowbtn .button-cmd {
+	width: 85px;
+	font-weight: 700;
+}
+.flowbtn .button-cmd img {
+	border: 0px solid white;
+}
+.flowbtn .button-cmd a {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+	background: none;
+	width: auto;
+	float: none;
+}
+.flowbtn .button-cmd a:hover {
+	color: #438733;
+	background: none;
+}
+
+.front-scroll-hidden {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.front-scroll-auto {
+	overflow-x: auto;
+	overflow-y: auto;
+}
+
+.front-bgcolor3 {
+	background-color: #fff;
+}
+
+.front-boder {
+	border: 1px solid #99bbe8;
+}
+
+.front-align-top {
+	vertical-align: top;
+}
+
+.front-bgcolor2 {
+	background-color: #FFF;
+}
+
+.white_content {
+	background-color: #FFF;
+	border: 3px solid #9dbae4;
+	display: none;
+	left: 50px;
+	overflow: hidden;
+	position: absolute;
+	text-align: center;
+	top: 36px;
+	z-index: 10002;
+}
+
+.dheader {
+	background-image: url(../imgv2/front/main/frame_header.gif);
+	background-repeat: repeat-x;
+	height: 26px;
+	width: 100%;
+}
+
+.title {
+	float: left;
+	font-size: 10pt;
+	height: 26px;
+	line-height: 26px;
+	pending: 2px;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	width: 80%;
+}
+
+.title img {
+	float: right;
+}
+
+.close {
+	float: right;
+	height: 26px;
+	line-height: 26px;
+	padding-right: 3px;
+	padding-top: expression(this.offsetHeight-closeImg.offsetHeight)/2px;
+	position: relative;
+	text-align: right;
+	vertical-align: middle;
+	width: 10%;
+}
+
+.dbody {
+	overflow: auto;
+	text-align: center;
+}
+
+.button-class {
+	background-color: #FFF;
+	border-width: 0;
+	cursor: pointer;
+	font-family: Arial, Helvetica;
+	font-size: auto;
+	height: 22px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	padding-right: 5px;
+}
+
+.black_overlay {
+	-moz-opacity: 0.8;
+	background-color: threeddarkshadow;
+	display: none;
+	filter: alpha(opacity =   30);
+	height: 100%;
+	left: 0;
+	opacity: .80;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1001;
+}
+
+@MEDIA print {
+	#activityTable {
+		display: none;
+	}
+}

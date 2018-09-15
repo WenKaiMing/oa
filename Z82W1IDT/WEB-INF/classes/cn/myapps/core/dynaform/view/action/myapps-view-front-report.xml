@@ -1,0 +1,25 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="myapps-view-front-report" extends="myapps-default"
+		namespace="/portal/share/report/oReport">
+		<interceptors>
+			<interceptor-stack name="default">
+				<interceptor-ref name="params" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="defaultStack" />
+
+		<action name="displaySearchForm"
+			class="cn.myapps.core.dynaform.view.action.ViewRunTimeAction"
+			method="displaySearchForm">
+			<result name="success" type="OBPMdispatcher">
+				/portal/share/report/oReport/searchForm.jsp
+			</result>
+			<result name="input" type="OBPMdispatcher">
+				/portal/share/report/oReport/searchForm.jsp
+			</result>
+		</action>
+	</package>
+</struts>

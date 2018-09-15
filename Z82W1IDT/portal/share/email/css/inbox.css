@@ -1,0 +1,525 @@
+.Ibx_hdTips {
+	MARGIN-TOP: -6px; MARGIN-BOTTOM: 10px; COLOR: #777
+}
+.Ibx_Main_Wp {
+	
+}
+.Ibx_Main_Wp .Tips_TbTop {
+	BORDER-RIGHT: medium none; MARGIN: 0px; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+.Ibx_Main_Wp .Tips_NoMail {
+	BORDER-RIGHT: medium none; PADDING-RIGHT: 20px; BORDER-TOP: medium none; PADDING-LEFT: 20px; FONT-WEIGHT: bold; FONT-SIZE: 14px; PADDING-BOTTOM: 40px; MARGIN: 0px; BORDER-LEFT: medium none; COLOR: #777; PADDING-TOP: 40px; BORDER-BOTTOM: #d6d6d6 1px solid
+}
+.icoIbx {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 16px; PADDING-TOP: 0px; HEIGHT: 16px
+}
+.Ibx_gTable {
+	
+}
+HTML > BODY .Ibx_gTable {
+	WIDTH: 100%
+}
+* HTML .Ibx_gTable {
+	TABLE-LAYOUT: fixed; WIDTH: 100%
+}
+.Ibx_gTable TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; OVERFLOW: hidden; PADDING-TOP: 0px; WHITE-SPACE: nowrap; HEIGHT: 26px
+}
+.Ibx_gTable TH {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; OVERFLOW: hidden; PADDING-TOP: 0px; WHITE-SPACE: nowrap; HEIGHT: 26px
+}
+.Ibx_gTable A:link {
+	OVERFLOW: hidden; COLOR: #333; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+.Ibx_gTable A:visited {
+	OVERFLOW: hidden; COLOR: #333; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+.Ibx_gTable A:hover {
+	OVERFLOW: hidden; COLOR: #333; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+.Ibx_gTable A:hover {
+	COLOR: #333; TEXT-DECORATION: underline
+}
+.Ibx_gTable_TT {
+	BORDER-RIGHT: medium none; BACKGROUND-POSITION: 0px -192px; BORDER-TOP: #d6d6d6 1px solid; BORDER-LEFT: medium none; BORDER-BOTTOM: #d6d6d6 1px solid
+}
+.Ibx_gTable_TT TH {
+	FONT-WEIGHT: bold; COLOR: #333
+}
+.Ibx_gTable .Ibx_Th_F {
+	BORDER-RIGHT: #d6d6d6 1px solid; WIDTH: 20px;
+}
+.Ibx_gTable .Ibx_Th_Chkbx {
+	BORDER-RIGHT: #d6d6d6 1px solid; WIDTH: 2%; TEXT-ALIGN: center
+}
+.Ibx_gTable .Ibx_Th_icoInfo {
+	BORDER-RIGHT: #d6d6d6 1px solid; WIDTH: 3%; TEXT-ALIGN: center
+}
+.Ibx_gTable .Ibx_Th_icoInfo .icoIbx {
+	BACKGROUND-POSITION: -168px -8px
+}
+.Ibx_gTable .Ibx_Th_icoFlag {
+	BORDER-RIGHT: #d6d6d6 1px solid; WIDTH: 3%; TEXT-ALIGN: center
+}
+.Ibx_gTable .Ibx_Th_icoFlag .icoIbx {
+	BACKGROUND-POSITION: -584px -8px
+}
+.Ibx_gTable .Ibx_Th_From {
+	BORDER-RIGHT: #d6d6d6 1px solid; PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; WIDTH: 20%; PADDING-TOP: 0px
+}
+.Ibx_gTable .Ibx_Th_Subject {
+	BORDER-RIGHT: #d6d6d6 1px solid; PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.Ibx_gTable .Ibx_Th_Date {
+	BORDER-RIGHT: #d6d6d6 1px solid; PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; WIDTH: 15%; PADDING-TOP: 0px
+}
+.Ibx_gTable .Ibx_Th_icoATCM {
+	BORDER-RIGHT: #d6d6d6 1px solid; WIDTH: 3%; TEXT-ALIGN: center
+}
+.Ibx_gTable .Ibx_Th_icoATCM .icoIbx {
+	BACKGROUND-POSITION: -136px -8px
+}
+
+.Ibx_gTable .Ibx_Th_Size {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; WIDTH: 76px; PADDING-TOP: 0px; TEXT-ALIGN: right
+}
+.Ibx_gTable .Ibx_Th_fdFile {
+	BORDER-RIGHT: #d6d6d6 1px solid; PADDING-RIGHT: 6px; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.Ibx_gTable .Ibx_Th_fdUnRead {
+	BORDER-RIGHT: #d6d6d6 1px solid; WIDTH: 120px; TEXT-ALIGN: center
+}
+.Ibx_gTable .Ibx_Th_fdAllMail {
+	BORDER-RIGHT: #d6d6d6 1px solid; WIDTH: 120px; TEXT-ALIGN: center
+}
+.Ibx_gTable .Ibx_Th_fdSize {
+	BORDER-RIGHT: #d6d6d6 1px solid; PADDING-RIGHT: 30px; WIDTH: 120px; TEXT-ALIGN: right
+}
+.Ibx_gTable .Ibx_Th_fdOpt {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; WIDTH: 300px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+.Ibx_gTable .Ibx_Th_addrName {
+	BORDER-RIGHT: #d6d6d6 1px solid; PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; WIDTH: 170px; PADDING-TOP: 0px
+}
+.Ibx_gTable .Ibx_Th_addrEmail {
+	BORDER-RIGHT: #d6d6d6 1px solid; PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.Ibx_gTable .Ibx_Th_addrMoblie {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; WIDTH: 110px; PADDING-TOP: 0px; TEXT-ALIGN: right
+}
+.Ibx_Lst_dWp {
+	
+}
+.Ibx_gTable_Con {
+	
+}
+.Ibx_gTable_Con .icoIbx {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 16px; PADDING-TOP: 0px; HEIGHT: 16px
+}
+HTML > BODY .Ibx_gTable_Con TD {
+	BORDER-RIGHT: #fff 1px solid
+}
+.Ibx_gTable_Con TD {
+	FONT-SIZE: 12px; BORDER-BOTTOM: #ededed 1px solid; HEIGHT: 32px
+}
+.Ibx_gTable_Con TR {
+	CURSOR: hand
+}
+.Folder .Ibx_gTable_Con TR {
+	CURSOR: default
+}
+.Ibx_gTable .Ibx_Td_F {
+	WIDTH: 20px
+}
+.Ibx_gTable .Ibx_Td_Chkbx {
+	WIDTH: 2%; TEXT-ALIGN: center
+}
+.Ibx_gTable .Ibx_Td_icoInfo {
+	WIDTH: 3%; TEXT-ALIGN: center
+}
+.Ibx_gTable .Ibx_Td_icoInfo .icoIbx {
+	BACKGROUND-POSITION: 16px 16px
+}
+.Ibx_gTable .Ibx_Td_icoFlag {
+	WIDTH: 20px; TEXT-ALIGN: center
+}
+.Ibx_gTable .Ibx_Td_icoFlag .icoIbx {
+	BACKGROUND-POSITION: 16px 16px
+}
+.Ibx_gTable .Ibx_Td_From {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; WIDTH: 20%; PADDING-TOP: 0px
+}
+.Ibx_gTable .Ibx_Td_Subject {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+HTML > BODY .Ibx_gTable TD.Ibx_Td_From {
+	OVERFLOW: hidden; WORD-BREAK: break-all; WHITE-SPACE: nowrap
+}
+* HTML .Ibx_gTable TD.Ibx_Td_From {
+	TABLE-LAYOUT: fixed; OVERFLOW: hidden; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; empty-cells: show
+}
+HTML > BODY .Ibx_gTable TD.Ibx_Td_Subject {
+	OVERFLOW: hidden; WORD-BREAK: break-all; WHITE-SPACE: nowrap
+}
+* HTML .Ibx_gTable TD.Ibx_Td_Subject {
+	TABLE-LAYOUT: fixed; OVERFLOW: hidden; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; empty-cells: show
+}
+HTML > BODY .Ibx_Td_From A {
+	DISPLAY: inline; MARGIN-RIGHT: -10000px
+}
+HTML > BODY .Ibx_Td_Subject A {
+	DISPLAY: inline; MARGIN-RIGHT: -10000px
+}
+HTML > BODY .Ibx_Td_Subject A.lnkFolder {
+	DISPLAY: inline; MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+.Ibx_gTable .Ibx_Td_Subject A.lnkFolder:link {
+	COLOR: #888
+}
+.Ibx_gTable .Ibx_Td_Subject A.lnkFolder:visited {
+	COLOR: #888
+}
+.Ibx_gTable .Ibx_Td_Subject A.lnkFolder:hover {
+	COLOR: #888
+}
+.Ibx_gTable .Ibx_Td_Date {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; WIDTH: 20%; PADDING-TOP: 0px
+}
+.Ibx_gTable .Ibx_Td_icoATCM {
+	WIDTH: 28px; TEXT-ALIGN: center
+}
+.Ibx_gTable .Ibx_Td_icoATCM .icoIbx {
+	BACKGROUND-POSITION: -136px -8px
+}
+.Ibx_gTable .Ibx_Td_Size {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; WIDTH: 76px; PADDING-TOP: 0px; TEXT-ALIGN: right
+}
+.Ibx_gTable .Ibx_Td_fdFile {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.Ibx_gTable .Ibx_Td_fdFile A:link {
+	COLOR: #333; TEXT-DECORATION: underline
+}
+.Ibx_gTable .Ibx_Td_fdFile A:visited {
+	COLOR: #333; TEXT-DECORATION: underline
+}
+.Ibx_gTable .Ibx_Td_fdFile A:hover {
+	COLOR: #333; TEXT-DECORATION: underline
+}
+HTML > BODY .Ibx_gTable TD.Ibx_Td_fdFile {
+	OVERFLOW: hidden; WORD-BREAK: break-all; WHITE-SPACE: nowrap
+}
+* HTML .Ibx_gTable TD.Ibx_Td_fdFile {
+	TABLE-LAYOUT: fixed; OVERFLOW: hidden; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; empty-cells: show
+}
+HTML > BODY .Ibx_Td_fdFile A {
+	DISPLAY: inline; FLOAT: left; MAX-WIDTH: 100%; MARGIN-RIGHT: -10000px
+}
+.Ibx_gTable .Ibx_Td_fdUnRead {
+	WIDTH: 120px; TEXT-ALIGN: center
+}
+.Ibx_gTable .Ibx_Td_fdUnRead A:link {
+	FONT-WEIGHT: bold; COLOR: #e60012; TEXT-DECORATION: underline
+}
+.Ibx_gTable .Ibx_Td_fdUnRead A:visited {
+	FONT-WEIGHT: bold; COLOR: #e60012; TEXT-DECORATION: underline
+}
+.Ibx_gTable .Ibx_Td_fdUnRead A:hover {
+	FONT-WEIGHT: bold; COLOR: #e60012; TEXT-DECORATION: underline
+}
+.Ibx_gTable .Ibx_Td_fdAllMail {
+	WIDTH: 120px; TEXT-ALIGN: center
+}
+.Ibx_gTable .Ibx_Td_fdSize {
+	PADDING-RIGHT: 30px; WIDTH: 120px; TEXT-ALIGN: right
+}
+.Ibx_gTable .Ibx_Td_fdOpt {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; WIDTH: 300px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+.Ibx_gTable .Ibx_Td_fdOpt P {
+	FLOAT: left; WIDTH: 48px
+}
+.Ibx_gTable .Ibx_Td_fdOpt P.Extra {
+	WIDTH: 60px
+}
+.Ibx_gTable .Ibx_Td_fdOpt A:link {
+	COLOR: #0068b7; TEXT-DECORATION: underline
+}
+.Ibx_gTable .Ibx_Td_fdOpt A:visited {
+	COLOR: #0068b7; TEXT-DECORATION: underline
+}
+.Ibx_gTable .Ibx_Td_fdOpt A:hover {
+	COLOR: #0068b7; TEXT-DECORATION: underline
+}
+.Ibx_gTable .Ibx_Td_addrName {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; WIDTH: 170px; PADDING-TOP: 0px
+}
+.Ibx_gTable .Ibx_Td_addrEmail {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.Ibx_gTable .Ibx_Td_addrMoblie {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; WIDTH: 110px; PADDING-TOP: 0px; TEXT-ALIGN: right
+}
+HTML > BODY .Ibx_gTable TD.Ibx_Td_addrName {
+	OVERFLOW: hidden; WORD-BREAK: break-all; WHITE-SPACE: nowrap
+}
+* HTML .Ibx_gTable TD.Ibx_Td_addrName {
+	TABLE-LAYOUT: fixed; OVERFLOW: hidden; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; empty-cells: show
+}
+HTML > BODY .Ibx_gTable TD.Ibx_Td_addrEmail {
+	OVERFLOW: hidden; WORD-BREAK: break-all; WHITE-SPACE: nowrap
+}
+* HTML .Ibx_gTable TD.Ibx_Td_addrEmail {
+	TABLE-LAYOUT: fixed; OVERFLOW: hidden; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; empty-cells: show
+}
+HTML > BODY .Ibx_Td_addrName A {
+	DISPLAY: inline; FLOAT: left; MAX-WIDTH: 100%; MARGIN-RIGHT: -10000px
+}
+HTML > BODY .Ibx_Td_addrEmail A {
+	DISPLAY: inline; FLOAT: left; MAX-WIDTH: 100%; MARGIN-RIGHT: -10000px
+}
+.Ibx_gTable .Ibx_Td_addrMoblie A:link {
+	COLOR: #999; TEXT-DECORATION: underline
+}
+.Ibx_gTable .Ibx_Td_addrMoblie A:visited {
+	COLOR: #999; TEXT-DECORATION: underline
+}
+.Ibx_gTable .Ibx_Td_addrMoblie A:hover {
+	COLOR: #999; TEXT-DECORATION: underline
+}
+.Ibx_Lst_dTT {
+	FONT-WEIGHT: bold; CURSOR: default; COLOR: #666; LINE-HEIGHT: 26px; BORDER-BOTTOM: #ededed 1px solid; HEIGHT: 26px; BACKGROUND-COLOR: #f7f7f7
+}
+.Ibx_Lst_dTT .Txt {
+	MARGIN-TOP: 1px; DISPLAY: block; PADDING-LEFT: 20px
+}
+.Ibx_Lst_dTT A {
+	FONT-WEIGHT: normal
+}
+.dWpOpen .Ibx_Lst_dTT .icoIbx {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 20px; PADDING-TOP: 0px; HEIGHT: 24px
+}
+.dWpCls .Ibx_Lst_dTT .icoIbx {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 20px; PADDING-TOP: 0px; HEIGHT: 24px
+}
+.Ibx_Lst_bExtra {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; CURSOR: default; COLOR: #666; LINE-HEIGHT: 26px; PADDING-TOP: 0px; BORDER-BOTTOM: #ededed 1px solid; HEIGHT: 26px; BACKGROUND-COLOR: #f7f7f7
+}
+.dWpOpen .Ibx_Lst_dTT .icoIbx {
+	BACKGROUND-POSITION: -5px -292px
+}
+.dWpOpen .Ibx_gTable_Con {
+	
+}
+.dWpCls .Ibx_Lst_dTT .icoIbx {
+	BACKGROUND-POSITION: -5px -260px
+}
+.dWpcls .Ibx_gTable_Con {
+	DISPLAY: none
+}
+.gIcoFlag {
+	LINE-HEIGHT: 16px; HEIGHT: 16px
+}
+.I_Mark0 A:link {
+	COLOR: #000
+}
+.I_Mark0 A:visited {
+	COLOR: #000
+}
+.I_Mark0 A:hover {
+	COLOR: #000
+}
+.I_Mark0 .Ibx_Td_icoFlag .icoIbx {
+	
+}
+.I_Mark0 .Ibx_Td_icoFlag .readed {
+	
+}
+.I_Mark1 A:link {
+	COLOR: #990000
+}
+.I_Mark1 A:visited {
+	COLOR: #990000
+}
+.I_Mark1 A:hover {
+	COLOR: #990000
+}
+.I_Mark1 .Ibx_Td_icoFlag .icoIbx {
+	BACKGROUND-POSITION: -296px -8px
+}
+.I_Mark2 A:link {
+	COLOR: #006600
+}
+.I_Mark2 A:visited {
+	COLOR: #006600
+}
+.I_Mark2 A:hover {
+	COLOR: #006600
+}
+.I_Mark2 .Ibx_Td_icoFlag .icoIbx {
+	BACKGROUND-POSITION: -328px -8px
+}
+.I_Mark3 A:link {
+	COLOR: #e38800
+}
+.I_Mark3 A:visited {
+	COLOR: #e38800
+}
+.I_Mark3 A:hover {
+	COLOR: #e38800
+}
+.I_Mark3 .Ibx_Td_icoFlag .icoIbx {
+	BACKGROUND-POSITION: -360px -8px
+}
+.I_Mark4 A:link {
+	COLOR: #26a5a8
+}
+.I_Mark4 A:visited {
+	COLOR: #26a5a8
+}
+.I_Mark4 A:hover {
+	COLOR: #26a5a8
+}
+.I_Mark4 .Ibx_Td_icoFlag .icoIbx {
+	BACKGROUND-POSITION: -392px -8px
+}
+.I_Mark5 A:link {
+	COLOR: #ff6699
+}
+.I_Mark5 A:visited {
+	COLOR: #ff6699
+}
+.I_Mark5 A:hover {
+	COLOR: #ff6699
+}
+.I_Mark5 .Ibx_Td_icoFlag .icoIbx {
+	BACKGROUND-POSITION: -424px -8px
+}
+.I_Mark6 A:link {
+	COLOR: #003399
+}
+.I_Mark6 A:visited {
+	COLOR: #003399
+}
+.I_Mark6 A:hover {
+	COLOR: #003399
+}
+.I_Mark6 .Ibx_Td_icoFlag .icoIbx {
+	BACKGROUND-POSITION: -456px -8px
+}
+.I_Mark7 A:link {
+	COLOR: #996600
+}
+.I_Mark7 A:visited {
+	COLOR: #996600
+}
+.I_Mark7 A:hover {
+	COLOR: #996600
+}
+.I_Mark7 .Ibx_Td_icoFlag .icoIbx {
+	BACKGROUND-POSITION: -488px -8px
+}
+.I_Mark8 A:link {
+	COLOR: #993399
+}
+.I_Mark8 A:visited {
+	COLOR: #993399
+}
+.I_Mark8 A:hover {
+	COLOR: #993399
+}
+.I_Mark8 .Ibx_Td_icoFlag .icoIbx {
+	BACKGROUND-POSITION: -520px -8px
+}
+.I_Mark15 A:link {
+	COLOR: #333
+}
+.I_Mark15 A:visited {
+	COLOR: #333
+}
+.I_Mark15 A:hover {
+	COLOR: #333
+}
+.I_Mark15 .Ibx_Td_icoFlag .icoIbx {
+	BACKGROUND-POSITION: -552px -8px
+}
+.I_UnRd {
+	FONT-WEIGHT: normal;
+}
+.I_UnRd .Ibx_Td_icoInfo .icoIbx {
+	BACKGROUND-POSITION: -200px -8px
+}
+.I_UnRd .Ibx_Td_icoInfo .readed {
+	PADDING-RIGHT: 8px; 
+	PADDING-LEFT: 8px; 
+	PADDING-BOTTOM: 0px; 
+	LINE-HEIGHT: 18px; 
+	PADDING-TOP: 0px; 
+	HEIGHT: 18px;
+	background-image:url('../images/ico.gif');
+	background-repeat:no-repeat;
+	background-position: -264px -136px;
+}
+.I_fdCustom {
+	BACKGROUND-COLOR: #f6fafd
+}
+.I_fdCustom TD {
+	BORDER-RIGHT-COLOR: #f6fafd
+}
+.Ibx_gTable_TT .icoDown {
+	BACKGROUND-POSITION: -232px -8px; CURSOR: hand; LINE-HEIGHT: 13px; HEIGHT: 13px
+}
+.Ibx_gTable_TT .icoUp {
+	BACKGROUND-POSITION: -264px -8px; CURSOR: hand; LINE-HEIGHT: 13px; HEIGHT: 13px
+}
+.Ibx_gTable .Ibx_Td_icoInfo .icoReply {
+	BACKGROUND-POSITION: -616px -8px
+}
+.Ibx_gTable .Ibx_Td_icoInfo .icoForward {
+	BACKGROUND-POSITION: -648px -8px
+}
+.Ibx_gTable .Ibx_Td_icoInfo .icoReplyForward {
+	BACKGROUND-POSITION: -680px -8px
+}
+.Ibx_gTable .Ibx_Td_icoInfo .icoSysNotice {
+	BACKGROUND-POSITION: -712px -8px
+}
+.Ibx_gTable .Ibx_Td_icoInfo .icoSysNotice2 {
+	BACKGROUND-POSITION: -744px -8px
+}
+.Ibx_gTable .Ibx_Td_icoInfo .icoDrafts {
+	BACKGROUND-POSITION: -168px -72px
+}
+.Ibx_gTable .Ibx_Td_icoInfo .icoRead {
+	BACKGROUND-POSITION: 16px 16px
+}
+.Ibx_gTable .Ibx_Td_icoInfo .icoTalk {
+	BACKGROUND-POSITION: -232px -72px
+}
+.Ibx_gTable .Ibx_Td_icoInfo .icoDTime {
+	BACKGROUND-POSITION: -264px -72px
+}
+.Ibx_gTable .Ibx_Td_icoInfo .icoUrgent {
+	BACKGROUND-POSITION: -333px -72px; FLOAT: right; MARGIN-LEFT: -4px; WIDTH: 8px
+}
+.Ibx_gTable .Ibx_Td_icoInfo .icoSlow {
+	BACKGROUND-POSITION: -365px -72px; FLOAT: right; MARGIN-LEFT: -4px; WIDTH: 8px
+}
+.Ibx_gTable .Ibx_Td_icoInfo .icoSendOk {
+	BACKGROUND-POSITION: -422px -73px; WIDTH: 24px
+}
+.Ibx_gTable .Ibx_Td_icoInfo .icoSending {
+	BACKGROUND-POSITION: -454px -73px; WIDTH: 24px
+}
+.Ibx_gTable .Ibx_Td_icoInfo .icoSendUnk {
+	BACKGROUND-POSITION: -486px -73px; WIDTH: 24px
+}
+.Ibx_gTable .Ibx_Td_icoInfo .icoSendFailure {
+	BACKGROUND-POSITION: -518px -73px; WIDTH: 24px
+}
+.Ibx_gTable .Ibx_Td_icoInfo .icoSend {
+	BACKGROUND-POSITION: -550px -73px; WIDTH: 24px
+}
+.Ibx_gTable .Ibx_Td_F .icoBackSgn {
+	BACKGROUND-POSITION: -776px -8px
+}

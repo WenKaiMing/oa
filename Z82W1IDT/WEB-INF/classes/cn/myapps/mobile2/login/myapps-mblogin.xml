@@ -1,0 +1,23 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="mblogin2" extends="myapps-default" namespace="/mobile2/login">
+		<action name="login"
+			class="cn.myapps.mobile2.login.MbLoginAction"
+			method="doLogin">
+			<result name="success" type="dispatcher">
+				/mobile2/result.jsp
+			</result>
+		   	<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+		</action>
+		
+		<action name="logout"
+			class="cn.myapps.mobile2.login.MbLoginAction"
+			method="doLogout">
+		   	<interceptor-ref name="validationWorkflowStack"/>
+			<interceptor-ref name="params" />
+		</action>
+	</package>
+</struts>

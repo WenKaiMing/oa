@@ -1,0 +1,66 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="myapps-report-crossreport-runtime" extends="myapps-default"
+		namespace="/portal/report/crossreport/runtime">
+		
+		<action name="runreport"
+			class="cn.myapps.core.report.crossreport.runtime.action.RuntimeFrontAction"
+			method="doRunReport">
+			<result name="success" type="dispatcher">
+				/portal/share/report/crossreport/runtime/content.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+		
+		<action name="runreportprint"
+			class="cn.myapps.core.report.crossreport.runtime.action.RuntimeFrontAction"
+			method="doRunReport">
+			<result name="success" type="dispatcher">
+				/portal/share/report/crossreport/runtime/print.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+		
+		<action name="doSearchForm"
+			class="cn.myapps.core.report.crossreport.runtime.action.RuntimeFrontAction"
+			method="doSearchForm">
+			<result name="success" type="dispatcher">
+				/portal/share/report/crossreport/runtime/query.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+		
+		<action name="detailreport"
+			class="cn.myapps.core.report.crossreport.runtime.action.RuntimeDetailFrontAction"
+			method="doDetailReport">
+			<result name="success" type="dispatcher">
+				/portal/share/report/crossreport/runtime/detail.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+		<action name="export"
+			class="cn.myapps.core.report.crossreport.runtime.action.RuntimeAction"
+			method="doExport">
+			<result name="success" type="dispatcher">
+				/portal/share/report/crossreport/runtime/export.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+		<action name="exportexcel"
+			class="cn.myapps.core.report.crossreport.runtime.action.RuntimeAction"
+			method="doExportExcel">
+			<result name="success" type="dispatcher">
+				/portal/share/report/crossreport/runtime/export.jsp
+			</result>
+			<interceptor-ref name="params" />
+			<interceptor-ref name="prepare" />
+		</action>
+	</package>
+</struts>

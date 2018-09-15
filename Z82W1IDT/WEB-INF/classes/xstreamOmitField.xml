@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xstream>
+	<class name="cn.myapps.core.deploy.module.ejb.ModuleVO">
+		<field name="application" />
+		<field name="views" />
+		<field name="forms" />
+		<field name="imglibs" />
+		<field name="stylelibs" />
+		<field name="flowdefis" />
+		<field name="tasks" />
+		<field name="printers" />
+	</class>
+
+	<class name="cn.myapps.core.dynaform.form.ejb.Form">
+		<field name="_compiledElements" />
+		<field name="lastmodifier" />
+		<field name="activitys" />
+	</class>
+	
+	<class name="cn.myapps.core.task.ejb.Task">
+		<field name="daysOfWeek" />
+	</class>
+
+	<class name="cn.myapps.core.dynaform.view.ejb.View">
+		<field name="columns" />
+		<field name="activitys" />
+		<field name="EditModeType" />
+	</class>
+
+	<class name="cn.myapps.core.homepage.ejb.HomePage">
+		<field name="reminders" />
+	</class>
+	
+	<class name="cn.myapps.core.user.ejb.UserDefined">
+		<field name="summaryCfgs" />
+	</class>
+
+	<class name="cn.myapps.core.resource.ejb.ResourceVO">
+		<field name="relatedPermissions" />
+	</class>
+
+	<class name="cn.myapps.core.role.ejb.RoleVO">
+		<field name="permission" />
+		<field name="users" />
+	</class>
+</xstream>

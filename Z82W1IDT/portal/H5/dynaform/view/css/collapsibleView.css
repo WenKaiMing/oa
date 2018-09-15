@@ -1,0 +1,35 @@
+@charset "utf-8";
+/**折叠视图中使用--start**/
+.FoldMaster {
+	
+}
+td.collapsible {
+	padding-left:30px; 
+	text-align: left;
+	font-weight: bold;
+}
+
+td.collapsible.folded {
+	background: url('../../../resource/document/folded.png') no-repeat 5px;
+	padding-left:20px;
+	cursor: pointer;
+}
+
+td.collapsible.unfolded {
+	background: url('../../../resource/document/unfolded.png') no-repeat  5px;
+	padding-left:20px;
+	cursor: pointer;
+}
+
+.page-nav {
+	background:#ECF2F4;
+	height: 27px;
+	line-height:27px;
+	margin-top: 0;
+	width: 100%;
+}
+
+.front-visibility-hidden {
+	visibility: hidden;
+}
+/**折叠视图中使用--end**/

@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color:#FFFFDD
+}
+
+ul,li {
+	list-style: none;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding: 0;
+}
+
+a {
+	cursor: pointer;
+}
+
+.helpitem {
+	padding-bottom: 15px;
+}
+
+.title {
+	padding: 3px;
+	font-size: 14px;
+	font-weight:bold;
+	color: #000000;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.content {
+	padding-left: 12px;
+	padding-right: 10px;
+	text-align: left;
+	vertical-align: middle;
+	font-size: 12px;
+	color: #000000;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.selectHelp {
+	color: #0000CC;
+	font-size: 14px;
+	font: bold;
+}
+
+.ontips {
+	border: 0px solid #0000CC;
+	background-color: #DDDDDD;
+	color: red;
+}
+
+.licontent {
+	margin: 5px;
+	margin-left: 10px;
+}
+
+p {
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	text-indent: 2em;
+}
+
+image {
+	border: 0px;
+}

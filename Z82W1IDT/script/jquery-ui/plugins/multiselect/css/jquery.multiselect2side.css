@@ -1,0 +1,57 @@
+.ms2side__div {
+	padding: 1px;
+	background : url('') repeat-x; // HACK FOR CHROME
+}
+
+.ms2side__header {
+	color: blue;
+	background-color: #EEEEFF;
+}
+
+.ms2side__options, .ms2side__updown {
+	font-size: 10pt;
+	margin: 0 8px;
+	padding: 0;
+	width: 40px;
+	color: black;
+	text-align: center;
+	overflow: hidden;
+}
+
+.ms2side__updown {
+	font-size: 9pt;
+}
+
+.ms2side__options p, .ms2side__updown p {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	cursor: hand;
+	border: 1px solid black;
+}
+
+.ms2side__options p.ms2side_hover, .ms2side__updown p.ms2side_hover {
+	background-color: #F0F0FF;
+	border-color: #0000FF;
+	cursor: hand;
+}
+
+.ms2side__options p.ms2side__hide, .ms2side__updown p.ms2side__hide {
+	cursor: default;
+	color: grey;
+	border: 1px solid grey;
+	background-color: #F0F0F0;
+	margin: 0;
+}
+
+.ms2side__div select {
+	border: solid 1px;
+	padding: 0;
+	margin: 0;
+	width: 220px;
+	height: 71px;
+}
+
+.ms2side__options td {
+	width: 30px;
+}

@@ -1,0 +1,62 @@
+.layui-layer .row{
+	margin:0px;
+}
+.layui-layer #flowprocessDiv{
+	margin:0px;
+}
+#fieldset_commit_to div,
+#flow-reminder-text-up div,
+#fieldset_return_to .flow-back{
+	margin: 10px;
+}
+
+#flow-reminder-panel fieldset,
+#flowprocessDiv fieldset {
+	min-height: 158px;
+}
+#flow-reminder-panel #div_button_place,
+#flowprocessDiv #div_button_place {
+    margin-right: 15px;
+}
+#flow-reminder-panel .flow-reminder-counter{
+	position: absolute;
+    right: 34px;
+    top: 3px;
+    background: #fff;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #c1c1c1;
+}
+#flowHtmlForm #textarea_counter{
+    position: absolute;
+    right: 42px;
+    top: 0px;
+    background: #fff;
+    padding: 0 20px;
+}
+#flowHtmlForm fieldset .write,#flowHtmlForm fieldset .btn-reset{
+	margin:0 8px 0 0;
+}
+#fieldset_remark_usual {
+	cursor: pointer;
+	padding-left:8px;
+}
+.fieldset_remark_button{
+	position:relative;
+	bottom:-10px;
+}
+#fieldset_remark_usual > i {
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+.commonOpinions li .text {
+	width: 145px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.commonOpinions ul.editOpinions li .text {
+	width: 80px;
+}

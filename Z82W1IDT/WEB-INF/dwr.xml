@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- START SNIPPET: dwr -->
+<!DOCTYPE dwr PUBLIC 
+	"-//GetAhead Limited//DTD Direct Web Remoting 1.0//EN" 
+	"http://www.getahead.ltd.uk/dwr/dwr10.dtd">
+
+<dwr>
+	<allow>
+		<create creator="new" javascript="Sequence">
+			<param name="class" value="cn.myapps.util.sequence.Sequence"/>
+		</create>
+		<create creator="new" javascript="validator">
+			<param name="class" value="com.opensymphony.webwork.validators.DWRValidator"/>
+		</create>
+		<!--<create creator="new" javascript="ConfigUtil">
+			<param name="class" value="cn.myapps.core.resource.action.WebWorkConfigUtil"/>
+		</create>
+		--><create creator="new" javascript="OperationHelper">
+			<param name="class" value="cn.myapps.core.privilege.operation.action.OperationHelper"/>
+		</create>
+		<create creator="new" javascript="PermissionHelper">
+			<param name="class" value="cn.myapps.core.permission.action.PermissionHelper"/>
+		</create>
+		<create creator="new" javascript="DepartmentHelper">
+			<param name="class" value="cn.myapps.core.department.action.DepartmentHelper"/>
+		</create>
+		<create creator="new" javascript="DWRHtmlUtil">
+			<param name="class" value="cn.myapps.util.web.DWRHtmlUtils"/>
+		</create>
+		<create creator="new" javascript="ModuleHelper">
+			<param name="class" value="cn.myapps.core.deploy.module.action.ModuleHelper"/>
+		</create>
+		<create creator="new" javascript="ApplicationUtil">
+			<param name="class" value="cn.myapps.core.deploy.application.action.ApplicationUtil"/>
+		</create>
+		<create creator="new" javascript="HelpHelper">
+			<param name="class" value="cn.myapps.core.helper.action.HelpHelper"/>
+		</create>
+		<create creator="new" javascript="ExpUtil">
+			<param name="class" value="cn.myapps.core.expimp.exp.action.ExpUtil"/>
+		</create>
+		<create creator="new" javascript="UserUtil">
+			<param name="class" value="cn.myapps.core.user.action.UserUtil"/>
+		</create>
+		<create creator="new" javascript="ActivityUtil">
+			<param name="class" value="cn.myapps.core.dynaform.activity.action.ActivityUtil"/>
+		</create>
+		<create creator="new" javascript="StringUtil">
+			<param name="class" value="cn.myapps.util.StringUtil"/>
+		</create>
+		<create creator="new" javascript="FormHelper">
+			<param name="class" value="cn.myapps.core.dynaform.form.action.FormHelper"/>
+		</create>
+		<create creator="new" javascript="RoleHelper">
+			<param name="class" value="cn.myapps.core.role.action.RoleHelper"/>
+		</create>
+		<create creator="new" javascript="RoleUtil">
+			<param name="class" value="cn.myapps.core.role.action.RoleUtil"/>
+		</create>
+		<create creator="new" javascript="ComponentUtil">
+			<param name="class" value="cn.myapps.core.dynaform.component.action.ComponentUtil"/>
+		</create>
+		
+		<create creator="new" javascript="ResourceUtil">
+			<param name="class" value="cn.myapps.core.resource.action.ResourceUtil"/>
+		</create>
+		<create creator="new" javascript="ViewHelper">
+			<param name="class" value="cn.myapps.core.dynaform.view.action.ViewHelper"/>
+		</create>
+		<create creator="new" javascript="PersonalMessageHelper">
+			<param name="class" value="cn.myapps.core.personalmessage.action.PersonalMessageHelper"/>
+		</create>
+		<create creator="new" javascript="WizardUtil">
+			<param name="class" value="cn.myapps.core.wizard.util.WizardUtil"/>
+		</create>
+		<create creator="new" javascript="SequenceUtil">
+			<param name="class" value="cn.myapps.core.workflow.utility.Sequence"/>
+		</create>
+		<create creator="new" javascript="ViewUtil">
+			<param name="class" value="cn.myapps.core.dynaform.view.action.ViewUtil"/>
+		</create>
+		<create creator="new" javascript="ColumnUtil">
+			<param name="class" value="cn.myapps.core.dynaform.view.action.ColumnUtil"/>
+		</create>
+		<create creator="new" javascript="ReminderUtil">
+			<param name="class" value="cn.myapps.core.homepage.action.ReminderUtil"/>
+		</create>
+		<create creator="new" javascript="SummaryCfgHelper">
+			<param name="class" value="cn.myapps.core.dynaform.summary.action.SummaryCfgHelper"/>
+		</create>
+		<create creator="new" javascript="FormulaTree">
+			<param name="class" value="cn.myapps.core.formula.FormulaTree"/>
+		</create>
+		<create creator="new" javascript="FormulaTreeHelper">
+			<param name="class" value="cn.myapps.core.formula.FormulaTreeHelper"/>
+		</create>
+		<create creator="none" javascript="DebugGui">
+			<param name="class" value="cn.myapps.core.macro.runner.DebugGui"/>
+		</create>
+		<create creator="none" javascript="CompileHelper">
+			<param name="class" value="cn.myapps.core.macro.runner.CompileHelper"/>
+		</create>
+        <create creator="new" javascript="StateMachineUtil">
+			<param name="class" value="cn.myapps.core.workflow.engine.StateMachineUtil"/>
+		</create> 
+		<create creator="new" javascript="ReportUtil">
+			<param name="class" value="cn.myapps.core.report.standardreport.action.ReportUtil"/>
+		</create>
+		<create creator="new" javascript="DocumentUtil">
+			<param name="class" value="cn.myapps.core.dynaform.document.action.DocumentUtil"/>
+		</create>
+		<create creator="new" javascript="MsgCount">
+			<param name="class" value="cn.myapps.core.personalmessage.action.PersonalMessageHelper"/>
+		</create> 
+		
+		<create creator="new" javascript="CrossReportHelper">
+			<param name="class" value="cn.myapps.core.report.crossreport.runtime.action.RuntimeHelper"/>
+		</create> 
+		
+		<create creator="new" javascript="RunQianReportHelper">
+			<param name="class" value="cn.myapps.core.report.runqianreport.RunQianReportHelper"/>
+		</create> 
+		
+		<create creator="new" javascript="BillDefiHelper">
+			<param name="class" value="cn.myapps.core.workflow.storage.definition.action.BillDefiHelper"/>
+		</create>
+		
+		<create creator="new" javascript="ApplicationHelper">
+			<param name="class" value="cn.myapps.core.deploy.application.action.ApplicationHelper"/>
+		</create>
+				
+		<create creator="new" javascript="WordFieldHelper">
+			<param name="class" value="cn.myapps.core.dynaform.form.ejb.WordFieldHelper"/>
+		</create>
+		
+		<create creator="new" javascript="FieldMappingUtil">
+			<param name="class" value="cn.myapps.core.workflow.element.mapping.FieldMappingUtil"/>
+		</create>
+		
+		<create creator="new" javascript="DataManageUtil">
+			<param name="class" value="cn.myapps.core.sysconfig.util.DataManageUtil"/>
+		</create>
+		
+		<create creator="new" javascript="UsbKeyUtil">
+			<param name="class" value="cn.myapps.util.UsbKeyUtil"/>
+		</create>
+		
+		<create creator="new" javascript="CategoryHelper">
+			<param name="class" value="cn.myapps.km.category.ejb.CategoryHelper"/>
+		</create>
+		
+		<create creator="new" javascript="TaskHelper">
+			<param name="class" value="cn.myapps.pm.task.action.TaskHelper"/>
+		</create>
+		
+		<create creator="new" javascript="ProjectHelper">
+			<param name="class" value="cn.myapps.pm.project.action.ProjectHelper"/>
+		</create>
+		
+		<create creator="new" javascript="LinkHelper">
+			<param name="class" value="cn.myapps.core.links.action.LinkHelper"/>
+		</create>
+
+		<convert match="cn.myapps.core.dynaform.view.ejb.Column" converter="bean">
+			<param name="exclude" value="formField"/>
+		</convert>
+		
+		<convert match="cn.myapps.core.deploy.module.ejb.ModuleVO" converter="bean" >
+			<param name="include" value="id, name, superior, description, ispublished"/>
+		</convert>
+		
+		<convert match="cn.myapps.core.resource.ejb.ResourceVO" converter="bean">
+			<param name="include" value="id, description, engdescription, actionurl, actionclass, orderno, 
+			isprotected, showtotalrow, ico, type, superior"/>
+		</convert>
+		
+		<convert match="cn.myapps.core.department.ejb.DepartmentVO" converter="bean">
+			<param name="include" value="id,level,name,superior,code,domain,engname"/>
+		</convert>
+		
+		<convert match="cn.myapps.core.deploy.application.ejb.ApplicationVO" converter="bean">
+			<param name="include" value="id, name, domainName, logourl, type, datasourceid, 
+			resourcepath, description, modules, owners"/>
+		</convert>
+		
+		<convert match="cn.myapps.core.dynaform.activity.ejb.Activity" converter="bean">
+			<param name="exclude" value="actionUrl, afterAction, backAction, parentFullName"/>
+		</convert>
+		<convert match="cn.myapps.core.workflow.element.mapping.FieldMappingItem" converter="bean">
+		<param name="include" value="parentField,subField,script"/>
+		</convert>
+		<convert converter="bean" match="cn.myapps.core.macro.runner.*"/>
+		<convert converter="bean" match="com.opensymphony.xwork.ValidationAwareSupport" />
+	</allow>
+
+	<signatures>
+	<![CDATA[
+		import java.util.Map;
+		import java.util.Collection;
+		import java.util.TreeSet;
+		import javax.servlet.http.HttpServletRequest;
+		import com.opensymphony.webwork.validators.DWRValidator;
+		import cn.myapps.core.dynaform.form.action.FormHelper;
+		import cn.myapps.core.dynaform.view.action.ViewHelper;
+		import cn.myapps.core.privilege.operation.action.OperationHelper;
+		import cn.myapps.core.permission.action.PermissionHelper;
+		import cn.myapps.core.role.action.RoleHelper;
+		import cn.myapps.core.dynaform.view.action.ColumnUtil;
+		import cn.myapps.core.dynaform.activity.action.ActivityUtil;
+		import cn.myapps.core.workflow.element.mapping.FieldMappingUtil;
+		import cn.myapps.core.dynaform.view.ejb.Column;
+		import cn.myapps.core.dynaform.activity.ejb.Activity;
+		import cn.myapps.core.workflow.element.mapping.FieldMappingItem;
+		import cn.myapps.core.dynaform.document.action.DocumentUtil;
+		import cn.myapps.core.report.standardreport.action.ReportUtil;
+		import cn.myapps.core.macro.runner.CompileHelper;
+
+		DWRValidator.doPost(String, String, Map<String, String>);
+		FormHelper.refresh(String, String, String, String, Map<String, String>, String, HttpServletRequest);
+		FormHelper.refreshFlowPanelHTML(String, String, String, Map<String, String>, String, String, HttpServletRequest);
+		
+		ViewHelper.convertValuesMapToPage(Map<String, String>);
+		ColumnUtil.parseObject(TreeSet<Column>);
+		ColumnUtil.toListHtml(TreeSet<Column>, HttpServletRequest);
+		ActivityUtil.parseObject(TreeSet<Activity>);
+		FieldMappingUtil.parseObject(TreeSet<FieldMappingItem>);
+		ActivityUtil.toListHtml(TreeSet<Activity>, HttpServletRequest);
+		
+		DocumentUtil.doNew(String, Map<String, String>, HttpServletRequest);
+		DocumentUtil.doRefresh(String, Map<String, String>, HttpServletRequest);
+		DocumentUtil.doSave(String, String, Map<String, String>, HttpServletRequest);
+		DocumentUtil.getInformationfeedbackInfo(String docid, String fieldname, String application);
+		DocumentUtil.doUpdateInformationfeedbackInfo(String docid, String fieldname, String filedValue, String application);
+		
+		ReportUtil.getSummaryReportChart(Map<String, String>, HttpServletRequest);
+
+		CompileHelper.compile(String, HttpServletRequest);
+	]]>
+	</signatures>
+</dwr>
+<!-- END SNIPPET: dwr -->

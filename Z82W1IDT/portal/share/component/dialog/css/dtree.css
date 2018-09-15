@@ -1,0 +1,34 @@
+input{margin:0;padding:0;}
+.myBODY {
+	font-family: Arial; margin-left:12px; SCROLLBAR-ARROW-COLOR: #000000; SCROLLBAR-BASE-COLOR: #F2F2F2; TEXT-ALIGN: center
+}
+.dtree {
+	font-family: Arial;FONT-SIZE: 12px; COLOR: #000000; WHITE-SPACE: nowrap
+}
+.dtree IMG {
+	font-family: Arial;BORDER-RIGHT: 0px; BORDER-TOP: 0px; _VERTICAL-ALIGN: middle; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; vertical-align:bottom;
+}
+*+html .dtree img {
+	vertical-align: middle;
+}
+.dtree A {
+    font-family: Arial;FONT-SIZE: 12px; COLOR: #636365; TEXT-DECORATION: none
+}
+.dtree A.node {
+	font-family: Arial;PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 12px; PADDING-BOTTOM: 1px; COLOR: #636365; PADDING-TOP: 1px; WHITE-SPACE: nowrap
+}
+.dtree A.nodeSel {
+	font-family: Arial;PADDING-RIGHT: 2px; PADDING-LEFT: 2px;FONT-SIZE: 14px; PADDING-BOTTOM: 1px; COLOR: red;PADDING-TOP: 1px; WHITE-SPACE: nowrap
+}
+.dtree A.node:hover {
+	font-family: Arial;FONT-SIZE: 14px; COLOR:  #9EA4A9; TEXT-DECORATION: none;
+}
+.dtree A.nodeSel:hover {
+    font-family: Arial;FONT-SIZE: 14px; COLOR: red; TEXT-DECORATION: none;
+}
+.dtree A.nodeSel {
+	BACKGROUND-COLOR:#FFFFFF; /*#cccccc*/
+}
+.dtree .checkbox {
+	WIDTH: 16px; HEIGHT: 16px; align: center; valign: middle; vertical-align: bottom;
+}

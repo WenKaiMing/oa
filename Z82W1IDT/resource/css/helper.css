@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+/**helper help**/
+
+/**right_help背景**/
+#RHDiv{background-color:#FFFFDD;}
+
+.helper{margin: 0px;background-color:#FFFFDD;}
+
+.HCtitle{height: 18px;background-color:#E0E8ED;}
+.thisTitle{text-align: left;padding: 3px;font-size:12px;font-weight: bold;color:#000000;float: left;}
+.closeHelpImg{float: right;width: 16px;padding-top: 2px;cursor: pointer;}
+.switcher{dispaly:none; width:55px;float: right;text-align:right;padding-top: 10px;font-size:12px;background-color: red}
+.mainIndex{clear: all; padding: 1px;}
+.HSdiv{padding-bottom: 3px;font-size: 14px;vertical-align: middle; border-bottom: 0px solid gray;}
+.getPageItem{width: 80px;float: left;text-align: left;padding: 5px;font-size:12px;color:red;}
+.isCloseIndex{width:55px;float: right;text-align:right;padding: 3px;font-size:12px;}
+.HT{clear: right;padding-top: 0;margin-top: 0;vertical-align: top; width: 100%;}
+.thisPageContent{clear: all;vertical-align: top;width: 100%;overflow:auto;}
+
+/*help 所有主题tree*/
+#helpcontent{clear: all;}
+#helpcontent ul,#helpcontent li{list-style: none;}
+#helpcontent ul ul{margin-left: 15px;}
+.helpmenus{font-size: 9pt;height:18px;padding-bottom: 2px;}
+.imghelpmenustopic{width: 9px;height: 9px;border: 0; vertical-align: middle;margin-right: 3px; cursor: pointer;}
+.imghelpmenus{width: 16px;height: 15px;border: 0;cursor: pointer;}
+.imghelpmenus2{width: 16px;height: 15px;border: 0;margin-left: 10px;cursor: pointer;}
+.searchOnfocus{font: bold; color: red;}
+
+/*当前主题和所有主题的切换样式*/
+.right_help_page{margin-left:2px; margin-right:2px;background-color:#E0E8ED;}
+.right_help_page ul,.right_help_page li{list-style: none;margin: 0;padding: 0;}
+.topic{height: 20px;width: 60px;float: left;padding: 2px;}
+.topic_select{font:bold;color:white;background-color: #9EA4A9;height: 20px;width: 60px;padding: 2px;float: left;border:2px solid #9EA4A9;border-top: 0px;}
