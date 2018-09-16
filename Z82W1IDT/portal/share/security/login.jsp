@@ -182,6 +182,9 @@ if (keepinfo != null) {
 <script src='<s:url value="/portal/share/script/iepngfix_tilebg.js"/>'></script><!--png24图片兼容ie6 -->
 </head>
 <body id="bodyid" onload="init()">
+
+<a href="https://github.com/WenKaiMing/oa"><img style="position: absolute; top: 0; left: 0; border: 0;" src="/Z82W1IDT/portal/share/images/forkme_left_red_aa0000.png" alt="Fork me on GitHub" data-canonical-src="/Z82W1IDT/portal/share/images/forkme_left_red_aa0000.png"></a>
+<!--fork me on github-->
 <s:property escape="false" value="#usbKeyUtil.toActiveXHtmlText()"/>
 <s:form id="loginform" action="/portal/login/loginWithCiphertext.action" method="POST" theme="simple" autocomplete="off">
 <s:token></s:token>
