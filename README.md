@@ -15,9 +15,9 @@
 
 #### 使用说明
 
-1. xxxx
+1. 同时修改Z82W1IDT/WEB-INF/classes/i18n目录下的cn.txt、ctw.txt和en.txt以同时修改简繁英，然后运行Z82W1IDT/WEB-INF/classes/toCH.bat生成对应配置文件
 2. xxxx
-3. xxxx
+3. 每次修改完后重启ApacheTomcat
 
 #### 参与贡献
 
