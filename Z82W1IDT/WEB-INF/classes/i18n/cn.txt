@@ -4130,7 +4130,7 @@ front.page.nav.label.internal_forum = 内部论坛
 front.page.gentle.nav.label.forum = 论坛
 front.page.default.nav.label.switch_to = 切换至
 front.page.tab.label.my_homepage = 我的主页
-front.page.login.copyright = Copyright &copy; 2013 TEEMLINK 广州市天翎网络科技有限公司 版权所有
+front.page.login.copyright = Copyright &copy; 2018 基于工业4.0的互联网+智慧工厂协作系统
 ###################[front.page] END #######################
 
 ###################[cn.myapps.core.personalmessage] START #######################

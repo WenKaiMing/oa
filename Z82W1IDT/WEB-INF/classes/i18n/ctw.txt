@@ -4126,7 +4126,7 @@ front.page.nav.label.internal_forum = 內部論壇
 front.page.gentle.nav.label.forum = 論壇
 front.page.default.nav.label.switch_to = 切換至
 front.page.tab.label.my_homepage = 我的主頁
-front.page.login.copyright = Copyright &copy; 2013 TEEMLINK 廣州市天翎網絡科技有限公司 版權所有
+front.page.login.copyright = Copyright &copy; 2018 基於工業4.0的互聯網+智慧工廠協作系統
 ###################[front.page] END #######################
 
 ###################[cn.myapps.core.personalmessage] START #######################

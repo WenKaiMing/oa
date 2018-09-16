@@ -2442,7 +2442,7 @@ page.km.service_tel = Service tel
 page.km.tel_tip_a = Tips: only users in mainland China can use
 page.km.tel_tip_b = Call toll-free, does not produce any fees
 page.km.about_teemlink = About teemlink
-page.km.teemlink_tip = Guangzhou City Teemlink Network Technology Co.,Ltd   all right reserved
+page.km.teemlink_tip = Internet + Smart Factory Collaboration System based on Industry 4.0
 page.km.retrieve_password = Retrieve the password
 page.km.retrieve_password_tip_a = The system for enterprise-level applications, for security reasons, does not provide automatic retrieve password feature.
 page.km.retrieve_password_tip_b = If you need help, please contact with enterprise/unit administrator!
@@ -3741,7 +3741,7 @@ front.page.nav.label.internal_forum = Internal Forum
 front.page.gentle.nav.label.forum = Forum
 front.page.default.nav.label.switch_to = Switch To
 front.page.tab.label.my_homepage = My HomePage
-front.page.login.copyright = Copyright &copy; 2013 TEEMLINK Guangzhou City Teemlink Network Technology Co.,Ltd   all right reserved
+front.page.login.copyright = Copyright &copy; 2018 Internet + Smart Factory Collaboration System based on Industry 4.0
 ###################[front.page] END #######################
 
 ###################[cn.myapps.core.personalmessage] START #######################
