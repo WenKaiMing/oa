@@ -119,7 +119,7 @@ try {
 		} else {
 			location.href = "/" + site_id + "/admin";
 		}
-		</script
+		</script>
       
     </body>
 
